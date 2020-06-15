@@ -6,7 +6,7 @@ Each commit here will sync it to the master, which will expose the content to ht
 
 ## Contributing
 
-Please document new use cases in the [CONTRIBUTIONS](CONTRIBUTIONS) directory adopting the template (use-case-template.md)[use-case-template.md].
+Please document new use cases in the [CONTRIBUTIONS](CONTRIBUTIONS) directory adopting the template [use-case-template.md](use-case-template.md).
 
 To make direct changes to the IG document, please provide pull-requests to the html file, see [github help](https://help.github.com/articles/using-pull-requests/).
 
