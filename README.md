@@ -1,8 +1,14 @@
 # W3C Web of Things Interest Group - Use Cases
 
-This repository includes various use case proposals and a conslidated docment based on those proposals.
+This repository includes various use case proposals and a consolidated docment based on those proposals.
+
+Each commit here will sync it to the master, which will expose the content to http://w3c.github.io/wot-usecase/.
 
 ## Contributing
+
+Please document new use cases in the [CONTRIBUTIONS](CONTRIBUTIONS) directory adopting the template [use-case-template.md](CONTRIBUTIONS/use-case-template.md).
+
+To make direct changes to the IG document, please provide pull-requests to the html file, see [github help](https://help.github.com/articles/using-pull-requests/).
 
 ### Content
 
