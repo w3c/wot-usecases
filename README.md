@@ -2,7 +2,7 @@
 
 This repository includes various use case proposals and a consolidated docment based on those proposals.
 
-Each commit here will sync it to the master, which will expose the content to http://w3c.github.io/wot-usecase/.
+Each commit here will sync it to the master, which will expose the content to http://w3c.github.io/wot-usecases/.
 
 ## Contributing
 
