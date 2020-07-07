@@ -119,12 +119,36 @@ These systems may also include geofencing notifications and mapping
 * Geofencing may be implemented using event notifications and
   will require setting of additional parameters such as maximum distance.
 
+### Security Considerations:
+
+High-resolution timestamps can be used in conjunction with cache manipulation to
+access protected regions of memory, as with the SPECTRE exploit. Certain
+geolocation APIs and technologies can return high-resolution timestamps which
+can be a potential problem.  Eventually these issues will be addressed in cache
+architecture but in the meantime a workaroun is to artificially limit the 
+resolution of timestamps.
+
+### Privacy Considerations:
+
+Location is generally considered private information when it is used with a device
+that may be associated with a specific person, such as a phone or vehicle, as it
+can be used to track that person and infer their activities or who they associate 
+with (if multiple people are being tracked at once).  Therefore APIs to access it
+in sensitive contexts are often restricted, and access is allowed only after confirming
+permission from the user.
+
 ### Gaps:
 
-There is no standardized TD vocabulary for representing location data.
-Location data can be point data, a path, an area or a volumentric object.
+There is no standardized semantic vocabulary for representing location data.
+Location data can be point data, a path, an area or a volumetric object.
 Location information can be expressed using multiple standards, 
-the TD must be able to unambiguously describe location information.
+but the reader of location data in a TD or in data returned by an IoT device 
+must be able to unambiguously describe location information.
+
+There are both dynamic (data returned by a mobile sensor) and static (fixed installation
+location) applications for geolocation data.  For dynamic location data, some recommended vocabulary
+to annotate data schemas would be useful.  For static location data, a standard format
+for metadata to be included in a TD itself would be useful.
 
 ### Existing standards:
 
