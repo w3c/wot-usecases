@@ -118,7 +118,7 @@ Comment:
 * Investigate whether DTLS can be used.
   Certainly the connection needs to be encrypted; this is required in the OAuth 2.0 specification.
 * Investigate whether protocols other than HTTP can be used, e.g. CoAP.
-  - found an intresting IETF draft RFC about CoAP  support(encripted using various mechanisms like DTLS or CBOR Object Signing and Encryption): [draft-ietf-ace-oauth](https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-35)
+  - found an interesting IETF draft RFC about CoAP  support(encrypted using various mechanisms like DTLS or CBOR Object Signing and Encryption): [draft-ietf-ace-oauth](https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-35)
 
 ### Expected Data:
 
@@ -281,9 +281,7 @@ The Client Credentials flow is illustrated in the following diagram. Notice how 
 +----------+
 ```
 
-Comment: Usually client credentials are distributed using and external service which is used by humans to register a particular application. For example, the `npm` cli has a companion dashboard where a developer requests the generation of a token that is then passed to the cli. The token is used to verify the publishing process of `npm` packages in the registry. Further examples are Docker cli and OpenId Connect Client Credentials. 
-
-**Note** there is an [RFC](https://tools.ietf.org/html/draft-tschofenig-ace-oauth-iot-01) that describes this flow for COAP clients.
+Comment: Usually client credentials are distributed using an external service which is used by humans to register a particular application. For example, the `npm` cli has a companion dashboard where a developer requests the generation of a token that is then passed to the cli. The token is used to verify the publishing process of `npm` packages in the registry. Further examples are Docker cli and OpenId Connect Client Credentials. 
 
 ##### implicit
 **Deprecated**
