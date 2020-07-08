@@ -148,7 +148,7 @@ We also include the experimental "device" flow for consideration.
 
 ##### code
 
-A natural application of this protocol is when the end-user wants to interact directly with the consumed thing or to provisioning his authorization to a remote device. In fact from the [RFC6749](https://tools.ietf.org/html/rfc6749#section-4.1)
+A natural application of this protocol is when the end-user wants to interact directly with the consumed thing or to grant his authorization to a remote device. In fact from the [RFC6749](https://tools.ietf.org/html/rfc6749#section-4.1)
 
 > Since this is a redirection-based flow, the client must be capable of
    interacting with the resource owner's user-agent (typically a web
@@ -212,7 +212,7 @@ The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE)
 
 ### Security Considerations:
 
-See OAuth 2.0 security considerations in [RFC6749](https://tools.ietf.org/html/rfc6749#section-10)
+See OAuth 2.0 security considerations in [RFC6749](https://tools.ietf.org/html/rfc6749#section-10). See also [RFC 8628 section 5](https://tools.ietf.org/html/rfc8628#section-5) for `device` flow.
 
 ### Privacy Considerations:
 
@@ -227,4 +227,4 @@ See OAuth 2.0 security considerations in [RFC6749](https://tools.ietf.org/html/r
 <Provide links to relevant standards that are relevant for this use case>
 
 ### Comments:
-Notice that the OAuth 2.0 protocol is not an authentication protocol, however [OpenID](https://openid.net/connect/) defines an authentication layer on top of oAuth.
+Notice that the OAuth 2.0 protocol is not an authentication protocol, however [OpenID](https://openid.net/connect/) defines an authentication layer on top of OAuth 2.0.
