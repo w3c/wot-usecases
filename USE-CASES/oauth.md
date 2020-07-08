@@ -295,6 +295,43 @@ From  [OAuth 2.0 Security Best Current Practice](https://tools.ietf.org/html/dra
 
 The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE) instead. 
 
+```
++----------+
+| Resource |
+|  Owner   |
+|          |
++----+-----+
+     ^
+     |
+    (B)
++----------+          Client Identifier     +---------------+
+|         ------(A)-- & Redirection URI --->+               |
+|  User-   |                                | Authorization |
+|  Agent  ------(B)-- User authenticates -->+     Server    |
+|          |                                |               |
+|          +<---(C)--- Redirection URI ----<+               |
+|          |          with Access Token     +---------------+
+|          |            in Fragment
+|          |                                +---------------+
+|          +----(D)--- Redirection URI ---->+   Web-Hosted  |
+|          |          without Fragment      |     Client    |
+|          |                                |    Resource   |
+|     (F)  +<---(E)------- Script ---------<+               |
+|          |                                +---------------+
++-+----+---+
+  |    |
+ (A)  (G) Access Token
+  |    |
+  ^    v
++-+----+---+                                   +----------+
+|          |                                   |  Remote  |
+|   WoT    +>---------(H)--Access WoT--------->+  Device  |
+| Consumer |               Affordance          |          |
+|          |                                   +----------+
++----------+
+
+```
+
 ##### resource owner password
 **Deprecated** From  [OAuth 2.0 Security Best Current Practice](https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2):
 
@@ -305,7 +342,33 @@ The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE)
    just the AS) and users are trained to enter their credentials in
    places other than the AS.
 
-
+```
+ +----------+
+ | Resource |
+ |  Owner   |
+ |          |
+ +----+-----+
+      v
+      |    Resource Owner
+     (A) Password Credentials
+      |
+      v
++-----+----+                                  +---------------+
+|          +>--(B)---- Resource Owner ------->+               |
+|          |         Password Credentials     | Authorization |
+|   WoT    |                                  |     Server    |
+| Consumer +<--(C)---- Access Token ---------<+               |
+|          |    (w/ Optional Refresh Token)   |               |
++-----+----+                                  +---------------+
+      |
+      | (D) Access WoT Affordance
+      |
+ +----v-----+
+ |  Remote  |
+ |  Device  |
+ |          |
+ +----------+
+```
 
 
 ### Security Considerations:
