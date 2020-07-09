@@ -46,6 +46,9 @@ The protocol defines the following actors:
 * Resource: a web resource 
 * Resource Server: the server where the resource is stored
 * Resource Owner: the owner of a particular web resource. If it is a human is usually referred to as an end-user.
+  More specifically from the RFC:
+  >  An entity capable of granting access to a protected resource.
+
 
 These actors can be mapped to WoT entities: 
 * Client is a WoT Consumer
@@ -161,6 +164,7 @@ This implies that the code flow can be only used when the resource owner interac
 
 - In a home automation context, a device owner uses a third party software to interact with/orchestrate one or more devices
 - Similarly, in a smart farm, the device owner might delegate its authorization to third party services.
+- In a smart home scenario, Thing Description Directories might be deployed using this authorization mechanism. In particular, the list of the registered TDs might  require an explicit read authorization request to the device owner (i.e. an human who has bought the device and installed it). 
 - ...   
 
 The following diagram shows the steps of the protocol adapted to WoT idioms and entities. In this scenario, the WoT Consumer has read the Thing Description of a Remote Device and want to access one of its WoT Affordances protected with OAuth 2.0 code flow.  
@@ -295,6 +299,12 @@ From  [OAuth 2.0 Security Best Current Practice](https://tools.ietf.org/html/dra
 
 The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE) instead. 
 
+The implicit flow was designed for public clients typically implemented inside a browser (i.e. javascript clients). As the `code` is a redirection-based flow and it requires direct interaction with the resource's owner user-agent. However, it requires one less step to obtain a token as it is returned directly in the authentication request (see the diagram below).
+
+Considering the WoT context this flow is not particularly different from `code` grant and it can be used in the same scenarios.  
+
+Comment: even if the `implicit` flow is deprecated existing services may still using it. 
+
 ```
 +----------+
 | Resource |
@@ -341,6 +351,8 @@ The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE)
    increased attack surface (credentials can leak in more places than
    just the AS) and users are trained to enter their credentials in
    places other than the AS.
+
+For completeness the diagram flow is reported below.  
 
 ```
  +----------+
