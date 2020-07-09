@@ -3,6 +3,8 @@ for the next revision (V1.1) of the WoT architecture.
 
 Please put all your use cases into this directory adopting the format in <em>use-case-template.md</em>.
 
+Use cases that have been reviewed and approved for inclusion in the WG note are moved to https://github.com/w3c/wot-usecases/tree/master/USE-CASES/processed for archival purposes.
+
 Please avoid domain specific terminology, e.g. don't use MNO, telco. Better use network operator instead.
 
 # Terminology
