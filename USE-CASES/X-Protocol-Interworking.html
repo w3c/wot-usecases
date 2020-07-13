@@ -1,0 +1,81 @@
+<h1 id="X-Protocol-Interworking">Title: Cross Protocol Interworking</h1>
+<h2 id="x-protocol-interworking-submitter">Submitter(s):</h2>
+
+Michael Lagally
+
+<h2 id="x-protocol-interworking-reviewer">Reviewer(s):</h2>
+
+Ege Korkan, Michael McCool, Michael Koster, Sebastian Käbisch
+
+<h2 id="x-protocol-interworking-tracker issue id">Tracker Issue ID:</h2>
+
+
+<h2 id="x-protocol-interworking-category">Category:</h2>
+
+<please leave blank>
+
+<h2 id="x-protocol-interworking-class">Class:</h2>
+
+<please leave blank>
+
+<h2 id="x-protocol-interworking-status">Status:</h2>
+
+<please leave blank>
+
+<h2 id="x-protocol-interworking-target users">Target Users:</h2>
+
+Device owners, cloud providers.
+
+<h2 id="x-protocol-interworking-motivation">Motivation:</h2>
+
+In smart city, home and industrial scenarios various devices are connected to a common network. These devices implement different protocols. To enable interoperability, an "agent" needs to communicate across different protocols. Platforms for this agent can be edge devices, gateways or cloud services.
+<br><br>
+Interoperability across protocols is a must for all user scenarios that integrate devices from more than one protocol.
+
+<h2 id="x-protocol-interworking-expected devices">Expected Devices:</h2>
+
+Various sensors, e.g. temperature, light, humidity, vibration, noise, air quality, edge devices, gateways, cloud servers and services.
+
+<h2 id="x-protocol-interworking-expected data">Expected Data:</h2>
+
+Discrete sensor values, such as temperature, light, humidity, vibration, noise, air quality readings.
+A/V streams.
+The data can be delivered periodically or on demand.
+ 
+<h2 id="x-protocol-interworking-dependencies">Dependencies:</h2>
+
+WoT Profiles.
+
+<h2 id="x-protocol-interworking-description">Description:</h2>
+
+There are multiple user scenarios that are addressed by this use case. 
+<br><br>
+
+An example in the smart home environment is an automatic control lamps, air conditioners, heating, window blinds in a household 
+based on sensor data, e.g. sunlight, human presence, calendar and clock, etc.
+<br><br>
+
+In an industrial environment individual actuators and production devices use different protocols. 
+Examples include MQTT, OPC-UA, Modbus, Fieldbus, and others.
+Gathering data from these devices, e.g. to support digital twins or big data use cases requires an "Agent" to bridge across these protocols.
+To provide interoperability and to reduce implementation complexity of this agent a common set of (minimum and maximum) 
+requirements need to be supported by all interoperating devices. 
+<br><br>
+
+A smart city environment is similar to the industrial scenario in terms of device interoperability. Devices differ however, 
+they include smart traffic lights, traffic monitoring, people counters, cameras.
+<br><br>
+
+<h3 id="x-protocol-interworking-variants">Variants:</h3>
+
+
+<h2 id="x-protocol-interworking-gaps">Gaps:</h2>
+
+A common profile across protocols is required to address this use case. 
+
+<h2 id="x-protocol-interworking-existing standards">Existing standards:</h2>
+
+MQTT, OPC-UA, BACNet, CoAP, various other home and industrial protocols.
+<h2 id="x-protocol-interworking-comments">Comments:</h2>
+
+

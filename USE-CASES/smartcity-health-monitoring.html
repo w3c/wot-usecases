@@ -1,0 +1,185 @@
+<h1 id="smartcity-health-monitoring">Title: Public Health Monitoring</h1>
+
+<h2 id="smartcity-health-monitoring-submitter">Submitter(s):</h2>
+
+Jennifer Lin (GovTech Singapore)
+
+<h2 id="smartcity-health-monitoring-reviewer">Reviewer(s):</h2>
+
+Michael McCool, Michael Lagally
+
+<h2 id="smartcity-health-monitoring-tracker issue id">Tracker Issue ID:</h2>
+
+<please leave blank>
+
+<h2 id="smartcity-health-monitoring-category">Category:</h2>
+
+<please leave blank>
+
+<h2 id="smartcity-health-monitoring-class">Class:</h2>
+
+<please leave blank>
+
+<h2 id="smartcity-health-monitoring-status">Status:</h2>
+
+<please leave blank>
+
+<h2 id="smartcity-health-monitoring-target users">Target Users:</h2>
+
+Agencies, companies and other organizations in a Smart City with 
+significant pedestrian traffic in a pandemic situation.
+
+<h2 id="smartcity-health-monitoring-motivation">Motivation:</h2>
+
+A system to monitor the health of people in public places is useful to
+control the spread of infectious diseases.  In particular, we would like
+to identify individuals with temperatures outside the norm (i.e. running
+a fever) and then take appropriate action.  Actions can include sending
+a notification or actuating a security device, such as a gate.
+<br><br>
+This mechanism should be non-invasive and non-contact since the solution
+should not itself contribute to the spread of infectious diseases.
+<br><br>
+Data may also be aggregated for statistics purposes, for example, to 
+identify the number of people in an area with elevated temperatures.
+This has additional requirements to avoid double-counting individuals.
+
+<h2 id="smartcity-health-monitoring-expected devices">Expected Devices:</h2>
+
+One of the following:
+<ul>
+<li>A thermal camera.</li>
+<li>Face detection (AI) service</li>
+  <ul>
+     <li>May be on device or be an edge or cloud service.</li>
+  </ul>
+</ul>
+
+Optional:
+<ul>
+<li>RGB and/or depth camera registered with the thermal camera</li>
+<li>Cloud service for data aggregation and analytics.</li>
+<li>Some way to identify location (optional) 
+Note that location might be static and configured during installation,
+but might also be based on a localization technology if the device needs to be 
+portable (for example, if it needs to be set up quickly for an event).</li>
+</ul>
+
+<h2 id="smartcity-health-monitoring-expected data">Expected Data:</h2>
+
+<ul>
+<li>Sensor ID</li>
+<li>Timestamp</li>
+<li>Number of people identified with a fever in image</li>
+<li>Estimated temperature for each person</li>
+<ul>
+   <li>May be coarse, low/normal/high</li>
+</ul>
+<li>Location</li>
+<ul>
+   <li>Latitude, Longitude, Altitude, Accuracy</li>
+   <li>Semantic (eg a particular building entrance)</li>
+</ul>
+<li>Thermal image</li>
+</ul>
+
+Optional:
+<ul>
+<li>RGB image</li>
+<li>Depth image</li>
+<li>Localization technology (see localization use case)</li>
+<li>Integration with local IoT devices: gates, lights, or people (guards)</li>
+<li>Bounding boxes around faces of identified people in image(s)</li>
+<li>Data that can be used to uniquely identify a face (distinguish it from others)</li>
+ <ul>
+    <li>Aggregation system may output the total number of unique faces with fever</li>
+ </ul>
+</ul>
+
+Note 1: the system should be capable of notifying consumers (such as security personnel),
+of fever detections.   
+This may be email, SMS, or some other mechanism, such as MQTT publication.
+<br><br>
+Note 2: In all cases where images are captured, privacy considerations apply.
+<br><br>
+It would also be useful to count unique individuals for statistics purposes,
+but not necessarily based on identifying particular people.  This is to
+avoid counting the same person multiple times.
+
+<h2 id="smartcity-health-monitoring-dependencies">Dependencies:</h2>
+
+node-wot
+
+<h2 id="smartcity-health-monitoring-description">Description:</h2>
+
+A thermal camera image is taken of a group of people
+and an AI service is used to identify faces in the image.
+The temperature of each person is then estimated from the registered face;
+for greater accuracy, a consistent location for sampling should be used, such 
+as the forehead.
+The estimated temperature is compared to high (and optionally, low)
+thresholds and a notification (or other action) is taken if the 
+temperature is outside the norm.
+Additional features may be extracted to identify unique individuals.
+
+<h3 id="smartcity-health-monitoring-variants">Variants:</h3>
+
+<ul>
+<li>Enough information is included in the notification that the specific
+  person that raised the alarm can be identified.  For example, if an RGB
+  camera is also registered with the thermal camera, then a bounding box may
+  be indicated via JSON and the RGB image included; or the bounding box could
+  be actually drawn into the sent image, or the face could be cropped out.
+  This is useful if, for example, a notification needs to be sent to health
+  or security workers who need to identify the person in a crowd.</li>
+<li>Instead of simply a notification, an action may be taken, such as closing
+  or refusing to open a gate at the entrance to a building, to prevent sick
+  employees from entering the building.</li>
+<li>To generate statistics, for example to count the number of people with
+  fevers, then unique individuals need to be indentified to avoid counting
+  the same person more than once.</li>
+<li>The same sensors might be used to determine the number of people in
+  an area and send a notification if crowded conditions are detected, in
+  order to support social distancing behaviour (for instance, supporting
+  an app that notifies users when a destination is crowded) in a pandemic situation.</li>
+<li>Cameras that provide video streams rather than still images.</li>
+</ul>
+
+<h2 id="smartcity-health-monitoring-security considerations">Security Considerations:</h2>
+
+<ul>
+<li>Because PII is involved (see below) access should be controlled (only provided to authorized users) and communications protected (encrypted).</li>
+</ul>
+
+<h2 id="smartcity-health-monitoring-privacy considerations">Privacy Considerations:</h2>
+
+<ul>
+<li>Images of people and their health status is involved.  </li>
+  <ul>
+   <li>If later these are made public then the health information of a particular person would be released publically.</li>
+   <li>There is also the possibility that the camera data could be in error, and should be confirmed with a more accurate sensor.</li>
+   <li>This information needs to be treated as PII and protected: only distributed to authorized users, and deleted when no longer needed.</li>
+   <li>However, derived aggregate information can be kept and published.</li>
+  </ul>
+</ul>
+
+<h2 id="smartcity-health-monitoring-gaps">Gaps:</h2>
+
+<ul>
+<li>Onboarding mechanism for rapidly deploying a large number of devices</li>
+<li>Standard vocabulary for geolocation information</li>
+<li>Implementations able to handle image payload formats, possibly in combination with non-image data (eg images and JSON in a single response)</li>
+<li>Video streaming support (if we wish to serve video stream from the camera instead of still images)</li>
+<li>Standard ways to specify notification mechanisms and data payloads for things like SMS and email (in addition to the expected MQTT, CoAP, and HTTP event mechanisms)</li>
+</ul>
+
+<h2 id="smartcity-health-monitoring-existing standards">Existing standards:</h2>
+
+
+<h2 id="smartcity-health-monitoring-comments">Comments:</h2>
+
+<ul>
+<li>May be additional requirements for privacy since images of people and their health status is involved.</li>
+<li>Different sub-use cases: immediate alerts or actions vs. aggregate data gathering</li>
+</ul>
+

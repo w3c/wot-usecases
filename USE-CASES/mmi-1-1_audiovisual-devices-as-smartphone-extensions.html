@@ -1,0 +1,136 @@
+<h1 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions">Title: Audiovisual Devices Acting as Smartphone Extensions</h1>
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-submitter">Submitter(s):</h2>
+
+Michael McCool
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-reviewer">Reviewer(s):</h2>
+
+<Suggest reviewers>
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-tracker issue id">Tracker Issue ID:</h2>
+
+<please leave blank>
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-category">Category:</h2>
+
+Accessibility
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-class">Class:</h2>
+
+<please leave blank>
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-status">Status:</h2>
+
+<please leave blank>
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-target users">Target Users:</h2>
+
+&lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer, cloud provider&gt;
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-motivation">Motivation:</h2>
+
+Many of today's home IoT-enabled devices can provide similar functionality
+(e.g. audio/video playback),
+differing only in certain aspects of the user interface.
+This use case would allow continuous interaction with a specific
+application as the user moves from room to room,
+with the user interface switched automatically to the set of
+devices available in the user's present location.
+<br><br>
+On the other hand, 
+some devices can have specific capabilities 
+and user interfaces that can be used to add information to a larger context
+that can be reused by other applications and devices.
+This drives the need to spread an application across different devices
+to achieve a more user-adapted and meaningful interaction according to the 
+context of use.
+Both aspects provide arguments for exploring use cases where
+applications use distributed multimodal interfaces.
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-expected devices">Expected Devices:</h2>
+
+Mobile phone or other client running an application requiring a extended and
+more accessible user interface.
+<br><br>
+IoT-enabled audio-visual devices providing audio and visual information
+display capabilities that can be used to augment the user interface of the 
+application.
+<br><br>
+Possible edge computation services providing speech-to-text or described video
+(e.g. object detection) capabilities.
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-expected data">Expected Data:</h2>
+
+Visual display information mapping information from audio to visual modalities,
+for example text generated from voice recognition.
+<br><br>
+Text from an application that needs to be displayed at a larger size.
+<br><br>
+Visual alerts correspondig to audio stimuli, eg sound effects in a game mapped
+to visual icons.
+<br><br>
+Visual information mapped to audio information, for example,
+described video based on an AI service providing object recognition.
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-dependencies">Dependencies:</h2>
+
+<ul>
+<li>WoT Thing Description</li>
+<li>WoT Discovery</li>
+<li>Optional: WoT Scripting API accessible from application for interacting
+with devices.</li>
+</ul>
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-description">Description:</h2>
+
+A home entertainment system is adapted by a mobile device
+as a set of user interface components.
+<br><br>
+In addition to media rendering and playback,
+these Devices also act as input or output modalities for
+an application, for example an application running on a smartphone.
+The native user interface on the application 
+does not have to be manipulated directly at all.
+A wall-mounted touch-sensitive TV could be used to navigate applications,
+and a wide-range microphone can handle speech input.
+Spatial (Kinect-style) gestures may also be used to control 
+application behavior.
+<br><br>
+Accessibility support software on the smartphone 
+discovers available modalities and arranges them to best 
+serve the user's purpose. 
+One display can be used to show photos and movies, 
+another for navigation. 
+As the user walks into another room, 
+this configuration is adapted dynamically to the new location. 
+User intervention may be sometimes required to decide on 
+the most convenient modality configuration. 
+The state of the interaction is maintained 
+while switching between modality sets. 
+For example, 
+if the user was navigating a GUI menu in the living room, 
+it is carried over to another screen when she switches rooms, 
+or replaced with a different modality such as voice 
+if there are no displays in the new location.
+
+<h3 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-variants">Variants:</h3>
+
+Modalities may be translated from one form to another to accomodate
+accessibility issues, for example, visual cues into audio cues and 
+vice-versa, as appropriate.
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-gaps">Gaps:</h2>
+
+An AI service may be require to perform modality mapping, for example,
+object recognition.
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-existing standards">Existing standards:</h2>
+
+This use case is based on MMI UC 1.1.
+
+<h2 id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-comments">Comments:</h2>
+
+Does not include Requirements section from original MMI use case.
+Variant supporting 
+modality conversion is not included in the original MMI use case.

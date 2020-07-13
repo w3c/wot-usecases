@@ -1,0 +1,112 @@
+<h1 id="retail">Title: Retail</h1>
+
+<h2 id="retail-submitter">Submitter(s):</h2>
+
+David Ezell, Michael Lagally, Michael McCool
+
+<h2 id="retail-reviewer">Reviewer(s):</h2>
+
+<Suggest reviewers>
+
+<h2 id="retail-tracker issue id">Tracker Issue ID:</h2>
+
+
+<h2 id="retail-category">Category:</h2>
+
+<please leave blank>
+
+<h2 id="retail-class">Class:</h2>
+
+<please leave blank>
+
+<h2 id="retail-status">Status:</h2>
+
+<please leave blank>
+
+<h2 id="retail-target users">Target Users:</h2>
+
+Retailers, customers, suppliers.
+
+<h2 id="retail-motivation">Motivation:</h2>
+
+Integrating and interconnecting multiple devices into the common retail workflow 
+(i.e., transaction log) drastically improves retail business operations at multiple levels. 
+It brings operational visibility,including consumer behavior and environmental information, 
+that was not previously possible or viable in a meaningful way. 
+<br><br>
+It drastically speeds up the process of root cause analysis of operational issues and 
+simplifies the work of retailers.
+
+<h2 id="retail-expected devices">Expected Devices:</h2>
+
+Connected sensors, such as people counters, presence sensors, air quality, room ocupancy, door sensors. 
+Cloud services.  Video analytics edge services.
+
+<h2 id="retail-expected data">Expected Data:</h2>
+ 
+Inventory data, supply chain status information, discrete sensor data or data streams.
+
+<h2 id="retail-dependencies">Dependencies:</h2>
+
+<List the affected WoT deliverables>
+tbd
+
+<h2 id="retail-description">Description:</h2>
+
+Falling costs of sensors, communications, and handling of very large volumes of data combined with cloud 
+computing enable retail business operations with increased operational efficiency, better customer service, 
+and even increased revenue growth and return on investment.
+<br><br>
+Accurate forecasts allow retailers to coordinate demand-driven outcomes that deliver connected customer interactions.
+They drive optimal strategies in planning, increasing inventory productivity in retail supply chains, 
+decreasing operational costs and driving customer satisfaction from engagement, to sale, to fulfilment. 
+<br><br>
+Understanding of store activity juxtaposed with traditional information streams can boost worker and consumer safety, 
+comply better with work safety regulations, enhance system and site security, and improve worker efficiency 
+by providing real-time visibility into worker status, location, and work environment.
+
+<h2 id="retail-variants">Variants:</h2>
+
+<ul>
+<li>Use edge computing, in particular video analytics, in combination with IoT devices to deliver an enhanced
+  customer experience, better manage inventory, or otherwise improve the store workflow.</li>
+</ul>
+  
+<h2 id="retail-security considerations">Security Considerations:</h2>
+
+<ul>
+<li>In retail, replay attacks can cause monetary loss, customers may be incorrectly charged or over-charged.</li>
+<li>To avoid replay attacks, "Things" should implement a sequence number for each message and digital signature.</li>
+<li>Servers ("Things" or "Cloud") should verify the signature and disallow for duplicated messages.</li>
+<li>For "Things" relying on electronic payments, "Things" must comply with PCI-DSS requirements.</li>
+<li>"Things" must never store credit card information.</li>
+<li>Customer satisfaction and trust depends on availability, so attacks such as Denial-of-Service (DoS) need to be prevented or mitigated.</li>
+<li>To prevent DoS, implement "Things" with early DoS detection.</li>
+<li>Have an automated DoS system that will notify the controlling unit of the problem.</li>
+<li>Implement IP white list, that could be part of the DoS early detection system.</li>
+<li>Make sure your network perimeter is defended with up to date firewall software.</li>
+</ul>
+
+<h2 id="retail-privacy considerations">Privacy Considerations:</h2>
+ 
+As a general rule, personal consumer information should not be stored.
+That is especially true in the retail industry where a security breach could cause financial, reputation, and brand damage.
+If personal or information that can identify a consumer is to be stored,
+it should be to conduct business and with the explicit acknowledgment of the consumer.
+WoT vendors and integrators should always have a privacy policy and make it easily available.
+By default, devices should adopt an opt-out policy.
+That means, unless the consumer explicitly allowed for the data capture and storage, avoid doing it.
+
+<h2 id="retail-gaps">Gaps:</h2>
+
+<Describe any gaps that are not addressed in the current WoT work items>
+tbd
+
+<h2 id="retail-existing standards">Existing standards:</h2>
+
+<Provide links to relevant standards that are relevant for this use case>
+tbd
+
+<h2 id="retail-comments">Comments:</h2>
+
+

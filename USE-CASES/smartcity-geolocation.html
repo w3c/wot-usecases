@@ -1,0 +1,237 @@
+<h1 id="smartcity-geolocation">Title: Smart City Geolocation</h1>
+
+<h2 id="smartcity-geolocation-submitter">Submitter(s):</h2>
+
+Jennifer Lin (GovTech Singapore), Michael McCool
+
+<h2 id="smartcity-geolocation-reviewer">Reviewer(s):</h2>
+
+Michael Lagally
+
+<h2 id="smartcity-geolocation-tracker issue id">Tracker Issue ID:</h2>
+
+<please leave blank>
+
+<h2 id="smartcity-geolocation-category">Category:</h2>
+
+<please leave blank>
+
+<h2 id="smartcity-geolocation-class">Class:</h2>
+
+<please leave blank>
+
+<h2 id="smartcity-geolocation-status">Status:</h2>
+
+<please leave blank>
+
+<h2 id="smartcity-geolocation-target users">Target Users:</h2>
+
+A Smart City managing mobile devices and sensors,
+including passively mobile sensor packs, packages,
+vehicles, and autonomous robots, where their location needs to
+be determined dynamically.
+
+TODO: Stakeholders/Users need to be further clarified. They include "city government, people counting service providers, police, network providers, ...
+
+<h2 id="smartcity-geolocation-motivation">Motivation:</h2>
+
+Smart Cities need to track a large number of mobile devices and sensors.
+Location information may be integrated with a logistics or fleet management
+system.
+A reusable geolocation module is needed with a common network interface to
+include in these various applications.
+For outdoor applications, GPS 
+could be used, but indoors other geolocation technologies might be 
+used, such as WiFi triangulation or vision-based navigation (SLAM).
+Therefore the geolocation information should be technology-agnostic.
+
+NOTE: we prefer the term "geolocation", even indoors, over "localization" to
+avoid confusion with language localization.
+
+<h2 id="smartcity-geolocation-expected devices">Expected Devices:</h2>
+
+One of the following:
+<ul>
+<li>A geolocation system on a personal device, such as a smart phone.</li>
+<li>A geolocation system to be attached to some other portable device.</li>
+<li>A geolocation system attached to a mobile vehicle.</li>
+<li>A geolocation system on a payload transported by a vehicle.</li>
+<li>A geolocation system on an indoor mobile robot.</li>
+</ul>
+
+<h2 id="smartcity-geolocation-expected data">Expected Data:</h2>
+
+<ul>
+<li>Sensor ID</li>
+<li>Timestamp of last geolocation</li>
+<li>2D location</li>
+  <ul>
+   <li>typically latitude and longitude</li>
+   <li>May also be semantic, i.e. room in a building, exit</li>
+  </ul>
+</ul>
+
+Optional:
+<ul>
+<li>Semantic location</li>
+<ul>
+   <li>Possibly in addition to numerical lat/long location.</li>
+</ul>
+<li>Altitude</li>
+<ul>
+   <li>May also be semantic, i.e. floor of a building</li>
+</ul>
+<li>Heading</li>
+<li>Speed</li>
+<li>Accuracy information</li>
+<ul>
+   <li>Confidence interval, e.g. distance that true location will be within some probability.</li>
+   <li>Gaussian covariance matrix</li>
+   <li>For each measurement</li>
+   <li>For lat/long, may be a single value (see web browser API; radius?)</li>
+</ul>
+<li>Geolocation technology (GPS, SLAM, etc).  </li>
+<ul>
+   <li>Note that multiple technologies might be used together.</li>
+   <li>Include parameters such as sample interval, accuracy</li>
+</ul>
+<li>For each geolocation technology, data specific to that technology:</li>
+<ul>
+   <li>GPS: NMEA type</li>
+</ul>
+<li>Historical data</li>
+</ul>
+
+Note: the system should be capable of notifying consumers
+of changes in location.
+This may be used to implement geofencing by some other system.<br>
+This may require additional parameters, such as the 
+maximum distance that the device may be moved before a notification is
+sent, or the maximum amount of time between updates.
+Notifications may be sent by a variety of means, some of which may
+not be traditional push mechanisms (for example, email might be used).
+For geofencing applications, it is not necessary that the device be aware
+of the fence boundaries; these can be managed by a separate system.
+
+<h2 id="smartcity-geolocation-dependencies">Dependencies:</h2>
+
+node-wot
+
+<h2 id="smartcity-geolocation-description">Description:</h2>
+
+Smart Cities have the need to observe the physical locations of 
+large number of mobile devices 
+in use in the context of a Fleet or Logistics Management System, or
+to place sensor data on a map in a Dashboard application.
+These systems may also include geofencing notifications and mapping
+(visual tracking) capabilities.
+
+<h3 id="smartcity-geolocation-variants">Variants:</h3>
+
+<ul>
+<li>A version of the system may log historical data so the past locations of the devices can be recovered.</li>
+<li>Geolocation technologies other than GPS may be used.  The payload
+  may contain additional information specific to the geolocation
+  technology used.  In particular, in indoor situations technologies such
+  as WiFi triangulation or (V)SLAM may be more appropriate.</li>
+<li>Geofencing may be implemented using event notifications and</li>
+  will require setting of additional parameters such as maximum distance.</li>
+</ul>
+
+<h2 id="smartcity-geolocation-security considerations">Security Considerations:</h2>
+
+High-resolution timestamps can be used in conjunction with cache manipulation to
+access protected regions of memory, as with the SPECTRE exploit. Certain
+geolocation APIs and technologies can return high-resolution timestamps which
+can be a potential problem.  Eventually these issues will be addressed in cache
+architecture but in the meantime a workaroun is to artificially limit the 
+resolution of timestamps.
+
+<h2 id="smartcity-geolocation-privacy considerations">Privacy Considerations:</h2>
+
+Location is generally considered private information when it is used with a device
+that may be associated with a specific person, such as a phone or vehicle, as it
+can be used to track that person and infer their activities or who they associate 
+with (if multiple people are being tracked at once).  Therefore APIs to access it
+in sensitive contexts are often restricted, and access is allowed only after confirming
+permission from the user.
+
+<h2 id="smartcity-geolocation-gaps">Gaps:</h2>
+
+There is no standardized semantic vocabulary for representing location data.
+Location data can be point data, a path, an area or a volumetric object.
+Location information can be expressed using multiple standards, 
+but the reader of location data in a TD or in data returned by an IoT device 
+must be able to unambiguously describe location information.
+<br><br>
+There are both dynamic (data returned by a mobile sensor) and static (fixed installation
+location) applications for geolocation data.  For dynamic location data, some recommended vocabulary
+to annotate data schemas would be useful.  For static location data, a standard format
+for metadata to be included in a TD itself would be useful.
+
+<h2 id="smartcity-geolocation-existing standards">Existing standards:</h2>
+
+<ul>
+<li>NMEA: defines sentences from GPS devices</li>
+<li>WGS84: <a href="https://en.wikipedia.org/wiki/World_Geodetic_Systemi">https://en.wikipedia.org/wiki/World_Geodetic_System</a></li>
+<ul>
+   <li>World Geodetic System</li>
+   <li>Defines lat/long/alt coordinate system used by most other geolocation standards</li>
+   <li>More complicated than you would think (need to deal with deviations of Earth from
+     a true sphere, gravitational irregularities, position of centroid, etc. etc.)</li>
+</ul>
+<li>Basic Geo Vocabulary: <a href="https://www.w3.org/2003/01/geo/">https://www.w3.org/2003/01/geo/</a></li>
+<ul>
+   <li>Very basic RDF definitions for lat, long, and alt</li>
+   <li>Does not define heading or speed</li>
+   <li>Does not define accuracy</li>
+   <li>Does not define timestamps</li>
+   <li>Uses string as a data model (rather than a number)</li>
+</ul>
+<li>W3C Geolocalization API: <a href="https://www.w3.org/TR/geolocation-API/i">https://www.w3.org/TR/geolocation-API/</a></li>
+<ul>
+   <li>W3C Devices and Sensors WG is now handling</li>
+   <li>There is an updated proposal: <a href="https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface">https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface</a></li>
+   <li>Data schema of updated proposal is similar to existing API, but all elements are now optional</li>
+   <li>Data includes latitude, longitude, altitude, heading, and speed</li>
+   <li>Accuracy is included for latitude/longitude (single number in meters, 95% confidence, interpretation
+     a little ambiguous, but probably intended to be a radius) and altitude, but not for heading or speed.</li>
+</ul>
+<li>Open Geospatial Consortium: <a href="https://www.ogc.org/"> https://www.ogc.org/</a></li>
+<ul>
+   <li>See <a href="http://docs.opengeospatial.org/as/18-005r4/18-005r4.html"> http://docs.opengeospatial.org/as/18-005r4/18-005r4.html</a></li>
+     <ul>
+      <li>Referring to locations by coordinates</li>
+     </ul>
+   <li>Has standards defining semantics for identifying locations</li>
+   <li>Useful for mapping</li>
+</ul>
+<li>ISO</li>
+<ul>
+   <li>ISO19111: <a href="https://www.iso.org/standard/74039.html">https://www.iso.org/standard/74039.html</a></li>
+     <ul>
+      <li>Standard for referring to locations by coordinates</li>
+      <li>Related to OGS standard above and WGS84</li>
+     </ul>
+   <li>Various other standards that relate to remote sensing, geolocation, etc.</li>
+   <li>Here is an example (see references): <a href="https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en">https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en</a></li>
+</ul>
+<li>SSN: <a href="https://www.w3.org/TR/vocab-ssn/">https://www.w3.org/TR/vocab-ssn/</a></li>
+<ul>
+   <li>Defines "accuracy": <a href="https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy">https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy</a></li>
+   <li>Definition of accuracy is consistent with how it is used in Web Geolocation API</li>
+   <li>Also defines related terms Precision, Resolution, Latency, Drift, etc.</li>
+</ul>
+<li>Timestamps:</li>
+<ul>
+   <li>W3C standard in proposed new web geolocation API: <a href="https://w3c.github.io/hr-time/#dom-domhighrestimestamp">https://w3c.github.io/hr-time/#dom-domhighrestimestamp</a></li>
+   <li>See also related issues such as latency defined in SSN</li>
+</ul>
+</ul>
+
+Note that accuracy and time are issues that apply to all kinds of sensors, not just
+geolocation.  However, the specific geolocation technology of GPS 
+is special since it is also a source of accurate time.
+
+<h2 id="smartcity-geolocation-comments">Comments:</h2>
+

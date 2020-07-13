@@ -1,0 +1,249 @@
+<h1 id="oauth">Title: OAuth2 Flows</h1>
+
+<h2 id="oauth-submitter">Submitter(s):</h2>
+
+Michael McCool, Cristiano Aguzzi
+
+<h2 id="oauth-reviewer">Reviewer(s):</h2>
+
+<Suggest reviewers>
+
+<h2 id="oauth-tracker issue id">Tracker Issue ID:</h2>
+
+<please leave blank>
+
+<h2 id="oauth-category">Category:</h2>
+
+<please leave blank>
+
+<h2 id="oauth-class">Class:</h2>
+
+<please leave blank>
+
+<h2 id="oauth-status">Status:</h2>
+
+WIP
+
+<h2 id="oauth-target users">Target Users:</h2>
+
+<ul>
+<li>device owner</li>
+<li>device user</li>
+<li>device application</li>
+<li>service provider</li>
+<li>identity provider</li>
+<li>directory service</li>
+</ul>
+
+<h2 id="oauth-motivation">Motivation:</h2>
+
+
+OAuth 2.0 is an authorization protocol widely known for its usage across several web services.
+It enables third-party applications to obtain limited access to HTTP services on behalf of the resource owner 
+or of itself. 
+The protocol defines the following actors:
+
+<ul>
+<li>Client: an application that wants to use a resource owned by the resource owner. </li>
+<li>Authorization Server: An intermediary that authorizes the client for a particular `scope`. </li>
+<li>Resource: a web resource </li>
+<li>Resource Server: the server where the resource is stored</li>
+<li>Resource Owner: the owner of a particular web resource. If it is a human is usually referred to as an end-user.</li>
+</ul>
+
+These actors can be mapped to WoT entities: 
+<ul>
+<li>Client is a WoT Consumer</li>
+<li>Authorization Server is a third-party service</li>
+<li>Resource is an interaction affordance</li>
+<li>Resource Server is a Thing described by a Thing Description acting as a server. 
+  May be a device or a service.</li>
+<li>Resource Owner might be different in each use case.
+  A Thing Description may also combine resources from different owners or web server.</li>
+</ul>
+  
+TO DO: Check the OAuth 2.0 spec to determine exactly how Resource Owner is defined.
+Is it the actual owner of the resource (eg running the web server) or simply someone
+with the rights to access that resource?
+<br><br>
+The OAuth 2.0 protocol specifies an authorization layer that separates the client from the resource owner.
+The basic steps of this protocol are summarized in the following diagram:
+
+<pre>
+     +--------+                               +---------------+
+     |        |--(A)- Authorization Request ->|   Resource    |
+     |        |                               |     Owner     |
+     |        |<-(B)-- Authorization Grant ---|               |
+     |        |                               +---------------+
+     |        |
+     |        |                               +---------------+
+     |        |--(C)-- Authorization Grant -->| Authorization |
+     | Client |                               |     Server    |
+     |        |<-(D)----- Access Token -------|               |
+     |        |                               +---------------+
+     |        |
+     |        |                               +---------------+
+     |        |--(E)----- Access Token ------>|    Resource   |
+     |        |                               |     Server    |
+     |        |<-(F)--- Protected Resource ---|               |
+     +--------+                               +---------------+
+</pre>
+
+Steps A and B defines what is known as authorization grant type or flow.
+What is important to realize here is that not all of these interactions
+are meant to take place over a network protocol.
+In some cases,
+interaction with with a human through a user interface may be intended.
+<br><br>
+OAuth2.0 defines 4 basic flows plus an extension mechanism.
+The most common of which are:
+<ul>
+<li>code</li>
+<li>implicit</li>
+<li>password (of resource owner)</li>
+<li>client (credentials of the client)</li>
+</ul>
+
+In addition, a particular extension which is of interest to IoT is the `device` flow.
+<br><br>
+Further information about the OAuth 2.0 protocol can be found in
+<a href="https://tools.ietf.org/html/rfc6749#section-1">IETF RFC6749</a>.
+In addition to the flows, OAuth 2.0 also supports scopes.
+Scopes are identifiers which can be attached to tokens.
+These can be used to limit authorizations to
+particular roles or actions in an API.
+Each token carries a set of scopes and these can be checked when an interaction
+is attempted and access can be denied if the token does not include a scope
+required by the interaction.
+<br><br>
+This document describes relevant use cases for each of the OAuth 2.0 authorization flows. 
+
+<h2 id="oauth-expected devices">Expected Devices:</h2>
+
+To support OAuth 2.0, all devices must have the capability of: 
+<ul>
+<li>Both the producer and consumer must be able to create and participate in a TLS connection.</li>
+<li>The producer must be able to verify an access (bearer) token (i.e. have sufficient computational power/connectivity). </li>
+</ul>
+
+Comment: 
+<ul>
+<li>Investigate whether DTLS can be used.
+  Certainly the connection needs to be encrypted; this is required in the OAuth 2.0 specification.</li>
+<li>Investigate whether protocols other than HTTP can be used, e.g. CoAP.</li>
+</ul>
+
+<h2 id="oauth-expected data">Expected Data:</h2>
+
+Depending on the OAuth 2.0 flow specified, various URLs and elements need to be specified,
+for example, the location of an authorization token server.
+OAuth 2.0 is also based on bearer tokens and so
+needs to include the same data as those, for example, expected encryption suite.
+Finally,
+OAuth 2.0 supports scopes so these need to be defined in the security scheme and specified in
+the form.
+
+<h2 id="oauth-dependencies - affected wot deliverables and/or work items">Dependencies - Affected WoT deliverables and/or work items:</h2>
+
+Thing Description, Scripting API, Discovery, and Security. 
+
+<h2 id="oauth-description">Description:</h2>
+
+A general use case for OAuth 2.0 is when a WoT consumer wants to access restricted interaction affordances.
+In particular, when those affordances have a specific resource owner which 
+may grant some temporary permissions to the consumer.  
+
+The WoT consumer can either be hosted in a remote device or interact directly with the end-user inside an application.
+
+<h3 id="oauth-variants">Variants:</h3>
+
+For each OAuth 2.0 flow, there is a corresponding use case variant.
+We also include the experimental "device" flow for consideration.
+
+<h4 id="oauth-code">code</h4>
+
+A natural application of this protocol is when the end-user wants to interact directly with the consumed thing or to provisioning his authorization to a remote device. In fact from the <a href="https://tools.ietf.org/html/rfc6749#section-4.1">RFC6749</a>
+<br><br>
+
+Since this is a redirection-based flow, the client must be capable of
+   interacting with the resource owner's user-agent (typically a web
+   browser) and capable of receiving incoming requests (via redirection)
+   from the authorization server.
+
+<br><br>
+This implies that the code flow can be only used when the resource owner interacts directly with the WoT consumer at least once. Typical scenarios are:
+
+<ul>
+<li>In a home automation context, a device owner uses a third party software to interact with/orchestrate one or more devices</li>
+<li>Similarly, in a smart farm, the device owner might delegate its authorization to third party services.</li>
+<li>...   </li>
+</ul>
+
+<h4 id="oauth-device">device</h4>
+
+The device flow is a variant of the code flow for browserless and input-constrained devices. Similarly, to its main flow, it requires a close interaction between the resource owner and the WoT consumer. Therefore, the use cases for this flow are the same as the code authorization grant but restricted to all devices that do not have a rich mean to interact with the resource owner.  
+
+
+<h4 id="oauth-client credential">client credential</h4>
+The Client Credentials grant type is used by clients to obtain an access token outside of the context of an end-user. From <a href="https://tools.ietf.org/html/rfc6749#section-4.4">RFC6749</a>:
+<br><br>
+   The client can request an access token using only its client
+   credentials (or other supported means of authentication) when the
+   the client is requesting access to the protected resources under its
+   control, or __those of another resource owner that has been previously
+   arranged with the authorization server__ (the method of which is beyond
+   the scope of this specification).
+<br><br>
+Therefore the client credential grant can be used:
+<ul>
+<li>When the resource owner is a public authority. For example, in a smart city context, the authority provides a web service where to register an application id.</li>
+<li>Companion application</li>
+<li>Industrial IoT. Consider a smart factory where the devices or services are provisioned with client credentials. </li>
+<li>...</li>
+</ul>
+
+<b>note</b> there is an <a href="https://tools.ietf.org/html/draft-tschofenig-ace-oauth-iot-01">RFC</a> that describes this flow for COAP clients.
+
+<h4 id="oauth-implicit">implicit</h4>
+<b>Deprecated</b>
+From  <a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">OAuth 2.0 Security Best Current Practice</a>:
+<br><br>
+   In order to avoid these issues, clients SHOULD NOT use the implicit
+   grant (response type "token") or other response types issuing access
+   tokens in the authorization response, unless access token injection
+   in the authorization, response is prevented and the aforementioned
+   token leakage vectors are mitigated.
+<br><br>
+The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE) instead. 
+
+<h4 id="oauth-resource owner password">resource owner password</h4>
+<b>Deprecated</b> From  <a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">OAuth 2.0 Security Best Current Practice</a>:
+<br><br>
+   The resource owner password credentials grant MUST NOT be used.  This
+   grant type insecurely exposes the credentials of the resource owner
+   to the client.  Even if the client is benign, this results in an
+   increased attack surface (credentials can leak in more places than
+   just the AS) and users are trained to enter their credentials in
+   places other than the AS.
+<br><br>
+
+
+
+<h2 id="oauth-security considerations">Security Considerations:</h2>
+
+See OAuth 2.0 security considerations in <a href="https://tools.ietf.org/html/rfc6749#section-10">RFC6749</a>
+
+<h2 id="oauth-privacy considerations">Privacy Considerations:</h2>
+
+<Describe any issues related to privacy; if there are none, say "none" and justify>
+
+<h2 id="oauth-gaps">Gaps:</h2>
+
+<Describe any gaps that are not addressed in the current WoT standards and building blocks>
+
+<h2 id="oauth-existing standards">Existing standards:</h2>
+
+<Provide links to relevant standards that are relevant for this use case>
+
+<h2 id="oauth-comments">Comments:</h2>
+Notice that the OAuth 2.0 protocol is not an authentication protocol, however <a href="https://openid.net/connect/">OpenID</a> defines an authentication layer on top of oAuth.
