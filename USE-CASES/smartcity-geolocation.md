@@ -125,7 +125,7 @@ High-resolution timestamps can be used in conjunction with cache manipulation to
 access protected regions of memory, as with the SPECTRE exploit. Certain
 geolocation APIs and technologies can return high-resolution timestamps which
 can be a potential problem.  Eventually these issues will be addressed in cache
-architecture but in the meantime a workaroun is to artificially limit the 
+architecture but in the meantime a workaround is to artificially limit the 
 resolution of timestamps.
 
 ### Privacy Considerations:
@@ -133,7 +133,7 @@ resolution of timestamps.
 Location is generally considered private information when it is used with a device
 that may be associated with a specific person, such as a phone or vehicle, as it
 can be used to track that person and infer their activities or who they associate 
-with (if multiple people are being tracked at once).  Therefore APIs to access it
+with (if multiple people are being tracked at once).  Therefore APIs to access geographic location
 in sensitive contexts are often restricted, and access is allowed only after confirming
 permission from the user.
 
