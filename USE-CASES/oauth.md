@@ -200,7 +200,7 @@ The following diagram shows the steps of the protocol adapted to WoT idioms and 
       +-----------(F)----- Access WoT --------------------------------+
                            Affordance
 ```
-Notice that steps (A), (B) and (C) are broken in two parts as they pass threw the User-Agent. 
+Notice that steps (A), (B) and (C) are broken in two parts as they pass through the User-Agent. 
 
 
 ##### device
