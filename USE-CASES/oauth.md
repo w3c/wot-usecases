@@ -46,6 +46,9 @@ The protocol defines the following actors:
 * Resource: a web resource 
 * Resource Server: the server where the resource is stored
 * Resource Owner: the owner of a particular web resource. If it is a human is usually referred to as an end-user.
+  More specifically from the RFC:
+  >  An entity capable of granting access to a protected resource.
+
 
 These actors can be mapped to WoT entities: 
 * Client is a WoT Consumer
@@ -118,6 +121,7 @@ Comment:
 * Investigate whether DTLS can be used.
   Certainly the connection needs to be encrypted; this is required in the OAuth 2.0 specification.
 * Investigate whether protocols other than HTTP can be used, e.g. CoAP.
+  - found an interesting IETF draft RFC about CoAP  support(encrypted using various mechanisms like DTLS or CBOR Object Signing and Encryption): [draft-ietf-ace-oauth](https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-35)
 
 ### Expected Data:
 
@@ -148,7 +152,7 @@ We also include the experimental "device" flow for consideration.
 
 ##### code
 
-A natural application of this protocol is when the end-user wants to interact directly with the consumed thing or to provisioning his authorization to a remote device. In fact from the [RFC6749](https://tools.ietf.org/html/rfc6749#section-4.1)
+A natural application of this protocol is when the end-user wants to interact directly with the consumed thing or to grant his authorization to a remote device. In fact from the [RFC6749](https://tools.ietf.org/html/rfc6749#section-4.1)
 
 > Since this is a redirection-based flow, the client must be capable of
    interacting with the resource owner's user-agent (typically a web
@@ -160,11 +164,87 @@ This implies that the code flow can be only used when the resource owner interac
 
 - In a home automation context, a device owner uses a third party software to interact with/orchestrate one or more devices
 - Similarly, in a smart farm, the device owner might delegate its authorization to third party services.
+- In a smart home scenario, Thing Description Directories might be deployed using this authorization mechanism. In particular, the list of the registered TDs might  require an explicit read authorization request to the device owner (i.e. an human who has bought the device and installed it). 
 - ...   
+
+The following diagram shows the steps of the protocol adapted to WoT idioms and entities. In this scenario, the WoT Consumer has read the Thing Description of a Remote Device and want to access one of its WoT Affordances protected with OAuth 2.0 code flow.  
+```
+                                                 +-----------+
+  +----------+                                   |           |
+  | Resource |                                   |  Remote   |
+  |   Owner  |                                   |  Device   +<-------+
+  |          |                                   |           |        |
+  +----+-----+                                   +-----------+        |
+       ^                                                              |
+       |                                                              |
+      (B)                                                             |
++------------+          Client Identifier      +---------------+      |
+|           ------(A)-- & Redirection URI ---->+               |      |
+|   User-    |                                 | Authorization |      |
+|   Agent   ------(B)-- User authenticates --->+     Server    |      |
+|            |                                 |               |      |
+|           ------(C)-- Authorization Code ---<+               |      |
++---+----+---+                                 +---+------+----+      |
+    |    |                                         ^      v           |
+   (A)  (C)                                        |      |           |
+    |    |                                         |      |           |
+    ^    v                                         |      |           |
++---+----+---+                                     |      |           |
+|            |>-+(D)-- Authorization Code ---------'      |           |
+|    WoT     |         & Redirection URI                  |           |
+|  Consumer  |                                            |           |
+|            |<-+(E)----- Access Token -------------------'           |
++-----+------+      (w/ Optional Refresh Token)                       |
+      v                                                               |
+      |                                                               |
+      +-----------(F)----- Access WoT --------------------------------+
+                           Affordance
+```
+Notice that steps (A), (B) and (C) are broken in two parts as they pass threw the User-Agent. 
+
 
 ##### device
 
-The device flow is a variant of the code flow for browserless and input-constrained devices. Similarly, to its main flow, it requires a close interaction between the resource owner and the WoT consumer. Therefore, the use cases for this flow are the same as the code authorization grant but restricted to all devices that do not have a rich mean to interact with the resource owner.  
+The device flow (IETF [RFC 8628](https://tools.ietf.org/html/rfc8628)) is a variant of the code flow for browserless and input-constrained devices. Similarly, to its *parent* flow, it requires a close interaction between the resource owner and the WoT consumer. Therefore, the use cases for this flow are the same as the code authorization grant but restricted to all devices that do not have a rich means to interact with the resource owner. However, differently from `code`, RFC 8628 states explicitly that one of the actors of the protocol is an **end-user** interacting with a **browser** (even if [section-6.2](https://tools.ietf.org/html/rfc8628#section-6.2) briefly describes an authentication using a companion app and BLE), as shown in the following (slightly adapted) diagram:
+```
++----------+
+|          |
+|  Remote  |
+|  Device  |
+|          |
++----^-----+
+     |
+     | (G) Access WoT Affordance
+     |
++----+-----+                                +----------------+
+|          +>---(A)-- Client Identifier ---v+                |
+|          |                                |                |
+|          +<---(B)-- Device Code,      ---<+                |
+|          |          User Code,            |                |
+|   WoT    |          & Verification URI    |                |
+| Consumer |                                |                |
+|          |  [polling]                     |                |
+|          +>---(E)-- Device Code       --->+                |
+|          |          & Client Identifier   |                |
+|          |                                |  Authorization |
+|          +<---(F)-- Access Token      ---<+     Server     |
++-----+----+   (& Optional Refresh Token)   |                |
+      v                                     |                |
+      :                                     |                |
+     (C) User Code & Verification URI       |                |
+      :                                     |                |
+      ^                                     |                |
++-----+----+                                |                |
+| End User |                                |                |
+|    at    +<---(D)-- End user reviews  --->+                |
+|  Browser |          authorization request |                |
++----------+                                +----------------+
+```
+Notable mentions:
+- the protocol is heavily end-user oriented. In fact, the RFC states the following
+  > Due to the polling nature of this protocol (as specified in Section 3.4), care is needed to avoid overloading the capacity of the token endpoint.  To avoid unneeded requests on the token endpoint, the client SHOULD only commence a device authorization request when **prompted by the user and not automatically**, such as when the app starts or when the previous authorization session expires or fails.
+- TLS is required both between WoT Consumer/Authorization Server and between Browser/Authorization Server
+- Other user interactions methods may be used but are left out of scope
 
 
 ##### client credential
@@ -183,7 +263,29 @@ Therefore the client credential grant can be used:
 - Industrial IoT. Consider a smart factory where the devices or services are provisioned with client credentials. 
 - ...
 
-**Note** there is an [RFC](https://tools.ietf.org/html/draft-tschofenig-ace-oauth-iot-01) that describes this flow for COAP clients.
+The Client Credentials flow is illustrated in the following diagram. Notice how the Resource Owner is not present. 
+
+```
++----------+
+|          |
+|  Remote  |
+|  Device  |
+|          |
++----^-----+
+     |
+     |  (C) Access WoT Affordance
+     ^
++----+-----+                                  +---------------+
+|          |                                  |               |
+|          +>--(A)- Client Authentication --->+ Authorization |
+|   WoT    |                                  |     Server    |
+| Consumer +<--(B)---- Access Token ---------<+               |
+|          |                                  |               |
+|          |                                  +---------------+
++----------+
+```
+
+Comment: Usually client credentials are distributed using an external service which is used by humans to register a particular application. For example, the `npm` cli has a companion dashboard where a developer requests the generation of a token that is then passed to the cli. The token is used to verify the publishing process of `npm` packages in the registry. Further examples are Docker cli and OpenId Connect Client Credentials. 
 
 ##### implicit
 **Deprecated**
@@ -197,6 +299,49 @@ From  [OAuth 2.0 Security Best Current Practice](https://tools.ietf.org/html/dra
 
 The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE) instead. 
 
+The implicit flow was designed for public clients typically implemented inside a browser (i.e. javascript clients). As the `code` is a redirection-based flow and it requires direct interaction with the resource's owner user-agent. However, it requires one less step to obtain a token as it is returned directly in the authentication request (see the diagram below).
+
+Considering the WoT context this flow is not particularly different from `code` grant and it can be used in the same scenarios.  
+
+Comment: even if the `implicit` flow is deprecated existing services may still using it. 
+
+```
++----------+
+| Resource |
+|  Owner   |
+|          |
++----+-----+
+     ^
+     |
+    (B)
++----------+          Client Identifier     +---------------+
+|         ------(A)-- & Redirection URI --->+               |
+|  User-   |                                | Authorization |
+|  Agent  ------(B)-- User authenticates -->+     Server    |
+|          |                                |               |
+|          +<---(C)--- Redirection URI ----<+               |
+|          |          with Access Token     +---------------+
+|          |            in Fragment
+|          |                                +---------------+
+|          +----(D)--- Redirection URI ---->+   Web-Hosted  |
+|          |          without Fragment      |     Client    |
+|          |                                |    Resource   |
+|     (F)  +<---(E)------- Script ---------<+               |
+|          |                                +---------------+
++-+----+---+
+  |    |
+ (A)  (G) Access Token
+  |    |
+  ^    v
++-+----+---+                                   +----------+
+|          |                                   |  Remote  |
+|   WoT    +>---------(H)--Access WoT--------->+  Device  |
+| Consumer |               Affordance          |          |
+|          |                                   +----------+
++----------+
+
+```
+
 ##### resource owner password
 **Deprecated** From  [OAuth 2.0 Security Best Current Practice](https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2):
 
@@ -207,12 +352,40 @@ The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE)
    just the AS) and users are trained to enter their credentials in
    places other than the AS.
 
+For completeness the diagram flow is reported below.  
 
+```
+ +----------+
+ | Resource |
+ |  Owner   |
+ |          |
+ +----+-----+
+      v
+      |    Resource Owner
+     (A) Password Credentials
+      |
+      v
++-----+----+                                  +---------------+
+|          +>--(B)---- Resource Owner ------->+               |
+|          |         Password Credentials     | Authorization |
+|   WoT    |                                  |     Server    |
+| Consumer +<--(C)---- Access Token ---------<+               |
+|          |    (w/ Optional Refresh Token)   |               |
++-----+----+                                  +---------------+
+      |
+      | (D) Access WoT Affordance
+      |
+ +----v-----+
+ |  Remote  |
+ |  Device  |
+ |          |
+ +----------+
+```
 
 
 ### Security Considerations:
 
-See OAuth 2.0 security considerations in [RFC6749](https://tools.ietf.org/html/rfc6749#section-10)
+See OAuth 2.0 security considerations in [RFC6749](https://tools.ietf.org/html/rfc6749#section-10). See also [RFC 8628 section 5](https://tools.ietf.org/html/rfc8628#section-5) for `device` flow.
 
 ### Privacy Considerations:
 
@@ -227,4 +400,4 @@ See OAuth 2.0 security considerations in [RFC6749](https://tools.ietf.org/html/r
 <Provide links to relevant standards that are relevant for this use case>
 
 ### Comments:
-Notice that the OAuth 2.0 protocol is not an authentication protocol, however [OpenID](https://openid.net/connect/) defines an authentication layer on top of oAuth.
+Notice that the OAuth 2.0 protocol is not an authentication protocol, however [OpenID](https://openid.net/connect/) defines an authentication layer on top of OAuth 2.0.
