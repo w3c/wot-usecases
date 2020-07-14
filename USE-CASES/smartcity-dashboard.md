@@ -37,7 +37,7 @@ TO DO.
 - gateway manufacturer
 - network operator (potentially transparent for WoT use cases)
 - identity provider
-- directory service operator
+- directory service operator>
 
 ### Motivation:
 
