@@ -1,4 +1,4 @@
-## Title: <Pick a descriptive title>
+## Title: Smart City Dashboard
 
 ### Submitter(s): 
 
