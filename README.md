@@ -21,14 +21,14 @@ In the virtual F2F members of the Architecture WG and Use Case WG assigned the f
 to the use cases for the 1st round. 
 The list shows the owners for each use case category and expected timeline for a requirement document. 
 
-Category | business critical | business relevant | useful | not interested | Priority | Timeline for requirements document | Owner | Comments
-| ------- | ---- | ---- | ---- | --- | --- | --- | --- | --- | --- |
-|Retail | 3 | 4 | 5 | 1 | 1 | 2-4 weeks | McCool (+ David ?) | Will be discussed in POC meeting.
+| Category | business critical | business relevant | useful | not interested | Priority | Timeline for requirements document | Owner | Comments |
+| ------- | ---- | ---- | ---- | --- | --- | --- | --- | --- | 
+|Retail | 3 | 4 | 5 | 1 | 1 | 2-4 weeks | McCool (+ David ?) | Will be discussed in POC meeting. |
 |Audio/Video | 2 | 5 | 6 | 0 | 1 | ? | NHK + Kaz (+Chris Needham?) | 
 |Agriculture | 2 | 3 | 7 | 1 | 1 | 2 weeks (greenhouse) | Matsukura-san + Cristiano | Requirement for greenhouse horticulture exists
  |  |  |  |  |  | 4 week |  | 
-|Smart City | 3 | 6 | 4 | 0 | 1 | 2-4 weeks | McCool + Jennifer | Will be discussed in POC meeting.
-|Health | 3 | 5 | 2 | 3 | 2 * |  |  | Need expertise - 
+|Smart City | 3 | 6 | 4 | 0 | 1 | 2-4 weeks | McCool + Jennifer | Will be discussed in POC meeting.|
+|Health | 3 | 5 | 2 | 3 | 2 * |  |  | Need expertise - |
 |Manufacturing | 4 | 5 | 3 | 1 | 1 | ? | Sebastian+Christian | 
 |Multi Vendor System Integration | 2 | 9 | 1 | 1 | 1 | 4 weeks | Lagally | horizontal
 |Multimodal System Integration | 2 | 2 | 7 | 2 | 2 | 3-4 weeks | McCool + Kaz + Josh  | horizontal
