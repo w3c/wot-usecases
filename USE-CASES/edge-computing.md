@@ -138,7 +138,9 @@ some means of evaluating the trustworthiness of edge computers is needed.
 
 ### Existing standards:
 
-<Provide links to relevant standards that are relevant for this use case>
+* [IoT Edge Challenges and Functions](https://tools.ietf.org/html/draft-hong-t2trg-iot-edge-computing-04), IETF Internet-Draft, Network Working Group, version 04, expires 26 November 2020.
+* [IIC/OpenFog](https://www.iiconsortium.org/fog-and-edge-white-papers.htm), Fog and Edge Computing White Papers
+* [ETSI MEC](https://www.etsi.org/technologies/multi-access-edge-computing), ETSI standards for Multiaccess Edge Computing 
 
 ### Comments:
 
