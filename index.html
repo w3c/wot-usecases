@@ -172,189 +172,2354 @@
 		<h2>Use Cases</h2>
 		<section id="domains">
 	        <h2>Application Domains</h2>
-		    <section id="domains" class="ednote">TODO: Align / revisit domains with architecture document.</section>
-	        	           
-           <!-- Domains in the architecture document: -->
-           
-            <section id="smart-home">
-                <h3>Smart Home</h3>
-            </section>
-            
-            <section id="industrial">
-                <h3>Industrial</h3>
-             </section>
-             
-            <section id="transportation">
-                <h4 id="transportation">Transportation</h4>
-            </section>
-            
-            <section id="logistics">
-                <h4 id="logistics">Logistics</h4>
-            </section>
 
-            <section id="manufacturing">
-                <h4 id="manufacturing">Manufacturing</h4>
-            </section>
+<section id="Retail">
+<section id="retail">
+<h3>Retail</h3>
 
-            <section id="retail">
-                <h4 id="retail">Retail</h4>
-            </section>
+<section id="retail-submitter">
+<h4>Submitter(s)</h4>
 
-            <section id="sec-broadcast">
-                <h4 id="broadcast">Broadcast</h4>
-            </section>
-            
-            <section id="energy">
-                <h4 id="energy">Energy</h4>
-            </section>
-            
-            <section id="fleetmanagement">
-                <h4 id="fleetmanagement">Fleet Management</h4>
-            </section>
-            
-            <section id="agriculture">
-                <h3 id="agriculture">Agriculture</h3>
-            </section>
-            
-            <section id="smart-city">
-                <h3 id="smartcity">Smart City</h3>
-            </section>
-            
-            <section id="sec-smart-buildings">
-                <h3 id="smartbuildings">Smart Buildings</h3>
-            </section>
-                         
-            <section id="health">
-                <h3 id="health">Health</h3>
-            </section>
-        
-            <!--   section id="sec-utilities">
-                <h4 id="utilities">Utilities</h4>
-            </section>
-            
-            <section id="sec-oilandgas">
-                <h4 id="oilandgas">Oil and Gas</h4>
-            </section>
-            
-            <section id="sec-insurance">
-                <h4 id="insurance">Insurance</h4>
-            </section>
-            
-            <section id="sec-engineering-and-construction">
-                <h4 id="engineering-and-construction">Engineering
-                    and Construction</h4>
-            </section>
-            -->
-            
-            <section id="sec-healthcare">
-                <h3 id="healthcare">Healthcare</h3>
-            </section>
-            
-            <section id="sec-environmentmonitoring">
-                <h3 id="environmentmonitoring">Environment
-                    Monitoring</h3>
-            </section>
-            
-            <section id="automotive">
-                <h3 id="automotive">Automotive</h3>
-            </section>
+David Ezell, Michael Lagally, Michael McCool
 
-            <section id="other">
-                <h3 id="other">Cross domain</h3>
-            	<section id="accessibility">
-                	<h3 id="other">Accessibility</h3>
-                </section>
-            </section>
+</section>
+
+<section id="retail-reviewer">
+<h4>Reviewer(s)</h4>
+
+&lt;Suggest reviewers&gt;
+
+</section>
+
+<section id="retail-tracker issue id">
+<h4>Tracker Issue ID</h4>
 
 
+</section>
 
-<!--
-## Categories of new use cases 
-See: https://github.com/w3c/wot-architecture/blob/master/USE-CASES/README.md
+<section id="retail-category">
+<h4>Category</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="retail-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="retail-status">
+<h4>Status</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="retail-target users">
+<h4>Target Users</h4>
+
+Retailers, customers, suppliers.
+
+</section>
+
+<section id="retail-motivation">
+<h4>Motivation</h4>
+
+Integrating and interconnecting multiple devices into the common retail workflow 
+(i.e., transaction log) drastically improves retail business operations at multiple levels. 
+It brings operational visibility,including consumer behavior and environmental information, 
+that was not previously possible or viable in a meaningful way. 
+
+It drastically speeds up the process of root cause analysis of operational issues and 
+simplifies the work of retailers.
+
+</section>
+
+<section id="retail-expected devices">
+<h4>Expected Devices</h4>
+
+Connected sensors, such as people counters, presence sensors, air quality, room ocupancy, door sensors. 
+Cloud services.  Video analytics edge services.
+
+</section>
+
+<section id="retail-expected data">
+<h4>Expected Data</h4>
+ 
+Inventory data, supply chain status information, discrete sensor data or data streams.
+
+</section>
+
+<section id="retail-dependencies">
+<h4>Dependencies</h4>
+
+&lt;List the affected WoT deliverables&gt;
+tbd
+
+</section>
+
+<section id="retail-description">
+<h4>Description</h4>
+
+Falling costs of sensors, communications, and handling of very large volumes of data combined with cloud 
+computing enable retail business operations with increased operational efficiency, better customer service, 
+and even increased revenue growth and return on investment.
+
+Accurate forecasts allow retailers to coordinate demand-driven outcomes that deliver connected customer interactions.
+They drive optimal strategies in planning, increasing inventory productivity in retail supply chains, 
+decreasing operational costs and driving customer satisfaction from engagement, to sale, to fulfilment. 
+
+Understanding of store activity juxtaposed with traditional information streams can boost worker and consumer safety, 
+comply better with work safety regulations, enhance system and site security, and improve worker efficiency 
+by providing real-time visibility into worker status, location, and work environment.
+
+</section>
+
+<section id="retail-variants">
+<h4>Variants</h4>
+
+<ul>
+<li>Use edge computing, in particular video analytics, in combination with IoT devices to deliver an enhanced </li>
+</ul>
+  customer experience, better manage inventory, or otherwise improve the store workflow.
+  
+</section>
+
+<section id="retail-security considerations">
+<h4>Security Considerations</h4>
+
+<ul>
+<li>In retail, replay attacks can cause monetary loss, customers may be incorrectly charged or over-charged.</li>
+<li>To avoid replay attacks, "Things" should implement a sequence number for each message and digital signature.</li>
+<li>Servers ("Things" or "Cloud") should verify the signature and disallow for duplicated messages.</li>
+<li>For "Things" relying on electronic payments, "Things" must comply with PCI-DSS requirements.</li>
+<li>"Things" must never store credit card information.</li>
+<li>Customer satisfaction and trust depends on availability, so attacks such as Denial-of-Service (DoS) need to be prevented or mitigated.</li>
+<li>To prevent DoS, implement "Things" with early DoS detection.</li>
+<li>Have an automated DoS system that will notify the controlling unit of the problem.</li>
+<li>Implement IP white list, that could be part of the DoS early detection system.</li>
+<li>Make sure your network perimeter is defended with up to date firewall software.</li>
+</ul>
+
+</section>
+
+<section id="retail-privacy considerations">
+<h4>Privacy Considerations</h4>
+ 
+As a general rule, personal consumer information should not be stored.
+That is especially true in the retail industry where a security breach could cause financial, reputation, and brand damage.
+If personal or information that can identify a consumer is to be stored,
+it should be to conduct business and with the explicit acknowledgment of the consumer.
+WoT vendors and integrators should always have a privacy policy and make it easily available.
+By default, devices should adopt an opt-out policy.
+That means, unless the consumer explicitly allowed for the data capture and storage, avoid doing it.
+
+</section>
+
+<section id="retail-gaps">
+<h4>Gaps</h4>
+
+&lt;Describe any gaps that are not addressed in the current WoT work items&gt;
+tbd
+
+</section>
+
+<section id="retail-existing standards">
+<h4>Existing standards</h4>
+
+&lt;Provide links to relevant standards that are relevant for this use case&gt;
+tbd
+
+</section>
+
+<section id="retail-comments">
+<h4>Comments</h4>
 
 
-### Retail
-Integrating and interconnecting multiple devices into the common retail workflow.
-[Retail.md](retail.md)
+</section>
 
-### Audio/Video
-[Media Use Case Information Bucket](media-information-references.md)
+<section id="Audio_Video">
+<section id="media-information-references">
+<h3>Media Use Case Information Bucket</h3>
 
-Synchronise Home WoT devices with TV program
-[nhk-device-tv-sync.md](nhk-device-tv-sync.md)
 
-### Agriculture
-Smart Agriculture (Greenhouse Horticulture) to create an optimal environment for growing plants.
-[smart-agriculture.md](smart-agriculture.md)
+This document is not a full use case description. It is rather a collection of 
+thoughts and ideas to capture information and provide references and have a common discussion basis.
 
-### Smart City
-Managing mobile devices and sensors in a Smart City. 
-[smartcity-geolocation.md](smartcity-geolocation.md)
+The intention is to trigger new ideas and collect them in a single document at this point.
 
-Interactive Public Spaces
-[mmi-3-1_interactive-public-spaces.md](mmi-3-1_interactive-public-spaces.md)
+The document is work in progress.
 
-Meeting Room Event Assistance
-[mmi-3-2_meeting-room-event-assistance.md](mmi-3-2_meeting-room-event-assistance.md)
+<section id="media-information-references-submitter">
+<h4>Submitter(s)</h4>
 
-### Health
-#### Public Health
-Monitor the health of people in public places to
-control the spread of infectious diseases.
-[smartcity-health-monitoring.md](smartcity-health-monitoring.md)
+&lt;Put your name here&gt;
 
-#### Private Health
-Health Notifiers
-[mmi-4-1_health-notifiers.md](mmi-4-1_health-notifiers.md)
+</section>
 
-### Manufacturing
-Monitoring production lines and plants and predicting and preventing fault conditions. 
-[big-data.md](big-data.md)
+<section id="media-information-references-reviewer">
+<h4>Reviewer(s)</h4>
 
-#### Multi-Vendor System Integration 
-Analyze their physical assets to troubleshoot in real time, predict future problems, minimize downtime, and perform simulations.
-[Digital Twin](digital-twin.md)
+&lt;Suggest reviewers&gt;
 
-Multi vendor and protocol interoperability by communicating across different protocols. 
-[X-Protocol-Interworking.md](X-Protocol-Interworking.md)
+</section>
 
-### Multimodal System Integration
+<section id="media-information-references-tracker issue id">
+<h4>Tracker Issue ID</h4>
 
-Multimodal Recognition Support
-[mmi-5-1_multimodal-recognition-support.md](mmi-5-1_multimodal-recognition-support.md)
+&lt;please leave blank&gt;
 
-Synergistic Interactions
-[mmi-5-2_enhancement-of-synergistic-interactions.md](mmi-5-2_enhancement-of-synergistic-interactions.md)
+</section>
 
-### Smart Home Accessibility
-Audiovisual Devices Acting as Smartphone Extensions
-[mmi-1-1_audiovisual-devices-as-smartphone-extensions.md](mmi-1-1_audiovisual-devices-as-smartphone-extensions.md)
+<section id="media-information-references-category">
+<h4>Category</h4>
 
-Unified Smart Home Control and Status
-[mmi-1-2_unified-smart-home-control-and-status.md](mmi-1-2_unified-smart-home-control-and-status.md)
+&lt;please leave blank&gt;
 
-### Automotive
+</section>
 
-Smart Car Configuration Management
-[mmi-2-1_smart-car-configuration-management.md](mmi-2-1_smart-car-configuration-management.md)
+<section id="media-information-references-class">
+<h4>Class</h4>
 
-### Energy / Smart Grid
-**PR available**
-[]()
+&lt;please leave blank&gt;
 
-### Fleet Management
-**PR available**
-high level, needs more detail.
-[]()
+</section>
 
-### Data Streaming
-**Needs Contribution**
-https://github.com/w3c/wot-architecture/issues/387
+<section id="media-information-references-status">
+<h4>Status</h4>
 
-### Discovery
-**Needs Contribution**
+&lt;please leave blank&gt;
 
-		
+</section>
+
+<section id="media-information-references-target users">
+<h4>Target Users</h4>
+
+&lt;List all stakeholders that are involved in the use case from the following list:
+<ul>
+<li>device owners</li>
+<li>device user</li>
+<li>cloud provider</li>
+<li>service provider</li>
+<li>device manufacturer</li>
+<li>gateway manufacturer</li>
+<li>network operator (potentially transparent for WoT use cases)</li>
+<li>identity provider</li>
+<li>directory service operator&gt;</li>
+</ul>
+
+</section>
+
+<section id="media-information-references-motivation">
+<h4>Motivation</h4>
+
+&lt;Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users&gt;
+
+</section>
+
+<section id="media-information-references-expected devices">
+<h4>Expected Devices</h4>
+
+&lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
+
+</section>
+
+<section id="media-information-references-expected data">
+<h4>Expected Data</h4>
+
+&lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors, vehicle data&gt;
+
+</section>
+
+<section id="media-information-references-dependencies - affected wot deliverables and/or work items">
+<h4>Dependencies - Affected WoT deliverables and/or work items</h4>
+
+&lt;List the affected WoT deliverables that have to be changed to enable this use case&gt;
+
+</section>
+
+<section id="media-information-references-description">
+<h4>Description</h4>
+
+<ul>
+<li>Sync of media across different devices:</li>
+<li>people in different homes watch the same content at the same time. Conversation about content.</li>
+<li>Multi-room sync playback</li>
+<li>Multi-camera angles </li>
+</ul>
+
+<ul>
+<li>Voice control of a media playback device (integration of smart speakers from multiple vendors)</li>
+</ul>
+Describe proprietary (vendor specific) device control interfaces to control media playback on TV set.
+(proprietary implementations exist, open protocol is proposed?)
+
+#### Variants:
+
+&lt;Describe possible use case variants, if applicable&gt;
+
+</section>
+
+<section id="media-information-references-gaps">
+<h4>Gaps</h4>
+
+&lt;Describe any gaps that are not addressed in the current WoT standards and building blocks&gt;
+
+</section>
+
+<section id="media-information-references-existing standards & related information">
+<h4>Existing standards & related information</h4>
+
+&lt;Provide links to relevant standards that are relevant for this use case&gt;
+There are MANY TV standards and this would be a long list. Rather leave blank unless a very specific standard provides more insight.
+
+</section>
+
+<section id="media-information-references-comments">
+<h4>Comments</h4>
+
+#### Further information and resources:
+
+NHK Hybridcast updates:
+https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf 
+
+MediaTimedEvents in Hybridcast:
+https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf 
+
+BBC Moto GP at Home:
+https://2immerse.eu/motogp-at-home/  
+
+<section id="nhk-device-tv-sync">
+<h3>Home WoT devices work according to TV programs</h3>
+
+
+<section id="nhk-device-tv-sync-submitter">
+<h4>Submitter(s)</h4>
+
+Hiroki Endo,
+Masaya Ikeo,
+Shinya Abe,
+Hiroshi Fujisawa
+
+
+</section>
+
+<section id="nhk-device-tv-sync-reviewer">
+<h4>Reviewer(s)</h4>
+
+&lt;Suggest reviewers&gt;
+
+</section>
+
+<section id="nhk-device-tv-sync-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+
+</section>
+
+<section id="nhk-device-tv-sync-category">
+<h4>Category</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="nhk-device-tv-sync-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="nhk-device-tv-sync-status">
+<h4>Status</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="nhk-device-tv-sync-target users">
+<h4>Target Users</h4>
+
+Person watching TV, Broadcasters
+
+</section>
+
+<section id="nhk-device-tv-sync-motivation">
+<h4>Motivation</h4>
+
+&lt;Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users&gt;
+
+A lot of home devices, such as TV, cleaner, and home lighting, connect to an IP network.
+When you watch a content program, these devices should coorperate for enhancing your expereence.
+
+If the cleaning robot makes a loud noise while watching the TV program, it will hinder viewing. 
+Also, even if you set up the theater environment with smart lights, it is troublesome to operate it yourself each time the TV program switches.
+
+Therefore, by WoT device to operate in accordance with the TV program being viewed, thereby improving the user experience.
+
+WoT devices work according to TV programs:
+
+<ul>
+<li>Cleaning robot stops at an important situation,</li>
+<li>Color of smart lights are changed according to TV programs,</li>
+<li>Smart Mirror is notified that favorite TV show will start.</li>
+</ul>
+
+</section>
+
+<section id="nhk-device-tv-sync-expected devices">
+<h4>Expected Devices</h4>
+
+<ul>
+<li>Hybridcast TV</li>
+<li>Hybridcast Connect application (in a smartdevice such as smartphone)</li>
+<li>Cleaning Robot</li>
+<li>Smart Light (such as Philips Hue)</li>
+<li>Smart Mirror</li>
+</ul>
+
+</section>
+
+<section id="nhk-device-tv-sync-expected data">
+<h4>Expected Data</h4>
+
+The trigger value of the scene of the TV program.
+Hybridcast connect application know the Thing Description of the devices in home. (Discovery?)
+
+</section>
+
+<section id="nhk-device-tv-sync-dependencies">
+<h4>Dependencies</h4>
+
+&lt;List the affected WoT deliverables&gt;
+
+</section>
+
+<section id="nhk-device-tv-sync-description">
+<h4>Description</h4>
+
+Home smart devices behave according to TV programs.
+
+Hybridcast applications in TV emit information about TV programs for smart home devices.
+(Hybridcast is a Japanese Integrated Broadcast-Broadband system. Hybridcast applications are HTML5 applications that work on Hybridcast TV.)
+
+Hybridcast Contact application receives the information and controlls smart home devices.
+
+!<a href="images/scenario_nhk.png">scenario_nhk</a>
+
+#### Variants:
+
+&lt;Describe possible use case variants, if applicable&gt;
+
+</section>
+
+<section id="nhk-device-tv-sync-gaps">
+<h4>Gaps</h4>
+
+&lt;Describe any gaps that are not addressed in the current WoT work items&gt;
+
+</section>
+
+<section id="nhk-device-tv-sync-existing standards">
+<h4>Existing standards</h4>
+
+Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system, 
+HbbTV, 
+ATSC 3.0, 
+...etc.
+
+</section>
+
+<section id="nhk-device-tv-sync-comments">
+<h4>Comments</h4>
+
+
+</section>
+<section id="Agriculture">
+#include="smart-agriculture.html"
+</section>
+
+<section id="Smarti_City">
+#include="smartcity-geolocation.html"
+#include="mmi-3-1_interactive-public-spaces.html"
+#include="mmi-3-2_meeting-room-event-assistance.html"
+</sectiion>
+
+<section id="Health">
+#include="smartcity-health-monitoring.html"
+#include="mmi-4-1_health-notifiers.html"
+</section>
+
+<section id="Manufacturing">
+#include="big-data.html"
+</section>
+
+<section id="Multi_Vendor_System_Integration">
+#include="digital-twin.html"
+#include="X-Protocol-Interworking.html"
+</section>
+
+<section id="Multimodal_System_Integration">
+#include="mmi-5-1_multimodal-recognition-support.html"
+#include="mmi-5-2_enhancement-of-synergistic-interactions.html"
+</section>
+
+<section id="Accessibility">
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions">
+<h3>Audiovisual Devices Acting as Smartphone Extensions</h3>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-submitter">
+<h4>Submitter(s)</h4>
+
+Michael McCool
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-reviewer">
+<h4>Reviewer(s)</h4>
+
+&lt;Suggest reviewers&gt;
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-category">
+<h4>Category</h4>
+
+Accessibility
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-status">
+<h4>Status</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-target users">
+<h4>Target Users</h4>
+
+&lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer, cloud provider&gt;
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-motivation">
+<h4>Motivation</h4>
+
+Many of today's home IoT-enabled devices can provide similar functionality
+(e.g. audio/video playback),
+differing only in certain aspects of the user interface.
+This use case would allow continuous interaction with a specific
+application as the user moves from room to room,
+with the user interface switched automatically to the set of
+devices available in the user's present location.
+
+On the other hand, 
+some devices can have specific capabilities 
+and user interfaces that can be used to add information to a larger context
+that can be reused by other applications and devices.
+This drives the need to spread an application across different devices
+to achieve a more user-adapted and meaningful interaction according to the 
+context of use.
+Both aspects provide arguments for exploring use cases where
+applications use distributed multimodal interfaces.
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-expected devices">
+<h4>Expected Devices</h4>
+
+Mobile phone or other client running an application requiring a extended and
+more accessible user interface.
+
+IoT-enabled audio-visual devices providing audio and visual information
+display capabilities that can be used to augment the user interface of the 
+application.
+
+Possible edge computation services providing speech-to-text or described video
+(e.g. object detection) capabilities.
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-expected data">
+<h4>Expected Data</h4>
+
+Visual display information mapping information from audio to visual modalities,
+for example text generated from voice recognition.
+
+Text from an application that needs to be displayed at a larger size.
+
+Visual alerts correspondig to audio stimuli, eg sound effects in a game mapped
+to visual icons.
+
+Visual information mapped to audio information, for example,
+described video based on an AI service providing object recognition.
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-dependencies">
+<h4>Dependencies</h4>
+
+<ul>
+<li>WoT Thing Description</li>
+<li>WoT Discovery</li>
+<li>Optional: WoT Scripting API accessible from application for interacting</li>
+</ul>
+with devices.
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-description">
+<h4>Description</h4>
+
+A home entertainment system is adapted by a mobile device
+as a set of user interface components.
+
+In addition to media rendering and playback,
+these Devices also act as input or output modalities for
+an application, for example an application running on a smartphone.
+The native user interface on the application 
+does not have to be manipulated directly at all.
+A wall-mounted touch-sensitive TV could be used to navigate applications,
+and a wide-range microphone can handle speech input.
+Spatial (Kinect-style) gestures may also be used to control 
+application behavior.
+
+Accessibility support software on the smartphone 
+discovers available modalities and arranges them to best 
+serve the user's purpose. 
+One display can be used to show photos and movies, 
+another for navigation. 
+As the user walks into another room, 
+this configuration is adapted dynamically to the new location. 
+User intervention may be sometimes required to decide on 
+the most convenient modality configuration. 
+The state of the interaction is maintained 
+while switching between modality sets. 
+For example, 
+if the user was navigating a GUI menu in the living room, 
+it is carried over to another screen when she switches rooms, 
+or replaced with a different modality such as voice 
+if there are no displays in the new location.
+
+#### Variants:
+
+Modalities may be translated from one form to another to accomodate
+accessibility issues, for example, visual cues into audio cues and 
+vice-versa, as appropriate.
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-gaps">
+<h4>Gaps</h4>
+
+An AI service may be require to perform modality mapping, for example,
+object recognition.
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-existing standards">
+<h4>Existing standards</h4>
+
+This use case is based on MMI UC 1.1.
+
+</section>
+
+<section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions-comments">
+<h4>Comments</h4>
+
+Does not include Requirements section from original MMI use case.
+Variant supporting 
+modality conversion is not included in the original MMI use case.
+<section id="mmi-1-2_unified-smart-home-control-and-status">
+<h3>Unified Smart Home Control and Status Interface</h3>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-submitter">
+<h4>Submitter(s)</h4>
+
+Michael McCool
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-reviewer">
+<h4>Reviewer(s)</h4>
+
+&lt;Suggest reviewers&gt;
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-category">
+<h4>Category</h4>
+
+Accessibility
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-status">
+<h4>Status</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-target users">
+<h4>Target Users</h4>
+
+&lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer, cloud provider&gt;
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-motivation">
+<h4>Motivation</h4>
+
+The increase in the number of controllable devices in an
+intelligent home creates a problem with controlling all available services
+in a coherent and useful manner.
+Having a shared context,
+built from information collected through sensors and direct user input,
+ would improve recognition of user intent, and thus simplify interactions.
+
+In addition,
+multiple input mechanisms could be selected by the user based on device type,
+level of trust and the type of interaction required for a particular task.
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-expected devices">
+<h4>Expected Devices</h4>
+
+Mobile phone or other client running an application providing command
+mediation capabilities.
+
+IoT-enabled smart home devices supporting
+remote sensing and actuation functionality.
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-expected data">
+<h4>Expected Data</h4>
+
+Command and status information transferred between the command mediation
+application and one or more devices.
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-dependencies">
+<h4>Dependencies</h4>
+
+<ul>
+<li>WoT Thing Description</li>
+<li>WoT Discovery</li>
+<li>Optional: WoT Scripting API accessible from application for interacting </li>
+</ul>
+  with devices.
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-description">
+<h4>Description</h4>
+
+Smart home functionality (window blinds, lights, air conditioning etc.)
+is controlled through a multimodal interface,
+composed from modalities built into the house itself
+(e.g. speech and gesture recognition)
+and those available on the user's personal devices
+(e.g. smartphone touchscreen).
+The system may automatically adapt to the preferences of a specific user,
+or enter a more complex interaction if multiple people are present.
+
+Sensors built into various devices around the house can act as input
+modalities that feed information to the home and affect its behavior.
+For example,
+lights and temperature in the gym room can be adapted dynamically
+as workout intensity recorded by the fitness equipment increases.
+The same data can also increase or decrease volume and tempo of music tracks
+played by the user's mobile device or the home's media system.
+
+#### Variants:
+
+The intelligent home in tandem with the user's personal
+devices can additionally monitor user behavior for emotional patterns
+such as 'tired' or 'busy' and adapt further.
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-gaps">
+<h4>Gaps</h4>
+
+A service may be needed to recognize gestures and emotional states.
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-existing standards">
+<h4>Existing standards</h4>
+
+This use case is based on MMI UC 1.2; original title was Intelligent Home Apparatus.
+
+</section>
+
+<section id="mmi-1-2_unified-smart-home-control-and-status-comments">
+<h4>Comments</h4>
+
+Does not include Requirements section from original MMI use case.
+</section>
+
+<section id="Automotive">
+<section id="mmi-2-1_smart-car-configuration-management">
+<h3>Smart Car Configuration Management</h3>
+
+<section id="mmi-2-1_smart-car-configuration-management-submitter">
+<h4>Submitter(s)</h4>
+
+Michael McCool
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-reviewer">
+<h4>Reviewer(s)</h4>
+
+&lt;Suggest reviewers&gt;
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-category">
+<h4>Category</h4>
+
+Accessibility
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-status">
+<h4>Status</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-target users">
+<h4>Target Users</h4>
+
+&lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer, cloud provider&gt;
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-motivation">
+<h4>Motivation</h4>
+
+User interface personalization is a task that most often needs to be repeated
+for all Devices a user wishes to interact with recurringly.
+With complex devices,
+this task can also be very time-consuming,
+which is problematic if the user regularly accesses similar,
+but not identical devices, as in the case of several cars rented over a month.
+
+A standardized set of personal information and preferences that could be used
+to configure personalizable devices automatically would be very helpful for all
+these cases in which the interaction becomes a customary practice.
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-expected devices">
+<h4>Expected Devices</h4>
+
+Personal mobile device running an application providing command
+mediation capabilities.
+
+IoT-enabled smart car supporting
+remote sensing, actuation, and configuration functionality.
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-expected data">
+<h4>Expected Data</h4>
+
+Command and status information transferred between the personal mobile device
+application and the car's services and devices.
+
+Profile data for user preferences.
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-dependencies">
+<h4>Dependencies</h4>
+
+<ul>
+<li>WoT Thing Description</li>
+<li>WoT Discovery</li>
+<li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
+</ul>
+  in IoT orchestration services in the car.
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-description">
+<h4>Description</h4>
+
+Basic in-car functionality is standardized to be managed by other devices.
+A user can control seat, radio or AC settings through a personalized multimodal interface
+shared by the car and her personal mobile device.
+User preferences are stored on the mobile Device (or in the cloud),
+and can be transferred across different car models handling a specific functionality
+(e.g. all cars with touchscreens should be able to adapt to a "high contrast" preference).
+
+The car can make itself available as a complex modality component that wraps around all
+functionality and supported modalities,
+or as a collection of modality components such as touchscreen, speech recognition system,
+or audio player.
+In the latter case,
+certain user preferences may be shared with other environments.
+
+For example,
+a user may opt to select the "high contrast" scheme at night on all of her displays,
+in the car or at home.
+A car that provides a set of modalities can be also adapted by the mobile device
+to compose an interface for its functionality,
+for example to manage playback of music tracks through the car's voice control system.
+Sensor data provided by the phone can be mixed with data recorded by the car's own sensors
+to profile user behavior which can be used as context in multimodal interaction.
+
+#### Variants:
+
+Additional portable devices may be brought into the car and also be
+incorporated into an application, for example, a GPS navigation system.
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-gaps">
+<h4>Gaps</h4>
+
+Data format describing user interface preferences.
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-existing standards">
+<h4>Existing standards</h4>
+
+This use case is based on MMI UC 2.1.
+
+</section>
+
+<section id="mmi-2-1_smart-car-configuration-management-comments">
+<h4>Comments</h4>
+
+Does not include Requirements section from original MMI use case.
+</section>
+
+<section id="Energy_Smart_Grid">
+<section id="smart-grid">
+<h3>Smart Grids</h3>
+
+<section id="smart-grid-submitter">
+<h4>Submitter(s)</h4>
+
+Christian Glomb (Siemens)
+
+</section>
+
+<section id="smart-grid-reviewer">
+<h4>Reviewer(s)</h4>
+
+Michael Lagally (Oracle)
+
+</section>
+
+<section id="smart-grid-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="smart-grid-category">
+<h4>Category</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="smart-grid-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="smart-grid-status">
+<h4>Status</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="smart-grid-target users">
+<h4>Target Users</h4>
+
+<ul>
+<li>Grid operators on all voltage levels line Distribution System Operators (DSO), Transmission System Operators (TSO)</li>
+<li>Plant operators (centralized as well as de-centralized producers)</li>
+<li>Virtual Power Plant (VPP) operators</li>
+<li>Energy grid markets</li>
+<li>Cloud providers where grid backend services are hosted and where Operation Technology bridges to Information Technology</li>
+<li>Device manufacturers, owners, and users; devices include communication gateways, monitoring and control units</li>
+</ul>
+
+</section>
+
+<section id="smart-grid-motivation">
+<h4>Motivation</h4>
+
+&lt;Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users&gt;
+
+</section>
+
+<section id="smart-grid-expected devices">
+<h4>Expected Devices</h4>
+
+A smart grid integrates all players in the electricity market into one overall system through the interaction of generation, storage, grid management and consumption. Power and storage plants are already controlled today in such a way that only as much electricity is produced as is needed. Smart grids include consumers as well as small, decentralized energy suppliers and storage locations in this control system, so that on the one hand, consumption is more homogeneous in terms of time and space (see also intelligent electricity consumption) and on the other hand, in principle inhomogeneous producers (e.g. wind power) and consumers (e.g. lighting) can be better integrated.
+
+</section>
+
+<section id="smart-grid-expected data">
+<h4>Expected Data</h4>
+
+<ul>
+<li>Weather and climate data</li>
+<li>Metering data (both production as well as consumption as well as storage, e.g. 15 min. intervals)</li>
+<li>Real time data from PMUs (Phasor Measurement Units)</li>
+<li>Machine and equipment monitoring data (enabling health checks)</li>
+<li>...</li>
+</ul>
+
+</section>
+
+<section id="smart-grid-dependencies - affected wot deliverables and/or work items">
+<h4>Dependencies - Affected WoT deliverables and/or work items</h4>
+
+WoT Architecture, WoT Binding Templates (covering protocol specifica)
+
+</section>
+
+<section id="smart-grid-description">
+<h4>Description</h4>
+
+The term Smart Grid refers to the communicative networking and control of power generators, storage facilities, electrical consumers, and grid equipment in power transmission and distribution networks for electricity supply. This enables the optimization and monitoring of the interconnected components. The aim is to secure the energy supply on the basis of efficient and reliable system operation.
+
+#### Variants:
+
+##### Decentralized Power Generation
+While electricity grids with centralized power generation have dominated up to now, the trend is moving towards decentralized generation plants, both for generation from fossil primary energy through small CHP plants and for generation from renewable sources such as photovoltaic systems, solar thermal power plants, wind turbines and biogas plants. This leads to a much more complex structure, primarily in the area of load control, voltage maintenance in the distribution grid and maintenance of grid stability. In contrast to medium to large power plants, smaller, decentralised generation plants also feed directly into the lower voltage levels such as the low-voltage grid or the medium-voltage grid. This use case variants also includes operation and control of energy storages like batteries.
+
+##### Virtual Power Plants
+A Virtual Power Plant (VPP) is an aggregation of Distributed Energy Resources (DERs) that can act as an entity on energy markets or as an ancillary service to grid operation.
+The individual DERs often have a primary use on their own, with electric generation/consumption being a side-effect resp. secondary use. This results in negotiations/collaborations between many different parties e.g. such as the DER owner, the VPP operator, the grid operator and others.
+
+##### Smart Metering
+For consumers, a major change is the installation of smart meters. Their core tasks are remote reading and the possibility to realize fluctuating prices within a day at short notice. All electricity meters must therefore be replaced by those with remote data transmission.
+
+##### Other variants
+Emergency response, grid synchronization, grid black start
+
+</section>
+
+<section id="smart-grid-building blocks">
+<h4>Building Blocks</h4>
+<ul>
+<li>Multi-Stakeholder Operation: Multiple involved parties have to find a common mode of operation</li>
+<li>Device Lifecycle Management: Since the VPP is a dynamic system of loosely coupled DERs, the appearance and disappearance of DERs as well as the software management on the devices itself requires a means to orchestrate the lifecycle of individual device's respective components.</li>
+<li>Embedded Runtime: Especially for DERs in remote locations, maintaining a close couple control loop can be expensive if feasible at all. Therefore, it is desirable to be able to offload control logic to the DER itself.</li>
+<li>Ensemble Discovery: In order to dynamically find matching DERs needed for the operational goal of a VPP, a registry with different options of DER discovery is needed.</li>
+<li>Content-Negotiation: The different stakeholders have to interact and therefore need a common data format.</li>
+<li>Resource Description: The DER has to describe itself to enable discovery of single DERs and ensembles, also the operational data needs to be understood by the different stakeholders without engineering effort.</li>
+<li>Push Services: As there is a fan-out with many devices that probably have a rate-limited connection connecting to one single command centre, a bidirectional communication mechanism is needed rather than polling for the reverse direction</li>
+<li>Object Memory: As multiple and interchangable stakeholders are involved in the application, a backlog of the object is beneficial for scrollkeeping</li>
+</ul>
+
+</section>
+
+<section id="smart-grid-non-functionals">
+<h4>Non-Functionals</h4>
+<ul>
+<li>Privacy: As fine-grained metering informtion provides sensitive data about a household, the system should show a high digree of privacy</li>
+<li>Trust: Since the data exchange between the virtual power plant and the distributed energy resource leads to a physical action that invokes high currents and monetary flows, the integrity of both parties and the exchange's data is crucial</li>
+<li>Layered L7 Communication: Since multiple different links are used for monitoring and control, integration requires a clear and consistent seperation of information from the used serialization and application protocols to enable the exchange of homogenous information over heterogenous application layer protocols</li>
+</ul>
+
+</section>
+
+<section id="smart-grid-gaps">
+<h4>Gaps</h4>
+
+&lt;Describe any gaps that are not addressed in the current WoT standards and building blocks&gt;
+
+</section>
+
+<section id="smart-grid-existing standards">
+<h4>Existing standards</h4>
+
+IEC 61850 - International standard for data models and communication protocols
+
+IEEE 1547 - US standard for interconnecting distributed resources with electric power systems
+
+</section>
+
+<section id="smart-grid-comments">
+<h4>Comments</h4>
+</section>
+
+<section id="Transportation">
+<section id="transportation">
+<h3>Transportation</h3>
+
+<section id="transportation-submitter">
+<h4>Submitter(s)</h4>
+
+Zoltan Kis
+
+</section>
+
+<section id="transportation-reviewer">
+<h4>Reviewer(s)</h4>
+
+Jennifer Lin, Michael McCool
+
+</section>
+
+<section id="transportation-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="transportation-category">
+<h4>Category</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="transportation-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="transportation-status">
+<h4>Status</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="transportation-sub-categories">
+<h4>Sub-categories</h4>
+Transportation - Infrastructure
+Transportation - Cargo
+Transportation - People
+
+</section>
+
+<section id="transportation-target users">
+<h4>Target Users</h4>
+
+Smart Cities: managing roads, public transport and commuting, autonomous and human driven vehicles, transportation tracking and control systems, route information systems, commuting and public transport, vehicles, on-demand transportation, self driving fleets, vehicle information and control systems, infrastructure sharing and payment system, smart parking, smart vehicle servicing, emergency monitoring, etc.
+
+Transport companies: managing shipping, air cargo, train cargo and last mile delivery transportation systems including automated systems.
+
+Commuters: Mobility as a service, booking systems, route planning, ride sharing, self-driving, self-servicing infrastructure, etc.
+
+
+</section>
+
+<section id="transportation-motivation">
+<h4>Motivation</h4>
+
+Provide common vocabulary for describing transport related services and solutions that can be reused across sub-categories, for easier interoperability between various systems owned by different stakeholders.
+
+Thing Description templates could be defined in many subdomains to help integration or interworking between multiple systems.
+
+Transportation of goods can be optimized at global level by enhancing interoperability between vertical systems.
+
+</section>
+
+<section id="transportation-expected devices">
+<h4>Expected Devices</h4>
+
+Road information system (routes, conditions, navigation).
+Road control system (e.g. virtual rails).
+Traffic management services, e.g. intelligent traffic light system with localization and identification (by satellite, radio frequency identification, cameras etc).
+Emergency monitoring and data/location sharing.
+Airport management.
+Shipping docks and ports management.
+Train networks management.
+Public transport vehicles (train, metro, tram, bus, minibus), mobility as a service (ride sharing, bicycle sharing, scooters etc).
+Transportation network planning and management (hubs, backbones, sub-networks, last mile network).
+Electronic timetable management system.
+Vehicles (human driven, self-driving, isolated or part of fleet).
+Connected vehicles (cars, ships, airplanes, trains, buses etc).
+
+</section>
+
+<section id="transportation-expected data">
+<h4>Expected Data</h4>
+
+Vehicle data (identification, location, speed, route, selected vehicle data).
+Weather and climate data.
+Contextual data (representing various risk factors, delays, etc).
+
+</section>
+
+<section id="transportation-dependencies">
+<h4>Dependencies</h4>
+
+Localization technologies.
+Automotive data.
+Contextual data.
+Cloud integration.
+
+</section>
+
+<section id="transportation-description">
+<h4>Description</h4>
+
+Transportation system implementers will be able to use a unified data description model accoss various systems.
+
+#### Variants:
+
+There will be different verticals, such as:
+
+<ul>
+<li>Smart City public transport</li>
+<li>Smart City traffic management</li>
+<li>Smart city vehicle management</li>
+<li>Cargo traffic management</li>
+<li>Cargo vehicle management</li>
+</ul>
+
+</section>
+
+<section id="transportation-gaps">
+<h4>Gaps</h4>
+
+&lt;Describe any gaps that are not addressed in the current WoT work items&gt;
+
+</section>
+
+<section id="transportation-existing standards">
+<h4>Existing standards</h4>
+
+&lt;Provide links to relevant standards that are relevant for this use case&gt;
+
+</section>
+
+<section id="transportation-comments">
+<h4>Comments</h4>
+
+
+</section>
+
+<section id="Smart_Building">
+<section id="smart-building">
+<h3>Smart Building</h3>
+
+<section id="smart-building-submitter">
+<h4>Submitter(s)</h4>
+
+Sebastian Kaebisch (Siemens)
+
+</section>
+
+<section id="smart-building-reviewer">
+<h4>Reviewer(s)</h4>
+
+Michael Lagally (Oracle)
+
+</section>
+
+<section id="smart-building-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="smart-building-category">
+<h4>Category</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="smart-building-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="smart-building-status">
+<h4>Status</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="smart-building-target users">
+<h4>Target Users</h4>
+
+</section>
+
+<section id="smart-building-motivation and description">
+<h4>Motivation and Description</h4>
+
+Buildings such as office buildings, hotels, airports, hospitals, train stations and sports stadiums typically consist of  heterogeneous IoT systems such as lightings, elevators, security (e.g., door control), air-conditionings, fire warnings, heatings, pools, parking control, etc. 
+
+Monitoring, controlling, and management of such a heterogeneous IoT landscape is quite chellanging in terms of engeneering and maintenance. 
+
+</section>
+
+<section id="smart-building-expected devices">
+<h4>Expected Devices</h4>
+ 
+All kind of sensors and actuators (e.g., HVAC).
+
+</section>
+
+<section id="smart-building-expected users">
+<h4>Expected Users</h4>
+
+<ul>
+<li>systems engineers</li>
+<li>system administrators</li>
+<li>third party user</li>
+</ul>
+
+</section>
+
+<section id="smart-building-expected data">
+<h4>Expected Data</h4>
+
+Hetrogeneos data models from different IoT systems such as BACnet, KNX, and Modbus.
+
+</section>
+
+<section id="smart-building-dependencies - affected wot deliverables and/or work items">
+<h4>Dependencies - Affected WoT deliverables and/or work items</h4>
+
+WoT Thing Description and Thing Description Templates, WoT Architecture, WoT Binding Templates (covering protocol specifica)
+
+
+</section>
+
+<section id="smart-building-existing standards">
+<h4>Existing standards</h4>
+
+BACnet, KNX, OPC-UA, Modbus
+
+</section>
+
+<section id="smart-building-comments">
+<h4>Comments</h4>
+<section id="connected-building-energy-efficiency">
+<h3>Connected Building Energy Efficiency</h3>
+
+<section id="connected-building-energy-efficiency-submitter">
+<h4>Submitter(s)</h4>
+
+Farshid Tavakolizadeh (Fraunhofer)
+
+</section>
+
+<section id="connected-building-energy-efficiency-reviewer">
+<h4>Reviewer(s)</h4>
+
+Michael McCool (Intel)
+
+</section>
+
+<section id="connected-building-energy-efficiency-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="connected-building-energy-efficiency-category">
+<h4>Category</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="connected-building-energy-efficiency-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="connected-building-energy-efficiency-status">
+<h4>Status</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="connected-building-energy-efficiency-target users">
+<h4>Target Users</h4>
+
+<ul>
+<li>device owners</li>
+<li>device user</li>
+<li>directory service operator</li>
+</ul>
+
+</section>
+
+<section id="connected-building-energy-efficiency-motivation">
+<h4>Motivation</h4>
+
+Construction and renovation companies often deal with the challenge of delivering target energy-efficient buildings given specific budget and time constraints. Energy efficiency, as one of the key factors for renovation investments, depends on the availability of various data sources to support the renovation design and planning. These include climate data and building material along with residential comfort and energy consumption profiles. The profiles are created using a combination of manual inputs and sensory data collected from residents.
+
+</section>
+
+<section id="connected-building-energy-efficiency-expected devices">
+<h4>Expected Devices</h4>
+
+<ul>
+<li>Gateway (e.g. Single-board computer with a Z-Wave controller)</li>
+</ul>
+
+Z-wave Sensors:
+<ul>
+<li>Power Meter</li>
+<li>Gas Meter</li>
+<li>Smart Plug</li>
+<li>Heavy Duty Switch</li>
+<li>Door/Window Sensors</li>
+<li>CO2 Sensor</li>
+<li>Thermostat</li>
+<li>Multi-sensors (Motion, Temperature, Light, Humidity, Vibration, UV)</li>
+</ul>
+
+</section>
+
+<section id="connected-building-energy-efficiency-expected data">
+<h4>Expected Data</h4>
+
+<ul>
+<li>Ambient conditions</li>
+<li>Occupancy model</li>
+</ul>
+
+</section>
+
+<section id="connected-building-energy-efficiency-dependencies - affected wot deliverables and/or work items">
+<h4>Dependencies - Affected WoT deliverables and/or work items</h4>
+
+&lt;List the affected WoT deliverables that have to be changed to enable this use case&gt;
+
+</section>
+
+<section id="connected-building-energy-efficiency-description">
+<h4>Description</h4>
+
+Renovation of residential buildings to improve energy efficiency depend on a wide range of sensory information to understand the building conditions and consumption models. As part of the pre-renovation activities, the renovation companies deploy various sensors to collect relevant data over a period of time. Such sensors become part of a wireless sensor network (WSN) and expose data endpoint with the help of one or more gateway devices. Depending on the protocols, the endpoints require different interaction flows to securely access the current and historical measurements. The renovation applications need to discover the sensors, their endpoints and how to interact with them based on search criteria such as the physical location, mapping to the building model or measurement type.
+
+#### Variants:
+
+&lt;Describe possible use case variants, if applicable&gt;
+
+#### Security Considerations:
+
+&lt;Describe any issues related to security; if there are none, say "none" and justify&gt;
+
+#### Privacy Considerations:
+
+The TD may expose personal information about the building layout and residents.
+
+</section>
+
+<section id="connected-building-energy-efficiency-gaps">
+<h4>Gaps</h4>
+
+There is no standard vocabulary for embedding application-specific meta data inside the TD. It is possible to extend the TD context and add additional fields but with too much flexibility, every application may end up with a completely different structure, making such information more difficult to discover. In this use-case, the application specific data are: 
+<ul>
+<li>the mapping between each thing and the space in the building model</li>
+<li>various identifiers for each thing (e.g. sensor serial number, z-wave ID, SenML name)</li>
+<li>indoor coordinates</li>
+</ul>
+
+There is no standard API specification for the WoT Thing Directory to maintain and query TDs.
+
+</section>
+
+<section id="connected-building-energy-efficiency-existing standards">
+<h4>Existing standards</h4>
+
+<ul>
+<li><a href="https://www.ogc.org/standards/sensorthings) model includes a `properties` property for each Thing which is a non-normative JSON Object for application-specific information (not to be confused with TD's `properties` which is a Map of instances of PropertyAffordance">OGC SensorThings</a>.</li>
+</ul>
+
+</section>
+
+<section id="connected-building-energy-efficiency-comments">
+<h4>Comments</h4>
+
+
+</section>
+
+<section id="Shared_Devices_and_Resources">
+<section id="education">
+<h3>Shared Devices</h3>
+
+<section id="education-submitter">
+<h4>Submitter(s)</h4>
+
+Ege Korkan
+
+</section>
+
+<section id="education-reviewer">
+<h4>Reviewer(s)</h4>
+
+
+
+</section>
+
+<section id="education-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+<a href="https://github.com/w3c/wot-architecture/issues/496">496</a>
+
+</section>
+
+<section id="education-category">
+<h4>Category</h4>
+
+Education
+
+</section>
+
+<section id="education-class">
+<h4>Class</h4>
+
+
+
+</section>
+
+<section id="education-status">
+<h4>Status</h4>
+
+
+
+</section>
+
+<section id="education-target users">
+<h4>Target Users</h4>
+
+For the education category:
+
+<ul>
+<li>device owners : The university -&gt; Research Group -&gt; Specific Lab</li>
+<li>device user : Students and potentially anyone who participates in plugfests</li>
+<li>service provider : The university -&gt; Research Group</li>
+<li>network operator : The university</li>
+</ul>
+
+</section>
+
+<section id="education-motivation">
+<h4>Motivation</h4>
+
+This use case motivates a standardized use of shared resources. One example is when a physical resource of the Thing should not be used by multiple Consumers at the same time like the arm of the robot but its position can be read my multiple Consumers.
+
+</section>
+
+<section id="education-expected devices">
+<h4>Expected Devices</h4>
+
+Concrete devices are irrelevant for this use case but devices with a physical state is required. However, we have currently the following devices that are connected to Raspberry Pis where the WoT stack (node-wot or similar) is running. Concrete device models can be given upon request.
+
+<ul>
+<li>Robotic arms</li>
+<li>Conveyor belts</li>
+<li>Motorized sliders where the robots or devices can be mounted on</li>
+<li>Philips Hue devices: Light bulbs, LED Strips, Motion sensors, Switch. We do not have the source code of these devices (brownfield) </li>
+<li>Various sensors (brightness, humidity, temperature, gyroscopic sensors)</li>
+<li>LED Screen to display messages</li>
+</ul>
+
+There are also IP Cameras but they are not WoT compatible and are not planned to be made compatible.
+
+</section>
+
+<section id="education-expected data">
+<h4>Expected Data</h4>
+
+Atmospheric data of a room, machine sensors
+
+</section>
+
+<section id="education-dependencies - affected wot deliverables and/or work items">
+<h4>Dependencies - Affected WoT deliverables and/or work items</h4>
+
+Thing Description, Scripting API, possibly security
+
+</section>
+
+<section id="education-description">
+<h4>Description</h4>
+
+We are offering a practical course for the students where they can interact fully remotely with WoT devices and verify their physical actions via video streams. We have sensors and actuators like robots. Students then build mashup applications to deepen their knowledge of WoT technologies. Official page of the course is <a href="https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950504601&pSpracheNr=1">here</a>.
+
+#### Variants:
+
+</section>
+
+<section id="education-security considerations">
+<h4>Security Considerations</h4>
+
+The devices are connected to the Internet and are secured behind a router and proxy.
+
+</section>
+
+<section id="education-privacy considerations">
+<h4>Privacy Considerations</h4>
+
+none from the WoT point of view since we want the devices to be used by anyone and the devices do not share any information that is related to the students or us as the provider of the devices.
+However, there are cameras which can show humans entering the room as a side effect (they are meant to monitor the devices). The streams are accessible only to authorized users, the room has signs on the door and there is a cage around the area that is filmed.
+
+</section>
+
+<section id="education-gaps">
+<h4>Gaps</h4>
+
+#### Thing Description
+
+<ul>
+<li>How to give hints that a particular action should not be used by others at the same time. A new keyword (like `"shared":true`) would be needed for devices that do not implement a describable mechanism.</li>
+<li>How to describe the mechanism that the Thing implements to manage the shared resources. Does it happen in the security level? </li>
+</ul>
+
+#### Scripting API
+
+<ul>
+<li>How does the Consumer code change when this mechanism is used. Does it get settled in the implementation or scripting level. </li>
+</ul>
+
+</section>
+
+<section id="education-existing standards">
+<h4>Existing standards</h4>
+
+
+</section>
+
+<section id="education-comments">
+<h4>Comments</h4>
+</section>
+
+<section id="OAuth2_Flows">
+<section id="oauth">
+<h3>OAuth2 Flows</h3>
+
+<section id="oauth-submitter">
+<h4>Submitter(s)</h4>
+
+Michael McCool, Cristiano Aguzzi
+
+</section>
+
+<section id="oauth-reviewer">
+<h4>Reviewer(s)</h4>
+
+&lt;Suggest reviewers&gt;
+
+</section>
+
+<section id="oauth-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="oauth-category">
+<h4>Category</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="oauth-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="oauth-status">
+<h4>Status</h4>
+
+WIP
+
+</section>
+
+<section id="oauth-target users">
+<h4>Target Users</h4>
+
+<ul>
+<li>device owner</li>
+<li>device user</li>
+<li>device application</li>
+<li>service provider</li>
+<li>identity provider</li>
+<li>directory service</li>
+</ul>
+
+</section>
+
+<section id="oauth-motivation">
+<h4>Motivation</h4>
+
+
+OAuth 2.0 is an authorization protocol widely known for its usage across several web services.
+It enables third-party applications to obtain limited access to HTTP services on behalf of the resource owner 
+or of itself. 
+The protocol defines the following actors:
+
+<ul>
+<li>Client: an application that wants to use a resource owned by the resource owner. </li>
+<li>Authorization Server: An intermediary that authorizes the client for a particular `scope`. </li>
+<li>Resource: a web resource </li>
+<li>Resource Server: the server where the resource is stored</li>
+<li>Resource Owner: the owner of a particular web resource. If it is a human is usually referred to as an end-user.</li>
+</ul>
+  More specifically from the RFC:
+  &gt;  An entity capable of granting access to a protected resource.
+
+
+These actors can be mapped to WoT entities: 
+<ul>
+<li>Client is a WoT Consumer</li>
+<li>Authorization Server is a third-party service</li>
+<li>Resource is an interaction affordance</li>
+<li>Resource Server is a Thing described by a Thing Description acting as a server.  </li>
+</ul>
+  May be a device or a service.
+<ul>
+<li>Resource Owner might be different in each use case.</li>
+</ul>
+  A Thing Description may also combine resources from different owners or web server.
+  
+TO DO: Check the OAuth 2.0 spec to determine exactly how Resource Owner is defined.
+Is it the actual owner of the resource (eg running the web server) or simply someone
+with the rights to access that resource?
+
+The OAuth 2.0 protocol specifies an authorization layer that separates the client from the resource owner.
+The basic steps of this protocol are summarized in the following diagram:
+
+     +--------+                               +---------------+
+     |        |--(A)- Authorization Request -&gt;|   Resource    |
+     |        |                               |     Owner     |
+     |        |&lt;-(B)-- Authorization Grant ---|               |
+     |        |                               +---------------+
+     |        |
+     |        |                               +---------------+
+     |        |--(C)-- Authorization Grant --&gt;| Authorization |
+     | Client |                               |     Server    |
+     |        |&lt;-(D)----- Access Token -------|               |
+     |        |                               +---------------+
+     |        |
+     |        |                               +---------------+
+     |        |--(E)----- Access Token ------&gt;|    Resource   |
+     |        |                               |     Server    |
+     |        |&lt;-(F)--- Protected Resource ---|               |
+     +--------+                               +---------------+
+
+Steps A and B defines what is known as authorization grant type or flow.
+What is important to realize here is that not all of these interactions
+are meant to take place over a network protocol.
+In some cases,
+interaction with with a human through a user interface may be intended.
+
+OAuth2.0 defines 4 basic flows plus an extension mechanism.
+The most common of which are:
+<ul>
+<li>`code`</li>
+<li>`implicit`</li>
+<li>`password` (of resource owner)</li>
+<li>`client` (credentials of the client)</li>
+</ul>
+
+In addition, a particular extension which is of interest to IoT is the `device` flow.
+
+Further information about the OAuth 2.0 protocol can be found in
+<a href="https://tools.ietf.org/html/rfc6749#section-1">IETF RFC6749</a>.
+In addition to the flows, OAuth 2.0 also supports scopes.
+Scopes are identifiers which can be attached to tokens.
+These can be used to limit authorizations to
+particular roles or actions in an API.
+Each token carries a set of scopes and these can be checked when an interaction
+is attempted and access can be denied if the token does not include a scope
+required by the interaction.
+
+This document describes relevant use cases for each of the OAuth 2.0 authorization flows. 
+
+</section>
+
+<section id="oauth-expected devices">
+<h4>Expected Devices</h4>
+
+To support OAuth 2.0, all devices must have the capability of: 
+<ul>
+<li>Both the producer and consumer must be able to create and participate in a TLS connection.</li>
+<li>The producer must be able to verify an access (bearer) token (i.e. have sufficient computational power/connectivity). </li>
+</ul>
+
+Comment: 
+<ul>
+<li>Investigate whether DTLS can be used.</li>
+</ul>
+  Certainly the connection needs to be encrypted; this is required in the OAuth 2.0 specification.
+<ul>
+<li>Investigate whether protocols other than HTTP can be used, e.g. CoAP.</li>
+</ul>
+  - found an interesting IETF draft RFC about CoAP  support(encrypted using various mechanisms like DTLS or CBOR Object Signing and Encryption): <a href="https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-35">draft-ietf-ace-oauth</a>
+
+</section>
+
+<section id="oauth-expected data">
+<h4>Expected Data</h4>
+
+Depending on the OAuth 2.0 flow specified, various URLs and elements need to be specified,
+for example, the location of an authorization token server.
+OAuth 2.0 is also based on bearer tokens and so
+needs to include the same data as those, for example, expected encryption suite.
+Finally,
+OAuth 2.0 supports scopes so these need to be defined in the security scheme and specified in
+the form.
+
+</section>
+
+<section id="oauth-dependencies - affected wot deliverables and/or work items">
+<h4>Dependencies - Affected WoT deliverables and/or work items</h4>
+
+Thing Description, Scripting API, Discovery, and Security. 
+
+</section>
+
+<section id="oauth-description">
+<h4>Description</h4>
+
+A general use case for OAuth 2.0 is when a WoT consumer wants to access restricted interaction affordances.
+In particular, when those affordances have a specific resource owner which 
+may grant some temporary permissions to the consumer.  
+
+The WoT consumer can either be hosted in a remote device or interact directly with the end-user inside an application.
+
+#### Variants:
+
+For each OAuth 2.0 flow, there is a corresponding use case variant.
+We also include the experimental "device" flow for consideration.
+
+##### code
+
+A natural application of this protocol is when the end-user wants to interact directly with the consumed thing or to grant his authorization to a remote device. In fact from the <a href="https://tools.ietf.org/html/rfc6749#section-4.1">RFC6749</a>
+
+&gt; Since this is a redirection-based flow, the client must be capable of
+   interacting with the resource owner's user-agent (typically a web
+   browser) and capable of receiving incoming requests (via redirection)
+   from the authorization server.
+
+
+This implies that the code flow can be only used when the resource owner interacts directly with the WoT consumer at least once. Typical scenarios are:
+
+<ul>
+<li>In a home automation context, a device owner uses a third party software to interact with/orchestrate one or more devices</li>
+<li>Similarly, in a smart farm, the device owner might delegate its authorization to third party services.</li>
+<li>In a smart home scenario, Thing Description Directories might be deployed using this authorization mechanism. In particular, the list of the registered TDs might  require an explicit read authorization request to the device owner (i.e. an human who has bought the device and installed it). </li>
+<li>...   </li>
+</ul>
+
+The following diagram shows the steps of the protocol adapted to WoT idioms and entities. In this scenario, the WoT Consumer has read the Thing Description of a Remote Device and want to access one of its WoT Affordances protected with OAuth 2.0 code flow.  
+```
+                                                 +-----------+
+  +----------+                                   |           |
+  | Resource |                                   |  Remote   |
+  |   Owner  |                                   |  Device   +&lt;-------+
+  |          |                                   |           |        |
+  +----+-----+                                   +-----------+        |
+       ^                                                              |
+       |                                                              |
+      (B)                                                             |
++------------+          Client Identifier      +---------------+      |
+|           ------(A)-- & Redirection URI ----&gt;+               |      |
+|   User-    |                                 | Authorization |      |
+|   Agent   ------(B)-- User authenticates ---&gt;+     Server    |      |
+|            |                                 |               |      |
+|           ------(C)-- Authorization Code ---&lt;+               |      |
++---+----+---+                                 +---+------+----+      |
+    |    |                                         ^      v           |
+   (A)  (C)                                        |      |           |
+    |    |                                         |      |           |
+    ^    v                                         |      |           |
++---+----+---+                                     |      |           |
+|            |&gt;-+(D)-- Authorization Code ---------'      |           |
+|    WoT     |         & Redirection URI                  |           |
+|  Consumer  |                                            |           |
+|            |&lt;-+(E)----- Access Token -------------------'           |
++-----+------+      (w/ Optional Refresh Token)                       |
+      v                                                               |
+      |                                                               |
+      +-----------(F)----- Access WoT --------------------------------+
+                           Affordance
+```
+Notice that steps (A), (B) and (C) are broken in two parts as they pass through the User-Agent. 
+
+
+##### device
+
+The device flow (IETF <a href="https://tools.ietf.org/html/rfc8628#section-6.2) briefly describes an authentication using a companion app and BLE), as shown in the following (slightly adapted">RFC 8628](https://tools.ietf.org/html/rfc8628)) is a variant of the code flow for browserless and input-constrained devices. Similarly, to its *parent* flow, it requires a close interaction between the resource owner and the WoT consumer. Therefore, the use cases for this flow are the same as the code authorization grant but restricted to all devices that do not have a rich means to interact with the resource owner. However, differently from `code`, RFC 8628 states explicitly that one of the actors of the protocol is an **end-user** interacting with a **browser** (even if [section-6.2</a> diagram:
+```
++----------+
+|          |
+|  Remote  |
+|  Device  |
+|          |
++----^-----+
+     |
+     | (G) Access WoT Affordance
+     |
++----+-----+                                +----------------+
+|          +&gt;---(A)-- Client Identifier ---v+                |
+|          |                                |                |
+|          +&lt;---(B)-- Device Code,      ---&lt;+                |
+|          |          User Code,            |                |
+|   WoT    |          & Verification URI    |                |
+| Consumer |                                |                |
+|          |  [polling]                     |                |
+|          +&gt;---(E)-- Device Code       ---&gt;+                |
+|          |          & Client Identifier   |                |
+|          |                                |  Authorization |
+|          +&lt;---(F)-- Access Token      ---&lt;+     Server     |
++-----+----+   (& Optional Refresh Token)   |                |
+      v                                     |                |
+      :                                     |                |
+     (C) User Code & Verification URI       |                |
+      :                                     |                |
+      ^                                     |                |
++-----+----+                                |                |
+| End User |                                |                |
+|    at    +&lt;---(D)-- End user reviews  ---&gt;+                |
+|  Browser |          authorization request |                |
++----------+                                +----------------+
+```
+Notable mentions:
+<ul>
+<li>the protocol is heavily end-user oriented. In fact, the RFC states the following</li>
+</ul>
+  &gt; Due to the polling nature of this protocol (as specified in Section 3.4), care is needed to avoid overloading the capacity of the token endpoint.  To avoid unneeded requests on the token endpoint, the client SHOULD only commence a device authorization request when **prompted by the user and not automatically**, such as when the app starts or when the previous authorization session expires or fails.
+<ul>
+<li>TLS is required both between WoT Consumer/Authorization Server and between Browser/Authorization Server</li>
+<li>Other user interactions methods may be used but are left out of scope</li>
+</ul>
+
+
+##### client credential
+The Client Credentials grant type is used by clients to obtain an access token outside of the context of an end-user. From <a href="https://tools.ietf.org/html/rfc6749#section-4.4">RFC6749</a>:
+
+&gt;  The client can request an access token using only its client
+   credentials (or other supported means of authentication) when the
+   the client is requesting access to the protected resources under its
+   control, or __those of another resource owner that has been previously
+   arranged with the authorization server__ (the method of which is beyond
+   the scope of this specification).
+
+Therefore the client credential grant can be used:
+<ul>
+<li>When the resource owner is a public authority. For example, in a smart city context, the authority provides a web service where to register an application id.</li>
+<li>Companion application</li>
+<li>Industrial IoT. Consider a smart factory where the devices or services are provisioned with client credentials. </li>
+<li>...</li>
+</ul>
+
+The Client Credentials flow is illustrated in the following diagram. Notice how the Resource Owner is not present. 
+
+```
++----------+
+|          |
+|  Remote  |
+|  Device  |
+|          |
++----^-----+
+     |
+     |  (C) Access WoT Affordance
+     ^
++----+-----+                                  +---------------+
+|          |                                  |               |
+|          +&gt;--(A)- Client Authentication ---&gt;+ Authorization |
+|   WoT    |                                  |     Server    |
+| Consumer +&lt;--(B)---- Access Token ---------&lt;+               |
+|          |                                  |               |
+|          |                                  +---------------+
++----------+
+```
+
+Comment: Usually client credentials are distributed using an external service which is used by humans to register a particular application. For example, the `npm` cli has a companion dashboard where a developer requests the generation of a token that is then passed to the cli. The token is used to verify the publishing process of `npm` packages in the registry. Further examples are Docker cli and OpenId Connect Client Credentials. 
+
+##### implicit
+**Deprecated**
+From  <a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">OAuth 2.0 Security Best Current Practice</a>:
+
+&gt; In order to avoid these issues, clients SHOULD NOT use the implicit
+   grant (response type "token") or other response types issuing access
+   tokens in the authorization response, unless access token injection
+   in the authorization, response is prevented and the aforementioned
+   token leakage vectors are mitigated.
+
+The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE) instead. 
+
+The implicit flow was designed for public clients typically implemented inside a browser (i.e. javascript clients). As the `code` is a redirection-based flow and it requires direct interaction with the resource's owner user-agent. However, it requires one less step to obtain a token as it is returned directly in the authentication request (see the diagram below).
+
+Considering the WoT context this flow is not particularly different from `code` grant and it can be used in the same scenarios.  
+
+Comment: even if the `implicit` flow is deprecated existing services may still using it. 
+
+```
++----------+
+| Resource |
+|  Owner   |
+|          |
++----+-----+
+     ^
+     |
+    (B)
++----------+          Client Identifier     +---------------+
+|         ------(A)-- & Redirection URI ---&gt;+               |
+|  User-   |                                | Authorization |
+|  Agent  ------(B)-- User authenticates --&gt;+     Server    |
+|          |                                |               |
+|          +&lt;---(C)--- Redirection URI ----&lt;+               |
+|          |          with Access Token     +---------------+
+|          |            in Fragment
+|          |                                +---------------+
+|          +----(D)--- Redirection URI ----&gt;+   Web-Hosted  |
+|          |          without Fragment      |     Client    |
+|          |                                |    Resource   |
+|     (F)  +&lt;---(E)------- Script ---------&lt;+               |
+|          |                                +---------------+
++-+----+---+
+  |    |
+ (A)  (G) Access Token
+  |    |
+  ^    v
++-+----+---+                                   +----------+
+|          |                                   |  Remote  |
+|   WoT    +&gt;---------(H)--Access WoT---------&gt;+  Device  |
+| Consumer |               Affordance          |          |
+|          |                                   +----------+
++----------+
+
+```
+
+##### resource owner password
+**Deprecated** From  <a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">OAuth 2.0 Security Best Current Practice</a>:
+
+&gt; The resource owner password credentials grant MUST NOT be used.  This
+   grant type insecurely exposes the credentials of the resource owner
+   to the client.  Even if the client is benign, this results in an
+   increased attack surface (credentials can leak in more places than
+   just the AS) and users are trained to enter their credentials in
+   places other than the AS.
+
+For completeness the diagram flow is reported below.  
+
+```
+ +----------+
+ | Resource |
+ |  Owner   |
+ |          |
+ +----+-----+
+      v
+      |    Resource Owner
+     (A) Password Credentials
+      |
+      v
++-----+----+                                  +---------------+
+|          +&gt;--(B)---- Resource Owner -------&gt;+               |
+|          |         Password Credentials     | Authorization |
+|   WoT    |                                  |     Server    |
+| Consumer +&lt;--(C)---- Access Token ---------&lt;+               |
+|          |    (w/ Optional Refresh Token)   |               |
++-----+----+                                  +---------------+
+      |
+      | (D) Access WoT Affordance
+      |
+ +----v-----+
+ |  Remote  |
+ |  Device  |
+ |          |
+ +----------+
+```
+
+
+</section>
+
+<section id="oauth-security considerations">
+<h4>Security Considerations</h4>
+
+See OAuth 2.0 security considerations in <a href="https://tools.ietf.org/html/rfc8628#section-5">RFC6749](https://tools.ietf.org/html/rfc6749#section-10). See also [RFC 8628 section 5</a> for `device` flow.
+
+</section>
+
+<section id="oauth-privacy considerations">
+<h4>Privacy Considerations</h4>
+
+&lt;Describe any issues related to privacy; if there are none, say "none" and justify&gt;
+
+</section>
+
+<section id="oauth-gaps">
+<h4>Gaps</h4>
+
+&lt;Describe any gaps that are not addressed in the current WoT standards and building blocks&gt;
+
+</section>
+
+<section id="oauth-existing standards">
+<h4>Existing standards</h4>
+
+&lt;Provide links to relevant standards that are relevant for this use case&gt;
+
+</section>
+
+<section id="oauth-comments">
+<h4>Comments</h4>
+Notice that the OAuth 2.0 protocol is not an authentication protocol, however <a href="https://openid.net/connect/">OpenID</a> defines an authentication layer on top of OAuth 2.0.
+</section>
+
+<section id="Device_Lifecycle">
+<section id="device-lifecycle">
+<h3>Device Lifecycle</h3>
+
+<section id="device-lifecycle-submitter">
+<h4>Submitter(s)</h4>
+
+Michael Lagally
+
+</section>
+
+<section id="device-lifecycle-reviewer">
+<h4>Reviewer(s)</h4>
+
+All WoT Arch participants
+
+</section>
+
+<section id="device-lifecycle-tracker issue id">
+<h4>Tracker Issue ID</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="device-lifecycle-category">
+<h4>Category</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="device-lifecycle-class">
+<h4>Class</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="device-lifecycle-status">
+<h4>Status</h4>
+
+&lt;please leave blank&gt;
+
+</section>
+
+<section id="device-lifecycle-target users">
+<h4>Target Users</h4>
+
+device manufacturer, gateway manufacturer, cloud provider
+
+</section>
+
+<section id="device-lifecycle-motivation">
+<h4>Motivation</h4>
+
+Current spec does not address lifecycle.
+
+</section>
+
+<section id="device-lifecycle-expected devices">
+<h4>Expected Devices</h4>
+
+
+&lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
+
+</section>
+
+<section id="device-lifecycle-expected data">
+<h4>Expected Data</h4>
+
+&lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors, vehicle data&gt;
+
+</section>
+
+<section id="device-lifecycle-dependencies">
+<h4>Dependencies</h4>
+
+&lt;List the affected WoT deliverables&gt;
+
+</section>
+
+<section id="device-lifecycle-description">
+<h4>Description</h4>
+
+Handle the entire device lifecycle: 
+Define terminology for lifecycle states and transitions.
+
+#### Actors (represent a physical person or group of persons (company))
+Manufacturer
+Service Provider
+Network Provider (potentially transparent for WoT use cases)
+Device Owner (User)
+Others?
+
+#### Roles:
+Depending on the use case, an actor can have multiple roles, 
+e.g. security maintainer.  
+Roles can be delegated.
+
+#### Variants:
+
+There are (at least) two different entities to consider:
+<ul>
+<li>Things / Devices</li>
+<li>Consumers, e.g. cloud services or gateways</li>
+</ul>
+
+In more complex use cases there are additional entities:
+<ul>
+<li>Intermediates</li>
+<li>Directories</li>
+</ul>
+
+</section>
+
+<section id="device-lifecycle-gaps">
+<h4>Gaps</h4>
+
+The current architecture spec does not describe device lifecycle in detail.
+A common lifecycle model helps to clarify terminology and structures the discussion
+in different groups.
+Interaction of a device with other entities such as directories may introduce 
+additional states and transitions.
+
+</section>
+
+<section id="device-lifecycle-existing standards">
+<h4>Existing standards</h4>
+
+&lt;Provide links to relevant standards that are relevant for this use case&gt;
+WoT Security
+ETSI OneM2M
+OMA LwM2M
+OCF
+IEEE
+SIM cards / GSMA
+IETF 
+Application Lifecycle (W3C Multimodal Interaction WG)  
+
+</section>
+
+<section id="device-lifecycle-comments">
+<h4>Comments</h4>
+
+All lifecycle contributions and discussion documents are available at:
+https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle
+
+
+documents that were created / discussed in the architecture TF.
+
+Lifecycle comparisons:
+https://github.com/w3c/wot-architecture/blob/master/proposals/Device-lifecycle-comparisons.pdf
+
+Lifecycle states:
+https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/lifecycle-states.md
+
+Draft lifecycle diagram:
+https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20lifecycle%20diagram-WoT%20new%20lifecycle.svg
+
+Layered lifecycle:
+https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20layered%20%20lifecycle%20diagram-WoT%20new%20lifecycle.svg
+
+System lifecycle:
+https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/unified%20device%20lifecycle.svg
+
+IoT Security Bootstrapping: 
+https://github.com/w3c/wot-security/blob/master/presentations/2020-03-16-Bootstrapping%20IoT%20Security%20-%20The%20IETF%20Anima%20and%20OPC-UA%20Recipes.pdf
+
+
+</section>
+
+<!--		
 Domains from the 1.0 UC document 
 		
 		<section id="domain-home_automation">
