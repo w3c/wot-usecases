@@ -30,22 +30,22 @@
 			companyURL : "https://www.oracle.com/"
 		},
 		{
-			name : "Michael McCool",
-			w3cid : "",
-			company : "Intel",
-			companyURL : ""
+			name:       "Michael McCool",
+        	        w3cid:      "93137",
+                	company:    "Intel Corp.",
+                	companyURL: "https://www.intel.com/"
 		},
 		{
 			name : "Ryuichi Matsukura",
-			w3cid : "",
-			company : "Fujitsu",
-			companyURL : ""
+            		w3cid : "64284",
+            		company : "Fujitsu Ltd.",
+            		companyURL : "https://www.fujitsu.com/"
 		},
 		{
 			name : "Tomoaki Mizushima",
-			w3cid : "",
+			w3cid : "98915",
 			company : "Internet Research Institute, Inc.",
-			companyURL : ""
+			companyURL : "https://www.iri.co.jp/"
 		}
 	],
 
@@ -1153,7 +1153,8 @@ Does not include Requirements section from original MMI use case.
 
 <section id="Energy_Smart_Grid">
 <section id="smart-grid">
-<h3>Smart Grids</h3>
+<h3>Smart Grids
+</h3>
 
 <section id="smart-grid-submitter">
 <h4>Submitter(s)</h4>
@@ -1197,16 +1198,24 @@ Michael Lagally (Oracle)
 
 </section>
 
-<section id="smart-grid-target users">
-<h4>Target Users</h4>
+<section id="smart-grid-target users
+">
+<h4>Target Users
+</h4>
 
 <ul>
-<li>Grid operators on all voltage levels line Distribution System Operators (DSO), Transmission System Operators (TSO)</li>
-<li>Plant operators (centralized as well as de-centralized producers)</li>
-<li>Virtual Power Plant (VPP) operators</li>
-<li>Energy grid markets</li>
-<li>Cloud providers where grid backend services are hosted and where Operation Technology bridges to Information Technology</li>
-<li>Device manufacturers, owners, and users; devices include communication gateways, monitoring and control units</li>
+<li>Grid operators on all voltage levels line Distribution System Operators (DSO), Transmission System Operators (TSO)
+</li>
+<li>Plant operators (centralized as well as de-centralized producers)
+</li>
+<li>Virtual Power Plant (VPP) operators
+</li>
+<li>Energy grid markets
+</li>
+<li>Cloud providers where grid backend services are hosted and where Operation Technology bridges to Information Technology
+</li>
+<li>Device manufacturers, owners, and users; devices include communication gateways, monitoring and control units
+</li>
 </ul>
 
 </section>
@@ -1229,11 +1238,16 @@ A smart grid integrates all players in the electricity market into one overall s
 <h4>Expected Data</h4>
 
 <ul>
-<li>Weather and climate data</li>
-<li>Metering data (both production as well as consumption as well as storage, e.g. 15 min. intervals)</li>
-<li>Real time data from PMUs (Phasor Measurement Units)</li>
-<li>Machine and equipment monitoring data (enabling health checks)</li>
-<li>...</li>
+<li>Weather and climate data
+</li>
+<li>Metering data (both production as well as consumption as well as storage, e.g. 15 min. intervals)
+</li>
+<li>Real time data from PMUs (Phasor Measurement Units)
+</li>
+<li>Machine and equipment monitoring data (enabling health checks)
+</li>
+<li>...
+</li>
 </ul>
 
 </section>
@@ -1270,14 +1284,22 @@ Emergency response, grid synchronization, grid black start
 <section id="smart-grid-building blocks">
 <h4>Building Blocks</h4>
 <ul>
-<li>Multi-Stakeholder Operation: Multiple involved parties have to find a common mode of operation</li>
-<li>Device Lifecycle Management: Since the VPP is a dynamic system of loosely coupled DERs, the appearance and disappearance of DERs as well as the software management on the devices itself requires a means to orchestrate the lifecycle of individual device's respective components.</li>
-<li>Embedded Runtime: Especially for DERs in remote locations, maintaining a close couple control loop can be expensive if feasible at all. Therefore, it is desirable to be able to offload control logic to the DER itself.</li>
-<li>Ensemble Discovery: In order to dynamically find matching DERs needed for the operational goal of a VPP, a registry with different options of DER discovery is needed.</li>
-<li>Content-Negotiation: The different stakeholders have to interact and therefore need a common data format.</li>
-<li>Resource Description: The DER has to describe itself to enable discovery of single DERs and ensembles, also the operational data needs to be understood by the different stakeholders without engineering effort.</li>
-<li>Push Services: As there is a fan-out with many devices that probably have a rate-limited connection connecting to one single command centre, a bidirectional communication mechanism is needed rather than polling for the reverse direction</li>
-<li>Object Memory: As multiple and interchangable stakeholders are involved in the application, a backlog of the object is beneficial for scrollkeeping</li>
+<li>Multi-Stakeholder Operation: Multiple involved parties have to find a common mode of operation
+</li>
+<li>Device Lifecycle Management: Since the VPP is a dynamic system of loosely coupled DERs, the appearance and disappearance of DERs as well as the software management on the devices itself requires a means to orchestrate the lifecycle of individual device's respective components.
+</li>
+<li>Embedded Runtime: Especially for DERs in remote locations, maintaining a close couple control loop can be expensive if feasible at all. Therefore, it is desirable to be able to offload control logic to the DER itself.
+</li>
+<li>Ensemble Discovery: In order to dynamically find matching DERs needed for the operational goal of a VPP, a registry with different options of DER discovery is needed.
+</li>
+<li>Content-Negotiation: The different stakeholders have to interact and therefore need a common data format.
+</li>
+<li>Resource Description: The DER has to describe itself to enable discovery of single DERs and ensembles, also the operational data needs to be understood by the different stakeholders without engineering effort.
+</li>
+<li>Push Services: As there is a fan-out with many devices that probably have a rate-limited connection connecting to one single command centre, a bidirectional communication mechanism is needed rather than polling for the reverse direction
+</li>
+<li>Object Memory: As multiple and interchangable stakeholders are involved in the application, a backlog of the object is beneficial for scrollkeeping
+</li>
 </ul>
 
 </section>
@@ -1285,9 +1307,12 @@ Emergency response, grid synchronization, grid black start
 <section id="smart-grid-non-functionals">
 <h4>Non-Functionals</h4>
 <ul>
-<li>Privacy: As fine-grained metering informtion provides sensitive data about a household, the system should show a high digree of privacy</li>
-<li>Trust: Since the data exchange between the virtual power plant and the distributed energy resource leads to a physical action that invokes high currents and monetary flows, the integrity of both parties and the exchange's data is crucial</li>
-<li>Layered L7 Communication: Since multiple different links are used for monitoring and control, integration requires a clear and consistent seperation of information from the used serialization and application protocols to enable the exchange of homogenous information over heterogenous application layer protocols</li>
+<li>Privacy: As fine-grained metering informtion provides sensitive data about a household, the system should show a high digree of privacy
+</li>
+<li>Trust: Since the data exchange between the virtual power plant and the distributed energy resource leads to a physical action that invokes high currents and monetary flows, the integrity of both parties and the exchange's data is crucial
+</li>
+<li>Layered L7 Communication: Since multiple different links are used for monitoring and control, integration requires a clear and consistent seperation of information from the used serialization and application protocols to enable the exchange of homogenous information over heterogenous application layer protocols
+</li>
 </ul>
 
 </section>
