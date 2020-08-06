@@ -19,6 +19,7 @@ while (<IN>) {
   chomp;
   s/</&lt;/g;
   s/>/&gt;/g;
+  s/\r$//;
 
   while ($_ =~ /\[.*\]\(.*\)/g) {
     $_ =~ s/\[(.*)\]\((.*)\)/<a href="$2">$1<\/a>/;
@@ -28,7 +29,9 @@ while (<IN>) {
     $current_level = 2;
     ${title} = $1;
     print "<section id=\"${id}\">\n";
-    print "<h3>${title}</h3>\n";
+    print "<h2>${title}</h2>\n";
+    print "<dl>\n";
+    $is_list = 0;
 
   } elsif (/^### (.*)$/) {
     $current_level = 3;
@@ -42,11 +45,16 @@ while (<IN>) {
     ${id} =~ tr/A-Z/a-z/;
 
     if ($prev_level >= $current_level) {
-      print "<\/section>\n\n";
+      print "<\/dd>\n";
     }
-    print "<section id=\"${id}-${section_id}\">\n";
-    print "<h4>${section}</h4>\n";
+    print "<dt>${section}</dt>\n";
+    print "<dd>\n";
     $prev_level = $current_level;
+    $is_list = 0;
+
+  } elsif (/^#### (.*)$/) {
+    print "<p>$_</p>\n";
+    $is_list = 0;
 
   } elsif (/^(\-|\*) (.*)$/) {
     ${topic} = $2;
@@ -57,11 +65,15 @@ while (<IN>) {
     $is_list = 1;
 
   } else {
-    if ($is_list eq 1) {
+    if (($is_list eq 1) && (/^$/)) {
         print "</ul>\n";
         $is_list = 0;
     }
     print "$_\n";
   }
 }
+
+print "<\/dd>\n";
+print "<\/dl>\n";
+print "<\/section>\n";
 close(IN);
