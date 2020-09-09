@@ -10,7 +10,7 @@ including the following:
 Each of these is reviewed in the following sections.
 
 ## Y.4400/Y.2063 - Framework of the web of things
-*Key points in abstract:* WoT allows physical devices to be accessed as resources of both the 
+**Key points in abstract:** WoT allows physical devices to be accessed as resources of both the 
 web as well as through legacy communications.  Includes overview, requirements,
 and functional architecture including deployment model.
 
@@ -40,16 +40,18 @@ and this information is discoverable.  This information appears to correspond to
 Thing Descriptions, as long as we also consider Thing Descriptions applicable to other 
 types of services (mash-ups, etc).  The ITU-T functional architecture includes capabilities
 to manage services (e.g. execute them), not just register them as is being proposed in the
-proposed W3C WoT Discovery mechanism.
+proposed W3C WoT Discovery mechanism.  Note: "service execution" may actually correspond to
+"action invocation" in W3C WoT; this should be discussed.  It may not refer to stopping/starting
+persistent new services.
 
 The ITU-T WoT architecture defines several categories of services, some of which
 appear to overlap: 
-* *WoT services*, which represent a physical device. 
+* **WoT services**, which represent a physical device. 
   These provide a mapping from HTTP to the native protocols.  
   They depend internally on software adapters called agents supported by the WoT broker.
-* *Web services*, which are available on the web.  A WoT service available on the web
+* **Web services**, which are available on the web.  A WoT service available on the web
   is also a web service.
-* *Mash-ups*, which are web services that combine other web services (including network, non-WoT 
+* **Mash-ups**, which are web services that combine other web services (including network, non-WoT 
   services not necessarily associated with a physical device) to create new web services.
 
 The ITU-T uses a three-layer model: 
@@ -70,7 +72,7 @@ A resource management service in the ITU-T architecture also supports additional
 functions such as monitoring the availablity and response time of devices and 
 supporting mapping of identifiers.
 
-*Use cases:* One use case is explictly given in appendix I.1: Home control services.
+**Use cases:** One use case is explictly given in appendix I.1: Home control services.
 This use case corresponds to the Smart Home W3C WoT use case, and considers the 
 scenario of a home owner controlling devices in their own home.  Examples are also
 given of mash-up services combining in-home devices and web services.  It considers
