@@ -142,8 +142,37 @@ Additional references:
 * [ITU-T Y.4000/Y.2060 (2012) - Overview of the internet of things]()
 * [ITU-T Y.4400/Y.2063 (2012) - Framework of the web of things]()
 
-## Y.4452 - Functional framework of web of objects
-To do.
+## Y.4452 - Functional framework of web of objects (SG20)
+**Key points in abstract:** Defines concept, reference model, functional capabilities
+and information models of the web of objects (WoO).
+
+Note: the word "object" seems to be used here as a more general term than "thing".
+Also, "virtual objects" are defined as virtual (abstract?) representations of real world objects
+and the "web of objects" is defined as a way to "incorporate virtual objects on the 
+world wide web".
+
+The WoO system includes explicit support for repositories of templates and creation of 
+instantiations of objects via a factory. 
+In addition relationships between objects can be expressed and managed via RDF triples
+stored in an object registry.
+Objects have a lifecycle that includes states beyond simply creation.
+Composite objects are also supported for mashup services that correspond to 
+a combination of other objects as opposed to directly mapping onto physical
+devices.
+An additional "service" level supports the construction of services to support
+user requests.
+
+An information model based on RDF ontologies is provided for each of services,
+objects, and composite objects.
+
+Note: in the text "objects" are actually called "virtual objects", I have simplified the
+terminology slightly.
+
+Additional references:
+* [ITU-T Y.4000/Y.2060 (2012) - Overview of the internet of things]()
+* [ITU-T Y.4552/Y.2078 (2016) - Application support models of the internet of things]()
+
+No appendices.
 
 ## Y.4415 - Architecture of web of objects-based virtual home network
 To do.
