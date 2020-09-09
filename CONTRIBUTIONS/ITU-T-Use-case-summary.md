@@ -84,10 +84,63 @@ control is possible, i.e. the services could be running on a local system.
 
 Additional references:
 * [ITU-T Y.2002 (2009) - Overview of ubiquitous networking and of its support in NGN]()
-* [ITU-T Y.2060 (2012) - Overview of the internet of things]()
+* [ITU-T Y.4000/Y.2060 (2012) - Overview of the internet of things]()
 
 ## Y.4414/H.623 - Web of things service architecture
-To do.
+**Key points in abstract:** Defines a service architecture that can support discovery,
+access, sharing, and mash-ups of devices and services.  Supports portability across
+heterogeneous network environments.
+
+Defines a set of "WoT Service" (WoT-S) functions for managing overall WoT behaviors,
+including service profile (eg. Thing Description) management, discovery (corresponding
+to processes described in WoT Discovery), QoS control, monitoring, and access management (handled
+in W3C WoT by Things themselves or possibly delegated to proxies).
+There is also repository to register and discover WoT services which would 
+correspond to the WoT Directory service proposed as part of WoT Discovery.
+The ITU-T definition of discovery, like the WoT definition, includes the requirement to
+support spatial searches.
+One capability included in the ITU-T architecture but not in WoT is the monitoring
+function, which can be used to check statistics such as response time, resource
+usage, etc. of other services.  It may report both static and dynamic information.
+Related to this is the policy function, which can be used to manage QoS but also
+functions such as access control.  The latter could be supported via a suitable
+"firewall" proxy in the W3C WoT architecture but is not as explicit as in the ITU-T
+architecture.  The policy system can also monitor safety.  Details are not given
+in the document but it can be inferred that this can include functional safety capabilities,
+e.g. to put devices into a fail-safe condition if certain conditions are met.
+The ITU-T also supports a "service creation" service which aims to support mashups.
+Details are not given but this function could be supported in the W3C WoT architecture
+via the installation and execution of scripts using the WoT Scripting API.
+Finally, a management system allows services to be updated, tracked, audited, and activity logged.
+It can also detect failure of a service, supports recovery, and allows services to
+be replaced.  
+
+The "service profile" functionality does not overlap exactly with 
+W3C WoT Thing Descriptions.  The service profile may contain metadata not currently in
+TDs (such as service lifetime and "service execution logic") and 
+TDs may contain information not in service profiles
+(such as data schemas and interactions).  
+However, in addition to service profiles, "descriptions"
+are discussed in section 8.3.4, with WSDL (Web Service Description Language) suggested
+among other alternatives.  Rather than prescribing a specific description language however,
+the ITU-T WoT suggests that the WoT provide a capability to translate descriptions
+to allow cooperation among service providers.  Appendix I includes a "WoT description model"
+and elsewhere WSDL seems to be given more emphasis over other alternatives.  The WoT
+description model includes metadata such as geolocation, QoS, and device picture not currently
+included in the W3C WoT Thing Description.
+
+An ITU-T WoT system can support several brokers for translating from the web to 
+different "native" protocols supported by different kinds of devices.
+
+Appendix II includes some detailed example flows of communication between the various 
+functional components described.
+
+Additional references:
+* [ITU-T M.3030 (2002) - Telecommunications Markup Language (tML) framework]()
+* [ITU-T Y.2002 (2009) - Overview of ubiquitous networking and of its support in NGN]()
+* [ITU-T Y.2232 (2008) - NGN convergence service model and scenario using web services]()
+* [ITU-T Y.4000/Y.2060 (2012) - Overview of the internet of things]()
+* [ITU-T Y.4400/Y.2063 (2012) - Framework of the web of things]()
 
 ## Y.4452 - Functional framework of web of objects
 To do.
