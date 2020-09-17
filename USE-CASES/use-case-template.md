@@ -14,7 +14,7 @@
 
 ### Category:
 
-<please leave blank>
+<please put "horizontal" or "vertical" here>
 
 ### Class: 
 
