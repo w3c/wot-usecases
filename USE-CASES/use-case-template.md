@@ -69,6 +69,10 @@
 
 <Describe any issues related to privacy; if there are none, say "none" and justify>
 
+### Requirements:
+
+<Describe a hogh level summary of any requirements that are not addressed in the current WoT standards and building blocks>
+
 ### Gaps:
 
 <Describe any gaps that are not addressed in the current WoT standards and building blocks>
