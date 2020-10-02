@@ -4574,254 +4574,269 @@
 
             <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
               for this use case</section>
-              
-      WoT Security
-      ETSI OneM2M
-      OMA LwM2M
-      OCF
-      IEEE
-      SIM cards / GSMA
-      IETF
-      Application Lifecycle (W3C Multimodal Interaction WG)
+            <ul>
+              <li> WoT Security</li>
+              <li>
+                ETSI OneM2M
+              </li>
+              <li>
+                OMA LwM2M
+              </li>
+              <li>
+                OCF
+              </li>
+              <li>
+                IEEE
+              </li>
+              <li>
+                SIM cards / GSMA
+              </li>
+              <li>
+                IETF
+              </li>
+              <li>
+              </li>
 
-      </dd>
-      <dt>Comments</dt>
-      <dd>
+            </ul>
 
-        All lifecycle contributions and discussion documents are available at:
-        https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle
+          </dd>
+          <dt>Comments</dt>
+          <dd>
 
-
-        documents that were created / discussed in the architecture TF.
-
-        Lifecycle comparisons:
-        https://github.com/w3c/wot-architecture/blob/master/proposals/Device-lifecycle-comparisons.pdf
-
-        Lifecycle states:
-        https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/lifecycle-states.md
-
-        Draft lifecycle diagram:
-        https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20lifecycle%20diagram-WoT%20new%20lifecycle.svg
-
-        Layered lifecycle:
-        https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20layered%20%20lifecycle%20diagram-WoT%20new%20lifecycle.svg
-
-        System lifecycle:
-        https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/unified%20device%20lifecycle.svg
-
-        IoT Security Bootstrapping:
-        https://github.com/w3c/wot-security/blob/master/presentations/2020-03-16-Bootstrapping%20IoT%20Security%20-%20The%20IETF%20Anima%20and%20OPC-UA%20Recipes.pdf
+            All lifecycle contributions and discussion documents are available at:
+            https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle
 
 
-      </dd>
-      </dl>
+            documents that were created / discussed in the architecture TF.
+
+            Lifecycle comparisons:
+            https://github.com/w3c/wot-architecture/blob/master/proposals/Device-lifecycle-comparisons.pdf
+
+            Lifecycle states:
+            https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/lifecycle-states.md
+
+            Draft lifecycle diagram:
+            https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20lifecycle%20diagram-WoT%20new%20lifecycle.svg
+
+            Layered lifecycle:
+            https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20layered%20%20lifecycle%20diagram-WoT%20new%20lifecycle.svg
+
+            System lifecycle:
+            https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/unified%20device%20lifecycle.svg
+
+            IoT Security Bootstrapping:
+            https://github.com/w3c/wot-security/blob/master/presentations/2020-03-16-Bootstrapping%20IoT%20Security%20-%20The%20IETF%20Anima%20and%20OPC-UA%20Recipes.pdf
+
+
+          </dd>
+        </dl>
+      </section>
     </section>
-  </section>
 
-  <section id="acknowledgements" class="appendix normative">
-    <h1>Acknowledgments</h1>
+    <section id="acknowledgements" class="appendix normative">
+      <h1>Acknowledgments</h1>
 
-    <section class="ednote" TODO:>
-      List all authors of contributions.
-    </section>
-    <p>Special thanks to all authors of use case descriptions
-      <!-- Michael McCool, Takuki Kamiya, Kazuyuki Ashimura,  
+      <section class="ednote" TODO:>
+        List all authors of contributions.
+      </section>
+      <p>Special thanks to all authors of use case descriptions
+        <!-- Michael McCool, Takuki Kamiya, Kazuyuki Ashimura,  
         Sebastian Käbisch, Zoltan Kis, ... --> for their contributions to this document.
-    </p>
-    <p>
-      Many thanks to the W3C staff and all other active Participants of the W3C Web
-      of Things Interest Group (WoT IG) and Working Group (WoT WG) for their
-      support, technical input and suggestions that led to improvements to
-      this document.
-    </p>
-  </section>
-
-  <section id="references" class="appendix">
-    <h2 id="a-references"><bdi class="secno">A.</bdi>
-      References<a class="self-link" aria-label="§" href="#references"></a></h2>
-    <section id="informative-references">
-      <h3 id="a-1-informative-references"><bdi class="secno">A.1</bdi> Informative references<a class="self-link"
-          aria-label="§" href="#informative-references"></a></h3>
-      <dl class="bibliography">
-        <dt id="bib-hybridcast">[Hybridcast]</dt>
-        <dd>
-          Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system, HbbTV, ATSC 3.0,
-          ...etc.
-        </dd>
-        <dt id="bib-nmea">[NMEA]</dt>
-        <dd>
-          defines sentences from GPS devices
-        </dd>
-        <dt id="bib-wgs84">[WGS84]</dt>
-        <dd>
-          https://en.wikipedia.org/wiki/World_Geodetic_System
-          * World Geodetic System * Defines lat/long/alt coordinate system used by most other geolocation standards
-          * More complicated than you would think (need to deal with deviations of Earth from a true sphere,
-          gravitational irregularities, position of centroid, etc. etc.)
-        </dd>
-        <dt id="bib-geovoc">[Basic Geo Vocabulary]</dt>
-        <dd>
-          https://www.w3.org/2003/01/geo/
-          * Very basic RDF definitions for lat, long, and alt
-          * Does not define heading or speed
-          * Does not define accuracy
-          * Does not define timestamps
-          * Uses string as a data model (rather than a number)
-        </dd>
-        <dt id="bib-geoapi">[W3C Geolocalization API]</dt>
-        <dd>
-          https://www.w3.org/TR/geolocation-API/
-          * W3C Devices and Sensors WG is now handling
-          * There is an updated proposal: https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface
-          * Data schema of updated proposal is similar to existing API, but all elements are now optional
-          * Data includes latitude, longitude, altitude, heading, and speed
-          * Accuracy is included for latitude/longitude (single number in meters, 95% confidence,
-          interpretation a little ambiguous, but probably intended to be a radius) and altitude, but not for heading
-          or speed.
-        </dd>
-        <dt id="bib-geocons">[Open Geospatial Consortium]</dt>
-        <dd>
-          * See http://docs.opengeospatial.org/as/18-005r4/18-005r4.html * Referring to locations by coordinates
-          * Has standards defining semantics for identifying locations * Useful for mapping
-        </dd>
-        <dt id="bib-iso19111">[ISO19111]</dt>
-        <dd>
-          * ISO19111: https://www.iso.org/standard/74039.html * Standard for referring to locations by coordinates
-          * Related to OGS standard above and WGS84 * Various other standards that relate to remote sensing,
-          geolocation, etc.
-          * Here is an example (see references): https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en
-        </dd>
-        <dt id="bib-ssn">[SSN]</dt>
-        <dd>
-          https://www.w3.org/TR/vocab-ssn/
-          * Defines "accuracy": https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy
-          * Definition of accuracy is consistent with how it is used in Web Geolocation API
-          * Also defines related terms Precision, Resolution, Latency, Drift, etc.
-        </dd>
-        <dt id="bib-timestamp">[Timestamps]</dt>
-        <dd>
-          * W3C standard in proposed new web geolocation API: https://w3c.github.io/hr-time/#dom-domhighrestimestamp
-          * See also related issues such as latency defined in SSN
-        </dd>
-        <dt id="bib-mmiuc31">[MMI UC3.1]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-mmiuc32">[MMI UC3.2]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-ice-f2761">[ICE F2761-09(2013)]</dt>
-        <dd>
-          Medical Devices and Medical Systems - Essential safety requirements for equipment comprising the
-          patient-centric
-          integrated clinical environment (ICE) - Part 1: General requirements and conceptual model.
-          The idea behind ICE is to allow medical devices that conform to the ICE standard, either natively or using
-          an adapter,
-          to interoperate with other ICE-compliant devices regardless of manufacturer.
-        </dd>
-        <dt id="bib-openice">[OpenICE]</dt>
-        <dd>
-          OpenICE is an initiative to create a community implementation of F2761-09
-          (ICE - Integrated Clinical Environment) based on DDS (https://www.omg.org/spec/DDS/About-DDS/).
-        </dd>
-        <dt id="bib-mdira">[MDIRA]</dt>
-        <dd>
-          https://secwww.jhuapl.edu/mdira/documents
-          MDIRA Version 1.0 provides requirements and implementation guidance for MDIRA-compliant systems focused on
-          trauma
-          and critical care in austere environments. Johns Hopkins University Applied Physics Laboratory (JHU-APL)
-          lead a research project
-          in collaboration with US military to develop a framework of autonomous / closed loop prototypes for
-          military health care which
-          are dual use for the civilian healthcare system.
-        </dd>
-        <dt id="bib-mqtt">[MQTT]</dt>
-        <dd>
-          <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html">
-            <cite>MQTT Version 3.1.1 Plus Errata 01</cite></a>.
-          Andrew Banks; Rahul Gupta. OASIS Standard. December 2015.
-          URL: <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html">
-            http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html</a>
-        </dd>
-        <dt id="bib-opcua">[OPC UA]</dt>
-        <dd>
-          description opc ua
-        </dd>
-        <dt id="bib-bacnet">[BACnet]</dt>
-        <dd>
-          description BACnet
-        </dd>
-        <dt id="bib-coap">[CoAP]</dt>
-        <dd>
-          description CoAP
-        </dd>
-        <dt id="bib-mmiuc51">[MMI UC5.1]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-mmiuc52">[MMI UC5.2]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-mmiuc11">[MMI UC1.1]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-mmiuc12">[MMI UC1.2]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-mmiuc21">[MMI UC2.1]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-iec61850">[IEC 61850]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-ieee1574">[IEEE 1574]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-knx">[KNX]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-modbus">[Modbus]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-ogc">[OGC Sensor Things]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-onem2m">[OneM2M]</dt>
-        <dd>
-          no description
-        </dd>
-        <dt id="bib-lwm2m">[LWM2M]</dt>
-        <dd>
-          <a
-            href="http://openmobilealliance.org/release/LightweightM2M/V1_1-20180710-A/OMA-TS-LightweightM2M_Core-V1_1-20180710-A.pdf">
-            <cite>Lightweight Machine to Machine Technical
-              Specification: Core</cite></a>. OMA SpecWorks. August
-          2018. Approved Version: 1.1. URL: <a
-            href="http://openmobilealliance.org/release/LightweightM2M/V1_1-20180710-A/OMA-TS-LightweightM2M_Core-V1_1-20180710-A.pdf">
-            http://openmobilealliance.org/release/LightweightM2M/V1_1-20180710-A/OMA-TS-LightweightM2M_Core-V1_1-20180710-A.pdf</a>
-        </dd>
-        <dt id="bib-ocf">[OCF]</dt>
-        <dd>
-          <a href="https://openconnectivity.org/developer/specifications"><cite>
-              OCF Core Specification</cite></a>. Open Connectivity
-          Foundation. April 2019. Version 2.0.2. URL: <a
-            href="https://openconnectivity.org/developer/specifications">https://openconnectivity.org/developer/specifications</a>
-        </dd>
-      </dl>
+      </p>
+      <p>
+        Many thanks to the W3C staff and all other active Participants of the W3C Web
+        of Things Interest Group (WoT IG) and Working Group (WoT WG) for their
+        support, technical input and suggestions that led to improvements to
+        this document.
+      </p>
     </section>
-  </section>
 
-  <!--
+    <section id="references" class="appendix">
+      <h2 id="a-references"><bdi class="secno">A.</bdi>
+        References<a class="self-link" aria-label="§" href="#references"></a></h2>
+      <section id="informative-references">
+        <h3 id="a-1-informative-references"><bdi class="secno">A.1</bdi> Informative references<a class="self-link"
+            aria-label="§" href="#informative-references"></a></h3>
+        <dl class="bibliography">
+          <dt id="bib-hybridcast">[Hybridcast]</dt>
+          <dd>
+            Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system, HbbTV, ATSC 3.0,
+            ...etc.
+          </dd>
+          <dt id="bib-nmea">[NMEA]</dt>
+          <dd>
+            defines sentences from GPS devices
+          </dd>
+          <dt id="bib-wgs84">[WGS84]</dt>
+          <dd>
+            https://en.wikipedia.org/wiki/World_Geodetic_System
+            * World Geodetic System * Defines lat/long/alt coordinate system used by most other geolocation standards
+            * More complicated than you would think (need to deal with deviations of Earth from a true sphere,
+            gravitational irregularities, position of centroid, etc. etc.)
+          </dd>
+          <dt id="bib-geovoc">[Basic Geo Vocabulary]</dt>
+          <dd>
+            https://www.w3.org/2003/01/geo/
+            * Very basic RDF definitions for lat, long, and alt
+            * Does not define heading or speed
+            * Does not define accuracy
+            * Does not define timestamps
+            * Uses string as a data model (rather than a number)
+          </dd>
+          <dt id="bib-geoapi">[W3C Geolocalization API]</dt>
+          <dd>
+            https://www.w3.org/TR/geolocation-API/
+            * W3C Devices and Sensors WG is now handling
+            * There is an updated proposal: https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface
+            * Data schema of updated proposal is similar to existing API, but all elements are now optional
+            * Data includes latitude, longitude, altitude, heading, and speed
+            * Accuracy is included for latitude/longitude (single number in meters, 95% confidence,
+            interpretation a little ambiguous, but probably intended to be a radius) and altitude, but not for heading
+            or speed.
+          </dd>
+          <dt id="bib-geocons">[Open Geospatial Consortium]</dt>
+          <dd>
+            * See http://docs.opengeospatial.org/as/18-005r4/18-005r4.html * Referring to locations by coordinates
+            * Has standards defining semantics for identifying locations * Useful for mapping
+          </dd>
+          <dt id="bib-iso19111">[ISO19111]</dt>
+          <dd>
+            * ISO19111: https://www.iso.org/standard/74039.html * Standard for referring to locations by coordinates
+            * Related to OGS standard above and WGS84 * Various other standards that relate to remote sensing,
+            geolocation, etc.
+            * Here is an example (see references): https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en
+          </dd>
+          <dt id="bib-ssn">[SSN]</dt>
+          <dd>
+            https://www.w3.org/TR/vocab-ssn/
+            * Defines "accuracy": https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy
+            * Definition of accuracy is consistent with how it is used in Web Geolocation API
+            * Also defines related terms Precision, Resolution, Latency, Drift, etc.
+          </dd>
+          <dt id="bib-timestamp">[Timestamps]</dt>
+          <dd>
+            * W3C standard in proposed new web geolocation API: https://w3c.github.io/hr-time/#dom-domhighrestimestamp
+            * See also related issues such as latency defined in SSN
+          </dd>
+          <dt id="bib-mmiuc31">[MMI UC3.1]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-mmiuc32">[MMI UC3.2]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-ice-f2761">[ICE F2761-09(2013)]</dt>
+          <dd>
+            Medical Devices and Medical Systems - Essential safety requirements for equipment comprising the
+            patient-centric
+            integrated clinical environment (ICE) - Part 1: General requirements and conceptual model.
+            The idea behind ICE is to allow medical devices that conform to the ICE standard, either natively or using
+            an adapter,
+            to interoperate with other ICE-compliant devices regardless of manufacturer.
+          </dd>
+          <dt id="bib-openice">[OpenICE]</dt>
+          <dd>
+            OpenICE is an initiative to create a community implementation of F2761-09
+            (ICE - Integrated Clinical Environment) based on DDS (https://www.omg.org/spec/DDS/About-DDS/).
+          </dd>
+          <dt id="bib-mdira">[MDIRA]</dt>
+          <dd>
+            https://secwww.jhuapl.edu/mdira/documents
+            MDIRA Version 1.0 provides requirements and implementation guidance for MDIRA-compliant systems focused on
+            trauma
+            and critical care in austere environments. Johns Hopkins University Applied Physics Laboratory (JHU-APL)
+            lead a research project
+            in collaboration with US military to develop a framework of autonomous / closed loop prototypes for
+            military health care which
+            are dual use for the civilian healthcare system.
+          </dd>
+          <dt id="bib-mqtt">[MQTT]</dt>
+          <dd>
+            <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html">
+              <cite>MQTT Version 3.1.1 Plus Errata 01</cite></a>.
+            Andrew Banks; Rahul Gupta. OASIS Standard. December 2015.
+            URL: <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html">
+              http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html</a>
+          </dd>
+          <dt id="bib-opcua">[OPC UA]</dt>
+          <dd>
+            description opc ua
+          </dd>
+          <dt id="bib-bacnet">[BACnet]</dt>
+          <dd>
+            description BACnet
+          </dd>
+          <dt id="bib-coap">[CoAP]</dt>
+          <dd>
+            description CoAP
+          </dd>
+          <dt id="bib-mmiuc51">[MMI UC5.1]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-mmiuc52">[MMI UC5.2]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-mmiuc11">[MMI UC1.1]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-mmiuc12">[MMI UC1.2]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-mmiuc21">[MMI UC2.1]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-iec61850">[IEC 61850]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-ieee1574">[IEEE 1574]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-knx">[KNX]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-modbus">[Modbus]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-ogc">[OGC Sensor Things]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-onem2m">[OneM2M]</dt>
+          <dd>
+            no description
+          </dd>
+          <dt id="bib-lwm2m">[LWM2M]</dt>
+          <dd>
+            <a
+              href="http://openmobilealliance.org/release/LightweightM2M/V1_1-20180710-A/OMA-TS-LightweightM2M_Core-V1_1-20180710-A.pdf">
+              <cite>Lightweight Machine to Machine Technical
+                Specification: Core</cite></a>. OMA SpecWorks. August
+            2018. Approved Version: 1.1. URL: <a
+              href="http://openmobilealliance.org/release/LightweightM2M/V1_1-20180710-A/OMA-TS-LightweightM2M_Core-V1_1-20180710-A.pdf">
+              http://openmobilealliance.org/release/LightweightM2M/V1_1-20180710-A/OMA-TS-LightweightM2M_Core-V1_1-20180710-A.pdf</a>
+          </dd>
+          <dt id="bib-ocf">[OCF]</dt>
+          <dd>
+            <a href="https://openconnectivity.org/developer/specifications"><cite>
+                OCF Core Specification</cite></a>. Open Connectivity
+            Foundation. April 2019. Version 2.0.2. URL: <a
+              href="https://openconnectivity.org/developer/specifications">https://openconnectivity.org/developer/specifications</a>
+          </dd>
+        </dl>
+      </section>
+    </section>
+
+    <!--
 Domains from the 1.0 UC document 
 		
 		<section id="domain-home_automation">
