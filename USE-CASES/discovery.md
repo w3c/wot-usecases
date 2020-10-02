@@ -75,8 +75,8 @@ constraints are retreived by a running system.
 * Run-time discovery allows late binding of orchestration services to particular devices and requires that
 consumers be able to adapt to Thing Descriptions discovered when a service is deployed.
 * Development-time discovery may be useful during system development to build services that can interface to
-a particular class of Thing Descriptions.  In this case what actually needs to be discovered Thing Description
-Templates, not specific Thing Descriptions.
+a particular class of Thing Descriptions.  In this case what actually needs to be discovered Thing Models,
+not specific Thing Descriptions.
 
 ### Security Considerations:
 
