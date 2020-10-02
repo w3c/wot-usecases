@@ -640,1079 +640,375 @@
           </dd>
         </dl>
       </section>
-    </section>
 
-    <section id="agriculture">
-      <h2>Agriculture</h2>
-      <section id="smart-agriculture">
-        <h2>Smart Agriculture (Greenhouse Horticulture)</h2>
-        <dl>
+      <section id="agriculture">
+        <h2>Agriculture</h2>
+        <section id="smart-agriculture">
+          <h2>Smart Agriculture (Greenhouse Horticulture)</h2>
+          <dl>
 
-          <dt>Submitter(s)</dt>
-          <dd>
+            <dt>Submitter(s)</dt>
+            <dd>
 
-            Ryuichi Matsukura, Takuki Kamiya
+              Ryuichi Matsukura, Takuki Kamiya
 
-          </dd>
-          <dt>Reviewer(s)</dt>
-          <dd>
+            </dd>
+            <dt>Reviewer(s)</dt>
+            <dd>
 
-          </dd>
-          <dt>Tracker Issue ID</dt>
-          <dd>
+            </dd>
+            <dt>Tracker Issue ID</dt>
+            <dd>
 
-          </dd>
-          <dt>Category</dt>
-          <dd>
+            </dd>
+            <dt>Category</dt>
+            <dd>
 
-          </dd>
-          <dt>Class</dt>
-          <dd>
+            </dd>
+            <dt>Class</dt>
+            <dd>
 
-          </dd>
-          <dt>Status</dt>
-          <dd>
+            </dd>
+            <dt>Status</dt>
+            <dd>
 
-          </dd>
-          <dt>Target Users</dt>
-          <dd>
+            </dd>
+            <dt>Target Users</dt>
+            <dd>
 
-            Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), Cloud provider
+              Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), Cloud provider
 
-          </dd>
-          <dt>Motivation</dt>
-          <dd>
+            </dd>
+            <dt>Motivation</dt>
+            <dd>
 
-            Greenhouse Horticulture controlled by computers can create an optimal environment for growing plants. This
-            enables to improve productivity and ensure stable vegetable production throughout the year, independent of
-            the weather. This is the result of research on the growth of plants in the 1980s. For example, in
-            tomatoes, switching to hydroponics and optimizing the temperature, humidity and CO2 concentration required
-            for photosynthesis resulted in a five times increase in yield. The growth conditions for other vegetables
-            also have been investigated, and this control system is applied now.
+              Greenhouse Horticulture controlled by computers can create an optimal environment for growing plants. This
+              enables to improve productivity and ensure stable vegetable production throughout the year, independent of
+              the weather. This is the result of research on the growth of plants in the 1980s. For example, in
+              tomatoes, switching to hydroponics and optimizing the temperature, humidity and CO2 concentration required
+              for photosynthesis resulted in a five times increase in yield. The growth conditions for other vegetables
+              also have been investigated, and this control system is applied now.
 
-          </dd>
-          <dt>Expected Devices</dt>
-          <dd>
+            </dd>
+            <dt>Expected Devices</dt>
+            <dd>
 
-            Sensors ( temperature, humidity, brightness, UV brightness, air pressure, and CO2)
-            Heating, CO2 generator, open and close sunlight shielding sheet.
+              Sensors ( temperature, humidity, brightness, UV brightness, air pressure, and CO2)
+              Heating, CO2 generator, open and close sunlight shielding sheet.
 
-          </dd>
-          <dt>Expected Data</dt>
-          <dd>
+            </dd>
+            <dt>Expected Data</dt>
+            <dd>
 
-            Sensors’ values to clarify the gaps between conditions for maximizing photosynthesis and the current
-            environment.
-            Following sensors values at one or some points in the greenhouse: temperature, humidity, brightness, and
-            CO2.
+              Sensors’ values to clarify the gaps between conditions for maximizing photosynthesis and the current
+              environment.
+              Following sensors values at one or some points in the greenhouse: temperature, humidity, brightness, and
+              CO2.
 
-          </dd>
-          <dt>Dependencies</dt>
-          <dd>
+            </dd>
+            <dt>Dependencies</dt>
+            <dd>
 
-            WoT Architecture、WoT Thing Description
+              WoT Architecture、WoT Thing Description
 
-          </dd>
-          <dt>Description</dt>
-          <dd>
+            </dd>
+            <dt>Description</dt>
+            <dd>
 
-            Sensors and some facilities like heater, CO2 generator, sheet controller are connected to the gateway via
-            wired or wireless networks. The gateway is connected to the cloud via the Internet. All sensors and
-            facilities can be accessed and controlled from the cloud.
-            To maximize photosynthesis, the temperature, CO2 concentration, and humidity in the greenhouse are mainly
-            controlled. When the sunlight comes in the morning and CO2 concentration inside decreases, the application
-            turns on the CO2 generator to keep over 400 ppm, the same as the air outside. The temperature in the
-            greenhouse is adjusted by controlling the heater and the sunlight shielding sheet.
-            The cloud gathers all sensor data and the status of the facilities. The application makes the best
-            configuration for the region of the greenhouse located.
+              Sensors and some facilities like heater, CO2 generator, sheet controller are connected to the gateway via
+              wired or wireless networks. The gateway is connected to the cloud via the Internet. All sensors and
+              facilities can be accessed and controlled from the cloud.
+              To maximize photosynthesis, the temperature, CO2 concentration, and humidity in the greenhouse are mainly
+              controlled. When the sunlight comes in the morning and CO2 concentration inside decreases, the application
+              turns on the CO2 generator to keep over 400 ppm, the same as the air outside. The temperature in the
+              greenhouse is adjusted by controlling the heater and the sunlight shielding sheet.
+              The cloud gathers all sensor data and the status of the facilities. The application makes the best
+              configuration for the region of the greenhouse located.
 
-            <p>#### Variants:</p>
+              <p>#### Variants:</p>
 
-            &lt;Describe possible use case variants, if applicable&gt;
+              &lt;Describe possible use case variants, if applicable&gt;
 
-          </dd>
-          <dt>Gaps</dt>
-          <dd>
+            </dd>
+            <dt>Gaps</dt>
+            <dd>
 
-            In the case of the wireless connection to the sensors, the gateway should keep the latest value of the
-            sensors since the wireless connection is sometimes broken. The gateway can create a virtual entity
-            corresponding to the sensor and allow the application to access this virtual entity having the actual
-            sensor status like sleeping.
+              In the case of the wireless connection to the sensors, the gateway should keep the latest value of the
+              sensors since the wireless connection is sometimes broken. The gateway can create a virtual entity
+              corresponding to the sensor and allow the application to access this virtual entity having the actual
+              sensor status like sleeping.
 
-          </dd>
-          <dt>Existing standards</dt>
-          <dd>
+            </dd>
+            <dt>Existing standards</dt>
+            <dd>
 
-          </dd>
-          <dt>Comments</dt>
-          <dd>
-          </dd>
-        </dl>
-      </section>
-    </section>
-
-    <section id="smart-city">
-      <h2>Smart City</h2>
-      <section id="smartcity-geolocation">
-        <h2>Smart City Geolocation</h2>
-        <dl>
-
-          <dt>Submitter(s)</dt>
-          <dd>
-
-            Jennifer Lin (GovTech Singapore), Michael McCool
-
-          </dd>
-          <dt>Reviewer(s)</dt>
-          <dd>
-
-            Michael Lagally
-
-          </dd>
-          <dt>Tracker Issue ID</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Category</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Class</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Status</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Target Users</dt>
-          <dd>
-
-            A Smart City managing mobile devices and sensors,
-            including passively mobile sensor packs, packages,
-            vehicles, and autonomous robots, where their location needs to
-            be determined dynamically.
-
-            <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards that
-              are relevant for this use case</section>-3" class="ednote">
-            <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
-              for
-              this use case</section>: Stakeholders/Users need to be further clarified. They include "city government,
-            people counting
-            service providers, police, network providers, ...
+            </dd>
+            <dt>Comments</dt>
+            <dd>
+            </dd>
+          </dl>
+        </section>
       </section>
 
-      </dd>
-      <dt>Motivation</dt>
-      <dd>
+      <section id="smart-city">
+        <h2>Smart City</h2>
+        <section id="smartcity-geolocation">
+          <h2>Smart City Geolocation</h2>
+          <dl>
 
-        Smart Cities need to track a large number of mobile devices and sensors.
-        Location information may be integrated with a logistics or fleet management
-        system.
-        A reusable geolocation module is needed with a common network interface to
-        include in these various applications.
-        For outdoor applications, GPS
-        could be used, but indoors other geolocation technologies might be
-        used, such as WiFi triangulation or vision-based navigation (SLAM).
-        Therefore the geolocation information should be technology-agnostic.
+            <dt>Submitter(s)</dt>
+            <dd>
 
-        NOTE: we prefer the term "geolocation", even indoors, over "localization" to
-        avoid confusion with language localization.
+              Jennifer Lin (GovTech Singapore), Michael McCool
 
-      </dd>
-      <dt>Expected Devices</dt>
-      <dd>
+            </dd>
+            <dt>Reviewer(s)</dt>
+            <dd>
 
-        One of the following:
-        <ul>
-          <li>A geolocation system on a personal device, such as a smart phone.</li>
-          <li>A geolocation system to be attached to some other portable device.</li>
-          <li>A geolocation system attached to a mobile vehicle.</li>
-          <li>A geolocation system on a payload transported by a vehicle.</li>
-          <li>A geolocation system on an indoor mobile robot.</li>
-        </ul>
+              Michael Lagally
 
-      </dd>
-      <dt>Expected Data</dt>
-      <dd>
+            </dd>
+            <dt>Tracker Issue ID</dt>
+            <dd>
 
-        <ul>
-          <li>Sensor ID</li>
-          <li>Timestamp of last geolocation</li>
-          <li>2D location</li>
-          * typically latitude and longitude
-          * May also be semantic, i.e. room in a building, exit
-        </ul>
+              &lt;please leave blank&gt;
 
-        Optional:
-        <ul>
-          <li>Semantic location</li>
-          * Possibly in addition to numerical lat/long location.
-          <li>Altitude</li>
-          * May also be semantic, i.e. floor of a building
-          <li>Heading</li>
-          <li>Speed</li>
-          <li>Accuracy information</li>
-          * Confidence interval, e.g. distance that true location will be within some probability.
-          * Gaussian covariance matrix
-          * For each measurement
-          * For lat/long, may be a single value (see web browser API; radius?)
-          <li>Geolocation technology (GPS, SLAM, etc). </li>
-          * Note that multiple technologies might be used together.
-          * Include parameters such as sample interval, accuracy
-          <li>For each geolocation technology, data specific to that technology:</li>
-          * GPS: NMEA type
-          <li>Historical data</li>
-        </ul>
+            </dd>
+            <dt>Category</dt>
+            <dd>
 
-        Note: the system should be capable of notifying consumers
-        of changes in location.
-        This may be used to implement geofencing by some other system.
-        This may require additional parameters, such as the
-        maximum distance that the device may be moved before a notification is
-        sent, or the maximum amount of time between updates.
-        Notifications may be sent by a variety of means, some of which may
-        not be traditional push mechanisms (for example, email might be used).
-        For geofencing applications, it is not necessary that the device be aware
-        of the fence boundaries; these can be managed by a separate system.
+              &lt;please leave blank&gt;
 
-      </dd>
-      <dt>Dependencies</dt>
-      <dd>
+            </dd>
+            <dt>Class</dt>
+            <dd>
 
-        node-wot
+              &lt;please leave blank&gt;
 
-      </dd>
-      <dt>Description</dt>
-      <dd>
+            </dd>
+            <dt>Status</dt>
+            <dd>
 
-        Smart Cities have the need to observe the physical locations of
-        large number of mobile devices
-        in use in the context of a Fleet or Logistics Management System, or
-        to place sensor data on a map in a Dashboard application.
-        These systems may also include geofencing notifications and mapping
-        (visual tracking) capabilities.
+              &lt;please leave blank&gt;
 
-        <p>#### Variants:</p>
+            </dd>
+            <dt>Target Users</dt>
+            <dd>
 
-        <ul>
-          <li>A version of the system may log historical data so the past</li>
-          locations of the devices can be recovered.
-          <li>Geolocation technologies other than GPS may be used. The payload</li>
-          may contain additional information specific to the geolocation
-          technology used. In particular, in indoor situations technologies such
-          as WiFi triangulation or (V)SLAM may be more appropriate.
-          <li>Geofencing may be implemented using event notifications and</li>
-          will require setting of additional parameters such as maximum distance.
-        </ul>
+              A Smart City managing mobile devices and sensors,
+              including passively mobile sensor packs, packages,
+              vehicles, and autonomous robots, where their location needs to
+              be determined dynamically.
 
-      </dd>
-      <dt>Security Considerations</dt>
-      <dd>
-
-        High-resolution timestamps can be used in conjunction with cache manipulation to
-        access protected regions of memory, as with the SPECTRE exploit. Certain
-        geolocation APIs and technologies can return high-resolution timestamps which
-        can be a potential problem. Eventually these issues will be addressed in cache
-        architecture but in the meantime a workaround is to artificially limit the
-        resolution of timestamps.
-
-      </dd>
-      <dt>Privacy Considerations</dt>
-      <dd>
-
-        Location is generally considered private information when it is used with a device
-        that may be associated with a specific person, such as a phone or vehicle, as it
-        can be used to track that person and infer their activities or who they associate
-        with (if multiple people are being tracked at once). Therefore APIs to access geographic location
-        in sensitive contexts are often restricted, and access is allowed only after confirming
-        permission from the user.
-
-      </dd>
-      <dt>Gaps</dt>
-      <dd>
-
-        There is no standardized semantic vocabulary for representing location data.
-        Location data can be point data, a path, an area or a volumetric object.
-        Location information can be expressed using multiple standards,
-        but the reader of location data in a TD or in data returned by an IoT device
-        must be able to unambiguously describe location information.
-
-        There are both dynamic (data returned by a mobile sensor) and static (fixed installation
-        location) applications for geolocation data. For dynamic location data, some recommended vocabulary
-        to annotate data schemas would be useful. For static location data, a standard format
-        for metadata to be included in a TD itself would be useful.
-
-      </dd>
-      <dt>Existing standards</dt>
-      <dd>
-
-        <ul>
-          <li>NMEA: defines sentences from GPS devices</li>
-          <li>WGS84: https://en.wikipedia.org/wiki/World_Geodetic_System</li>
-          * World Geodetic System
-          * Defines lat/long/alt coordinate system used by most other geolocation standards
-          * More complicated than you would think (need to deal with deviations of Earth from
-          a true sphere, gravitational irregularities, position of centroid, etc. etc.)
-          <li>Basic Geo Vocabulary: https://www.w3.org/2003/01/geo/</li>
-          * Very basic RDF definitions for lat, long, and alt
-          * Does not define heading or speed
-          * Does not define accuracy
-          * Does not define timestamps
-          * Uses string as a data model (rather than a number)
-          <li>W3C Geolocalization API: https://www.w3.org/TR/geolocation-API/</li>
-          * W3C Devices and Sensors WG is now handling
-          * There is an updated proposal: https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface
-          * Data schema of updated proposal is similar to existing API, but all elements are now optional
-          * Data includes latitude, longitude, altitude, heading, and speed
-          * Accuracy is included for latitude/longitude (single number in meters, 95% confidence, interpretation
-          a little ambiguous, but probably intended to be a radius) and altitude, but not for heading or speed.
-          <li>Open Geospatial Consortium: https://www.ogc.org/</li>
-          * See http://docs.opengeospatial.org/as/18-005r4/18-005r4.html
-          * Referring to locations by coordinates
-          * Has standards defining semantics for identifying locations
-          * Useful for mapping
-          <li>ISO</li>
-          * ISO19111: https://www.iso.org/standard/74039.html
-          * Standard for referring to locations by coordinates
-          * Related to OGS standard above and WGS84
-          * Various other standards that relate to remote sensing, geolocation, etc.
-          * Here is an example (see references): https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en
-          <li>SSN: https://www.w3.org/TR/vocab-ssn/</li>
-          * Defines "accuracy": https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy
-          * Definition of accuracy is consistent with how it is used in Web Geolocation API
-          * Also defines related terms Precision, Resolution, Latency, Drift, etc.
-          <li>Timestamps:</li>
-          * W3C standard in proposed new web geolocation API:
-          https://w3c.github.io/hr-time/#dom-domhighrestimestamp
-          * See also related issues such as latency defined in SSN
-        </ul>
-
-        Note that accuracy and time are issues that apply to all kinds of sensors, not just
-        geolocation. However, the specific geolocation technology of GPS
-        is special since it is also a source of accurate time.
-
-      </dd>
-      <dt>Comments</dt>
-      <dd>
-
-      </dd>
-      </dl>
-    </section>
-    <section id="mmi-3-1_interactive-public-spaces">
-      <h2>Interactive Public Spaces</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          Michael McCool
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          &lt;Suggest reviewers&gt;
-
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-          Accessibility
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
-          cloud provider&gt;
+              <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards
+                that
+                are relevant for this use case</section>-3" class="ednote">
+              <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
+                for
+                this use case</section>: Stakeholders/Users need to be further clarified. They include "city government,
+              people counting
+              service providers, police, network providers, ...
+        </section>
 
         </dd>
         <dt>Motivation</dt>
         <dd>
 
-          Public spaces provide many opportunities for engaging, social and fun interaction.
-          At the same time,
-          preserving privacy while sharing tasks and activities with other people is a major issue
-          in ambient systems.
-          These systems may also deliver personalized information in combination
-          with more general services presented publicly.
+          Smart Cities need to track a large number of mobile devices and sensors.
+          Location information may be integrated with a logistics or fleet management
+          system.
+          A reusable geolocation module is needed with a common network interface to
+          include in these various applications.
+          For outdoor applications, GPS
+          could be used, but indoors other geolocation technologies might be
+          used, such as WiFi triangulation or vision-based navigation (SLAM).
+          Therefore the geolocation information should be technology-agnostic.
 
-          A trustful discovery of the services and devices available in such environments
-          is a necessity to guarantee personalization and privacy in public-space applications.
-
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-
-          Public spaces supporting personalizable services and device access.
-
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          Command and status information transferred between the personal mobile device
-          application and the public space's services and devices.
-
-          Profile data for user preferences.
-
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
-
-          <ul>
-            <li>WoT Thing Description</li>
-            <li>WoT Discovery</li>
-            <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-            in IoT orchestration services in the public space.
-          </ul>
-
-        </dd>
-        <dt>Description</dt>
-        <dd>
-
-          Interactive installations such as touch-sensitive or gesture-tracking billboards
-          may be set up in public places.
-          Objects that present public information (e.g. a map of a shopping mall)
-          can use a multimodal interface (built-in or in tandem with the user's mobile devices)
-          to simplify user interaction and provide faster access.
-          Other setups can stimulate social activities,
-          allowing multiple people to enter an interaction simultaneously to work together
-          towards a certain goal (for a prize)
-          or just for fun (e.g. play a musical instrument or control a lighting exhibition).
-          In a context where privacy is an issue
-          (for example, with targeted/personalized alerts or advertisements),
-          the user's mobile device acts as a mediator for the services
-          running on the public network.
-          This allows the user to receive relevant information in the way she sees fit.
-          Notifications can serve as triggers for interaction with public devices and services
-          if the user chooses to do so.
-
-          <p>#### Variants:</p>
-
-          The user may have additional mobile devices they want to incorporate into
-          an interaction, for example a headset acting as an auditory aid or personal speech output
-          device.
-
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
-
-          Data format describing user interface preferences.
-
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
-
-          This use case is based on MMI UC 3.1.
-
-        </dd>
-        <dt>Comments</dt>
-        <dd>
-
-          Does not include Requirements section from original MMI use case.
-        </dd>
-      </dl>
-    </section>
-    <section id="mmi-3-2_meeting-room-event-assistance">
-      <h2>Meeting Room Event Assistance</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          Michael McCool
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          &lt;Suggest reviewers&gt;
-
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-          Accessibility
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
-          cloud provider&gt;
-
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-
+          NOTE: we prefer the term "geolocation", even indoors, over "localization" to
+          avoid confusion with language localization.
 
         </dd>
         <dt>Expected Devices</dt>
         <dd>
 
-          Meeting space supporting personalizable services and device access.
+          One of the following:
+          <ul>
+            <li>A geolocation system on a personal device, such as a smart phone.</li>
+            <li>A geolocation system to be attached to some other portable device.</li>
+            <li>A geolocation system attached to a mobile vehicle.</li>
+            <li>A geolocation system on a payload transported by a vehicle.</li>
+            <li>A geolocation system on an indoor mobile robot.</li>
+          </ul>
 
         </dd>
         <dt>Expected Data</dt>
         <dd>
 
-          Command and status information transferred between the personal mobile device
-          application and the meeting space's services and devices.
+          <ul>
+            <li>Sensor ID</li>
+            <li>Timestamp of last geolocation</li>
+            <li>2D location</li>
+            * typically latitude and longitude
+            * May also be semantic, i.e. room in a building, exit
+          </ul>
 
-          Profile data for user preferences.
+          Optional:
+          <ul>
+            <li>Semantic location</li>
+            * Possibly in addition to numerical lat/long location.
+            <li>Altitude</li>
+            * May also be semantic, i.e. floor of a building
+            <li>Heading</li>
+            <li>Speed</li>
+            <li>Accuracy information</li>
+            * Confidence interval, e.g. distance that true location will be within some probability.
+            * Gaussian covariance matrix
+            * For each measurement
+            * For lat/long, may be a single value (see web browser API; radius?)
+            <li>Geolocation technology (GPS, SLAM, etc). </li>
+            * Note that multiple technologies might be used together.
+            * Include parameters such as sample interval, accuracy
+            <li>For each geolocation technology, data specific to that technology:</li>
+            * GPS: NMEA type
+            <li>Historical data</li>
+          </ul>
+
+          Note: the system should be capable of notifying consumers
+          of changes in location.
+          This may be used to implement geofencing by some other system.
+          This may require additional parameters, such as the
+          maximum distance that the device may be moved before a notification is
+          sent, or the maximum amount of time between updates.
+          Notifications may be sent by a variety of means, some of which may
+          not be traditional push mechanisms (for example, email might be used).
+          For geofencing applications, it is not necessary that the device be aware
+          of the fence boundaries; these can be managed by a separate system.
 
         </dd>
         <dt>Dependencies</dt>
         <dd>
 
-          <ul>
-            <li>WoT Thing Description</li>
-            <li>WoT Discovery</li>
-            <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-            in IoT orchestration services in the meeting space.
-          </ul>
+          node-wot
 
         </dd>
         <dt>Description</dt>
         <dd>
 
-          A conference room where a series of meetings will take place.
-          People can go in and out of the room before,
-          after and during the meeting.
-          The door is "touched" by a badge.
-          An application on the user's mobile device can
-          activate any available display in the room and the room and can access and
-          receive notification from devices and services in the room.
-          The chair of the meeting is notified by a dynamically composed graphic animation,
-          audio notification or a mobile phone notification,
-          about available devices and services, and
-          can install applications indicated by links.
-
-          The chair of the meeting selects a setup procedure by text amongst the provided links.
-          These options could be, for example:
-          photo step-by-step instructions (smartphone, HDTV display, Web site),
-          audio instructions (MP3 audio guide, room speakers reproduction, HDTV audio)
-          or RFID enhanced instructions (mobile SmartTag Reader, RFID Reader for smartphone).
-          The chair of the meeting chooses the room speakers reproduction,
-          then the guiding Service is activated and he starts to set the video projector.
-          After some attendees arrive,
-          the chair of the meeting changes to the slide show option and continues to
-          follow the instructions at the same step it was paused but with another more
-          private modality for example, a smartphone slideshow.
+          Smart Cities have the need to observe the physical locations of
+          large number of mobile devices
+          in use in the context of a Fleet or Logistics Management System, or
+          to place sensor data on a map in a Dashboard application.
+          These systems may also include geofencing notifications and mapping
+          (visual tracking) capabilities.
 
           <p>#### Variants:</p>
 
-          The user may have additional mobile devices they want to incorporate into
-          an interaction, for example a headset acting as an auditory aid or personal speech output
-          device.
+          <ul>
+            <li>A version of the system may log historical data so the past</li>
+            locations of the devices can be recovered.
+            <li>Geolocation technologies other than GPS may be used. The payload</li>
+            may contain additional information specific to the geolocation
+            technology used. In particular, in indoor situations technologies such
+            as WiFi triangulation or (V)SLAM may be more appropriate.
+            <li>Geofencing may be implemented using event notifications and</li>
+            will require setting of additional parameters such as maximum distance.
+          </ul>
+
+        </dd>
+        <dt>Security Considerations</dt>
+        <dd>
+
+          High-resolution timestamps can be used in conjunction with cache manipulation to
+          access protected regions of memory, as with the SPECTRE exploit. Certain
+          geolocation APIs and technologies can return high-resolution timestamps which
+          can be a potential problem. Eventually these issues will be addressed in cache
+          architecture but in the meantime a workaround is to artificially limit the
+          resolution of timestamps.
+
+        </dd>
+        <dt>Privacy Considerations</dt>
+        <dd>
+
+          Location is generally considered private information when it is used with a device
+          that may be associated with a specific person, such as a phone or vehicle, as it
+          can be used to track that person and infer their activities or who they associate
+          with (if multiple people are being tracked at once). Therefore APIs to access geographic location
+          in sensitive contexts are often restricted, and access is allowed only after confirming
+          permission from the user.
 
         </dd>
         <dt>Gaps</dt>
         <dd>
 
-          Data format describing user interface preferences.
+          There is no standardized semantic vocabulary for representing location data.
+          Location data can be point data, a path, an area or a volumetric object.
+          Location information can be expressed using multiple standards,
+          but the reader of location data in a TD or in data returned by an IoT device
+          must be able to unambiguously describe location information.
 
-          Ability to install applications based on links that can access IoT services.
+          There are both dynamic (data returned by a mobile sensor) and static (fixed installation
+          location) applications for geolocation data. For dynamic location data, some recommended vocabulary
+          to annotate data schemas would be useful. For static location data, a standard format
+          for metadata to be included in a TD itself would be useful.
 
         </dd>
         <dt>Existing standards</dt>
         <dd>
 
-          This use case is based on MMI UC 3.2.
+          <ul>
+            <li>NMEA: defines sentences from GPS devices</li>
+            <li>WGS84: https://en.wikipedia.org/wiki/World_Geodetic_System</li>
+            * World Geodetic System
+            * Defines lat/long/alt coordinate system used by most other geolocation standards
+            * More complicated than you would think (need to deal with deviations of Earth from
+            a true sphere, gravitational irregularities, position of centroid, etc. etc.)
+            <li>Basic Geo Vocabulary: https://www.w3.org/2003/01/geo/</li>
+            * Very basic RDF definitions for lat, long, and alt
+            * Does not define heading or speed
+            * Does not define accuracy
+            * Does not define timestamps
+            * Uses string as a data model (rather than a number)
+            <li>W3C Geolocalization API: https://www.w3.org/TR/geolocation-API/</li>
+            * W3C Devices and Sensors WG is now handling
+            * There is an updated proposal: https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface
+            * Data schema of updated proposal is similar to existing API, but all elements are now optional
+            * Data includes latitude, longitude, altitude, heading, and speed
+            * Accuracy is included for latitude/longitude (single number in meters, 95% confidence, interpretation
+            a little ambiguous, but probably intended to be a radius) and altitude, but not for heading or speed.
+            <li>Open Geospatial Consortium: https://www.ogc.org/</li>
+            * See http://docs.opengeospatial.org/as/18-005r4/18-005r4.html
+            * Referring to locations by coordinates
+            * Has standards defining semantics for identifying locations
+            * Useful for mapping
+            <li>ISO</li>
+            * ISO19111: https://www.iso.org/standard/74039.html
+            * Standard for referring to locations by coordinates
+            * Related to OGS standard above and WGS84
+            * Various other standards that relate to remote sensing, geolocation, etc.
+            * Here is an example (see references): https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en
+            <li>SSN: https://www.w3.org/TR/vocab-ssn/</li>
+            * Defines "accuracy": https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy
+            * Definition of accuracy is consistent with how it is used in Web Geolocation API
+            * Also defines related terms Precision, Resolution, Latency, Drift, etc.
+            <li>Timestamps:</li>
+            * W3C standard in proposed new web geolocation API:
+            https://w3c.github.io/hr-time/#dom-domhighrestimestamp
+            * See also related issues such as latency defined in SSN
+          </ul>
+
+          Note that accuracy and time are issues that apply to all kinds of sensors, not just
+          geolocation. However, the specific geolocation technology of GPS
+          is special since it is also a source of accurate time.
 
         </dd>
         <dt>Comments</dt>
         <dd>
 
-          Does not include Requirements section from original MMI use case.
         </dd>
-      </dl>
-    </section>
-  </section>
-
-  <section id="health">
-    <h2>Health</h2>
-
-    <section id="public-health">
-      <h2>Public Health</h2>
-      <section id="smartcity-health-monitoring">
-        <h2>Public Health Monitoring</h2>
-        <dl>
-
-          <dt>Submitter(s)</dt>
-          <dd>
-
-            Jennifer Lin (GovTech Singapore)
-
-          </dd>
-          <dt>Reviewer(s)</dt>
-          <dd>
-
-            Michael McCool, Michael Lagally
-
-          </dd>
-          <dt>Tracker Issue ID</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Category</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Class</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Status</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Target Users</dt>
-          <dd>
-
-            Agencies, companies and other organizations in a Smart City with
-            significant pedestrian traffic in a pandemic situation.
-
-          </dd>
-          <dt>Motivation</dt>
-          <dd>
-
-            A system to monitor the health of people in public places is useful to
-            control the spread of infectious diseases. In particular, we would like
-            to identify individuals with temperatures outside the norm (i.e. running
-            a fever) and then take appropriate action. Actions can include sending
-            a notification or actuating a security device, such as a gate.
-
-            This mechanism should be non-invasive and non-contact since the solution
-            should not itself contribute to the spread of infectious diseases.
-
-            Data may also be aggregated for statistics purposes, for example, to
-            identify the number of people in an area with elevated temperatures.
-            This has additional requirements to avoid double-counting individuals.
-
-          </dd>
-          <dt>Expected Devices</dt>
-          <dd>
-
-            One of the following:
-            <ul>
-              <li>A thermal camera.</li>
-              <li>Face detection (AI) service</li>
-              * May be on device or be an edge or cloud service.
-            </ul>
-
-            Optional:
-            <ul>
-              <li>RGB and/or depth camera registered with the thermal camera</li>
-              <li>Cloud service for data aggregation and analytics.</li>
-              <li>Some way to identify location (optional)</li>
-              Note that location might be static and configured during installation,
-              but might also be based on a localization technology if the device needs to be
-              portable (for example, if it needs to be set up quickly for an event).
-            </ul>
-
-          </dd>
-          <dt>Expected Data</dt>
-          <dd>
-
-            <ul>
-              <li>Sensor ID</li>
-              <li>Timestamp</li>
-              <li>Number of people identified with a fever in image</li>
-              <li>Estimated temperature for each person</li>
-              * May be coarse, low/normal/high
-              <li>Location</li>
-              * Latitude, Longitude, Altitude, Accuracy
-              * Semantic (eg a particular building entrance)
-              <li>Thermal image</li>
-            </ul>
-
-            Optional:
-            <ul>
-              <li>RGB image</li>
-              <li>Depth image</li>
-              <li>Localization technology (see localization use case)</li>
-              <li>Integration with local IoT devices: gates, lights, or people (guards)</li>
-              <li>Bounding boxes around faces of identified people in image(s)</li>
-              <li>Data that can be used to uniquely identify a face (distinguish it from others)</li>
-              * Aggregation system may output the total number of unique faces with fever
-            </ul>
-
-            Note 1: the system should be capable of notifying consumers (such as security personnel),
-            of fever detections.
-            This may be email, SMS, or some other mechanism, such as MQTT publication.
-
-            Note 2: In all cases where images are captured, privacy considerations apply.
-
-            It would also be useful to count unique individuals for statistics purposes,
-            but not necessarily based on identifying particular people. This is to
-            avoid counting the same person multiple times.
-
-          </dd>
-          <dt>Dependencies</dt>
-          <dd>
-
-            node-wot
-
-          </dd>
-          <dt>Description</dt>
-          <dd>
-
-            A thermal camera image is taken of a group of people
-            and an AI service is used to identify faces in the image.
-            The temperature of each person is then estimated from the registered face;
-            for greater accuracy, a consistent location for sampling should be used, such
-            as the forehead.
-            The estimated temperature is compared to high (and optionally, low)
-            thresholds and a notification (or other action) is taken if the
-            temperature is outside the norm.
-            Additional features may be extracted to identify unique individuals.
-
-            <p>#### Variants:</p>
-
-            <ul>
-              <li>Enough information is included in the notification that the specific</li>
-              person that raised the alarm can be identified. For example, if an RGB
-              camera is also registered with the thermal camera, then a bounding box may
-              be indicated via JSON and the RGB image included; or the bounding box could
-              be actually drawn into the sent image, or the face could be cropped out.
-              This is useful if, for example, a notification needs to be sent to health
-              or security workers who need to identify the person in a crowd.
-              <li>Instead of simply a notification, an action may be taken, such as closing</li>
-              or refusing to open a gate at the entrance to a building, to prevent sick
-              employees from entering the building.
-              <li>To generate statistics, for example to count the number of people with</li>
-              fevers, then unique individuals need to be indentified to avoid counting
-              the same person more than once.
-              <li>The same sensors might be used to determine the number of people in</li>
-              an area and send a notification if crowded conditions are detected, in
-              order to support social distancing behaviour (for instance, supporting
-              an app that notifies users when a destination is crowded) in a pandemic situation.
-              <li>Cameras that provide video streams rather than still images.</li>
-            </ul>
-
-          </dd>
-          <dt>Security Considerations</dt>
-          <dd>
-
-            <ul>
-              <li>Because PII is involved (see below) access should be controlled (only provided to authorized
-                users) and communications protected (encrypted).</li>
-            </ul>
-
-          </dd>
-          <dt>Privacy Considerations</dt>
-          <dd>
-
-            <ul>
-              <li>Images of people and their health status is involved. </li>
-              - If later these are made public then the health information of a particular person would be released
-              publically.
-              - There is also the possibility that the camera data could be in error, and should be confirmed with a
-              more accurate sensor.
-              - This information needs to be treated as PII and protected: only distributed to authorized users, and
-              deleted when no longer needed.
-              - However, derived aggregate information can be kept and published.
-            </ul>
-
-          </dd>
-          <dt>Gaps</dt>
-          <dd>
-
-            <ul>
-              <li>Onboarding mechanism for rapidly deploying a large number of devices</li>
-              <li>Standard vocabulary for geolocation information</li>
-              <li>Implementations able to handle image payload formats, possibly in combination with non-image data
-                (eg images and JSON in a single response)</li>
-              <li>Video streaming support (if we wish to serve video stream from the camera instead of still images)
-              </li>
-              <li>Standard ways to specify notification mechanisms and data payloads for things like SMS and email
-                (in addition to the expected MQTT, CoAP, and HTTP event mechanisms)</li>
-            </ul>
-
-          </dd>
-          <dt>Existing standards</dt>
-          <dd>
-
-
-          </dd>
-          <dt>Comments</dt>
-          <dd>
-
-            <ul>
-              <li>May be additional requirements for privacy since images of people and their health status is
-                involved.</li>
-              <li>Different sub-use cases: immediate alerts or actions vs. aggregate data gathering</li>
-            </ul>
-
-          </dd>
         </dl>
       </section>
-      <section id="MedicalDevices">
-        <h2>Machines in a hospital ICU should be able to speak to one another&lt;Pick a descriptive title&gt;</h2>
-        <dl>
-
-          <dt>Submitter(s)</dt>
-          <dd>
-
-            Taki Kamiya
-
-          </dd>
-          <dt>Reviewer(s)</dt>
-          <dd>
-
-            &lt;Suggest reviewers&gt;
-
-          </dd>
-          <dt>Tracker Issue ID</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Category</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Class</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Status</dt>
-          <dd>
-
-            &lt;please leave blank&gt;
-
-          </dd>
-          <dt>Target Users</dt>
-          <dd>
-
-            <ul>
-              <li>device owners</li>
-              <li>device user</li>
-              <li>cloud provider</li>
-              <li>service provider</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
-              <li>identity provider</li>
-            </ul>
-
-          </dd>
-          <dt>Motivation</dt>
-          <dd>
-
-            Preventable medical errors may account for more than 100,000 deaths per year in U.S. alone. These errors
-            are mainly caused by failures of communication such as a chart misread or the wrong data passed along to
-            machines or staffs. Part of the problem could be solved if the machines could speak to one another.
-            Manufacturers have little incentive to make their proprietary code and data easily to accessible and
-            process able by their competitors’ machines. So the task of middleman falls to the hospital staffs. In
-            addition to saving lives, a common framework could result in collecting and recording more clinical data
-            on patients, making it easier to deliver precision medicine.
-
-          </dd>
-          <dt>Expected Devices</dt>
-          <dd>
-
-            &lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
-
-          </dd>
-          <dt>Expected Data</dt>
-          <dd>
-
-            &lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors,
-            vehicle data&gt;
-
-          </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
-          <dd>
-
-            &lt;List the affected WoT deliverables that have to be changed to enable this use case&gt;
-
-          </dd>
-          <dt>Description</dt>
-          <dd>
-
-            Physiological Closed-Loop Control (PCLC) devices are a group of emerging technologies, which use
-            feedback from physiological sensor(s) to autonomously manipulate physiological variable(s) through
-            delivery of therapies conventionally delivered by clinician(s).
-
-            Clinical scenario without PCLC. An elderly female with end-stage renal failure was given a standard
-            insulin infusion protocol to manage her blood glucose, but no glucose was provided. Her blood glucose
-            dropped to 33, then rebounded to over 200 after glucose was given. This scenario has not changed for
-            decades.
-
-            The desired state with PCLC implemented in an ICU. A patient is receiving an IV insulin infusion and is
-            having the blood glucose continuously monitored. The infusion pump rate is automatically adjusted
-            according to the real-time blood glucose levels being measured, to maintain blood glucose values in a
-            target range. If the patient’s glucose level does not respond appropriately to the changes in insulin
-            administration, the clinical staff is alerted.
-
-            Medical devices do not interact with each other autonomously (monitors, ventilator, IV pumps, etc.)
-            Contextually rich data is difficult to acquire. Technologies and standards to reduce medical errors and
-            improve efficiency have not been implemented in theater or at home.
-
-            In recent years, researchers have made progress developing PCLC devices for mechanical ventilation,
-            anesthetic delivery applications, and so on. Despite these promises and potential benefits, there has
-            been limited success in the translation of PCLC devices from <a
-              href="https://today.duke.edu/2014/07/benchbedside">bench to bedside</a>. A key challenge to bringing
-            PCLC devices to a level required for a clinical trials in humans is risk management to ensure device
-            reliability and safety.
-
-            The United States Food and Drug Administration (FDA) classifies new hazards that might be introduced by
-            PCLC devices into three categories. Besides clinical factors (e.g. sensor validity and reliability,
-            inter- and intra-patient physiological variability) and usability/human factors (e.g. loss of
-            situational awareness, errors, and lapses in operation), there are also engineering challenges including
-            robustness, availability, and integration issues.
-
-            <p>#### Variants:</p>
-
-            US military developed ONR SBIR (Automated Critical Care System Prototype), and found those issues.
-
-            <ul>
-              <li>No plug and play, i.e. cannot swap O2 Sat with another manufacturer.</li>
-              <li>No standardization of data outputs for devices to interoperate.</li>
-              <li>Must have the exact make/model to replace a faulty device or system will not work.</li>
-            </ul>
-
-          </dd>
-          <dt>Security Considerations</dt>
-          <dd>
-
-            Security considerations for interconnected and dynamically composable medical systems are critical not
-            only because laws such as <a href="https://www.hhs.gov/hipaa/index.html">HIPAA</a> mandate it, but also
-            because security attacks can have serious safety consequences for patients. The systems need to support
-            automatic verification that the system components are being used as intended in the clinical context,
-            that the components are authentic and authorized for use in that environment, that they have been
-            approved by the hospital’s biomedical engineering staff and that they meet regulatory safety and
-            effectiveness requirements.
-
-            For security and safety reasons, <a href="https://www.astm.org/Standards/F2761.htm">ICE
-              F2761-09(2013)</a> compliant medical devices never interact directly each other. All interaction is
-            coordinated and controlled via the applications.
-
-            While transport-level security such as TLS provides reasonable protection against external attackers,
-            they do not provide mechanisms for granular access control for data streams happening within the same
-            protected link. Transport-level security is also not sufficiently flexible to balance between security
-            and performance. Another issue with widely used transport-level security solutions is the lack of
-            support for multicast.
-
-          </dd>
-          <dt>Privacy Considerations</dt>
-          <dd>
-
-            <section id="todo-privacy-2" class="ednote">TODO: Describe any issues related to privacy; if there are none,
-              say "none" and justify</section>
-
-          <dt>References</dt>
-
-          <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant for
-            this use case</section>
-
-          </dd>
-          <dt>Gaps</dt>
-          <dd>
-
-            Multicast support. It has proven useful for efficient and scalable discovery and information exchange in
-            industrial systems.
-
-          </dd>
-          <dt>Existing standards</dt>
-          <dd>
-
-            <p>#### <a href="https://www.astm.org/Standards/F2761.htm">F2761-09 (2013)</a> </p>
-
-            Medical Devices and Medical Systems - Essential safety requirements for equipment comprising the
-            patient-centric integrated clinical environment (ICE) - Part 1: General requirements and conceptual
-            model.
-
-            The idea behind ICE is to allow medical devices that conform to the ICE standard, either natively or
-            using an adapter, to interoperate with other ICE-compliant devices regardless of manufacturer.
-
-            <p>#### <a href="https://www.openice.info/">OpenICE</a></p>
-
-            OpenICE is an initiative to create a community implementation of F2761-09 (ICE - Integrated Clinical
-            Environment) based on <a href="https://www.omg.org/spec/DDS/About-DDS/">DDS</a>.
-
-            <p>#### <a href="https://secwww.jhuapl.edu/mdira/documents">MDIRA Specification Document Version
-                1.0</a>. </p>
-
-            MDIRA Version 1.0 provides requirements and implementation guidance for MDIRA-compliant systems focused
-            on trauma and critical care in austere environments.
-
-            Johns Hopkins University Applied Physics Laboratory (JHU-APL) lead a research project in collaboration
-            with US military to develop a framework of autonomous / closed loop prototypes for military health care
-            which are dual use for the civilian healthcare system.
-
-          </dd>
-          <dt>Comments</dt>
-          <dd>
-
-          </dd>
-        </dl>
-      </section>
-    </section>
-
-    <section id="private-health">
-      <h2>Private Health</h2>
-      <section id="mmi-4-1_health-notifiers">
-        <h2>Health Notifiers</h2>
+      <section id="mmi-3-1_interactive-public-spaces">
+        <h2>Interactive Public Spaces</h2>
         <dl>
 
           <dt>Submitter(s)</dt>
@@ -1757,27 +1053,149 @@
             &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
             cloud provider&gt;
 
-            End user with a health problem they wish to monitor.
-
-            Health services provider (doctor, nurse, paramedic, etc).
-
           </dd>
           <dt>Motivation</dt>
           <dd>
 
-            In critical situations regarding health,
-            like a medical emergency,
-            media multimodality may be the most effective way to communicate alerts,
-            When the goal is to monitor the health evolution of a
-            person in both emergency and non-emergency contexts,
-            access via networked devices may be the most effective way to collect data and
-            monitor a patient's status.
+            Public spaces provide many opportunities for engaging, social and fun interaction.
+            At the same time,
+            preserving privacy while sharing tasks and activities with other people is a major issue
+            in ambient systems.
+            These systems may also deliver personalized information in combination
+            with more general services presented publicly.
+
+            A trustful discovery of the services and devices available in such environments
+            is a necessity to guarantee personalization and privacy in public-space applications.
 
           </dd>
           <dt>Expected Devices</dt>
           <dd>
 
-            Medical facilities supporting device and service access.
+            Public spaces supporting personalizable services and device access.
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            Command and status information transferred between the personal mobile device
+            application and the public space's services and devices.
+
+            Profile data for user preferences.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            <ul>
+              <li>WoT Thing Description</li>
+              <li>WoT Discovery</li>
+              <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
+              in IoT orchestration services in the public space.
+            </ul>
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            Interactive installations such as touch-sensitive or gesture-tracking billboards
+            may be set up in public places.
+            Objects that present public information (e.g. a map of a shopping mall)
+            can use a multimodal interface (built-in or in tandem with the user's mobile devices)
+            to simplify user interaction and provide faster access.
+            Other setups can stimulate social activities,
+            allowing multiple people to enter an interaction simultaneously to work together
+            towards a certain goal (for a prize)
+            or just for fun (e.g. play a musical instrument or control a lighting exhibition).
+            In a context where privacy is an issue
+            (for example, with targeted/personalized alerts or advertisements),
+            the user's mobile device acts as a mediator for the services
+            running on the public network.
+            This allows the user to receive relevant information in the way she sees fit.
+            Notifications can serve as triggers for interaction with public devices and services
+            if the user chooses to do so.
+
+            <p>#### Variants:</p>
+
+            The user may have additional mobile devices they want to incorporate into
+            an interaction, for example a headset acting as an auditory aid or personal speech output
+            device.
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            Data format describing user interface preferences.
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            This use case is based on MMI UC 3.1.
+
+          </dd>
+          <dt>Comments</dt>
+          <dd>
+
+            Does not include Requirements section from original MMI use case.
+          </dd>
+        </dl>
+      </section>
+      <section id="mmi-3-2_meeting-room-event-assistance">
+        <h2>Meeting Room Event Assistance</h2>
+        <dl>
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Michael McCool
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            Accessibility
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
+            cloud provider&gt;
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            Meeting space supporting personalizable services and device access.
 
           </dd>
           <dt>Expected Data</dt>
@@ -1796,21 +1214,36 @@
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
               <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-              in IoT orchestration services.
+              in IoT orchestration services in the meeting space.
             </ul>
 
           </dd>
           <dt>Description</dt>
           <dd>
 
-            In medical facilities,
-            a system may provide multiple options to control sensor operations
-            by voice or gesture ("start reading my blood pressure now").
-            These interactions may be mediated by an application installed into a smartphone.
-            The system integrates information from multiple sensors
-            (for example, blood pressure and heart rate);
-            reports medical sensor readings periodically (for example, to a remote medical facility)
-            and sends alerts when unusual readings/events are detected.
+            A conference room where a series of meetings will take place.
+            People can go in and out of the room before,
+            after and during the meeting.
+            The door is "touched" by a badge.
+            An application on the user's mobile device can
+            activate any available display in the room and the room and can access and
+            receive notification from devices and services in the room.
+            The chair of the meeting is notified by a dynamically composed graphic animation,
+            audio notification or a mobile phone notification,
+            about available devices and services, and
+            can install applications indicated by links.
+
+            The chair of the meeting selects a setup procedure by text amongst the provided links.
+            These options could be, for example:
+            photo step-by-step instructions (smartphone, HDTV display, Web site),
+            audio instructions (MP3 audio guide, room speakers reproduction, HDTV audio)
+            or RFID enhanced instructions (mobile SmartTag Reader, RFID Reader for smartphone).
+            The chair of the meeting chooses the room speakers reproduction,
+            then the guiding Service is activated and he starts to set the video projector.
+            After some attendees arrive,
+            the chair of the meeting changes to the slide show option and continues to
+            follow the instructions at the same step it was paused but with another more
+            private modality for example, a smartphone slideshow.
 
             <p>#### Variants:</p>
 
@@ -1841,140 +1274,709 @@
         </dl>
       </section>
     </section>
-  </section>
 
-  <section id="manufacturing">
-    <h2>Manufacturing</h2>
-    <section id="big-data">
-      <h2>Big Data for Manufacturing</h2>
-      <dl>
+    <section id="health">
+      <h2>Health</h2>
 
-        <dt>Submitter(s)</dt>
-        <dd>
+      <section id="public-health">
+        <h2>Public Health</h2>
+        <section id="smartcity-health-monitoring">
+          <h2>Public Health Monitoring</h2>
+          <dl>
 
-          Michael Lagally
+            <dt>Submitter(s)</dt>
+            <dd>
 
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
+              Jennifer Lin (GovTech Singapore)
 
-          &lt;Suggest reviewers&gt;
+            </dd>
+            <dt>Reviewer(s)</dt>
+            <dd>
 
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
+              Michael McCool, Michael Lagally
 
-        </dd>
-        <dt>Category</dt>
-        <dd>
+            </dd>
+            <dt>Tracker Issue ID</dt>
+            <dd>
 
-          &lt;please leave blank&gt;
+              &lt;please leave blank&gt;
 
-        </dd>
-        <dt>Class</dt>
-        <dd>
+            </dd>
+            <dt>Category</dt>
+            <dd>
 
-          &lt;please leave blank&gt;
+              &lt;please leave blank&gt;
 
-        </dd>
-        <dt>Status</dt>
-        <dd>
+            </dd>
+            <dt>Class</dt>
+            <dd>
 
-          &lt;please leave blank&gt;
+              &lt;please leave blank&gt;
 
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
+            </dd>
+            <dt>Status</dt>
+            <dd>
 
-          Device owners, cloud provider.
+              &lt;please leave blank&gt;
 
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
+            </dd>
+            <dt>Target Users</dt>
+            <dd>
 
-          Production lines for industrial manufacturing consist of multiple machines, where each machine
-          incorporates sensors for various values.
-          A failure of a single machine can cause defective products or a stop of the entire production.
+              Agencies, companies and other organizations in a Smart City with
+              significant pedestrian traffic in a pandemic situation.
 
-          Big data analysis enables to identify behavioral patterns across multiple production lines of the entire
-          production plant and across multiple plants.
+            </dd>
+            <dt>Motivation</dt>
+            <dd>
 
-          The results of this analysis can be used for optimizing consumption of raw materials, checking the status
-          of production lines and plants and predicting and preventing fault conditions.
+              A system to monitor the health of people in public places is useful to
+              control the spread of infectious diseases. In particular, we would like
+              to identify individuals with temperatures outside the norm (i.e. running
+              a fever) and then take appropriate action. Actions can include sending
+              a notification or actuating a security device, such as a gate.
+
+              This mechanism should be non-invasive and non-contact since the solution
+              should not itself contribute to the spread of infectious diseases.
+
+              Data may also be aggregated for statistics purposes, for example, to
+              identify the number of people in an area with elevated temperatures.
+              This has additional requirements to avoid double-counting individuals.
+
+            </dd>
+            <dt>Expected Devices</dt>
+            <dd>
+
+              One of the following:
+              <ul>
+                <li>A thermal camera.</li>
+                <li>Face detection (AI) service</li>
+                * May be on device or be an edge or cloud service.
+              </ul>
+
+              Optional:
+              <ul>
+                <li>RGB and/or depth camera registered with the thermal camera</li>
+                <li>Cloud service for data aggregation and analytics.</li>
+                <li>Some way to identify location (optional)</li>
+                Note that location might be static and configured during installation,
+                but might also be based on a localization technology if the device needs to be
+                portable (for example, if it needs to be set up quickly for an event).
+              </ul>
+
+            </dd>
+            <dt>Expected Data</dt>
+            <dd>
+
+              <ul>
+                <li>Sensor ID</li>
+                <li>Timestamp</li>
+                <li>Number of people identified with a fever in image</li>
+                <li>Estimated temperature for each person</li>
+                * May be coarse, low/normal/high
+                <li>Location</li>
+                * Latitude, Longitude, Altitude, Accuracy
+                * Semantic (eg a particular building entrance)
+                <li>Thermal image</li>
+              </ul>
+
+              Optional:
+              <ul>
+                <li>RGB image</li>
+                <li>Depth image</li>
+                <li>Localization technology (see localization use case)</li>
+                <li>Integration with local IoT devices: gates, lights, or people (guards)</li>
+                <li>Bounding boxes around faces of identified people in image(s)</li>
+                <li>Data that can be used to uniquely identify a face (distinguish it from others)</li>
+                * Aggregation system may output the total number of unique faces with fever
+              </ul>
+
+              Note 1: the system should be capable of notifying consumers (such as security personnel),
+              of fever detections.
+              This may be email, SMS, or some other mechanism, such as MQTT publication.
+
+              Note 2: In all cases where images are captured, privacy considerations apply.
+
+              It would also be useful to count unique individuals for statistics purposes,
+              but not necessarily based on identifying particular people. This is to
+              avoid counting the same person multiple times.
+
+            </dd>
+            <dt>Dependencies</dt>
+            <dd>
+
+              node-wot
+
+            </dd>
+            <dt>Description</dt>
+            <dd>
+
+              A thermal camera image is taken of a group of people
+              and an AI service is used to identify faces in the image.
+              The temperature of each person is then estimated from the registered face;
+              for greater accuracy, a consistent location for sampling should be used, such
+              as the forehead.
+              The estimated temperature is compared to high (and optionally, low)
+              thresholds and a notification (or other action) is taken if the
+              temperature is outside the norm.
+              Additional features may be extracted to identify unique individuals.
+
+              <p>#### Variants:</p>
+
+              <ul>
+                <li>Enough information is included in the notification that the specific</li>
+                person that raised the alarm can be identified. For example, if an RGB
+                camera is also registered with the thermal camera, then a bounding box may
+                be indicated via JSON and the RGB image included; or the bounding box could
+                be actually drawn into the sent image, or the face could be cropped out.
+                This is useful if, for example, a notification needs to be sent to health
+                or security workers who need to identify the person in a crowd.
+                <li>Instead of simply a notification, an action may be taken, such as closing</li>
+                or refusing to open a gate at the entrance to a building, to prevent sick
+                employees from entering the building.
+                <li>To generate statistics, for example to count the number of people with</li>
+                fevers, then unique individuals need to be indentified to avoid counting
+                the same person more than once.
+                <li>The same sensors might be used to determine the number of people in</li>
+                an area and send a notification if crowded conditions are detected, in
+                order to support social distancing behaviour (for instance, supporting
+                an app that notifies users when a destination is crowded) in a pandemic situation.
+                <li>Cameras that provide video streams rather than still images.</li>
+              </ul>
+
+            </dd>
+            <dt>Security Considerations</dt>
+            <dd>
+
+              <ul>
+                <li>Because PII is involved (see below) access should be controlled (only provided to authorized
+                  users) and communications protected (encrypted).</li>
+              </ul>
+
+            </dd>
+            <dt>Privacy Considerations</dt>
+            <dd>
+
+              <ul>
+                <li>Images of people and their health status is involved. </li>
+                - If later these are made public then the health information of a particular person would be released
+                publically.
+                - There is also the possibility that the camera data could be in error, and should be confirmed with a
+                more accurate sensor.
+                - This information needs to be treated as PII and protected: only distributed to authorized users, and
+                deleted when no longer needed.
+                - However, derived aggregate information can be kept and published.
+              </ul>
+
+            </dd>
+            <dt>Gaps</dt>
+            <dd>
+
+              <ul>
+                <li>Onboarding mechanism for rapidly deploying a large number of devices</li>
+                <li>Standard vocabulary for geolocation information</li>
+                <li>Implementations able to handle image payload formats, possibly in combination with non-image data
+                  (eg images and JSON in a single response)</li>
+                <li>Video streaming support (if we wish to serve video stream from the camera instead of still images)
+                </li>
+                <li>Standard ways to specify notification mechanisms and data payloads for things like SMS and email
+                  (in addition to the expected MQTT, CoAP, and HTTP event mechanisms)</li>
+              </ul>
+
+            </dd>
+            <dt>Existing standards</dt>
+            <dd>
 
 
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
+            </dd>
+            <dt>Comments</dt>
+            <dd>
 
-          Various sensors, e.g. temperature, light, humidity, vibration, noise, air quality.
+              <ul>
+                <li>May be additional requirements for privacy since images of people and their health status is
+                  involved.</li>
+                <li>Different sub-use cases: immediate alerts or actions vs. aggregate data gathering</li>
+              </ul>
 
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
+            </dd>
+          </dl>
+        </section>
+        <section id="MedicalDevices">
+          <h2>Machines in a hospital ICU should be able to speak to one another&lt;Pick a descriptive title&gt;</h2>
+          <dl>
 
-          Discrete sensor values, such as temperature, light, humidity, vibration, noise, air quality readings.
-          The data can be delivered periodically or on demand.
+            <dt>Submitter(s)</dt>
+            <dd>
 
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
+              Taki Kamiya
 
-          Thing Description: groups of devices, aggregation / composition mechanism, thing models
-          Discovery/Onboarding: Onboarding of groups of devices
+            </dd>
+            <dt>Reviewer(s)</dt>
+            <dd>
 
-        </dd>
-        <dt>Description</dt>
-        <dd>
+              &lt;Suggest reviewers&gt;
 
-          A company owns multiple factories which contain multiple production lines.
-          Examples are production lines, environment sensors,
-          These devices collect data from multiple sensors and transmit this information to the cloud. Sensor data
-          is stored in the cloud, can be visualized and analyzed using machine learning / AI.
+            </dd>
+            <dt>Tracker Issue ID</dt>
+            <dd>
 
-          The cloud service allows to manage single and groups of devices.
-          Combining the data streams from multiple devices allows to get an easy overview of the state of all
-          connected devices in the user's realm.
+              &lt;please leave blank&gt;
 
-          In many cases there are groups of devices of the same kind, so the aggregation of data across devices can
-          serve to identify anomalies or to predict impending outages.
+            </dd>
+            <dt>Category</dt>
+            <dd>
 
-          The cloud service allows to manage single and groups of devices and can help to identify abonormal
-          conditions.
-          For this purpose a set of rules can be defined by the user, which raises alerts towards the user or
-          triggers actions on devices based on these rules.
+              &lt;please leave blank&gt;
 
-          This enables the early detection of pending problems and reduces the risk of machine outages, quality
-          problems or threats to the environment or life of humans.
+            </dd>
+            <dt>Class</dt>
+            <dd>
 
-          <p>#### Variants:</p>
+              &lt;please leave blank&gt;
 
-          &lt;Describe possible use case variants, if applicable&gt;
+            </dd>
+            <dt>Status</dt>
+            <dd>
 
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
+              &lt;please leave blank&gt;
 
-          &lt;Describe any gaps that are not addressed in the current WoT work items&gt;
+            </dd>
+            <dt>Target Users</dt>
+            <dd>
 
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
+              <ul>
+                <li>device owners</li>
+                <li>device user</li>
+                <li>cloud provider</li>
+                <li>service provider</li>
+                <li>device manufacturer</li>
+                <li>gateway manufacturer</li>
+                <li>identity provider</li>
+              </ul>
 
-          <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
-            are relevant for this use case</section>
+            </dd>
+            <dt>Motivation</dt>
+            <dd>
 
+              Preventable medical errors may account for more than 100,000 deaths per year in U.S. alone. These errors
+              are mainly caused by failures of communication such as a chart misread or the wrong data passed along to
+              machines or staffs. Part of the problem could be solved if the machines could speak to one another.
+              Manufacturers have little incentive to make their proprietary code and data easily to accessible and
+              process able by their competitors’ machines. So the task of middleman falls to the hospital staffs. In
+              addition to saving lives, a common framework could result in collecting and recording more clinical data
+              on patients, making it easier to deliver precision medicine.
+
+            </dd>
+            <dt>Expected Devices</dt>
+            <dd>
+
+              &lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
+
+            </dd>
+            <dt>Expected Data</dt>
+            <dd>
+
+              &lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors,
+              vehicle data&gt;
+
+            </dd>
+            <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+            <dd>
+
+              &lt;List the affected WoT deliverables that have to be changed to enable this use case&gt;
+
+            </dd>
+            <dt>Description</dt>
+            <dd>
+
+              Physiological Closed-Loop Control (PCLC) devices are a group of emerging technologies, which use
+              feedback from physiological sensor(s) to autonomously manipulate physiological variable(s) through
+              delivery of therapies conventionally delivered by clinician(s).
+
+              Clinical scenario without PCLC. An elderly female with end-stage renal failure was given a standard
+              insulin infusion protocol to manage her blood glucose, but no glucose was provided. Her blood glucose
+              dropped to 33, then rebounded to over 200 after glucose was given. This scenario has not changed for
+              decades.
+
+              The desired state with PCLC implemented in an ICU. A patient is receiving an IV insulin infusion and is
+              having the blood glucose continuously monitored. The infusion pump rate is automatically adjusted
+              according to the real-time blood glucose levels being measured, to maintain blood glucose values in a
+              target range. If the patient’s glucose level does not respond appropriately to the changes in insulin
+              administration, the clinical staff is alerted.
+
+              Medical devices do not interact with each other autonomously (monitors, ventilator, IV pumps, etc.)
+              Contextually rich data is difficult to acquire. Technologies and standards to reduce medical errors and
+              improve efficiency have not been implemented in theater or at home.
+
+              In recent years, researchers have made progress developing PCLC devices for mechanical ventilation,
+              anesthetic delivery applications, and so on. Despite these promises and potential benefits, there has
+              been limited success in the translation of PCLC devices from <a
+                href="https://today.duke.edu/2014/07/benchbedside">bench to bedside</a>. A key challenge to bringing
+              PCLC devices to a level required for a clinical trials in humans is risk management to ensure device
+              reliability and safety.
+
+              The United States Food and Drug Administration (FDA) classifies new hazards that might be introduced by
+              PCLC devices into three categories. Besides clinical factors (e.g. sensor validity and reliability,
+              inter- and intra-patient physiological variability) and usability/human factors (e.g. loss of
+              situational awareness, errors, and lapses in operation), there are also engineering challenges including
+              robustness, availability, and integration issues.
+
+              <p>#### Variants:</p>
+
+              US military developed ONR SBIR (Automated Critical Care System Prototype), and found those issues.
+
+              <ul>
+                <li>No plug and play, i.e. cannot swap O2 Sat with another manufacturer.</li>
+                <li>No standardization of data outputs for devices to interoperate.</li>
+                <li>Must have the exact make/model to replace a faulty device or system will not work.</li>
+              </ul>
+
+            </dd>
+            <dt>Security Considerations</dt>
+            <dd>
+
+              Security considerations for interconnected and dynamically composable medical systems are critical not
+              only because laws such as <a href="https://www.hhs.gov/hipaa/index.html">HIPAA</a> mandate it, but also
+              because security attacks can have serious safety consequences for patients. The systems need to support
+              automatic verification that the system components are being used as intended in the clinical context,
+              that the components are authentic and authorized for use in that environment, that they have been
+              approved by the hospital’s biomedical engineering staff and that they meet regulatory safety and
+              effectiveness requirements.
+
+              For security and safety reasons, <a href="https://www.astm.org/Standards/F2761.htm">ICE
+                F2761-09(2013)</a> compliant medical devices never interact directly each other. All interaction is
+              coordinated and controlled via the applications.
+
+              While transport-level security such as TLS provides reasonable protection against external attackers,
+              they do not provide mechanisms for granular access control for data streams happening within the same
+              protected link. Transport-level security is also not sufficiently flexible to balance between security
+              and performance. Another issue with widely used transport-level security solutions is the lack of
+              support for multicast.
+
+            </dd>
+            <dt>Privacy Considerations</dt>
+            <dd>
+
+              <section id="todo-privacy-2" class="ednote">TODO: Describe any issues related to privacy; if there are
+                none,
+                say "none" and justify</section>
+
+            <dt>References</dt>
+
+            <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
+              for
+              this use case</section>
+
+            </dd>
+            <dt>Gaps</dt>
+            <dd>
+
+              Multicast support. It has proven useful for efficient and scalable discovery and information exchange in
+              industrial systems.
+
+            </dd>
+            <dt>Existing standards</dt>
+            <dd>
+
+              <p>#### <a href="https://www.astm.org/Standards/F2761.htm">F2761-09 (2013)</a> </p>
+
+              Medical Devices and Medical Systems - Essential safety requirements for equipment comprising the
+              patient-centric integrated clinical environment (ICE) - Part 1: General requirements and conceptual
+              model.
+
+              The idea behind ICE is to allow medical devices that conform to the ICE standard, either natively or
+              using an adapter, to interoperate with other ICE-compliant devices regardless of manufacturer.
+
+              <p>#### <a href="https://www.openice.info/">OpenICE</a></p>
+
+              OpenICE is an initiative to create a community implementation of F2761-09 (ICE - Integrated Clinical
+              Environment) based on <a href="https://www.omg.org/spec/DDS/About-DDS/">DDS</a>.
+
+              <p>#### <a href="https://secwww.jhuapl.edu/mdira/documents">MDIRA Specification Document Version
+                  1.0</a>. </p>
+
+              MDIRA Version 1.0 provides requirements and implementation guidance for MDIRA-compliant systems focused
+              on trauma and critical care in austere environments.
+
+              Johns Hopkins University Applied Physics Laboratory (JHU-APL) lead a research project in collaboration
+              with US military to develop a framework of autonomous / closed loop prototypes for military health care
+              which are dual use for the civilian healthcare system.
+
+            </dd>
+            <dt>Comments</dt>
+            <dd>
+
+            </dd>
+          </dl>
+        </section>
+      </section>
+
+      <section id="private-health">
+        <h2>Private Health</h2>
+        <section id="mmi-4-1_health-notifiers">
+          <h2>Health Notifiers</h2>
+          <dl>
+
+            <dt>Submitter(s)</dt>
+            <dd>
+
+              Michael McCool
+
+            </dd>
+            <dt>Reviewer(s)</dt>
+            <dd>
+
+              &lt;Suggest reviewers&gt;
+
+            </dd>
+            <dt>Tracker Issue ID</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Category</dt>
+            <dd>
+
+              Accessibility
+
+            </dd>
+            <dt>Class</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Status</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Target Users</dt>
+            <dd>
+
+              &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
+              cloud provider&gt;
+
+              End user with a health problem they wish to monitor.
+
+              Health services provider (doctor, nurse, paramedic, etc).
+
+            </dd>
+            <dt>Motivation</dt>
+            <dd>
+
+              In critical situations regarding health,
+              like a medical emergency,
+              media multimodality may be the most effective way to communicate alerts,
+              When the goal is to monitor the health evolution of a
+              person in both emergency and non-emergency contexts,
+              access via networked devices may be the most effective way to collect data and
+              monitor a patient's status.
+
+            </dd>
+            <dt>Expected Devices</dt>
+            <dd>
+
+              Medical facilities supporting device and service access.
+
+            </dd>
+            <dt>Expected Data</dt>
+            <dd>
+
+              Command and status information transferred between the personal mobile device
+              application and the meeting space's services and devices.
+
+              Profile data for user preferences.
+
+            </dd>
+            <dt>Dependencies</dt>
+            <dd>
+
+              <ul>
+                <li>WoT Thing Description</li>
+                <li>WoT Discovery</li>
+                <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
+                in IoT orchestration services.
+              </ul>
+
+            </dd>
+            <dt>Description</dt>
+            <dd>
+
+              In medical facilities,
+              a system may provide multiple options to control sensor operations
+              by voice or gesture ("start reading my blood pressure now").
+              These interactions may be mediated by an application installed into a smartphone.
+              The system integrates information from multiple sensors
+              (for example, blood pressure and heart rate);
+              reports medical sensor readings periodically (for example, to a remote medical facility)
+              and sends alerts when unusual readings/events are detected.
+
+              <p>#### Variants:</p>
+
+              The user may have additional mobile devices they want to incorporate into
+              an interaction, for example a headset acting as an auditory aid or personal speech output
+              device.
+
+            </dd>
+            <dt>Gaps</dt>
+            <dd>
+
+              Data format describing user interface preferences.
+
+              Ability to install applications based on links that can access IoT services.
+
+            </dd>
+            <dt>Existing standards</dt>
+            <dd>
+
+              This use case is based on MMI UC 3.2.
+
+            </dd>
+            <dt>Comments</dt>
+            <dd>
+
+              Does not include Requirements section from original MMI use case.
+            </dd>
+          </dl>
+        </section>
+      </section>
     </section>
 
-    </dd>
-    <dt>Comments</dt>
-    <dd>
+    <section id="manufacturing">
+      <h2>Manufacturing</h2>
+      <section id="big-data">
+        <h2>Big Data for Manufacturing</h2>
+        <dl>
 
-      See also Digital Twin use case.
+          <dt>Submitter(s)</dt>
+          <dd>
 
-    </dd>
-    </dl>
-  </section>
+            Michael Lagally
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            Device owners, cloud provider.
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            Production lines for industrial manufacturing consist of multiple machines, where each machine
+            incorporates sensors for various values.
+            A failure of a single machine can cause defective products or a stop of the entire production.
+
+            Big data analysis enables to identify behavioral patterns across multiple production lines of the entire
+            production plant and across multiple plants.
+
+            The results of this analysis can be used for optimizing consumption of raw materials, checking the status
+            of production lines and plants and predicting and preventing fault conditions.
+
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            Various sensors, e.g. temperature, light, humidity, vibration, noise, air quality.
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            Discrete sensor values, such as temperature, light, humidity, vibration, noise, air quality readings.
+            The data can be delivered periodically or on demand.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            Thing Description: groups of devices, aggregation / composition mechanism, thing models
+            Discovery/Onboarding: Onboarding of groups of devices
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            A company owns multiple factories which contain multiple production lines.
+            Examples are production lines, environment sensors,
+            These devices collect data from multiple sensors and transmit this information to the cloud. Sensor data
+            is stored in the cloud, can be visualized and analyzed using machine learning / AI.
+
+            The cloud service allows to manage single and groups of devices.
+            Combining the data streams from multiple devices allows to get an easy overview of the state of all
+            connected devices in the user's realm.
+
+            In many cases there are groups of devices of the same kind, so the aggregation of data across devices can
+            serve to identify anomalies or to predict impending outages.
+
+            The cloud service allows to manage single and groups of devices and can help to identify abonormal
+            conditions.
+            For this purpose a set of rules can be defined by the user, which raises alerts towards the user or
+            triggers actions on devices based on these rules.
+
+            This enables the early detection of pending problems and reduces the risk of machine outages, quality
+            problems or threats to the environment or life of humans.
+
+            <p>#### Variants:</p>
+
+            &lt;Describe possible use case variants, if applicable&gt;
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            &lt;Describe any gaps that are not addressed in the current WoT work items&gt;
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
+              are relevant for this use case</section>
+
+      </section>
+
+      </dd>
+      <dt>Comments</dt>
+      <dd>
+
+        See also Digital Twin use case.
+
+      </dd>
+      </dl>
+    </section>
   </section>
 
   <section id="multi-vendor">
