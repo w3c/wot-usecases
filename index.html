@@ -4283,6 +4283,171 @@ https://github.com/w3c/wot-security/blob/master/presentations/2020-03-16-Bootstr
 </section>
 </section>
 
+  <section id="references" class="appendix">
+    <h2 id="a-references"><bdi class="secno">A.</bdi>
+    References<a class="self-link" aria-label="§" href=
+    "#references"></a></h2>
+    <section id="informative-references">
+      <h3 id="a-1-informative-references"><bdi class=
+      "secno">A.1</bdi> Informative references<a class="self-link"
+      aria-label="§" href="#informative-references"></a></h3>
+      <dl class="bibliography">
+        <dt id="bib-hybridcast">[Hybridcast]</dt>
+        <dd>
+          Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system, HbbTV, ATSC 3.0, ...etc.
+        </dd>
+        <dt id="bib-nmea">[NMEA]</dt>
+        <dd>
+          defines sentences from GPS devices
+        </dd>
+        <dt id="bib-wgs84">[WGS84]</dt>
+        <dd>
+          https://en.wikipedia.org/wiki/World_Geodetic_System
+	  * World Geodetic System * Defines lat/long/alt coordinate system used by most other geolocation standards 
+	  * More complicated than you would think (need to deal with deviations of Earth from a true sphere, 
+          gravitational irregularities, position of centroid, etc. etc.)	
+        </dd>
+        <dt id="bib-geovoc">[Basic Geo Vocabulary]</dt>
+        <dd>
+          https://www.w3.org/2003/01/geo/
+	  * Very basic RDF definitions for lat, long, and alt 
+	  * Does not define heading or speed 
+	  * Does not define accuracy 
+	  * Does not define timestamps 
+          * Uses string as a data model (rather than a number)
+        </dd>
+        <dt id="bib-geoapi">[W3C Geolocalization API]</dt>
+        <dd>
+          https://www.w3.org/TR/geolocation-API/
+          * W3C Devices and Sensors WG is now handling 
+	  * There is an updated proposal: https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface 
+	  * Data schema of updated proposal is similar to existing API, but all elements are now optional 
+          * Data includes latitude, longitude, altitude, heading, and speed 
+	  * Accuracy is included for latitude/longitude (single number in meters, 95% confidence, 
+		interpretation a little ambiguous, but probably intended to be a radius) and altitude, but not for heading or speed.
+        </dd>
+        <dt id="bib-geocons">[Open Geospatial Consortium]</dt>
+        <dd>
+          * See http://docs.opengeospatial.org/as/18-005r4/18-005r4.html * Referring to locations by coordinates 
+	  * Has standards defining semantics for identifying locations * Useful for mapping
+        </dd>
+        <dt id="bib-iso19111">[ISO19111]</dt>
+        <dd>
+          * ISO19111: https://www.iso.org/standard/74039.html * Standard for referring to locations by coordinates 
+	  * Related to OGS standard above and WGS84 * Various other standards that relate to remote sensing, geolocation, etc. 
+	  * Here is an example (see references): https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en
+        </dd>
+        <dt id="bib-ssn">[SSN]</dt>
+        <dd>
+          https://www.w3.org/TR/vocab-ssn/
+	  * Defines "accuracy": https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy 
+	  * Definition of accuracy is consistent with how it is used in Web Geolocation API 
+	  * Also defines related terms Precision, Resolution, Latency, Drift, etc.
+        </dd>
+        <dt id="bib-timestamp">[Timestamps]</dt>
+        <dd>
+          * W3C standard in proposed new web geolocation API: https://w3c.github.io/hr-time/#dom-domhighrestimestamp 
+	  * See also related issues such as latency defined in SSN
+        </dd>
+        <dt id="bib-mmiuc31">[MMI UC3.1]</dt>
+        <dd>
+          no description
+        </dd>
+        <dt id="bib-mmiuc32">[MMI UC3.2]</dt>
+        <dd>
+          no description
+        </dd>
+        <dt id="bib-ice-f2761">[ICE F2761-09(2013)]</dt>
+        <dd>
+          Medical Devices and Medical Systems - Essential safety requirements for equipment comprising the patient-centric 
+	  integrated clinical environment (ICE) - Part 1: General requirements and conceptual model. 
+	  The idea behind ICE is to allow medical devices that conform to the ICE standard, either natively or using an adapter, 
+	  to interoperate with other ICE-compliant devices regardless of manufacturer.
+        </dd>
+        <dt id="bib-openice">[OpenICE]</dt>
+        <dd>
+          OpenICE is an initiative to create a community implementation of F2761-09 
+	  (ICE - Integrated Clinical Environment) based on DDS (https://www.omg.org/spec/DDS/About-DDS/).
+        </dd>
+        <dt id="bib-mdira">[MDIRA]</dt>
+        <dd>
+	  https://secwww.jhuapl.edu/mdira/documents
+          MDIRA Version 1.0 provides requirements and implementation guidance for MDIRA-compliant systems focused on trauma 
+	  and critical care in austere environments. Johns Hopkins University Applied Physics Laboratory (JHU-APL) lead a research project
+	  in collaboration with US military to develop a framework of autonomous / closed loop prototypes for military health care which 
+	  are dual use for the civilian healthcare system.
+        </dd>
+	<dt id="bib-mqtt">[MQTT]</dt>
+        <dd>
+          description mqtt
+	</dd>
+	<dt id="bib-opcua">[OPC UA]</dt>
+        <dd>
+          description opc ua
+	</dd>
+	<dt id="bib-bacnet">[BACnet]</dt>
+        <dd>
+          description BACnet
+	</dd>
+	<dt id="bib-coap">[CoAP]</dt>
+        <dd>
+          description CoAP
+	</dd>
+        <dt id="bib-mmiuc51">[MMI UC5.1]</dt>
+        <dd>
+          no description
+        </dd>
+        <dt id="bib-mmiuc52">[MMI UC5.2]</dt>
+        <dd>
+          no description
+        </dd>
+        <dt id="bib-mmiuc11">[MMI UC1.1]</dt>
+        <dd>
+          no description
+        </dd>
+        <dt id="bib-mmiuc12">[MMI UC1.2]</dt>
+        <dd>
+          no description
+        </dd>
+        <dt id="bib-mmiuc21">[MMI UC2.1]</dt>
+        <dd>
+          no description
+        </dd>
+        <dt id="bib-iec61850">[IEC 61850]</dt>
+        <dd>
+          no description
+        </dd>
+        <dt id="bib-ieee1574">[IEEE 1574]</dt>
+        <dd>
+          no description
+        </dd>
+        <dt id="bib-knx">[KNX]</dt>
+        <dd>
+          no description
+        </dd>
+	<dt id="bib-modbus">[Modbus]</dt>
+        <dd>
+          no description
+        </dd>    
+	<dt id="bib-ogc">[OGC Sensor Things]</dt>
+        <dd>
+          no description
+        </dd>    
+	<dt id="bib-onem2m">[OneM2M]</dt>
+        <dd>
+          no description
+        </dd>    
+	<dt id="bib-lwm2m">[LwM2M]</dt>
+        <dd>
+          no description
+        </dd>
+	<dt id="bib-ocf">[OCF]</dt>
+        <dd>
+          no description
+        </dd>
+      </dl>
+    </section>
+  </section>
 
 <!--
 Domains from the 1.0 UC document 
