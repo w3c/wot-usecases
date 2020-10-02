@@ -1970,12 +1970,166 @@
           </dd>
         </dl>
       </section>
-    </section>
 
-    <section id="multi-vendor">
-      <h2>Multi-Vendor System Integration</h2>
-      <section id="wot-profile">
-        <h2>Out of the box interoperability</h2>
+      <section id="multi-vendor">
+        <h2>Multi-Vendor System Integration</h2>
+        <section id="wot-profile">
+          <h2>Out of the box interoperability</h2>
+          <dl>
+
+            <dt>Submitter(s)</dt>
+            <dd>
+
+              Michael Lagally
+
+            </dd>
+            <dt>Reviewer(s)</dt>
+            <dd>
+
+              All WoT members, specifically Sebastian Kaebisch, Michael McCool, Ege Korkan, Zoltan Kis, Takuki Kamiya,
+              Ryuichi Matsukura, Kunihiko Toumura, Michael Koster.
+
+            </dd>
+            <dt>Tracker Issue ID</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Category</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Class</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Status</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Target Users</dt>
+            <dd>
+
+              <ul>
+                <li>device owner</li>
+                <li>service provider</li>
+                <li>cloud provider</li>
+                <li>device manufacturer</li>
+                <li>gateway manufacturer</li>
+              </ul>
+
+            </dd>
+            <dt>Motivation</dt>
+            <dd>
+
+              <ul>
+                <li>As an device owner, I want to know whether a device will work with my system before I purchase it to
+                  avoid wasting money.</li>
+                - Installers of IoT devices want to be able to determine if a given device will be compatible with the
+                rest of their installed systems and whether they will have access to its data and affordances.
+              </ul>
+
+              <ul>
+                <li>As a developer, I want TDs to be as simple as possible so that I can efficiently develop them.</li>
+                - Here "simple" should relate to the end goal, "efficiently develop"; that is, TDs should be
+                straightforward for the average developer to complete and validate.
+              </ul>
+
+              <ul>
+                <li>As a developer, I want to be able to validate that a Thing will be compatible with a Consumer
+                  without having to test against every possible consumer.</li>
+              </ul>
+
+              <ul>
+                <li>As a cloud provider I want to onboard, manage and communicate with as many devices as possible out
+                  of the box.</li>
+                This should be possible without device specific customization.
+              </ul>
+
+            </dd>
+            <dt>Expected Devices</dt>
+            <dd>
+
+              sensors, actuators, gateways, cloud, directory service.
+
+            </dd>
+            <dt>Expected Data</dt>
+            <dd>
+
+              discrete or streaming data.
+
+            </dd>
+            <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+            <dd>
+
+              WoT Profile, WoT Thing Description
+
+            </dd>
+            <dt>Description</dt>
+            <dd>
+
+              As a consumer of devices I want to be able to process data from any device that conforms to a class of
+              devices.
+
+              I want to have a guarantee that I'm able to correctly interact with all affordances of the Thing that
+              complies with this class of devices.
+              Behavioral ambiguities between different implementations of the same description should not be possible.
+
+              I want to integrate it into my existing scenarios out of the box, i.e. with close to zero configuration
+              tasks.
+
+              <p>#### Variants:</p>
+
+              N/A
+
+            </dd>
+            <dt>Gaps</dt>
+            <dd>
+
+              <section id="todo-gaps-x" class="ednote">
+                TODO: Describe any gaps that are not addressed in the current WoT standards and building blocks
+              </section>
+
+            </dd>
+            <dt>References</dt>
+            <dd>
+
+              <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
+                for
+                this use case</section>
+
+        </section>
+
+        </dd>
+        <dt>Existing standards</dt>
+        <dd>
+
+          various.
+
+        </dd>
+        <dt>Comments</dt>
+        <dd>
+
+          A strawman proposal for a profile specification has been submitted at: https://github.com/w3c/wot-profile
+
+          An initial set of requirements is available here:
+          https://github.com/w3c/wot-profile/edit/master/REQUIREMENTS/requirements.md
+
+
+          Recommendations for commonalities and interoperability profiles of IoT platforms:
+          https://european-iot-pilots.eu/wp-content/uploads/2018/11/D06_02_WP06_H2020_CREATE-IoT_Final.pdf
+        </dd>
+        </dl>
+      </section>
+      <section id="digital-twin">
+        <h2>Digital Twin</h2>
         <dl>
 
           <dt>Submitter(s)</dt>
@@ -1987,8 +2141,1061 @@
           <dt>Reviewer(s)</dt>
           <dd>
 
-            All WoT members, specifically Sebastian Kaebisch, Michael McCool, Ege Korkan, Zoltan Kis, Takuki Kamiya,
-            Ryuichi Matsukura, Kunihiko Toumura, Michael Koster.
+            &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            Device owners, cloud provider.
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            A digital twin is the virtual representation of a physical asset such as a machine, a vehicle, robot,
+            sensor.
+            Using a digital twin allows businesses to analyze their physical assets to troubleshoot in real time,
+            predict future problems, minimize downtime, and perform simulations to create new business opportunities.
+
+            A digital twin may also be called a twin or a shadow. Digital twin technology may be referred to as device
+            virtualization.
+
+            Digital twins can be located in the edge or in the cloud.
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            Various devices such as sensors, machines, vehicles, production lines, industry robots.
+
+            Digital twin platforms at the edge or in the cloud.
+
+            &lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            &lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors,
+            vehicle data&gt;
+
+            Machine status information, discrete sensor data or data streams.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            &lt;List the affected WoT deliverables&gt;
+            <ul>
+              <li>WoT Architecture </li>
+              <li>WoT Thing Description </li>
+              <li>WoT Profile </li>
+              <li>WoT Scripting? </li>
+            </ul>
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            &lt;Provide a description from the users perspective&gt;
+
+            The user benefits from using digital twins with the following scenarios:
+
+            <ul>
+              <li>Better visibility: Continually view the operations of the machines or devices, and the status of
+                their interconnected systems.</li>
+            </ul>
+
+            <ul>
+              <li>Accurate prediction: Retrieve the future state of the machines from the digital twin model by using
+                modeling.</li>
+            </ul>
+
+            <ul>
+              <li>What-if analysis: Easily interact with the model to simulate unique machine conditions and perform
+                what-if analysis using well-designed interfaces.</li>
+            </ul>
+
+            <ul>
+              <li>Documentation and communication: Use of the digital twin model helps to understand, document, and
+                explain the behavior of a specific machine or a collection of machines.</li>
+            </ul>
+
+            <ul>
+              <li>Integration of disparate systems: Connect with back-end applications related to supply chain
+                operations such as manufacturing, procurement, warehousing, transportation, or logistics.</li>
+            </ul>
+
+
+          </dd>
+          <dt>Variants</dt>
+          <dd>
+
+            <p>#### Virtual Twin</p>
+
+            The virtual twin is a representation of a physical device or an asset. A virtual twin uses a model that
+            contains observed and desired attribute values and also uses a semantic model of the behavior of the
+            device.
+
+            Intermittent connectivity: An application may not be able to connect to the physical asset. In such a
+            scenario, the application must be able to retrieve the last known status and to control the operation
+            states of other assets.
+
+            Protocol abstraction: Typically, devices use a variety of protocols and methods to connect to the IoT
+            network. From a users perspective this complexity should not affect other business applications such as an
+            enterprise resource planning (ERP) application.
+
+            Business rules: The user can specify the normal operating range of a property in a semantic model.
+            Business rules can be declaratively defined and actions can be automatically invoked in the edge or on the
+            device.
+
+            Example: In a fleet of connected vehicles, the user monitors a collection of operating parameters, such as
+            fuel level, location, speed and others. The semantics-based virtual twin model enables the user to decide
+            whether the operating parameters are in normal range. In out of range conditions the user can take
+            appropriate actions.
+
+
+            <p>#### Predictive Twin</p>
+
+            In a predictive twin, the digital twin implementation builds an analytical or statistical model for
+            prediction by using a machine-learning technique. It need not involve the original designers of the
+            machine. It is different from the physics-based models that are static, complex, do not adapt to a
+            constantly changing environment, and can be created only by the original designers of the machine.
+
+            A data analyst can easily create a model based on external observation of a machine and can develop
+            multiple models based on the user’s needs.
+            The model considers the entire business scenario and generates contextual data for analysis and
+            prediction.
+
+            When the model detects a future problem or a future state of a machine, the user can prevent or prepare
+            for them.
+            The user can use the predictive twin model to determine trends and patterns from the contextual machine
+            data. The model helps to address business problems.
+
+
+            <p>#### Twin Projections</p>
+
+            In twin projections, the predictions and the insights integrate with back-end business applications,
+            making IoT an integral part of business processes.
+            When projections are integrated with a business process, they can trigger a remedial business workflow.
+
+            Prediction data offers insights into the operations of machines. Projecting these insights into the
+            back-end applications infrastructure enables business applications to interact with the IoT system and
+            transform into intelligent systems.
+
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            WoT does not define a way to describe the behavior of a thing to use for a simulation.
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            <section id="todo-references-x" class="ednote">
+              TODO: Provide links to relevant standards that are
+              relevant for this use case</section>
+
+          </dd>
+          <dt>Comments</dt>
+          <dd>
+          </dd>
+        </dl>
+      </section>
+      <section id="X-Protocol-Interworking">
+        <h2>Cross Protocol Interworking</h2>
+        <dl>
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Michael Lagally
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            Ege Korkan, Michael McCool, Michael Koster, Sebastian Käbisch
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            Device owners, cloud providers.
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            In smart city, home and industrial scenarios various devices are connected to a common network. These
+            devices implement different protocols. To enable interoperability, an "agent" needs to communicate across
+            different protocols. Platforms for this agent can be edge devices, gateways or cloud services.
+
+            Interoperability across protocols is a must for all user scenarios that integrate devices from more than
+            one protocol.
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            Various sensors, e.g. temperature, light, humidity, vibration, noise, air quality, edge devices, gateways,
+            cloud servers and services.
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            Discrete sensor values, such as temperature, light, humidity, vibration, noise, air quality readings.
+            A/V streams.
+            The data can be delivered periodically or on demand.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            WoT Profiles.
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            There are multiple user scenarios that are addressed by this use case.
+
+            An example in the smart home environment is an automatic control lamps, air conditioners, heating, window
+            blinds in a household
+            based on sensor data, e.g. sunlight, human presence, calendar and clock, etc.
+
+            In an industrial environment individual actuators and production devices use different protocols.
+            Examples include MQTT, OPC-UA, Modbus, Fieldbus, and others.
+            Gathering data from these devices, e.g. to support digital twins or big data use cases requires an "Agent"
+            to bridge across these protocols.
+            To provide interoperability and to reduce implementation complexity of this agent a common set of (minimum
+            and maximum)
+            requirements need to be supported by all interoperating devices.
+
+            A smart city environment is similar to the industrial scenario in terms of device interoperability.
+            Devices differ however,
+            they include smart traffic lights, traffic monitoring, people counters, cameras.
+
+            <p>#### Variants:</p>
+
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            A common profile across protocols is required to address this use case.
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            MQTT, OPC-UA, BACNet, CoAP, various other home and industrial protocols.
+          </dd>
+          <dt>Comments</dt>
+          <dd>
+
+
+          </dd>
+        </dl>
+      </section>
+    </section>
+
+    <section id="multimodal">
+      <h2>Multimodal System Integration</h2>
+      <section id="mmi-5-1_multimodal-recognition-support">
+        <h2>Multimodal Recognition Support</h2>
+        <dl>
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Michael McCool
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            Accessibility
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
+            cloud provider&gt;
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            Recognizer system development has arrived at a point of maturity where
+            if we want to dramatically enhance recognition performance,
+            sensor fusion from multiple modalities is needed.
+            In order to achieve this,
+            an image recognizer should incorporate results coming from other
+            kinds of recognizers (e.g. audio recognizer) within the network
+            engaged in the same interaction cycle.
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            Audio sensing device (microphone).
+
+            Video sensing device (camera).
+
+            Audio recognition service.
+
+            Video recognition service.
+
+            Devices capabale of presenting alerts in various modalities.
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            Command and status information transferred between the sensing devices,
+            the recognition services, and the alert devices.
+
+            Profile data for user preferences.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            <ul>
+              <li>WoT Thing Description</li>
+              <li>WoT Discovery</li>
+              <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
+              in IoT orchestration services.
+            </ul>
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            An audio recognizer has been trained with the more common sounds in the house,
+            in order to provide alerts in case of an emergency.
+            In the same house a security system uses a video recognizer to identify people
+            at the front door.
+            These two systems need to cooperate with a remote home management system
+            to provide integrated services.
+
+            <p>#### Variants:</p>
+
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            Support for video and audio recognition services.
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            This use case is based on MMI UC 5.1.
+
+          </dd>
+          <dt>Comments</dt>
+          <dd>
+
+            Does not include Requirements section from original MMI use case.
+          </dd>
+        </dl>
+      </section>
+      <section id="mmi-5-2_enhancement-of-synergistic-interactions">
+        <h2>Enhancement of Synergistic Interactions</h2>
+        <dl>
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Michael McCool
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            Accessibility
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
+            cloud provider&gt;
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            One of the main indicators concerning the usability of a system
+            is the corresponding level of accessibility provided by it.
+            The opportunity for all the users to receive and to deliver all kinds of information,
+            regardless of the information format or the type of user profile,
+            state or impairment is a recurrent need in web applications.
+            One of the means to achieve accessibility is the design of a more
+            synergic interaction based on the discovery of multimodal Modality Components.
+
+            Synergy is two or more entities functioning together to produce a result
+            that is not obtainable independently.
+            It means "working together".
+            For example,
+            how to avoid disruptive interactions
+            in nomadic systems (always affected by the changing context)
+            is an important issue.
+            In these applications,
+            user interaction is difficult,
+            distracted and less precise.
+            Discovery and use of alternative input and output devices
+            can increase synergic interaction offering new possibilities
+            more adapted to the current context.
+            Such a system can also enhance the fusion process for target groups of
+            users experiencing permanent or temporary learning difficulties or with sensorial,
+            emotional or social impairments.
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            A normal client computer with I/O devices that need to be emulated.
+
+            Alternative I/O devices that need to be interfaced to the client system.
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            Command and status information transferred between the client computer
+            and the alternative I/O devices.
+
+            Profile data for user preferences.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            <ul>
+              <li>WoT Thing Description</li>
+              <li>WoT Discovery</li>
+              <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
+              in IoT orchestration services.
+            </ul>
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            A person working mostly with a PC is having a problem with his right arm and hands.
+            He is unable to use a mouse or a keyboard for a few months.
+            He can point at things, sketch, clap, make gestures, but he can not make any precise movements.
+            A generic interface allows this person to perform his most important tasks in his
+            personal devices:
+            to call someone, open a mailbox, access his agenda or navigate over some Web pages.
+            The generic interface can propose child-oriented intuitive interfaces like a
+            clapping-based interface,
+            a very articulated TTS component, or reduced gesture input widgets.
+            Other specialized devices might include phones with very big numbers,
+            very simple remote controls,
+            screens displaying text at high resolution,
+            or voice command devices.
+
+            <p>#### Variants:</p>
+
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            This use case is based on MMI UC 5.2.
+
+          </dd>
+          <dt>Comments</dt>
+          <dd>
+
+            Does not include Requirements section from original MMI use case.
+          </dd>
+        </dl>
+      </section>
+    </section>
+
+    <section id="accessibility">
+      <h2>Accessibility</h2>
+      <section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions">
+        <h2>Audiovisual Devices Acting as Smartphone Extensions</h2>
+        <dl>
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Michael McCool
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            Accessibility
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
+            cloud provider&gt;
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            Many of today's home IoT-enabled devices can provide similar functionality
+            (e.g. audio/video playback),
+            differing only in certain aspects of the user interface.
+            This use case would allow continuous interaction with a specific
+            application as the user moves from room to room,
+            with the user interface switched automatically to the set of
+            devices available in the user's present location.
+
+            On the other hand,
+            some devices can have specific capabilities
+            and user interfaces that can be used to add information to a larger context
+            that can be reused by other applications and devices.
+            This drives the need to spread an application across different devices
+            to achieve a more user-adapted and meaningful interaction according to the
+            context of use.
+            Both aspects provide arguments for exploring use cases where
+            applications use distributed multimodal interfaces.
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            Mobile phone or other client running an application requiring a extended and
+            more accessible user interface.
+
+            IoT-enabled audio-visual devices providing audio and visual information
+            display capabilities that can be used to augment the user interface of the
+            application.
+
+            Possible edge computation services providing speech-to-text or described video
+            (e.g. object detection) capabilities.
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            Visual display information mapping information from audio to visual modalities,
+            for example text generated from voice recognition.
+
+            Text from an application that needs to be displayed at a larger size.
+
+            Visual alerts correspondig to audio stimuli, eg sound effects in a game mapped
+            to visual icons.
+
+            Visual information mapped to audio information, for example,
+            described video based on an AI service providing object recognition.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            <ul>
+              <li>WoT Thing Description</li>
+              <li>WoT Discovery</li>
+              <li>Optional: WoT Scripting API accessible from application for interacting</li>
+              with devices.
+            </ul>
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            A home entertainment system is adapted by a mobile device
+            as a set of user interface components.
+
+            In addition to media rendering and playback,
+            these Devices also act as input or output modalities for
+            an application, for example an application running on a smartphone.
+            The native user interface on the application
+            does not have to be manipulated directly at all.
+            A wall-mounted touch-sensitive TV could be used to navigate applications,
+            and a wide-range microphone can handle speech input.
+            Spatial (Kinect-style) gestures may also be used to control
+            application behavior.
+
+            Accessibility support software on the smartphone
+            discovers available modalities and arranges them to best
+            serve the user's purpose.
+            One display can be used to show photos and movies,
+            another for navigation.
+            As the user walks into another room,
+            this configuration is adapted dynamically to the new location.
+            User intervention may be sometimes required to decide on
+            the most convenient modality configuration.
+            The state of the interaction is maintained
+            while switching between modality sets.
+            For example,
+            if the user was navigating a GUI menu in the living room,
+            it is carried over to another screen when she switches rooms,
+            or replaced with a different modality such as voice
+            if there are no displays in the new location.
+
+            <p>#### Variants:</p>
+
+            Modalities may be translated from one form to another to accomodate
+            accessibility issues, for example, visual cues into audio cues and
+            vice-versa, as appropriate.
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            An AI service may be require to perform modality mapping, for example,
+            object recognition.
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            This use case is based on MMI UC 1.1.
+
+          </dd>
+          <dt>Comments</dt>
+          <dd>
+
+            Does not include Requirements section from original MMI use case.
+            Variant supporting
+            modality conversion is not included in the original MMI use case.
+          </dd>
+        </dl>
+      </section>
+      <section id="mmi-1-2_unified-smart-home-control-and-status">
+        <h2>Unified Smart Home Control and Status Interface</h2>
+        <dl>
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Michael McCool
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            Accessibility
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
+            cloud provider&gt;
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            The increase in the number of controllable devices in an
+            intelligent home creates a problem with controlling all available services
+            in a coherent and useful manner.
+            Having a shared context,
+            built from information collected through sensors and direct user input,
+            would improve recognition of user intent, and thus simplify interactions.
+
+            In addition,
+            multiple input mechanisms could be selected by the user based on device type,
+            level of trust and the type of interaction required for a particular task.
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            Mobile phone or other client running an application providing command
+            mediation capabilities.
+
+            IoT-enabled smart home devices supporting
+            remote sensing and actuation functionality.
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            Command and status information transferred between the command mediation
+            application and one or more devices.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            <ul>
+              <li>WoT Thing Description</li>
+              <li>WoT Discovery</li>
+              <li>Optional: WoT Scripting API accessible from application for interacting </li>
+              with devices.
+            </ul>
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            Smart home functionality (window blinds, lights, air conditioning etc.)
+            is controlled through a multimodal interface,
+            composed from modalities built into the house itself
+            (e.g. speech and gesture recognition)
+            and those available on the user's personal devices
+            (e.g. smartphone touchscreen).
+            The system may automatically adapt to the preferences of a specific user,
+            or enter a more complex interaction if multiple people are present.
+
+            Sensors built into various devices around the house can act as input
+            modalities that feed information to the home and affect its behavior.
+            For example,
+            lights and temperature in the gym room can be adapted dynamically
+            as workout intensity recorded by the fitness equipment increases.
+            The same data can also increase or decrease volume and tempo of music tracks
+            played by the user's mobile device or the home's media system.
+
+            <p>#### Variants:</p>
+
+            The intelligent home in tandem with the user's personal
+            devices can additionally monitor user behavior for emotional patterns
+            such as 'tired' or 'busy' and adapt further.
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            A service may be needed to recognize gestures and emotional states.
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            This use case is based on MMI UC 1.2; original title was Intelligent Home Apparatus.
+
+          </dd>
+          <dt>Comments</dt>
+          <dd>
+
+            Does not include Requirements section from original MMI use case.
+          </dd>
+        </dl>
+      </section>
+    </section>
+
+    <section id="automotive">
+      <h2>Automotive</h2>
+      <section id="mmi-2-1_smart-car-configuration-management">
+        <h2>Smart Car Configuration Management</h2>
+        <dl>
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Michael McCool
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            Accessibility
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
+            cloud provider&gt;
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            User interface personalization is a task that most often needs to be repeated
+            for all Devices a user wishes to interact with recurringly.
+            With complex devices,
+            this task can also be very time-consuming,
+            which is problematic if the user regularly accesses similar,
+            but not identical devices, as in the case of several cars rented over a month.
+
+            A standardized set of personal information and preferences that could be used
+            to configure personalizable devices automatically would be very helpful for all
+            these cases in which the interaction becomes a customary practice.
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            Personal mobile device running an application providing command
+            mediation capabilities.
+
+            IoT-enabled smart car supporting
+            remote sensing, actuation, and configuration functionality.
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            Command and status information transferred between the personal mobile device
+            application and the car's services and devices.
+
+            Profile data for user preferences.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            <ul>
+              <li>WoT Thing Description</li>
+              <li>WoT Discovery</li>
+              <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
+              in IoT orchestration services in the car.
+            </ul>
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            Basic in-car functionality is standardized to be managed by other devices.
+            A user can control seat, radio or AC settings through a personalized multimodal interface
+            shared by the car and her personal mobile device.
+            User preferences are stored on the mobile Device (or in the cloud),
+            and can be transferred across different car models handling a specific functionality
+            (e.g. all cars with touchscreens should be able to adapt to a "high contrast" preference).
+
+            The car can make itself available as a complex modality component that wraps around all
+            functionality and supported modalities,
+            or as a collection of modality components such as touchscreen, speech recognition system,
+            or audio player.
+            In the latter case,
+            certain user preferences may be shared with other environments.
+
+            For example,
+            a user may opt to select the "high contrast" scheme at night on all of her displays,
+            in the car or at home.
+            A car that provides a set of modalities can be also adapted by the mobile device
+            to compose an interface for its functionality,
+            for example to manage playback of music tracks through the car's voice control system.
+            Sensor data provided by the phone can be mixed with data recorded by the car's own sensors
+            to profile user behavior which can be used as context in multimodal interaction.
+
+            <p>#### Variants:</p>
+
+            Additional portable devices may be brought into the car and also be
+            incorporated into an application, for example, a GPS navigation system.
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            Data format describing user interface preferences.
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            This use case is based on MMI UC 2.1.
+
+          </dd>
+          <dt>Comments</dt>
+          <dd>
+
+            Does not include Requirements section from original MMI use case.
+          </dd>
+        </dl>
+      </section>
+    </section>
+
+    <section id="smart-grids">
+      <h2>Energy / Smart Grids</h2>
+      <section id="smart-grid">
+        <h2>Smart Grids</h2>
+        <dl>
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Christian Glomb (Siemens)
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            Michael Lagally (Oracle)
 
           </dd>
           <dt>Tracker Issue ID</dt>
@@ -2019,1365 +3226,155 @@
           <dd>
 
             <ul>
-              <li>device owner</li>
-              <li>service provider</li>
-              <li>cloud provider</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li>Grid operators on all voltage levels line Distribution System Operators (DSO), Transmission System
+                Operators (TSO)</li>
+              <li>Plant operators (centralized as well as de-centralized producers)</li>
+              <li>Virtual Power Plant (VPP) operators</li>
+              <li>Energy grid markets</li>
+              <li>Cloud providers where grid backend services are hosted and where Operation Technology bridges to
+                Information Technology</li>
+              <li>Device manufacturers, owners, and users; devices include communication gateways, monitoring and
+                control units</li>
             </ul>
 
           </dd>
           <dt>Motivation</dt>
           <dd>
 
-            <ul>
-              <li>As an device owner, I want to know whether a device will work with my system before I purchase it to
-                avoid wasting money.</li>
-              - Installers of IoT devices want to be able to determine if a given device will be compatible with the
-              rest of their installed systems and whether they will have access to its data and affordances.
-            </ul>
-
-            <ul>
-              <li>As a developer, I want TDs to be as simple as possible so that I can efficiently develop them.</li>
-              - Here "simple" should relate to the end goal, "efficiently develop"; that is, TDs should be
-              straightforward for the average developer to complete and validate.
-            </ul>
-
-            <ul>
-              <li>As a developer, I want to be able to validate that a Thing will be compatible with a Consumer
-                without having to test against every possible consumer.</li>
-            </ul>
-
-            <ul>
-              <li>As a cloud provider I want to onboard, manage and communicate with as many devices as possible out
-                of the box.</li>
-              This should be possible without device specific customization.
-            </ul>
+            &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is
+            important for the users&gt;
 
           </dd>
           <dt>Expected Devices</dt>
           <dd>
 
-            sensors, actuators, gateways, cloud, directory service.
+            A smart grid integrates all players in the electricity market into one overall system through the
+            interaction of generation, storage, grid management and consumption. Power and storage plants are already
+            controlled today in such a way that only as much electricity is produced as is needed. Smart grids include
+            consumers as well as small, decentralized energy suppliers and storage locations in this control system,
+            so that on the one hand, consumption is more homogeneous in terms of time and space (see also intelligent
+            electricity consumption) and on the other hand, in principle inhomogeneous producers (e.g. wind power) and
+            consumers (e.g. lighting) can be better integrated.
 
           </dd>
           <dt>Expected Data</dt>
           <dd>
 
-            discrete or streaming data.
+            <ul>
+              <li>Weather and climate data</li>
+              <li>Metering data (both production as well as consumption as well as storage, e.g. 15 min. intervals)
+              </li>
+              <li>Real time data from PMUs (Phasor Measurement Units)</li>
+              <li>Machine and equipment monitoring data (enabling health checks)</li>
+              <li>...</li>
+            </ul>
 
           </dd>
           <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
           <dd>
 
-            WoT Profile, WoT Thing Description
+            WoT Architecture, WoT Binding Templates (covering protocol specifica)
 
           </dd>
           <dt>Description</dt>
           <dd>
 
-            As a consumer of devices I want to be able to process data from any device that conforms to a class of
-            devices.
-
-            I want to have a guarantee that I'm able to correctly interact with all affordances of the Thing that
-            complies with this class of devices.
-            Behavioral ambiguities between different implementations of the same description should not be possible.
-
-            I want to integrate it into my existing scenarios out of the box, i.e. with close to zero configuration
-            tasks.
+            The term Smart Grid refers to the communicative networking and control of power generators, storage
+            facilities, electrical consumers, and grid equipment in power transmission and distribution networks for
+            electricity supply. This enables the optimization and monitoring of the interconnected components. The aim
+            is to secure the energy supply on the basis of efficient and reliable system operation.
 
             <p>#### Variants:</p>
 
-            N/A
+            ##### Decentralized Power Generation
+            While electricity grids with centralized power generation have dominated up to now, the trend is moving
+            towards decentralized generation plants, both for generation from fossil primary energy through small CHP
+            plants and for generation from renewable sources such as photovoltaic systems, solar thermal power plants,
+            wind turbines and biogas plants. This leads to a much more complex structure, primarily in the area of
+            load control, voltage maintenance in the distribution grid and maintenance of grid stability. In contrast
+            to medium to large power plants, smaller, decentralised generation plants also feed directly into the
+            lower voltage levels such as the low-voltage grid or the medium-voltage grid. This use case variants also
+            includes operation and control of energy storages like batteries.
+
+            ##### Virtual Power Plants
+            A Virtual Power Plant (VPP) is an aggregation of Distributed Energy Resources (DERs) that can act as an
+            entity on energy markets or as an ancillary service to grid operation.
+            The individual DERs often have a primary use on their own, with electric generation/consumption being a
+            side-effect resp. secondary use. This results in negotiations/collaborations between many different
+            parties e.g. such as the DER owner, the VPP operator, the grid operator and others.
+
+            ##### Smart Metering
+            For consumers, a major change is the installation of smart meters. Their core tasks are remote reading and
+            the possibility to realize fluctuating prices within a day at short notice. All electricity meters must
+            therefore be replaced by those with remote data transmission.
+
+            ##### Other variants
+            Emergency response, grid synchronization, grid black start
+
+          </dd>
+          <dt>Building Blocks</dt>
+          <dd>
+            <ul>
+              <li>Multi-Stakeholder Operation: Multiple involved parties have to find a common mode of operation</li>
+              <li>Device Lifecycle Management: Since the VPP is a dynamic system of loosely coupled DERs, the
+                appearance and disappearance of DERs as well as the software management on the devices itself requires
+                a means to orchestrate the lifecycle of individual device's respective components.</li>
+              <li>Embedded Runtime: Especially for DERs in remote locations, maintaining a close couple control loop
+                can be expensive if feasible at all. Therefore, it is desirable to be able to offload control logic to
+                the DER itself.</li>
+              <li>Ensemble Discovery: In order to dynamically find matching DERs needed for the operational goal of a
+                VPP, a registry with different options of DER discovery is needed.</li>
+              <li>Content-Negotiation: The different stakeholders have to interact and therefore need a common data
+                format.</li>
+              <li>Resource Description: The DER has to describe itself to enable discovery of single DERs and
+                ensembles, also the operational data needs to be understood by the different stakeholders without
+                engineering effort.</li>
+              <li>Push Services: As there is a fan-out with many devices that probably have a rate-limited connection
+                connecting to one single command centre, a bidirectional communication mechanism is needed rather than
+                polling for the reverse direction</li>
+              <li>Object Memory: As multiple and interchangable stakeholders are involved in the application, a
+                backlog of the object is beneficial for scrollkeeping</li>
+            </ul>
+
+          </dd>
+          <dt>Non-Functionals</dt>
+          <dd>
+            <ul>
+              <li>Privacy: As fine-grained metering informtion provides sensitive data about a household, the system
+                should show a high digree of privacy</li>
+              <li>Trust: Since the data exchange between the virtual power plant and the distributed energy resource
+                leads to a physical action that invokes high currents and monetary flows, the integrity of both
+                parties and the exchange's data is crucial</li>
+              <li>Layered L7 Communication: Since multiple different links are used for monitoring and control,
+                integration requires a clear and consistent seperation of information from the used serialization and
+                application protocols to enable the exchange of homogenous information over heterogenous application
+                layer protocols</li>
+            </ul>
 
           </dd>
           <dt>Gaps</dt>
           <dd>
 
-            <section id="todo-gaps-x" class="ednote">
-              TODO: Describe any gaps that are not addressed in the current WoT standards and building blocks</section>
-
-          </dd>
-          <dt>References</dt>
-          <dd>
-
-            <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
-              for
-              this use case</section>
-
+            <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards that
+              are relevant for this use case</section>-gaps-x" class="ednote"><section id="todo-references-x"
+              class="ednote">TODO: Provide links to relevant standards that are relevant for this use case</section>:
+            Describe any gaps that are not addressed in the current WoT standards and building blocks
       </section>
 
       </dd>
       <dt>Existing standards</dt>
       <dd>
 
-        various.
+        IEC 61850 - International standard for data models and communication protocols
+
+        IEEE 1547 - US standard for interconnecting distributed resources with electric power systems
 
       </dd>
       <dt>Comments</dt>
       <dd>
-
-        A strawman proposal for a profile specification has been submitted at: https://github.com/w3c/wot-profile
-
-        An initial set of requirements is available here:
-        https://github.com/w3c/wot-profile/edit/master/REQUIREMENTS/requirements.md
-
-
-        Recommendations for commonalities and interoperability profiles of IoT platforms:
-        https://european-iot-pilots.eu/wp-content/uploads/2018/11/D06_02_WP06_H2020_CREATE-IoT_Final.pdf
       </dd>
       </dl>
     </section>
-    <section id="digital-twin">
-      <h2>Digital Twin</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          Michael Lagally
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          &lt;Suggest reviewers&gt;
-
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          Device owners, cloud provider.
-
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-
-          A digital twin is the virtual representation of a physical asset such as a machine, a vehicle, robot,
-          sensor.
-          Using a digital twin allows businesses to analyze their physical assets to troubleshoot in real time,
-          predict future problems, minimize downtime, and perform simulations to create new business opportunities.
-
-          A digital twin may also be called a twin or a shadow. Digital twin technology may be referred to as device
-          virtualization.
-
-          Digital twins can be located in the edge or in the cloud.
-
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-
-          Various devices such as sensors, machines, vehicles, production lines, industry robots.
-
-          Digital twin platforms at the edge or in the cloud.
-
-          &lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
-
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          &lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors,
-          vehicle data&gt;
-
-          Machine status information, discrete sensor data or data streams.
-
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
-
-          &lt;List the affected WoT deliverables&gt;
-          <ul>
-            <li>WoT Architecture </li>
-            <li>WoT Thing Description </li>
-            <li>WoT Profile </li>
-            <li>WoT Scripting? </li>
-          </ul>
-
-        </dd>
-        <dt>Description</dt>
-        <dd>
-
-          &lt;Provide a description from the users perspective&gt;
-
-          The user benefits from using digital twins with the following scenarios:
-
-          <ul>
-            <li>Better visibility: Continually view the operations of the machines or devices, and the status of
-              their interconnected systems.</li>
-          </ul>
-
-          <ul>
-            <li>Accurate prediction: Retrieve the future state of the machines from the digital twin model by using
-              modeling.</li>
-          </ul>
-
-          <ul>
-            <li>What-if analysis: Easily interact with the model to simulate unique machine conditions and perform
-              what-if analysis using well-designed interfaces.</li>
-          </ul>
-
-          <ul>
-            <li>Documentation and communication: Use of the digital twin model helps to understand, document, and
-              explain the behavior of a specific machine or a collection of machines.</li>
-          </ul>
-
-          <ul>
-            <li>Integration of disparate systems: Connect with back-end applications related to supply chain
-              operations such as manufacturing, procurement, warehousing, transportation, or logistics.</li>
-          </ul>
-
-
-        </dd>
-        <dt>Variants</dt>
-        <dd>
-
-          <p>#### Virtual Twin</p>
-
-          The virtual twin is a representation of a physical device or an asset. A virtual twin uses a model that
-          contains observed and desired attribute values and also uses a semantic model of the behavior of the
-          device.
-
-          Intermittent connectivity: An application may not be able to connect to the physical asset. In such a
-          scenario, the application must be able to retrieve the last known status and to control the operation
-          states of other assets.
-
-          Protocol abstraction: Typically, devices use a variety of protocols and methods to connect to the IoT
-          network. From a users perspective this complexity should not affect other business applications such as an
-          enterprise resource planning (ERP) application.
-
-          Business rules: The user can specify the normal operating range of a property in a semantic model.
-          Business rules can be declaratively defined and actions can be automatically invoked in the edge or on the
-          device.
-
-          Example: In a fleet of connected vehicles, the user monitors a collection of operating parameters, such as
-          fuel level, location, speed and others. The semantics-based virtual twin model enables the user to decide
-          whether the operating parameters are in normal range. In out of range conditions the user can take
-          appropriate actions.
-
-
-          <p>#### Predictive Twin</p>
-
-          In a predictive twin, the digital twin implementation builds an analytical or statistical model for
-          prediction by using a machine-learning technique. It need not involve the original designers of the
-          machine. It is different from the physics-based models that are static, complex, do not adapt to a
-          constantly changing environment, and can be created only by the original designers of the machine.
-
-          A data analyst can easily create a model based on external observation of a machine and can develop
-          multiple models based on the user’s needs.
-          The model considers the entire business scenario and generates contextual data for analysis and
-          prediction.
-
-          When the model detects a future problem or a future state of a machine, the user can prevent or prepare
-          for them.
-          The user can use the predictive twin model to determine trends and patterns from the contextual machine
-          data. The model helps to address business problems.
-
-
-          <p>#### Twin Projections</p>
-
-          In twin projections, the predictions and the insights integrate with back-end business applications,
-          making IoT an integral part of business processes.
-          When projections are integrated with a business process, they can trigger a remedial business workflow.
-
-          Prediction data offers insights into the operations of machines. Projecting these insights into the
-          back-end applications infrastructure enables business applications to interact with the IoT system and
-          transform into intelligent systems.
-
-
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
-
-          WoT does not define a way to describe the behavior of a thing to use for a simulation.
-
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
-
-          <section id="todo-references-x" class="ednote">
-            TODO: Provide links to relevant standards that are
-            relevant for this use case</section>
-    </section>
-
-    </dd>
-    <dt>Comments</dt>
-    <dd>
-
-
-    </dd>
-    </dl>
-  </section>
-  <section id="X-Protocol-Interworking">
-    <h2>Cross Protocol Interworking</h2>
-    <dl>
-      <dt>Submitter(s)</dt>
-      <dd>
-
-        Michael Lagally
-
-      </dd>
-      <dt>Reviewer(s)</dt>
-      <dd>
-
-        Ege Korkan, Michael McCool, Michael Koster, Sebastian Käbisch
-
-      </dd>
-      <dt>Tracker Issue ID</dt>
-      <dd>
-
-
-      </dd>
-      <dt>Category</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Class</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Status</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Target Users</dt>
-      <dd>
-
-        Device owners, cloud providers.
-
-      </dd>
-      <dt>Motivation</dt>
-      <dd>
-
-        In smart city, home and industrial scenarios various devices are connected to a common network. These
-        devices implement different protocols. To enable interoperability, an "agent" needs to communicate across
-        different protocols. Platforms for this agent can be edge devices, gateways or cloud services.
-
-        Interoperability across protocols is a must for all user scenarios that integrate devices from more than
-        one protocol.
-
-      </dd>
-      <dt>Expected Devices</dt>
-      <dd>
-
-        Various sensors, e.g. temperature, light, humidity, vibration, noise, air quality, edge devices, gateways,
-        cloud servers and services.
-
-      </dd>
-      <dt>Expected Data</dt>
-      <dd>
-
-        Discrete sensor values, such as temperature, light, humidity, vibration, noise, air quality readings.
-        A/V streams.
-        The data can be delivered periodically or on demand.
-
-      </dd>
-      <dt>Dependencies</dt>
-      <dd>
-
-        WoT Profiles.
-
-      </dd>
-      <dt>Description</dt>
-      <dd>
-
-        There are multiple user scenarios that are addressed by this use case.
-
-        An example in the smart home environment is an automatic control lamps, air conditioners, heating, window
-        blinds in a household
-        based on sensor data, e.g. sunlight, human presence, calendar and clock, etc.
-
-        In an industrial environment individual actuators and production devices use different protocols.
-        Examples include MQTT, OPC-UA, Modbus, Fieldbus, and others.
-        Gathering data from these devices, e.g. to support digital twins or big data use cases requires an "Agent"
-        to bridge across these protocols.
-        To provide interoperability and to reduce implementation complexity of this agent a common set of (minimum
-        and maximum)
-        requirements need to be supported by all interoperating devices.
-
-        A smart city environment is similar to the industrial scenario in terms of device interoperability.
-        Devices differ however,
-        they include smart traffic lights, traffic monitoring, people counters, cameras.
-
-        <p>#### Variants:</p>
-
-
-      </dd>
-      <dt>Gaps</dt>
-      <dd>
-
-        A common profile across protocols is required to address this use case.
-
-      </dd>
-      <dt>Existing standards</dt>
-      <dd>
-
-        MQTT, OPC-UA, BACNet, CoAP, various other home and industrial protocols.
-      </dd>
-      <dt>Comments</dt>
-      <dd>
-
-
-      </dd>
-    </dl>
-  </section>
-  </section>
-
-  <section id="multimodal">
-    <h2>Multimodal System Integration</h2>
-    <section id="mmi-5-1_multimodal-recognition-support">
-      <h2>Multimodal Recognition Support</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          Michael McCool
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          &lt;Suggest reviewers&gt;
-
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-          Accessibility
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
-          cloud provider&gt;
-
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-
-          Recognizer system development has arrived at a point of maturity where
-          if we want to dramatically enhance recognition performance,
-          sensor fusion from multiple modalities is needed.
-          In order to achieve this,
-          an image recognizer should incorporate results coming from other
-          kinds of recognizers (e.g. audio recognizer) within the network
-          engaged in the same interaction cycle.
-
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-
-          Audio sensing device (microphone).
-
-          Video sensing device (camera).
-
-          Audio recognition service.
-
-          Video recognition service.
-
-          Devices capabale of presenting alerts in various modalities.
-
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          Command and status information transferred between the sensing devices,
-          the recognition services, and the alert devices.
-
-          Profile data for user preferences.
-
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
-
-          <ul>
-            <li>WoT Thing Description</li>
-            <li>WoT Discovery</li>
-            <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-            in IoT orchestration services.
-          </ul>
-
-        </dd>
-        <dt>Description</dt>
-        <dd>
-
-          An audio recognizer has been trained with the more common sounds in the house,
-          in order to provide alerts in case of an emergency.
-          In the same house a security system uses a video recognizer to identify people
-          at the front door.
-          These two systems need to cooperate with a remote home management system
-          to provide integrated services.
-
-          <p>#### Variants:</p>
-
-
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
-
-          Support for video and audio recognition services.
-
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
-
-          This use case is based on MMI UC 5.1.
-
-        </dd>
-        <dt>Comments</dt>
-        <dd>
-
-          Does not include Requirements section from original MMI use case.
-        </dd>
-      </dl>
-    </section>
-    <section id="mmi-5-2_enhancement-of-synergistic-interactions">
-      <h2>Enhancement of Synergistic Interactions</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          Michael McCool
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          &lt;Suggest reviewers&gt;
-
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-          Accessibility
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
-          cloud provider&gt;
-
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-
-          One of the main indicators concerning the usability of a system
-          is the corresponding level of accessibility provided by it.
-          The opportunity for all the users to receive and to deliver all kinds of information,
-          regardless of the information format or the type of user profile,
-          state or impairment is a recurrent need in web applications.
-          One of the means to achieve accessibility is the design of a more
-          synergic interaction based on the discovery of multimodal Modality Components.
-
-          Synergy is two or more entities functioning together to produce a result
-          that is not obtainable independently.
-          It means "working together".
-          For example,
-          how to avoid disruptive interactions
-          in nomadic systems (always affected by the changing context)
-          is an important issue.
-          In these applications,
-          user interaction is difficult,
-          distracted and less precise.
-          Discovery and use of alternative input and output devices
-          can increase synergic interaction offering new possibilities
-          more adapted to the current context.
-          Such a system can also enhance the fusion process for target groups of
-          users experiencing permanent or temporary learning difficulties or with sensorial,
-          emotional or social impairments.
-
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-
-          A normal client computer with I/O devices that need to be emulated.
-
-          Alternative I/O devices that need to be interfaced to the client system.
-
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          Command and status information transferred between the client computer
-          and the alternative I/O devices.
-
-          Profile data for user preferences.
-
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
-
-          <ul>
-            <li>WoT Thing Description</li>
-            <li>WoT Discovery</li>
-            <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-            in IoT orchestration services.
-          </ul>
-
-        </dd>
-        <dt>Description</dt>
-        <dd>
-
-          A person working mostly with a PC is having a problem with his right arm and hands.
-          He is unable to use a mouse or a keyboard for a few months.
-          He can point at things, sketch, clap, make gestures, but he can not make any precise movements.
-          A generic interface allows this person to perform his most important tasks in his
-          personal devices:
-          to call someone, open a mailbox, access his agenda or navigate over some Web pages.
-          The generic interface can propose child-oriented intuitive interfaces like a
-          clapping-based interface,
-          a very articulated TTS component, or reduced gesture input widgets.
-          Other specialized devices might include phones with very big numbers,
-          very simple remote controls,
-          screens displaying text at high resolution,
-          or voice command devices.
-
-          <p>#### Variants:</p>
-
-
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
-
-
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
-
-          This use case is based on MMI UC 5.2.
-
-        </dd>
-        <dt>Comments</dt>
-        <dd>
-
-          Does not include Requirements section from original MMI use case.
-        </dd>
-      </dl>
-    </section>
-  </section>
-
-  <section id="accessibility">
-    <h2>Accessibility</h2>
-    <section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions">
-      <h2>Audiovisual Devices Acting as Smartphone Extensions</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          Michael McCool
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          &lt;Suggest reviewers&gt;
-
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-          Accessibility
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
-          cloud provider&gt;
-
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-
-          Many of today's home IoT-enabled devices can provide similar functionality
-          (e.g. audio/video playback),
-          differing only in certain aspects of the user interface.
-          This use case would allow continuous interaction with a specific
-          application as the user moves from room to room,
-          with the user interface switched automatically to the set of
-          devices available in the user's present location.
-
-          On the other hand,
-          some devices can have specific capabilities
-          and user interfaces that can be used to add information to a larger context
-          that can be reused by other applications and devices.
-          This drives the need to spread an application across different devices
-          to achieve a more user-adapted and meaningful interaction according to the
-          context of use.
-          Both aspects provide arguments for exploring use cases where
-          applications use distributed multimodal interfaces.
-
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-
-          Mobile phone or other client running an application requiring a extended and
-          more accessible user interface.
-
-          IoT-enabled audio-visual devices providing audio and visual information
-          display capabilities that can be used to augment the user interface of the
-          application.
-
-          Possible edge computation services providing speech-to-text or described video
-          (e.g. object detection) capabilities.
-
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          Visual display information mapping information from audio to visual modalities,
-          for example text generated from voice recognition.
-
-          Text from an application that needs to be displayed at a larger size.
-
-          Visual alerts correspondig to audio stimuli, eg sound effects in a game mapped
-          to visual icons.
-
-          Visual information mapped to audio information, for example,
-          described video based on an AI service providing object recognition.
-
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
-
-          <ul>
-            <li>WoT Thing Description</li>
-            <li>WoT Discovery</li>
-            <li>Optional: WoT Scripting API accessible from application for interacting</li>
-            with devices.
-          </ul>
-
-        </dd>
-        <dt>Description</dt>
-        <dd>
-
-          A home entertainment system is adapted by a mobile device
-          as a set of user interface components.
-
-          In addition to media rendering and playback,
-          these Devices also act as input or output modalities for
-          an application, for example an application running on a smartphone.
-          The native user interface on the application
-          does not have to be manipulated directly at all.
-          A wall-mounted touch-sensitive TV could be used to navigate applications,
-          and a wide-range microphone can handle speech input.
-          Spatial (Kinect-style) gestures may also be used to control
-          application behavior.
-
-          Accessibility support software on the smartphone
-          discovers available modalities and arranges them to best
-          serve the user's purpose.
-          One display can be used to show photos and movies,
-          another for navigation.
-          As the user walks into another room,
-          this configuration is adapted dynamically to the new location.
-          User intervention may be sometimes required to decide on
-          the most convenient modality configuration.
-          The state of the interaction is maintained
-          while switching between modality sets.
-          For example,
-          if the user was navigating a GUI menu in the living room,
-          it is carried over to another screen when she switches rooms,
-          or replaced with a different modality such as voice
-          if there are no displays in the new location.
-
-          <p>#### Variants:</p>
-
-          Modalities may be translated from one form to another to accomodate
-          accessibility issues, for example, visual cues into audio cues and
-          vice-versa, as appropriate.
-
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
-
-          An AI service may be require to perform modality mapping, for example,
-          object recognition.
-
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
-
-          This use case is based on MMI UC 1.1.
-
-        </dd>
-        <dt>Comments</dt>
-        <dd>
-
-          Does not include Requirements section from original MMI use case.
-          Variant supporting
-          modality conversion is not included in the original MMI use case.
-        </dd>
-      </dl>
-    </section>
-    <section id="mmi-1-2_unified-smart-home-control-and-status">
-      <h2>Unified Smart Home Control and Status Interface</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          Michael McCool
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          &lt;Suggest reviewers&gt;
-
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-          Accessibility
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
-          cloud provider&gt;
-
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-
-          The increase in the number of controllable devices in an
-          intelligent home creates a problem with controlling all available services
-          in a coherent and useful manner.
-          Having a shared context,
-          built from information collected through sensors and direct user input,
-          would improve recognition of user intent, and thus simplify interactions.
-
-          In addition,
-          multiple input mechanisms could be selected by the user based on device type,
-          level of trust and the type of interaction required for a particular task.
-
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-
-          Mobile phone or other client running an application providing command
-          mediation capabilities.
-
-          IoT-enabled smart home devices supporting
-          remote sensing and actuation functionality.
-
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          Command and status information transferred between the command mediation
-          application and one or more devices.
-
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
-
-          <ul>
-            <li>WoT Thing Description</li>
-            <li>WoT Discovery</li>
-            <li>Optional: WoT Scripting API accessible from application for interacting </li>
-            with devices.
-          </ul>
-
-        </dd>
-        <dt>Description</dt>
-        <dd>
-
-          Smart home functionality (window blinds, lights, air conditioning etc.)
-          is controlled through a multimodal interface,
-          composed from modalities built into the house itself
-          (e.g. speech and gesture recognition)
-          and those available on the user's personal devices
-          (e.g. smartphone touchscreen).
-          The system may automatically adapt to the preferences of a specific user,
-          or enter a more complex interaction if multiple people are present.
-
-          Sensors built into various devices around the house can act as input
-          modalities that feed information to the home and affect its behavior.
-          For example,
-          lights and temperature in the gym room can be adapted dynamically
-          as workout intensity recorded by the fitness equipment increases.
-          The same data can also increase or decrease volume and tempo of music tracks
-          played by the user's mobile device or the home's media system.
-
-          <p>#### Variants:</p>
-
-          The intelligent home in tandem with the user's personal
-          devices can additionally monitor user behavior for emotional patterns
-          such as 'tired' or 'busy' and adapt further.
-
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
-
-          A service may be needed to recognize gestures and emotional states.
-
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
-
-          This use case is based on MMI UC 1.2; original title was Intelligent Home Apparatus.
-
-        </dd>
-        <dt>Comments</dt>
-        <dd>
-
-          Does not include Requirements section from original MMI use case.
-        </dd>
-      </dl>
-    </section>
-  </section>
-
-  <section id="automotive">
-    <h2>Automotive</h2>
-    <section id="mmi-2-1_smart-car-configuration-management">
-      <h2>Smart Car Configuration Management</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          Michael McCool
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          &lt;Suggest reviewers&gt;
-
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-          Accessibility
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
-          cloud provider&gt;
-
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-
-          User interface personalization is a task that most often needs to be repeated
-          for all Devices a user wishes to interact with recurringly.
-          With complex devices,
-          this task can also be very time-consuming,
-          which is problematic if the user regularly accesses similar,
-          but not identical devices, as in the case of several cars rented over a month.
-
-          A standardized set of personal information and preferences that could be used
-          to configure personalizable devices automatically would be very helpful for all
-          these cases in which the interaction becomes a customary practice.
-
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-
-          Personal mobile device running an application providing command
-          mediation capabilities.
-
-          IoT-enabled smart car supporting
-          remote sensing, actuation, and configuration functionality.
-
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          Command and status information transferred between the personal mobile device
-          application and the car's services and devices.
-
-          Profile data for user preferences.
-
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
-
-          <ul>
-            <li>WoT Thing Description</li>
-            <li>WoT Discovery</li>
-            <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-            in IoT orchestration services in the car.
-          </ul>
-
-        </dd>
-        <dt>Description</dt>
-        <dd>
-
-          Basic in-car functionality is standardized to be managed by other devices.
-          A user can control seat, radio or AC settings through a personalized multimodal interface
-          shared by the car and her personal mobile device.
-          User preferences are stored on the mobile Device (or in the cloud),
-          and can be transferred across different car models handling a specific functionality
-          (e.g. all cars with touchscreens should be able to adapt to a "high contrast" preference).
-
-          The car can make itself available as a complex modality component that wraps around all
-          functionality and supported modalities,
-          or as a collection of modality components such as touchscreen, speech recognition system,
-          or audio player.
-          In the latter case,
-          certain user preferences may be shared with other environments.
-
-          For example,
-          a user may opt to select the "high contrast" scheme at night on all of her displays,
-          in the car or at home.
-          A car that provides a set of modalities can be also adapted by the mobile device
-          to compose an interface for its functionality,
-          for example to manage playback of music tracks through the car's voice control system.
-          Sensor data provided by the phone can be mixed with data recorded by the car's own sensors
-          to profile user behavior which can be used as context in multimodal interaction.
-
-          <p>#### Variants:</p>
-
-          Additional portable devices may be brought into the car and also be
-          incorporated into an application, for example, a GPS navigation system.
-
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
-
-          Data format describing user interface preferences.
-
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
-
-          This use case is based on MMI UC 2.1.
-
-        </dd>
-        <dt>Comments</dt>
-        <dd>
-
-          Does not include Requirements section from original MMI use case.
-        </dd>
-      </dl>
-    </section>
-  </section>
-
-  <section id="smart-grids">
-    <h2>Energy / Smart Grids</h2>
-    <section id="smart-grid">
-      <h2>Smart Grids</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          Christian Glomb (Siemens)
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          Michael Lagally (Oracle)
-
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          <ul>
-            <li>Grid operators on all voltage levels line Distribution System Operators (DSO), Transmission System
-              Operators (TSO)</li>
-            <li>Plant operators (centralized as well as de-centralized producers)</li>
-            <li>Virtual Power Plant (VPP) operators</li>
-            <li>Energy grid markets</li>
-            <li>Cloud providers where grid backend services are hosted and where Operation Technology bridges to
-              Information Technology</li>
-            <li>Device manufacturers, owners, and users; devices include communication gateways, monitoring and
-              control units</li>
-          </ul>
-
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-
-          &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is
-          important for the users&gt;
-
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-
-          A smart grid integrates all players in the electricity market into one overall system through the
-          interaction of generation, storage, grid management and consumption. Power and storage plants are already
-          controlled today in such a way that only as much electricity is produced as is needed. Smart grids include
-          consumers as well as small, decentralized energy suppliers and storage locations in this control system,
-          so that on the one hand, consumption is more homogeneous in terms of time and space (see also intelligent
-          electricity consumption) and on the other hand, in principle inhomogeneous producers (e.g. wind power) and
-          consumers (e.g. lighting) can be better integrated.
-
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          <ul>
-            <li>Weather and climate data</li>
-            <li>Metering data (both production as well as consumption as well as storage, e.g. 15 min. intervals)
-            </li>
-            <li>Real time data from PMUs (Phasor Measurement Units)</li>
-            <li>Machine and equipment monitoring data (enabling health checks)</li>
-            <li>...</li>
-          </ul>
-
-        </dd>
-        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
-        <dd>
-
-          WoT Architecture, WoT Binding Templates (covering protocol specifica)
-
-        </dd>
-        <dt>Description</dt>
-        <dd>
-
-          The term Smart Grid refers to the communicative networking and control of power generators, storage
-          facilities, electrical consumers, and grid equipment in power transmission and distribution networks for
-          electricity supply. This enables the optimization and monitoring of the interconnected components. The aim
-          is to secure the energy supply on the basis of efficient and reliable system operation.
-
-          <p>#### Variants:</p>
-
-          ##### Decentralized Power Generation
-          While electricity grids with centralized power generation have dominated up to now, the trend is moving
-          towards decentralized generation plants, both for generation from fossil primary energy through small CHP
-          plants and for generation from renewable sources such as photovoltaic systems, solar thermal power plants,
-          wind turbines and biogas plants. This leads to a much more complex structure, primarily in the area of
-          load control, voltage maintenance in the distribution grid and maintenance of grid stability. In contrast
-          to medium to large power plants, smaller, decentralised generation plants also feed directly into the
-          lower voltage levels such as the low-voltage grid or the medium-voltage grid. This use case variants also
-          includes operation and control of energy storages like batteries.
-
-          ##### Virtual Power Plants
-          A Virtual Power Plant (VPP) is an aggregation of Distributed Energy Resources (DERs) that can act as an
-          entity on energy markets or as an ancillary service to grid operation.
-          The individual DERs often have a primary use on their own, with electric generation/consumption being a
-          side-effect resp. secondary use. This results in negotiations/collaborations between many different
-          parties e.g. such as the DER owner, the VPP operator, the grid operator and others.
-
-          ##### Smart Metering
-          For consumers, a major change is the installation of smart meters. Their core tasks are remote reading and
-          the possibility to realize fluctuating prices within a day at short notice. All electricity meters must
-          therefore be replaced by those with remote data transmission.
-
-          ##### Other variants
-          Emergency response, grid synchronization, grid black start
-
-        </dd>
-        <dt>Building Blocks</dt>
-        <dd>
-          <ul>
-            <li>Multi-Stakeholder Operation: Multiple involved parties have to find a common mode of operation</li>
-            <li>Device Lifecycle Management: Since the VPP is a dynamic system of loosely coupled DERs, the
-              appearance and disappearance of DERs as well as the software management on the devices itself requires
-              a means to orchestrate the lifecycle of individual device's respective components.</li>
-            <li>Embedded Runtime: Especially for DERs in remote locations, maintaining a close couple control loop
-              can be expensive if feasible at all. Therefore, it is desirable to be able to offload control logic to
-              the DER itself.</li>
-            <li>Ensemble Discovery: In order to dynamically find matching DERs needed for the operational goal of a
-              VPP, a registry with different options of DER discovery is needed.</li>
-            <li>Content-Negotiation: The different stakeholders have to interact and therefore need a common data
-              format.</li>
-            <li>Resource Description: The DER has to describe itself to enable discovery of single DERs and
-              ensembles, also the operational data needs to be understood by the different stakeholders without
-              engineering effort.</li>
-            <li>Push Services: As there is a fan-out with many devices that probably have a rate-limited connection
-              connecting to one single command centre, a bidirectional communication mechanism is needed rather than
-              polling for the reverse direction</li>
-            <li>Object Memory: As multiple and interchangable stakeholders are involved in the application, a
-              backlog of the object is beneficial for scrollkeeping</li>
-          </ul>
-
-        </dd>
-        <dt>Non-Functionals</dt>
-        <dd>
-          <ul>
-            <li>Privacy: As fine-grained metering informtion provides sensitive data about a household, the system
-              should show a high digree of privacy</li>
-            <li>Trust: Since the data exchange between the virtual power plant and the distributed energy resource
-              leads to a physical action that invokes high currents and monetary flows, the integrity of both
-              parties and the exchange's data is crucial</li>
-            <li>Layered L7 Communication: Since multiple different links are used for monitoring and control,
-              integration requires a clear and consistent seperation of information from the used serialization and
-              application protocols to enable the exchange of homogenous information over heterogenous application
-              layer protocols</li>
-          </ul>
-
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
-
-          <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards that
-            are relevant for this use case</section>-gaps-x" class="ednote"><section id="todo-references-x"
-            class="ednote">TODO: Provide links to relevant standards that are relevant for this use case</section>:
-          Describe any gaps that are not addressed in the current WoT standards and building blocks
-    </section>
-
-    </dd>
-    <dt>Existing standards</dt>
-    <dd>
-
-      IEC 61850 - International standard for data models and communication protocols
-
-      IEEE 1547 - US standard for interconnecting distributed resources with electric power systems
-
-    </dd>
-    <dt>Comments</dt>
-    <dd>
-    </dd>
-    </dl>
-  </section>
   </section>
 
   <section id="transportation">
