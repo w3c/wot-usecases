@@ -170,210 +170,603 @@
       <h2>Terminology</h2>
       The present document uses the terminology as the WoT Architecture [[wot-architecture]].
       <section id="new-terminology" class="ednote">
-        <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant for
-          this use case</section>: Define additional terminology.
+        <section id="todo-references-x" class="ednote">TODO: Define additional terminology.
+        </section>
       </section>
-    </section>
-    <section id="stakeholders">
-      <h2>Stakeholders</h2>
-      <section id="stakeholders" class="ednote">
-        <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant for
-          this use case</section>: Describe stakeholder roles and tasks.
+
+      <section id="stakeholders">
+        <h2>Stakeholders</h2>
+        <section id="stakeholders" class="ednote">TODO: Describe stakeholder roles and tasks.
+        </section>
+        <ul>
+          <li>device owners</li>
+          <li>device user</li>
+          <li>cloud provider</li>
+          <li>service provider</li>
+          <li>device manufacturer</li>
+          <li>gateway manufacturer</li>
+          <li>identity provider</li>
+          <li>directory service operator?</li>
+        </ul>
       </section>
-      <ul>
-        <li>device owners</li>
-        <li>device user</li>
-        <li>cloud provider</li>
-        <li>service provider</li>
-        <li>device manufacturer</li>
-        <li>gateway manufacturer</li>
-        <li>identity provider</li>
-        <li>directory service operator?</li>
-      </ul>
+
     </section>
+    <section id="use-cases">
+      <h2>Application Domains and Use Cases</h2>
 
-  </section>
-  <section id="use-cases">
-    <h2>Application Domains and Use Cases</h2>
-
-    <!-- Categories of new use cases -->
-    <section id="retail">
-      <h2>Retail</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          David Ezell, Michael Lagally, Michael McCool
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          &lt;Suggest reviewers&gt;
-
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-          &lt;please leave blank&gt;
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          Retailers, customers, suppliers.
-
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-
-          Integrating and interconnecting multiple devices into the common retail workflow
-          (i.e., transaction log) drastically improves retail business operations at multiple levels.
-          It brings operational visibility,including consumer behavior and environmental information,
-          that was not previously possible or viable in a meaningful way.
-
-          It drastically speeds up the process of root cause analysis of operational issues and
-          simplifies the work of retailers.
-
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-
-          Connected sensors, such as people counters, presence sensors, air quality, room ocupancy, door sensors.
-          Cloud services. Video analytics edge services.
-
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          Inventory data, supply chain status information, discrete sensor data or data streams.
-
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
-
-          &lt;List the affected WoT deliverables&gt;
-          tbd
-
-        </dd>
-        <dt>Description</dt>
-        <dd>
-
-          Falling costs of sensors, communications, and handling of very large volumes of data combined with cloud
-          computing enable retail business operations with increased operational efficiency, better customer
-          service,
-          and even increased revenue growth and return on investment.
-
-          Accurate forecasts allow retailers to coordinate demand-driven outcomes that deliver connected customer
-          interactions.
-          They drive optimal strategies in planning, increasing inventory productivity in retail supply chains,
-          decreasing operational costs and driving customer satisfaction from engagement, to sale, to fulfilment.
-
-          Understanding of store activity juxtaposed with traditional information streams can boost worker and
-          consumer safety,
-          comply better with work safety regulations, enhance system and site security, and improve worker
-          efficiency
-          by providing real-time visibility into worker status, location, and work environment.
-
-        </dd>
-        <dt>Variants</dt>
-        <dd>
-
-          <ul>
-            <li>Use edge computing, in particular video analytics, in combination with IoT devices to deliver an
-              enhanced </li>
-            customer experience, better manage inventory, or otherwise improve the store workflow.
-
-        </dd>
-        <dt>Security Considerations</dt>
-        <dd>
-
-          <ul>
-            <li>In retail, replay attacks can cause monetary loss, customers may be incorrectly charged or
-              over-charged.</li>
-            <li>To avoid replay attacks, "Things" should implement a sequence number for each message and digital
-              signature.</li>
-            <li>Servers ("Things" or "Cloud") should verify the signature and disallow for duplicated messages.</li>
-            <li>For "Things" relying on electronic payments, "Things" must comply with PCI-DSS requirements.</li>
-            <li>"Things" must never store credit card information.</li>
-            <li>Customer satisfaction and trust depends on availability, so attacks such as Denial-of-Service (DoS)
-              need to be prevented or mitigated.</li>
-            <li>To prevent DoS, implement "Things" with early DoS detection.</li>
-            <li>Have an automated DoS system that will notify the controlling unit of the problem.</li>
-            <li>Implement IP white list, that could be part of the DoS early detection system.</li>
-            <li>Make sure your network perimeter is defended with up to date firewall software.</li>
-          </ul>
-
-        </dd>
-        <dt>Privacy Considerations</dt>
-        <dd>
-
-          As a general rule, personal consumer information should not be stored.
-          That is especially true in the retail industry where a security breach could cause financial, reputation,
-          and brand damage.
-          If personal or information that can identify a consumer is to be stored,
-          it should be to conduct business and with the explicit acknowledgment of the consumer.
-          WoT vendors and integrators should always have a privacy policy and make it easily available.
-          By default, devices should adopt an opt-out policy.
-          That means, unless the consumer explicitly allowed for the data capture and storage, avoid doing it.
-
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
-          <section id="todo-gaps-x" class="ednote">
-            TODO: Describe any gaps that are not addressed in the current WoT work
-            items.
-          </section>
-
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
-
-          <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
-            are relevant for this use case</section>
-    </section>
-
-    <section id="audio_video">
-      <h2>Audio/Video</h2>
-      <section id="media-information-references">
-        <h2>Media Use Case Information Bucket</h2>
+      <!-- Categories of new use cases -->
+      <section id="retail">
+        <h2>Retail</h2>
         <dl>
-
-          This section is not a full use case description. It is rather a collection of
-          thoughts and ideas to capture information and provide references and have a common discussion basis.
-
-          The intention is to trigger new ideas and collect them in a single document at this point.
-
-          The document is work in progress.
 
           <dt>Submitter(s)</dt>
           <dd>
 
-            &lt;Put your name here&gt;
+            David Ezell, Michael Lagally, Michael McCool
 
           </dd>
           <dt>Reviewer(s)</dt>
           <dd>
 
             &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            Retailers, customers, suppliers.
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            Integrating and interconnecting multiple devices into the common retail workflow
+            (i.e., transaction log) drastically improves retail business operations at multiple levels.
+            It brings operational visibility,including consumer behavior and environmental information,
+            that was not previously possible or viable in a meaningful way.
+
+            It drastically speeds up the process of root cause analysis of operational issues and
+            simplifies the work of retailers.
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            Connected sensors, such as people counters, presence sensors, air quality, room ocupancy, door sensors.
+            Cloud services. Video analytics edge services.
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            Inventory data, supply chain status information, discrete sensor data or data streams.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            &lt;List the affected WoT deliverables&gt;
+            tbd
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            Falling costs of sensors, communications, and handling of very large volumes of data combined with cloud
+            computing enable retail business operations with increased operational efficiency, better customer
+            service,
+            and even increased revenue growth and return on investment.
+
+            Accurate forecasts allow retailers to coordinate demand-driven outcomes that deliver connected customer
+            interactions.
+            They drive optimal strategies in planning, increasing inventory productivity in retail supply chains,
+            decreasing operational costs and driving customer satisfaction from engagement, to sale, to fulfilment.
+
+            Understanding of store activity juxtaposed with traditional information streams can boost worker and
+            consumer safety,
+            comply better with work safety regulations, enhance system and site security, and improve worker
+            efficiency
+            by providing real-time visibility into worker status, location, and work environment.
+
+          </dd>
+          <dt>Variants</dt>
+          <dd>
+
+            <ul>
+              <li>Use edge computing, in particular video analytics, in combination with IoT devices to deliver an
+                enhanced </li>
+              customer experience, better manage inventory, or otherwise improve the store workflow.
+
+          </dd>
+          <dt>Security Considerations</dt>
+          <dd>
+
+            <ul>
+              <li>In retail, replay attacks can cause monetary loss, customers may be incorrectly charged or
+                over-charged.</li>
+              <li>To avoid replay attacks, "Things" should implement a sequence number for each message and digital
+                signature.</li>
+              <li>Servers ("Things" or "Cloud") should verify the signature and disallow for duplicated messages.</li>
+              <li>For "Things" relying on electronic payments, "Things" must comply with PCI-DSS requirements.</li>
+              <li>"Things" must never store credit card information.</li>
+              <li>Customer satisfaction and trust depends on availability, so attacks such as Denial-of-Service (DoS)
+                need to be prevented or mitigated.</li>
+              <li>To prevent DoS, implement "Things" with early DoS detection.</li>
+              <li>Have an automated DoS system that will notify the controlling unit of the problem.</li>
+              <li>Implement IP white list, that could be part of the DoS early detection system.</li>
+              <li>Make sure your network perimeter is defended with up to date firewall software.</li>
+            </ul>
+
+          </dd>
+          <dt>Privacy Considerations</dt>
+          <dd>
+
+            As a general rule, personal consumer information should not be stored.
+            That is especially true in the retail industry where a security breach could cause financial, reputation,
+            and brand damage.
+            If personal or information that can identify a consumer is to be stored,
+            it should be to conduct business and with the explicit acknowledgment of the consumer.
+            WoT vendors and integrators should always have a privacy policy and make it easily available.
+            By default, devices should adopt an opt-out policy.
+            That means, unless the consumer explicitly allowed for the data capture and storage, avoid doing it.
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+            <section id="todo-gaps-x" class="ednote">
+              TODO: Describe any gaps that are not addressed in the current WoT work
+              items.
+            </section>
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
+              are relevant for this use case</section>
+      </section>
+
+      <section id="audio_video">
+        <h2>Audio/Video</h2>
+        <section id="media-information-references">
+          <h2>Media Use Case Information Bucket</h2>
+          <dl>
+
+            This section is not a full use case description. It is rather a collection of
+            thoughts and ideas to capture information and provide references and have a common discussion basis.
+
+            The intention is to trigger new ideas and collect them in a single document at this point.
+
+            The document is work in progress.
+
+            <dt>Submitter(s)</dt>
+            <dd>
+
+              &lt;Put your name here&gt;
+
+            </dd>
+            <dt>Reviewer(s)</dt>
+            <dd>
+
+              &lt;Suggest reviewers&gt;
+
+            </dd>
+            <dt>Tracker Issue ID</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Category</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Class</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Status</dt>
+            <dd>
+
+              &lt;please leave blank&gt;
+
+            </dd>
+            <dt>Target Users</dt>
+            <dd>
+
+              &lt;List all stakeholders that are involved in the use case from the following list:
+              <ul>
+                <li>device owners</li>
+                <li>device user</li>
+                <li>cloud provider</li>
+                <li>service provider</li>
+                <li>device manufacturer</li>
+                <li>gateway manufacturer</li>
+                <li>network operator (potentially transparent for WoT use cases)</li>
+                <li>identity provider</li>
+                <li>directory service operator&gt;</li>
+              </ul>
+
+            </dd>
+            <dt>Motivation</dt>
+            <dd>
+
+              &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is
+              important for the users&gt;
+
+            </dd>
+            <dt>Expected Devices</dt>
+            <dd>
+
+              &lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
+
+            </dd>
+            <dt>Expected Data</dt>
+            <dd>
+
+              &lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors,
+              vehicle data&gt;
+
+            </dd>
+            <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+            <dd>
+
+              &lt;List the affected WoT deliverables that have to be changed to enable this use case&gt;
+
+            </dd>
+            <dt>Description</dt>
+            <dd>
+
+              <ul>
+                <li>Sync of media across different devices:</li>
+                <li>people in different homes watch the same content at the same time. Conversation about content.</li>
+                <li>Multi-room sync playback</li>
+                <li>Multi-camera angles </li>
+              </ul>
+
+              <ul>
+                <li>Voice control of a media playback device (integration of smart speakers from multiple vendors)</li>
+                Describe proprietary (vendor specific) device control interfaces to control media playback on TV set.
+                (proprietary implementations exist, open protocol is proposed?)
+              </ul>
+
+              <p>#### Variants:</p>
+
+              &lt;Describe possible use case variants, if applicable&gt;
+
+            </dd>
+            <dt>Gaps</dt>
+            <dd>
+
+              <section id="todo-gaps-1" class="ednote">
+                TODO: Provide links to relevant standards that are relevant for this use case</section>
+        </section>
+
+        </dd>
+        <dt>Existing standards & related information</dt>
+        <dd>
+
+          <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are
+            relevant for this use case
+            <p>There are MANY TV standards and this would be a long list. Rather leave blank unless a very specific
+              standard provides more insight.</p>
+          </section>
+
+
+        </dd>
+        <dt>Comments</dt>
+        <dd>
+
+          <p>#### Further information and resources:</p>
+
+          NHK Hybridcast updates:
+          https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf
+
+          MediaTimedEvents in Hybridcast:
+          https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf
+
+          BBC Moto GP at Home:
+          https://2immerse.eu/motogp-at-home/
+
+        </dd>
+        </dl>
+      </section>
+
+
+      <section id="nhk-device-tv-sync">
+        <h2>Home WoT devices work according to TV programs</h2>
+        <dl>
+
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Hiroki Endo,
+            Masaya Ikeo,
+            Shinya Abe,
+            Hiroshi Fujisawa
+
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            Person watching TV, Broadcasters
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is
+            important for the users&gt;
+
+            A lot of home devices, such as TV, cleaner, and home lighting, connect to an IP network.
+            When you watch a content program, these devices should coorperate for enhancing your expereence.
+
+            If the cleaning robot makes a loud noise while watching the TV program, it will hinder viewing.
+            Also, even if you set up the theater environment with smart lights, it is troublesome to operate it
+            yourself each time the TV program switches.
+
+            Therefore, by WoT device to operate in accordance with the TV program being viewed, thereby improving the
+            user experience.
+
+            WoT devices work according to TV programs:
+
+            <ul>
+              <li>Cleaning robot stops at an important situation,</li>
+              <li>Color of smart lights are changed according to TV programs,</li>
+              <li>Smart Mirror is notified that favorite TV show will start.</li>
+            </ul>
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            <ul>
+              <li>Hybridcast TV</li>
+              <li>Hybridcast Connect application (in a smartdevice such as smartphone)</li>
+              <li>Cleaning Robot</li>
+              <li>Smart Light (such as Philips Hue)</li>
+              <li>Smart Mirror</li>
+            </ul>
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            The trigger value of the scene of the TV program.
+            Hybridcast connect application know the Thing Description of the devices in home. (Discovery?)
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            &lt;List the affected WoT deliverables&gt;
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            Home smart devices behave according to TV programs.
+
+            Hybridcast applications in TV emit information about TV programs for smart home devices.
+            (Hybridcast is a Japanese Integrated Broadcast-Broadband system. Hybridcast applications are HTML5
+            applications that work on Hybridcast TV.)
+
+            Hybridcast Contact application receives the information and controlls smart home devices.
+
+            !<a href="images/scenario_nhk.png">scenario_nhk</a>
+
+            <p>#### Variants:</p>
+
+            &lt;Describe possible use case variants, if applicable&gt;
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            &lt;Describe any gaps that are not addressed in the current WoT work items&gt;
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+            Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system,
+            HbbTV,
+            ATSC 3.0,
+            ...etc.
+
+          </dd>
+          <dt>Comments</dt>
+          <dd>
+
+
+          </dd>
+        </dl>
+      </section>
+    </section>
+
+    <section id="agriculture">
+      <h2>Agriculture</h2>
+      <section id="smart-agriculture">
+        <h2>Smart Agriculture (Greenhouse Horticulture)</h2>
+        <dl>
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Ryuichi Matsukura, Takuki Kamiya
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), Cloud provider
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            Greenhouse Horticulture controlled by computers can create an optimal environment for growing plants. This
+            enables to improve productivity and ensure stable vegetable production throughout the year, independent of
+            the weather. This is the result of research on the growth of plants in the 1980s. For example, in
+            tomatoes, switching to hydroponics and optimizing the temperature, humidity and CO2 concentration required
+            for photosynthesis resulted in a five times increase in yield. The growth conditions for other vegetables
+            also have been investigated, and this control system is applied now.
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            Sensors ( temperature, humidity, brightness, UV brightness, air pressure, and CO2)
+            Heating, CO2 generator, open and close sunlight shielding sheet.
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            Sensors’ values to clarify the gaps between conditions for maximizing photosynthesis and the current
+            environment.
+            Following sensors values at one or some points in the greenhouse: temperature, humidity, brightness, and
+            CO2.
+
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
+
+            WoT Architecture、WoT Thing Description
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            Sensors and some facilities like heater, CO2 generator, sheet controller are connected to the gateway via
+            wired or wireless networks. The gateway is connected to the cloud via the Internet. All sensors and
+            facilities can be accessed and controlled from the cloud.
+            To maximize photosynthesis, the temperature, CO2 concentration, and humidity in the greenhouse are mainly
+            controlled. When the sunlight comes in the morning and CO2 concentration inside decreases, the application
+            turns on the CO2 generator to keep over 400 ppm, the same as the air outside. The temperature in the
+            greenhouse is adjusted by controlling the heater and the sunlight shielding sheet.
+            The cloud gathers all sensor data and the status of the facilities. The application makes the best
+            configuration for the region of the greenhouse located.
+
+            <p>#### Variants:</p>
+
+            &lt;Describe possible use case variants, if applicable&gt;
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            In the case of the wireless connection to the sensors, the gateway should keep the latest value of the
+            sensors since the wireless connection is sometimes broken. The gateway can create a virtual entity
+            corresponding to the sensor and allow the application to access this virtual entity having the actual
+            sensor status like sleeping.
+
+          </dd>
+          <dt>Existing standards</dt>
+          <dd>
+
+          </dd>
+          <dt>Comments</dt>
+          <dd>
+          </dd>
+        </dl>
+      </section>
+    </section>
+
+    <section id="smart-city">
+      <h2>Smart City</h2>
+      <section id="smartcity-geolocation">
+        <h2>Smart City Geolocation</h2>
+        <dl>
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            Jennifer Lin (GovTech Singapore), Michael McCool
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            Michael Lagally
 
           </dd>
           <dt>Tracker Issue ID</dt>
@@ -403,118 +796,225 @@
           <dt>Target Users</dt>
           <dd>
 
-            &lt;List all stakeholders that are involved in the use case from the following list:
-            <ul>
-              <li>device owners</li>
-              <li>device user</li>
-              <li>cloud provider</li>
-              <li>service provider</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
-              <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
-              <li>directory service operator&gt;</li>
-            </ul>
+            A Smart City managing mobile devices and sensors,
+            including passively mobile sensor packs, packages,
+            vehicles, and autonomous robots, where their location needs to
+            be determined dynamically.
 
-          </dd>
-          <dt>Motivation</dt>
-          <dd>
-
-            &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is
-            important for the users&gt;
-
-          </dd>
-          <dt>Expected Devices</dt>
-          <dd>
-
-            &lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
-
-          </dd>
-          <dt>Expected Data</dt>
-          <dd>
-
-            &lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors,
-            vehicle data&gt;
-
-          </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
-          <dd>
-
-            &lt;List the affected WoT deliverables that have to be changed to enable this use case&gt;
-
-          </dd>
-          <dt>Description</dt>
-          <dd>
-
-            <ul>
-              <li>Sync of media across different devices:</li>
-              <li>people in different homes watch the same content at the same time. Conversation about content.</li>
-              <li>Multi-room sync playback</li>
-              <li>Multi-camera angles </li>
-            </ul>
-
-            <ul>
-              <li>Voice control of a media playback device (integration of smart speakers from multiple vendors)</li>
-              Describe proprietary (vendor specific) device control interfaces to control media playback on TV set.
-              (proprietary implementations exist, open protocol is proposed?)
-            </ul>
-
-            <p>#### Variants:</p>
-
-            &lt;Describe possible use case variants, if applicable&gt;
-
-          </dd>
-          <dt>Gaps</dt>
-          <dd>
-
-            <section id="todo-gaps-1" class="ednote">
-              TODO: Provide links to relevant standards that are relevant for this use case</section>
+            <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards that
+              are relevant for this use case</section>-3" class="ednote">
+            <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
+              for
+              this use case</section>: Stakeholders/Users need to be further clarified. They include "city government,
+            people counting
+            service providers, police, network providers, ...
       </section>
 
       </dd>
-      <dt>Existing standards & related information</dt>
+      <dt>Motivation</dt>
       <dd>
 
-        <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are
-          relevant for this use case
-          <p>There are MANY TV standards and this would be a long list. Rather leave blank unless a very specific
-            standard provides more insight.</p>
-        </section>
+        Smart Cities need to track a large number of mobile devices and sensors.
+        Location information may be integrated with a logistics or fleet management
+        system.
+        A reusable geolocation module is needed with a common network interface to
+        include in these various applications.
+        For outdoor applications, GPS
+        could be used, but indoors other geolocation technologies might be
+        used, such as WiFi triangulation or vision-based navigation (SLAM).
+        Therefore the geolocation information should be technology-agnostic.
 
+        NOTE: we prefer the term "geolocation", even indoors, over "localization" to
+        avoid confusion with language localization.
+
+      </dd>
+      <dt>Expected Devices</dt>
+      <dd>
+
+        One of the following:
+        <ul>
+          <li>A geolocation system on a personal device, such as a smart phone.</li>
+          <li>A geolocation system to be attached to some other portable device.</li>
+          <li>A geolocation system attached to a mobile vehicle.</li>
+          <li>A geolocation system on a payload transported by a vehicle.</li>
+          <li>A geolocation system on an indoor mobile robot.</li>
+        </ul>
+
+      </dd>
+      <dt>Expected Data</dt>
+      <dd>
+
+        <ul>
+          <li>Sensor ID</li>
+          <li>Timestamp of last geolocation</li>
+          <li>2D location</li>
+          * typically latitude and longitude
+          * May also be semantic, i.e. room in a building, exit
+        </ul>
+
+        Optional:
+        <ul>
+          <li>Semantic location</li>
+          * Possibly in addition to numerical lat/long location.
+          <li>Altitude</li>
+          * May also be semantic, i.e. floor of a building
+          <li>Heading</li>
+          <li>Speed</li>
+          <li>Accuracy information</li>
+          * Confidence interval, e.g. distance that true location will be within some probability.
+          * Gaussian covariance matrix
+          * For each measurement
+          * For lat/long, may be a single value (see web browser API; radius?)
+          <li>Geolocation technology (GPS, SLAM, etc). </li>
+          * Note that multiple technologies might be used together.
+          * Include parameters such as sample interval, accuracy
+          <li>For each geolocation technology, data specific to that technology:</li>
+          * GPS: NMEA type
+          <li>Historical data</li>
+        </ul>
+
+        Note: the system should be capable of notifying consumers
+        of changes in location.
+        This may be used to implement geofencing by some other system.
+        This may require additional parameters, such as the
+        maximum distance that the device may be moved before a notification is
+        sent, or the maximum amount of time between updates.
+        Notifications may be sent by a variety of means, some of which may
+        not be traditional push mechanisms (for example, email might be used).
+        For geofencing applications, it is not necessary that the device be aware
+        of the fence boundaries; these can be managed by a separate system.
+
+      </dd>
+      <dt>Dependencies</dt>
+      <dd>
+
+        node-wot
+
+      </dd>
+      <dt>Description</dt>
+      <dd>
+
+        Smart Cities have the need to observe the physical locations of
+        large number of mobile devices
+        in use in the context of a Fleet or Logistics Management System, or
+        to place sensor data on a map in a Dashboard application.
+        These systems may also include geofencing notifications and mapping
+        (visual tracking) capabilities.
+
+        <p>#### Variants:</p>
+
+        <ul>
+          <li>A version of the system may log historical data so the past</li>
+          locations of the devices can be recovered.
+          <li>Geolocation technologies other than GPS may be used. The payload</li>
+          may contain additional information specific to the geolocation
+          technology used. In particular, in indoor situations technologies such
+          as WiFi triangulation or (V)SLAM may be more appropriate.
+          <li>Geofencing may be implemented using event notifications and</li>
+          will require setting of additional parameters such as maximum distance.
+        </ul>
+
+      </dd>
+      <dt>Security Considerations</dt>
+      <dd>
+
+        High-resolution timestamps can be used in conjunction with cache manipulation to
+        access protected regions of memory, as with the SPECTRE exploit. Certain
+        geolocation APIs and technologies can return high-resolution timestamps which
+        can be a potential problem. Eventually these issues will be addressed in cache
+        architecture but in the meantime a workaround is to artificially limit the
+        resolution of timestamps.
+
+      </dd>
+      <dt>Privacy Considerations</dt>
+      <dd>
+
+        Location is generally considered private information when it is used with a device
+        that may be associated with a specific person, such as a phone or vehicle, as it
+        can be used to track that person and infer their activities or who they associate
+        with (if multiple people are being tracked at once). Therefore APIs to access geographic location
+        in sensitive contexts are often restricted, and access is allowed only after confirming
+        permission from the user.
+
+      </dd>
+      <dt>Gaps</dt>
+      <dd>
+
+        There is no standardized semantic vocabulary for representing location data.
+        Location data can be point data, a path, an area or a volumetric object.
+        Location information can be expressed using multiple standards,
+        but the reader of location data in a TD or in data returned by an IoT device
+        must be able to unambiguously describe location information.
+
+        There are both dynamic (data returned by a mobile sensor) and static (fixed installation
+        location) applications for geolocation data. For dynamic location data, some recommended vocabulary
+        to annotate data schemas would be useful. For static location data, a standard format
+        for metadata to be included in a TD itself would be useful.
+
+      </dd>
+      <dt>Existing standards</dt>
+      <dd>
+
+        <ul>
+          <li>NMEA: defines sentences from GPS devices</li>
+          <li>WGS84: https://en.wikipedia.org/wiki/World_Geodetic_System</li>
+          * World Geodetic System
+          * Defines lat/long/alt coordinate system used by most other geolocation standards
+          * More complicated than you would think (need to deal with deviations of Earth from
+          a true sphere, gravitational irregularities, position of centroid, etc. etc.)
+          <li>Basic Geo Vocabulary: https://www.w3.org/2003/01/geo/</li>
+          * Very basic RDF definitions for lat, long, and alt
+          * Does not define heading or speed
+          * Does not define accuracy
+          * Does not define timestamps
+          * Uses string as a data model (rather than a number)
+          <li>W3C Geolocalization API: https://www.w3.org/TR/geolocation-API/</li>
+          * W3C Devices and Sensors WG is now handling
+          * There is an updated proposal: https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface
+          * Data schema of updated proposal is similar to existing API, but all elements are now optional
+          * Data includes latitude, longitude, altitude, heading, and speed
+          * Accuracy is included for latitude/longitude (single number in meters, 95% confidence, interpretation
+          a little ambiguous, but probably intended to be a radius) and altitude, but not for heading or speed.
+          <li>Open Geospatial Consortium: https://www.ogc.org/</li>
+          * See http://docs.opengeospatial.org/as/18-005r4/18-005r4.html
+          * Referring to locations by coordinates
+          * Has standards defining semantics for identifying locations
+          * Useful for mapping
+          <li>ISO</li>
+          * ISO19111: https://www.iso.org/standard/74039.html
+          * Standard for referring to locations by coordinates
+          * Related to OGS standard above and WGS84
+          * Various other standards that relate to remote sensing, geolocation, etc.
+          * Here is an example (see references): https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en
+          <li>SSN: https://www.w3.org/TR/vocab-ssn/</li>
+          * Defines "accuracy": https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy
+          * Definition of accuracy is consistent with how it is used in Web Geolocation API
+          * Also defines related terms Precision, Resolution, Latency, Drift, etc.
+          <li>Timestamps:</li>
+          * W3C standard in proposed new web geolocation API:
+          https://w3c.github.io/hr-time/#dom-domhighrestimestamp
+          * See also related issues such as latency defined in SSN
+        </ul>
+
+        Note that accuracy and time are issues that apply to all kinds of sensors, not just
+        geolocation. However, the specific geolocation technology of GPS
+        is special since it is also a source of accurate time.
 
       </dd>
       <dt>Comments</dt>
       <dd>
 
-        <p>#### Further information and resources:</p>
-
-        NHK Hybridcast updates:
-        https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf
-
-        MediaTimedEvents in Hybridcast:
-        https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf
-
-        BBC Moto GP at Home:
-        https://2immerse.eu/motogp-at-home/
-
       </dd>
       </dl>
     </section>
-
-
-    <section id="nhk-device-tv-sync">
-      <h2>Home WoT devices work according to TV programs</h2>
+    <section id="mmi-3-1_interactive-public-spaces">
+      <h2>Interactive Public Spaces</h2>
       <dl>
-
 
         <dt>Submitter(s)</dt>
         <dd>
 
-          Hiroki Endo,
-          Masaya Ikeo,
-          Shinya Abe,
-          Hiroshi Fujisawa
-
+          Michael McCool
 
         </dd>
         <dt>Reviewer(s)</dt>
@@ -526,12 +1026,13 @@
         <dt>Tracker Issue ID</dt>
         <dd>
 
+          &lt;please leave blank&gt;
 
         </dd>
         <dt>Category</dt>
         <dd>
 
-          &lt;please leave blank&gt;
+          Accessibility
 
         </dd>
         <dt>Class</dt>
@@ -549,226 +1050,110 @@
         <dt>Target Users</dt>
         <dd>
 
-          Person watching TV, Broadcasters
+          &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
+          cloud provider&gt;
 
         </dd>
         <dt>Motivation</dt>
         <dd>
 
-          &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is
-          important for the users&gt;
+          Public spaces provide many opportunities for engaging, social and fun interaction.
+          At the same time,
+          preserving privacy while sharing tasks and activities with other people is a major issue
+          in ambient systems.
+          These systems may also deliver personalized information in combination
+          with more general services presented publicly.
 
-          A lot of home devices, such as TV, cleaner, and home lighting, connect to an IP network.
-          When you watch a content program, these devices should coorperate for enhancing your expereence.
-
-          If the cleaning robot makes a loud noise while watching the TV program, it will hinder viewing.
-          Also, even if you set up the theater environment with smart lights, it is troublesome to operate it
-          yourself each time the TV program switches.
-
-          Therefore, by WoT device to operate in accordance with the TV program being viewed, thereby improving the
-          user experience.
-
-          WoT devices work according to TV programs:
-
-          <ul>
-            <li>Cleaning robot stops at an important situation,</li>
-            <li>Color of smart lights are changed according to TV programs,</li>
-            <li>Smart Mirror is notified that favorite TV show will start.</li>
-          </ul>
+          A trustful discovery of the services and devices available in such environments
+          is a necessity to guarantee personalization and privacy in public-space applications.
 
         </dd>
         <dt>Expected Devices</dt>
         <dd>
 
+          Public spaces supporting personalizable services and device access.
+
+        </dd>
+        <dt>Expected Data</dt>
+        <dd>
+
+          Command and status information transferred between the personal mobile device
+          application and the public space's services and devices.
+
+          Profile data for user preferences.
+
+        </dd>
+        <dt>Dependencies</dt>
+        <dd>
+
           <ul>
-            <li>Hybridcast TV</li>
-            <li>Hybridcast Connect application (in a smartdevice such as smartphone)</li>
-            <li>Cleaning Robot</li>
-            <li>Smart Light (such as Philips Hue)</li>
-            <li>Smart Mirror</li>
+            <li>WoT Thing Description</li>
+            <li>WoT Discovery</li>
+            <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
+            in IoT orchestration services in the public space.
           </ul>
 
         </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          The trigger value of the scene of the TV program.
-          Hybridcast connect application know the Thing Description of the devices in home. (Discovery?)
-
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
-
-          &lt;List the affected WoT deliverables&gt;
-
-        </dd>
         <dt>Description</dt>
         <dd>
 
-          Home smart devices behave according to TV programs.
-
-          Hybridcast applications in TV emit information about TV programs for smart home devices.
-          (Hybridcast is a Japanese Integrated Broadcast-Broadband system. Hybridcast applications are HTML5
-          applications that work on Hybridcast TV.)
-
-          Hybridcast Contact application receives the information and controlls smart home devices.
-
-          !<a href="images/scenario_nhk.png">scenario_nhk</a>
+          Interactive installations such as touch-sensitive or gesture-tracking billboards
+          may be set up in public places.
+          Objects that present public information (e.g. a map of a shopping mall)
+          can use a multimodal interface (built-in or in tandem with the user's mobile devices)
+          to simplify user interaction and provide faster access.
+          Other setups can stimulate social activities,
+          allowing multiple people to enter an interaction simultaneously to work together
+          towards a certain goal (for a prize)
+          or just for fun (e.g. play a musical instrument or control a lighting exhibition).
+          In a context where privacy is an issue
+          (for example, with targeted/personalized alerts or advertisements),
+          the user's mobile device acts as a mediator for the services
+          running on the public network.
+          This allows the user to receive relevant information in the way she sees fit.
+          Notifications can serve as triggers for interaction with public devices and services
+          if the user chooses to do so.
 
           <p>#### Variants:</p>
 
-          &lt;Describe possible use case variants, if applicable&gt;
+          The user may have additional mobile devices they want to incorporate into
+          an interaction, for example a headset acting as an auditory aid or personal speech output
+          device.
 
         </dd>
         <dt>Gaps</dt>
         <dd>
 
-          &lt;Describe any gaps that are not addressed in the current WoT work items&gt;
+          Data format describing user interface preferences.
 
         </dd>
         <dt>Existing standards</dt>
         <dd>
 
-          Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system,
-          HbbTV,
-          ATSC 3.0,
-          ...etc.
+          This use case is based on MMI UC 3.1.
 
         </dd>
         <dt>Comments</dt>
         <dd>
 
-
+          Does not include Requirements section from original MMI use case.
         </dd>
       </dl>
     </section>
-  </section>
-
-  <section id="agriculture">
-    <h2>Agriculture</h2>
-    <section id="smart-agriculture">
-      <h2>Smart Agriculture (Greenhouse Horticulture)</h2>
+    <section id="mmi-3-2_meeting-room-event-assistance">
+      <h2>Meeting Room Event Assistance</h2>
       <dl>
 
         <dt>Submitter(s)</dt>
         <dd>
 
-          Ryuichi Matsukura, Takuki Kamiya
+          Michael McCool
 
         </dd>
         <dt>Reviewer(s)</dt>
         <dd>
 
-        </dd>
-        <dt>Tracker Issue ID</dt>
-        <dd>
-
-        </dd>
-        <dt>Category</dt>
-        <dd>
-
-        </dd>
-        <dt>Class</dt>
-        <dd>
-
-        </dd>
-        <dt>Status</dt>
-        <dd>
-
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
-
-          Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), Cloud provider
-
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-
-          Greenhouse Horticulture controlled by computers can create an optimal environment for growing plants. This
-          enables to improve productivity and ensure stable vegetable production throughout the year, independent of
-          the weather. This is the result of research on the growth of plants in the 1980s. For example, in
-          tomatoes, switching to hydroponics and optimizing the temperature, humidity and CO2 concentration required
-          for photosynthesis resulted in a five times increase in yield. The growth conditions for other vegetables
-          also have been investigated, and this control system is applied now.
-
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-
-          Sensors ( temperature, humidity, brightness, UV brightness, air pressure, and CO2)
-          Heating, CO2 generator, open and close sunlight shielding sheet.
-
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
-
-          Sensors’ values to clarify the gaps between conditions for maximizing photosynthesis and the current
-          environment.
-          Following sensors values at one or some points in the greenhouse: temperature, humidity, brightness, and
-          CO2.
-
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
-
-          WoT Architecture、WoT Thing Description
-
-        </dd>
-        <dt>Description</dt>
-        <dd>
-
-          Sensors and some facilities like heater, CO2 generator, sheet controller are connected to the gateway via
-          wired or wireless networks. The gateway is connected to the cloud via the Internet. All sensors and
-          facilities can be accessed and controlled from the cloud.
-          To maximize photosynthesis, the temperature, CO2 concentration, and humidity in the greenhouse are mainly
-          controlled. When the sunlight comes in the morning and CO2 concentration inside decreases, the application
-          turns on the CO2 generator to keep over 400 ppm, the same as the air outside. The temperature in the
-          greenhouse is adjusted by controlling the heater and the sunlight shielding sheet.
-          The cloud gathers all sensor data and the status of the facilities. The application makes the best
-          configuration for the region of the greenhouse located.
-
-          <p>#### Variants:</p>
-
-          &lt;Describe possible use case variants, if applicable&gt;
-
-        </dd>
-        <dt>Gaps</dt>
-        <dd>
-
-          In the case of the wireless connection to the sensors, the gateway should keep the latest value of the
-          sensors since the wireless connection is sometimes broken. The gateway can create a virtual entity
-          corresponding to the sensor and allow the application to access this virtual entity having the actual
-          sensor status like sleeping.
-
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
-
-        </dd>
-        <dt>Comments</dt>
-        <dd>
-        </dd>
-      </dl>
-    </section>
-  </section>
-
-  <section id="smart-city">
-    <h2>Smart City</h2>
-    <section id="smartcity-geolocation">
-      <h2>Smart City Geolocation</h2>
-      <dl>
-
-        <dt>Submitter(s)</dt>
-        <dd>
-
-          Jennifer Lin (GovTech Singapore), Michael McCool
-
-        </dd>
-        <dt>Reviewer(s)</dt>
-        <dd>
-
-          Michael Lagally
+          &lt;Suggest reviewers&gt;
 
         </dd>
         <dt>Tracker Issue ID</dt>
@@ -780,7 +1165,7 @@
         <dt>Category</dt>
         <dd>
 
-          &lt;please leave blank&gt;
+          Accessibility
 
         </dd>
         <dt>Class</dt>
@@ -798,482 +1183,96 @@
         <dt>Target Users</dt>
         <dd>
 
-          A Smart City managing mobile devices and sensors,
-          including passively mobile sensor packs, packages,
-          vehicles, and autonomous robots, where their location needs to
-          be determined dynamically.
+          &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
+          cloud provider&gt;
 
-          <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards that
-            are relevant for this use case</section>-3" class="ednote">
-          <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant for
-            this use case</section>: Stakeholders/Users need to be further clarified. They include "city government,
-          people counting
-          service providers, police, network providers, ...
+        </dd>
+        <dt>Motivation</dt>
+        <dd>
+
+
+        </dd>
+        <dt>Expected Devices</dt>
+        <dd>
+
+          Meeting space supporting personalizable services and device access.
+
+        </dd>
+        <dt>Expected Data</dt>
+        <dd>
+
+          Command and status information transferred between the personal mobile device
+          application and the meeting space's services and devices.
+
+          Profile data for user preferences.
+
+        </dd>
+        <dt>Dependencies</dt>
+        <dd>
+
+          <ul>
+            <li>WoT Thing Description</li>
+            <li>WoT Discovery</li>
+            <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
+            in IoT orchestration services in the meeting space.
+          </ul>
+
+        </dd>
+        <dt>Description</dt>
+        <dd>
+
+          A conference room where a series of meetings will take place.
+          People can go in and out of the room before,
+          after and during the meeting.
+          The door is "touched" by a badge.
+          An application on the user's mobile device can
+          activate any available display in the room and the room and can access and
+          receive notification from devices and services in the room.
+          The chair of the meeting is notified by a dynamically composed graphic animation,
+          audio notification or a mobile phone notification,
+          about available devices and services, and
+          can install applications indicated by links.
+
+          The chair of the meeting selects a setup procedure by text amongst the provided links.
+          These options could be, for example:
+          photo step-by-step instructions (smartphone, HDTV display, Web site),
+          audio instructions (MP3 audio guide, room speakers reproduction, HDTV audio)
+          or RFID enhanced instructions (mobile SmartTag Reader, RFID Reader for smartphone).
+          The chair of the meeting chooses the room speakers reproduction,
+          then the guiding Service is activated and he starts to set the video projector.
+          After some attendees arrive,
+          the chair of the meeting changes to the slide show option and continues to
+          follow the instructions at the same step it was paused but with another more
+          private modality for example, a smartphone slideshow.
+
+          <p>#### Variants:</p>
+
+          The user may have additional mobile devices they want to incorporate into
+          an interaction, for example a headset acting as an auditory aid or personal speech output
+          device.
+
+        </dd>
+        <dt>Gaps</dt>
+        <dd>
+
+          Data format describing user interface preferences.
+
+          Ability to install applications based on links that can access IoT services.
+
+        </dd>
+        <dt>Existing standards</dt>
+        <dd>
+
+          This use case is based on MMI UC 3.2.
+
+        </dd>
+        <dt>Comments</dt>
+        <dd>
+
+          Does not include Requirements section from original MMI use case.
+        </dd>
+      </dl>
     </section>
-
-    </dd>
-    <dt>Motivation</dt>
-    <dd>
-
-      Smart Cities need to track a large number of mobile devices and sensors.
-      Location information may be integrated with a logistics or fleet management
-      system.
-      A reusable geolocation module is needed with a common network interface to
-      include in these various applications.
-      For outdoor applications, GPS
-      could be used, but indoors other geolocation technologies might be
-      used, such as WiFi triangulation or vision-based navigation (SLAM).
-      Therefore the geolocation information should be technology-agnostic.
-
-      NOTE: we prefer the term "geolocation", even indoors, over "localization" to
-      avoid confusion with language localization.
-
-    </dd>
-    <dt>Expected Devices</dt>
-    <dd>
-
-      One of the following:
-      <ul>
-        <li>A geolocation system on a personal device, such as a smart phone.</li>
-        <li>A geolocation system to be attached to some other portable device.</li>
-        <li>A geolocation system attached to a mobile vehicle.</li>
-        <li>A geolocation system on a payload transported by a vehicle.</li>
-        <li>A geolocation system on an indoor mobile robot.</li>
-      </ul>
-
-    </dd>
-    <dt>Expected Data</dt>
-    <dd>
-
-      <ul>
-        <li>Sensor ID</li>
-        <li>Timestamp of last geolocation</li>
-        <li>2D location</li>
-        * typically latitude and longitude
-        * May also be semantic, i.e. room in a building, exit
-      </ul>
-
-      Optional:
-      <ul>
-        <li>Semantic location</li>
-        * Possibly in addition to numerical lat/long location.
-        <li>Altitude</li>
-        * May also be semantic, i.e. floor of a building
-        <li>Heading</li>
-        <li>Speed</li>
-        <li>Accuracy information</li>
-        * Confidence interval, e.g. distance that true location will be within some probability.
-        * Gaussian covariance matrix
-        * For each measurement
-        * For lat/long, may be a single value (see web browser API; radius?)
-        <li>Geolocation technology (GPS, SLAM, etc). </li>
-        * Note that multiple technologies might be used together.
-        * Include parameters such as sample interval, accuracy
-        <li>For each geolocation technology, data specific to that technology:</li>
-        * GPS: NMEA type
-        <li>Historical data</li>
-      </ul>
-
-      Note: the system should be capable of notifying consumers
-      of changes in location.
-      This may be used to implement geofencing by some other system.
-      This may require additional parameters, such as the
-      maximum distance that the device may be moved before a notification is
-      sent, or the maximum amount of time between updates.
-      Notifications may be sent by a variety of means, some of which may
-      not be traditional push mechanisms (for example, email might be used).
-      For geofencing applications, it is not necessary that the device be aware
-      of the fence boundaries; these can be managed by a separate system.
-
-    </dd>
-    <dt>Dependencies</dt>
-    <dd>
-
-      node-wot
-
-    </dd>
-    <dt>Description</dt>
-    <dd>
-
-      Smart Cities have the need to observe the physical locations of
-      large number of mobile devices
-      in use in the context of a Fleet or Logistics Management System, or
-      to place sensor data on a map in a Dashboard application.
-      These systems may also include geofencing notifications and mapping
-      (visual tracking) capabilities.
-
-      <p>#### Variants:</p>
-
-      <ul>
-        <li>A version of the system may log historical data so the past</li>
-        locations of the devices can be recovered.
-        <li>Geolocation technologies other than GPS may be used. The payload</li>
-        may contain additional information specific to the geolocation
-        technology used. In particular, in indoor situations technologies such
-        as WiFi triangulation or (V)SLAM may be more appropriate.
-        <li>Geofencing may be implemented using event notifications and</li>
-        will require setting of additional parameters such as maximum distance.
-      </ul>
-
-    </dd>
-    <dt>Security Considerations</dt>
-    <dd>
-
-      High-resolution timestamps can be used in conjunction with cache manipulation to
-      access protected regions of memory, as with the SPECTRE exploit. Certain
-      geolocation APIs and technologies can return high-resolution timestamps which
-      can be a potential problem. Eventually these issues will be addressed in cache
-      architecture but in the meantime a workaround is to artificially limit the
-      resolution of timestamps.
-
-    </dd>
-    <dt>Privacy Considerations</dt>
-    <dd>
-
-      Location is generally considered private information when it is used with a device
-      that may be associated with a specific person, such as a phone or vehicle, as it
-      can be used to track that person and infer their activities or who they associate
-      with (if multiple people are being tracked at once). Therefore APIs to access geographic location
-      in sensitive contexts are often restricted, and access is allowed only after confirming
-      permission from the user.
-
-    </dd>
-    <dt>Gaps</dt>
-    <dd>
-
-      There is no standardized semantic vocabulary for representing location data.
-      Location data can be point data, a path, an area or a volumetric object.
-      Location information can be expressed using multiple standards,
-      but the reader of location data in a TD or in data returned by an IoT device
-      must be able to unambiguously describe location information.
-
-      There are both dynamic (data returned by a mobile sensor) and static (fixed installation
-      location) applications for geolocation data. For dynamic location data, some recommended vocabulary
-      to annotate data schemas would be useful. For static location data, a standard format
-      for metadata to be included in a TD itself would be useful.
-
-    </dd>
-    <dt>Existing standards</dt>
-    <dd>
-
-      <ul>
-        <li>NMEA: defines sentences from GPS devices</li>
-        <li>WGS84: https://en.wikipedia.org/wiki/World_Geodetic_System</li>
-        * World Geodetic System
-        * Defines lat/long/alt coordinate system used by most other geolocation standards
-        * More complicated than you would think (need to deal with deviations of Earth from
-        a true sphere, gravitational irregularities, position of centroid, etc. etc.)
-        <li>Basic Geo Vocabulary: https://www.w3.org/2003/01/geo/</li>
-        * Very basic RDF definitions for lat, long, and alt
-        * Does not define heading or speed
-        * Does not define accuracy
-        * Does not define timestamps
-        * Uses string as a data model (rather than a number)
-        <li>W3C Geolocalization API: https://www.w3.org/TR/geolocation-API/</li>
-        * W3C Devices and Sensors WG is now handling
-        * There is an updated proposal: https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface
-        * Data schema of updated proposal is similar to existing API, but all elements are now optional
-        * Data includes latitude, longitude, altitude, heading, and speed
-        * Accuracy is included for latitude/longitude (single number in meters, 95% confidence, interpretation
-        a little ambiguous, but probably intended to be a radius) and altitude, but not for heading or speed.
-        <li>Open Geospatial Consortium: https://www.ogc.org/</li>
-        * See http://docs.opengeospatial.org/as/18-005r4/18-005r4.html
-        * Referring to locations by coordinates
-        * Has standards defining semantics for identifying locations
-        * Useful for mapping
-        <li>ISO</li>
-        * ISO19111: https://www.iso.org/standard/74039.html
-        * Standard for referring to locations by coordinates
-        * Related to OGS standard above and WGS84
-        * Various other standards that relate to remote sensing, geolocation, etc.
-        * Here is an example (see references): https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en
-        <li>SSN: https://www.w3.org/TR/vocab-ssn/</li>
-        * Defines "accuracy": https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy
-        * Definition of accuracy is consistent with how it is used in Web Geolocation API
-        * Also defines related terms Precision, Resolution, Latency, Drift, etc.
-        <li>Timestamps:</li>
-        * W3C standard in proposed new web geolocation API:
-        https://w3c.github.io/hr-time/#dom-domhighrestimestamp
-        * See also related issues such as latency defined in SSN
-      </ul>
-
-      Note that accuracy and time are issues that apply to all kinds of sensors, not just
-      geolocation. However, the specific geolocation technology of GPS
-      is special since it is also a source of accurate time.
-
-    </dd>
-    <dt>Comments</dt>
-    <dd>
-
-    </dd>
-    </dl>
-  </section>
-  <section id="mmi-3-1_interactive-public-spaces">
-    <h2>Interactive Public Spaces</h2>
-    <dl>
-
-      <dt>Submitter(s)</dt>
-      <dd>
-
-        Michael McCool
-
-      </dd>
-      <dt>Reviewer(s)</dt>
-      <dd>
-
-        &lt;Suggest reviewers&gt;
-
-      </dd>
-      <dt>Tracker Issue ID</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Category</dt>
-      <dd>
-
-        Accessibility
-
-      </dd>
-      <dt>Class</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Status</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Target Users</dt>
-      <dd>
-
-        &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
-        cloud provider&gt;
-
-      </dd>
-      <dt>Motivation</dt>
-      <dd>
-
-        Public spaces provide many opportunities for engaging, social and fun interaction.
-        At the same time,
-        preserving privacy while sharing tasks and activities with other people is a major issue
-        in ambient systems.
-        These systems may also deliver personalized information in combination
-        with more general services presented publicly.
-
-        A trustful discovery of the services and devices available in such environments
-        is a necessity to guarantee personalization and privacy in public-space applications.
-
-      </dd>
-      <dt>Expected Devices</dt>
-      <dd>
-
-        Public spaces supporting personalizable services and device access.
-
-      </dd>
-      <dt>Expected Data</dt>
-      <dd>
-
-        Command and status information transferred between the personal mobile device
-        application and the public space's services and devices.
-
-        Profile data for user preferences.
-
-      </dd>
-      <dt>Dependencies</dt>
-      <dd>
-
-        <ul>
-          <li>WoT Thing Description</li>
-          <li>WoT Discovery</li>
-          <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-          in IoT orchestration services in the public space.
-        </ul>
-
-      </dd>
-      <dt>Description</dt>
-      <dd>
-
-        Interactive installations such as touch-sensitive or gesture-tracking billboards
-        may be set up in public places.
-        Objects that present public information (e.g. a map of a shopping mall)
-        can use a multimodal interface (built-in or in tandem with the user's mobile devices)
-        to simplify user interaction and provide faster access.
-        Other setups can stimulate social activities,
-        allowing multiple people to enter an interaction simultaneously to work together
-        towards a certain goal (for a prize)
-        or just for fun (e.g. play a musical instrument or control a lighting exhibition).
-        In a context where privacy is an issue
-        (for example, with targeted/personalized alerts or advertisements),
-        the user's mobile device acts as a mediator for the services
-        running on the public network.
-        This allows the user to receive relevant information in the way she sees fit.
-        Notifications can serve as triggers for interaction with public devices and services
-        if the user chooses to do so.
-
-        <p>#### Variants:</p>
-
-        The user may have additional mobile devices they want to incorporate into
-        an interaction, for example a headset acting as an auditory aid or personal speech output
-        device.
-
-      </dd>
-      <dt>Gaps</dt>
-      <dd>
-
-        Data format describing user interface preferences.
-
-      </dd>
-      <dt>Existing standards</dt>
-      <dd>
-
-        This use case is based on MMI UC 3.1.
-
-      </dd>
-      <dt>Comments</dt>
-      <dd>
-
-        Does not include Requirements section from original MMI use case.
-      </dd>
-    </dl>
-  </section>
-  <section id="mmi-3-2_meeting-room-event-assistance">
-    <h2>Meeting Room Event Assistance</h2>
-    <dl>
-
-      <dt>Submitter(s)</dt>
-      <dd>
-
-        Michael McCool
-
-      </dd>
-      <dt>Reviewer(s)</dt>
-      <dd>
-
-        &lt;Suggest reviewers&gt;
-
-      </dd>
-      <dt>Tracker Issue ID</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Category</dt>
-      <dd>
-
-        Accessibility
-
-      </dd>
-      <dt>Class</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Status</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Target Users</dt>
-      <dd>
-
-        &lt;List all users that are involved in the use case, e.g. device manufacturer, gateway manufacturer,
-        cloud provider&gt;
-
-      </dd>
-      <dt>Motivation</dt>
-      <dd>
-
-
-      </dd>
-      <dt>Expected Devices</dt>
-      <dd>
-
-        Meeting space supporting personalizable services and device access.
-
-      </dd>
-      <dt>Expected Data</dt>
-      <dd>
-
-        Command and status information transferred between the personal mobile device
-        application and the meeting space's services and devices.
-
-        Profile data for user preferences.
-
-      </dd>
-      <dt>Dependencies</dt>
-      <dd>
-
-        <ul>
-          <li>WoT Thing Description</li>
-          <li>WoT Discovery</li>
-          <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-          in IoT orchestration services in the meeting space.
-        </ul>
-
-      </dd>
-      <dt>Description</dt>
-      <dd>
-
-        A conference room where a series of meetings will take place.
-        People can go in and out of the room before,
-        after and during the meeting.
-        The door is "touched" by a badge.
-        An application on the user's mobile device can
-        activate any available display in the room and the room and can access and
-        receive notification from devices and services in the room.
-        The chair of the meeting is notified by a dynamically composed graphic animation,
-        audio notification or a mobile phone notification,
-        about available devices and services, and
-        can install applications indicated by links.
-
-        The chair of the meeting selects a setup procedure by text amongst the provided links.
-        These options could be, for example:
-        photo step-by-step instructions (smartphone, HDTV display, Web site),
-        audio instructions (MP3 audio guide, room speakers reproduction, HDTV audio)
-        or RFID enhanced instructions (mobile SmartTag Reader, RFID Reader for smartphone).
-        The chair of the meeting chooses the room speakers reproduction,
-        then the guiding Service is activated and he starts to set the video projector.
-        After some attendees arrive,
-        the chair of the meeting changes to the slide show option and continues to
-        follow the instructions at the same step it was paused but with another more
-        private modality for example, a smartphone slideshow.
-
-        <p>#### Variants:</p>
-
-        The user may have additional mobile devices they want to incorporate into
-        an interaction, for example a headset acting as an auditory aid or personal speech output
-        device.
-
-      </dd>
-      <dt>Gaps</dt>
-      <dd>
-
-        Data format describing user interface preferences.
-
-        Ability to install applications based on links that can access IoT services.
-
-      </dd>
-      <dt>Existing standards</dt>
-      <dd>
-
-        This use case is based on MMI UC 3.2.
-
-      </dd>
-      <dt>Comments</dt>
-      <dd>
-
-        Does not include Requirements section from original MMI use case.
-      </dd>
-    </dl>
-  </section>
   </section>
 
   <section id="health">
