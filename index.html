@@ -140,7 +140,7 @@
     </p>
 
 
-    <section id="document-status" class="ednote" <p>Document Status Disclaimer: </p>
+    <section id="document-status" class="ednote" Disclaimer:>
       <p> This document is an early work in progress and is currently under significant editorial and content rework.
         It is currently an aggregation of use case descriptions that were contributed in a different
         file format (Markdown)</p>
@@ -194,199 +194,17 @@
 
   </section>
   <section id="use-cases">
-    <h2>Use Cases</h2>
-    <section id="domains">
-      <h2>Application Domains</h2>
+    <h2>Application Domains and Use Cases</h2>
 
-      <!-- Categories of new use cases -->
-      <section id="retail">
-        <h2>Retail</h2>
-        <section id="retail">
-          <h2>Retail</h2>
-          <dl>
-
-            <dt>Submitter(s)</dt>
-            <dd>
-
-              David Ezell, Michael Lagally, Michael McCool
-
-            </dd>
-            <dt>Reviewer(s)</dt>
-            <dd>
-
-              &lt;Suggest reviewers&gt;
-
-            </dd>
-            <dt>Tracker Issue ID</dt>
-            <dd>
-
-
-            </dd>
-            <dt>Category</dt>
-            <dd>
-
-              &lt;please leave blank&gt;
-
-            </dd>
-            <dt>Class</dt>
-            <dd>
-
-              &lt;please leave blank&gt;
-
-            </dd>
-            <dt>Status</dt>
-            <dd>
-
-              &lt;please leave blank&gt;
-
-            </dd>
-            <dt>Target Users</dt>
-            <dd>
-
-              Retailers, customers, suppliers.
-
-            </dd>
-            <dt>Motivation</dt>
-            <dd>
-
-              Integrating and interconnecting multiple devices into the common retail workflow
-              (i.e., transaction log) drastically improves retail business operations at multiple levels.
-              It brings operational visibility,including consumer behavior and environmental information,
-              that was not previously possible or viable in a meaningful way.
-
-              It drastically speeds up the process of root cause analysis of operational issues and
-              simplifies the work of retailers.
-
-            </dd>
-            <dt>Expected Devices</dt>
-            <dd>
-
-              Connected sensors, such as people counters, presence sensors, air quality, room ocupancy, door sensors.
-              Cloud services. Video analytics edge services.
-
-            </dd>
-            <dt>Expected Data</dt>
-            <dd>
-
-              Inventory data, supply chain status information, discrete sensor data or data streams.
-
-            </dd>
-            <dt>Dependencies</dt>
-            <dd>
-
-              &lt;List the affected WoT deliverables&gt;
-              tbd
-
-            </dd>
-            <dt>Description</dt>
-            <dd>
-
-              Falling costs of sensors, communications, and handling of very large volumes of data combined with cloud
-              computing enable retail business operations with increased operational efficiency, better customer
-              service,
-              and even increased revenue growth and return on investment.
-
-              Accurate forecasts allow retailers to coordinate demand-driven outcomes that deliver connected customer
-              interactions.
-              They drive optimal strategies in planning, increasing inventory productivity in retail supply chains,
-              decreasing operational costs and driving customer satisfaction from engagement, to sale, to fulfilment.
-
-              Understanding of store activity juxtaposed with traditional information streams can boost worker and
-              consumer safety,
-              comply better with work safety regulations, enhance system and site security, and improve worker
-              efficiency
-              by providing real-time visibility into worker status, location, and work environment.
-
-            </dd>
-            <dt>Variants</dt>
-            <dd>
-
-              <ul>
-                <li>Use edge computing, in particular video analytics, in combination with IoT devices to deliver an
-                  enhanced </li>
-                customer experience, better manage inventory, or otherwise improve the store workflow.
-
-            </dd>
-            <dt>Security Considerations</dt>
-            <dd>
-
-              <ul>
-                <li>In retail, replay attacks can cause monetary loss, customers may be incorrectly charged or
-                  over-charged.</li>
-                <li>To avoid replay attacks, "Things" should implement a sequence number for each message and digital
-                  signature.</li>
-                <li>Servers ("Things" or "Cloud") should verify the signature and disallow for duplicated messages.</li>
-                <li>For "Things" relying on electronic payments, "Things" must comply with PCI-DSS requirements.</li>
-                <li>"Things" must never store credit card information.</li>
-                <li>Customer satisfaction and trust depends on availability, so attacks such as Denial-of-Service (DoS)
-                  need to be prevented or mitigated.</li>
-                <li>To prevent DoS, implement "Things" with early DoS detection.</li>
-                <li>Have an automated DoS system that will notify the controlling unit of the problem.</li>
-                <li>Implement IP white list, that could be part of the DoS early detection system.</li>
-                <li>Make sure your network perimeter is defended with up to date firewall software.</li>
-              </ul>
-
-            </dd>
-            <dt>Privacy Considerations</dt>
-            <dd>
-
-              As a general rule, personal consumer information should not be stored.
-              That is especially true in the retail industry where a security breach could cause financial, reputation,
-              and brand damage.
-              If personal or information that can identify a consumer is to be stored,
-              it should be to conduct business and with the explicit acknowledgment of the consumer.
-              WoT vendors and integrators should always have a privacy policy and make it easily available.
-              By default, devices should adopt an opt-out policy.
-              That means, unless the consumer explicitly allowed for the data capture and storage, avoid doing it.
-
-            </dd>
-            <dt>Gaps</dt>
-            <dd>
-              <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards
-                that are relevant for this use case</section>-1" class="ednote"><section id="todo-references-x"
-                class="ednote">TODO: Provide links to relevant standards that are relevant for this use case</section>:
-              Describe any gaps that are not addressed in the current WoT work
-              items
-        </section>
-
-        </dd>
-        <dt>Existing standards</dt>
-        <dd>
-
-          <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards that
-            are relevant for this use case</section>-2" class="ednote"><section id="todo-references-x" class="ednote">
-            TODO: Provide links to relevant standards that are relevant for this use case</section>: Provide links to
-          relevant standards.
-      </section>
-
-      </dd>
-      <dt>Comments</dt>
-      <dd>
-
-
-      </dd>
-      </dl>
-    </section>
-  </section>
-
-  <section id="audio_video">
-    <h2>Audio/Video</h2>
-    <section id="media-information-references">
-      <h2>Media Use Case Information Bucket</h2>
+    <!-- Categories of new use cases -->
+    <section id="retail">
+      <h2>Retail</h2>
       <dl>
-
-
-        This document is not a full use case description. It is rather a collection of
-        thoughts and ideas to capture information and provide references and have a common discussion basis.
-
-        The intention is to trigger new ideas and collect them in a single document at this point.
-
-        The document is work in progress.
 
         <dt>Submitter(s)</dt>
         <dd>
 
-          &lt;Put your name here&gt;
+          David Ezell, Michael Lagally, Michael McCool
 
         </dd>
         <dt>Reviewer(s)</dt>
@@ -398,7 +216,6 @@
         <dt>Tracker Issue ID</dt>
         <dd>
 
-          &lt;please leave blank&gt;
 
         </dd>
         <dt>Category</dt>
@@ -422,18 +239,317 @@
         <dt>Target Users</dt>
         <dd>
 
-          &lt;List all stakeholders that are involved in the use case from the following list:
+          Retailers, customers, suppliers.
+
+        </dd>
+        <dt>Motivation</dt>
+        <dd>
+
+          Integrating and interconnecting multiple devices into the common retail workflow
+          (i.e., transaction log) drastically improves retail business operations at multiple levels.
+          It brings operational visibility,including consumer behavior and environmental information,
+          that was not previously possible or viable in a meaningful way.
+
+          It drastically speeds up the process of root cause analysis of operational issues and
+          simplifies the work of retailers.
+
+        </dd>
+        <dt>Expected Devices</dt>
+        <dd>
+
+          Connected sensors, such as people counters, presence sensors, air quality, room ocupancy, door sensors.
+          Cloud services. Video analytics edge services.
+
+        </dd>
+        <dt>Expected Data</dt>
+        <dd>
+
+          Inventory data, supply chain status information, discrete sensor data or data streams.
+
+        </dd>
+        <dt>Dependencies</dt>
+        <dd>
+
+          &lt;List the affected WoT deliverables&gt;
+          tbd
+
+        </dd>
+        <dt>Description</dt>
+        <dd>
+
+          Falling costs of sensors, communications, and handling of very large volumes of data combined with cloud
+          computing enable retail business operations with increased operational efficiency, better customer
+          service,
+          and even increased revenue growth and return on investment.
+
+          Accurate forecasts allow retailers to coordinate demand-driven outcomes that deliver connected customer
+          interactions.
+          They drive optimal strategies in planning, increasing inventory productivity in retail supply chains,
+          decreasing operational costs and driving customer satisfaction from engagement, to sale, to fulfilment.
+
+          Understanding of store activity juxtaposed with traditional information streams can boost worker and
+          consumer safety,
+          comply better with work safety regulations, enhance system and site security, and improve worker
+          efficiency
+          by providing real-time visibility into worker status, location, and work environment.
+
+        </dd>
+        <dt>Variants</dt>
+        <dd>
+
           <ul>
-            <li>device owners</li>
-            <li>device user</li>
-            <li>cloud provider</li>
-            <li>service provider</li>
-            <li>device manufacturer</li>
-            <li>gateway manufacturer</li>
-            <li>network operator (potentially transparent for WoT use cases)</li>
-            <li>identity provider</li>
-            <li>directory service operator&gt;</li>
+            <li>Use edge computing, in particular video analytics, in combination with IoT devices to deliver an
+              enhanced </li>
+            customer experience, better manage inventory, or otherwise improve the store workflow.
+
+        </dd>
+        <dt>Security Considerations</dt>
+        <dd>
+
+          <ul>
+            <li>In retail, replay attacks can cause monetary loss, customers may be incorrectly charged or
+              over-charged.</li>
+            <li>To avoid replay attacks, "Things" should implement a sequence number for each message and digital
+              signature.</li>
+            <li>Servers ("Things" or "Cloud") should verify the signature and disallow for duplicated messages.</li>
+            <li>For "Things" relying on electronic payments, "Things" must comply with PCI-DSS requirements.</li>
+            <li>"Things" must never store credit card information.</li>
+            <li>Customer satisfaction and trust depends on availability, so attacks such as Denial-of-Service (DoS)
+              need to be prevented or mitigated.</li>
+            <li>To prevent DoS, implement "Things" with early DoS detection.</li>
+            <li>Have an automated DoS system that will notify the controlling unit of the problem.</li>
+            <li>Implement IP white list, that could be part of the DoS early detection system.</li>
+            <li>Make sure your network perimeter is defended with up to date firewall software.</li>
           </ul>
+
+        </dd>
+        <dt>Privacy Considerations</dt>
+        <dd>
+
+          As a general rule, personal consumer information should not be stored.
+          That is especially true in the retail industry where a security breach could cause financial, reputation,
+          and brand damage.
+          If personal or information that can identify a consumer is to be stored,
+          it should be to conduct business and with the explicit acknowledgment of the consumer.
+          WoT vendors and integrators should always have a privacy policy and make it easily available.
+          By default, devices should adopt an opt-out policy.
+          That means, unless the consumer explicitly allowed for the data capture and storage, avoid doing it.
+
+        </dd>
+        <dt>Gaps</dt>
+        <dd>
+          <section id="todo-gaps-x" class="ednote">
+            TODO: Describe any gaps that are not addressed in the current WoT work
+            items.
+          </section>
+
+        </dd>
+        <dt>Existing standards</dt>
+        <dd>
+
+          <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
+            are relevant for this use case</section>
+    </section>
+
+    <section id="audio_video">
+      <h2>Audio/Video</h2>
+      <section id="media-information-references">
+        <h2>Media Use Case Information Bucket</h2>
+        <dl>
+
+          This section is not a full use case description. It is rather a collection of
+          thoughts and ideas to capture information and provide references and have a common discussion basis.
+
+          The intention is to trigger new ideas and collect them in a single document at this point.
+
+          The document is work in progress.
+
+          <dt>Submitter(s)</dt>
+          <dd>
+
+            &lt;Put your name here&gt;
+
+          </dd>
+          <dt>Reviewer(s)</dt>
+          <dd>
+
+            &lt;Suggest reviewers&gt;
+
+          </dd>
+          <dt>Tracker Issue ID</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Category</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Class</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Status</dt>
+          <dd>
+
+            &lt;please leave blank&gt;
+
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+
+            &lt;List all stakeholders that are involved in the use case from the following list:
+            <ul>
+              <li>device owners</li>
+              <li>device user</li>
+              <li>cloud provider</li>
+              <li>service provider</li>
+              <li>device manufacturer</li>
+              <li>gateway manufacturer</li>
+              <li>network operator (potentially transparent for WoT use cases)</li>
+              <li>identity provider</li>
+              <li>directory service operator&gt;</li>
+            </ul>
+
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+
+            &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is
+            important for the users&gt;
+
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+
+            &lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
+
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+
+            &lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors,
+            vehicle data&gt;
+
+          </dd>
+          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dd>
+
+            &lt;List the affected WoT deliverables that have to be changed to enable this use case&gt;
+
+          </dd>
+          <dt>Description</dt>
+          <dd>
+
+            <ul>
+              <li>Sync of media across different devices:</li>
+              <li>people in different homes watch the same content at the same time. Conversation about content.</li>
+              <li>Multi-room sync playback</li>
+              <li>Multi-camera angles </li>
+            </ul>
+
+            <ul>
+              <li>Voice control of a media playback device (integration of smart speakers from multiple vendors)</li>
+              Describe proprietary (vendor specific) device control interfaces to control media playback on TV set.
+              (proprietary implementations exist, open protocol is proposed?)
+            </ul>
+
+            <p>#### Variants:</p>
+
+            &lt;Describe possible use case variants, if applicable&gt;
+
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+
+            <section id="todo-gaps-1" class="ednote">
+              TODO: Provide links to relevant standards that are relevant for this use case</section>
+      </section>
+
+      </dd>
+      <dt>Existing standards & related information</dt>
+      <dd>
+
+        <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are
+          relevant for this use case
+          <p>There are MANY TV standards and this would be a long list. Rather leave blank unless a very specific
+            standard provides more insight.</p>
+        </section>
+
+
+      </dd>
+      <dt>Comments</dt>
+      <dd>
+
+        <p>#### Further information and resources:</p>
+
+        NHK Hybridcast updates:
+        https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf
+
+        MediaTimedEvents in Hybridcast:
+        https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf
+
+        BBC Moto GP at Home:
+        https://2immerse.eu/motogp-at-home/
+
+      </dd>
+      </dl>
+    </section>
+
+
+    <section id="nhk-device-tv-sync">
+      <h2>Home WoT devices work according to TV programs</h2>
+      <dl>
+
+
+        <dt>Submitter(s)</dt>
+        <dd>
+
+          Hiroki Endo,
+          Masaya Ikeo,
+          Shinya Abe,
+          Hiroshi Fujisawa
+
+
+        </dd>
+        <dt>Reviewer(s)</dt>
+        <dd>
+
+          &lt;Suggest reviewers&gt;
+
+        </dd>
+        <dt>Tracker Issue ID</dt>
+        <dd>
+
+
+        </dd>
+        <dt>Category</dt>
+        <dd>
+
+          &lt;please leave blank&gt;
+
+        </dd>
+        <dt>Class</dt>
+        <dd>
+
+          &lt;please leave blank&gt;
+
+        </dd>
+        <dt>Status</dt>
+        <dd>
+
+          &lt;please leave blank&gt;
+
+        </dd>
+        <dt>Target Users</dt>
+        <dd>
+
+          Person watching TV, Broadcasters
 
         </dd>
         <dt>Motivation</dt>
@@ -442,41 +558,62 @@
           &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is
           important for the users&gt;
 
+          A lot of home devices, such as TV, cleaner, and home lighting, connect to an IP network.
+          When you watch a content program, these devices should coorperate for enhancing your expereence.
+
+          If the cleaning robot makes a loud noise while watching the TV program, it will hinder viewing.
+          Also, even if you set up the theater environment with smart lights, it is troublesome to operate it
+          yourself each time the TV program switches.
+
+          Therefore, by WoT device to operate in accordance with the TV program being viewed, thereby improving the
+          user experience.
+
+          WoT devices work according to TV programs:
+
+          <ul>
+            <li>Cleaning robot stops at an important situation,</li>
+            <li>Color of smart lights are changed according to TV programs,</li>
+            <li>Smart Mirror is notified that favorite TV show will start.</li>
+          </ul>
+
         </dd>
         <dt>Expected Devices</dt>
         <dd>
 
-          &lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
+          <ul>
+            <li>Hybridcast TV</li>
+            <li>Hybridcast Connect application (in a smartdevice such as smartphone)</li>
+            <li>Cleaning Robot</li>
+            <li>Smart Light (such as Philips Hue)</li>
+            <li>Smart Mirror</li>
+          </ul>
 
         </dd>
         <dt>Expected Data</dt>
         <dd>
 
-          &lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors,
-          vehicle data&gt;
+          The trigger value of the scene of the TV program.
+          Hybridcast connect application know the Thing Description of the devices in home. (Discovery?)
 
         </dd>
-        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+        <dt>Dependencies</dt>
         <dd>
 
-          &lt;List the affected WoT deliverables that have to be changed to enable this use case&gt;
+          &lt;List the affected WoT deliverables&gt;
 
         </dd>
         <dt>Description</dt>
         <dd>
 
-          <ul>
-            <li>Sync of media across different devices:</li>
-            <li>people in different homes watch the same content at the same time. Conversation about content.</li>
-            <li>Multi-room sync playback</li>
-            <li>Multi-camera angles </li>
-          </ul>
+          Home smart devices behave according to TV programs.
 
-          <ul>
-            <li>Voice control of a media playback device (integration of smart speakers from multiple vendors)</li>
-            Describe proprietary (vendor specific) device control interfaces to control media playback on TV set.
-            (proprietary implementations exist, open protocol is proposed?)
-          </ul>
+          Hybridcast applications in TV emit information about TV programs for smart home devices.
+          (Hybridcast is a Japanese Integrated Broadcast-Broadband system. Hybridcast applications are HTML5
+          applications that work on Hybridcast TV.)
+
+          Hybridcast Contact application receives the information and controlls smart home devices.
+
+          !<a href="images/scenario_nhk.png">scenario_nhk</a>
 
           <p>#### Variants:</p>
 
@@ -486,182 +623,25 @@
         <dt>Gaps</dt>
         <dd>
 
-          <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards that
-            are relevant for this use case</section>-gaps-1" class="ednote"><section id="todo-references-x"
-            class="ednote">TODO: Provide links to relevant standards that are relevant for this use case</section>:
-          Describe any gaps that are not addressed in the current WoT standards and building blocks
+          &lt;Describe any gaps that are not addressed in the current WoT work items&gt;
+
+        </dd>
+        <dt>Existing standards</dt>
+        <dd>
+
+          Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system,
+          HbbTV,
+          ATSC 3.0,
+          ...etc.
+
+        </dd>
+        <dt>Comments</dt>
+        <dd>
+
+
+        </dd>
+      </dl>
     </section>
-
-    </dd>
-    <dt>Existing standards & related information</dt>
-    <dd>
-
-      <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards that are
-        relevant for this use case</section>-references-1" class="ednote"><section id="todo-references-x"
-        class="ednote">TODO: Provide links to relevant standards that are relevant for this use case</section>: Provide
-      links to relevant standards that are relevant for this use case
-  </section>
-  There are MANY TV standards and this would be a long list. Rather leave blank unless a very specific
-  standard provides more insight.
-
-  </dd>
-  <dt>Comments</dt>
-  <dd>
-
-    <p>#### Further information and resources:</p>
-
-    NHK Hybridcast updates:
-    https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf
-
-    MediaTimedEvents in Hybridcast:
-    https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf
-
-    BBC Moto GP at Home:
-    https://2immerse.eu/motogp-at-home/
-
-  </dd>
-  </dl>
-  </section>
-  <section id="nhk-device-tv-sync">
-    <h2>Home WoT devices work according to TV programs</h2>
-    <dl>
-
-
-      <dt>Submitter(s)</dt>
-      <dd>
-
-        Hiroki Endo,
-        Masaya Ikeo,
-        Shinya Abe,
-        Hiroshi Fujisawa
-
-
-      </dd>
-      <dt>Reviewer(s)</dt>
-      <dd>
-
-        &lt;Suggest reviewers&gt;
-
-      </dd>
-      <dt>Tracker Issue ID</dt>
-      <dd>
-
-
-      </dd>
-      <dt>Category</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Class</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Status</dt>
-      <dd>
-
-        &lt;please leave blank&gt;
-
-      </dd>
-      <dt>Target Users</dt>
-      <dd>
-
-        Person watching TV, Broadcasters
-
-      </dd>
-      <dt>Motivation</dt>
-      <dd>
-
-        &lt;Provide a description of the problem that is solved by the use case and a reason why this use case is
-        important for the users&gt;
-
-        A lot of home devices, such as TV, cleaner, and home lighting, connect to an IP network.
-        When you watch a content program, these devices should coorperate for enhancing your expereence.
-
-        If the cleaning robot makes a loud noise while watching the TV program, it will hinder viewing.
-        Also, even if you set up the theater environment with smart lights, it is troublesome to operate it
-        yourself each time the TV program switches.
-
-        Therefore, by WoT device to operate in accordance with the TV program being viewed, thereby improving the
-        user experience.
-
-        WoT devices work according to TV programs:
-
-        <ul>
-          <li>Cleaning robot stops at an important situation,</li>
-          <li>Color of smart lights are changed according to TV programs,</li>
-          <li>Smart Mirror is notified that favorite TV show will start.</li>
-        </ul>
-
-      </dd>
-      <dt>Expected Devices</dt>
-      <dd>
-
-        <ul>
-          <li>Hybridcast TV</li>
-          <li>Hybridcast Connect application (in a smartdevice such as smartphone)</li>
-          <li>Cleaning Robot</li>
-          <li>Smart Light (such as Philips Hue)</li>
-          <li>Smart Mirror</li>
-        </ul>
-
-      </dd>
-      <dt>Expected Data</dt>
-      <dd>
-
-        The trigger value of the scene of the TV program.
-        Hybridcast connect application know the Thing Description of the devices in home. (Discovery?)
-
-      </dd>
-      <dt>Dependencies</dt>
-      <dd>
-
-        &lt;List the affected WoT deliverables&gt;
-
-      </dd>
-      <dt>Description</dt>
-      <dd>
-
-        Home smart devices behave according to TV programs.
-
-        Hybridcast applications in TV emit information about TV programs for smart home devices.
-        (Hybridcast is a Japanese Integrated Broadcast-Broadband system. Hybridcast applications are HTML5
-        applications that work on Hybridcast TV.)
-
-        Hybridcast Contact application receives the information and controlls smart home devices.
-
-        !<a href="images/scenario_nhk.png">scenario_nhk</a>
-
-        <p>#### Variants:</p>
-
-        &lt;Describe possible use case variants, if applicable&gt;
-
-      </dd>
-      <dt>Gaps</dt>
-      <dd>
-
-        &lt;Describe any gaps that are not addressed in the current WoT work items&gt;
-
-      </dd>
-      <dt>Existing standards</dt>
-      <dd>
-
-        Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system,
-        HbbTV,
-        ATSC 3.0,
-        ...etc.
-
-      </dd>
-      <dt>Comments</dt>
-      <dd>
-
-
-      </dd>
-    </dl>
-  </section>
   </section>
 
   <section id="agriculture">
@@ -2346,7 +2326,7 @@
         <section id="todo-references-x" class="ednote">
           TODO: Provide links to relevant standards that are
           relevant for this use case</section>
-    </section>
+  </section>
 
   </dd>
   <dt>Comments</dt>
