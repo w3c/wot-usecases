@@ -22,6 +22,7 @@ a backend and presents a frontend RESTful API based on HTTP.  This does not map 
 onto the concept of a W3C WoT Servient since there is no requirement that the backend
 protocols be describable with WoT Thing Descriptions, or satisfy the other requirements
 given in the W3C WoT Architecture.  
+
 Appendix II provides service information flows for a WoT broker.
 Note that brokers are not *required*: a device can also directly present a web interface.
 Brokers are only required for constrained devices that cannot directly interact with the
@@ -52,14 +53,16 @@ appear to overlap:
   They depend internally on software adapters called agents supported by the WoT broker.
 * **Web services**, which are available on the web.  A WoT service available on the web
   is also a web service.
-* **Mash-ups**, which are web services that combine other web services (including network, non-WoT 
-  services not necessarily associated with a physical device) to create new web services.
+* **Mash-ups**, which are web services that combine other web services (including network,
+  non-WoT services not necessarily associated with a physical device) to create new web
+  services.
 
 The ITU-T uses a three-layer model: 
 1. Service layer: includes both pure web and WoT services as well as mash-up services.
 2. Adapation layer: a set of agents that can connect to services on one side and native
    protocols on the other.
 3. Physical layer: the native device protocols.
+
 In addition, there is an Application layer on top that communicates with services to provide
 end-user applications, e.g. in a browser.
 
@@ -147,7 +150,7 @@ functional components described.
 **Key points in abstract:** Defines concept, reference model, functional capabilities
 and information models of the web of objects (WoO).
 
-Note: the word "object" seems to be used here as a more general term than "thing".
+**Note:** The word "object" seems to be used here as a more general term than "thing".
 Also, "virtual objects" are defined as virtual (abstract?) representations of real world objects
 and the "web of objects" is defined as a way to "incorporate virtual objects on the 
 world wide web".  This is perhaps best understood as a linked-data information model (web of data) rather than a web of devices.
@@ -166,7 +169,7 @@ user requests.
 An information model based on RDF ontologies is provided for each of services,
 objects, and composite objects.
 
-Note: in the text "objects" are actually called "virtual objects", I have simplified the
+Note: in the text "objects" are actually called "virtual objects"; I have simplified the
 terminology slightly.
 
 **Additional references:**
