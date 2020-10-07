@@ -83,7 +83,7 @@ control service that reads a temperature monitor and controls heating and coolin
 Primarily "remote" control scenarios are discussed although it is implied that local
 control is possible, i.e. the services could be running on a local system.
 
-Additional references:
+**Additional references:**
 * [ITU-T Y.2002 (2009) - Overview of ubiquitous networking and of its support in NGN]()
 * [ITU-T Y.4000/Y.2060 (2012) - Overview of the internet of things]()
 
@@ -136,7 +136,7 @@ different "native" protocols supported by different kinds of devices.
 Appendix II includes some detailed example flows of communication between the various 
 functional components described.
 
-Additional references:
+**Additional references:**
 * [ITU-T M.3030 (2002) - Telecommunications Markup Language (tML) framework]()
 * [ITU-T Y.2002 (2009) - Overview of ubiquitous networking and of its support in NGN]()
 * [ITU-T Y.2232 (2008) - NGN convergence service model and scenario using web services]()
@@ -169,14 +169,18 @@ objects, and composite objects.
 Note: in the text "objects" are actually called "virtual objects", I have simplified the
 terminology slightly.
 
-Additional references:
+**Additional references:**
 * [ITU-T Y.4000/Y.2060 (2012) - Overview of the internet of things]()
 * [ITU-T Y.4552/Y.2078 (2016) - Application support models of the internet of things]()
 
 No appendices.
 
 ## Y.4415 - Architecture of web of objects-based virtual home network
-To do.
+**Key points in abstract:**
+
+**Additional references:**
 
 ## Y.2070 - Requirements and architecture of the home energy management system and home network services
-To do.
+**Key points in abstract:**
+
+**Additional references:**
