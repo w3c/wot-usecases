@@ -150,7 +150,7 @@ and information models of the web of objects (WoO).
 Note: the word "object" seems to be used here as a more general term than "thing".
 Also, "virtual objects" are defined as virtual (abstract?) representations of real world objects
 and the "web of objects" is defined as a way to "incorporate virtual objects on the 
-world wide web".
+world wide web".  This is perhaps best understood as a linked-data information model (web of data) rather than a web of devices.
 
 The WoO system includes explicit support for repositories of templates and creation of 
 instantiations of objects via a factory. 
