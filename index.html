@@ -294,8 +294,8 @@
 
           <ul>
             <li>Use edge computing, in particular video analytics, in combination with IoT devices to deliver an
-              enhanced </li>
-            customer experience, better manage inventory, or otherwise improve the store workflow.
+              enhanced 
+            customer experience, better manage inventory, or otherwise improve the store workflow.</li>
 
         </dd>
         <dt>Security Considerations</dt>
@@ -426,11 +426,9 @@
 
             <ul>
               <li>Sync of media across different devices:</li>
-		<ul>
-              		<li>people in different homes watch the same content at the same time. Conversation about content.</li>
-              		<li>Multi-room sync playback</li>
-              		<li>Multi-camera angles </li>
-		</ul>
+              <li>people in different homes watch the same content at the same time. Conversation about content.</li>
+              <li>Multi-room sync playback</li>
+              <li>Multi-camera angles </li>
               <li>Voice control of a media playback device (integration of smart speakers from multiple vendors)
               Describe proprietary (vendor specific) device control interfaces to control media playback on TV set.
               (proprietary implementations exist, open protocol is proposed?)</li>
@@ -462,17 +460,13 @@
           <dt>Comments</dt>
           <dd>
 
-            <p>Further information and resources:</p>
+            Further information and resources:
 
-            NHK Hybridcast updates:
-            https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf
-
-            MediaTimedEvents in Hybridcast:
-            https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf
-
-            BBC Moto GP at Home:
-            https://2immerse.eu/motogp-at-home/
-
+	    <ul>
+              <li><a href="https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf">NHK Hybridcast updates</a></li>
+	      <li><a href="https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf">MediaTimedEvents in Hybridcast</a></li>	
+              <li><a href="https://2immerse.eu/motogp-at-home/">BC Moto GP at Home</a></li>
+	    </ul>
           </dd>
         </dl>
       </section>
@@ -585,9 +579,10 @@
             applications that work on Hybridcast TV.)
 
             Hybridcast Contact application receives the information and controlls smart home devices.
-
-            !<a href="images/scenario_nhk.png">scenario_nhk</a>
-
+	    <br>
+            <br>
+            <img src="images/scenario_nhk.png" width="100%" height=100%>
+            <br>
           </dd>
           <dt>Variants</dt>
           <dd>
@@ -597,7 +592,6 @@
           <dt>Gaps</dt>
           <dd>
 
-            &lt;Describe any gaps that are not addressed in the current WoT work items&gt;
 
           </dd>
           <dt>Existing standards</dt>
@@ -780,7 +774,7 @@ Consequently, silos applications are deployed leveraging on IoT technologies to 
 
 	  <p>Sensors:</p> 
 	   <ul>
-	  	<li>Weather sensors (maybe collected together inside a <a href="https://en.wikipedia.org/wiki/Weather_station)">weather station</a></li>
+	  	<li>Weather sensors (maybe collected together inside a <a href="https://en.wikipedia.org/wiki/Weather_station)">weather station</a>)</li>
 		<ul>
     			<li>temperature</li>
     			<li>air humidity</li>
@@ -863,11 +857,15 @@ In open-field agriculture, the IoT solutions leverage on different radio protoco
 		<li>Pesticide and fertilize planning</li>
 	</ul>
 
-The complete deployment topology of an open field agriculture solution is described in the diagram below:
-<a href="./images/Agriculture.svg">IoT open field diagram</a>
-
+	The complete deployment topology of an open field agriculture solution is described in the diagram below:
+	<br>
+	<br>
+	<img src="./images/Agriculture.svg" width="100%" height="100%">
+	<br>
+	<br>
 	</dd>
 	<dt>Variants</dt>
+	<dd>
 Open-field agriculture varies a lot between geographical location and methods. For example in the <a href="http://swamp-project.org/">SWAMP project</a> there three different pilots with different requirement/constraints:
 	<ul>
 		<li><a href="http://swamp-project.org/cbec/) (Reggio Emilia region">Italian pilot</a>:</li>
@@ -895,7 +893,7 @@ Open-field agriculture varies a lot between geographical location and methods. F
 		<ul>
     			<li>Efficient localized irrigation and application of the right amount of water to the crop</li>
     			<li>arid location</li>
-    			<li>The goal is to minimize water consumption but maintaining a good field yield.<li>
+    			<li>The goal is to minimize water consumption but maintaining a good field yield.</li>
 		</ul>
 	</ul>
 	</dd>
@@ -1021,34 +1019,47 @@ This use case is designed using the experience gained in the European-Brazil Hor
               <li>Sensor ID</li>
               <li>Timestamp of last geolocation</li>
               <li>2D location</li>
-              * typically latitude and longitude
-              * May also be semantic, i.e. room in a building, exit
+	      <ul>
+              	<li>typically latitude and longitude</li>
+                <li>May also be semantic, i.e. room in a building, exit</li>
+              </ul>
             </ul>
 
             Optional:
             <ul>
               <li>Semantic location</li>
-              * Possibly in addition to numerical lat/long location.
+              <ul>
+                <li>Possibly in addition to numerical lat/long location.</li>
+	      </ul>
               <li>Altitude</li>
-              * May also be semantic, i.e. floor of a building
+              <ul>
+                <li>May also be semantic, i.e. floor of a building</li>
+ 	      </ul>
               <li>Heading</li>
               <li>Speed</li>
               <li>Accuracy information</li>
-              * Confidence interval, e.g. distance that true location will be within some probability.
-              * Gaussian covariance matrix
-              * For each measurement
-              * For lat/long, may be a single value (see web browser API; radius?)
+	      <ul>
+                <li>Confidence interval, e.g. distance that true location will be within some probability.</li>
+                <li>Gaussian covariance matrix</li>
+                <li>For each measurement</li>
+                <li>For lat/long, may be a single value (see web browser API; radius?)</li>
+	      </ul>
               <li>Geolocation technology (GPS, SLAM, etc). </li>
-              * Note that multiple technologies might be used together.
-              * Include parameters such as sample interval, accuracy
+	      <ul>
+                <li>Note that multiple technologies might be used together.</li>
+                <li>Include parameters such as sample interval, accuracy</li>
+	      </ul>
               <li>For each geolocation technology, data specific to that technology:</li>
-              * GPS: NMEA type
+	      <ul>
+                <li>GPS: NMEA type</li>
+	      </ul>
               <li>Historical data</li>
             </ul>
 
             Note: the system should be capable of notifying consumers
             of changes in location.
             This may be used to implement geofencing by some other system.
+	    <br>
             This may require additional parameters, such as the
             maximum distance that the device may be moved before a notification is
             sent, or the maximum amount of time between updates.
@@ -1085,8 +1096,8 @@ This use case is designed using the experience gained in the European-Brazil Hor
               may contain additional information specific to the geolocation
               technology used. In particular, in indoor situations technologies such
               as WiFi triangulation or (V)SLAM may be more appropriate.
-              <li>Geofencing may be implemented using event notifications and</li>
-              will require setting of additional parameters such as maximum distance.
+              <li>Geofencing may be implemented using event notifications and 
+              will require setting of additional parameters such as maximum distance.</li>
             </ul>
 
           </dd>
@@ -1132,43 +1143,57 @@ This use case is designed using the experience gained in the European-Brazil Hor
 
             <ul>
               <li>NMEA: defines sentences from GPS devices</li>
-              <li>WGS84: https://en.wikipedia.org/wiki/World_Geodetic_System</li>
-              * World Geodetic System
-              * Defines lat/long/alt coordinate system used by most other geolocation standards
-              * More complicated than you would think (need to deal with deviations of Earth from
-              a true sphere, gravitational irregularities, position of centroid, etc. etc.)
-              <li>Basic Geo Vocabulary: https://www.w3.org/2003/01/geo/</li>
-              * Very basic RDF definitions for lat, long, and alt
-              * Does not define heading or speed
-              * Does not define accuracy
-              * Does not define timestamps
-              * Uses string as a data model (rather than a number)
-              <li>W3C Geolocalization API: https://www.w3.org/TR/geolocation-API/</li>
-              * W3C Devices and Sensors WG is now handling
-              * There is an updated proposal: https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface
-              * Data schema of updated proposal is similar to existing API, but all elements are now optional
-              * Data includes latitude, longitude, altitude, heading, and speed
-              * Accuracy is included for latitude/longitude (single number in meters, 95% confidence, interpretation
-              a little ambiguous, but probably intended to be a radius) and altitude, but not for heading or speed.
-              <li>Open Geospatial Consortium: https://www.ogc.org/</li>
-              * See http://docs.opengeospatial.org/as/18-005r4/18-005r4.html
-              * Referring to locations by coordinates
-              * Has standards defining semantics for identifying locations
-              * Useful for mapping
+              <li><a href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS84</a>:</li>
+              <ul>
+                <li>World Geodetic System</li>
+                <li>Defines lat/long/alt coordinate system used by most other geolocation standards</li>
+                <li>More complicated than you would think (need to deal with deviations of Earth from
+              a true sphere, gravitational irregularities, position of centroid, etc. etc.)</li>
+              </ul>
+              <li><a href="https://www.w3.org/2003/01/geo/">Basic Geo Vocabulary</a>:</li>
+              <ul>
+                <li>Very basic RDF definitions for lat, long, and alt</li>
+                <li>Does not define heading or speed</li>
+                <li>Does not define accuracy</li>
+                <li>Does not define timestamps</li>
+                <li>Uses string as a data model (rather than a number)</li>
+              </ul>
+              <li><a href="https://www.w3.org/TR/geolocation-API/">W3C Geolocalization API</a>:</li>
+              <ul>
+                <li>W3C Devices and Sensors WG is now handling</li>
+                <li>There is an updated proposal: <a href="https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface">https://w3c.github.io/geolocation-sensor/#geolocationsensor-interface</a></li>
+                <li>Data schema of updated proposal is similar to existing API, but all elements are now optional</li>
+                <li>Data includes latitude, longitude, altitude, heading, and speed</li>
+                <li>Accuracy is included for latitude/longitude (single number in meters, 95% confidence, interpretation
+              a little ambiguous, but probably intended to be a radius) and altitude, but not for heading or speed.</li>
+	      </ul>
+              <li><a href="https://www.ogc.org/">Open Geospatial Consortium</a>:</li>
+              <ul>
+                <li>See <a href="http://docs.opengeospatial.org/as/18-005r4/18-005r4.html">http://docs.opengeospatial.org/as/18-005r4/18-005r4.html</a></li>
+                <li>Referring to locations by coordinates</li>
+                <li>Has standards defining semantics for identifying locations</li>
+                <li>Useful for mapping</li>
+	      </ul>
               <li>ISO</li>
-              * ISO19111: https://www.iso.org/standard/74039.html
-              * Standard for referring to locations by coordinates
-              * Related to OGS standard above and WGS84
-              * Various other standards that relate to remote sensing, geolocation, etc.
-              * Here is an example (see references): https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en
-              <li>SSN: https://www.w3.org/TR/vocab-ssn/</li>
-              * Defines "accuracy": https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy
-              * Definition of accuracy is consistent with how it is used in Web Geolocation API
-              * Also defines related terms Precision, Resolution, Latency, Drift, etc.
+              <ul>
+              <li><a href="https://www.iso.org/standard/74039.html">ISO19111</a>:</li>
+	      <ul>
+                <li>Standard for referring to locations by coordinates</li>
+                <li>Related to OGS standard above and WGS84</li>
+              </ul>
+              <li>Various other standards that relate to remote sensing, geolocation, etc.</li>
+              <li>Here is an example (see references): <a href="https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en">https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en</a></li>
+              </ul>
+              <li><a href="https://www.w3.org/TR/vocab-ssn/">SSN</a>:</li>
+              <ul>
+                <li>Defines "accuracy": <a href="https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy">https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy</a></li>
+                <li>Definition of accuracy is consistent with how it is used in Web Geolocation API</li>
+                <li>Also defines related terms Precision, Resolution, Latency, Drift, etc.</li>
+              </ul>
               <li>Timestamps:</li>
-              * W3C standard in proposed new web geolocation API:
-              https://w3c.github.io/hr-time/#dom-domhighrestimestamp
-              * See also related issues such as latency defined in SSN
+              <ul>
+                <li>W3C standard in proposed new web geolocation API: <a href="https://w3c.github.io/hr-time/#dom-domhighrestimestamp">https://w3c.github.io/hr-time/#dom-domhighrestimestamp</a></li>
+                <li>See also related issues such as latency defined in SSN</li>
             </ul>
 
             Note that accuracy and time are issues that apply to all kinds of sensors, not just
@@ -1252,7 +1277,8 @@ This use case is designed using the experience gained in the European-Brazil Hor
 
             Command and status information transferred between the personal mobile device
             application and the public space's services and devices.
-
+	    <br>
+	    <br>
             Profile data for user preferences.
 
           </dd>
@@ -1262,8 +1288,8 @@ This use case is designed using the experience gained in the European-Brazil Hor
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
-              <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-              in IoT orchestration services in the public space.
+              <li>Optional: WoT Scripting API in application on mobile personal device and possibly 
+              in IoT orchestration services in the public space.</li>
             </ul>
 
           </dd>
@@ -1386,8 +1412,8 @@ This use case is designed using the experience gained in the European-Brazil Hor
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
-              <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-              in IoT orchestration services in the meeting space.
+              <li>Optional: WoT Scripting API in application on mobile personal device and possibly
+              in IoT orchestration services in the meeting space.</li>
             </ul>
 
           </dd>
@@ -1520,12 +1546,13 @@ Data coming from different contexts, such as Energy, Building, Environmental Wea
 	<dd>
 A campus has a wide range of IoT devices distributed across their grounds. These IoT devices belong to very different domains in a smart city, such as, energy, buildings, environment, water, wearable, etc. The IoT devices are distributed across the campus and belong to different infrastructures or even to individuals. A sample topology of this scenario could be the following:
 
-  
+  	<br>
+	<br>
 
-<a href="images/smart-campus-topology.svg">Topology</a>
+	<img src="images/smart-campus-topology.svg" width="100%" height="100%">
 
-<br>
-<br>  
+	<br>
+	<br>  
 
 In this scenario, energy-related IoT devices monitor the energy use and income in the campus, among other things. From these measurements, an Energy Management System may predict a negative peak of incoming energy that would entail the failure of the whole system. In this case, a Service or a User needs to discover all those IoT devices that are not critical for the normal functioning of the campus (such as indoor or outdoor illumination, HVAC systems, or water heaters) and interact with them in order to save energy, by switching them off or reducing their consumption. Besides, the same Service or User will look for those IoT devices that are critical for the well-functioning of the campus (such as magnetic locks, water distribution system, or fire/smoke sensors) and ensure that they are up and running. Additionally, the Service or the User, will discover relevant people's wearable to warn them about the situation.
 
@@ -1536,14 +1563,11 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 
 	 
 	For instance, assuming Middle-Node F receives a query that asks about all the discoverable Building IoT devices in the campus. First, the Middle-Node F will try to answer the query with the Thing Descriptions of the IoT registered within. Since Middle-Node F contains some Building IoT devices a partial query answer is achieved. However, since they query asked about all the discoverable Building IoT devices Middle-Node F should forward the query to its other known Middle-Nodes, i.e., Middle-Node G. This process will be repeated by the Middle-Nodes until the query reaches the Middle-Nodes H and B which are the ones that have registered Thing Descriptions about IoT buildings. Therefore, the query will travel through the topology as follows:
-
-	  
-
-	<a href="images/smart-campus-sample.svg">Sample</a>
-
-<br>
-<br>
-
+	<br>
+	<br> 
+	<img src="images/smart-campus-sample.svg" width="100%" height="100%">
+	<br>
+	<br>
 	Finally, when Middle Nodes B and H compute two partial query answers, those answers will be forwarded back to Middle-Node F which will join them with its former partial query answer obtained from its registered Thing Descriptions. Finally, a global query answer will be provided.
 
 		</dd>
@@ -1658,17 +1682,19 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		      <ul>
 			<li>A thermal camera.</li>
 			<li>Face detection (AI) service</li>
-			* May be on device or be an edge or cloud service.
+			<ul>
+			 <li>May be on device or be an edge or cloud service.</li>
+			</ul>
 		      </ul>
 
 		      Optional:
 		      <ul>
 			<li>RGB and/or depth camera registered with the thermal camera</li>
 			<li>Cloud service for data aggregation and analytics.</li>
-			<li>Some way to identify location (optional)</li>
+			<li>Some way to identify location (optional)
 			Note that location might be static and configured during installation,
 			but might also be based on a localization technology if the device needs to be
-			portable (for example, if it needs to be set up quickly for an event).
+			portable (for example, if it needs to be set up quickly for an event).</li>
 		      </ul>
 
 		    </dd>
@@ -1680,10 +1706,14 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 			<li>Timestamp</li>
 			<li>Number of people identified with a fever in image</li>
 			<li>Estimated temperature for each person</li>
-			* May be coarse, low/normal/high
+ 			<ul>
+			  <li>May be coarse, low/normal/high</li>
+			</ul>
 			<li>Location</li>
-			* Latitude, Longitude, Altitude, Accuracy
-			* Semantic (eg a particular building entrance)
+			<ul>
+			  <li>Latitude, Longitude, Altitude, Accuracy</li>
+			  <li>Semantic (eg a particular building entrance)</li>
+			</ul>
 			<li>Thermal image</li>
 		      </ul>
 
@@ -1695,15 +1725,19 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 			<li>Integration with local IoT devices: gates, lights, or people (guards)</li>
 			<li>Bounding boxes around faces of identified people in image(s)</li>
 			<li>Data that can be used to uniquely identify a face (distinguish it from others)</li>
-			* Aggregation system may output the total number of unique faces with fever
+			<ul>	
+			<li>Aggregation system may output the total number of unique faces with fever</li>
+			</ul>
 		      </ul>
 
 		      Note 1: the system should be capable of notifying consumers (such as security personnel),
 		      of fever detections.
 		      This may be email, SMS, or some other mechanism, such as MQTT publication.
-
+		      <br>
+	              <br>
 		      Note 2: In all cases where images are captured, privacy considerations apply.
-
+		      <br>
+ 		      <br>
 		      It would also be useful to count unique individuals for statistics purposes,
 		      but not necessarily based on identifying particular people. This is to
 		      avoid counting the same person multiple times.
@@ -1734,24 +1768,24 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 
 
 		      <ul>
-			<li>Enough information is included in the notification that the specific</li>
+			<li>Enough information is included in the notification that the specific
 			person that raised the alarm can be identified. For example, if an RGB
 			camera is also registered with the thermal camera, then a bounding box may
 			be indicated via JSON and the RGB image included; or the bounding box could
 			be actually drawn into the sent image, or the face could be cropped out.
 			This is useful if, for example, a notification needs to be sent to health
-			or security workers who need to identify the person in a crowd.
-			<li>Instead of simply a notification, an action may be taken, such as closing</li>
-			or refusing to open a gate at the entrance to a building, to prevent sick
-			employees from entering the building.
-			<li>To generate statistics, for example to count the number of people with</li>
+			or security workers who need to identify the person in a crowd.</li>
+			<li>Instead of simply a notification, an action may be taken, such as closing 
+			or refusing to open a gate at the entrance to a building, to prevent sick 
+			employees from entering the building.</li>
+			<li>To generate statistics, for example to count the number of people with 
 			fevers, then unique individuals need to be indentified to avoid counting
 			the same person more than once.
-			<li>The same sensors might be used to determine the number of people in</li>
+			<li>The same sensors might be used to determine the number of people in 
 			an area and send a notification if crowded conditions are detected, in
 			order to support social distancing behaviour (for instance, supporting
-			an app that notifies users when a destination is crowded) in a pandemic situation.
-			<li>Cameras that provide video streams rather than still images.</li>
+			an app that notifies users when a destination is crowded) in a pandemic situation.</li>
+			<li>Cameras that provide video streams rather than still images.</li> 
 		      </ul>
 
 		    </dd>
@@ -1766,18 +1800,18 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		    </dd>
 		    <dt>Privacy Considerations</dt>
 		    <dd>
-
 		      <ul>
 			<li>Images of people and their health status is involved. </li>
-			- If later these are made public then the health information of a particular person would be released
-			publically.
-			- There is also the possibility that the camera data could be in error, and should be confirmed with a
-			more accurate sensor.
-			- This information needs to be treated as PII and protected: only distributed to authorized users, and
-			deleted when no longer needed.
-			- However, derived aggregate information can be kept and published.
+			<ul>
+			  <li>If later these are made public then the health information of a particular person would be released
+			  publically.</li>
+			  <li>There is also the possibility that the camera data could be in error, and should be confirmed with a
+			  more accurate sensor.</li>
+			  <li>This information needs to be treated as PII and protected: only distributed to authorized users, and
+			  deleted when no longer needed.</li>
+			  <li>However, derived aggregate information can be kept and published.</li>
+		        </ul>
 		      </ul>
-
 		    </dd>
 		    <dt>Gaps</dt>
 		    <dd>
@@ -2104,8 +2138,8 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		      <ul>
 			<li>WoT Thing Description</li>
 			<li>WoT Discovery</li>
-			<li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-			in IoT orchestration services.
+			<li>Optional: WoT Scripting API in application on mobile personal device and possibly 
+			in IoT orchestration services.</li>
 		      </ul>
 
 		    </dd>
@@ -2347,14 +2381,18 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		      <ul>
 			<li>As an device owner, I want to know whether a device will work with my system before I purchase it to
 			  avoid wasting money.</li>
-			- Installers of IoT devices want to be able to determine if a given device will be compatible with the
-			rest of their installed systems and whether they will have access to its data and affordances.
+			<ul>
+			  <li>Installers of IoT devices want to be able to determine if a given device will be compatible with the
+			rest of their installed systems and whether they will have access to its data and affordances.</li>
+			</ul>
 		      </ul>
 
 		      <ul>
 			<li>As a developer, I want TDs to be as simple as possible so that I can efficiently develop them.</li>
-			- Here "simple" should relate to the end goal, "efficiently develop"; that is, TDs should be
-			straightforward for the average developer to complete and validate.
+			<ul>
+			  <li>Here "simple" should relate to the end goal, "efficiently develop"; that is, TDs should be
+			straightforward for the average developer to complete and validate.</li>
+                        </ul>
 		      </ul>
 
 		      <ul>
@@ -2434,14 +2472,13 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		<dt>Comments</dt>
 		<dd>
 
-		  A strawman proposal for a profile specification has been submitted at: https://github.com/w3c/wot-profile
-
-		  An initial set of requirements is available here:
-		  https://github.com/w3c/wot-profile/edit/master/REQUIREMENTS/requirements.md
-
-
-		  Recommendations for commonalities and interoperability profiles of IoT platforms:
-		  https://european-iot-pilots.eu/wp-content/uploads/2018/11/D06_02_WP06_H2020_CREATE-IoT_Final.pdf
+		  A strawman proposal for a profile specification has been submitted at: <a href="https://github.com/w3c/wot-profile">https://github.com/w3c/wot-profile</a>
+		  <br>
+		  <br>
+		  An initial set of requirements is available here:<a href="https://github.com/w3c/wot-profile/edit/master/REQUIREMENTS/requirements.md">https://github.com/w3c/wot-profile/edit/master/REQUIREMENTS/requirements.md</a>	
+		  <br>
+		  <br>
+		  Recommendations for commonalities and interoperability profiles of IoT platforms:<a href="https://european-iot-pilots.eu/wp-content/uploads/2018/11/D06_02_WP06_H2020_CREATE-IoT_Final.pdf">https://european-iot-pilots.eu/wp-content/uploads/2018/11/D06_02_WP06_H2020_CREATE-IoT_Final.pdf</a>
 		</dd>
 		</dl>
 	      </section>
@@ -2849,8 +2886,8 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		    <ul>
 		      <li>WoT Thing Description</li>
 		      <li>WoT Discovery</li>
-		      <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-		      in IoT orchestration services.
+		      <li>Optional: WoT Scripting API in application on mobile personal device and possibly 
+		      in IoT orchestration services.</li>
 		    </ul>
 
 		  </dd>
@@ -2986,8 +3023,8 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		    <ul>
 		      <li>WoT Thing Description</li>
 		      <li>WoT Discovery</li>
-		      <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-		      in IoT orchestration services.
+		      <li>Optional: WoT Scripting API in application on mobile personal device and possibly 
+		      in IoT orchestration services.</li>
 		    </ul>
 
 		  </dd>
@@ -3138,8 +3175,8 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		    <ul>
 		      <li>WoT Thing Description</li>
 		      <li>WoT Discovery</li>
-		      <li>Optional: WoT Scripting API accessible from application for interacting</li>
-		      with devices.
+		      <li>Optional: WoT Scripting API accessible from application for interacting 
+		      with devices.</li>
 		    </ul>
 
 		  </dd>
@@ -3290,8 +3327,8 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		    <ul>
 		      <li>WoT Thing Description</li>
 		      <li>WoT Discovery</li>
-		      <li>Optional: WoT Scripting API accessible from application for interacting </li>
-		      with devices.
+		      <li>Optional: WoT Scripting API accessible from application for interacting 
+		      with devices.</li>
 		    </ul>
 
 		  </dd>
@@ -3432,8 +3469,8 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		    <ul>
 		      <li>WoT Thing Description</li>
 		      <li>WoT Discovery</li>
-		      <li>Optional: WoT Scripting API in application on mobile personal device and possibly</li>
-		      in IoT orchestration services in the car.
+		      <li>Optional: WoT Scripting API in application on mobile personal device and possibly 
+		      in IoT orchestration services in the car.</li>
 		    </ul>
 
 		  </dd>
@@ -4062,7 +4099,7 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 
 
 		  </dd>
-		  <dt>Privacy Considerations</dt>>
+		  <dt>Privacy Considerations</dt>
 	  <dd>
 
             The TD may expose personal information about the building layout and residents.
@@ -4330,10 +4367,10 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
               <li>Authorization Server: An intermediary that authorizes the client for a particular `scope`. </li>
               <li>Resource: a web resource </li>
               <li>Resource Server: the server where the resource is stored</li>
-              <li>Resource Owner: the owner of a particular web resource. If it is a human is usually referred to as
-                an end-user.</li>
-              More specifically from the RFC:
-              &gt; An entity capable of granting access to a protected resource.
+              <li>Resource Owner: the owner of a particular web resource. If it is a human is usually referred to as an end-user. More specifically from the RFC:</li>
+	      <ul>
+              <li>An entity capable of granting access to a protected resource.</li>
+	      </ul>
             </ul>
 
 
@@ -4344,14 +4381,13 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
               <li>Resource is an interaction affordance</li>
               <li>Resource Server is a Thing described by a Thing Description acting as a server. </li>
               May be a device or a service.
-              <li>Resource Owner might be different in each use case.</li>
-              A Thing Description may also combine resources from different owners or web server.
-
-              TO DO: Check the OAuth 2.0 spec to determine exactly how Resource Owner is defined.
-              Is it the actual owner of the resource (eg running the web server) or simply someone
-              with the rights to access that resource?
+              <li>Resource Owner might be different in each use case. 
+              A Thing Description may also combine resources from different owners or web server.</li>
             </ul>
-
+            TO DO: Check the OAuth 2.0 spec to determine exactly how Resource Owner is defined.
+            Is it the actual owner of the resource (eg running the web server) or simply someone
+            with the rights to access that resource?
+	    <br>
             The OAuth 2.0 protocol specifies an authorization layer that separates the client from the resource owner.
             The basic steps of this protocol are summarized in the following diagram:
             <pre>
@@ -4418,9 +4454,11 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
               <li>Investigate whether DTLS can be used.</li>
               Certainly the connection needs to be encrypted; this is required in the OAuth 2.0 specification.
               <li>Investigate whether protocols other than HTTP can be used, e.g. CoAP.</li>
-              - found an interesting IETF draft RFC about CoAP support(encrypted using various mechanisms like DTLS or
+	      <ul>
+                <li>found an interesting IETF draft RFC about CoAP support(encrypted using various mechanisms like DTLS or
               CBOR Object Signing and Encryption): <a
-                href="https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-35">draft-ietf-ace-oauth</a>
+                href="https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-35">draft-ietf-ace-oauth</a></li>
+              </ul>
             </ul>
 
           </dd>
@@ -4460,17 +4498,22 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
             For each OAuth 2.0 flow, there is a corresponding use case variant.
             We also include the experimental "device" flow for consideration.
 
-            <p>code</p>
+	    <br>
+	    <br>
+            code
 
             A natural application of this protocol is when the end-user wants to interact directly with the consumed
             thing or to grant his authorization to a remote device. In fact from the <a
               href="https://tools.ietf.org/html/rfc6749#section-4.1">RFC6749</a>
 
-            &gt; Since this is a redirection-based flow, the client must be capable of
+            <ul>
+            <li>
+            Since this is a redirection-based flow, the client must be capable of
             interacting with the resource owner's user-agent (typically a web
             browser) and capable of receiving incoming requests (via redirection)
             from the authorization server.
-
+            </li>
+            </ul>
 
             This implies that the code flow can be only used when the resource owner interacts directly with the WoT
             consumer at least once. Typical scenarios are:
@@ -4526,14 +4569,14 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 
             <p>device</p>
 
-            The device flow (IETF <a
-              href="https://tools.ietf.org/html/rfc8628#section-6.2) briefly describes an authentication using a companion app and BLE), as shown in the following (slightly adapted">RFC
-              8628](https://tools.ietf.org/html/rfc8628)) is a variant of the code flow for browserless and
-              input-constrained devices. Similarly, to its *parent* flow, it requires a close interaction between the
+              The device flow (IETF <a href="https://tools.ietf.org/html/rfc8628">RFC 8628</a>) is a variant of the code flow for browserless and
+              input-constrained devices. Similarly, to its <i>parent</i> flow, it requires a close interaction between the
               resource owner and the WoT consumer. Therefore, the use cases for this flow are the same as the code
               authorization grant but restricted to all devices that do not have a rich means to interact with the
               resource owner. However, differently from `code`, RFC 8628 states explicitly that one of the actors of
-              the protocol is an **end-user** interacting with a **browser** (even if [section-6.2</a> diagram:
+              the protocol is an <b>end-user</b> interacting with a <b>browser</b> (even if <a href="https://tools.ietf.org/html/rfc8628#section-6.2">section-6.2</a> 
+              briefly describes an authentication using a companion app and BLE), as shown in the following (slightly adapted) diagram:
+
             <pre>
 +----------+
 |          |
@@ -4571,11 +4614,13 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
             Notable mentions:
             <ul>
               <li>the protocol is heavily end-user oriented. In fact, the RFC states the following</li>
-              &gt; Due to the polling nature of this protocol (as specified in Section 3.4), care is needed to avoid
-              overloading the capacity of the token endpoint. To avoid unneeded requests on the token endpoint, the
-              client SHOULD only commence a device authorization request when **prompted by the user and not
-              automatically**, such as when the app starts or when the previous authorization session expires or
-              fails.
+		<ul>
+              	  <li>Due to the polling nature of this protocol (as specified in Section 3.4), care is needed to avoid
+                  overloading the capacity of the token endpoint. To avoid unneeded requests on the token endpoint, the
+                  client SHOULD only commence a device authorization request when <b>prompted by the user and not
+                  automatically</b>, such as when the app starts or when the previous authorization session expires or
+                  failAs.</li>
+		</ul>
               <li>TLS is required both between WoT Consumer/Authorization Server and between Browser/Authorization
                 Server</li>
               <li>Other user interactions methods may be used but are left out of scope</li>
@@ -4587,12 +4632,14 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
             The Client Credentials grant type is used by clients to obtain an access token outside of the context of
             an end-user. From <a href="https://tools.ietf.org/html/rfc6749#section-4.4">RFC6749</a>:
 
-            &gt; The client can request an access token using only its client
+	    <ul>
+            <li>The client can request an access token using only its client
             credentials (or other supported means of authentication) when the
             the client is requesting access to the protected resources under its
-            control, or __those of another resource owner that has been previously
-            arranged with the authorization server__ (the method of which is beyond
-            the scope of this specification).
+            control, or <b>those of another resource owner that has been previously
+            arranged with the authorization server</b> (the method of which is beyond
+            the scope of this specification).</li>
+            </ul>
 
             Therefore the client credential grant can be used:
             <ul>
@@ -4633,26 +4680,29 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
             Client Credentials.
 
             <p>implicit</p>
-            **Deprecated**
+            <b>Deprecated</b>
             From <a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">OAuth 2.0
               Security Best Current Practice</a>:
-
-            &gt; In order to avoid these issues, clients SHOULD NOT use the implicit
+	    <ul>
+	    <li>
+            In order to avoid these issues, clients SHOULD NOT use the implicit
             grant (response type "token") or other response types issuing access
             tokens in the authorization response, unless access token injection
             in the authorization, response is prevented and the aforementioned
             token leakage vectors are mitigated.
+	    </li>
+	    </ul>
 
             The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE) instead.
-
+	    <br>
             The implicit flow was designed for public clients typically implemented inside a browser (i.e. javascript
             clients). As the `code` is a redirection-based flow and it requires direct interaction with the resource's
             owner user-agent. However, it requires one less step to obtain a token as it is returned directly in the
             authentication request (see the diagram below).
-
+	    <br>
             Considering the WoT context this flow is not particularly different from `code` grant and it can be used
             in the same scenarios.
-
+	    <br>
             Comment: even if the `implicit` flow is deprecated existing services may still using it.
 
             <pre>
@@ -4693,16 +4743,17 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 </pre>
 
             <p>resource owner password</p>
-            **Deprecated** From <a
+            <b>Deprecated</b> From <a
               href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">OAuth 2.0 Security
               Best Current Practice</a>:
-
-            &gt; The resource owner password credentials grant MUST NOT be used. This
+	    <ul>
+            <li>The resource owner password credentials grant MUST NOT be used. This
             grant type insecurely exposes the credentials of the resource owner
             to the client. Even if the client is benign, this results in an
             increased attack surface (credentials can leak in more places than
             just the AS) and users are trained to enter their credentials in
-            places other than the AS.
+            places other than the AS.</li>
+    	    </ul>
 
             For completeness the diagram flow is reported below.
 
@@ -4739,9 +4790,8 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
           <dt>Security Considerations</dt>
           <dd>
 
-            See OAuth 2.0 security considerations in <a
-              href="https://tools.ietf.org/html/rfc8628#section-5">RFC6749](https://tools.ietf.org/html/rfc6749#section-10).
-              See also [RFC 8628 section 5</a> for `device` flow.
+            See OAuth 2.0 security considerations in <a href="https://tools.ietf.org/html/rfc6749#section-10">RFC6749</a>. 
+            See also <a href="https://tools.ietf.org/html/rfc8628#section-5">RFC 8628 section 5</a> for `device` flow.
 
           </dd>
           <dt>Privacy Considerations</dt>
@@ -4891,61 +4941,37 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
           </dd>
           <dt>Existing standards</dt>
           <dd>
-
-            <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
-              for this use case</section>
-            <ul>
-              <li> WoT Security</li>
-              <li>
-                ETSI OneM2M
-              </li>
-              <li>
-                OMA LwM2M
-              </li>
-              <li>
-                OCF
-              </li>
-              <li>
-                IEEE
-              </li>
-              <li>
-                SIM cards / GSMA
-              </li>
-              <li>
-                IETF
-              </li>
-              <li>
-              </li>
-
+	    <ul>
+              <li>WoT Security</li>
+              <li>ETSI OneM2M</li>
+              <li>OMA LwM2M</li>
+              <li>OCF</li>
+              <li>IEEE</li>
+              <li>SIM cards / GSMA</li>
+              <li>IETF</li>
+	      <li>Application Lifecycle (W3C Multimodal Interaction WG)</li>
             </ul>
-
           </dd>
           <dt>Comments</dt>
           <dd>
-<p>
-            All lifecycle contributions and discussion documents are available at:
+          All lifecycle contributions and discussion documents are available at:
             <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle</a>
-
-          </p>
-          <h3>Documents that were created / discussed in the architecture TF.</h3>
-          <p>
-            Lifecycle comparisons:
-            <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/Device-lifecycle-comparisons.pdf">Device-lifecycle-comparisons.pdf</a>
-          </p><p>
-            Lifecycle states:
-            <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/lifecycle-states.md">Lifecycle states</a>
-          </p><p>
-            Draft lifecycle diagram:
-            <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20lifecycle%20diagram-WoT%20new%20lifecycle.svg">Draft lifecycle diagram</a>
-          </p><p>
-            Layered lifecycle:
-            <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20layered%20%20lifecycle%20diagram-WoT%20new%20lifecycle.svg">Layered lifecycle</a>
-          </p><p>
-            System lifecycle:
-            <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/unified%20device%20lifecycle.svg">System lifecycle</a>
-          </p>
-            IoT Security Bootstrapping:
-            <a href="https://github.com/w3c/wot-security/blob/master/presentations/2020-03-16-Bootstrapping%20IoT%20Security%20-%20The%20IETF%20Anima%20and%20OPC-UA%20Recipes.pdf">IoT Security Bootstrapping</a>
+	  <br>
+	  <br>
+          documents that were created / discussed in the architecture TF.
+          <ul> 
+            <li>Lifecycle comparisons:
+            <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/Device-lifecycle-comparisons.pdf">https://github.com/w3c/wot-architecture/blob/master/proposals/Device-lifecycle-comparisons.pdf</a></li>
+            <li>Lifecycle states:
+            <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/lifecycle-states.md">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/lifecycle-states.md</a></li>
+            <li>Draft lifecycle diagram:
+            <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20lifecycle%20diagram-WoT%20new%20lifecycle.svg">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20lifecycle%20diagram-WoT%20new%20lifecycle.svg</a></li>
+            <li>Layered lifecycle:
+            <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20layered%20%20lifecycle%20diagram-WoT%20new%20lifecycle.svg">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20layered%20%20lifecycle%20diagram-WoT%20new%20lifecycle.svg</a></li>
+            <li>System lifecycle:
+            <a href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/unified%20device%20lifecycle.svg">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/unified%20device%20lifecycle.svg</a></li>
+            <li>IoT Security Bootstrapping:
+            <a href="https://github.com/w3c/wot-security/blob/master/presentations/2020-03-16-Bootstrapping%20IoT%20Security%20-%20The%20IETF%20Anima%20and%20OPC-UA%20Recipes.pdf">https://github.com/w3c/wot-security/blob/master/presentations/2020-03-16-Bootstrapping%20IoT%20Security%20-%20The%20IETF%20Anima%20and%20OPC-UA%20Recipes.pdf</a></li>
           </dd>
         </dl>
       </section>
@@ -5002,7 +5028,7 @@ In this scenario, energy-related IoT devices monitor the energy use and income i
 		<li>gateway manufacturer</li>
 		<li>network operator (potentially transparent for WoT use cases)</li>
 		<li>identity provider</li>
-		<li>directory service operator&gt;</li>
+		<li>directory service operator</li>
 	</ul>
 
 	</dd>
