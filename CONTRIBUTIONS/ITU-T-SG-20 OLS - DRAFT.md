@@ -25,7 +25,6 @@ For an introduction of the use cases we are considering for the current charter 
 we provide the WoT Use Cases document for information.
 
 We would appreciate if ITU-T considers areas where exchange of further information 
-(e.g. draft documents, requirements, etc.) can be useful to reduce fragementation of IoT/WoT.
+(e.g. draft documents, requirements, etc.) can be useful to reduce fragmentation of IoT/WoT.
 
-We are interested in your ongoing work, e.g. healthcare use cases, and seek to align our work efforts,
-e.g. jointly developing common documents.
+We are interested in your ongoing work, e.g. healthcare use cases, and seek to align our work efforts.
