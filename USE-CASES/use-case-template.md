@@ -73,7 +73,7 @@
 
 <Describe any issues related to accessibility; if there are none, say "none" and justify>
 
-### International Considerations:
+### Internationalisation (i18n) Considerations:
 
 <Describe any issues related to internationalization; if there are none, say "none" and justify>
 
