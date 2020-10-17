@@ -175,6 +175,7 @@ terminology slightly.
 **Additional references:**
 * [ITU-T Y.4000/Y.2060 (2012) - Overview of the internet of things]()
 * [ITU-T Y.4552/Y.2078 (2016) - Application support models of the internet of things]()
+* [WoO based Framework to support data interoperability in IoT environments, Presentation, Ilyoung Chong, 2020-07-23](https://github.com/mmccool/wot-usecases/blob/itu-summary/CONTRIBUTIONS/ITU-T%20-%20WoO%20based%20Framework%20to%20Spport%20Data%20Interoperability%20Presentation.pdf)
 
 No appendices.
 
@@ -187,3 +188,4 @@ No appendices.
 **Key points in abstract:**
 
 **Additional references:**
+* [WoT Presentation - link needed]()
