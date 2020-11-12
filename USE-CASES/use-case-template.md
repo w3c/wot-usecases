@@ -79,7 +79,7 @@
 
 ### Requirements:
 
-<Describe a hogh level summary of any requirements that are not addressed in the current WoT standards and building blocks>
+<Describe a high level summary of any requirements that are not addressed in the current WoT standards and building blocks>
 
 ### Gaps:
 
