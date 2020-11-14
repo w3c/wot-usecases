@@ -916,10 +916,221 @@ Model historical and forecast data
 	<dt>Comments</dt>
 	<dd>
 
-This use case is designed using the experience gained in the European-Brazil Horizon 2020 SWAMP project. Please follow the <a href="http://swamp-project.org/">link</a> for further information. Since SWAMP is heavily oriented to optimize water consumption, this document just mentioned issues like plant feeding, fertilizing, pollination, yield prediction, crop quality measurement,  etc. Nevertheless, WoT technologies may be employed also in these scenarios. 
+        This use case is designed using the experience gained in the European-Brazil Horizon 2020 SWAMP project. Please follow the 
+        <a href="http://swamp-project.org/">link</a> for further information. Since SWAMP is heavily oriented to optimize water consumption, 
+        this document just mentioned issues like plant feeding, fertilizing, pollination, yield prediction, crop quality measurement,  etc. 
+        Nevertheless, WoT technologies may be employed also in these scenarios. 
 	</dd>
 	</dl>
 	</section>
+        <section id="Agricultural-use-case2">
+        <h2>Irrigation in outdoor environment</h2>
+        <dl>
+
+        <dt>Submitter(s)</dt>
+        <dd>
+
+          <ul>
+            <li>Catherine Roussey, INRAE [1], France</li>
+            <li>Jean-Pierre Chanet, INRAE [1], France</li>
+          </ul>
+
+        </dd>
+        <dt>Reviewer(s)</dt>
+        <dd>
+
+        </dd>
+        <dt>Tracker Issue ID</dt>
+        <dd>
+
+        </dd>
+        <dt>Category</dt>
+        <dd>
+
+        </dd>
+        <dt>Class</dt>
+        <dd>
+ 
+        </dd>
+        <dt>Status</dt>
+        <dd>
+
+        </dd>
+        <dt>Target Users</dt>
+        <dd>
+
+          <ul>
+             <li>device users: farmers</li>
+             <li>service provider</li>
+          </ul>
+
+        </dd>
+        <dt>Motivation</dt>
+        <dd>
+
+        Depending on the type of crops (e.g. maize), cultivated plots may need specific irrigation processes 
+        in outdoor environments. Depending on the country there exist some specific pedo-climatic conditions 
+        and some water consumption restrictions. Thus an irrigation system is installed on the plot. It is used 
+        on a several days basis (e.g. every 7 days), for each plot. The goal is to optimize the irrigation decision 
+        based on the crop development stage and the quantity of rain that has already fallen down on the plot. 
+        For example an important rain may postpone the irrigation decision.
+        <br>
+        <br>
+        This use case aims to evaluate the number of days to delay the irrigation system, in addition to the basis 
+        irrigation frequency (e.g. 2 delay days means 9 days between two irrigations).
+
+        </dd>
+        <dt>Expected Devices</dt>
+        <dd>
+
+          <ul>
+             <li>6 tensiometers in the plot (soil moisture):</li>
+               <ul>
+                 <li> 3 tensiometers at 30 cm depth</li>
+                 <li> 3 tensiometer at 60 cm depth</li>
+               </ul>
+             <li>1 weather station:</li>
+               <ul>
+                 <li>thermometer (outdoor temperature)</li>
+                 <li>pluviometer (rain quantity)</li>
+               </ul>
+             <li>1 mobile pluviometer (quantity of water provided by the watering system)</li>
+          </ul>
+
+       </dd>
+       <dt>Expected Data</dt>
+     <dd>
+
+     To decide when to water a cultivated plot, we evaluate the crop growth stage, the root zone moisture level and the number of delay days:
+
+     <ul>
+       <li>To evaluate the <b>Crop growth stage</b>, we need:</li>
+       <ul>
+         <li>Min and max temperature per day: the <b>min temperature per day</b> is evaluated on the period [d-1 18:00, d 18:00[. The <b>*max temperature per day</b> is evaluated on the period [d  06:00:00, d+1 06:00:00[.i</li>
+         <li><b><a href="https://en.wikipedia.org/wiki/Growing_degree-day">Growing degree day</a></b> values uses min and max temperature per day, the sowing day and the type of seed. The Growing degree day is compared to some thresholds to evaluate the crop growth stage</li>
+       </ul>
+       <li>To evaluate the <b>Root zone moisture level</b>, we need: </li>
+       <ul>
+         <li>Mean moisture per day per probe: in order to get reliable values, each tensiometer sends several measurements of soil moisture, at fixed hours of the day (usually in the morning), that are aggregated; their mean value is considered</li>
+         <li>For the set of 3 tensiometers localised at the same level of depth, the median value is evaluated from their mean per day moisture measurements.  One tensiometer may not provide accurate values (the soil around the probe is too dry and the soil matter is not connected to the probe). The median value of three different tensiometers at the same depth will improve the accuracy of the moisture measurement.</li>
+         <li>Then the sum of the two median values at two different depths is evaluated, to take into account the quantity of water available in the root zone volume. This aggregated value estimates the root zone moisture level. </li>
+         <li>The root zone moisture level is compared to some thresholds (dependent on the crop growth stage) to evaluate if the crop needs water or not at the end of the basis irrigation period.</li>
+       </ul>
+       <li>To determine the <b>number of delay days</b>, we need:</li>
+         <ul>
+           <li>The time period between two waterings of the same plot is dependent on the farm and known by the farmer. When a watering is launched, no new watering should be planned during the basic irrigation frequency. The quantity of rain that falls down on the plot may postpone the watering plan. The total quantity of rain per day is compared to some thresholds to determine the number of delay days.</li>
+         </ul>
+       </ul>
+
+The mobile pluviometer is used to validate that the quantity of water received by the crop actually corresponds to the quantity of water provided by the watering system.
+<br>
+<br>
+At the end, the farmer may decide if he follows the irrigation recommendations or not. He could force the watering for one of the next days.
+<br>
+      </dd>
+      <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+      <dd>
+
+      <ul>
+        <li>WoT Architecture: wireless communication in outdoor environments presents some issues: communication consumes lots of energy, sensor nodes have limited energy, weather conditions impact communication quality</li>
+        <li>WoT Thing Description: the affordance should be precise enough to describe the soil at a specific depth or the root zone volume or the min temperature per day</li>
+      </ul>
+
+      </dd>
+      <dt>Description</dt>
+      <dd>
+
+To avoid Property right and consent management issues between farmers and cloud service providers on these computed data, sensors are connected to the farm infrastructure and the services that evaluate aggregated data are executed locally on this infrastructure.
+<br>
+<br>
+The weather station may be located outside of the farm.
+<br>
+<br>
+The tensiometers are located inside the farm. The tensiometers and the mobile pluviometer are connected using wireless communication to the gateway. The gateway sends the measurements to the farm infrastructure.
+
+      </dd>
+      <dt>Variants:</dt>
+      <dd>
+      The crop growth stage may be observed by the farmer. In this case, he can force this value to update the service inputs.
+
+      </dd>
+      <dt>Security Considerations</dt>
+      <dd>
+
+The 6 tensiometers and 1 pluviometer are installed on the plot,  but only the farmer should be able to change their configurations (frequency of communication). Wireless communication should be used but the measurement data should only be accessible through the farm network infrastructure.
+
+      </dd>
+      <dt>Privacy Considerations</dt>
+      <dd>
+
+      Data concerning quantity of water, type of seed, sowing day should be protected.
+
+      </dd>
+      <dt>Gaps</dt>
+      <dd>
+
+The main potential issues come from tensiometers located in the plot, as they are known to be cheap and easy to use probes but not always reliable. They can face multiple issues: if the soil gets too dry or the probe is improperly installed, there may be air between the probe and the soil, therefore preventing the probe from providing accurate conductivity measurements.
+<br>
+<br>
+To be sure of the quality of those measurements each tensiometer sends its measurements several times (3 to 5) per day. The tensiometer may send an inappropriate value due to the bad connexion between the soil and the probe, that is the reason why three tensiometers are used and the median value is computed. If the gateway does not receive the value of one sensor during a whole day, an alert should be sent. To take an irrigation decision, at least one measurement per sensor and per day should be provided.
+<br>
+<br>
+The gateway can create a virtual entity corresponding to the sensor and allow the application to access this virtual entity having the actual sensor status like sleeping.
+<br>
+<br>
+Sensor nodes deployed in outdoor environments may take into account that their energy supply device (battery, solar panel) constrains the lifetime of the device. Thus  they should be able to alert that they may not be able to provide a service due to lack of energy or they should be able to change their configuration and switch communication protocols to save as much energy as possible.
+<br>
+<br>
+Moreover wireless communication can be impacted by weather conditions or any outdoor conditions. For example a tractor that comes too close to the sensor node may move the communication device and destroy some components. Some kind of network supervision must be achieved (for instance by the gateway) to check node availability.
+
+      </dd>
+      <dt>Existing standards</dt>
+      <dd>
+
+       <ul>
+          <li><a href="https://www.w3.org/TR/vocab-ssn/">Semantic Sensor Network</a></li>
+          <li><a href="https://saref.etsi.org/saref4agri/v1.1.2/">SAREF4Agri</a></li>
+          <li><a href="https://www.w3.org/TR/prov-o/">PROV-O</a></li>
+          <li><a href="https://irstea.github.io/caso/OnToology/ontology/caso.owl/documentation/index-en.html">CASO</a></li>
+          <li><a href="http://www.w3id.org/def/irrig">IRRIG</a></li>
+       </ul>
+
+The CASO and IRRIG ontologies extend SSN, PROV-O and SAREF4AGRI to implement an irrigation expert system.
+<br>
+<br>
+A thesaurus climate and forecast that describes the weather properties and associated phenomenon is available at <a href="http://vocab.nerc.ac.uk/collection/P07/">http://vocab.nerc.ac.uk/collection/P07/</a>.
+<br>
+<br>
+The weather measurements provided by the agricultural weather station of Agrotechnopole is available at <a href="http://ontology.irstea.fr/weather/snorql/">http://ontology.irstea.fr/weather/snorql/</a>. [5]
+
+</dd>
+<dt>Comments</dt>
+<dd>
+
+This use case has been implemented in France, following local conditions and regulations. There exists an open manual irrigation decision method called <a href="http://www.irrinov.arvalisinstitutduvegetal.fr/irrinov.asp">IRRINOV®</a> developed by Arvalis [2] and INRAE dedicated to France and some specific crops: maize, wheat and cereals, potatoes and beans.
+<br>
+<br>
+IRRINOV® can be automated using wireless sensor networks and semantic web technologies. The considered network is of star type: all sensors can communicate with a common gateway, which is connected to the Internet. The IRRINOV® implementation was developed in [3]. This work presents an expert system for maize using drools. It automates the irrigation decision for maize based on sensor measurements.
+<br>
+<br>
+To measure weather properties, we use the recommendation provided by the French National Weather Institute: Météo France[4]. Its web site defines how to evaluate the min and max temperatures per day in <a href="http://www.meteofrance.fr/publications/glossaire/154123-temperature-minimale">http://www.meteofrance.fr/publications/glossaire/154123-temperature-minimale</a> (in French, we found no equivalent description in English). 
+
+        </dd>
+        <dt>References</dt>
+        <dd>
+
+[1] <a href="https://www.inrae.fr/">https://www.inrae.fr/</a>
+<br>
+[2] <a href="https://www.arvalisinstitutduvegetal.fr/">https://www.arvalisinstitutduvegetal.fr/</a>
+<br>
+[3] Q-D. Nguyen,  C. ROUSSEY, M. Poveda-Villalón, C. de Vaulx ,  J-P. Chanet. Development Experience of a Context-Aware System for Smart Irrigation Using CASO and IRRIG Ontologies. Applied Science 2020, 10(5), 1803; <a href="https://doi.org/10.3390/app10051803">https://doi.org/10.3390/app10051803</a>
+<br>
+[4] <a href="http://www.meteofrance.fr/">http://www.meteofrance.fr/</a>
+<br>
+[5] C. ROUSSEY,S. BERNARD, G. ANDRÉ, D. BOFFETY. Weather Data Publication on the LOD using SOSA/SSN Ontology.Semantic Web Journal, 2019 <a href="http://www.semantic-web-journal.net/content/weather-data-publication-lod-using-sosassn-ontology-0">http://www.semantic-web-journal.net/content/weather-data-publication-lod-using-sosassn-ontology-0</a>
+</dd>
+</dl>
+</section>
     </section>
 
     <section id="smart-city">
@@ -5139,7 +5350,146 @@ and privacy controls.
 	</dd>
 	</dl>
 	</section>
+      </section>
+   <section id="VR/AR">
+      <h2>VR/AR</h2>
 
+        <section id="vr-ar-imaging">
+        <h2>VR/AR Virtual Guide (for gaming, medical purposes, etc.)</h2>
+        <dl>
+
+        <dt>Submitter(s)</dt>
+        <dd>
+
+        <ul>
+          <li>Rob Smith</li>
+          <li>Kaz Ashimura</li>
+        </ul>
+
+        </dd>
+        <dt>Reviewer(s)</dt>
+        <dd>
+        </dd>
+        <dt>Tracker Issue ID</dt>
+        <dd>
+        </dd>
+        <dt>Category</dt>
+        <dd>
+
+        vertical ( but quasi-horizontal from accessibility viewpoint)
+
+        </dd>
+        <dt>Class</dt>
+        <dd>
+        </dd>
+        <dt>Status</dt>
+        <dd>
+        </dd>
+        <dt>Target Users</dt>
+        <dd>
+        <ul>
+          <li>device owners</li>
+          <li>device user</li>
+          <li>cloud provider</li>
+          <li>service provider</li>
+          <li>device manufacturer</li>
+          <li>network operator (potentially transparent for WoT use cases)</li>
+          <li>identity provider</li>
+          <li>directory service operator</li>
+        </ul>
+
+        </dd>
+        <dt>Motivation</dt>
+        <dd>
+
+Users can be guided by a virtual assistant through an area of interest with AR/VR to visualise events or structures and an annotated map or space to provide additional geospatial guidance in sync, including locations of other WoT devices. Two synchronized displays can offer greater insight and provide clearer guidance to the user by showing different views of the same location, e.g. a map.
+
+        </dd>
+        <dt>Expected Devices</dt>
+        <dd>
+
+        <ul>
+          <li>Display (possibly a VR Goggle) / speakers for output</li>
+          <li>3D camera / motion sensor for input (possibly microphone for speech recognition)</li>
+          <li>other various devices as output actuators and/or input sensors</li>
+          <li>Recorder and Player to store and reproduce the scenes</li>
+          <li>Data processor to integrate all the related data and devices, e.g., user data, VR space, sensors, actuators, recorder/player</li>
+        </ul>
+
+        </dd>
+        <dt>Expected Data</dt>
+        <dd>
+
+        <ul>
+          <li>location/direction/movement/acceleration information of the user</li>
+          <li>geolocation (latitude, longitude, altitude) information of the virtual space</li>
+          <li>time synchronization of the user's sight and the virtual space movement</li>
+        </ul>
+
+        </dd>
+        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+        <dd>
+
+        <ul>
+          <li>WoT Thing Description</li>
+          <li>WoT Binding Templates</li>
+          <li>WoT Discovery</li>
+          <li>Optional: WoT Scripting API accessible from application for interacting with devices.</li>
+        </ul>
+
+        </dd>
+        <dt>Description</dt>
+        <dd>
+
+        <ul>
+          <li>The user can travel around the real or virtual space with guidance from the virtually defined geospatial data.</li>
+          <li>The video display includes location metadata as well so that the user's virtual movement will be traced and synchronized with the map.</li>
+          <li>The user can control the video images provided by the server, e.g., VR/AR games or medical images, based on the sensors attached the display or the VR goggle</li>
+          <li>This mechanism is not for AR/VR specifically but can be used for video overlay in general. Also related to recording/playing/distributing of video media when the data is stored. Would be useful for simulation and debugging as well.</li>
+          <li>The background technology should include synchronization of the video media and related sensors/displays/devices as well as the geolocation information from the virtual map.</li>
+        </ul>
+
+See also the <a href="https://w3c.github.io/sdw/proposals/geotagging/webvmt/#goldentutorial">Use Case description from the WebVMT draft</a>
+
+        </dd>
+        <dt>Variants</dt>
+        <dd>
+        <ul>
+          <li>A virtual guide for a particular geographic location, e.g. a historical site, which visualises past events and buildings in AR, or allows remotes users to explore in VR.</li>
+          <li>A medical tool which allows a patient to describe their symptoms using AR, e.g. identify a painful area on their own body, which is also modelled as a 'map' to show internal features and display a treatment guide, including any WoT medical devices.</li>
+          <li>A virtual controller for a city engineer to visualise utilities, e.g. electrical cables or water pipes, and control them. For example, a maintenance engineer could switch off an individual street lamp in order to replace the bulb using an AR menu displayed on that WoT lamppost.</li>
+        </ul>
+
+        </dd>
+        <dt>Security Considerations</dt>
+        <dd>
+
+        Personal information should be handled with security, e.g. user geolocation and medical details.
+
+        </dd>
+        <dt>Privacy Considerations</dt>
+        <dd>
+
+        Personal information should be handled with privacy, e.g. user geolocation and medical details.
+
+        </dd>
+        <dt>Requirements</dt>
+        <dd>
+
+        </dd>
+        <dt>Gaps</dt>
+        <dd>
+
+        </dd>
+        <dt>Existing standards</dt>
+        <dd>
+
+       </dd>
+       <dt>Comments</dt>
+       <dd>
+       </dd>
+     </dl>
+    </section>
     </section>
 
     <section id="acknowledgements" class="appendix normative">
