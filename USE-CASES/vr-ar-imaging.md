@@ -75,7 +75,7 @@ Users can be guided by a virtual assistant through an area of interest with AR/V
 - This mechanism is not for AR/VR specifically but can be used for video overlay in general. Also related to recording/playing/distributing of video media when the data is stored. Would be useful for simulation and debugging as well.
 - The background technology should include synchronization of the video media and related sensors/displays/devices as well as the geolocation information from the virtual map.
 
-See also the [Use Case description from the WebVMT draft](https://w3c.github.io/sdw/proposals/geotagging/webvmt/#goldentutorial)
+See also the [Use Case description from the WebVMT Editor's Draft](https://w3c.github.io/sdw/proposals/geotagging/webvmt/#virtualguide)
 
 #### Variants:
 
