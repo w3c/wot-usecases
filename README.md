@@ -1,6 +1,6 @@
 # W3C Web of Things Interest Group - Use Cases
 
-This repository includes various use case proposals and a consolidated docment based on those proposals.
+This repository includes various use case proposals and a consolidated document based on those proposals.
 
 Each commit here will sync it to the master, which will expose the content to http://w3c.github.io/wot-usecases/.
 
@@ -17,19 +17,19 @@ To make direct changes to the IG document, please provide pull-requests to the h
 
 ### Status
 
-In the virtual F2F members of the Architecture WG and Use Case WG assigned the following priorities 
-to the use cases for the 1st round. 
-The list shows the owners for each use case category and expected timeline for a requirement document. 
+In the virtual F2F members of the Architecture WG and Use Case WG assigned the following priorities
+to the use cases for the 1st round.
+The list shows the owners for each use case category and expected timeline for a requirement document.
 
 | Category | business critical | business relevant | useful | not interested | Priority | Timeline for requirements document | Owner | Comments |
-| ------- | ---- | ---- | ---- | --- | --- | --- | --- | --- | 
+| ------- | ---- | ---- | ---- | --- | --- | --- | --- | --- |
 |Retail | 3 | 4 | 5 | 1 | 1 | 2-4 weeks | McCool (+ David ?) | Will be discussed in POC meeting. |
-|Audio/Video | 2 | 5 | 6 | 0 | 1 | ? | NHK + Kaz (+Chris Needham?) | 
+|Audio/Video | 2 | 5 | 6 | 0 | 1 | ? | NHK + Kaz (+Chris Needham?) |
 |Agriculture | 2 | 3 | 7 | 1 | 1 | 2 weeks (greenhouse) | Matsukura-san + Cristiano | Requirement for greenhouse horticulture exists
- |  |  |  |  |  | 4 week |  | 
+ |  |  |  |  |  | 4 week |  |
 |Smart City | 3 | 6 | 4 | 0 | 1 | 2-4 weeks | McCool + Jennifer | Will be discussed in POC meeting.|
 |Health | 3 | 5 | 2 | 3 | 2 * |  |  | Need expertise - |
-|Manufacturing | 4 | 5 | 3 | 1 | 1 | ? | Sebastian+Christian | 
+|Manufacturing | 4 | 5 | 3 | 1 | 1 | ? | Sebastian+Christian |
 |Multi Vendor System Integration | 2 | 9 | 1 | 1 | 1 | 4 weeks | Lagally | horizontal
 |Multimodal System Integration | 2 | 2 | 7 | 2 | 2 | 3-4 weeks | McCool + Kaz + Josh  | horizontal
 |Accessibility | 3 | 2 | 6 | 2 | 1 |  | Josh | Horizontal
@@ -39,7 +39,7 @@ The list shows the owners for each use case category and expected timeline for a
 |Transportation | 3 | 3 | 6 | 1 | 2 * | ? | Zoltan ? | Use case is very high level
  |  |  |  |  |  |  |  | Need industry domain experience
 |Smart Building | 4 | 6 | 2 | 1 | 1 | 3-4 weeks | Farshid+Sebastian  | regulated
- |  |  |  |  |  |  | (+ Andrea) | 
+ |  |  |  |  |  |  | (+ Andrea) |
 |Shared Devices and Resources | 4 | 1 | 6 | 2 | 1 | 2 weeks | Ege (+ McCool) | Horizontal
 |Oauth2 Flows | 2 | 6 | 4 | 1 | 1 | 4 weeks | McCool | Horizontal: Technical Feature, not a use case --> Security TF to create a requirement doc
 Device lifecycle | 3 | 4 | 4 | 3 | 1 | 2-4 weeks | Zoltan + Michael | Horizontal
