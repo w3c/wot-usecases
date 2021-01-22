@@ -2,6 +2,11 @@
 
 ### Submitter(s):
 
+Edison Chung (MINES St. Etienne)
+
+Hervé Pruvost (Fraunhofer IIS EAS)
+
+Georg Ferdinand Schneider (Schaeffler Technologies AG)
 
 ### Reviewer(s):
 
