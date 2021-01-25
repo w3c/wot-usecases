@@ -14,7 +14,7 @@
 
 ### Category:
 
-<please leave blank>
+<please put "horizontal" or "vertical" here>
 
 ### Class: 
 
@@ -69,6 +69,18 @@
 
 <Describe any issues related to privacy; if there are none, say "none" and justify>
 
+### Accessibility Considerations:
+
+<Describe any issues related to accessibility; if there are none, say "none" and justify>
+
+### Internationalisation (i18n) Considerations:
+
+<Describe any issues related to internationalization; if there are none, say "none" and justify>
+
+### Requirements:
+
+<Describe a high level summary of any requirements that are not addressed in the current WoT standards and building blocks>
+
 ### Gaps:
 
 <Describe any gaps that are not addressed in the current WoT standards and building blocks>
@@ -78,4 +90,5 @@
 <Provide links to relevant standards that are relevant for this use case>
 
 ### Comments:
+
 
