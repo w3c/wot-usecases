@@ -72,6 +72,111 @@ Goal of this use case is to automate the process of metadata creation and sharin
 
 Metadata in devices about its location in a building and its related physical elements could be entered initially by BACS providers when placing the devices. Or a device could derive its location from an indoor positioning system delivering him its relative coordinates within a building and from a virtual BIM model representing the topological elements related to that coordinates.
 
+Example TD of a temperature sensor deployed in a kitchen:
+
+```json
+{
+    "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor",
+    "@context": [
+        "https://www.w3.org/2019/wot/td/v1",
+        {
+            "bot": "https://w3id.org/bot#",
+            "sosa": "http://www.w3.org/ns/sosa/",
+            "ssn": "http://www.w3.org/ns/ssn/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+            "dog":"http://elite.polito.it/ontologies/dogont.owl#"
+        }
+    ],
+    "title": "Kitchen-temp-Sensor",
+    "description": "Kitchen Temperature Sensor",
+    "@type": ["sosa:Sensor", "dog:TemperatureSensor", "bot:element"],
+    "@reverse": {
+        "bot:containsElement": {"@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#kitchen"}
+    },
+    "securityDefinitions": {
+        "basic_sc": {
+            "scheme": "basic",
+            "in": "header"
+        }
+    },
+    "security": [
+        "basic_sc"
+    ],
+    "properties": {
+        "Kitchen-temp": {
+            "ssn:forProperty": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp",
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 40.0,
+            "unit": "om:degree_Celsius",
+            "forms": [
+                {
+                    "href": "https://kitchen.example.com/temp",
+                    "contentType": "application/json",
+                    "op": "readproperty"
+                }
+            ],
+            "readOnly": true,
+            "writeOnly": false
+        }
+    }
+}
+```
+
+Example TD of the kitchen where the temperature sensor is deployed:
+
+```json
+{
+    "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#kitchen",
+    "@context": [
+        "https://www.w3.org/2019/wot/td/v1",
+        {
+            "bot": "https://w3id.org/bot#",
+            "sosa": "http://www.w3.org/ns/sosa/",
+            "ssn": "http://www.w3.org/ns/ssn/",
+            "dog": "http://elite.polito.it/ontologies/dogont.owl#"
+        }
+    ],
+    "title": "Kitchen",
+    "@type": ["bot:Space", "dog:Kitchen", "sosa:FeatureOfInterest"],
+    "securityDefinitions": {
+        "basic_sc": {
+            "scheme": "basic",
+            "in": "header"
+        }
+    },
+    "security": [
+		"basic_sc"
+	],
+    "bot:containsElement": [{
+            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor"
+        },
+        {
+            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempT-Sensor"
+        },
+        {
+            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-humid-Sensor"
+        },
+        {
+            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-brigh-Sensor"
+        },
+        {
+            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempS-Actuator"
+        },
+        {
+            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-heater"
+        }
+    ],
+    "ssn:hasProperty": {
+        "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp",
+        "@type": "sosa:ObservableProperty",
+        "sosa:isObservedBy": {
+            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor"
+        }
+    }
+}
+```
+
 #### Variants:
 
 <Describe possible use case variants, if applicable>
