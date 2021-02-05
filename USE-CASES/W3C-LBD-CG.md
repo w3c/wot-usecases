@@ -41,18 +41,12 @@ Sebastian Kaebisch (Siemens)
 
 ### Motivation:
 
-When designing or operating building automation and control systems a substantial effort is spend for giving informational context to some monitoring or control data. Indeed each application or person that consumes that data requires information about its content and its origin:
-- which device produces the data (sensor, merter, actuator...)
-- which physical quantity or aspects it represents with which quality
-- which elements in a building relate directly or indirectly to that data.
-- it is possible to automatically track down that data in a complex system like a building
+When operating buildings, aggregating and managing all data provided by their heterogeneous devices still require lot of manual settings. Besides the hurdles of data acquisition that relies on multiple protocols, data generally lack much contextual information and metadata about its location and purpose. Usually, each service or application that consumes data requires information about its content and its context like e.g.:
+- which thing produces the data (sensor, meter, actuator, other technical component...)
+- which physical quantity or process is represented (temperature, energy supply, monitoring, actuation)
+- which other building things are involved (e.g. sensor hosted by a duct or a space).
 
-For that purpose, current practice by providers and users is to make use of data properties, metadata and naming conventions which are implemented in BMS databases.
-Such information relates mainly to some topological elements of a building where the data is produced or used: space, zone, storey, HVAC component, HVAC zone, etc. Additionally, many other properties are introduced like cost, manufacturer data. One difficulty is especially the lack of unified way of creating and sharing this information. On the contrary manufacturers, service provider and users introduce their own data which is tailored for their specific use but this results in heterogeneity and lack of interoperabilty.   
-
-These problems typically can be addressed by Semantic Web Technologies, which allow to semantically align data from heterogeneous systems and allow restoring of interoperabilty as well as data sharing between different systems and users.
-
-The capability of things to describe themselved in the IoT can support automating the difficult process of metadata creation and management in smart buildings.
+Automatically tracking down data and their related things in a building would especially ease the configuration and operation of BACS systems and HVAC services during commissioning, operation, maintenance and retrofitting. For now, providers and users make use of data properties, metadata and naming conventions which are manually implemented in BMS databases to annotate data and things. Such information relates mainly to some topological elements of a building where the data is produced or used: space, zone, HVAC component, etc. Additionally, many other properties are introduced like cost or specific manufacturer data. One difficulty is especially the lack of normalized way of creating and sharing this information in an automated manner. On the contrary manufacturers, service providers and users introduce their own metadata which are tailored for their specific use or ecosystem. This issues are already partially addressed by the Web of Things (WoT) Thing Description (TD) which aims at providing normalized and syntactic interoperability between things. This use case proposes to enhance the semantic interoperability of the WoT by making use of semantic web that relies on same technological background and especially of ontologies from the Linked Building Data domain. Is should serve many applications for an Internet of Building Things (IoBT).
 
 ### Expected Devices:
 
