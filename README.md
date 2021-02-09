@@ -6,7 +6,12 @@ Each commit here will sync it to the master, which will expose the content to ht
 
 ## Contributing
 
-Please document new use cases in the [CONTRIBUTIONS](CONTRIBUTIONS) directory adopting the template [use-case-template.md](CONTRIBUTIONS/use-case-template.md).
+Please document new *use cases* in the [USE-CASES](USE-CASES) directory adopting the template [use-case-template.md](USE-CASES/use-case-template.md) or [use-case-template.html](USE-CASES/use-case-template.html).
+
+Please describe new *requirements* in the [REQUIREMENTS](REQUIREMENTS) directory using the template [requirements-template.md](REQUIREMENTS/requirements.md) or [requirements-template.html](REQUIREMENTS/requirements.html).
+
+
+Please put all other contributions in the [CONTRIBUTIONS](CONTRIBUTIONS) directory using an open file format, e.g.text, markdown, html, svg.
 
 To make direct changes to the IG document, please provide pull-requests to the html file, see [github help](https://help.github.com/articles/using-pull-requests/).
 
