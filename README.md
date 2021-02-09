@@ -6,9 +6,9 @@ Each commit here will sync it to the master, which will expose the content to ht
 
 ## Contributing
 
-Please document new *use cases* in the [USE-CASES](USE-CASES) directory adopting the template [use-case-template.md](USE-CASES/use-case-template.md) or [use-case-template.html](USE-CASES/use-case-template.html).
+Please document new *use cases* in the [USE-CASES](USE-CASES) directory adopting the template [use-case-template.md](USE-CASES/use-case-template.md) (Markdown) or [use-case-template.html](USE-CASES/use-case-template.html) (HTML). The HTML template is the preferred form.
 
-Please describe new *requirements* in the [REQUIREMENTS](REQUIREMENTS) directory using the template [requirements-template.md](REQUIREMENTS/requirements.md) or [requirements-template.html](REQUIREMENTS/requirements.html).
+Please describe new *requirements* in the [REQUIREMENTS](REQUIREMENTS) directory using the template [requirements-template.md](REQUIREMENTS/requirements.md) (Markdown) or [requirements-template.html](REQUIREMENTS/requirements.html) (HTML). The HTML template is the preferred form.
 
 
 Please put all other contributions in the [CONTRIBUTIONS](CONTRIBUTIONS) directory using an open file format, e.g.text, markdown, html, svg.
