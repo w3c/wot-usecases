@@ -1,5 +1,4 @@
-This directory contains the use cases 
-for the next revision (V1.1) of the WoT architecture.
+This directory contains the use cases for the next revisions of the WoT specifications.
 
 Please document new **use cases** in this directory adopting the template [use-case-template.md](USE-CASES/use-case-template.md) (Markdown) or [use-case-template.html](USE-CASES/use-case-template.html) (HTML). The HTML template is the preferred form.
 
