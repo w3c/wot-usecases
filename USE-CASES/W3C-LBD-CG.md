@@ -64,15 +64,15 @@ Automatically tracking down data and their related things in a building would es
 
 Goal of this use case is to show the potential to automate workflows in smart building management by using a combination of Web of Data standards including Web of Things Thing Description.
 
-#### Combining Localisation and Thing Descriptions
+#### Combining Location and Thing Descriptions
 
 The use case is related to the maintenance of Building Automation and Control Systems (BACS), where a [temperature sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) is replaced with a new one. The following thing description describes a kitchen with a number of sensors, including the replaced one, in a building (The use case is based on the [Open Smart Home Dataset](https://github.com/TechnicalBuildingSystems/OpenSmartHomeData)).
 
-Example thing description of a [kitchen](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#kitchen) where the temperature sensor is deployed:
+Example thing description of a [kitchen](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen) where the temperature sensor is deployed:
 
 ```json
 {
-    "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#kitchen",
+    "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen",
     "@context": [
         "https://www.w3.org/2019/wot/td/v1",
         {
@@ -122,7 +122,7 @@ Example thing description of a [kitchen](https://w3id.org/ibp/osh/OpenSmartHomeD
 }
 ```
 
-The localisation information of the tangible object [kitchen](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#kitchen) is provided based on the [Building Topology Ontology (BOT)](https://w3id.org/bot) a minimal ontology developed by the [W3C Linked Building Data Community Group (W3c LBD CG)](https://www.w3.org/community/lbd/) to describe the topology of buildings in the semantic web.
+The location information of the tangible object [kitchen](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen) is provided based on the [Building Topology Ontology (BOT)](https://w3id.org/bot), a minimal ontology developed by the [W3C Linked Building Data Community Group (W3c LBD CG)](https://www.w3.org/community/lbd/) to describe the topology of buildings in the semantic web.
 
 The topological information localising the things, e.g. the [temperature sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) can be used to automatically commission the newly replaced sensor and link it to existing control algorithms. For this purpose the identifiers of suitable sensors and actuators are needed and can be, for example, queried via [SPARQL](https://www.w3.org/TR/sparql11-query/).
 
@@ -140,41 +140,41 @@ WHERE{
   ?actuator rdf:type brick:Zone_Air_Temperature_Setpoint .
 }
 ```
-Or the same query can be implemented within an API built upon the [HTTP:](https://tools.ietf.org/html/rfc7231#section-4) scheme. Here could be an example endpoint applying [REST](https://roy.gbiv.com/pubs/dissertation/top.htm) style for getting same information:
+Or a similar query can be implemented within an API built upon the [HTTP:](https://tools.ietf.org/html/rfc7231#section-4) scheme. Below is an example endpoint applying [REST](https://roy.gbiv.com/pubs/dissertation/top.htm) style for getting same information for a specific space name:
 ```
-GET https://example-wot-servername/api/locations/:spaceID?sensors=true&actuators=true
-API-response:
+GET "https://example-wot-servername/api/locations?space=Kitchen&sensors=true&actuators=true"
+API response:
 {
   "location": {
     "site": {
-      "id": "string",
-      "name": "string"
+      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Site1",
+      "name": "Site1"
     },
     "building": {
-      "id": "string",
-      "name": "string"
+      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Building1",
+      "name": "Building1"
     },
-    "zone": {
-      "id": "string",
-      "name": "string"
-    },
+    "zone": null,
     "storey": {
-      "id": "string",
-      "name": "string"
+      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Level2",
+      "name": "Level2"
     },
     "space": {
-      "id": "string",
-      "name": "string"
+      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen",
+      "name": "Kitchen"
     },
   "sensors": [
-
-  ]
+    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor",
+    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempT-Sensor",
+    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-humid-Sensor",
+    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-brigh-Sensor"
+  ],
   "actuators": [
-
+    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempS-Actuator"
   ]
 }
 ```
-One developer could also implement the previous SPARQL query using GraphQL web query language for obtaining same JSON response objects:  
+One developer could also implement the previous SPARQL query within GraphQL web query language for obtaining similar JSON response objects (ToDo: GraphQL description and example in next patch):  
 
 #### Automated Update of Fault Detection Rule based on Thing Description
 
@@ -198,7 +198,7 @@ Another use case in smart buildings, which would greatly benefit from harmonised
     "description": "Kitchen Temperature Sensor",
     "@type": ["sosa:Sensor", "dog:TemperatureSensor", "bot:element" , brick:Zone_Air_Temperature_Sensor],
     "@reverse": {
-        "bot:containsElement": {"@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#kitchen"}
+        "bot:containsElement": {"@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen"}
     },
     "securityDefinitions": {
         "basic_sc": {
