@@ -4,7 +4,7 @@
 
 Edison Chung (MINES St. Etienne)
 
-Hervé Pruvost (Fraunhofer IIS EAS)
+[Hervé Pruvost (Fraunhofer IIS EAS)](https://orcid.org/0000-0001-7604-8543)
 
 [Georg Ferdinand Schneider (Schaeffler Technologies AG)](https://orcid.org/0000-0002-2033-859X)
 
@@ -66,7 +66,7 @@ Goal of this use case is to show the potential to automate workflows in smart bu
 
 #### Combining Localisation and Thing Descriptions
 
-The use case is related to the maintenance of Building Automation and Control Systems (BACS), where a [temperature sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) is replaced with a new one. The following thing description describes a kitchen with a number sensors, including the replaced one, in a building (The use case is based on the [Open Smart Home Dataset](https://github.com/TechnicalBuildingSystems/OpenSmartHomeData)). 
+The use case is related to the maintenance of Building Automation and Control Systems (BACS), where a [temperature sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) is replaced with a new one. The following thing description describes a kitchen with a number of sensors, including the replaced one, in a building (The use case is based on the [Open Smart Home Dataset](https://github.com/TechnicalBuildingSystems/OpenSmartHomeData)).
 
 Example thing description of a [kitchen](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#kitchen) where the temperature sensor is deployed:
 
@@ -140,6 +140,41 @@ WHERE{
   ?actuator rdf:type brick:Zone_Air_Temperature_Setpoint .
 }
 ```
+Or the same query can be implemented within an API built upon the [HTTP:](https://tools.ietf.org/html/rfc7231#section-4) scheme. Here could be an example endpoint applying [REST](https://roy.gbiv.com/pubs/dissertation/top.htm) style for getting same information:
+```
+GET https://example-wot-servername/api/locations/:spaceID?sensors=true&actuators=true
+API-response:
+{
+  "location": {
+    "site": {
+      "id": "string",
+      "name": "string"
+    },
+    "building": {
+      "id": "string",
+      "name": "string"
+    },
+    "zone": {
+      "id": "string",
+      "name": "string"
+    },
+    "storey": {
+      "id": "string",
+      "name": "string"
+    },
+    "space": {
+      "id": "string",
+      "name": "string"
+    },
+  "sensors": [
+
+  ]
+  "actuators": [
+
+  ]
+}
+```
+One developer could also implement the previous SPARQL query using GraphQL web query language for obtaining same JSON response objects:  
 
 #### Automated Update of Fault Detection Rule based on Thing Description
 
