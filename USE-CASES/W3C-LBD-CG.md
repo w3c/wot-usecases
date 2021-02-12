@@ -50,11 +50,20 @@ Automatically tracking down data and their related things in a building would es
 
 ### Expected Devices:
 
-<List the target devices, e.g. as a sensor, solar panel, air conditioner>
+- Actuators
+- Sensors
+- Devices from the building context
+- Devices from the HVAC system
+- Smart devices
 
 ### Expected Data:
 
-<List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors, vehicle data>
+- 2D location
+- Depth position (height position)
+- Geolocation
+- Semantic location
+- Sensor ID
+- Thing Descriptions
 
 ### Dependencies - Affected WoT deliverables and/or work items:
 
