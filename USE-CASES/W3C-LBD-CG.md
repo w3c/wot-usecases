@@ -1,7 +1,7 @@
 # TODOs need to be removed!
 
 
-## Title: Smart Linked Building Data
+## Title: Smart Building Things
 
 ### Submitter(s):
 
@@ -44,14 +44,15 @@ Sebastian Kaebisch (Siemens)
 
 ### Motivation:
 
-When operating buildings, aggregating and managing all data provided by their heterogeneous devices still require lot of manual effort. Besides the hurdles of data acquisition that relies on multiple protocols, the acquired data generally lacks much contextual information and metadata about its location and purpose. Usually, each service or application that consumes data requires information about its content and its context like e.g.:
+When operating smart buildings, aggregating and managing all data provided by heterogeneous devices in these buildings still requires a lot of manual effort. Besides the hurdles of data acquisition that relies on multiple protocols, the acquired data generally lacks much contextual information and metadata about its location and purpose. Usually, each service or application that consumes data requires information about its content and its context like e.g.:
 - which thing produces the data (sensor, meter, actuator, other technical component...) in a building
 - which physical quantity or process is represented (temperature, energy supply, monitoring, actuation)
 - which other building things are involved (e.g. sensor hosted by a duct or a space).
+Through the increased use of model based data exchange over the whole life cycle of a building, often referred to as Building Information Modelling (BIM), a curated source for data describing the building itself is available including, amongst others, the topology of the building structured into sites, stores and spaces.
 
-Automatically tracking down data and their related things in a building would especially ease the configuration and operation of Building Automation and Control Systems (BACS) systems and Heating Ventilation and Air-Conditioning (HVAC) services during commissioning, operation, maintenance and retrofitting. To tackle this challenges, still, building experts make use of data properties, metadata and naming conventions which are manually implemented in Building Management Systems (BMS) databases to annotate data and things. An important relationship in the data is the location of a thing to one or more topological elements of a building where the data is produced or used. Foe example, the temperature sensor of a space, the temperature setpoint of a zone, a mixing damper flap acutator of a HVAC component, etc. In addition, other attributes of things are of interest, such as cost or specific manufacturer data. One difficulty is especially the lack of a standardized way of creating and sharing this information in an automated manner. On the contrary manufacturers, service providers and users introduce their own metadata, e.g. the Web of Things (WoT) Thing Description (TD), which aim at providing normalized and syntactic interoperability between things.
+Automatically tracking down data and their related things in a building would especially ease the configuration and operation of Building Automation and Control Systems (BACS) systems and Heating Ventilation and Air-Conditioning (HVAC) services during commissioning, operation, maintenance and retrofitting.  To tackle these challenges, still, building experts make use of metadata and naming conventions, which are manually implemented in Building Management Systems (BMS) databases to annotate data and things. An important relationship of a thing is it´s location in the topology of a building, where the data is produced or used. For example, the temperature sensor of a space, the temperature setpoint of a zone, a mixing damper flap actuator of a HVAC component, etc. In addition, other attributes of things are of interest, such as cost or specific manufacturer data. One difficulty is especially the lack of a standardized way of creating, linking and sharing this information in an automated manner. On the contrary manufacturers, service providers and users introduce their own metadata, e.g. the Web of Things (WoT) Thing Description (TD), which aim at providing normalized and syntactic interoperability between things.
 
-This use case is motivating by the need to enhance semantic interoperability between things in smart buildings and their relationships to the building. The use case provides and example web of Web of Data technologies and reuses schemas available from the Linked Building Data domain. Is should serve as a use case template for many applications in an Internet of Building Things (IoBT).
+This use case is motivated by the need to enhance semantic interoperability between things in smart buildings and their relationships to the building. Data on the building is obtained from a BIM model. The use case builds on Web of Web of Data technologies and reuses schemas available from the linked building data domain. It should serve as a use case template for many applications in an Internet of Building Things (IoBT).
 
 ### Expected Devices:
 
@@ -80,119 +81,8 @@ The goal of this use case is to show the potential to automate workflows and add
 
 #### Combining Topological Context and Thing Descriptions
 
-The scenario considered is related to the replacement of a [temperature sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) in a BACS. The following TD describes a kitchen with a number of sensors, including the replaced one, in a building (The use case is based on the [Open Smart Home Dataset](https://github.com/TechnicalBuildingSystems/OpenSmartHomeData/blob/master/00_OpenSmartHomeData.ttl)).
-
-Example thing description of a [kitchen](https://github.com/TechnicalBuildingSystems/OpenSmartHomeData/blob/master/00_OpenSmartHomeData.ttl) where the temperature sensor is deployed:
-
-```json
-{
-    "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen",
-    "@context": [
-        "https://www.w3.org/2019/wot/td/v1",
-        {
-            "bot": "https://w3id.org/bot#",
-            "sosa": "http://www.w3.org/ns/sosa/",
-            "ssn": "http://www.w3.org/ns/ssn/"
-        }
-    ],
-    "title": "Kitchen",
-    "@type": ["bot:Space", "sosa:FeatureOfInterest"],
-    "securityDefinitions": {
-        "basic_sc": {
-            "scheme": "basic",
-            "in": "header"
-        }
-    },
-    "security": [
-		"basic_sc"
-	],
-    "bot:containsElement": [{
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor"
-        },
-        {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempT-Sensor"
-        },
-        {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-humid-Sensor"
-        },
-        {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-brigh-Sensor"
-        },
-        {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempS-Actuator"
-        },
-        {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-heater"
-        }
-    ],
-    "ssn:hasProperty": {
-        "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp",
-        "@type": "sosa:ObservableProperty",
-        "sosa:isObservedBy": {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor"
-        }
-    }
-}
-```
-
-The location information of the tangible object [kitchen](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen) is provided based on the [Building Topology Ontology (BOT)](https://w3id.org/bot), a minimal ontology developed by the [W3C Linked Building Data Community Group (W3c LBD CG)](https://www.w3.org/community/lbd/) to describe the topology of buildings in the semantic web.
-
-The topological information localising the things, e.g. the [temperature sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) can be used to automatically commission the newly replaced sensor and link it to existing control algorithms. For this purpose the identifiers of suitable sensors and actuators are needed and can be, for example, queried via [SPARQL](https://www.w3.org/TR/sparql11-query/).
-
-```sparql
-PREFIX bot: <https://w3id.org/bot>
-PREFIX brick: <https://brickschema.org/schema/1.1/Brick#>
-
-SELECT ?sensor ?actuator
-WHERE{
-  ?space a bot:Space .
-  ?space bot:containsElement ?sensor .
-  ?space bot:containsElement ?actuator .
-  ?sensor a brick:Zone_Air_Temperature_Sensor .
-  ?actuator a brick:Zone_Air_Temperature_Setpoint .
-}
-```
-
-Similarly a query can be implemented within an API built upon the [HTTP:](https://tools.ietf.org/html/rfc7231#section-4) scheme. Below is an example endpoint applying [REST](https://roy.gbiv.com/pubs/dissertation/top.htm) style for getting same information for a specific space name:
-
-```json
-GET "https://example-wot-servername/api/locations?space=Kitchen&sensors=true&actuators=true"
-API response:
-{
-  "location": {
-    "site": {
-      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Site1",
-      "name": "Site1"
-    },
-    "building": {
-      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Building1",
-      "name": "Building1"
-    },
-    "zone": null,
-    "storey": {
-      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Level2",
-      "name": "Level2"
-    },
-    "space": {
-      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen",
-      "name": "Kitchen"
-    },
-  "sensors": [
-    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor",
-    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempT-Sensor",
-    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-humid-Sensor",
-    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-brigh-Sensor"
-  ],
-  "actuators": [
-    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempS-Actuator"
-  ]
-}
-```
-
-#### Automated Update of Fault Detection Rule based on Thing Description
-
-Another related case in smart buildings, which would greatly benefit from harmonised thing descriptions is related to the detection of unexpected behaviour, errors and faults. An example for such a fault detection is the rule-based surveillance of sensor values. A generic rule is that the sensor values should be withing the operation range of the sensor. Again in the case of maintenance as described above a sensor is replaced. The respective sensor provides its operating range in its TD (see example below). There the operating range is specified using the [SOSA/SSN](https://www.w3.org/TR/vocab-ssn/) schema.
-
+The scenario considered is related to the replacement of a temperature sensor in a BACS. The use cases is based on the [Open Smart Home Dataset](https://github.com/TechnicalBuildingSystems/OpenSmartHomeData/blob/master/00_OpenSmartHomeData.ttl)), which defines a BIM model for a flat combined with observations made by typical smart home sensors. We extend the dataset with thing descriptions of some of the items.
+The respective thing description of a temperature sensor in the kitchen is as follows:
 ```json
 {
     "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor",
@@ -240,12 +130,114 @@ Another related case in smart buildings, which would greatly benefit from harmon
     }
 }
 ```
+The location information of the thing [Kitchen-temp-Sensor]( https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) is provided based on the [Building Topology Ontology (BOT)](https://w3id.org/bot), a minimal ontology developed by the [W3C Linked Building Data Community Group (W3C LBD CG)](https://www.w3.org/community/lbd/) to describe the topology of buildings in the semantic web.
+The topological information localising the things, e.g. the [temperature sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) can be used to automatically commission the newly replaced sensor and link it to existing control algorithms. For this purpose, the identifiers of suitable sensors and actuators are needed and can be, for example, queried via [SPARQL](https://www.w3.org/TR/sparql11-query/). Here the query uses some additional classification of sensors from [BRICK schema](https://brickschema.org/ontology/1.1).
 
-Again a query or call retrieving this information (minimum/maximum) can be used to the update the upper and lower bound of the values provided by the [sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor).
+```sparql
+PREFIX bot: <https://w3id.org/bot>
+PREFIX brick: <https://brickschema.org/schema/1.1/Brick#>
+PREFIX osh: <https://w3id.org/ibp/osh/OpenSmartHomeDataSet#>
+SELECT ?sensor ?actuator
+WHERE{
+  ?space a bot:Space .
+  ?space bot:containsElement ?sensor .
+  ?space bot:containsElement ?actuator .
+  ?sensor a brick:Zone_Air_Temperature_Sensor .
+  ?actuator a brick:Zone_Air_Temperature_Setpoint .
+}
+```
+
+Similarly this data can a queried via a REST API built upon the [HTTP](https://tools.ietf.org/html/rfc7231#section-4) protocol. Below is an example endpoint applying [REST](https://roy.gbiv.com/pubs/dissertation/top.htm) style for getting same information for a specific space name:
+
+```json
+GET "https://server.example.com/api/locations?space=osh:Kitchen&sensorType= brick:Zone_Air_Temperature_Sensor&actuatorType=brick:Zone_Air_Temperature_Setpoint"
+API response:
+{
+  "location": {
+    "site": {
+      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Site1",
+      "name": "Site1"
+    },
+    "building": {
+      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Building1",
+      "name": "Building1"
+    },
+    "zone": null,
+    "storey": {
+      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Level2",
+      "name": "Level2"
+    },
+    "space": {
+      "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen",
+      "name": "Kitchen"
+    },
+  "sensors": [
+    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor",
+  ],
+  "actuators": [
+    "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempS-Actuator"
+  ]
+}
+```
+
+#### Automated Update of Fault Detection Rule based on Thing Description
+
+Another related case in smart buildings, which would greatly benefit from harmonised thing descriptions and their localisation is related to the detection of unexpected behaviour, errors and faults. An example for such a fault detection is the rule-based surveillance of sensor values. A generic rule is that the sensor values should be within the measurement range of the sensor. Again, in the case of maintenance as described above a sensor is replaced. The respective sensor provides its measurement range in its TD (see example below). There the measurement range is specified using the [SOSA/SSN](https://www.w3.org/TR/vocab-ssn/) schema.
+
+```json
+TODO: Add Sensor with measurement range in SOSA SSN
+{
+    "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor",
+    "@context": [
+        "https://www.w3.org/2019/wot/td/v1",
+        {
+            "bot": "https://w3id.org/bot#",
+            "ssn": "http://www.w3.org/ns/ssn/",
+            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+			"brick": "https://brickschema.org/schema/1.1/Brick#"
+        }
+    ],
+    "title": "Kitchen-temp-Sensor",
+    "description": "Kitchen Temperature Sensor",
+    "@type": [ "bot:element" , brick:Zone_Air_Temperature_Sensor ],
+    "@reverse": {
+        "bot:containsElement": {"@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen"}
+    },
+    "securityDefinitions": {
+        "basic_sc": {
+            "scheme": "basic",
+            "in": "header"
+        }
+    },
+    "security": [
+        "basic_sc"
+    ],
+    "properties": {
+        "Kitchen-temp": {
+            "ssn:forProperty": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp",
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 40.0,
+            "unit": "om:degree_Celsius",
+            "forms": [
+                {
+                    "href": "https://kitchen.example.com/temp",
+                    "contentType": "application/json",
+                    "op": "readproperty"
+                }
+            ],
+            "readOnly": true,
+            "writeOnly": false
+        }
+    }
+}
+```
+
+Again, a query or call to a REST API retrieving this information (schema:minValue/ schema:maxValue) can be used to update the upper and lower bound of the values provided by the [sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor).
 
 ### Security Considerations:
 
-Security in smart buildings is of importance. In particular, access control needs to be propertly secured. Also from other observations, e.g. electricity consumption, clues can be made such as precence in a home. Hence, security needs to properly in place 
+Security in smart buildings is of importance. In particular, access control needs to be properly secured. Also, from other observations, e.g. electricity consumption, clues can be made such as presence in a home. Hence, security needs to properly in place 
 
 ### Privacy Considerations:
 
