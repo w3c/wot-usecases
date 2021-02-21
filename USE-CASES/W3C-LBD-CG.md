@@ -255,10 +255,6 @@ Security in smart buildings is of importance. In particular, access control need
 
 Privacy considerations can be of a concern if observations of sensors can be matched to individuals.
 
-### Gaps:
-
-<Describe any gaps that are not addressed in the current WoT standards and building blocks>
-
 ### Existing standards:
 
 - [SAREF4Bldg an ETSI Standard](https://saref.etsi.org/saref4bldg/)
@@ -266,5 +262,3 @@ Privacy considerations can be of a concern if observations of sensors can be mat
 - [Industry Foundation Classes (IFC) an ISO standard](http://www.buildingsmart-tech.org/ifcOWL/IFC4_ADD2)
 - [Building Topology Ontology](https://w3id.org/bot)
 - [BRICK](https://brickschema.org/ontology/1.1)
-
-### Comments:
