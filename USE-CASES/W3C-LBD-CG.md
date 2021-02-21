@@ -190,7 +190,7 @@ Where the contextual information on the measurement range of the sensor is speci
 }
 ```
 
-#### Combining Topological Context and Thing Descriptions
+#### _Combining Topological Context and Thing Descriptions_
 
 The scenario considered is related to the replacement of a temperature sensor in a BACS. The topological information localising the things, e.g. the [temperature sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) can be used to automatically commission the newly replaced sensor and link it to existing control algorithms. For this purpose, the identifiers of suitable sensors and actuators are needed and can be, for example, queried via [SPARQL](https://www.w3.org/TR/sparql11-query/). Here the query uses some additional classification of sensors from [BRICK schema](https://brickschema.org/ontology/1.1).
 
@@ -241,7 +241,7 @@ API response:
 }
 ```
 
-#### Automated Update of Fault Detection Rule based on Thing Description
+#### _Automated Update of Fault Detection Rule based on Thing Description_
 
 Another related use case in smart buildings, which would greatly benefit from harmonised thing descriptions and attached localisation information is related to the detection of unexpected behaviour, errors and faults. An example for such a detection of faults is the rule-based surveillance of sensor values. A generic rule applicable to sensors is that the observation values stay within the measurement range of the sensor. Again, in the case of maintenance as described above a sensor is replaced.
 
