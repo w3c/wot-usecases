@@ -82,56 +82,50 @@ The goal of this use case is to show the potential to automate workflows and add
 
 The scenario considered is related to the replacement of a [temperature sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) in a BACS. The following TD describes a kitchen with a number of sensors, including the replaced one, in a building (The use case is based on the [Open Smart Home Dataset](https://github.com/TechnicalBuildingSystems/OpenSmartHomeData/blob/master/00_OpenSmartHomeData.ttl)).
 
-Example thing description of a [kitchen](https://github.com/TechnicalBuildingSystems/OpenSmartHomeData/blob/master/00_OpenSmartHomeData.ttl) where the temperature sensor is deployed:
+Example JSON-LD describing the topology of a [kitchen](https://github.com/TechnicalBuildingSystems/OpenSmartHomeData/blob/master/00_OpenSmartHomeData.ttl) where the temperature sensor and the temperature setpoint actuator are deployed:
 
 ```json
 {
-    "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen",
-    "@context": [
-        "https://www.w3.org/2019/wot/td/v1",
-        {
-            "bot": "https://w3id.org/bot#",
-            "sosa": "http://www.w3.org/ns/sosa/",
-            "ssn": "http://www.w3.org/ns/ssn/"
-        }
-    ],
-    "title": "Kitchen",
-    "@type": ["bot:Space", "sosa:FeatureOfInterest"],
-    "securityDefinitions": {
-        "basic_sc": {
-            "scheme": "basic",
-            "in": "header"
-        }
+    "@context": {
+        "osh": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#",
+        "bot": "https://w3id.org/bot#",
+        "sosa": "http://www.w3.org/ns/sosa/",
+        "ssn": "http://www.w3.org/ns/ssn/",
+        "dog": "http://elite.polito.it/ontologies/dogont.owl#"
     },
-    "security": [
-		"basic_sc"
-	],
+    "@id": "osh:Kitchen",
+    "@type": ["bot:Space", "dog:Kitchen", "sosa:FeatureOfInterest"],
     "bot:containsElement": [{
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor"
+            "@id": "osh:Kitchen-temp-Sensor"
         },
         {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempT-Sensor"
+            "@id": "osh:Kitchen-tempT-Sensor"
         },
         {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-humid-Sensor"
+            "@id": "osh:Kitchen-humid-Sensor"
         },
         {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-brigh-Sensor"
+            "@id": "osh:Kitchen-brigh-Sensor"
         },
         {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempS-Actuator"
+            "@id": "osh:Kitchen-tempS-Actuator"
         },
         {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-heater"
+            "@id": "osh:Kitchen-heater"
         }
     ],
-    "ssn:hasProperty": {
-        "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp",
-        "@type": "sosa:ObservableProperty",
-        "sosa:isObservedBy": {
-            "@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor"
+    "ssn:hasProperty": [
+        {
+            "@id": "osh:Kitchen-temp",
+            "@type": "sosa:ObservableProperty",
+            "sosa:isObservedBy": {
+                "@id": "osh:Kitchen-temp-Sensor"
+            }
+        }, {
+            "@id": "osh:Kitchen-tempS",
+            "@type": "sosa:ActuatableProperty"
         }
-    }
+    ]
 }
 ```
 
@@ -191,7 +185,7 @@ API response:
 
 #### Automated Update of Fault Detection Rule based on Thing Description
 
-Another related case in smart buildings, which would greatly benefit from harmonised thing descriptions is related to the detection of unexpected behaviour, errors and faults. An example for such a fault detection is the rule-based surveillance of sensor values. A generic rule is that the sensor values should be withing the operation range of the sensor. Again in the case of maintenance as described above a sensor is replaced. The respective sensor provides its operating range in its TD (see example below). There the operating range is specified using the [SOSA/SSN](https://www.w3.org/TR/vocab-ssn/) schema.
+Another related case in smart buildings, which would greatly benefit from harmonised thing descriptions is related to the detection of unexpected behaviour, errors and faults. An example for such a fault detection is the rule-based surveillance of sensor values. A generic rule is that the sensor values should be withing the operation range of the sensor. Again in the case of maintenance as described above a sensor is replaced. The respective sensor provides its capability and operating range in its TD (see example below). These are specified using the [SSNS](http://www.w3.org/ns/ssn/systems/) schema.
 
 ```json
 {
@@ -199,17 +193,23 @@ Another related case in smart buildings, which would greatly benefit from harmon
     "@context": [
         "https://www.w3.org/2019/wot/td/v1",
         {
+            "osh": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#",
             "bot": "https://w3id.org/bot#",
+            "sosa": "http://www.w3.org/ns/sosa/",
             "ssn": "http://www.w3.org/ns/ssn/",
             "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
-			"brick": "https://brickschema.org/schema/1.1/Brick#"
+            "dog": "http://elite.polito.it/ontologies/dogont.owl#",
+            "ssns": "http://www.w3.org/ns/ssn/systems/",
+            "schema": "http://schema.org"
         }
     ],
     "title": "Kitchen-temp-Sensor",
     "description": "Kitchen Temperature Sensor",
-    "@type": [ "bot:element" , brick:Zone_Air_Temperature_Sensor ],
+    "@type": ["sosa:Sensor", "dog:TemperatureSensor", "bot:element"],
     "@reverse": {
-        "bot:containsElement": {"@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen"}
+        "bot:containsElement": {
+            "@id": "osh:Kitchen"
+        }
     },
     "securityDefinitions": {
         "basic_sc": {
@@ -222,7 +222,6 @@ Another related case in smart buildings, which would greatly benefit from harmon
     ],
     "properties": {
         "Kitchen-temp": {
-            "ssn:forProperty": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp",
             "type": "number",
             "minimum": 0.0,
             "maximum": 40.0,
@@ -237,11 +236,84 @@ Another related case in smart buildings, which would greatly benefit from harmon
             "readOnly": true,
             "writeOnly": false
         }
+    },
+    "sosa:observes": {
+        "@id": "osh:Kitchen-temp",
+        "@type": "sosa:ObservableProperty"
+    },
+    "ssns:hasOperatingRange": {
+        "@id": "osh:Kitchen-temp-Sensor-OpRa",
+        "@type": "ssns:OperatingRange",
+        "ssns:inCondition": {
+            "@type": ["ssns:Condition", "schema:PropertyValue"],
+            "schema:minValue": 0.0,
+            "schema:maxValue": 40.0,
+            "schema:unitCode": "om:degreeCelsius"
+        }
+    },
+    "ssns:hasSystemCapability": {
+        "@id": "osh:Kitchen-temp-Sensor-Capa",
+        "@type": "ssns:SystemCapability",
+        "ssns:hasSystemProperty": {
+            "@type": ["ssns:MeasurementRange", "schema:PropertyValue"],
+            "schema:minValue": 0.0,
+            "schema:maxValue": 40.0,
+            "schema:unitCode": "om:degreeCelsius"
+        }
     }
 }
+
 ```
 
 Again a query or call retrieving this information (minimum/maximum) can be used to the update the upper and lower bound of the values provided by the [sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor).
+
+Example of a temperature setpoint actuator:
+
+```json
+{
+    "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempS-Actuator",
+    "@context": [
+        "https://www.w3.org/2019/wot/td/v1",
+        {
+            "osh": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#",
+            "bot": "https://w3id.org/bot#",
+            "sosa": "http://www.w3.org/ns/sosa/",
+            "ssn": "http://www.w3.org/ns/ssn/",
+            "dog": "http://elite.polito.it/ontologies/dogont.owl#"
+        }
+    ],
+    "title": "Kitchen-tempS-Actuator",
+    "description": "Kitchen Temperature Setpoint Actuator",
+    "@type": ["sosa:Actuator", "dog:ThermostaticRadiatorValve", "bot:element"],
+    "@reverse": {
+        "bot:containsElement": {
+            "@id": "osh:Kitchen"
+        }
+    },
+    "securityDefinitions": {
+        "basic_sc": {
+            "scheme": "basic",
+            "in": "header"
+        }
+    },
+    "security": [
+        "basic_sc"
+    ],
+    "actions": {
+        "Kitchen-tempS": {
+            "forms": [
+                {
+                    "href": "https://kitchen.example.com/tempS"
+                }
+            ]
+        }
+    },
+    "ssn:forProperty": {
+        "@id": "osh:Kitchen-tempS",
+        "@type": "sosa:ActuatableProperty"
+    }
+}
+```
 
 ### Security Considerations:
 
