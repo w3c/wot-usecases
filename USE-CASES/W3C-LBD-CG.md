@@ -1,6 +1,5 @@
 # TODOs need to be removed!
 
-
 ## Title: Smart Building Things
 
 ### Submitter(s):
@@ -83,23 +82,30 @@ The goal of this use case is to show the potential to automate workflows and add
 
 The scenario considered is related to the replacement of a temperature sensor in a BACS. The use cases is based on the [Open Smart Home Dataset](https://github.com/TechnicalBuildingSystems/OpenSmartHomeData/blob/master/00_OpenSmartHomeData.ttl)), which defines a BIM model for a flat combined with observations made by typical smart home sensors. We extend the dataset with thing descriptions of some of the items.
 The respective thing description of a temperature sensor in the kitchen is as follows:
+
 ```json
 {
     "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor",
     "@context": [
         "https://www.w3.org/2019/wot/td/v1",
         {
+            "osh": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#",
             "bot": "https://w3id.org/bot#",
+            "sosa": "http://www.w3.org/ns/sosa/",
             "ssn": "http://www.w3.org/ns/ssn/",
             "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
-			"brick": "https://brickschema.org/schema/1.1/Brick#"
+            "dog": "http://elite.polito.it/ontologies/dogont.owl#",
+            "ssns": "http://www.w3.org/ns/ssn/systems/",
+            "schema": "http://schema.org"
         }
     ],
     "title": "Kitchen-temp-Sensor",
     "description": "Kitchen Temperature Sensor",
-    "@type": [ "bot:element" , brick:Zone_Air_Temperature_Sensor ],
+    "@type": ["sosa:Sensor", "dog:TemperatureSensor", "bot:element"],
     "@reverse": {
-        "bot:containsElement": {"@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen"}
+        "bot:containsElement": {
+            "@id": "osh:Kitchen"
+        }
     },
     "securityDefinitions": {
         "basic_sc": {
@@ -112,11 +118,10 @@ The respective thing description of a temperature sensor in the kitchen is as fo
     ],
     "properties": {
         "Kitchen-temp": {
-            "ssn:forProperty": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp",
             "type": "number",
             "minimum": 0.0,
             "maximum": 40.0,
-            "unit": "om:degree_Celsius",
+            "unit": "om:degreeCelsius",
             "forms": [
                 {
                     "href": "https://kitchen.example.com/temp",
@@ -127,9 +132,24 @@ The respective thing description of a temperature sensor in the kitchen is as fo
             "readOnly": true,
             "writeOnly": false
         }
+    },
+    "sosa:observes": {
+        "@id": "osh:Kitchen-temp",
+        "@type": "sosa:ObservableProperty"
+    },
+    "ssns:hasSystemCapability": {
+        "@id": "osh:Kitchen-temp-Sensor-Capa",
+        "@type": "ssns:SystemCapability",
+        "ssns:hasSystemProperty": {
+            "@type": ["ssns:MeasurementRange", "schema:PropertyValue"],
+            "schema:minValue": 0.0,
+            "schema:maxValue": 40.0,
+            "schema:unitCode": "om:degreeCelsius"
+        }
     }
 }
 ```
+
 The location information of the thing [Kitchen-temp-Sensor]( https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) is provided based on the [Building Topology Ontology (BOT)](https://w3id.org/bot), a minimal ontology developed by the [W3C Linked Building Data Community Group (W3C LBD CG)](https://www.w3.org/community/lbd/) to describe the topology of buildings in the semantic web.
 The topological information localising the things, e.g. the [temperature sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor) can be used to automatically commission the newly replaced sensor and link it to existing control algorithms. For this purpose, the identifiers of suitable sensors and actuators are needed and can be, for example, queried via [SPARQL](https://www.w3.org/TR/sparql11-query/). Here the query uses some additional classification of sensors from [BRICK schema](https://brickschema.org/ontology/1.1).
 
@@ -182,26 +202,34 @@ API response:
 
 #### Automated Update of Fault Detection Rule based on Thing Description
 
-Another related case in smart buildings, which would greatly benefit from harmonised thing descriptions and their localisation is related to the detection of unexpected behaviour, errors and faults. An example for such a fault detection is the rule-based surveillance of sensor values. A generic rule is that the sensor values should be within the measurement range of the sensor. Again, in the case of maintenance as described above a sensor is replaced. The respective sensor provides its measurement range in its TD (see example below). There the measurement range is specified using the [SOSA/SSN](https://www.w3.org/TR/vocab-ssn/) schema.
+Another related use case in smart buildings, which would greatly benefit from harmonised thing descriptions and attached localisation information is related to the detection of unexpected behaviour, errors and faults. An example for such a detection of faults is the rule-based surveillance of sensor values. A generic rule applicable to sensors is that the observation values stay within the measurement range of the sensor. Again, in the case of maintenance as described above a sensor is replaced. The respective sensor provides its measurement range in its TD (see example below). There the measurement range is specified using the [SSNS](http://www.w3.org/ns/ssn/systems/) schema.
+
+
+
+Again, a query or call to a REST API retrieving this information (schema:minValue/ schema:maxValue) can be used to update the upper and lower bound of the values provided by the [sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor).
+
+Example of a temperature setpoint actuator:
 
 ```json
-TODO: Add Sensor with measurement range in SOSA SSN
 {
-    "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor",
+    "id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempS-Actuator",
     "@context": [
         "https://www.w3.org/2019/wot/td/v1",
         {
+            "osh": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#",
             "bot": "https://w3id.org/bot#",
+            "sosa": "http://www.w3.org/ns/sosa/",
             "ssn": "http://www.w3.org/ns/ssn/",
-            "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
-			"brick": "https://brickschema.org/schema/1.1/Brick#"
+            "dog": "http://elite.polito.it/ontologies/dogont.owl#"
         }
     ],
-    "title": "Kitchen-temp-Sensor",
-    "description": "Kitchen Temperature Sensor",
-    "@type": [ "bot:element" , brick:Zone_Air_Temperature_Sensor ],
+    "title": "Kitchen-tempS-Actuator",
+    "description": "Kitchen Temperature Setpoint Actuator",
+    "@type": ["sosa:Actuator", "dog:ThermostaticRadiatorValve", "bot:element"],
     "@reverse": {
-        "bot:containsElement": {"@id": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen"}
+        "bot:containsElement": {
+            "@id": "osh:Kitchen"
+        }
     },
     "securityDefinitions": {
         "basic_sc": {
@@ -212,28 +240,21 @@ TODO: Add Sensor with measurement range in SOSA SSN
     "security": [
         "basic_sc"
     ],
-    "properties": {
-        "Kitchen-temp": {
-            "ssn:forProperty": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp",
-            "type": "number",
-            "minimum": 0.0,
-            "maximum": 40.0,
-            "unit": "om:degree_Celsius",
+    "actions": {
+        "Kitchen-tempS": {
             "forms": [
                 {
-                    "href": "https://kitchen.example.com/temp",
-                    "contentType": "application/json",
-                    "op": "readproperty"
+                    "href": "https://kitchen.example.com/tempS"
                 }
-            ],
-            "readOnly": true,
-            "writeOnly": false
+            ]
         }
+    },
+    "ssn:forProperty": {
+        "@id": "osh:Kitchen-tempS",
+        "@type": "sosa:ActuableProperty"
     }
 }
 ```
-
-Again, a query or call to a REST API retrieving this information (schema:minValue/ schema:maxValue) can be used to update the upper and lower bound of the values provided by the [sensor](https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor).
 
 ### Security Considerations:
 
