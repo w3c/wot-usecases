@@ -2,7 +2,7 @@
 
 ### Submitter(s):
 
-[Edison Chung (MINES St. Etienne)](https://github.com/chung-edison)
+[Edison Chung (MINES St. Etienne)](https://orcid.org/0000-0002-5672-5508)
 
 [Hervé Pruvost (Fraunhofer IIS EAS)](https://orcid.org/0000-0001-7604-8543)
 
@@ -90,6 +90,7 @@ The use cases is based on the [Open Smart Home Dataset](https://github.com/Techn
             "sosa": "http://www.w3.org/ns/sosa/",
             "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
             "ssns": "http://www.w3.org/ns/ssn/systems/",
+            "brick": "https://brickschema.org/schema/1.1/Brick#",
             "schema": "http://schema.org"
         }
     ],
@@ -154,7 +155,7 @@ Where the contextual information on the measurement range of the sensor is speci
             "bot": "https://w3id.org/bot#",
             "sosa": "http://www.w3.org/ns/sosa/",
             "ssn": "http://www.w3.org/ns/ssn/",
-            "dog": "http://elite.polito.it/ontologies/dogont.owl#"
+            "brick": "https://brickschema.org/schema/1.1/Brick#"
         }
     ],
     "title": "Kitchen-tempS-Actuator",
