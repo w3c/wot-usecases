@@ -6188,8 +6188,8 @@
   <section id="VR/AR">
     <h2>VR/AR</h2>
 
-    <section id="vr-ar-imaging">
-      <h2>VR/AR Virtual Guide (for gaming, medical purposes, etc.)</h2>
+    <section id="ar-guide">
+      <h2>AR Virtual Guide</h2>
       <dl>
 
         <dt>Submitter(s)</dt>
@@ -6203,6 +6203,10 @@
         </dd>
         <dt>Reviewer(s)</dt>
         <dd>
+          <ul>
+            <li>Michael McCool</li>
+            <li>Christine Perey</li>
+          </ul>
         </dd>
         <dt>Tracker Issue ID</dt>
         <dd>
@@ -6236,22 +6240,28 @@
         <dt>Motivation</dt>
         <dd>
 
-          Users can be guided by a virtual assistant through an area of interest with AR/VR to visualise events or
-          structures and an annotated map or space to provide additional geospatial guidance in sync, including
-          locations of other WoT devices. Two synchronized displays can offer greater insight and provide clearer
-          guidance to the user by showing different views of the same location, e.g. a map.
+          Using a wearable semi-transparent display,
+          users can be guided by a virtual assistant through a physical area of interest with 
+          a rendered overlay to visualize events, annotate structures and other physical features, 
+          or visualize live and historical data associated with features of interest (which may or
+          may not be at the same physical location as the sensor generating the data).
+          An annotated map may provide additional geospatial guidance, including
+          identification of landmarks, locations of devices.   The system may also guide the 
+          user along a specific trajectory.
 
         </dd>
         <dt>Expected Devices</dt>
         <dd>
 
           <ul>
-            <li>Display (possibly a VR Goggle) / speakers for output</li>
-            <li>3D camera / motion sensor for input (possibly microphone for speech recognition)</li>
-            <li>other various devices as output actuators and/or input sensors</li>
+            <li>Wearable, semi-transparent head-mounted display</li> 
+            <li>Headphones for speakers for audio output</li>
+            <li>Geopose and motion estimator (various technologies can be used)</li>
+<!-- Do we need this?  Its function is handled by the data processor 
             <li>Recorder and Player to store and reproduce the scenes</li>
-            <li>Data processor to integrate all the related data and devices, e.g., user data, VR space, sensors,
-              actuators, recorder/player</li>
+-->
+            <li>Data processor to integrate all data (including live an historical data and geopose),
+              generate annotations for the display, and record/play scenes</li>
           </ul>
 
         </dd>
@@ -6259,9 +6269,10 @@
         <dd>
 
           <ul>
-            <li>location/direction/movement/acceleration information of the user</li>
-            <li>geolocation (latitude, longitude, altitude) information of the virtual space</li>
-            <li>time synchronization of the user's sight and the virtual space movement</li>
+            <li>3D Position, orientation, velocity, and acceleration of the user</li>
+            <li>Corresponding geolocation information (latitude, longitude, altitude) for all features of interest, including
+              but not limited to physical landmarks, roads and paths, and locations of sensor's measurement points.</li>
+            <li>Timestamps to allow synchronization between the annotations and data streams and the user's movement</li>
           </ul>
 
         </dd>
@@ -6280,17 +6291,23 @@
         <dd>
 
           <ul>
-            <li>The user can travel around the real or virtual space with guidance from the virtually defined geospatial
-              data.</li>
-            <li>The video display includes location metadata as well so that the user's virtual movement will be traced
-              and synchronized with the map.</li>
-            <li>The user can control the video images provided by the server, e.g., VR/AR games or medical images, based
-              on the sensors attached the display or the VR goggle</li>
-            <li>This mechanism is not for AR/VR specifically but can be used for video overlay in general. Also related
-              to recording/playing/distributing of video media when the data is stored. Would be useful for simulation
-              and debugging as well.</li>
-            <li>The background technology should include synchronization of the video media and related
-              sensors/displays/devices as well as the geolocation information from the virtual map.</li>
+            <li>The user can travel around a real space with guidance from virtually defined geospatial
+              data projected on a head-mounted wearable display synchronized with the view of the physical
+              environment.</li>
+            <li>The wearable display can generate position and orientation (geopose) data so that the user's 
+              movement will be traced through the physical environment and can synchronized with virtual features.</li>
+            <li>The user can control the video images provided by the system, based
+              sensors attached the display system or other means of control (gestures, voice input, etc.)</li>
+            <li>The technology should include synchronization of playback of stored video media and related
+              sensors, displays, and devices as well as the display of geolocation information from the virtual map.</li>
+            <li>Discovery of sensors should take into account the position and field of view of the user
+              so that data can be retreived only for the relevant features of interest.</li>
+            <li>Discovery may additionally want to consider the motion (e.g. velocity) of the user to that
+              data soon to come into view can be prefetched.</li>
+            <li>Metadata for sensors needs to distinguish between the location of the device itself and the 
+              feature of interest it is measuring.  For example, a camera might monitor traffic on a highway.
+              The feature of interest is the location on the highway being monitored, while the location of the 
+              camera might be quite far away (e.g. mounted on top of a building).</li>
           </ul>
 
           See also the <a href="https://w3c.github.io/sdw/proposals/geotagging/webvmt/#virtualguide">Use Case
@@ -6300,35 +6317,91 @@
         <dt>Variants</dt>
         <dd>
           <ul>
+            <li>Two synchronized displays (for example, a phone and a headset) can offer greater insight and provide clearer
+              guidance to the user by showing different views of the same location, e.g. a top-view map on the phone.</li>
+            <li>A VR (virtual-only) implementation may also be used, with a rendered scene replacing the real scene.
+              This may be applicable to contexts such as a Smart City dashboard where sensor information from data 
+              needs to be viewed in context without having to actually visit the site.</li>
+            <li>The head-mounted semi-transparent display might be replaced in some contexts with a handheld display
+              e.g. a phone or tablet.  To be useful for AR however, such a device needs a back camera to simulate transparency
+              and capture images of the real environment (optional for VR), and a way to determine its geolocation and
+              orientation (geopose) relative to the environment.</li>
+            <li>The head-mounted display may use a camera rather than being physically transparent.</li>
+            <li>A microphone may be added for voice input, including voice commands.  This avoid having to clutter the 
+             view with controls.</li>
+            <li>A 3D camera (e.g. LIDAR) may be used to capture a view of the environment, which can be helpful to
+              establish geopose and align annotations with real features of the environment.</li>
             <li>A virtual guide for a particular geographic location, e.g. a historical site, which visualises past
-              events and buildings in AR, or allows remotes users to explore in VR.</li>
+              events and buildings in AR, or allows remote users to explore in VR.</li>
             <li>A medical tool which allows a patient to describe their symptoms using AR, e.g. identify a painful area
               on their own body, which is also modelled as a 'map' to show internal features and display a treatment
               guide, including any WoT medical devices.</li>
             <li>A virtual controller for a city engineer to visualise utilities, e.g. electrical cables or water pipes,
               and control them. For example, a maintenance engineer could switch off an individual street lamp in order
-              to replace the bulb using an AR menu displayed on that WoT lamppost.</li>
+              to replace the bulb using an AR menu displayed on that WoT-enabled lamppost.</li>
+            <li>These mechanisms can also be used for video overlay in general. The technologies are related
+              to the recording, playing, and distribution of video content when the data is stored. 
+              Playback of stored data and movements would be useful for simulation and debugging.</li>
           </ul>
 
         </dd>
         <dt>Security Considerations</dt>
         <dd>
 
-          Personal information should be handled with security, e.g. user geolocation and medical details.
+          <ul>
+          <li>If an AR systems is compromised it could be used to guide a user into a dangerous
+          situation while hiding that fact from them, e.g. encouraging them to step over a drop.</li> 
+          <li>For the above reason the system should "fail gracefully" if there is any sign its integrity is
+          compromised, and should implement mechanisms (e.g. signing) to detect tampering. 
+          Standards should be similar to other systems than can cause physical harm, e.g. automobiles.</li>
+          <li>For a "simulated" transparent head-mounted display using a camera, the system should
+          have a fail-safe supporting an unfiltered view, which should be automatic even if the processor
+          crashes.</li>
+          <li>For all systems the user should have a simple
+          way (e.g. a single button push) of viewing "baseline reality".</li>
+          </ul>
 
         </dd>
         <dt>Privacy Considerations</dt>
         <dd>
 
-          Personal information should be handled with privacy, e.g. user geolocation and medical details.
+          <ul>
+          <li>Systems that handle or display private data, e.g. medical applications, should respect the 
+          relevant regulations.</li>
+          <li>Private data should not be retained by the device or used for purposes other than which it
+          was provided.  This includes the location of personal devices.  To display information from another's
+          personal device, permission needs to be explicity granted by that person and this permission should
+          be time and possibly space-limited.
+          </li>
+          </ul>
 
         </dd>
         <dt>Requirements</dt>
         <dd>
+          <ul>
+          <li>Geospatially aware discovery mechanisms that can discover features of interest close to the 
+            user.</li>
+          <li>Geospatial filters for discovery that include a pyramid-shaped region representing the field of view of the user.  
+            Note: a basic cylindrical, spherical, or rectangular filter region can be used instead and then the
+            irrelevant results filtered out, but this is less efficient than the filter itself supporting field-of-view
+            queries.
+          </li>
+          <li>Geospatial data associate with the metadata for devices. Note that mobile devices may update their
+            position more rapidly than a discovery service may be able to support.  In this case the discovery service
+            needs to take the velocity and last known position of the data source into account and compute
+            a zone of uncertainty and return the metadata for sources that might possibly be in the field of view.
+            For sources such as this with dynamic positions, the AR system may also communicate with data sources
+            directly to determine their most recent geolocation.
+          </li>
+          </ul>
 
         </dd>
         <dt>Gaps</dt>
         <dd>
+          <ul>
+          <li>Geospatial queries for discovery.</li>
+          <li>Standardized encodings of geospatial metadata in TDs.</li>
+          </ul>
 
         </dd>
         <dt>Existing standards</dt>
