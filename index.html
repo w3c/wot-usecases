@@ -1758,61 +1758,42 @@
       <section id="smartcity-geolocation">
         <h2>Smart City Geolocation</h2>
         <dl>
-
-          <dt>Submitter(s)</dt>
-          <dd>
-
+          <dt>Submitter(s)</dt><dd>
             Jennifer Lin (GovTech Singapore), Michael McCool
-
           </dd>
-          <dt>Reviewer(s)</dt>
-          <dd>
-
+          <dt>Reviewer(s)</dt><dd>
             Michael Lagally
+          </dd>
+          <dt>Tracker Issue ID</dt><dd>
 
           </dd>
-          <dt>Tracker Issue ID</dt>
-          <dd>
-
-
+          <dt>Category</dt><dd>
 
           </dd>
-          <dt>Category</dt>
-          <dd>
-
-
+          <dt>Class</dt><dd>
 
           </dd>
-          <dt>Class</dt>
-          <dd>
-
-
+          <dt>Status</dt><dd>
 
           </dd>
-          <dt>Status</dt>
-          <dd>
-
-
-
-          </dd>
-          <dt>Target Users</dt>
-          <dd>
-
+          <dt>Target Users</dt><dd>
+            <p>
             A Smart City managing mobile devices and sensors,
             including passively mobile sensor packs, packages,
             vehicles, and autonomous robots, where their location needs to
             be determined dynamically.
-
-            <section id="todo-target-users-x" class="ednote">TODO: Stakeholders/Users need to be further clarified.
-              They include "city government,
+            </p>
+            <section id="todo-target-users-smartcity-geolocation" class="ednote">
+            <p>
+              TODO: Stakeholders/Users need to be further clarified.
+              They include the city government,
               people counting
               service providers, police, network providers, ...
+            </p>
             </section>
-
           </dd>
-          <dt>Motivation</dt>
-          <dd>
-
+          <dt>Motivation</dt><dd>
+            <p>
             Smart Cities need to track a large number of mobile devices and sensors.
             Location information may be integrated with a logistics or fleet management
             system.
@@ -1822,14 +1803,13 @@
             could be used, but indoors other geolocation technologies might be
             used, such as WiFi triangulation or vision-based navigation (SLAM).
             Therefore the geolocation information should be technology-agnostic.
-
+            </p><p>
             NOTE: we prefer the term "geolocation", even indoors, over "localization" to
             avoid confusion with language localization.
-
+            </p>
           </dd>
-          <dt>Expected Devices</dt>
-          <dd>
-
+          <dt>Expected Devices</dt><dd>
+            <p>
             One of the following:
             <ul>
               <li>A geolocation system on a personal device, such as a smart phone.</li>
@@ -1838,11 +1818,10 @@
               <li>A geolocation system on a payload transported by a vehicle.</li>
               <li>A geolocation system on an indoor mobile robot.</li>
             </ul>
-
+            </p>
           </dd>
-          <dt>Expected Data</dt>
-          <dd>
-
+          <dt>Expected Data</dt><dd>
+            <p>
             <ul>
               <li>Sensor ID</li>
               <li>Timestamp of last geolocation</li>
@@ -1852,7 +1831,7 @@
                 <li>May also be semantic, i.e. room in a building, exit</li>
               </ul>
             </ul>
-
+            </p><p>
             Optional:
             <ul>
               <li>Semantic location</li>
@@ -1883,11 +1862,10 @@
               </ul>
               <li>Historical data</li>
             </ul>
-
+            </p><p>
             Note: the system should be capable of notifying consumers
             of changes in location.
             This may be used to implement geofencing by some other system.
-            <br>
             This may require additional parameters, such as the
             maximum distance that the device may be moved before a notification is
             sent, or the maximum amount of time between updates.
@@ -1895,28 +1873,23 @@
             not be traditional push mechanisms (for example, email might be used).
             For geofencing applications, it is not necessary that the device be aware
             of the fence boundaries; these can be managed by a separate system.
-
+            <p>
           </dd>
-          <dt>Dependencies</dt>
-          <dd>
-
+          <dt>Dependencies</dt><dd>
             node-wot
-
           </dd>
-          <dt>Description</dt>
-          <dd>
-
+          <dt>Description</dt><dd>
+            <p>
             Smart Cities have the need to observe the physical locations of
             large number of mobile devices
             in use in the context of a Fleet or Logistics Management System, or
             to place sensor data on a map in a Dashboard application.
             These systems may also include geofencing notifications and mapping
             (visual tracking) capabilities.
-
+            </p>
           </dd>
-          <dt>Variants</dt>
-          <dd>
-
+          <dt>Variants</dt><dd>
+            <p>
             <ul>
               <li>A version of the system may log historical data so the past</li>
               locations of the devices can be recovered.
@@ -1927,48 +1900,44 @@
               <li>Geofencing may be implemented using event notifications and
                 will require setting of additional parameters such as maximum distance.</li>
             </ul>
-
+            </p>
           </dd>
-          <dt>Security Considerations</dt>
-          <dd>
-
+          <dt>Security Considerations</dt><dd>
+            <p>
             High-resolution timestamps can be used in conjunction with cache manipulation to
             access protected regions of memory, as with the SPECTRE exploit. Certain
             geolocation APIs and technologies can return high-resolution timestamps which
             can be a potential problem. Eventually these issues will be addressed in cache
             architecture but in the meantime a workaround is to artificially limit the
             resolution of timestamps.
-
+            </p>
           </dd>
-          <dt>Privacy Considerations</dt>
-          <dd>
-
+          <dt>Privacy Considerations</dt><dd>
+            <p>
             Location is generally considered private information when it is used with a device
             that may be associated with a specific person, such as a phone or vehicle, as it
             can be used to track that person and infer their activities or who they associate
             with (if multiple people are being tracked at once). Therefore APIs to access geographic location
             in sensitive contexts are often restricted, and access is allowed only after confirming
             permission from the user.
-
+            </p>
           </dd>
-          <dt>Gaps</dt>
-          <dd>
-
-            There is no standardized semantic vocabulary for representing location data.
+          <dt>Gaps</dt><dd>
+            <p>
+            There is no single standardized semantic vocabulary for representing location data.
             Location data can be point data, a path, an area or a volumetric object.
             Location information can be expressed using multiple standards,
             but the reader of location data in a TD or in data returned by an IoT device
             must be able to unambiguously describe location information.
-
+            </p><p>
             There are both dynamic (data returned by a mobile sensor) and static (fixed installation
             location) applications for geolocation data. For dynamic location data, some recommended vocabulary
             to annotate data schemas would be useful. For static location data, a standard format
             for metadata to be included in a TD itself would be useful.
-
+            </p>
           </dd>
-          <dt>Existing standards</dt>
-          <dd>
-
+          <dt>Existing standards</dt><dd>
+            <p>
             <ul>
               <li>NMEA: defines sentences from GPS devices</li>
               <li><a href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS84</a>:</li>
@@ -2034,18 +2003,166 @@
                 </li>
                 <li>See also related issues such as latency defined in SSN</li>
               </ul>
-
+              </p><p>
               Note that accuracy and time are issues that apply to all kinds of sensors, not just
               geolocation. However, the specific geolocation technology of GPS
               is special since it is also a source of accurate time.
-
+              </p>
           </dd>
-          <dt>Comments</dt>
-          <dd>
+          <dt>Comments</dt><dd>
 
           </dd>
         </dl>
       </section>
+      <section id="smartcity-dashboard">
+      <h2>Smart City Dashboard</h2>
+        <dl>
+          <dt>Submitter(s)</dt><dd>
+            Michael McCool
+          </dd>
+        <dt>Reviewer(s)</dt><dd>
+          Jennifer Lin, Michael Lagally
+        </dd>
+        <dt>Tracker Issue ID</dt><dd>
+
+        </dd>
+        <dt>Category</dt><dd>
+
+        </dd>
+        <dt>Class</dt><dd>
+
+        </dd>
+        <dt>Status</dt><dd>
+
+        </dd>
+        <dt>Target Users</dt><dd>
+          <p>
+          A Smart City managing a large number of devices whose data
+          needs to be visualized and understood in context.
+          </p>
+          <p>
+          Stakeholders include:
+          <ul>
+            <li>device owners: need to make data from devices available to dashboard system.</li>
+            <li>device user: users of the dashboard system, such as members of city management,
+                are indirectly "using" the devices by accessing their data, and
+                in one variant, sending commands to actuators.</li>
+            <li>cloud provider: the dashboard system itself or components of it (such as a database or data ingestion system) may
+                be hosted in the cloud./li>
+          </ul>
+          </p>
+          <section id="todo-target-users-smartcity-dashboard" class="ednote">
+            <p>
+              TODO: Stakeholders/Users need to be further clarified.
+            </p>
+          </section>
+        </dd>
+        <dt>Motivation</dt><dd>
+          <p>
+          In order to facilitate Smart City planning and decision-making, a Smart City 
+          dashboard interface makes it possible for city management to 
+          view and visualize all sensor data through the entire city in real time,
+          with data identified as to geographic source location.  
+          </p>
+        </dd>
+        <dt>Expected Devices</dt><dd>
+          <p>
+          Actuators can include robots; for these, commands might be given to robots to move to new locations,
+          drop off or pick up sensor packages, etc.
+          However, it could also include other kinds of actuators, such as flood gates, traffic signals, lights, signs, etc.
+          For example, posting a public message on an electronic billboard might be one task possible through the
+          dashboard.
+          </p><p>
+          Sensors can include those for the environment and for people and traffic management 
+          (density counts, thermal cameras, car speeds, etc).
+          status of robots, other actuators, and sensors, data visualization,
+          and (optionally) historical comparisons.
+          </p><p>
+          Dashboard would include mapping functionality. 
+          Mapping implies a need for location data for every actuator and sensor, which could be
+          acquired through geolocation sensors (e.g. GPS) or assigned statically during installation.
+          </p><p>
+          This use case also includes images from cameras and real-time image and data streaming.
+          </p>
+        </dd>
+        <dt>Expected Data</dt><dd>
+          <p>
+          <ul>
+            <li>Environmental data for temperature, humidity, UV levels, pollution levels, etc.</li>
+            <li>Infrastructure status (water flow, electrical grid, road integrity, etc)</li>
+            <li>Emergency sensing (flooding, earthquake, fire, etc.)</li>
+            <li>Traffic (both people and vehicles)</li>
+            <li>Health monitoring (eg fever trackingi, mask detection, social distancing)</li>
+            <li>Safety monitoring (eg wearing construction helmets on a construction site)</li>
+            <li>Reports from non-IoT sources (for example, police reports of crimes, hospital emergency case reports)</li>
+            <li>Images and data derived from images (people traffic and density can be derived from image analysis)</li>
+        All data would need an associated geolocation and timestamp so it can be placed in time and space.
+          </ul>
+          </p>
+        </dd>
+        <dt>Dependencies - Affected WoT deliverables and/or work items</dt><dd>
+          <ul>
+            <li>Thing description - support for data ingestion and normalization, geolocation and timestamp standards.</li>
+            <li>Discovery - directories capable of tracking and managing a large number of devices on a large and possibly segmented network</li>
+          </ul>
+          </p>
+        </dd>
+        <dt>Description</dt><dd>
+          <p>
+          Data from a large number and wide variety of sensors needs to be integrated
+          into a single database and normalized, then placed in time and space, and
+          finally visualized.
+          </p><p>
+          The user, a member of city management responsible for making planning decisions,
+          sees data visualized on a map suitable for planning decisions.
+          </p><p>
+          Variants:
+          <ul>
+            <li>Historical data may also be available (allowing an analysis of trends over time).</li>
+            <li>It may be possible to also issue commands to actuators through the interface.</li>
+            <li>The system may be used for emergency response (for instance, closing floodgates in response to an expected tsunami)</li>
+            <li>A subset of the data visualization capabilties may be made available to the public (for example, traffic)</li>
+            <li>Filtering based on parameters such as location (area, state, county, country, zip code, etc), sensor type, subject matter, etc.</li>
+            <li>Ability to generate alerts off of various parameters</li>
+            <li>Ability to produce logs off historical data</li>
+          </ul>
+          </p>
+        </dd>
+        <dt>Security Considerations</dt><dd>
+          <p>
+          <ul>
+            <li>Access to data should only be provided to authorized users, although some may be made available publically</li>
+            <li>Access to actuators should only be provided to authorized users, and commands should be recorded for auditing.</li>
+          </ul>
+          </p>
+        </dd>
+        <dt>Privacy Considerations</dt><dd>
+          <p>
+          <ul>
+            <li>Management of privacy-sensitive information, for example images of people, </li>
+                should be controlled and ideally not associated with specific individuals
+            <li>Data that can be used to track movements of particular invididuals should be controlled or eliminated.</li>
+            <li>Data purge functions should be supported to allow the permanent deletion of private data.</li>
+          </ul>
+          </p>
+        </dd>
+        <dt>Gaps</dt><dd>
+          <p>
+          <ul>
+            <li>Geolocation data standards</li>
+            <li>Timestamp data standards</li>
+            <li>Scalable Discovery</li>
+          </ul>
+          </p>
+        </dd>
+        <dt>Existing standards</dt><dd>
+
+        </dd>
+        <dt>Comments</dt><dd>
+
+        </dd>
+        </dl>
+        </section>
       <section id="mmi-3-1_interactive-public-spaces">
         <h2>Interactive Public Spaces</h2>
         <dl>
@@ -7027,67 +7144,67 @@
 
     <!--
 Domains from the 1.0 UC document 
-		
-		<section id="domain-home_automation">
-			<h3>Domain: home automation</h3>
-			<section id="building-automation">
-			</section>
-			<section id="adaptive-building">
-			</section>
-			<section id="washing-machine">
-			</section>
-			<section id="integrated-home-automation">
-			</section>
-			<section id="Smart_home">
-			</section>
-			<section id="intelligent-hotel-room">
-			</section>
-		</section>
-		<section id="domain-logistics">
-			<h3>Domain: logistics</h3>
-		</section>
-		<section id="domain-manufacturing">
-			<h3>Domain: manufacturing</h3>
-			<section id="shift-of-function">
-			</section>
-			<section id="automation-factories">
-			</section>
-			<section id="smart-maintenance">
-			</section>
-			<section id="lifecycle-management">
-			</section>
-		</section>
-		<section id="domain-smart_grids">
-			<h3>Domain: smart grids</h3>
-			<section id="vpp">
-			</section>
-		</section>
-		<section id="domain-transportation">
-			<h3>Domain: transportation</h3>
-			<section id="emobility">
-			</section>
-		</section>
-		<section id="domain-smart_cities">
-			<h3>Domain: smart cities</h3>
-			<section id="flood-monitoring">
-			</section>
-		</section>
-		<section id="domain-healthcare_and_medical">
-			<h3>Domain: healthcare and medical</h3>
-			<section id="health-monitoring">
-			</section>
-			<section id="ecg">
-			</section>
-		</section>
-		<section id="cross-domain">
-			<h3>Domain: Cross Domain</h3>
-		</section>
-		<section id="domain-other">
-			<h3>Domain: other</h3>
-			<section id="device-management">
-			</section>
-			
-			-->
+                
+                <section id="domain-home_automation">
+                        <h3>Domain: home automation</h3>
+                        <section id="building-automation">
+                        </section>
+                        <section id="adaptive-building">
+                        </section>
+                        <section id="washing-machine">
+                        </section>
+                        <section id="integrated-home-automation">
+                        </section>
+                        <section id="Smart_home">
+                        </section>
+                        <section id="intelligent-hotel-room">
+                        </section>
+                </section>
+                <section id="domain-logistics">
+                        <h3>Domain: logistics</h3>
+                </section>
+                <section id="domain-manufacturing">
+                        <h3>Domain: manufacturing</h3>
+                        <section id="shift-of-function">
+                        </section>
+                        <section id="automation-factories">
+                        </section>
+                        <section id="smart-maintenance">
+                        </section>
+                        <section id="lifecycle-management">
+                        </section>
+                </section>
+                <section id="domain-smart_grids">
+                        <h3>Domain: smart grids</h3>
+                        <section id="vpp">
+                        </section>
+                </section>
+                <section id="domain-transportation">
+                        <h3>Domain: transportation</h3>
+                        <section id="emobility">
+                        </section>
+                </section>
+                <section id="domain-smart_cities">
+                        <h3>Domain: smart cities</h3>
+                        <section id="flood-monitoring">
+                        </section>
+                </section>
+                <section id="domain-healthcare_and_medical">
+                        <h3>Domain: healthcare and medical</h3>
+                        <section id="health-monitoring">
+                        </section>
+                        <section id="ecg">
+                        </section>
+                </section>
+                <section id="cross-domain">
+                        <h3>Domain: Cross Domain</h3>
+                </section>
+                <section id="domain-other">
+                        <h3>Domain: other</h3>
+                        <section id="device-management">
+                        </section>
+                        
+                        -->
 
 
 

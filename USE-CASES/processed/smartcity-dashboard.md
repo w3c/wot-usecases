@@ -71,7 +71,8 @@ This use case also includes images from cameras and real-time image and data str
 * Infrastructure status (water flow, electrical grid, road integrity, etc)
 * Emergency sensing (flooding, earthquake, fire, etc.)
 * Traffic (both people and vehicles)
-* Health monitoring (eg fever tracking)
+* Health monitoring (eg fever trackingi, mask detection, social distancing)
+* Safety monitoring (eg wearing construction helmets on a construction site)
 * Reports from non-IoT sources (for example, police reports of crimes, hospital emergency case reports)
 * Images and data derived from images (people traffic and density can be derived from image analysis)
 All data would need an associated geolocation and timestamp so it can be placed in time and space.
@@ -96,6 +97,9 @@ sees data visualized on a map suitable for planning decisions.
 * It may be possible to also issue commands to actuators through the interface.
 * The system may be used for emergency response (for instance, closing floodgates in response to an expected tsunami)
 * A subset of the data visualization capabilties may be made available to the public (for example, traffic)
+* Filtering based on parameters such as location (area, state, county, country, zip code, etc), sensor type, subject matter, etc.
+* Ability to generate alerts off of various parameters
+* Ability to produce logs off historical data
 
 ### Security Considerations:
 
