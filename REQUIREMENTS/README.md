@@ -1,6 +1,7 @@
-# Web of Things (WoT) Architecture Requirements
+# Web of Things (WoT) Requirements
 
-This directory contains the  requirements for the next revision (V1.1) 
-of the WoT architecture.
+This directory contains the  requirements for the next revisions of the WoT specifications.
 
-Please create a MR with your changes to the requirements.md in a branch.
+Please describe new **requirements** in this directory using the template [requirements-template.md](REQUIREMENTS/requirements.md) (Markdown) or [requirements-template.html](REQUIREMENTS/requirements.html) (HTML). The HTML template is the preferred form.
+
+Requirements that have been reviewed and approved for inclusion in the WG note are moved to https://github.com/w3c/wot-usecases/tree/master/REQUIREMENTS/processed for archival purposes.
