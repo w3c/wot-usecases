@@ -4978,7 +4978,7 @@
           <dt>Category</dt>
           <dd>
 
-            vertical
+            Smart Building
 
           </dd>
           <dt>Class</dt>
@@ -5011,7 +5011,7 @@
           <dd>
 
             <p>When operating smart buildings, aggregating and managing all data provided by heterogeneous devices in
-              these buildings still requires a lot of manual effort. Besides the hurdles of data acquisition that
+              these buildings still require a lot of manual effort. Besides the hurdles of data acquisition that
               relies on multiple protocols, the acquired data generally lacks contextual information and metadata
               about its location and purpose. Usually, each service or application that consumes data from building
               things requires information about its content and its context like, e.g.:</p>
@@ -5022,28 +5022,28 @@
                 actuation);</li>
               <li>which other building things are involved (e.g. sensor hosted by a duct or a space).</li>
             </ul>
-            <p>Through the increased use of model based data exchange over the whole life cycle of a building, often
-              referred to as Building Information Modelling (BIM), a curated source for data describing the building
-              itself is available including, amongst others, the topology of the building structured into sites,
+            <p>Through the increased use of model-based data exchange over the whole life cycle of a building, often
+              referred to as Building Information Modeling (BIM), a curated source for data describing the building
+              itself is available including, amongst others, the topology of the building structured into e.g. sites,
               storeys and spaces.</p>
             <p>Automatically tracking down data and their related things in a building would especially ease the
-              configuration and operation of Building Automation and Control Systems (BACS) systems and Heating
+              configuration and operation of Building Automation and Control Systems (BACS) and Heating
               Ventilation and Air-Conditioning (HVAC) services during commissioning, operation, maintenance and
               retrofitting. To tackle these challenges, still, building experts make use of metadata and naming
-              conventions, which are manually implemented in Building Management Systems (BMS) databases to annotate
-              data and things. An important relationship of a thing is it´s location in the topology of a building,
-              where the data is produced or used. For example, the temperature sensor of a space, the temperature
-              setpoint of a zone, a mixing damper flap actuator of a HVAC component, etc. In addition, other
+              conventions which are manually implemented in Building Management Systems (BMS) databases to annotate
+              data and things. An important property of a thing is its location within the topology of a building as well
+              as where its related data are produced or used. For example, this applies to the temperature sensor of a space,
+              the temperature setpoint of a zone, a mixing damper flap actuator of a HVAC component, etc. In addition, other
               attributes of things are of interest, such as cost or specific manufacturer data. One difficulty is
               especially the lack of a standardized way of creating, linking and sharing this information in an
-              automated manner. On the contrary manufacturers, service providers and users introduce their own
-              metadata, e.g. the Web of Things (WoT) Thing Description (TD), which aim at providing normalized and
-              syntactic interoperability between things.</p>
-            <p>This use case is motivated by the need to enhance semantic interoperability between things in smart
-              buildings and provide contextual links to the building. Data of the building is obtained from a BIM
-              model. The use case builds on Web of Data technologies and reuses schemas available from the linked
-              building data domain. It should serve as a use case template for many applications in an Internet of
-              Building Things (IoBT).</p>
+              automated manner. On the contrary, manufacturers, service providers and users introduce their own
+              metadata for their own purpose. As a solution, the Web of Things (WoT) Thing Description (TD) aims at
+              providing normalized and syntactic interoperability between things.</p>
+            <p>To support this effort, this use case is motivated by the need to enhance semantic interoperability
+              between things in smart buildings and to provide them with contextual links to building information. This
+              building information is usually obtained from a BIM model. The use case builds on Web of Data technologies
+              and reuses schemas available from the Linked Building Data domain. It should serve as a use case template
+              for many applications in an Internet of Building Things (IoBT).</p>
 
           </dd>
           <dt>Expected Devices</dt>
@@ -5066,6 +5066,7 @@
               <li>Thing Descriptions</li>
               <li>Protocol integrations</li>
               <li>Sensor readings</li>
+              <li>Building topology</li>
               <li>Semantic location</li>
               <li>Geolocation</li>
             </ul>
@@ -5086,14 +5087,15 @@
 
             <p>The goal of this use case is to show the potential to automate workflows and address the heterogeneity of
               data as observed in the smart building domain. The examples show the potential benefits of combining WoT
-              TD with contextual data obtained from a BIM.</p>
+              TD with contextual data obtained from BIM.</p>
             <p>The use cases is based on the <a
                 href="https://github.com/TechnicalBuildingSystems/OpenSmartHomeData">Open
-                Smart Home Dataset</a>, which defines a BIM model for a residential flat combined with observations
-              made by typical smart home sensors. We extend the dataset with thing descriptions of some of the items.
-              The respective thing description of a temperature sensor in the kitchen of the considered flat is as
+                Smart Home Dataset</a>, which introduces a BIM model for a residential flat combined with observations
+              made by typical smart home sensors. We extend the dataset with Thing Descriptions of some of the items.
+              The respective Thing Description of a temperature sensor in the kitchen of the considered flat is as
               follows:</p>
-            <pre class="example" id="Kitchen-temp-Sensor"><code class="lang-json">{
+            <pre class="example" id="Kitchen-temp-Sensor">
+                    <code class="lang-json">{
                         <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor"</span>,
                         <span class="hljs-attr">"@context"</span>: [
                             <span class="hljs-string">"https://www.w3.org/2019/wot/td/v1"</span>,
@@ -5103,7 +5105,7 @@
                                 <span class="hljs-attr">"sosa"</span>: <span class="hljs-string">"http://www.w3.org/ns/sosa/"</span>,
                                 <span class="hljs-attr">"om"</span>: <span class="hljs-string">"http://www.ontology-of-units-of-measure.org/resource/om-2/"</span>,
                                 <span class="hljs-attr">"ssns"</span>: <span class="hljs-string">"http://www.w3.org/ns/ssn/systems/"</span>,
-                                <span class="hljs-attr">"brick"</span>: <span class="hljs-string">"https://brickschema.org/schema/1.1/Brick#"</span>,
+                                <span class="hljs-attr">"brick"</span>: <span class="hljs-string">"https://brickschema.org/schema/Brick#"</span>,
                                 <span class="hljs-attr">"schema"</span>: <span class="hljs-string">"http://schema.org"</span>
                             }
                         ],
@@ -5174,7 +5176,7 @@
                             <span class="hljs-attr">"bot"</span>: <span class="hljs-string">"https://w3id.org/bot#"</span>,
                             <span class="hljs-attr">"sosa"</span>: <span class="hljs-string">"http://www.w3.org/ns/sosa/"</span>,
                             <span class="hljs-attr">"ssn"</span>: <span class="hljs-string">"http://www.w3.org/ns/ssn/"</span>,
-                            <span class="hljs-attr">"brick"</span>: <span class="hljs-string">"https://brickschema.org/schema/1.1/Brick#"</span>
+                            <span class="hljs-attr">"brick"</span>: <span class="hljs-string">"https://brickschema.org/schema/Brick#"</span>
                         }
                     ],
                     <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Kitchen-tempS-Actuator"</span>,
@@ -5212,7 +5214,7 @@
             </pre>
           <dt><em>Combining Topological Context and Thing Descriptions</em></dt>
           <p>The scenario considered is related to the replacement of a temperature sensor in a BACS. The topological
-            information localising the things, e.g. the <a href="#Kitchen-temp-Sensor">temperature sensor</a> can
+            information localizing the things, e.g. the <a href="#Kitchen-temp-Sensor">temperature sensor</a> can
             be used to automatically commission the newly replaced sensor and link it to existing control
             algorithms. For this purpose, the identifiers of suitable sensors and actuators are needed and can be,
             for example, queried via <a href="https://www.w3.org/TR/sparql11-query/">SPARQL</a>. Here the query uses
@@ -5221,7 +5223,7 @@
 
           <pre class="example" id="sparql">
                             <code class="lang-sparql">PREFIX <span class="hljs-string">bot:</span> &lt;<span class="hljs-string">https:</span><span class="hljs-comment">//w3id.org/bot&gt;</span>
-                            PREFIX <span class="hljs-string">brick:</span> &lt;<span class="hljs-string">https:</span><span class="hljs-comment">//brickschema.org/schema/1.1/Brick#&gt;</span>
+                            PREFIX <span class="hljs-string">brick:</span> &lt;<span class="hljs-string">https:</span><span class="hljs-comment">//brickschema.org/schema/Brick#&gt;</span>
                             PREFIX <span class="hljs-string">osh:</span> &lt;<span class="hljs-string">https:</span><span class="hljs-comment">//w3id.org/ibp/osh/OpenSmartHomeDataSet#&gt;</span>
                             SELECT ?sensor ?actuator
                             WHERE{
@@ -5260,7 +5262,7 @@
                               <span class="hljs-string">"name"</span>: <span class="hljs-string">"Kitchen"</span>
                             },
                           <span class="hljs-string">"sensors"</span>: [
-                            <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#Kitchen-temp-Sensor</span>"</span>,
+                            <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#Kitchen-temp-Sensor</span>"</span>
                           ],
                           <span class="hljs-string">"actuators"</span>: [
                             <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#Kitchen-tempS-Actuator</span>"</span>
@@ -5269,7 +5271,7 @@
                         </code></pre>
           <dt><em>Automated Update of Fault Detection Rule based on Thing Description</em></dt>
           <p>Another related use case in smart buildings, which would greatly benefit from harmonised thing
-            descriptions and attached localisation information is related to the detection of unexpected behaviour,
+            descriptions and attached location information is related to the detection of unexpected behavior,
             errors and faults. An example for such a detection of faults is the rule-based surveillance of sensor
             values. A generic rule applicable to sensors is that the observation values stay within the measurement
             range of the sensor. Again, in the case of maintenance as described above a sensor is replaced.</p>
@@ -5283,15 +5285,19 @@
           <dd>
 
             <p>Security in smart buildings is of importance. In particular, access control needs to be properly secured.
-              Also, from other observations, e.g. electricity consumption, clues can be made such as presence in a
-              home. Hence, security needs to properly in place.</p>
+              This applies also for data access which can be secured using existing security schemes (API Keys, OAuth2...).
+              Moreover, from certain observations, e.g. electricity consumption, clues can be indirectly given such as presence in a
+              home. Hence, security needs must be defined and properly addressed.</p>
 
 
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
 
-            <p>Privacy considerations can be of a concern if observations of sensors can be matched to individuals.</p>
+            <p>Privacy considerations can be of a concern if observations of sensors can be matched to individuals.
+              It is of the responsability of building owners, managers and users to define their own privacy policies
+              for their data and share necessary consents if necessary.
+            </p>
 
           </dd>
           <dt>Accessibility Considerations</dt>
@@ -6714,7 +6720,7 @@
               <li>Wearable, semi-transparent head-mounted display</li>
               <li>Headphones for speakers for audio output</li>
               <li>Geopose and motion estimator (various technologies can be used)</li>
-              <!-- Do we need this?  Its function is handled by the data processor 
+              <!-- Do we need this?  Its function is handled by the data processor
             <li>Recorder and Player to store and reproduce the scenes</li>
 -->
               <li>Data processor to integrate all data (including live an historical data and geopose),
@@ -7488,7 +7494,7 @@
       List all authors of contributions.
     </section>
     <p>Special thanks to all authors of use case descriptions
-      <!-- Michael McCool, Takuki Kamiya, Kazuyuki Ashimura,  
+      <!-- Michael McCool, Takuki Kamiya, Kazuyuki Ashimura,
         Sebastian Käbisch, Zoltan Kis, ... --> for their contributions to this document.
     </p>
     <p>
@@ -7689,8 +7695,8 @@
 
 
   <!--
-Domains from the 1.0 UC document 
-                
+Domains from the 1.0 UC document
+
                 <section id="domain-home_automation">
                         <h3>Domain: home automation</h3>
                         <section id="building-automation">
@@ -7749,7 +7755,7 @@ Domains from the 1.0 UC document
                         <h3>Domain: other</h3>
                         <section id="device-management">
                         </section>
-                        
+
                         -->
 
 
