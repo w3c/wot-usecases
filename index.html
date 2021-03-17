@@ -3636,6 +3636,7 @@
       </dd-->
       </dl>
     </section>
+    </section>
 
     <section id="transportation">
       <h2>Transportation</h2>
@@ -4339,7 +4340,171 @@
     <section id="sec-horizontal-ucs">
       <h2>Use Cases for multiple domains</h2>
 
-
+      <section id="Discovery">
+        <h2>Discovery</h2>
+           <dl>
+            <dt>Submitter(s)</dt>
+            <dd>
+              Michael McCool
+            </dd>
+            <!--dt>Reviewer(s)</dt>
+            <dd>
+              Michael Lagally
+            </dd>
+            <dt>Tracker Issue ID</dt>
+            <dd>
+            </dd>
+            <dt>Category</dt>
+            <dd>
+            </dd>
+            <dt>Class</dt>
+            <dd>
+            </dd>
+            <dt>Status</dt>
+            <dd-->
+            </dd>
+            <dt>Target Users</dt>
+            <dd>
+  
+              All stakeholders:
+              <ul>
+                <li>device owners</li>
+                <li>device user</li>
+                <li>cloud provider</li>
+                <li>service provider</li>
+                <li>device manufacturer</li>
+                <li>gateway manufacturer</li>
+                <li>network operator (potentially transparent for WoT use cases)</li>
+                <li>identity provider</li>
+                <li>directory service operator</li>
+              </ul>
+  
+            </dd>
+            <dt>Motivation</dt>
+            <dd>
+  
+              Discovery defines a distribution mechanism for the metadata contained in WoT Things Descriptions,
+              and allows Things to advertise their capabilities and for potential consumers to find Things that
+              match their needs. A standardized discovery mechanism is an enabler for convenient and ad-hoc
+              orchestration of combinations of Things from different vendors while supporting appropriate security
+              and privacy controls.
+  
+            </dd>
+            <dt>Expected Devices</dt>
+            <dd>
+  
+              <ul>
+                <li>Thing - any device or service that wishes to distribute (advertise) its metadata.</li>
+                <li>Consumer - any device or service that wishes to find Things whose location and metadata satisfies
+                  specified constraints.</li>
+                <li>Discovery Service - Mechanism by which metadata is distributed, which can involve a variety of
+                  services to handle spatial and semantic queries, register Thing Descriptions, provide access controls,
+                  etc.</li>
+              </ul>
+  
+            </dd>
+            <dt>Expected Data</dt>
+            <dd>
+  
+              <ul>
+                <li>Thing Descriptions - metadata describing a Thing</li>
+              </ul>
+  
+            </dd>
+            <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+            <dd>
+  
+              <ul>
+                <li>WoT Discovery</li>
+              </ul>
+  
+              Note: this is a "horizontal" use case, and is driven by requirements in multiple verticals.
+  
+            </dd>
+            <dt>Description</dt>
+            <dd>
+  
+              A user wishing to build or instantiate an IoT service needs access to Thing Descriptions of installed and
+              running
+              devices satisfying specific requirements. These requirements can include being in or near a certain
+              location,
+              accessible using particular protocols or on a certain network,
+              satisfying certain semantic categories, having certain capabilities, or having specific sub-APIs
+              (interfaces).
+              Discovery is the general process whereby WoT Thing Descriptions satisfying a specific set of such
+              constraints are retreived by a running system.
+  
+            </dd>
+  
+            <dt>Variants</dt>
+            <dd>
+              <ul>
+                <li>Run-time discovery allows late binding of orchestration services to particular devices and requires
+                  that
+                  consumers be able to adapt to Thing Descriptions discovered when a service is deployed.</li>
+                <li>Development-time discovery may be useful during system development to build services that can
+                  interface to
+                  a particular class of Thing Descriptions. In this case what actually needs to be discovered Thing
+                  Models,
+                  not specific Thing Descriptions.</li>
+              </ul>
+  
+            </dd>
+            <dt>Security Considerations</dt>
+            <dd>
+  
+              <ul>
+                <li>The distribution mechanism needs to be able to clearly authenticate potential users.</li>
+                <li>The distribution mechanism for metadata should only provide metadata to authorized users.</li>
+                <li>The distribution mechanism should be able to resist denial-of-service attacks seeking to overwhelm it
+                  withi spurious requests.</li>
+                <li>The distribution mechanism should be able to preserve the integrity of metadata.</li>
+              </ul>
+  
+            </dd>
+            <dt>Privacy Considerations</dt>
+            <dd>
+  
+              <ul>
+                <li>Metadata should only be distributed to appropriate sets of requesters, with the definition of
+                  "appropriate" configurable by the source of the metadata.</li>
+                <li>Unauthorized users should not be able to access or infer information that they do not have access
+                  rights to.</li>
+                <li>Providers of metadata should be able to withdraw metadata from distribution at any time.</li>
+                <li>Metadata should not be retained indefinitely.</li>
+              </ul>
+  
+            </dd>
+            <dt>Gaps</dt>
+            <dd>
+  
+              <ul>
+                <li>The current WoT standards define a metadata format (the Thing Description) but not a means of
+                  distributing it.</li>
+              </ul>
+  
+            </dd>
+            <dt>Existing standards</dt>
+            <dd>
+  
+              <ul>
+                <li>WoT Thing Description</li>
+                <li>CoreRD</li>
+                <li>DID</li>
+              </ul>
+  
+            </dd>
+            <dt>Comments</dt>
+            <dd>
+  
+              <ul>
+                <li>Many discovery mechansims already exist but many do not satisfy all the requirements above, e.g. they
+                  may have insufficient
+                  privacy controls. A standards solution that builds upon prior work in this area is desirable.</li>
+            </dd>
+          </dl>
+      </section>
+  
 
       <section id="multi-vendor">
         <h2>Multi-Vendor System Integration - Out of the box interoperability</h2>
@@ -6092,171 +6257,6 @@
       </section>
     </section>
 
-    <section id="Discovery">
-      <h2>Discovery</h2>
-         <dl>
-          <dt>Submitter(s)</dt>
-          <dd>
-            Michael McCool
-          </dd>
-          <!--dt>Reviewer(s)</dt>
-          <dd>
-            Michael Lagally
-          </dd>
-          <dt>Tracker Issue ID</dt>
-          <dd>
-          </dd>
-          <dt>Category</dt>
-          <dd>
-          </dd>
-          <dt>Class</dt>
-          <dd>
-          </dd>
-          <dt>Status</dt>
-          <dd-->
-          </dd>
-          <dt>Target Users</dt>
-          <dd>
-
-            All stakeholders:
-            <ul>
-              <li>device owners</li>
-              <li>device user</li>
-              <li>cloud provider</li>
-              <li>service provider</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
-              <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
-              <li>directory service operator</li>
-            </ul>
-
-          </dd>
-          <dt>Motivation</dt>
-          <dd>
-
-            Discovery defines a distribution mechanism for the metadata contained in WoT Things Descriptions,
-            and allows Things to advertise their capabilities and for potential consumers to find Things that
-            match their needs. A standardized discovery mechanism is an enabler for convenient and ad-hoc
-            orchestration of combinations of Things from different vendors while supporting appropriate security
-            and privacy controls.
-
-          </dd>
-          <dt>Expected Devices</dt>
-          <dd>
-
-            <ul>
-              <li>Thing - any device or service that wishes to distribute (advertise) its metadata.</li>
-              <li>Consumer - any device or service that wishes to find Things whose location and metadata satisfies
-                specified constraints.</li>
-              <li>Discovery Service - Mechanism by which metadata is distributed, which can involve a variety of
-                services to handle spatial and semantic queries, register Thing Descriptions, provide access controls,
-                etc.</li>
-            </ul>
-
-          </dd>
-          <dt>Expected Data</dt>
-          <dd>
-
-            <ul>
-              <li>Thing Descriptions - metadata describing a Thing</li>
-            </ul>
-
-          </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
-          <dd>
-
-            <ul>
-              <li>WoT Discovery</li>
-            </ul>
-
-            Note: this is a "horizontal" use case, and is driven by requirements in multiple verticals.
-
-          </dd>
-          <dt>Description</dt>
-          <dd>
-
-            A user wishing to build or instantiate an IoT service needs access to Thing Descriptions of installed and
-            running
-            devices satisfying specific requirements. These requirements can include being in or near a certain
-            location,
-            accessible using particular protocols or on a certain network,
-            satisfying certain semantic categories, having certain capabilities, or having specific sub-APIs
-            (interfaces).
-            Discovery is the general process whereby WoT Thing Descriptions satisfying a specific set of such
-            constraints are retreived by a running system.
-
-          </dd>
-
-          <dt>Variants</dt>
-          <dd>
-            <ul>
-              <li>Run-time discovery allows late binding of orchestration services to particular devices and requires
-                that
-                consumers be able to adapt to Thing Descriptions discovered when a service is deployed.</li>
-              <li>Development-time discovery may be useful during system development to build services that can
-                interface to
-                a particular class of Thing Descriptions. In this case what actually needs to be discovered Thing
-                Models,
-                not specific Thing Descriptions.</li>
-            </ul>
-
-          </dd>
-          <dt>Security Considerations</dt>
-          <dd>
-
-            <ul>
-              <li>The distribution mechanism needs to be able to clearly authenticate potential users.</li>
-              <li>The distribution mechanism for metadata should only provide metadata to authorized users.</li>
-              <li>The distribution mechanism should be able to resist denial-of-service attacks seeking to overwhelm it
-                withi spurious requests.</li>
-              <li>The distribution mechanism should be able to preserve the integrity of metadata.</li>
-            </ul>
-
-          </dd>
-          <dt>Privacy Considerations</dt>
-          <dd>
-
-            <ul>
-              <li>Metadata should only be distributed to appropriate sets of requesters, with the definition of
-                "appropriate" configurable by the source of the metadata.</li>
-              <li>Unauthorized users should not be able to access or infer information that they do not have access
-                rights to.</li>
-              <li>Providers of metadata should be able to withdraw metadata from distribution at any time.</li>
-              <li>Metadata should not be retained indefinitely.</li>
-            </ul>
-
-          </dd>
-          <dt>Gaps</dt>
-          <dd>
-
-            <ul>
-              <li>The current WoT standards define a metadata format (the Thing Description) but not a means of
-                distributing it.</li>
-            </ul>
-
-          </dd>
-          <dt>Existing standards</dt>
-          <dd>
-
-            <ul>
-              <li>WoT Thing Description</li>
-              <li>CoreRD</li>
-              <li>DID</li>
-            </ul>
-
-          </dd>
-          <dt>Comments</dt>
-          <dd>
-
-            <ul>
-              <li>Many discovery mechansims already exist but many do not satisfy all the requirements above, e.g. they
-                may have insufficient
-                privacy controls. A standards solution that builds upon prior work in this area is desirable.</li>
-          </dd>
-        </dl>
-    </section>
-
   <section id="VR/AR">
     <h2>VR/AR</h2>
 
@@ -6691,7 +6691,6 @@
         <p>This section defines the properties required in an
           abstract Web of Things (WoT) architecture.</p>
 
-        </section>
         <section id="sec-requirements-principles">
           <h3>Common Principles</h3>
           <ul>
@@ -6895,12 +6894,12 @@
         </section>
       </section>
 
-      <section id="non-functionals">
+      <!--section id="non-functionals">
         <h2>Non-Functional Requirements</h2>
         <section id="security-privacy">
           <h2>Security and Privacy</h2>
         </section>
-      </section>
+      </section-->
 
       <section id="sec-technical-requirements">
         <h2>Technical Requirements</h2>
