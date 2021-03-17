@@ -465,7 +465,7 @@
   
               Ryuichi Matsukura, Takuki Kamiya
   
-            </dd>
+            <!--/dd>
             <dt>Reviewer(s)</dt>
             <dd>
   
@@ -485,7 +485,7 @@
             <dt>Status</dt>
             <dd>
   
-            </dd>
+            </dd-->
             <dt>Target Users</dt>
             <dd>
   
@@ -506,14 +506,14 @@
             <dt>Expected Devices</dt>
             <dd>
   
-              Sensors ( temperature, humidity, brightness, UV brightness, air pressure, and CO2)
+              Sensors (temperature, humidity, brightness, UV brightness, air pressure, and CO2)
               Heating, CO2 generator, open and close sunlight shielding sheet.
   
             </dd>
             <dt>Expected Data</dt>
             <dd>
   
-              Sensors’ values to clarify the gaps between conditions for maximizing photosynthesis and the current
+              Sensors values to clarify the gaps between conditions for maximizing photosynthesis and the current
               environment.
               Following sensors values at one or some points in the greenhouse: temperature, humidity, brightness, and
               CO2.
@@ -521,8 +521,9 @@
             </dd>
             <dt>Dependencies</dt>
             <dd>
-  
-              WoT Architecture、WoT Thing Description
+              WoT Architecture
+              <br>
+              WoT Thing Description
   
             </dd>
             <dt>Description</dt>
@@ -538,9 +539,9 @@
               The cloud gathers all sensor data and the status of the facilities. The application makes the best
               configuration for the region of the greenhouse located.
   
-            </dd>
+            <!--/dd>
             <dt>Variants</dt>
-            <dd>
+            <dd-->
   
   
             </dd>
@@ -553,13 +554,13 @@
               sensor status like sleeping.
   
             </dd>
-            <dt>Existing standards</dt>
+            <!--dt>Existing standards</dt>
             <dd>
   
             </dd>
             <dt>Comments</dt>
             <dd>
-            </dd>
+            </dd-->
           </dl>
         </section>
         <section id="smart-agriculture-openfield">
@@ -572,7 +573,7 @@
               Cristiano Aguzzi
   
             </dd>
-            <dt>Reviewer(s)</dt>
+            <!--dt>Reviewer(s)</dt>
             <dd>
   
             </dd>
@@ -592,7 +593,7 @@
   
             </dd>
             <dt>Status: WIP</dt>
-            <dd>
+            <dd-->
   
             </dd>
             <dt>Target Users</dt>
@@ -815,7 +816,7 @@
             </dd>
           </dl>
         </section>
-        <section id="Agricultural-use-case2">
+        <section id="Agricultural-irrigation">
           <h2>Irrigation in outdoor environment</h2>
           <dl>
   
@@ -823,12 +824,12 @@
             <dd>
   
               <ul>
-                <li>Catherine Roussey, INRAE [1], France</li>
-                <li>Jean-Pierre Chanet, INRAE [1], France</li>
+                <li>Catherine Roussey<!--, INRAE [1], France--></li>
+                <li>Jean-Pierre Chanet<!--, INRAE [1], France--></li>
               </ul>
   
             </dd>
-            <dt>Reviewer(s)</dt>
+            <!--dt>Reviewer(s)</dt>
             <dd>
   
             </dd>
@@ -845,7 +846,7 @@
   
             </dd>
             <dt>Status</dt>
-            <dd>
+            <dd-->
   
             </dd>
             <dt>Target Users</dt>
@@ -1082,257 +1083,6 @@
             </dd>
           </dl>
         </section>
-        <section id="smart-agriculture-openfield-2">
-          <h2>Smart Agriculture: open-field agriculture</h2>
-          <dl>
-  
-            <dt>Submitter(s)</dt>
-            <dd>
-  
-              Cristiano Aguzzi
-  
-            </dd>
-            <dt>Reviewer(s)</dt>
-            <dd>
-  
-            </dd>
-            <dt>Tracker Issue ID</dt>
-            <dd>
-  
-            </dd>
-            <dt>Category</dt>
-            <dd>
-  
-              Smart Agriculture
-  
-            </dd>
-            <dt>Class</dt>
-            <dd>
-              Open field agriculture
-  
-            </dd>
-            <dt>Status: WIP</dt>
-            <dd>
-  
-            </dd>
-            <dt>Target Users</dt>
-            <dd>
-  
-              Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), Cloud provider, Middleware
-              provider, Network providers, service provider.
-  
-            </dd>
-            <dt>Motivation</dt>
-            <dd>
-              Water is vital for ensuring food security to the world’s population, and agriculture is the biggest consumer
-              amounting for 70% of freshwater. Field irrigation application methods are one of the main causes of water
-              wastage. The most common technique, surface irrigation, wastes a high percentage of the water by wetting
-              areas where no plants benefit from it. On the other hand, localized irrigation can use water more
-              efficiently and effectively, avoiding both under-irrigation and over-irrigation. However, in an attempt to
-              avoid under-irrigation, farmers feed more water than is needed resulting not only to productivity losses,
-              but also water wastages.
-  
-              Therefore, technology should be developed and deployed for sensing water needs and automatically manage
-              water supply to crops. However, open field agriculture is characterized by a quite dynamic range of
-              requirements. Usually, solutions developed for one particular crop type cannot be reused in other
-              cultivations. Moreover, the same field can have different crop types or different sizes/shapes during the
-              years, meaning that technology to monitor the state of crop growth should be highly configurable and
-              adaptive. Even agriculture and irrigation methods can change and also they are very different depending on
-              the size of the field and its clime type.
-  
-              Consequently, silos applications are deployed leveraging on IoT technologies to gather data about the crop
-              growth state and irrigation needs. The Web of Things may help to create a single platform where
-              cost-effective applications could adapt seamlessly between different scenarios, breaking the silos and
-              giving value both to the environment and the market.
-  
-            </dd>
-            <dt>Expected Devices</dt>
-            <dd>
-  
-              <p>Sensors:</p>
-              <ul>
-                <li>Weather sensors (maybe collected together inside a <a
-                    href="https://en.wikipedia.org/wiki/Weather_station)">weather station</a>)</li>
-                <ul>
-                  <li>temperature</li>
-                  <li>air humidity</li>
-                  <li>air pressure</li>
-                  <li>pluviometer</li>
-                  <li>global solar radiation</li>
-                  <li>anemometer (wind speed)</li>
-                  <li> wind direction</li>
-                  <li>global solar radiation and photosynthetically active radiation</li>
-                  <li> gas/air quality sensor (i.e. CO2)</li>
-                </ul>
-                <li>Soil sensors (usually packed together in soil probes)</li>
-                <ul>
-                  <li>soil temperature</li>
-                  <li>soil moisture/water content</li>
-                  <li>soil conductivity (detecting salt levels in the soil)</li>
-                  <li> water table sensor</li>
-                </ul>
-                <li>Drone sensors</li>
-                <ul>
-                  <li>camera</li>
-                  <li>temperature sensitive camera</li>
-                  <li>multispectral camera</li>
-                </ul>
-              </ul>
-              <p>Actuators:</p>
-              <ul>
-                <li>drones: used for data collection or pesticed/impollination</li>
-                <li>sprinklers</li>
-                <li>pumps</li>
-                <li>central pivot sprinklers</li>
-                <li>hose-reel irrigation machine</li>
-              </ul>
-              <p>Additional devices:</p>
-              <ul>
-                <li>Solar panels</li>
-                <li>Loggers: units that collect data from close sensors. </li>
-                <li>Gateways</li>
-              </ul>
-  
-            </dd>
-            <dt>Expected Data</dt>
-            <dd>
-              Sensor data plays a central role in Smart Agriculture. In particular, it is critical that the information
-              sensed is associated with a timestamp. Common algorithms use *time series* to calculate the water needs of a
-              crop.
-  
-              Furthermore, soil sensors usually are calibrated over a specific soil type (which may differ even in the
-              same geographic region). For example, the calibration data for a soil moisture sensor is represented by a
-              function that maps sensor output to soil water content. In literature, this function is knowns as a
-              *calibration curve*. Commercial sensors are precalibrated with a "standard" curve but on most occasions, it
-              fails to accurately measure the water content. Therefore, it can be configured during the installation phase
-              (which may happen every time the soil is plowed).
-  
-              Finally, a crucial aspect is forecasting. Farmers use this information to actively change their management
-              procedures. Services exploit it to suggest irrigation schedule or change device settings to behave
-              accordingly to environmental changes.
-  
-              To summarize here it is a list of most important expected data from Open field agriculture:
-  
-              <ul>
-                <li>Calibration curve</li>
-                <li>Time series</li>
-                <li>Forecast data</li>
-                <li>Geolocations: sensor data must be contextualized in geolocation. Also, geolocation is critical in
-                  massive open fields to localize instrument position.</li>
-                <li>Weather data</li>
-                <li>Unit of measure: commercial soli sensor may output their value in a different unit of measures (i.e.
-                  volts or % water in an m^3 of soil)</li>
-                <li>Relative values</li>
-                <li>Depth position: geolocation is not sufficient to describe the parameters of the soil. Depth is an
-                  additional context that should be added to an observed value. </li>
-                <li>Device owner information</li>
-                <li>Battery level and energy consumption</li>
-              </ul>
-  
-            </dd>
-            <dt>Dependencies</dt>
-            <dd>
-  
-              WoT Architecture, WoT Thing Description
-  
-            </dd>
-            <dt>Description</dt>
-            <dd>
-              In open-field agriculture, the IoT solutions leverage on different radio protocols and devices. Usually,
-              radio protocols should cover long distances (even kilometers) and be energy efficient. Devices too need to
-              be energy saving as they are deployed for months and sometimes even years in harsh environments. A
-              sleeping-cycle is one mechanism they use to save energy usually coordinated by *loggers/gateways* or
-              preprogrammed. *Loggers* are deployed closed to sensor devices and have more storage space. They serve as
-              buffers between sensors and higher services. Often *loggers* and sensors are embedded in the same board,
-              otherwise, they are connected using cables or close-ranged radio protocols. On the other hand, *gateways*
-              serve as a collection point for data of an entire field or farm. They are much more capable devices and
-              usually are more energy-consuming. In some deployment scenarios, they host a full operating system with
-              multiple software facilities installed. Otherwise, gateways only serve as relays of data sent from the
-              loggers and sensors to cloud services and vice-versa. The cloud services may be partially hosted in edge
-              servers to preserve data privacy and responsiveness of the whole IoT solution. Possible cloud services are:
-              <ul>
-                <li>Weather forecasting/local weather forecasting</li>
-                <li>Soil digital twin to simulate and predict water content</li>
-                <li>Plant digital twin (growth and water needs prediction)</li>
-                <li>Irrigation advice service: combining the previous services and knowing the irrigation system topology
-                  is possible to advise farms with the best times to irrigate a crop. </li>
-                <li>Pesticide and fertilize planning</li>
-              </ul>
-  
-              The complete deployment topology of an open field agriculture solution is described in the diagram below:
-              <br>
-              <br>
-              <img src="./images/Agriculture.svg" width="100%" height="100%">
-              <br>
-              <br>
-            </dd>
-            <dt>Variants</dt>
-            <dd>
-              Open-field agriculture varies a lot between geographical location and methods. For example in the <a
-                href="http://swamp-project.org/">SWAMP project</a> there three different pilots with different
-              requirement/constraints:
-              <ul>
-                <li><a href="http://swamp-project.org/cbec/) (Reggio Emilia region">Italian pilot</a>:</li>
-                <ul>
-                  <li>Relative small field size</li>
-                  <li>Multiple connectivity solutions available: 4G, LPWAN, and WiFi</li>
-                  <li>Variance in crop types, sometimes even inside the same farm</li>
-                  <li>Small soil type variance</li>
-                  <li>Precise model soil behavior</li>
-                  <li>A great influence of the water table</li>
-                  <li>Variance in the irrigation system</li>
-                  <li>Channel-based water distribution</li>
-                  <li>The main goal is to optimize water consumption</li>
-                </ul>
-                <li><a href="http://swamp-project.org/matopiba/) (Matopiba and Guaspari location">Brazilian pilot</a>:
-                </li>
-                <ul>
-                  <li>Huge field size</li>
-                  <li>Centra pivot irrigation systems: need to optimize each sprinkler output</li>
-                  <li>Soil type variance within the same field</li>
-                  <li>A low number of connectivity options: no 4G, only radio communication base on LPWAN</li>
-                  <li>Low crop type variance</li>
-                  <li>the main goal is to optimize energy consumption</li>
-                </ul>
-                <li><a href="http://swamp-project.org/intercrop/">Spain pilot</a></li>
-                <ul>
-                  <li>Efficient localized irrigation and application of the right amount of water to the crop</li>
-                  <li>arid location</li>
-                  <li>The goal is to minimize water consumption but maintaining a good field yield.</li>
-                </ul>
-              </ul>
-            </dd>
-            <dt>Gaps</dt>
-            <dd>
-              Currently, there is no specification on how to model device status (i.e. connected/disconnected)
-              Examples of how to handle a device calibration phase may help developers to use a standardized approach.
-              Possibly define standard links types to define the relation between loggers and sensors
-              Handle both geographical position and depth information.
-              Ontology class for battery and energy consumption
-              Model historical and forecast data
-  
-            </dd>
-            <dt>Existing standards</dt>
-            <dd>
-              <ul>
-                <li><a href="https://tools.ietf.org/html/rfc8376">LPWAN</a></li>
-                <li><a href="http://www.sdi-12.org/current_specification/SDI-12_version-1_4-Jan-10-2019.pdf">SDI 12</a>
-                </li>
-                <li><a href="https://tools.ietf.org/html/rfc7252">CoAP</a></li>
-                <li><a href="https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html">MQTT</a></li>
-              </ul>
-            </dd>
-            <dt>Comments</dt>
-            <dd>
-  
-              This use case is designed using the experience gained in the European-Brazil Horizon 2020 SWAMP project.
-              Please follow the <a href="http://swamp-project.org/">link</a> for further information. Since SWAMP is
-              heavily oriented to optimize water consumption, this document just mentioned issues like plant feeding,
-              fertilizing, pollination, yield prediction, crop quality measurement, etc. Nevertheless, WoT technologies
-              may be employed also in these scenarios.
-            </dd>
-          </dl>
-        </section>
       </section>
   
       <section id="smart-city">
@@ -1343,7 +1093,7 @@
             <dt>Submitter(s)</dt><dd>
               Jennifer Lin (GovTech Singapore), Michael McCool
             </dd>
-            <dt>Reviewer(s)</dt><dd>
+            <!--dt>Reviewer(s)</dt><dd>
               Michael Lagally
             </dd>
             <dt>Tracker Issue ID</dt><dd>
@@ -1357,7 +1107,7 @@
             </dd>
             <dt>Status</dt><dd>
   
-            </dd>
+            </dd-->
             <dt>Target Users</dt><dd>
               <p>
               A Smart City managing mobile devices and sensors,
@@ -1591,7 +1341,7 @@
                 is special since it is also a source of accurate time.
                 </p>
             </dd>
-            <dt>Comments</dt><dd>
+            <!--dt>Comments</dt--><dd>
   
             </dd>
           </dl>
@@ -1602,7 +1352,7 @@
             <dt>Submitter(s)</dt><dd>
               Michael McCool
             </dd>
-          <dt>Reviewer(s)</dt><dd>
+          <!--dt>Reviewer(s)</dt><dd>
             Jennifer Lin, Michael Lagally
           </dd>
           <dt>Tracker Issue ID</dt><dd>
@@ -1614,7 +1364,7 @@
           <dt>Class</dt><dd>
   
           </dd>
-          <dt>Status</dt><dd>
+          <dt>Status</dt><dd-->
   
           </dd>
           <dt>Target Users</dt><dd>
@@ -1737,10 +1487,10 @@
             </ul>
             </p>
           </dd>
-          <dt>Existing standards</dt><dd>
+          <!--dt>Existing standards</dt><dd>
   
           </dd>
-          <dt>Comments</dt><dd>
+          <dt>Comments</dt><dd-->
   
           </dd>
           </dl>
@@ -1755,7 +1505,7 @@
               Michael McCool
   
             </dd>
-            <dt>Reviewer(s)</dt>
+            <!--dt>Reviewer(s)</dt>
             <dd>
   
   
@@ -1766,29 +1516,28 @@
   
   
   
-            </dd>
+            </dd-->
             <dt>Category</dt>
             <dd>
   
               Accessibility
   
             </dd>
-            <dt>Class</dt>
+            <!--dt>Class</dt>
             <dd>
   
   
   
             </dd>
             <dt>Status</dt>
-            <dd>
+            <dd-->
   
   
   
             </dd>
             <dt>Target Users</dt>
             <dd>
-  
-  
+            <!-- TODO -->
             </dd>
             <dt>Motivation</dt>
             <dd>
@@ -1889,7 +1638,7 @@
               Michael McCool
   
             </dd>
-            <dt>Reviewer(s)</dt>
+            <!--dt>Reviewer(s)</dt>
             <dd>
   
   
@@ -1900,34 +1649,34 @@
   
   
   
-            </dd>
+            </dd-->
             <dt>Category</dt>
             <dd>
   
               Accessibility
   
             </dd>
-            <dt>Class</dt>
+            <!--dt>Class</dt>
             <dd>
   
   
   
             </dd>
             <dt>Status</dt>
-            <dd>
+            <dd-->
   
   
   
             </dd>
             <dt>Target Users</dt>
             <dd>
-  
+              <!-- TODO -->
   
             </dd>
             <dt>Motivation</dt>
             <dd>
-  
-  
+              <!-- TODO -->
+    
             </dd>
             <dt>Expected Devices</dt>
             <dd>
@@ -2023,7 +1772,7 @@
               Andrea Cimmino and Raúl García Castro
   
             </dd>
-            <dt>Reviewer(s)</dt>
+            <!--dt>Reviewer(s)</dt>
             <dd>
   
             </dd>
@@ -2040,7 +1789,7 @@
   
             </dd>
             <dt>Status</dt>
-            <dd>
+            <dd-->
   
             </dd>
             <dt>Target Users</dt>
@@ -2198,7 +1947,7 @@
             Sebastian Kaebisch (Siemens)
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
             Michael Lagally (Oracle)
@@ -2207,23 +1956,17 @@
           <dt>Tracker Issue ID</dt>
           <dd>
 
-
-
           </dd>
           <dt>Category</dt>
           <dd>
-
-
 
           </dd>
           <dt>Class</dt>
           <dd>
 
-
-
           </dd>
           <dt>Status</dt>
-          <dd>
+          <dd-->
 
 
 
@@ -2292,39 +2035,29 @@
           <dt>Submitter(s)</dt>
           <dd>
 
-            Farshid Tavakolizadeh (Fraunhofer)
+            Farshid Tavakolizadeh <!--(Fraunhofer)-->
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
-
             Michael McCool (Intel)
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
-
 
           </dd>
           <dt>Category</dt>
           <dd>
 
-
-
           </dd>
           <dt>Class</dt>
           <dd>
-
-
 
           </dd>
           <dt>Status</dt>
           <dd>
 
-
-
-          </dd>
+          </dd-->
           <dt>Target Users</dt>
           <dd>
 
@@ -2375,11 +2108,11 @@
             </ul>
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <!--dt>Dependencies - Affected WoT deliverables and/or work items</dt>
           <dd>
 
 
-          </dd>
+          </dd-->
           <dt>Description</dt>
           <dd>
 
@@ -2393,21 +2126,18 @@
             physical location, mapping to the building model or measurement type.
 
           </dd>
-          <dt>Variants</dt>
-          <dd>
-
+          <!--dt>Variants</dt>
+          <dd-->
 
           </dd>
           <dt>Security Considerations</dt>
           <dd>
-
+            <!-- TODO -->
 
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
-
             The TD may expose personal information about the building layout and residents.
-
           </dd>
           <dt>Gaps</dt>
           <dd>
@@ -2436,11 +2166,10 @@
             </ul>
 
           </dd>
-          <dt>Comments</dt>
+          <!--dt>Comments</dt>
           <dd>
 
-
-          </dd>
+          </dd-->
         </dl>
       </section>
 
@@ -2459,7 +2188,7 @@
 
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
             <p>Michael Lagally (Oracle)</br>
@@ -2471,14 +2200,14 @@
 
             &lt;please leave blank&gt;
 
-          </dd>
+          </dd-->
           <dt>Category</dt>
           <dd>
 
             Smart Building
 
           </dd>
-          <dt>Class</dt>
+          <!--dt>Class</dt>
           <dd>
 
             &lt;please leave blank&gt;
@@ -2489,7 +2218,7 @@
 
             &lt;please leave blank&gt;
 
-          </dd>
+          </dd-->
           <dt>Target Users</dt>
           <dd>
 
@@ -2815,7 +2544,7 @@
               different languages including english, french and chinese.</p>
 
           </dd>
-          <dt>Requirements</dt>
+          <!--dt>Requirements</dt>
           <dd>
 
             <p>None</p>
@@ -2826,7 +2555,7 @@
 
             <p>None</p>
 
-          </dd>
+          </dd-->
           <dt>Existing standards</dt>
           <dd>
 
@@ -2842,8 +2571,8 @@
 
 
           </dd>
-          <dt>Comments</dt>
-          <dd>
+          <!--dt>Comments</dt>
+          <dd-->
 
 
           </dd>
@@ -2864,7 +2593,7 @@
             Michael Lagally
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
 
@@ -2887,7 +2616,7 @@
 
           </dd>
           <dt>Status</dt>
-          <dd>
+          <dd-->
 
 
 
@@ -2900,17 +2629,17 @@
           </dd>
           <dt>Motivation</dt>
           <dd>
-
+            <p>
             Production lines for industrial manufacturing consist of multiple machines, where each machine
             incorporates sensors for various values.
             A failure of a single machine can cause defective products or a stop of the entire production.
-
+            </p><p>
             Big data analysis enables to identify behavioral patterns across multiple production lines of the entire
             production plant and across multiple plants.
-
+            </p><p>
             The results of this analysis can be used for optimizing consumption of raw materials, checking the status
             of production lines and plants and predicting and preventing fault conditions.
-
+            </p>
 
           </dd>
           <dt>Expected Devices</dt>
@@ -2935,36 +2664,37 @@
           </dd>
           <dt>Description</dt>
           <dd>
-
+            <p>
             A company owns multiple factories which contain multiple production lines.
             Examples are production lines, environment sensors,
             These devices collect data from multiple sensors and transmit this information to the cloud. Sensor data
             is stored in the cloud, can be visualized and analyzed using machine learning / AI.
-
+            </p><p>
             The cloud service allows to manage single and groups of devices.
             Combining the data streams from multiple devices allows to get an easy overview of the state of all
             connected devices in the user's realm.
-
+          </p><p>
             In many cases there are groups of devices of the same kind, so the aggregation of data across devices can
             serve to identify anomalies or to predict impending outages.
-
+          </p><p>
             The cloud service allows to manage single and groups of devices and can help to identify abonormal
             conditions.
             For this purpose a set of rules can be defined by the user, which raises alerts towards the user or
             triggers actions on devices based on these rules.
-
+          </p><p>
             This enables the early detection of pending problems and reduces the risk of machine outages, quality
             problems or threats to the environment or life of humans.
-
+            </p>
           </dd>
-          <dt>Variants</dt>
+          <!--dt>Variants</dt>
           <dd>
 
 
           </dd>
           <dt>Gaps</dt>
-          <dd>
+          <dd-->
 
+          <!-- TODO -->
 
           </dd>
           <dt>Existing standards</dt>
@@ -2993,7 +2723,7 @@
               Michael Lagally
 
             </dd>
-            <dt>Reviewer(s)</dt>
+            <!--dt>Reviewer(s)</dt>
             <dd>
 
               All WoT members, specifically Sebastian Kaebisch, Michael McCool, Ege Korkan, Zoltan Kis, Takuki Kamiya,
@@ -3019,7 +2749,7 @@
 
             </dd>
             <dt>Status</dt>
-            <dd>
+            <dd-->
 
 
 
@@ -3101,12 +2831,12 @@
               tasks.
 
             </dd>
-            <dt>Variants</dt>
+            <!--dt>Variants</dt>
             <dd>
 
               N/A
 
-            </dd>
+            </dd-->
             <dt>Gaps</dt>
             <dd>
 
@@ -3156,7 +2886,7 @@
             Michael Lagally
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
 
@@ -3180,7 +2910,7 @@
 
           </dd>
           <dt>Status</dt>
-          <dd>
+          <dd-->
 
 
 
@@ -3193,25 +2923,28 @@
           </dd>
           <dt>Motivation</dt>
           <dd>
-
-            A digital twin is the virtual representation of a physical asset such as a machine, a vehicle, robot,
-            sensor.
-            Using a digital twin allows businesses to analyze their physical assets to troubleshoot in real time,
-            predict future problems, minimize downtime, and perform simulations to create new business opportunities.
-
-            A digital twin may also be called a twin or a shadow. Digital twin technology may be referred to as device
-            virtualization.
-
-            Digital twins can be located in the edge or in the cloud.
-
+            <p>
+              A digital twin is the virtual representation of a physical asset such as a machine, a vehicle, robot,
+              sensor.
+              Using a digital twin allows businesses to analyze their physical assets to troubleshoot in real time,
+              predict future problems, minimize downtime, and perform simulations to create new business opportunities.
+            </p>
+            <p>
+              A digital twin may also be called a twin or a shadow. Digital twin technology may be referred to as device
+              virtualization.
+            </p>
+            <p>
+              Digital twins can be located in the edge or in the cloud.
+            </p>
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
-            Various devices such as sensors, machines, vehicles, production lines, industry robots.
-
-            Digital twin platforms at the edge or in the cloud.
-
+            <p>
+              Various devices such as sensors, machines, vehicles, production lines, industry robots.
+            </p>
+            <p>
+              Digital twin platforms at the edge or in the cloud.
+            </p>
           </dd>
           <dt>Expected Data</dt>
           <dd>
@@ -3265,79 +2998,86 @@
           </dd>
           <dt>Variants</dt>
           <dd>
-
-            <p>Virtual Twin</p>
-
-            The virtual twin is a representation of a physical device or an asset. A virtual twin uses a model that
-            contains observed and desired attribute values and also uses a semantic model of the behavior of the
-            device.
-
-            Intermittent connectivity: An application may not be able to connect to the physical asset. In such a
-            scenario, the application must be able to retrieve the last known status and to control the operation
-            states of other assets.
-
-            Protocol abstraction: Typically, devices use a variety of protocols and methods to connect to the IoT
-            network. From a users perspective this complexity should not affect other business applications such as an
-            enterprise resource planning (ERP) application.
-
-            Business rules: The user can specify the normal operating range of a property in a semantic model.
-            Business rules can be declaratively defined and actions can be automatically invoked in the edge or on the
-            device.
-
-            Example: In a fleet of connected vehicles, the user monitors a collection of operating parameters, such as
-            fuel level, location, speed and others. The semantics-based virtual twin model enables the user to decide
-            whether the operating parameters are in normal range. In out of range conditions the user can take
-            appropriate actions.
-
-
-            <p>Predictive Twin</p>
-
-            In a predictive twin, the digital twin implementation builds an analytical or statistical model for
-            prediction by using a machine-learning technique. It need not involve the original designers of the
-            machine. It is different from the physics-based models that are static, complex, do not adapt to a
-            constantly changing environment, and can be created only by the original designers of the machine.
-
-            A data analyst can easily create a model based on external observation of a machine and can develop
-            multiple models based on the user’s needs.
-            The model considers the entire business scenario and generates contextual data for analysis and
-            prediction.
-
-            When the model detects a future problem or a future state of a machine, the user can prevent or prepare
-            for them.
-            The user can use the predictive twin model to determine trends and patterns from the contextual machine
-            data. The model helps to address business problems.
-
-
-            <p>Twin Projections</p>
-
-            In twin projections, the predictions and the insights integrate with back-end business applications,
-            making IoT an integral part of business processes.
-            When projections are integrated with a business process, they can trigger a remedial business workflow.
-
-            Prediction data offers insights into the operations of machines. Projecting these insights into the
-            back-end applications infrastructure enables business applications to interact with the IoT system and
-            transform into intelligent systems.
-
-
+          
+            <dt>Virtual Twin</dt>
+            <p>
+              The virtual twin is a representation of a physical device or an asset. A virtual twin uses a model that
+              contains observed and desired attribute values and also uses a semantic model of the behavior of the
+              device.
+            </p>
+            <p>
+              Intermittent connectivity: An application may not be able to connect to the physical asset. In such a
+              scenario, the application must be able to retrieve the last known status and to control the operation
+              states of other assets.
+            </p>
+            <p>
+              Protocol abstraction: Typically, devices use a variety of protocols and methods to connect to the IoT
+              network. From a users perspective this complexity should not affect other business applications such as an
+              enterprise resource planning (ERP) application.
+            </p>
+            <p>
+              Business rules: The user can specify the normal operating range of a property in a semantic model.
+              Business rules can be declaratively defined and actions can be automatically invoked in the edge or on the
+              device.
+            </p>
+            <p>
+              Example: In a fleet of connected vehicles, the user monitors a collection of operating parameters, such as
+              fuel level, location, speed and others. The semantics-based virtual twin model enables the user to decide
+              whether the operating parameters are in normal range. In out of range conditions the user can take
+              appropriate actions.
+          
+            </p>
+            <dt>Predictive Twin</dt>
+            <p>
+              In a predictive twin, the digital twin implementation builds an analytical or statistical model for
+              prediction by using a machine-learning technique. It need not involve the original designers of the
+              machine. It is different from the physics-based models that are static, complex, do not adapt to a
+              constantly changing environment, and can be created only by the original designers of the machine.
+            </p>
+            <p>
+              A data analyst can easily create a model based on external observation of a machine and can develop
+              multiple models based on the user’s needs.
+              The model considers the entire business scenario and generates contextual data for analysis and
+              prediction.
+            </p>
+            <p>
+              When the model detects a future problem or a future state of a machine, the user can prevent or prepare
+              for them.
+              The user can use the predictive twin model to determine trends and patterns from the contextual machine
+              data. The model helps to address business problems.
+            </p>
+          
+            <dt>Twin Projections</dt>
+            <p>
+              In twin projections, the predictions and the insights integrate with back-end business applications,
+              making IoT an integral part of business processes.
+              When projections are integrated with a business process, they can trigger a remedial business workflow.
+            </p>
+            <p>
+              Prediction data offers insights into the operations of machines. Projecting these insights into the
+              back-end applications infrastructure enables business applications to interact with the IoT system and
+              transform into intelligent systems.
+              ^</p>
+          
           </dd>
           <dt>Gaps</dt>
           <dd>
-
+          
             WoT does not define a way to describe the behavior of a thing to use for a simulation.
-
+          
           </dd>
           <dt>Existing standards</dt>
           <dd>
-
+          
             <section id="todo-references-x" class="ednote">
               TODO: Provide links to relevant standards that are
               relevant for this use case</section>
-
+          
           </dd>
-          <dt>Comments</dt>
+          <!--dt>Comments</dt>
           <dd>
-          </dd>
-        </dl>
+          </dd-->
+          </dl>
       </section>
       <section id="X-Protocol-Interworking">
         <h2>Cross Protocol Interworking</h2>
@@ -3348,7 +3088,7 @@
             Michael Lagally
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
             Ege Korkan, Michael McCool, Michael Koster, Sebastian Käbisch
@@ -3357,24 +3097,17 @@
           <dt>Tracker Issue ID</dt>
           <dd>
 
-
           </dd>
           <dt>Category</dt>
           <dd>
-
-
 
           </dd>
           <dt>Class</dt>
           <dd>
 
-
-
           </dd>
           <dt>Status</dt>
-          <dd>
-
-
+          <dd-->
 
           </dd>
           <dt>Target Users</dt>
@@ -3417,27 +3150,30 @@
           </dd>
           <dt>Description</dt>
           <dd>
-
-            There are multiple user scenarios that are addressed by this use case.
-
-            An example in the smart home environment is an automatic control lamps, air conditioners, heating, window
-            blinds in a household
-            based on sensor data, e.g. sunlight, human presence, calendar and clock, etc.
-
-            In an industrial environment individual actuators and production devices use different protocols.
-            Examples include MQTT, OPC-UA, Modbus, Fieldbus, and others.
-            Gathering data from these devices, e.g. to support digital twins or big data use cases requires an "Agent"
-            to bridge across these protocols.
-            To provide interoperability and to reduce implementation complexity of this agent a common set of (minimum
-            and maximum)
-            requirements need to be supported by all interoperating devices.
-
-            A smart city environment is similar to the industrial scenario in terms of device interoperability.
-            Devices differ however,
-            they include smart traffic lights, traffic monitoring, people counters, cameras.
-
+            <p>
+              There are multiple user scenarios that are addressed by this use case.
+            </p>
+            <p>
+              An example in the smart home environment is an automatic control lamps, air conditioners, heating, window
+              blinds in a household
+              based on sensor data, e.g. sunlight, human presence, calendar and clock, etc.
+            </p>
+            <p>
+              In an industrial environment individual actuators and production devices use different protocols.
+              Examples include MQTT, OPC-UA, Modbus, Fieldbus, and others.
+              Gathering data from these devices, e.g. to support digital twins or big data use cases requires an "Agent"
+              to bridge across these protocols.
+              To provide interoperability and to reduce implementation complexity of this agent a common set of (minimum
+              and maximum)
+              requirements need to be supported by all interoperating devices.
+            </p>
+            <p>
+              A smart city environment is similar to the industrial scenario in terms of device interoperability.
+              Devices differ however,
+              they include smart traffic lights, traffic monitoring, people counters, cameras.
+            </p>
           </dd>
-          <dt>Variants</dt>
+          <!--dt>Variants</dt-->
           <dd>
 
 
@@ -3453,11 +3189,9 @@
 
             MQTT, OPC-UA, BACNet, CoAP, various other home and industrial protocols.
           </dd>
-          <dt>Comments</dt>
+          <!--dt>Comments</dt>
           <dd>
-
-
-          </dd>
+          </dd-->
         </dl>
       </section>
     </section>
@@ -3472,7 +3206,7 @@
           David Ezell, Michael Lagally, Michael McCool
 
         </dd>
-        <dt>Reviewer(s)</dt>
+        <!--dt>Reviewer(s)</dt>
         <dd>
 
 
@@ -3499,7 +3233,7 @@
 
 
 
-        </dd>
+        </dd-->
         <dt>Target Users</dt>
         <dd>
 
@@ -3508,15 +3242,15 @@
         </dd>
         <dt>Motivation</dt>
         <dd>
-
+          <p>
           Integrating and interconnecting multiple devices into the common retail workflow
           (i.e., transaction log) drastically improves retail business operations at multiple levels.
           It brings operational visibility,including consumer behavior and environmental information,
           that was not previously possible or viable in a meaningful way.
-
+          </p><p>
           It drastically speeds up the process of root cause analysis of operational issues and
           simplifies the work of retailers.
-
+        </p>
         </dd>
         <dt>Expected Devices</dt>
         <dd>
@@ -3531,13 +3265,13 @@
           Inventory data, supply chain status information, discrete sensor data or data streams.
 
         </dd>
-        <dt>Dependencies</dt>
+        <!--dt>Dependencies</dt>
         <dd>
 
 
           tbd
 
-        </dd>
+        </dd-->
         <dt>Description</dt>
         <dd>
 
@@ -3627,10 +3361,10 @@
             <dt>Submitter(s)</dt>
             <dd>
 
-              Jennifer Lin (GovTech Singapore)
+              Jennifer Lin <!--(GovTech Singapore)-->
 
             </dd>
-            <dt>Reviewer(s)</dt>
+            <!--dt>Reviewer(s)</dt>
             <dd>
 
               Michael McCool, Michael Lagally
@@ -3655,7 +3389,7 @@
 
             </dd>
             <dt>Status</dt>
-            <dd>
+            <dd-->
 
 
 
@@ -3867,7 +3601,7 @@
               Taki Kamiya
 
             </dd>
-            <dt>Reviewer(s)</dt>
+            <!--dt>Reviewer(s)</dt>
             <dd>
 
 
@@ -3896,7 +3630,7 @@
 
 
 
-            </dd>
+            </dd-->
             <dt>Target Users</dt>
             <dd>
 
@@ -3940,39 +3674,39 @@
             </dd>
             <dt>Description</dt>
             <dd>
-
+              <p>
               Physiological Closed-Loop Control (PCLC) devices are a group of emerging technologies, which use
               feedback from physiological sensor(s) to autonomously manipulate physiological variable(s) through
               delivery of therapies conventionally delivered by clinician(s).
-
+              </p><p>
               Clinical scenario without PCLC. An elderly female with end-stage renal failure was given a standard
               insulin infusion protocol to manage her blood glucose, but no glucose was provided. Her blood glucose
               dropped to 33, then rebounded to over 200 after glucose was given. This scenario has not changed for
               decades.
-
+            </p><p>
               The desired state with PCLC implemented in an ICU. A patient is receiving an IV insulin infusion and is
               having the blood glucose continuously monitored. The infusion pump rate is automatically adjusted
               according to the real-time blood glucose levels being measured, to maintain blood glucose values in a
               target range. If the patient’s glucose level does not respond appropriately to the changes in insulin
               administration, the clinical staff is alerted.
-
+            </p><p>
               Medical devices do not interact with each other autonomously (monitors, ventilator, IV pumps, etc.)
               Contextually rich data is difficult to acquire. Technologies and standards to reduce medical errors and
               improve efficiency have not been implemented in theater or at home.
-
+            </p><p>
               In recent years, researchers have made progress developing PCLC devices for mechanical ventilation,
               anesthetic delivery applications, and so on. Despite these promises and potential benefits, there has
               been limited success in the translation of PCLC devices from <a
                 href="https://today.duke.edu/2014/07/benchbedside">bench to bedside</a>. A key challenge to bringing
               PCLC devices to a level required for a clinical trials in humans is risk management to ensure device
               reliability and safety.
-
+            </p><p>
               The United States Food and Drug Administration (FDA) classifies new hazards that might be introduced by
               PCLC devices into three categories. Besides clinical factors (e.g. sensor validity and reliability,
               inter- and intra-patient physiological variability) and usability/human factors (e.g. loss of
               situational awareness, errors, and lapses in operation), there are also engineering challenges including
               robustness, availability, and integration issues.
-
+            </p>
             </dd>
             <dt>Variants</dt>
             <dd>
@@ -3989,7 +3723,7 @@
             </dd>
             <dt>Security Considerations</dt>
             <dd>
-
+              <p>
               Security considerations for interconnected and dynamically composable medical systems are critical not
               only because laws such as <a href="https://www.hhs.gov/hipaa/index.html">HIPAA</a> mandate it, but also
               because security attacks can have serious safety consequences for patients. The systems need to support
@@ -3997,17 +3731,16 @@
               that the components are authentic and authorized for use in that environment, that they have been
               approved by the hospital’s biomedical engineering staff and that they meet regulatory safety and
               effectiveness requirements.
-
+            </p><p>
               For security and safety reasons, <a href="https://www.astm.org/Standards/F2761.htm">ICE
                 F2761-09(2013)</a> compliant medical devices never interact directly each other. All interaction is
               coordinated and controlled via the applications.
-
+            </p><p>
               While transport-level security such as TLS provides reasonable protection against external attackers,
               they do not provide mechanisms for granular access control for data streams happening within the same
               protected link. Transport-level security is also not sufficiently flexible to balance between security
               and performance. Another issue with widely used transport-level security solutions is the lack of
               support for multicast.
-
             </dd>
             <dt>Privacy Considerations</dt>
             <dd>
@@ -4020,8 +3753,7 @@
             <dt>References</dt>
             <dd>
               <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
-                for
-                this use case</section>
+                for this use case</section>
 
             </dd>
             <dt>Gaps</dt>
@@ -4059,8 +3791,8 @@
               which are dual use for the civilian healthcare system.
 
             </dd>
-            <dt>Comments</dt>
-            <dd>
+            <!--dt>Comments</dt>
+            <dd-->
 
             </dd>
           </dl>
@@ -4079,7 +3811,7 @@
               Michael McCool
 
             </dd>
-            <dt>Reviewer(s)</dt>
+            <!--dt>Reviewer(s)</dt>
             <dd>
 
 
@@ -4104,7 +3836,7 @@
 
             </dd>
             <dt>Status</dt>
-            <dd>
+            <dd-->
 
 
 
@@ -4213,7 +3945,7 @@
             Christian Glomb (Siemens)
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
             Michael Lagally (Oracle)
@@ -4242,7 +3974,7 @@
 
 
 
-          </dd>
+          </dd-->
           <dt>Target Users</dt>
           <dd>
 
@@ -4307,7 +4039,7 @@
           <dt>Variants</dt>
           <dd>
 
-            <p>Decentralized Power Generation</p>
+            <dt>Decentralized Power Generation</dt>
 
             While electricity grids with centralized power generation have dominated up to now, the trend is moving
             towards decentralized generation plants, both for generation from fossil primary energy through small CHP
@@ -4318,7 +4050,7 @@
             lower voltage levels such as the low-voltage grid or the medium-voltage grid. This use case variants also
             includes operation and control of energy storages like batteries.
 
-            <p>Virtual Power Plants</p>
+            <dt>Virtual Power Plants</dt>
 
             A Virtual Power Plant (VPP) is an aggregation of Distributed Energy Resources (DERs) that can act as an
             entity on energy markets or as an ancillary service to grid operation.
@@ -4326,12 +4058,12 @@
             side-effect resp. secondary use. This results in negotiations/collaborations between many different
             parties e.g. such as the DER owner, the VPP operator, the grid operator and others.
 
-            <p>Smart Metering</p>
+            <dt>Smart Metering</dt>
             For consumers, a major change is the installation of smart meters. Their core tasks are remote reading and
             the possibility to realize fluctuating prices within a day at short notice. All electricity meters must
             therefore be replaced by those with remote data transmission.
 
-            <p>Other variants</p>
+            <dt>Other variants</dt>
             Emergency response, grid synchronization, grid black start
 
           </dd>
@@ -4373,29 +4105,21 @@
                 application protocols to enable the exchange of homogenous information over heterogenous application
                 layer protocols</li>
             </ul>
-
           </dd>
-          <dt>Gaps</dt>
+          <!--dt>Gaps</dt>
           <dd>
-
-            <section id="<section id=" todo-references-x" class="ednote">TODO: Provide links to relevant standards that
-              are relevant for this use case</section>-gaps-x" class="ednote"><section id="todo-references-x"
-              class="ednote">TODO: Provide links to relevant standards that are relevant for this use case</section>:
-            Describe any gaps that are not addressed in the current WoT standards and building blocks
-      </section>
-
-      </dd>
+      </dd-->
       <dt>Existing standards</dt>
       <dd>
 
         IEC 61850 - International standard for data models and communication protocols
-
+        <br>
         IEEE 1547 - US standard for interconnecting distributed resources with electric power systems
 
       </dd>
-      <dt>Comments</dt>
+      <!--dt>Comments</dt>
       <dd>
-      </dd>
+      </dd-->
       </dl>
     </section>
 
@@ -4405,40 +4129,24 @@
 
         <dt>Submitter(s)</dt>
         <dd>
-
           Zoltan Kis
-
         </dd>
-        <dt>Reviewer(s)</dt>
+        <!--dt>Reviewer(s)</dt>
         <dd>
-
           Jennifer Lin, Michael McCool
-
         </dd>
         <dt>Tracker Issue ID</dt>
         <dd>
-
-
-
         </dd>
         <dt>Category</dt>
         <dd>
-
-
-
         </dd>
         <dt>Class</dt>
         <dd>
-
-
-
         </dd>
         <dt>Status</dt>
         <dd>
-
-
-
-        </dd>
+        </dd-->
         <dt>Sub-categories</dt>
         <dd>
           Transportation - Infrastructure
@@ -4448,34 +4156,33 @@
         </dd>
         <dt>Target Users</dt>
         <dd>
-
+          <p>
           Smart Cities: managing roads, public transport and commuting, autonomous and human driven vehicles,
           transportation tracking and control systems, route information systems, commuting and public transport,
           vehicles, on-demand transportation, self driving fleets, vehicle information and control systems,
           infrastructure sharing and payment system, smart parking, smart vehicle servicing, emergency monitoring,
           etc.
-
+        </p><p>
           Transport companies: managing shipping, air cargo, train cargo and last mile delivery transportation
           systems including automated systems.
-
+        </p><p>
           Commuters: Mobility as a service, booking systems, route planning, ride sharing, self-driving,
           self-servicing infrastructure, etc.
-
-
+          </p>
         </dd>
         <dt>Motivation</dt>
         <dd>
-
+          <p>
           Provide common vocabulary for describing transport related services and solutions that can be reused
           across sub-categories, for easier interoperability between various systems owned by different
           stakeholders.
-
+        </p><p>
           Thing models could be defined in many subdomains to help integration or interworking between multiple
           systems.
-
+        </p><p>
           Transportation of goods can be optimized at global level by enhancing interoperability between vertical
           systems.
-
+          </p>
         </dd>
         <dt>Expected Devices</dt>
         <dd>
@@ -4534,19 +4241,17 @@
           </ul>
 
         </dd>
-        <dt>Gaps</dt>
+        <!--dt>Gaps</dt>
         <dd>
-
-
-        </dd>
-        <dt>Existing standards</dt>
+        </dd-->
+        <!--dt>Existing standards</dt>
         <dd>
 
           <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
             are relevant for this use case</section>
 
         </dd>
-        <dt>Comments</dt>
+        <dt>Comments</dt-->
         <dd>
 
 
@@ -4566,7 +4271,7 @@
             Michael McCool
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
 
@@ -4577,30 +4282,23 @@
 
 
 
-          </dd>
+          </dd-->
           <dt>Category</dt>
           <dd>
 
             Accessibility
 
           </dd>
-          <dt>Class</dt>
+          <!--dt>Class</dt>
           <dd>
-
-
-
           </dd>
           <dt>Status</dt>
           <dd>
-
-
-
-          </dd>
-          <dt>Target Users</dt>
+          </dd-->
+          <!--dt>Target Users</dt>
           <dd>
 
-
-          </dd>
+          </dd-->
           <dt>Motivation</dt>
           <dd>
 
@@ -4849,35 +4547,21 @@
 
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
-
-
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
-
           </dd>
           <dt>Category</dt>
           <dd>
-
-
-
           </dd>
           <dt>Class</dt>
           <dd>
-
-
-
           </dd>
           <dt>Status</dt>
           <dd>
-
-
-
-          </dd>
+          </dd-->
           <dt>Target Users</dt>
           <dd>
 
@@ -4933,26 +4617,27 @@
           </dd>
           <dt>Description</dt>
           <dd>
-
+            <p>
             Home smart devices behave according to TV programs.
-
+          </p><p>
             Hybridcast applications in TV emit information about TV programs for smart home devices.
             (Hybridcast is a Japanese Integrated Broadcast-Broadband system. Hybridcast applications are HTML5
             applications that work on Hybridcast TV.)
-
+            </p><p>
             Hybridcast Contact application receives the information and controlls smart home devices.
             <br>
             <br>
             <img src="images/scenario_nhk.png" width="100%" height=100%>
             <br>
+            </p>
           </dd>
-          <dt>Variants</dt>
+          <!--dt>Variants</dt>
           <dd>
 
 
           </dd>
           <dt>Gaps</dt>
-          <dd>
+          <dd->
 
 
           </dd>
@@ -4971,9 +4656,9 @@
 
           </dd>
         </dl>
-      </section>
+      </section-->
 
-    <!-- /section -->
+    </section>
     </section>
 
     <section id="education">
@@ -4988,7 +4673,7 @@
               Ege Korkan
     
             </dd>
-            <dt>Reviewer(s)</dt>
+            <!--dt>Reviewer(s)</dt>
             <dd>
     
     
@@ -5013,7 +4698,7 @@
     
             </dd>
             <dt>Status</dt>
-            <dd>
+            <dd-->
     
     
     
@@ -5095,7 +4780,7 @@
             <dt>Privacy Considerations</dt>
             <dd>
     
-              none from the WoT point of view since we want the devices to be used by anyone and the devices do not
+              None from the WoT point of view since we want the devices to be used by anyone and the devices do not
               share any information that is related to the students or us as the provider of the devices.
               However, there are cameras which can show humans entering the room as a side effect (they are meant to
               monitor the devices). The streams are accessible only to authorized users, the room has signs on the door
@@ -5123,14 +4808,14 @@
               </ul>
     
             </dd>
-            <dt>Existing standards</dt>
+            <!--dt>Existing standards</dt>
             <dd>
     
     
             </dd>
             <dt>Comments</dt>
             <dd>
-            </dd>
+            </dd-->
           </dl>
       </section>
     </section>
@@ -5139,9 +4824,6 @@
 
     <section id="sec-horizontal-ucs">
       <h2>Use Cases for multiple domains</h2>
-
-
-
     <section id="multimodal">
       <h2>Multimodal System Integration</h2>
       <section id="mmi-5-1_multimodal-recognition-support">
@@ -5153,7 +4835,7 @@
 
             Michael McCool
 
-          </dd>
+          <!--/dd>
           <dt>Reviewer(s)</dt>
           <dd>
 
@@ -5165,13 +4847,13 @@
 
 
 
-          </dd>
+          </dd-->
           <dt>Category</dt>
           <dd>
 
             Accessibility
 
-          </dd>
+          <!--/dd>
           <dt>Class</dt>
           <dd>
 
@@ -5183,12 +4865,10 @@
 
 
 
-          </dd>
-          <dt>Target Users</dt>
+          </dd-->
+          <!--dt>Target Users</dt>
           <dd>
-
-
-          </dd>
+          </dd-->
           <dt>Motivation</dt>
           <dd>
 
@@ -5246,8 +4926,8 @@
             to provide integrated services.
 
           </dd>
-          <dt>Variants</dt>
-          <dd>
+          <!--dt>Variants</dt>
+          <dd-->
 
 
           </dd>
@@ -5280,7 +4960,7 @@
             Michael McCool
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
 
@@ -5291,14 +4971,14 @@
 
 
 
-          </dd>
+          </dd-->
           <dt>Category</dt>
           <dd>
 
             Accessibility
 
           </dd>
-          <dt>Class</dt>
+          <!--dt>Class</dt>
           <dd>
 
 
@@ -5311,7 +4991,7 @@
 
           </dd>
           <dt>Target Users</dt>
-          <dd>
+          <dd-->
 
 
           </dd>
@@ -5427,44 +5107,33 @@
             Michael McCool
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
-
-
 
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
 
-
-
-          </dd>
+          </dd-->
           <dt>Category</dt>
           <dd>
-
             Accessibility
-
           </dd>
-          <dt>Class</dt>
+          <!--dt>Class</dt>
           <dd>
-
-
 
           </dd>
           <dt>Status</dt>
           <dd>
 
-
-
           </dd>
           <dt>Target Users</dt>
-          <dd>
-
+          <dd-->
 
           </dd>
           <dt>Motivation</dt>
           <dd>
-
+            <p>
             Many of today's home IoT-enabled devices can provide similar functionality
             (e.g. audio/video playback),
             differing only in certain aspects of the user interface.
@@ -5472,7 +5141,7 @@
             application as the user moves from room to room,
             with the user interface switched automatically to the set of
             devices available in the user's present location.
-
+            </p><p>
             On the other hand,
             some devices can have specific capabilities
             and user interfaces that can be used to add information to a larger context
@@ -5482,7 +5151,7 @@
             context of use.
             Both aspects provide arguments for exploring use cases where
             applications use distributed multimodal interfaces.
-
+            </p>
           </dd>
           <dt>Expected Devices</dt>
           <dd>
@@ -5598,7 +5267,7 @@
             Michael McCool
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
 
@@ -5609,21 +5278,21 @@
 
 
 
-          </dd>
+          </dd-->
           <dt>Category</dt>
           <dd>
 
             Accessibility
 
           </dd>
-          <dt>Class</dt>
+          <!--dt>Class</dt>
           <dd>
 
 
 
           </dd>
           <dt>Status</dt>
-          <dd>
+          <dd-->
 
 
 
@@ -5678,7 +5347,7 @@
           </dd>
           <dt>Description</dt>
           <dd>
-
+            <p>
             Smart home functionality (window blinds, lights, air conditioning etc.)
             is controlled through a multimodal interface,
             composed from modalities built into the house itself
@@ -5687,7 +5356,7 @@
             (e.g. smartphone touchscreen).
             The system may automatically adapt to the preferences of a specific user,
             or enter a more complex interaction if multiple people are present.
-
+            </p><p>
             Sensors built into various devices around the house can act as input
             modalities that feed information to the home and affect its behavior.
             For example,
@@ -5695,7 +5364,7 @@
             as workout intensity recorded by the fitness equipment increases.
             The same data can also increase or decrease volume and tempo of music tracks
             played by the user's mobile device or the home's media system.
-
+          </p>
           </dd>
           <dt>Variants</dt>
           <dd>
@@ -5739,7 +5408,7 @@
             Michael McCool, Cristiano Aguzzi
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
 
@@ -5768,7 +5437,7 @@
 
             WIP
 
-          </dd>
+          </dd-->
           <dt>Target Users</dt>
           <dd>
 
@@ -6272,7 +5941,7 @@
             Michael Lagally
 
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
 
             All WoT Arch participants
@@ -6301,7 +5970,7 @@
 
 
 
-          </dd>
+          </dd-->
           <dt>Target Users</dt>
           <dd>
 
@@ -6311,24 +5980,17 @@
           <dt>Motivation</dt>
           <dd>
 
-            Current spec does not address lifecycle.
+            The architecture specification currently does not address lifecycle.
 
           </dd>
-          <dt>Expected Devices</dt>
+          <!--dt>Expected Devices</dt>
           <dd>
-
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
-
           </dd>
           <dt>Dependencies</dt>
-          <dd>
-
-
-
+          <dd-->
           </dd>
           <dt>Description</dt>
           <dd>
@@ -6395,7 +6057,7 @@
               href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle</a>
             <br>
             <br>
-            documents that were created / discussed in the architecture TF.
+            Documents that were created / discussed in the architecture TF.
             <ul>
               <li>Lifecycle comparisons:
                 <a
@@ -6429,38 +6091,25 @@
     <section id="Discovery">
       <h2>Discovery</h2>
          <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Michael McCool
-
           </dd>
-          <dt>Reviewer(s)</dt>
+          <!--dt>Reviewer(s)</dt>
           <dd>
-
             Michael Lagally
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
-
           </dd>
           <dt>Category</dt>
           <dd>
-
-
           </dd>
           <dt>Class</dt>
           <dd>
-
-
           </dd>
           <dt>Status</dt>
-          <dd>
-
-
+          <dd-->
           </dd>
           <dt>Target Users</dt>
           <dd>
@@ -6620,7 +6269,7 @@
           </ul>
 
         </dd>
-        <dt>Reviewer(s)</dt>
+        <!--dt>Reviewer(s)</dt>
         <dd>
           <ul>
             <li>Michael McCool</li>
@@ -6641,7 +6290,7 @@
         </dd>
         <dt>Status</dt>
         <dd>
-        </dd>
+        </dd-->
         <dt>Target Users</dt>
         <dd>
           <ul>
@@ -6823,13 +6472,13 @@
           </ul>
 
         </dd>
-        <dt>Existing standards</dt>
+        <!--dt>Existing standards</dt>
         <dd>
 
         </dd>
         <dt>Comments</dt>
         <dd>
-        </dd>
+        </dd-->
       </dl>
     </section>
   </section>
@@ -6844,7 +6493,7 @@
           Michael McCool
   
         </dd>
-        <dt>Reviewer(s)</dt>
+        <!--dt>Reviewer(s)</dt>
         <dd>
   
           Michael Lagally
@@ -6861,7 +6510,7 @@
         </dd>
         <dt>Status</dt>
         <dd>
-        </dd>
+        </dd-->
         <dt>Target Users</dt>
         <dd>
           Note: User should be "Stakeholder"
@@ -7019,9 +6668,9 @@
               Multiaccess Edge Computing </li>
           </ul>
         </dd>
-        <dt>Comments</dt>
+        <!--dt>Comments</dt>
         <dd>
-        </dd>
+        </dd-->
       </dl>
     </section>
     </section> <!-- horizontal-ucs -->
