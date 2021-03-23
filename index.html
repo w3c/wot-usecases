@@ -398,61 +398,85 @@
     </p>
 
     <p>
-      This document contain all use cases that were contributed to the WoT Use Cases task force until March 15th 2021.
+      This document contains chapters describing the use cases that were contributed by multiple authors,
+      functional and technical requirements on the Web of Things standards.
+      Additionally it contains a summary of the liaisons, where active collaboration is taking place at the time of
+      writing.
       Since this document is a WG note, additional use cases will be added in future revisions of this document.
     </p>
-    <p>
-      The collection of use cases can be separated into two categories:
-    <ul>
-      <li>Domain specific (vertical) use cases for a single application domain.</li>
-      <li>Horizontal use cases that address multiple domains.</li>
-    </ul>
-    Domain specific use cases are described in <a href="#sec-vertical-ucs"></a>,
-    horizontal use cases are described in <a href="#sec-horizontal-ucs"></a>
-    </p>
 
-
-
-    <section id="domains" class="ednote">
-      TODO: Give a domain overview, explain different horizontals and verticals.
-    </section>
-
-  </section>
-
-  <section id="conformance"></section>
-
-  <section id="definitions">
-    <h2>Terminology, Stakeholders and Roles</h2>
-    <section id="terminology">
-      <h2>Terminology</h2>
-      The present document uses the terminology from WoT Architecture [[wot-architecture]].
-    </section>
-
-    <section id="stakeholders">
-      <h2>Stakeholders and Roles</h2>
+    <section id="domains">
+      <h2>Domains</h2>
       <p>
-        The following stakeholders and actors were identified
-        when the use cases have been collected and requirements were identified.
-        Note that these stakeholders and roles may overlap in some use cases.
+        The collection of use cases can be separated into two categories:
+      <ul>
+        <li>Domain specific (vertical) use cases for a single application domain.</li>
+        <ul>
+          <li>Agriculture</li>
+          <li>Smart City</li>
+          <li>Smart Buildings</li>
+          <li>Manufacturing</li>
+          <li>Retail</li>
+          <li>Health</li>
+          <li>Energy</li>
+          <li>Transportation</li>
+          <li>Automotive</li>
+          <li>Snart Home</li>
+          <li>Eduction</li>
+        </ul>
+        <li>Horizontal use cases that address multiple domains.</li>
+        <ul>
+          <li>Discovery</li>
+          <li>Multi-Vendor System Integration</li>
+          <li>Digital Twin</li>
+          <li>Cross Protocol Interworking</li>
+          <li>Multimodal System Integration</li>
+          <li>Accessibility</li>
+          <li>Security</li>
+          <li>Lifecycle</li>
+          <li>VR/AR</li>
+          <li>Edge Computing</li>
+        </ul>
+      </ul>
+      Domain specific use cases are described in <a href="#sec-vertical-ucs"></a>,
+      horizontal use cases are described in <a href="#sec-horizontal-ucs"></a>
       </p>
     </section>
-    <ul>
-      <li>device owners</li>
-      <li>device user</li>
-      <li>cloud provider</li>
-      <li>service provider</li>
-      <li>device manufacturer</li>
-      <li>gateway manufacturer</li>
-      <li>identity provider</li>
-      <li>directory service operator</li>
-    </ul>
+
+    <section id="conformance"></section>
+
+    <section id="definitions">
+      <h2>Terminology, Stakeholders and Roles</h2>
+      <section id="terminology">
+        <h2>Terminology</h2>
+        The present document uses the terminology from WoT Architecture [[wot-architecture]].
+      </section>
+
+      <section id="stakeholders">
+        <h2>Stakeholders and Roles</h2>
+        <p>
+          The following stakeholders and actors were identified
+          when the use cases have been collected and requirements were identified.
+          Note that these stakeholders and roles may overlap in some use cases.
+        </p>
+      </section>
+      <ul>
+        <li>device owners</li>
+        <li>device user</li>
+        <li>cloud provider</li>
+        <li>service provider</li>
+        <li>device manufacturer</li>
+        <li>gateway manufacturer</li>
+        <li>identity provider</li>
+        <li>directory service operator</li>
+      </ul>
+    </section>
   </section>
 
-  </section>
+  <!-- DOMAIN SPECIFIC USE CASES -->
 
   <section id="sec-vertical-ucs">
     <h2>Domain specific Use Cases</h2>
-
 
     <section id="agriculture">
       <h2>Smart Agriculture</h2>
@@ -542,7 +566,6 @@
             <!--/dd>
             <dt>Variants</dt>
             <dd-->
-
 
           </dd>
           <dt>Gaps</dt>
@@ -944,7 +967,7 @@
             watering for one of the next days.
             <br>
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             <ul>
@@ -1466,7 +1489,7 @@
             </ul>
             </p>
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
             <ul>
               <li>Thing description - support for data ingestion and normalization, geolocation and timestamp standards.
@@ -1580,7 +1603,6 @@
             </dd>
             <dt>Status</dt>
             <dd-->
-
 
 
           </dd>
@@ -1715,7 +1737,6 @@
             <dd-->
 
 
-
           </dd>
           <dt>Target Users</dt>
           <dd>
@@ -1783,7 +1804,6 @@
           </dd>
           <dt>Variants</dt>
           <dd>
-
 
             The user may have additional mobile devices they want to incorporate into
             an interaction, for example a headset acting as an auditory aid or personal speech output
@@ -1887,7 +1907,7 @@
             Data coming from different contexts, such as Energy, Building, Environmental Wearables and Water.
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             Current WoT-Discovery approach
@@ -1930,7 +1950,6 @@
             <br>
             <br>
 
-
             For instance, assuming Middle-Node F receives a query that asks about all the discoverable Building IoT
             devices in the campus. First, the Middle-Node F will try to answer the query with the Thing Descriptions of
             the IoT registered within. Since Middle-Node F contains some Building IoT devices a partial query answer is
@@ -1956,7 +1975,6 @@
           <dt>Security Considerations</dt>
           <dd>
             None, in this case an underneath infrastructure that handles security is assumed
-
 
           </dd>
           <dt>Privacy Considerations</dt>
@@ -2018,7 +2036,6 @@
           <dd-->
 
 
-
           </dd>
           <dt>Target Users</dt>
           <dd>
@@ -2057,12 +2074,11 @@
             Hetrogeneos data models from different IoT systems such as BACnet, KNX, and Modbus.
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             WoT Thing Description and Thing Model, WoT Architecture, WoT Binding Templates (covering protocol
             specifica)
-
 
           </dd>
           <dt>Existing standards</dt>
@@ -2158,9 +2174,8 @@
             </ul>
 
           </dd>
-          <!--dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <!--dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
 
           </dd-->
           <dt>Description</dt>
@@ -2224,7 +2239,6 @@
       </section>
 
 
-
       <section id="smart-building-things">
         <h2>Linking Smart Building Things and BIM Models</h2>
         <dl>
@@ -2236,7 +2250,6 @@
               <a href="https://orcid.org/0000-0002-2033-859X">Georg Ferdinand Schneider (Schaeffler Technologies
                 AG)</a>
             </p>
-
 
           </dd>
           <!--dt>Reviewer(s)</dt>
@@ -2352,7 +2365,7 @@
             </ul>
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             <ul>
@@ -2571,7 +2584,6 @@
               presence in a
               home. Hence, security needs must be defined and properly addressed.</p>
 
-
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
@@ -2625,17 +2637,14 @@
               <li><a href="https://brickschema.org">BRICK</a></li>
             </ul>
 
-
           </dd>
           <!--dt>Comments</dt>
           <dd-->
-
 
           </dd>
         </dl>
       </section>
     </section>
-
 
     <section id="manufacturing">
       <h2>Manufacturing</h2>
@@ -2653,7 +2662,6 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
@@ -2663,17 +2671,14 @@
           <dd>
 
 
-
           </dd>
           <dt>Class</dt>
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd-->
-
 
 
           </dd>
@@ -2751,7 +2756,6 @@
           <!--dt>Variants</dt>
           <dd>
 
-
           </dd>
           <dt>Gaps</dt>
           <dd>
@@ -2785,16 +2789,13 @@
         <!--dt>Reviewer(s)</dt>
         <dd>
 
-
         </dd>
         <dt>Tracker Issue ID</dt>
         <dd>
 
-
         </dd>
         <dt>Category</dt>
         <dd>
-
 
 
         </dd>
@@ -2802,11 +2803,9 @@
         <dd>
 
 
-
         </dd>
         <dt>Status</dt>
         <dd>
-
 
 
         </dd-->
@@ -2844,7 +2843,6 @@
         </dd>
         <!--dt>Dependencies</dt>
         <dd>
-
 
           tbd
 
@@ -2953,11 +2951,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Category</dt>
             <dd>
-
 
 
             </dd>
@@ -2965,11 +2961,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Status</dt>
             <dd-->
-
 
 
             </dd>
@@ -3088,7 +3082,6 @@
             <dt>Variants</dt>
             <dd>
 
-
               <ul>
                 <li>Enough information is included in the notification that the specific
                   person that raised the alarm can be identified. For example, if an RGB
@@ -3156,7 +3149,6 @@
             <dt>Existing standards</dt>
             <dd>
 
-
             </dd>
             <dt>Comments</dt>
             <dd>
@@ -3184,11 +3176,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Tracker Issue ID</dt>
             <dd>
-
 
 
             </dd>
@@ -3196,17 +3186,14 @@
             <dd>
 
 
-
             </dd>
             <dt>Class</dt>
             <dd>
 
 
-
             </dd>
             <dt>Status</dt>
             <dd>
-
 
 
             </dd-->
@@ -3239,16 +3226,13 @@
             <dt>Expected Devices</dt>
             <dd>
 
-
             </dd>
             <dt>Expected Data</dt>
             <dd>
 
-
             </dd>
-            <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+            <dt>Affected WoT deliverables and/or work items</dt>
             <dd>
-
 
             </dd>
             <dt>Description</dt>
@@ -3294,7 +3278,6 @@
             </dd>
             <dt>Variants</dt>
             <dd>
-
 
               US military developed ONR SBIR (Automated Critical Care System Prototype), and found those issues.
 
@@ -3401,11 +3384,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Tracker Issue ID</dt>
             <dd>
-
 
 
             </dd>
@@ -3419,11 +3400,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Status</dt>
             <dd-->
-
 
 
             </dd>
@@ -3489,7 +3468,6 @@
             <dt>Variants</dt>
             <dd>
 
-
               The user may have additional mobile devices they want to incorporate into
               an interaction, for example a headset acting as an auditory aid or personal speech output
               device.
@@ -3541,11 +3519,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Category</dt>
           <dd>
-
 
 
           </dd>
@@ -3553,11 +3529,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd>
-
 
 
           </dd-->
@@ -3579,7 +3553,6 @@
           </dd>
           <dt>Motivation</dt>
           <dd>
-
 
           </dd>
           <dt>Expected Devices</dt>
@@ -3607,7 +3580,7 @@
             </ul>
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             WoT Architecture, WoT Binding Templates (covering protocol specifica)
@@ -3845,7 +3818,6 @@
         <dt>Comments</dt-->
         <dd>
 
-
         </dd>
       </dl>
     </section>
@@ -3866,11 +3838,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
 
 
           </dd-->
@@ -4009,11 +3979,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Reviewer(s)</dt>
           <dd>
-
 
 
           </dd>
@@ -4021,11 +3989,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Category</dt>
           <dd>
-
 
 
           </dd>
@@ -4033,11 +3999,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd>
-
 
 
           </dd>
@@ -4045,26 +4009,21 @@
           <dd>
 
 
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
 
           </dd>
           <dt>Expected Devices</dt>
           <dd>
 
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
 
-
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
 
           </dd>
           <dt>Description</dt>
@@ -4083,7 +4042,6 @@
           <dt>Variants</dt>
           <dd>
 
-
           </dd>
           <dt>Gaps</dt>
           <dd>
@@ -4100,7 +4058,6 @@
               <p>There are MANY TV standards and this would be a long list. Rather leave blank unless a very specific
                 standard provides more insight.</p>
             </section>
-
 
           </dd>
           <dt>Comments</dt>
@@ -4123,9 +4080,8 @@
 
     -->
 
-
       <section id="nhk-device-tv-sync">
-        <h2>Home WoT devices work according to TV programs</h2>
+        <h2>Home WoT devices synchronized to TV programs</h2>
         <dl>
 
           <dt>Submitter(s)</dt>
@@ -4135,7 +4091,6 @@
             Masaya Ikeo,
             Shinya Abe,
             Hiroshi Fujisawa
-
 
           </dd>
           <!--dt>Reviewer(s)</dt>
@@ -4204,7 +4159,6 @@
           <dd>
 
 
-
           </dd>
           <dt>Description</dt>
           <dd>
@@ -4227,11 +4181,9 @@
           <!--dt>Variants</dt>
           <dd>
 
-
           </dd>
           <dt>Gaps</dt>
           <dd->
-
 
           </dd>
           <dt>Existing standards</dt>
@@ -4245,7 +4197,6 @@
           </dd>
           <dt>Comments</dt>
           <dd>
-
 
           </dd>
         </dl>
@@ -4292,7 +4243,6 @@
             </dd>
             <dt>Status</dt>
             <dd-->
-
 
 
           </dd>
@@ -4343,7 +4293,7 @@
             Atmospheric data of a room, machine sensors
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             Thing Description, Scripting API, possibly security
@@ -4359,9 +4309,8 @@
               href="https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950504601&pSpracheNr=1">here</a>.
 
           </dd>
-          <dt>Variants</dt>
-          <dd>
-
+          <!--dt>Variants</dt>
+          <dd-->
 
           </dd>
           <dt>Security Considerations</dt>
@@ -4489,7 +4438,7 @@
           </ul>
 
         </dd>
-        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+        <dt>Affected WoT deliverables and/or work items</dt>
         <dd>
 
           <ul>
@@ -4583,7 +4532,6 @@
       </dl>
     </section>
 
-
     <section id="multi-vendor">
       <h2>Multi-Vendor System Integration - Out of the box interoperability</h2>
       <dl>
@@ -4605,11 +4553,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Category</dt>
             <dd>
-
 
 
             </dd>
@@ -4617,11 +4563,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Status</dt>
             <dd-->
-
 
 
         </dd>
@@ -4682,7 +4626,7 @@
           discrete or streaming data.
 
         </dd>
-        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+        <dt>Affected WoT deliverables and/or work items</dt>
         <dd>
 
           WoT Profile, WoT Thing Description
@@ -4757,16 +4701,13 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
 
-
           </dd>
           <dt>Category</dt>
           <dd>
-
 
 
           </dd>
@@ -4774,11 +4715,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd-->
-
 
 
         </dd>
@@ -4822,7 +4761,6 @@
         <dt>Dependencies</dt>
         <dd>
 
-
           <ul>
             <li>WoT Architecture </li>
             <li>WoT Thing Description </li>
@@ -4860,7 +4798,6 @@
             <li>Integration of disparate systems: Connect with back-end applications related to supply chain
               operations such as manufacturing, procurement, warehousing, transportation, or logistics.</li>
           </ul>
-
 
         </dd>
         <dt>Variants</dt>
@@ -4975,9 +4912,8 @@
 
           </dd>
           <dt>Status</dt>
-          <dd-->
-
-        </dd>
+          <dd>
+        </dd-->
         <dt>Target Users</dt>
         <dd>
 
@@ -5041,11 +4977,10 @@
             they include smart traffic lights, traffic monitoring, people counters, cameras.
           </p>
         </dd>
-        <!--dt>Variants</dt-->
+        <!--dt>Variants</d>
         <dd>
+        </dd-->
 
-
-        </dd>
         <dt>Gaps</dt>
         <dd>
 
@@ -5063,10 +4998,6 @@
       </dl>
     </section>
 
-
-
-
-
     <section id="multimodal">
       <h2>Multimodal System Integration</h2>
       <section id="mmi-5-1_multimodal-recognition-support">
@@ -5083,11 +5014,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
 
 
           </dd-->
@@ -5101,11 +5030,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd>
-
 
 
           </dd-->
@@ -5172,7 +5099,6 @@
           <!--dt>Variants</dt>
           <dd-->
 
-
           </dd>
           <dt>Gaps</dt>
           <dd>
@@ -5207,11 +5133,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
 
 
           </dd-->
@@ -5225,17 +5149,14 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd>
 
 
-
           </dd>
           <dt>Target Users</dt>
           <dd-->
-
 
           </dd>
           <dt>Motivation</dt>
@@ -5313,14 +5234,12 @@
             or voice command devices.
 
           </dd>
-          <dt>Variants</dt>
-          <dd>
-
+          <!--dt>Variants</dt>
+          <dd-->
 
           </dd>
           <dt>Gaps</dt>
           <dd>
-
 
           </dd>
           <dt>Existing standards</dt>
@@ -5515,11 +5434,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
 
 
           </dd-->
@@ -5533,17 +5450,14 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd-->
 
 
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
 
           </dd>
           <dt>Motivation</dt>
@@ -5640,7 +5554,6 @@
       </section>
     </section>
 
-
     <section id="Security">
       <h2>Security</h2>
       <section id="oauth">
@@ -5657,11 +5570,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
 
 
           </dd>
@@ -5669,11 +5580,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Class</dt>
           <dd>
-
 
 
           </dd>
@@ -5699,7 +5608,6 @@
           <dt>Motivation</dt>
           <dd>
 
-
             OAuth 2.0 is an authorization protocol widely known for its usage across several web services.
             It enables third-party applications to obtain limited access to HTTP services on behalf of the resource
             owner
@@ -5717,7 +5625,6 @@
                 <li>An entity capable of granting access to a protected resource.</li>
               </ul>
             </ul>
-
 
             These actors can be mapped to WoT entities:
             <ul>
@@ -5820,7 +5727,7 @@
             the form.
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             Thing Description, Scripting API, Discovery, and Security.
@@ -5912,7 +5819,6 @@
 </pre>
             Notice that steps (A), (B) and (C) are broken in two parts as they pass through the User-Agent.
 
-
             <p>device</p>
 
             The device flow (IETF <a href="https://tools.ietf.org/html/rfc8628">RFC 8628</a>) is a variant of the code
@@ -5974,7 +5880,6 @@
                 Server</li>
               <li>Other user interactions methods may be used but are left out of scope</li>
             </ul>
-
 
             <p>client credential</p>
 
@@ -6134,7 +6039,6 @@
  +----------+
 </pre>
 
-
           </dd>
           <dt>Security Considerations</dt>
           <dd>
@@ -6196,11 +6100,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Category</dt>
           <dd>
-
 
 
           </dd>
@@ -6208,11 +6110,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd>
-
 
 
           </dd-->
@@ -6427,7 +6327,7 @@
             </ul>
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             <ul>
@@ -6666,7 +6566,7 @@
           </ul>
 
         </dd>
-        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+        <dt>Affected WoT deliverables and/or work items</dt>
         <dd>
           <ul>
             <li>WoT Discovery - needs to be designed to support services, not just physical devices.</li>
@@ -6770,9 +6670,7 @@
     </section>
   </section> <!-- horizontal-ucs -->
 
-
   <!-- REQUIREMENTS -->
-
 
   <section id="requirements">
     <h1>Requirements</h1>
@@ -7368,7 +7266,6 @@
   -->
 
 
-
     <!--
 Domains from the 1.0 UC document 
                 
@@ -7430,15 +7327,7 @@ Domains from the 1.0 UC document
                         <h3>Domain: other</h3>
                         <section id="device-management">
                         </section>
-                        
-                        -->
-
-
-
-  </section>
-  </section>
-
-
+      </section-->
 </body>
 
 </html>
