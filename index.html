@@ -2769,7 +2769,7 @@
                         </code></pre>
           <p>In this example query, the REST endpoint has been defined using the  <a href="https://www.openapis.org/">OpenAPI specification</a> 
             and is provided by a RESTful server. A data binding is needed between the server and the underlying backend storage, here the triple store 
-            that contains the involved ontologies. The data binding relies on similar SPARQL queries as the one shown above. 
+            that contains the involved ontologies (osh, bot, ssn, brick...). The data binding relies on similar SPARQL queries as the one shown above. 
             As a result the endpoint can deliver information to a target application that consumes custom JSON rather than triples.
             Similar implmentation could be achieved using <a href="https://www.w3.org/community/graphql-rdf/">GraphQL</a>.
           </p>
@@ -2826,7 +2826,7 @@
           <dd>
 
             <p>
-              For the realization of the intented use case for automated things location and fault detection as well as further from this 
+              For the realization of the intented use case for automated things location and fault detection as well as further potentially 
               automatable analyses, a smart building or smart home ecosystem is required. More specifically, BACS components are needed 
               that support existing communication protocols (e.g. MQTT, OPC-UA, CoAP, BACNet...) to share data and metadata 
               with each other and necessary gateways or smart hubs. They should be able to share information that can be translated into JSON 
