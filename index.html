@@ -2226,7 +2226,7 @@
 
 
       <section id="smart-building-things">
-        <h2>Linking Smart Building Things and BIM Models</h2>
+        <h2>Automated Smart Building Management</h2>
         <dl>
 
           <dt>Submitter(s)</dt>
@@ -2300,7 +2300,7 @@
               <li>which other building things are involved (e.g. sensor hosted by a duct or a space).</li>
             </ul>
             <p>Through the increased use of model-based data exchange over the whole life cycle of a building, often
-              referred to as Building Information Modeling (BIM), a curated source for data describing the building
+              referred to as Building Information Modeling (BIM) (Sacks et al., 2018), a curated source for data describing the building
               itself is available including, amongst others, the topology of the building structured into e.g. sites,
               storeys and spaces.</p>
             <p>Automatically tracking down data and their related things in a building would especially ease the
@@ -2359,6 +2359,7 @@
               <li><a href="https://www.w3.org/TR/wot-thing-description/">Web of Things Thing Description (WoT TD)</a>
               </li>
               <li><a href="https://w3c.github.io/wot-binding-templates/">Web of Things Binding Templates</a></li>
+              <li><a href="https://github.com/w3c/wot-discovery/blob/main/proposals/geolocation.md">WoT Discovery and Geolocation</a></li>
             </ul>
 
           </dd>
@@ -2374,9 +2375,9 @@
               made by typical smart home sensors. We extend the dataset with Thing Descriptions of some of the items.
               The respective Thing Description of a temperature sensor in the kitchen of the considered flat is as
               follows:</p>
-            <pre class="example" id="Kitchen-temp-Sensor">
+            <pre class="example" id="TemperatureSensor">
                     <code class="lang-json">{
-                        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor"</span>,
+                        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet#TemperatureSensor"</span>,
                         <span class="hljs-attr">"@context"</span>: [
                             <span class="hljs-string">"https://www.w3.org/2019/wot/td/v1"</span>,
                             {
@@ -2389,7 +2390,7 @@
                                 <span class="hljs-attr">"schema"</span>: <span class="hljs-string">"http://schema.org"</span>
                             }
                         ],
-                        <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Kitchen-temp-Sensor"</span>,
+                        <span class="hljs-attr">"title"</span>: <span class="hljs-string">"TemperatureSensor"</span>,
                         <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Kitchen Temperature Sensor"</span>,
                         <span class="hljs-attr">"@type"</span>: [<span class="hljs-string">"sosa:Sensor"</span>, <span class="hljs-string">"brick:Zone_Air_Temperature_Sensor"</span>, <span class="hljs-string">"bot:element"</span>],
                         <span class="hljs-attr">"@reverse"</span>: {
@@ -2407,7 +2408,7 @@
                             <span class="hljs-string">"basic_sc"</span>
                         ],
                         <span class="hljs-attr">"properties"</span>: {
-                            <span class="hljs-attr">"Kitchen-temp"</span>: {
+                            <span class="hljs-attr">"Temperature"</span>: {
                                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"number"</span>,
                                 <span class="hljs-attr">"unit"</span>: <span class="hljs-string">"om:degreeCelsius"</span>,
                                 <span class="hljs-attr">"forms"</span>: [
@@ -2422,11 +2423,11 @@
                             }
                         },
                         <span class="hljs-attr">"sosa:observes"</span>: {
-                            <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:Kitchen-temp"</span>,
+                            <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:Temperature"</span>,
                             <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"sosa:ObservableProperty"</span>
                         },
                         <span class="hljs-attr">"ssns:hasSystemCapability"</span>: {
-                            <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:Kitchen-temp-Sensor-Capa"</span>,
+                            <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:SensorCapability"</span>,
                             <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"ssns:SystemCapability"</span>,
                             <span class="hljs-attr">"ssns:hasSystemProperty"</span>: {
                                 <span class="hljs-attr">"@type"</span>: [<span class="hljs-string">"ssns:MeasurementRange"</span>],
@@ -2440,15 +2441,15 @@
                 </pre>
             <p>Where the contextual information on the measurement range of the sensor is specified using the <a
                 href="http://www.w3.org/ns/ssn/systems/">SSNS</a> schema. The location information of the thing <a
-                href="#Kitchen-temp-Sensor">Kitchen-temp-Sensor</a> is
+                href="#TemperatureSensor">TemperatureSensor</a> is
               provided based on the <a href="https://w3id.org/bot">Building Topology Ontology (BOT)</a>, a minimal
               ontology developed by the <a href="https://www.w3.org/community/lbd/">W3C Linked Building Data Community
                 Group (W3C LBD CG)</a> to describe the topology of buildings in the semantic web. Additionally, the
               thing description of the corresponding actuator is given below.</p>
             <p></p>
-            <pre class="example" id="Kitchen-tempS-Actuator">
+            <pre class="example" id="TemperatureActuator">
                     <code class="lang-json">{
-                    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempS-Actuator"</span>,
+                    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet#TemperatureActuator"</span>,
                     <span class="hljs-attr">"@context"</span>: [
                         <span class="hljs-string">"https://www.w3.org/2019/wot/td/v1"</span>,
                         {
@@ -2459,8 +2460,8 @@
                             <span class="hljs-attr">"brick"</span>: <span class="hljs-string">"https://brickschema.org/schema/Brick#"</span>
                         }
                     ],
-                    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Kitchen-tempS-Actuator"</span>,
-                    <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Kitchen Temperature Setpoint Actuator"</span>,
+                    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"TemperatureActuator"</span>,
+                    <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Kitchen Temperature Actuator"</span>,
                     <span class="hljs-attr">"@type"</span>: [<span class="hljs-string">"sosa:Actuator"</span>, <span class="hljs-string">"brick:Zone_Air_Temperature_Setpoint"</span>, <span class="hljs-string">"bot:element"</span>],
                     <span class="hljs-attr">"@reverse"</span>: {
                         <span class="hljs-attr">"bot:containsElement"</span>: {
@@ -2477,7 +2478,7 @@
                         <span class="hljs-string">"basic_sc"</span>
                     ],
                     <span class="hljs-attr">"actions"</span>: {
-                        <span class="hljs-attr">"Kitchen-tempS"</span>: {
+                        <span class="hljs-attr">"TemperatureSetpoint"</span>: {
                             <span class="hljs-attr">"forms"</span>: [
                                 {
                                     <span class="hljs-attr">"href"</span>: <span class="hljs-string">"https://kitchen.example.com/tempS"</span>
@@ -2486,7 +2487,7 @@
                         }
                     },
                     <span class="hljs-attr">"ssn:forProperty"</span>: {
-                        <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:Kitchen-tempS"</span>,
+                        <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:Temperature"</span>,
                         <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"sosa:ActuatableProperty"</span>
                     }
                 }
@@ -2494,7 +2495,7 @@
             </pre>
           <dt><em>Combining Topological Context and Thing Descriptions</em></dt>
           <p>The scenario considered is related to the replacement of a temperature sensor in a BACS. The topological
-            information localizing the things, e.g. the <a href="#Kitchen-temp-Sensor">temperature sensor</a> can
+            information localizing the things, e.g. the <a href="#TemperatureSensor">temperature sensor</a> can
             be used to automatically commission the newly replaced sensor and link it to existing control
             algorithms. For this purpose, the identifiers of suitable sensors and actuators are needed and can be,
             for example, queried via <a href="https://www.w3.org/TR/sparql11-query/">SPARQL</a>. Here the query uses
@@ -2515,7 +2516,7 @@
                             }
                             </code>
                         </pre>
-          <p>Similarly this data can obtained via a REST API built upon the <a
+          <p>Similarly this data can be obtained via a REST API built upon the <a
               href="https://tools.ietf.org/html/rfc7231#section-4">HTTP</a> protocol. Below is an example endpoint
             applying <a href="https://roy.gbiv.com/pubs/dissertation/top.htm">REST</a> style for getting the same
             information for a specific space name:</p>
@@ -2542,23 +2543,29 @@
                               <span class="hljs-string">"name"</span>: <span class="hljs-string">"Kitchen"</span>
                             },
                           <span class="hljs-string">"sensors"</span>: [
-                            <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#Kitchen-temp-Sensor</span>"</span>
+                            <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#TemperatureSensor</span>"</span>
                           ],
                           <span class="hljs-string">"actuators"</span>: [
-                            <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#Kitchen-tempS-Actuator</span>"</span>
+                            <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#TemperatureActuator</span>"</span>
                           ]
                         }
                         </code></pre>
+          <p>In this example query, the REST endpoint has been defined using the  <a href="https://www.openapis.org/">OpenAPI specification</a> 
+            and is provided by a RESTful server. A data binding is needed between the server and the underlying backend storage, here the triple store 
+            that contains the involved ontologies (osh, bot, ssn, brick...). The data binding relies on similar SPARQL queries as the one shown above. 
+            As a result the endpoint can deliver information to a target application that consumes custom JSON rather than triples.
+            Similar implmentation could be achieved using <a href="https://www.w3.org/community/graphql-rdf/">GraphQL</a>.
+          </p>
           <dt><em>Automated Update of Fault Detection Rule based on Thing Description</em></dt>
           <p>Another related use case in smart buildings, which would greatly benefit from harmonised thing
             descriptions and attached location information is related to the detection of unexpected behavior,
             errors and faults. An example for such a detection of faults is the rule-based surveillance of sensor
             values. A generic rule applicable to sensors is that the observation values stay within the measurement
             range of the sensor. Again, in the case of maintenance as described above a sensor is replaced.</p>
-          <p>Some agent configuring fault detection rules, can obtain the measurement range from the sensor&#39;s TD
+          <p>Some agent configuring fault detection rules can obtain the measurement range from the sensor&#39;s TD
             (see above) to obtain the parameters to configure the mentioned rule. Again, a query or API call
             retrieving this information (schema:minValue/ schema:maxValue) can be used to update the upper and lower
-            bound of the values provided by the <a href="#Kitchen-temp-Sensor">sensor</a>.</p>
+            bound of the values provided by the <a href="#TemperatureSensor">sensor</a>.</p>
 
           </dd>
           <dt>Security Considerations</dt>
@@ -2603,7 +2610,14 @@
           <!--dt>Requirements</dt>
           <dd>
 
-            <p>None</p>
+            <p>
+              For the realization of the intented use case for automated things location and fault detection as well as further potentially 
+              automatable analyses, a smart building or smart home ecosystem is required. More specifically, BACS components are needed 
+              that support existing communication protocols (e.g. MQTT, OPC-UA, CoAP, BACNet...) to share data and metadata 
+              with each other and necessary gateways or smart hubs. They should be able to share information that can be translated into JSON 
+              payloads following the data structuration and representation proposed by the 
+              <a href="https://www.w3.org/TR/wot-thing-description/">Web of Things Thing Description (WoT TD)</a>.
+            </p>
 
           </dd>
           <dt>Gaps</dt>
@@ -2630,8 +2644,16 @@
           <!--dt>Comments</dt>
           <dd-->
 
+            <p>References:</p>
+            <ul>
+              <a href="https://doi.org/10.1002/9781119287568">Sacks, R., Eastman, C., Lee, G., & Teicholz, P. (2018). 
+                BIM handbook: A guide to building information modeling for owners, designers, engineers, contractors, 
+                and facility managers. John Wiley & Sons.</a>
+
+            </ul>
 
           </dd>
+
         </dl>
       </section>
     </section>
