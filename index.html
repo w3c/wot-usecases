@@ -1119,7 +1119,7 @@
         <dl>
           <dt>Submitter(s)</dt>
           <dd>
-            Jennifer Lin (GovTech Singapore), Michael McCool
+            Jennifer Lin, Michael McCool
           </dd>
           <!--dt>Reviewer(s)</dt><dd>
               Michael Lagally
@@ -2011,7 +2011,7 @@
           <dt>Submitter(s)</dt>
           <dd>
 
-            Sebastian Kaebisch (Siemens)
+            Sebastian Kaebisch
 
           </dd>
           <!--dt>Reviewer(s)</dt>
@@ -2313,7 +2313,8 @@
               <li>which other building things are involved (e.g. sensor hosted by a duct or a space).</li>
             </ul>
             <p>Through the increased use of model-based data exchange over the whole life cycle of a building, often
-              referred to as Building Information Modeling (BIM) (Sacks et al., 2018), a curated source for data describing the building
+              referred to as Building Information Modeling (BIM) (Sacks et al., 2018), a curated source for data
+              describing the building
               itself is available including, amongst others, the topology of the building structured into e.g. sites,
               stores and spaces.</p>
             <p>Automatically tracking down data and their related things in a building would especially ease the
@@ -2372,7 +2373,8 @@
               <li><a href="https://www.w3.org/TR/wot-thing-description/">Web of Things Thing Description (WoT TD)</a>
               </li>
               <li><a href="https://w3c.github.io/wot-binding-templates/">Web of Things Binding Templates</a></li>
-              <li><a href="https://github.com/w3c/wot-discovery/blob/main/proposals/geolocation.md">WoT Discovery and Geolocation</a></li>
+              <li><a href="https://github.com/w3c/wot-discovery/blob/main/proposals/geolocation.md">WoT Discovery and
+                  Geolocation</a></li>
             </ul>
 
           </dd>
@@ -2563,11 +2565,16 @@
                           ]
                         }
                         </code></pre>
-          <p>In this example query, the REST endpoint has been defined using the  <a href="https://www.openapis.org/">OpenAPI specification</a> 
-            and is provided by a RESTful server. A data binding is needed between the server and the underlying backend storage, here the triple store 
-            that contains the involved ontologies (osh, bot, ssn, brick...). The data binding relies on similar SPARQL queries as the one shown above. 
-            As a result the endpoint can deliver information to a target application that consumes custom JSON rather than triples.
-            Similar implmentation could be achieved using <a href="https://www.w3.org/community/graphql-rdf/">GraphQL</a>.
+          <p>In this example query, the REST endpoint has been defined using the <a
+              href="https://www.openapis.org/">OpenAPI specification</a>
+            and is provided by a RESTful server. A data binding is needed between the server and the underlying backend
+            storage, here the triple store
+            that contains the involved ontologies (osh, bot, ssn, brick...). The data binding relies on similar SPARQL
+            queries as the one shown above.
+            As a result the endpoint can deliver information to a target application that consumes custom JSON rather
+            than triples.
+            Similar implmentation could be achieved using <a
+              href="https://www.w3.org/community/graphql-rdf/">GraphQL</a>.
           </p>
           <dt><em>Automated Update of Fault Detection Rule based on Thing Description</em></dt>
           <p>Another related use case in smart buildings, which would greatly benefit from harmonised thing
@@ -2655,13 +2662,13 @@
           <!--dt>Comments</dt>
           <dd-->
 
-            <p>References:</p>
-            <ul>
-              <a href="https://doi.org/10.1002/9781119287568">Sacks, R., Eastman, C., Lee, G., & Teicholz, P. (2018). 
-                BIM handbook: A guide to building information modeling for owners, designers, engineers, contractors, 
-                and facility managers. John Wiley & Sons.</a>
+          <p>References:</p>
+          <ul>
+            <a href="https://doi.org/10.1002/9781119287568">Sacks, R., Eastman, C., Lee, G., & Teicholz, P. (2018).
+              BIM handbook: A guide to building information modeling for owners, designers, engineers, contractors,
+              and facility managers. John Wiley & Sons.</a>
 
-            </ul>
+          </ul>
 
           </dd>
 
@@ -3529,7 +3536,7 @@
           <dt>Submitter(s)</dt>
           <dd>
 
-            Christian Glomb (Siemens)
+            Christian Glomb
 
           </dd>
           <!--dt>Reviewer(s)</dt>
@@ -7086,18 +7093,44 @@
     <section id="acknowledgements" class="appendix normative">
       <h1>Acknowledgments</h1>
 
-      <section class="ednote" TODO:>
-        List all authors of contributions.
-      </section>
-      <p>Special thanks to all authors of use case descriptions
-        <!-- Michael McCool, Takuki Kamiya, Kazuyuki Ashimura,  
-        Sebastian Käbisch, Zoltan Kis, ... --> for their contributions to this document.
+      <p>Special thanks to all authors of use case descriptions (in alphabetical order) for their contributions to this document:
+      <ul>
+        <li>Shinya Abe (NHK)</li>
+        <li>Cristiano Aguzzi (University of Bologna)</li>
+        <li>Kaz Ashimura (W3C)</li>
+        <li>Raúl García Castro (Universidad Politécnica de Madrid)</li>
+        <li>Jean-Pierre Chanet (INRAE, France)</li>
+        <li>Edison Chung (MINES St. Etienne)</li>
+        <li>Andrea Cimmino (Universidad Politécnica de Madrid)</li>
+        <li>Hiroki Endo (NHK)</li>
+        <li>David Ezell (Conexxus)</li>
+        <li>Hiroshi Fujisawa (NHK)</li>
+        <li>Christian Glomb (Siemens)</li>
+        <li>Masaya Ikeo (NHK)</li>
+        <li>Sebastian Käbisch (Siemens)</li>
+        <li>Takuki Kamiya (Fujitsu)</li>
+        <li>Zoltan Kis (Intel)</li>
+        <li>Ege Korkan (Siemens)</li>
+        <li>Michael Lagally (Oracle)</li>
+        <li>Jennifer Lin (GovTech Singapore)</li>
+        <li>Ryuichi Matsukura (Fujitsu)</li>
+        <li>Michael McCool (Intel)</li>
+        <li>Hervé Pruvost (Fraunhofer IIS EAS)</li>
+        <li>Catherine Roussey (INRAE, France)</li>
+        <li>Georg Ferdinand Schneider (Schaeffler Technologies)</li>
+        <li>Rob Smith (Awayteam)</li>
+        <li>Farshid Tavakolizadeh (Fraunhofer)</li>
+      </ul>
       </p>
       <p>
         Many thanks to the W3C staff and all other active Participants of the W3C Web
         of Things Interest Group (WoT IG) and Working Group (WoT WG) for their
         support, technical input and suggestions that led to improvements to
         this document.
+      </p>
+      <p>
+        Special thanks to Kazuyuki Ashimura form the W3C for his continuous help and support
+        of the work of the WoT Use Cases Task Force.
       </p>
     </section>
 
