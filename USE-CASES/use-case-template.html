@@ -87,7 +87,7 @@ Requirement (c) (energy saving):
  If there are no visitors in room "UoAMuseumRoomA1", then turn the lights off (or all the sources of energy).
  If the museum's internal and external temperature is between 20 and 30 degrees Celsius, then keep the heating and cooling devices off.
 Requirement (d) (enhancing visiting experience and comfort):
- When a visitor enters the museum for the rst time, send him a message (e.g., SMS or tweet) with the number and types of rooms, the number
+ When a visitor enters the museum for the first time, send him a message (e.g., SMS or tweet) with the number and types of rooms, the number
 and collections of exhibits, and the average duration of a visit per room.
  If a visitor comes out of the museum, then send him a message with the names of the exhibits he liked most based on the observations he made
 during his/her visit.
@@ -119,7 +119,23 @@ Requirement (e) (environmental conditions):
 <dt>Description</dt>
 <dd>
 
-&lt;Provide a description from the users perspective&gt;
+&lt;From users perspective, this use case sketches knowledge required for an ontology-based BEMS to answer queries such as:
+  -Which exhibits are located in UoAMuseumRoomA1?
+  -How many sensors (all kinds) are hosted by IoTmuseumPlatformLG?
+  -Which rooms have been visited by Visitor01?
+  -What temperature measurements have been made in UoAMuseumRoomA1 between 09.00 and 17.00 on 07/12/2020?
+  -For observations that are made for Painting01 (in UoAMuseumRoomA1) at 09.00 on 15/01/2021, what is its status in terms of its lamp brightness level and nearby visitors?
+  
+Reasoning with this knowledge, the identification of interesting exhibits and energy-related observations 
+(based on sensing visitors' proximity to exhibits and observation of exhibits' lamp brightness level) is realized. 
+For instance, if the brightness level of an exhibit's lamp is "medium" and there are more than two visitors near the exhibit, then this observation
+is classified as a) an interesting-exhibit observation and b) an observation to high level energy, meaning that the level of energy (light) for the
+lamp of the exhibit of this observation must be raised to high. In addition (another example), if the brightness level of the exhibit's lamp is "medium" and less
+than two visitors are nearby this, then classify this as an observation to low level energy, meaning that the level of energy (light) for the lamp of the ex-
+hibit of this observation must be raised to low. These examples indicate that a change (decrease or increase) to the level of light (energy) of the
+observed exhibit must be applied. 
+  
+  &gt;
 
 <p>#### Variants:</p>
 
@@ -129,25 +145,25 @@ Requirement (e) (environmental conditions):
 <dt>Security Considerations</dt>
 <dd>
 
-&lt;Describe any issues related to security; if there are none, say "none" and justify&gt;
+&lt;Due to visitors/visiting and profile data access requirement, as well as access to data related to public/private buildings, security issues must be considered.&gt;
 
 </dd>
 <dt>Privacy Considerations</dt>
 <dd>
 
-&lt;Describe any issues related to privacy; if there are none, say "none" and justify&gt;
+&lt;Due to visitors/visiting and profile data access requirement, as well as access to data related to public/private buildings, privacy issues must be considered&gt;
 
 </dd>
 <dt>Accessibility Considerations</dt>
 <dd>
 
-&lt;Describe any issues related to accessibility; if there are none, say "none" and justify&gt;
+&lt;Accessibility must be a concern in the Cultural Spaces domain. Collabration with the W3C Linked Data for Accessbility Community Group is needed. &gt;
 
 </dd>
 <dt>Internationalisation (i18n) Considerations</dt>
 <dd>
 
-&lt;Describe any issues related to internationalization; if there are none, say "none" and justify&gt;
+&lt;Internationalization must be a concern as the Culture is an international industry. Need to provide multilanguage labels in different languages e.g., English, French, Chinese&gt;
 
 </dd>
 <dt>Requirements</dt>
@@ -165,7 +181,10 @@ Requirement (e) (environmental conditions):
 <dt>Existing standards</dt>
 <dd>
 
-&lt;Provide links to relevant standards that are relevant for this use case&gt;
+&lt;
+ - SAREF4Bldg ETSI Standard
+ - SAREF4ENER ETSI Standard
+ - SOSA/SSN a W3C Recommendation &gt;
 
 </dd>
 <dt>Comments</dt>
