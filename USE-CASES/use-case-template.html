@@ -53,7 +53,7 @@
 <dd>
 
 <!--Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users -->
-&lt;This use case is related to the semantic modeling of trustworthy IoT entities in energy-efficient cultural spaces such as museums. 
+This use case is related to the semantic modeling of trustworthy IoT entities in energy-efficient cultural spaces such as museums. 
   Nowadays, energy-saving issues have awakened the research community's interest due to the more and more increasing global electricity demand. An excessive
 use of energy is believed to derive from public and industrial buildings to cover their daily load requirements in the context of the provision of their services.
 Thus, the necessity of developing energy-efficient buildings could be proved beneficial. Notably, the improvement of buildings' energy efficiency leads to Building
@@ -73,7 +73,7 @@ protection and preservation.
   d) representing knowledge related to museum visits and visitors towards enhancing visiting experience while preserving comfort; 
   e) representing knowledge related to environmental conditions towards protecting and preserving museum artwork via continuous monitoring.
   
-  A selective representative list of scenarios related to such a use case are listed below. Its scenario is classified to one of the abovementioned requirements:
+A selective representative list of scenarios related to such a use case are listed below. Its scenario is classified to one of the abovementioned requirements:
   
 Requirement (a) (trustworthy IoT entities representation and management):
  Count all the sculptures of the museum that are related to visits made by trustworthy students (with a trust degree more than 0.8).
@@ -95,31 +95,29 @@ Requirement (e) (environmental conditions):
  If the temperature in room "UoAMuseumRoomA1" is less than 18 degrees Celsius, then activate the heating device (for visitors' comfort).
  If the humidity in room A is more than 55%, then activate the humidifier device (for exhibits protection).
   
-  &gt;
-
 </dd>
 <dt>Expected Devices</dt>
 <dd>
 
-&lt;humidity sensor, temperature sensor, motion sensor, light sensor, proximity sensor, camera, aircondition, humidifier, light, smart lamp, smart lock, smart door &gt;
+Humidity sensor, temperature sensor, motion sensor, light sensor, proximity sensor, camera, aircondition, humidifier, light, smart lamp, smart lock, smart door.
 
 </dd>
 <dt>Expected Data</dt>
 <dd>
 
-&lt;weather (indoors/outdoors) and climate data, sensor data, visitors/visiting data, profile data, movement (trajectory) data, cultural data &gt;
+Weather (indoors/outdoors) and climate data, sensor data, visitors/visiting data, profile data, movement (trajectory) data, cultural data.
 
 </dd>
 <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
 <dd>
 
-&lt;List the affected WoT deliverables that have to be changed to enable this use case&gt;
+<!--List the affected WoT deliverables that have to be changed to enable this use case-->
 
 </dd>
 <dt>Description</dt>
 <dd>
 
-&lt;From users perspective, this use case sketches knowledge required for an ontology-based BEMS to answer queries such as:
+From users perspective, this use case sketches knowledge required for an ontology-based BEMS to answer queries such as:
   -Which exhibits are located in UoAMuseumRoomA1?
   -How many sensors (all kinds) are hosted by IoTmuseumPlatformLG?
   -Which rooms have been visited by Visitor01?
@@ -135,61 +133,63 @@ than two visitors are nearby this, then classify this as an observation to low l
 hibit of this observation must be raised to low. These examples indicate that a change (decrease or increase) to the level of light (energy) of the
 observed exhibit must be applied. 
   
-  &gt;
-
 <p>#### Variants:</p>
 
-&lt;Describe possible use case variants, if applicable&gt;
+<!--Describe possible use case variants, if applicable-->
 
 </dd>
 <dt>Security Considerations</dt>
 <dd>
 
-&lt;Due to visitors/visiting and profile data access requirement, as well as access to data related to public/private buildings, security issues must be considered.&gt;
+Due to visitors/visiting and profile data access requirement, as well as access to data related to public/private buildings, security issues must be considered.
 
 </dd>
 <dt>Privacy Considerations</dt>
 <dd>
 
-&lt;Due to visitors/visiting and profile data access requirement, as well as access to data related to public/private buildings, privacy issues must be considered&gt;
+Due to visitors/visiting and profile data access requirement, as well as access to data related to public/private buildings, privacy issues must be considered.
 
 </dd>
 <dt>Accessibility Considerations</dt>
 <dd>
 
-&lt;Accessibility must be a concern in the Cultural Spaces domain. Collabration with the W3C Linked Data for Accessbility Community Group is needed. &gt;
+Accessibility must be a concern in the Cultural Spaces domain. Collabration with the W3C Linked Data for Accessbility Community Group is needed.
 
 </dd>
 <dt>Internationalisation (i18n) Considerations</dt>
 <dd>
 
-&lt;Internationalization must be a concern as the Culture is an international industry. Need to provide multilanguage labels in different languages e.g., English, French, Chinese&gt;
+Internationalization must be a concern as the Culture is an international industry. Need to provide multilanguage labels in different languages e.g., English, French, Chinese.
 
 </dd>
 <dt>Requirements</dt>
 <dd>
 
-&lt;Describe a high level summary of any requirements that are not addressed in the current WoT standards and building blocks&gt;
+<!--Describe a high level summary of any requirements that are not addressed in the current WoT standards and building blocks.-->
 
 </dd>
 <dt>Gaps</dt>
 <dd>
 
-&lt;Describe any gaps that are not addressed in the current WoT standards and building blocks&gt;
+<!--Describe any gaps that are not addressed in the current WoT standards and building blocks-->
 
 </dd>
 <dt>Existing standards</dt>
 <dd>
 
-&lt;
- - SAREF4Bldg ETSI Standard
- - SAREF4ENER ETSI Standard
- - SOSA/SSN a W3C Recommendation &gt;
+  <ul>
+    <li><a href="https://saref.etsi.org/saref4ener/">SAREF4ENER ETSI Standard</a></li>
+    <li><a href="https://saref.etsi.org/saref4bldg/">SAREF4Bldg ETSI Standard</a></li>
+    <li><a href="https://www.w3.org/TR/vocab-ssn/">SOSA/SSN W3C Recommendation</a></li>             
+  </ul>
 
 </dd>
 <dt>Comments</dt>
 <dd>
-
+This use case has been driven by the research directions discussed in the following papers:
+  
+  - Zachila, K., K. Kotis, A. Dimara, S. Ladikou, and C. N. Anagnostopoulos, "Semantic modeling of trustworthy IoT entities in energy-efficient cultural spaces", 17th International Conference on Artificial Intelligence Applications and Innovations (AIAI 2021), Crete, Springer, 2021
+  - Dimara, A., C. N. Anagnostopoulos, K. Kotis, S. Krinidis, and T. Tzovaras, "BEMS in the Era of Internet of Energy: A Review", 17th International Conference on Artificial Intelligence Applications and Innovations (AIAI 2021), Crete, Springer, 2021.
 
 </dd>
 </dl>
