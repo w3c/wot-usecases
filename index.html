@@ -355,7 +355,7 @@
       to collect new IoT use cases from various domains
       that have been contributed by various stakeholders.
       These serve as a baseline for identifying requirements
-      for the standardisation work in the W3C WoT groups.
+      for the standardization work in the W3C WoT groups.
     </p>
   </section>
   <section id="sotd">
@@ -378,72 +378,96 @@
       the WoT IG collected use cases and requirements to enable
       interoperability of Internet of Things (IoT)
       services on a worldwide basis.
-      Thes released specifications have been created to address the
+      These released specifications have been created to address the
       use cases and requirements for the first version of the WoT specifications,
       which are documented in <a href="https://w3c.github.io/wot/ucr-doc/">
         https://w3c.github.io/wot/ucr-doc/</a>
 
     <p>
       The present document gathers and describes new use cases and requirements
-      for future standardisation work in the WoT standard.
+      for future standardization work in the WoT standard.
     </p>
 
     <p>
-      This document contain all use cases that were contributed to the WoT Use Cases task force until March 15th 2021.
+      This document contains chapters describing the use cases that were contributed by multiple authors,
+      functional and technical requirements on the Web of Things standards.
+      Additionally it contains a summary of the liaisons, where active collaboration is taking place at the time of
+      writing.
       Since this document is a WG note, additional use cases will be added in future revisions of this document.
     </p>
-    <p>
-      The collection of use cases can be separated into two categories:
-    <ul>
-      <li>Domain specific (vertical) use cases for a single application domain.</li>
-      <li>Horizontal use cases that address multiple domains.</li>
-    </ul>
-    Domain specific use cases are described in <a href="#sec-vertical-ucs"></a>,
-    horizontal use cases are described in <a href="#sec-horizontal-ucs"></a>
-    </p>
 
-
-
-    <section id="domains" class="ednote">
-      TODO: Give a domain overview, explain different horizontals and verticals.
-    </section>
-
-  </section>
-
-  <section id="conformance"></section>
-
-  <section id="definitions">
-    <h2>Terminology, Stakeholders and Roles</h2>
-    <section id="terminology">
-      <h2>Terminology</h2>
-      The present document uses the terminology from WoT Architecture [[wot-architecture]].
-    </section>
-
-    <section id="stakeholders">
-      <h2>Stakeholders and Roles</h2>
+    <section id="domains">
+      <h2>Domains</h2>
       <p>
-        The following stakeholders and actors were identified
-        when the use cases have been collected and requirements were identified.
-        Note that these stakeholders and roles may overlap in some use cases.
+        The collection of use cases can be separated into two categories:
+      <ul>
+        <li>Domain specific (vertical) use cases for a single application domain.</li>
+        <ul>
+          <li>Agriculture</li>
+          <li>Smart City</li>
+          <li>Smart Buildings</li>
+          <li>Manufacturing</li>
+          <li>Retail</li>
+          <li>Health</li>
+          <li>Energy</li>
+          <li>Transportation</li>
+          <li>Automotive</li>
+          <li>Smart Home</li>
+          <li>Education</li>
+        </ul>
+        <li>Horizontal use cases that address multiple domains.</li>
+        <ul>
+          <li>Discovery</li>
+          <li>Multi-Vendor System Integration</li>
+          <li>Digital Twin</li>
+          <li>Cross Protocol Interworking</li>
+          <li>Multimodal System Integration</li>
+          <li>Accessibility</li>
+          <li>Security</li>
+          <li>Lifecycle</li>
+          <li>VR/AR</li>
+          <li>Edge Computing</li>
+        </ul>
+      </ul>
+      Domain specific use cases are described in <a href="#sec-vertical-ucs"></a>,
+      horizontal use cases are described in <a href="#sec-horizontal-ucs"></a>
       </p>
     </section>
-    <ul>
-      <li>device owners</li>
-      <li>device user</li>
-      <li>cloud provider</li>
-      <li>service provider</li>
-      <li>device manufacturer</li>
-      <li>gateway manufacturer</li>
-      <li>identity provider</li>
-      <li>directory service operator</li>
-    </ul>
+
+    <section id="conformance"></section>
+
+    <section id="definitions">
+      <h2>Terminology, Stakeholders and Roles</h2>
+      <section id="terminology">
+        <h2>Terminology</h2>
+        The present document uses the terminology from WoT Architecture [[wot-architecture]].
+      </section>
+
+      <section id="stakeholders">
+        <h2>Stakeholders and Roles</h2>
+        <p>
+          The following stakeholders and actors were identified
+          when the use cases have been collected and requirements were identified.
+          Note that these stakeholders and roles may overlap in some use cases.
+        </p>
+      </section>
+      <ul>
+        <li>device owners</li>
+        <li>device user</li>
+        <li>cloud provider</li>
+        <li>service provider</li>
+        <li>device manufacturer</li>
+        <li>gateway manufacturer</li>
+        <li>identity provider</li>
+        <li>directory service operator</li>
+      </ul>
+    </section>
   </section>
 
-  </section>
+  <!-- DOMAIN SPECIFIC USE CASES -->
 
   <section id="sec-vertical-ucs">
     <h2>Domain specific Use Cases</h2>
-
 
     <section id="agriculture">
       <h2>Smart Agriculture</h2>
@@ -520,7 +544,7 @@
           <dt>Description</dt>
           <dd>
 
-            Sensors and some facilities like heater, CO2 generator, sheet controller are connected to the gateway via
+            Sensors and some facilities like heater, CO2 generator, sheet controllers are connected to the gateway via
             wired or wireless networks. The gateway is connected to the cloud via the Internet. All sensors and
             facilities can be accessed and controlled from the cloud.
             To maximize photosynthesis, the temperature, CO2 concentration, and humidity in the greenhouse are mainly
@@ -534,7 +558,6 @@
             <dt>Variants</dt>
             <dd-->
 
-
           </dd>
           <dt>Gaps</dt>
           <dd>
@@ -545,7 +568,7 @@
             sensor status like sleeping.
 
           </dd>
-          <!--dt>Existing standards</dt>
+          <!--dt>Existing Standards</dt>
             <dd>
   
             </dd>
@@ -784,7 +807,7 @@
             Model historical and forecast data
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
             <ul>
               <li><a href="https://tools.ietf.org/html/rfc8376">LPWAN</a></li>
@@ -935,7 +958,7 @@
             watering for one of the next days.
             <br>
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             <ul>
@@ -992,7 +1015,7 @@
             <br>
             <br>
             To be sure of the quality of those measurements each tensiometer sends its measurements several times (3 to
-            5) per day. The tensiometer may send an inappropriate value due to the bad connexion between the soil and
+            5) per day. The tensiometer may send an inappropriate value due to the bad connection between the soil and
             the probe, that is the reason why three tensiometers are used and the median value is computed. If the
             gateway does not receive the value of one sensor during a whole day, an alert should be sent. To take an
             irrigation decision, at least one measurement per sensor and per day should be provided.
@@ -1014,7 +1037,7 @@
             availability.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             <ul>
@@ -1087,7 +1110,7 @@
         <dl>
           <dt>Submitter(s)</dt>
           <dd>
-            Jennifer Lin (GovTech Singapore), Michael McCool
+            Jennifer Lin, Michael McCool
           </dd>
           <!--dt>Reviewer(s)</dt><dd>
               Michael Lagally
@@ -1185,7 +1208,7 @@
                 <li>For each measurement</li>
                 <li>For lat/long, may be a single value (see web browser API; radius?)</li>
               </ul>
-              <li>Geolocation technology (GPS, SLAM, etc). </li>
+              <li>Geolocation technology (GPS, SLAM, etc.). </li>
               <ul>
                 <li>Note that multiple technologies might be used together.</li>
                 <li>Include parameters such as sample interval, accuracy</li>
@@ -1278,7 +1301,7 @@
               for metadata to be included in a TD itself would be useful.
             </p>
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
             <p>
             <ul>
@@ -1396,7 +1419,7 @@
                 in one variant, sending commands to actuators.</li>
               <li>cloud provider: the dashboard system itself or components of it (such as a database or data ingestion
                 system) may
-                be hosted in the cloud./li>
+                be hosted in the cloud.</li>
             </ul>
             </p>
             <!--section id="todo-target-users-smartcity-dashboard" class="ednote">
@@ -1426,7 +1449,7 @@
             </p>
             <p>
               Sensors can include those for the environment and for people and traffic management
-              (density counts, thermal cameras, car speeds, etc).
+              (density counts, thermal cameras, car speeds, etc.).
               status of robots, other actuators, and sensors, data visualization,
               and (optionally) historical comparisons.
             </p>
@@ -1444,11 +1467,11 @@
             <p>
             <ul>
               <li>Environmental data for temperature, humidity, UV levels, pollution levels, etc.</li>
-              <li>Infrastructure status (water flow, electrical grid, road integrity, etc)</li>
+              <li>Infrastructure status (water flow, electrical grid, road integrity, etc.)</li>
               <li>Emergency sensing (flooding, earthquake, fire, etc.)</li>
               <li>Traffic (both people and vehicles)</li>
-              <li>Health monitoring (eg fever trackingi, mask detection, social distancing)</li>
-              <li>Safety monitoring (eg wearing construction helmets on a construction site)</li>
+              <li>Health monitoring (e.g.fever tracking, mask detection, social distancing)</li>
+              <li>Safety monitoring (e.g.wearing construction helmets on a construction site)</li>
               <li>Reports from non-IoT sources (for example, police reports of crimes, hospital emergency case reports)
               </li>
               <li>Images and data derived from images (people traffic and density can be derived from image analysis)
@@ -1457,7 +1480,7 @@
             </ul>
             </p>
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
             <ul>
               <li>Thing description - support for data ingestion and normalization, geolocation and timestamp standards.
@@ -1485,9 +1508,9 @@
               <li>It may be possible to also issue commands to actuators through the interface.</li>
               <li>The system may be used for emergency response (for instance, closing floodgates in response to an
                 expected tsunami)</li>
-              <li>A subset of the data visualization capabilties may be made available to the public (for example,
+              <li>A subset of the data visualization capabilities may be made available to the public (for example,
                 traffic)</li>
-              <li>Filtering based on parameters such as location (area, state, county, country, zip code, etc), sensor
+              <li>Filtering based on parameters such as location (area, state, county, country, zip code, etc.), sensor
                 type, subject matter, etc.</li>
               <li>Ability to generate alerts off of various parameters</li>
               <li>Ability to produce logs off historical data</li>
@@ -1499,7 +1522,7 @@
             <p>
             <ul>
               <li>Access to data should only be provided to authorized users, although some may be made available
-                publically</li>
+                publicly</li>
               <li>Access to actuators should only be provided to authorized users, and commands should be recorded for
                 auditing.</li>
             </ul>
@@ -1511,7 +1534,7 @@
             <ul>
               <li>Management of privacy-sensitive information, for example images of people, </li>
               should be controlled and ideally not associated with specific individuals
-              <li>Data that can be used to track movements of particular invididuals should be controlled or eliminated.
+              <li>Data that can be used to track movements of particular individuals should be controlled or eliminated.
               </li>
               <li>Data purge functions should be supported to allow the permanent deletion of private data.</li>
             </ul>
@@ -1527,7 +1550,7 @@
             </ul>
             </p>
           </dd>
-          <!--dt>Existing standards</dt><dd>
+          <!--dt>Existing Standards</dt><dd>
   
           </dd>
           <dt>Comments</dt><dd-->
@@ -1570,15 +1593,14 @@
   
             </dd>
             <dt>Status</dt>
-            <dd-->
+            <dd>
 
 
-
-          </dd>
-          <dt>Target Users</dt>
+          </dd-->
+          <!--dt>Target Users</dt>
           <dd>
-            <!-- TODO -->
-          </dd>
+            <-- TODO >
+          </dd-->
           <dt>Motivation</dt>
           <dd>
 
@@ -1655,7 +1677,7 @@
             Data format describing user interface preferences.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 3.1.
@@ -1703,21 +1725,20 @@
   
             </dd>
             <dt>Status</dt>
-            <dd-->
+            <dd>
 
 
-
-          </dd>
-          <dt>Target Users</dt>
+          </dd-->
+          <!--dt>Target Users</dt>
           <dd>
-            <!-- TODO -->
+            <!- - TODO - ->
 
           </dd>
           <dt>Motivation</dt>
           <dd>
-            <!-- TODO -->
+            <!- - TODO - ->
 
-          </dd>
+          </dd-->
           <dt>Expected Devices</dt>
           <dd>
 
@@ -1775,7 +1796,6 @@
           <dt>Variants</dt>
           <dd>
 
-
             The user may have additional mobile devices they want to incorporate into
             an interaction, for example a headset acting as an auditory aid or personal speech output
             device.
@@ -1789,7 +1809,7 @@
             Ability to install applications based on links that can access IoT services.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 3.2.
@@ -1847,7 +1867,7 @@
           <dd>
 
             In this use case a network full of IoT devices is presented, in which these devices are registered in
-            several Middle-Nodes. The challenge presented in this scenario is to been able do discover the different
+            several Middle-Nodes. The challenge presented in this scenario is to be able to discover the different
             sensors, by issues a SPARQL query, and without having prior knowledge of where those devices are allocated.
             Therefore, the discovery SPARQL query must start from a specific Middle-Node and reach all those
             Middle-Nodes that are relevant to answer the query.
@@ -1865,10 +1885,10 @@
           <dt>Expected Devices</dt>
           <dd>
 
-            Any device from the energy context (e.g., solar panels, smart plugs, or smart energy meters), devices from
-            the building context (e.g., light bulbs, light switches, occupancy sensors, or thermostats), devices from
-            the environmental context (e.g., soil moisture, flood detection, or air humidity), devices from the
-            wearables context (e.g., smart bands), and/or devices from the water context (e.g., water valves, or water
+            Any device from the energy context (e.g. solar panels, smart plugs, or smart energy meters), devices from
+            the building context (e.g. light bulbs, light switches, occupancy sensors, or thermostats), devices from
+            the environmental context (e.g. soil moisture, flood detection, or air humidity), devices from the
+            wearables context (e.g. smart bands), and/or devices from the water context (e.g. water valves, or water
             quality sensors)
 
           </dd>
@@ -1878,7 +1898,7 @@
             Data coming from different contexts, such as Energy, Building, Environmental Wearables and Water.
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             Current WoT-Discovery approach
@@ -1921,7 +1941,6 @@
             <br>
             <br>
 
-
             For instance, assuming Middle-Node F receives a query that asks about all the discoverable Building IoT
             devices in the campus. First, the Middle-Node F will try to answer the query with the Thing Descriptions of
             the IoT registered within. Since Middle-Node F contains some Building IoT devices a partial query answer is
@@ -1940,14 +1959,13 @@
 
           </dd>
 
-          <dt>Variants</dt>
+          <!--dt>Variants</dt>
           <dd>
 
-          </dd>
+          </dd-->
           <dt>Security Considerations</dt>
           <dd>
             None, in this case an underneath infrastructure that handles security is assumed
-
 
           </dd>
           <dt>Privacy Considerations</dt>
@@ -1962,7 +1980,7 @@
             Been able to find suitable Middle-Nodes that are relevant to answer the query, with no prior knowledge
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
             None
           </dd>
@@ -1984,7 +2002,7 @@
           <dt>Submitter(s)</dt>
           <dd>
 
-            Sebastian Kaebisch (Siemens)
+            Sebastian Kaebisch
 
           </dd>
           <!--dt>Reviewer(s)</dt>
@@ -2009,7 +2027,6 @@
           <dd-->
 
 
-
           </dd>
           <dt>Target Users</dt>
           <dd>
@@ -2019,17 +2036,17 @@
           <dd>
 
             Buildings such as office buildings, hotels, airports, hospitals, train stations and sports stadiums
-            typically consist of heterogeneous IoT systems such as lightings, elevators, security (e.g., door
+            typically consist of heterogeneous IoT systems such as lightings, elevators, security (e.g. door
             control), air-conditionings, fire warnings, heatings, pools, parking control, etc.
 
-            Monitoring, controlling, and management of such a heterogeneous IoT landscape is quite chellanging in
-            terms of engeneering and maintenance.
+            Monitoring, controlling, and management of such a heterogeneous IoT landscape is quite challenging in
+            terms of engineering and maintenance.
 
           </dd>
           <dt>Expected Devices</dt>
           <dd>
 
-            All kind of sensors and actuators (e.g., HVAC).
+            All kind of sensors and actuators (e.g. HVAC).
 
           </dd>
           <dt>Expected Users</dt>
@@ -2045,26 +2062,25 @@
           <dt>Expected Data</dt>
           <dd>
 
-            Hetrogeneos data models from different IoT systems such as BACnet, KNX, and Modbus.
+            Heterogeneous data models from different IoT systems such as BACnet, KNX, and Modbus.
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             WoT Thing Description and Thing Model, WoT Architecture, WoT Binding Templates (covering protocol
             specifica)
 
-
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             BACnet, KNX, OPC-UA, Modbus
 
           </dd>
-          <dt>Comments</dt>
+          <!--dt>Comments</dt>
           <dd>
-          </dd>
+          </dd-->
         </dl>
       </section>
 
@@ -2149,9 +2165,8 @@
             </ul>
 
           </dd>
-          <!--dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <!--dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
 
           </dd-->
           <dt>Description</dt>
@@ -2171,11 +2186,11 @@
           <dd-->
 
           </dd>
-          <dt>Security Considerations</dt>
+          <!--dt>Security Considerations</dt>
           <dd>
-            <!-- TODO -->
+            <!- - TODO - ->
 
-          </dd>
+          </dd-->
           <dt>Privacy Considerations</dt>
           <dd>
             The TD may expose personal information about the building layout and residents.
@@ -2196,7 +2211,7 @@
             There is no standard API specification for the WoT Thing Directory to maintain and query TDs.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             <ul>
@@ -2215,9 +2230,8 @@
       </section>
 
 
-
       <section id="smart-building-things">
-        <h2>Linking Smart Building Things and BIM Models</h2>
+        <h2>Automated Smart Building Management</h2>
         <dl>
 
           <dt>Submitter(s)</dt>
@@ -2227,7 +2241,6 @@
               <a href="https://orcid.org/0000-0002-2033-859X">Georg Ferdinand Schneider (Schaeffler Technologies
                 AG)</a>
             </p>
-
 
           </dd>
           <!--dt>Reviewer(s)</dt>
@@ -2291,9 +2304,10 @@
               <li>which other building things are involved (e.g. sensor hosted by a duct or a space).</li>
             </ul>
             <p>Through the increased use of model-based data exchange over the whole life cycle of a building, often
-              referred to as Building Information Modeling (BIM), a curated source for data describing the building
+              referred to as Building Information Modeling (BIM) (Sacks et al., 2018), a curated source for data
+              describing the building
               itself is available including, amongst others, the topology of the building structured into e.g. sites,
-              storeys and spaces.</p>
+              stores and spaces.</p>
             <p>Automatically tracking down data and their related things in a building would especially ease the
               configuration and operation of Building Automation and Control Systems (BACS) and Heating
               Ventilation and Air-Conditioning (HVAC) services during commissioning, operation, maintenance and
@@ -2343,13 +2357,15 @@
             </ul>
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             <ul>
               <li><a href="https://www.w3.org/TR/wot-thing-description/">Web of Things Thing Description (WoT TD)</a>
               </li>
               <li><a href="https://w3c.github.io/wot-binding-templates/">Web of Things Binding Templates</a></li>
+              <li><a href="https://github.com/w3c/wot-discovery/blob/main/proposals/geolocation.md">WoT Discovery and
+                  Geolocation</a></li>
             </ul>
 
           </dd>
@@ -2365,9 +2381,9 @@
               made by typical smart home sensors. We extend the dataset with Thing Descriptions of some of the items.
               The respective Thing Description of a temperature sensor in the kitchen of the considered flat is as
               follows:</p>
-            <pre class="example" id="Kitchen-temp-Sensor">
+            <pre class="example" id="TemperatureSensor">
                     <code class="lang-json">{
-                        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-temp-Sensor"</span>,
+                        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet#TemperatureSensor"</span>,
                         <span class="hljs-attr">"@context"</span>: [
                             <span class="hljs-string">"https://www.w3.org/2019/wot/td/v1"</span>,
                             {
@@ -2380,7 +2396,7 @@
                                 <span class="hljs-attr">"schema"</span>: <span class="hljs-string">"http://schema.org"</span>
                             }
                         ],
-                        <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Kitchen-temp-Sensor"</span>,
+                        <span class="hljs-attr">"title"</span>: <span class="hljs-string">"TemperatureSensor"</span>,
                         <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Kitchen Temperature Sensor"</span>,
                         <span class="hljs-attr">"@type"</span>: [<span class="hljs-string">"sosa:Sensor"</span>, <span class="hljs-string">"brick:Zone_Air_Temperature_Sensor"</span>, <span class="hljs-string">"bot:element"</span>],
                         <span class="hljs-attr">"@reverse"</span>: {
@@ -2398,7 +2414,7 @@
                             <span class="hljs-string">"basic_sc"</span>
                         ],
                         <span class="hljs-attr">"properties"</span>: {
-                            <span class="hljs-attr">"Kitchen-temp"</span>: {
+                            <span class="hljs-attr">"Temperature"</span>: {
                                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"number"</span>,
                                 <span class="hljs-attr">"unit"</span>: <span class="hljs-string">"om:degreeCelsius"</span>,
                                 <span class="hljs-attr">"forms"</span>: [
@@ -2413,11 +2429,11 @@
                             }
                         },
                         <span class="hljs-attr">"sosa:observes"</span>: {
-                            <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:Kitchen-temp"</span>,
+                            <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:Temperature"</span>,
                             <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"sosa:ObservableProperty"</span>
                         },
                         <span class="hljs-attr">"ssns:hasSystemCapability"</span>: {
-                            <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:Kitchen-temp-Sensor-Capa"</span>,
+                            <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:SensorCapability"</span>,
                             <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"ssns:SystemCapability"</span>,
                             <span class="hljs-attr">"ssns:hasSystemProperty"</span>: {
                                 <span class="hljs-attr">"@type"</span>: [<span class="hljs-string">"ssns:MeasurementRange"</span>],
@@ -2431,15 +2447,15 @@
                 </pre>
             <p>Where the contextual information on the measurement range of the sensor is specified using the <a
                 href="http://www.w3.org/ns/ssn/systems/">SSNS</a> schema. The location information of the thing <a
-                href="#Kitchen-temp-Sensor">Kitchen-temp-Sensor</a> is
+                href="#TemperatureSensor">TemperatureSensor</a> is
               provided based on the <a href="https://w3id.org/bot">Building Topology Ontology (BOT)</a>, a minimal
               ontology developed by the <a href="https://www.w3.org/community/lbd/">W3C Linked Building Data Community
                 Group (W3C LBD CG)</a> to describe the topology of buildings in the semantic web. Additionally, the
               thing description of the corresponding actuator is given below.</p>
             <p></p>
-            <pre class="example" id="Kitchen-tempS-Actuator">
+            <pre class="example" id="TemperatureActuator">
                     <code class="lang-json">{
-                    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet#Kitchen-tempS-Actuator"</span>,
+                    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet#TemperatureActuator"</span>,
                     <span class="hljs-attr">"@context"</span>: [
                         <span class="hljs-string">"https://www.w3.org/2019/wot/td/v1"</span>,
                         {
@@ -2450,8 +2466,8 @@
                             <span class="hljs-attr">"brick"</span>: <span class="hljs-string">"https://brickschema.org/schema/Brick#"</span>
                         }
                     ],
-                    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Kitchen-tempS-Actuator"</span>,
-                    <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Kitchen Temperature Setpoint Actuator"</span>,
+                    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"TemperatureActuator"</span>,
+                    <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Kitchen Temperature Actuator"</span>,
                     <span class="hljs-attr">"@type"</span>: [<span class="hljs-string">"sosa:Actuator"</span>, <span class="hljs-string">"brick:Zone_Air_Temperature_Setpoint"</span>, <span class="hljs-string">"bot:element"</span>],
                     <span class="hljs-attr">"@reverse"</span>: {
                         <span class="hljs-attr">"bot:containsElement"</span>: {
@@ -2468,7 +2484,7 @@
                         <span class="hljs-string">"basic_sc"</span>
                     ],
                     <span class="hljs-attr">"actions"</span>: {
-                        <span class="hljs-attr">"Kitchen-tempS"</span>: {
+                        <span class="hljs-attr">"TemperatureSetpoint"</span>: {
                             <span class="hljs-attr">"forms"</span>: [
                                 {
                                     <span class="hljs-attr">"href"</span>: <span class="hljs-string">"https://kitchen.example.com/tempS"</span>
@@ -2477,7 +2493,7 @@
                         }
                     },
                     <span class="hljs-attr">"ssn:forProperty"</span>: {
-                        <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:Kitchen-tempS"</span>,
+                        <span class="hljs-attr">"@id"</span>: <span class="hljs-string">"osh:Temperature"</span>,
                         <span class="hljs-attr">"@type"</span>: <span class="hljs-string">"sosa:ActuatableProperty"</span>
                     }
                 }
@@ -2485,7 +2501,7 @@
             </pre>
           <dt><em>Combining Topological Context and Thing Descriptions</em></dt>
           <p>The scenario considered is related to the replacement of a temperature sensor in a BACS. The topological
-            information localizing the things, e.g. the <a href="#Kitchen-temp-Sensor">temperature sensor</a> can
+            information localizing the things, e.g. the <a href="#TemperatureSensor">temperature sensor</a> can
             be used to automatically commission the newly replaced sensor and link it to existing control
             algorithms. For this purpose, the identifiers of suitable sensors and actuators are needed and can be,
             for example, queried via <a href="https://www.w3.org/TR/sparql11-query/">SPARQL</a>. Here the query uses
@@ -2506,7 +2522,7 @@
                             }
                             </code>
                         </pre>
-          <p>Similarly this data can obtained via a REST API built upon the <a
+          <p>Similarly this data can be obtained via a REST API built upon the <a
               href="https://tools.ietf.org/html/rfc7231#section-4">HTTP</a> protocol. Below is an example endpoint
             applying <a href="https://roy.gbiv.com/pubs/dissertation/top.htm">REST</a> style for getting the same
             information for a specific space name:</p>
@@ -2533,23 +2549,34 @@
                               <span class="hljs-string">"name"</span>: <span class="hljs-string">"Kitchen"</span>
                             },
                           <span class="hljs-string">"sensors"</span>: [
-                            <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#Kitchen-temp-Sensor</span>"</span>
+                            <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#TemperatureSensor</span>"</span>
                           ],
                           <span class="hljs-string">"actuators"</span>: [
-                            <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#Kitchen-tempS-Actuator</span>"</span>
+                            <span class="hljs-string">"https://w3id.org/ibp/osh/OpenSmartHomeDataSet<span class="hljs-subst">#TemperatureActuator</span>"</span>
                           ]
                         }
                         </code></pre>
+          <p>In this example query, the REST endpoint has been defined using the <a
+              href="https://www.openapis.org/">OpenAPI specification</a>
+            and is provided by a RESTful server. A data binding is needed between the server and the underlying backend
+            storage, here the triple store
+            that contains the involved ontologies (osh, bot, ssn, brick...). The data binding relies on similar SPARQL
+            queries as the one shown above.
+            As a result the endpoint can deliver information to a target application that consumes custom JSON rather
+            than triples.
+            Similar implmentation could be achieved using <a
+              href="https://www.w3.org/community/graphql-rdf/">GraphQL</a>.
+          </p>
           <dt><em>Automated Update of Fault Detection Rule based on Thing Description</em></dt>
           <p>Another related use case in smart buildings, which would greatly benefit from harmonised thing
             descriptions and attached location information is related to the detection of unexpected behavior,
             errors and faults. An example for such a detection of faults is the rule-based surveillance of sensor
             values. A generic rule applicable to sensors is that the observation values stay within the measurement
             range of the sensor. Again, in the case of maintenance as described above a sensor is replaced.</p>
-          <p>Some agent configuring fault detection rules, can obtain the measurement range from the sensor&#39;s TD
+          <p>Some agent configuring fault detection rules can obtain the measurement range from the sensor&#39;s TD
             (see above) to obtain the parameters to configure the mentioned rule. Again, a query or API call
             retrieving this information (schema:minValue/ schema:maxValue) can be used to update the upper and lower
-            bound of the values provided by the <a href="#Kitchen-temp-Sensor">sensor</a>.</p>
+            bound of the values provided by the <a href="#TemperatureSensor">sensor</a>.</p>
 
           </dd>
           <dt>Security Considerations</dt>
@@ -2562,13 +2589,12 @@
               presence in a
               home. Hence, security needs must be defined and properly addressed.</p>
 
-
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
 
             <p>Privacy considerations can be of a concern if observations of sensors can be matched to individuals.
-              It is of the responsability of building owners, managers and users to define their own privacy policies
+              It is of the responsibility of building owners, managers and users to define their own privacy policies
               for their data and share necessary consents if necessary.
             </p>
 
@@ -2583,10 +2609,10 @@
             </p>
 
           </dd>
-          <dt>Internationalisation (i18n) Considerations</dt>
+          <dt>Internationalization (i18n) Considerations</dt>
           <dd>
 
-            <p>Internationalisation is a concern as the Buildings industry is a global industry. This is reflected in
+            <p>Internationalization is a concern as the Buildings industry is a global industry. This is reflected in
               some efforts, e.g. BOT used in the examples above does provide multilanguage labels in up to 16
               different languages including english, french and chinese.</p>
 
@@ -2594,7 +2620,14 @@
           <!--dt>Requirements</dt>
           <dd>
 
-            <p>None</p>
+            <p>
+              For the realization of the intented use case for automated things location and fault detection as well as further potentially 
+              automatable analyses, a smart building or smart home ecosystem is required. More specifically, BACS components are needed 
+              that support existing communication protocols (e.g. MQTT, OPC-UA, CoAP, BACNet...) to share data and metadata 
+              with each other and necessary gateways or smart hubs. They should be able to share information that can be translated into JSON 
+              payloads following the data structuration and representation proposed by the 
+              <a href="https://www.w3.org/TR/wot-thing-description/">Web of Things Thing Description (WoT TD)</a>.
+            </p>
 
           </dd>
           <dt>Gaps</dt>
@@ -2603,7 +2636,7 @@
             <p>None</p>
 
           </dd-->
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             <ul>
@@ -2616,22 +2649,28 @@
               <li><a href="https://brickschema.org">BRICK</a></li>
             </ul>
 
-
           </dd>
           <!--dt>Comments</dt>
           <dd-->
 
+          <p>References:</p>
+          <ul>
+            <a href="https://doi.org/10.1002/9781119287568">Sacks, R., Eastman, C., Lee, G., & Teicholz, P. (2018).
+              BIM handbook: A guide to building information modeling for owners, designers, engineers, contractors,
+              and facility managers. John Wiley & Sons.</a>
+
+          </ul>
 
           </dd>
+
         </dl>
       </section>
     </section>
 
-
     <section id="manufacturing">
       <h2>Manufacturing</h2>
       <section id="big-data">
-        <h2>Big Data for Manufacturing</h2>
+        <h2>Manufacturing</h2>
         <dl>
 
           <dt>Submitter(s)</dt>
@@ -2644,7 +2683,6 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
@@ -2654,17 +2692,14 @@
           <dd>
 
 
-
           </dd>
           <dt>Class</dt>
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd-->
-
 
 
           </dd>
@@ -2715,7 +2750,7 @@
           <dd>
             <p>
               A company owns multiple factories which contain multiple production lines.
-              Examples are production lines, environment sensors,
+              Examples are production lines and environment sensors.
               These devices collect data from multiple sensors and transmit this information to the cloud. Sensor data
               is stored in the cloud, can be visualized and analyzed using machine learning / AI.
             </p>
@@ -2729,7 +2764,7 @@
               serve to identify anomalies or to predict impending outages.
             </p>
             <p>
-              The cloud service allows to manage single and groups of devices and can help to identify abonormal
+              The cloud service allows to manage single and groups of devices and can help to identify abnormal
               conditions.
               For this purpose a set of rules can be defined by the user, which raises alerts towards the user or
               triggers actions on devices based on these rules.
@@ -2742,13 +2777,12 @@
           <!--dt>Variants</dt>
           <dd>
 
-
           </dd>
           <dt>Gaps</dt>
           <dd>
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
@@ -2776,16 +2810,13 @@
         <!--dt>Reviewer(s)</dt>
         <dd>
 
-
         </dd>
         <dt>Tracker Issue ID</dt>
         <dd>
 
-
         </dd>
         <dt>Category</dt>
         <dd>
-
 
 
         </dd>
@@ -2793,11 +2824,9 @@
         <dd>
 
 
-
         </dd>
         <dt>Status</dt>
         <dd>
-
 
 
         </dd-->
@@ -2823,7 +2852,7 @@
         <dt>Expected Devices</dt>
         <dd>
 
-          Connected sensors, such as people counters, presence sensors, air quality, room ocupancy, door sensors.
+          Connected sensors, such as people counters, presence sensors, air quality, room occupancy, door sensors.
           Cloud services. Video analytics edge services.
 
         </dd>
@@ -2835,7 +2864,6 @@
         </dd>
         <!--dt>Dependencies</dt>
         <dd>
-
 
           tbd
 
@@ -2910,7 +2938,7 @@
           </section>
 
         </dd>
-        <dt>Existing standards</dt>
+        <dt>Existing Standards</dt>
         <dd>
 
           <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
@@ -2944,11 +2972,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Category</dt>
             <dd>
-
 
 
             </dd>
@@ -2956,11 +2982,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Status</dt>
             <dd-->
-
 
 
             </dd>
@@ -3025,7 +3049,7 @@
                 <li>Location</li>
                 <ul>
                   <li>Latitude, Longitude, Altitude, Accuracy</li>
-                  <li>Semantic (eg a particular building entrance)</li>
+                  <li>Semantic (e.g. a particular building entrance)</li>
                 </ul>
                 <li>Thermal image</li>
               </ul>
@@ -3079,7 +3103,6 @@
             <dt>Variants</dt>
             <dd>
 
-
               <ul>
                 <li>Enough information is included in the notification that the specific
                   person that raised the alarm can be identified. For example, if an RGB
@@ -3092,11 +3115,11 @@
                   or refusing to open a gate at the entrance to a building, to prevent sick
                   employees from entering the building.</li>
                 <li>To generate statistics, for example to count the number of people with
-                  fevers, then unique individuals need to be indentified to avoid counting
+                  fevers, then unique individuals need to be identified to avoid counting
                   the same person more than once.
                 <li>The same sensors might be used to determine the number of people in
                   an area and send a notification if crowded conditions are detected, in
-                  order to support social distancing behaviour (for instance, supporting
+                  order to support social distancing behavior (for instance, supporting
                   an app that notifies users when a destination is crowded) in a pandemic situation.</li>
                 <li>Cameras that provide video streams rather than still images.</li>
               </ul>
@@ -3118,7 +3141,7 @@
                 <ul>
                   <li>If later these are made public then the health information of a particular person would be
                     released
-                    publically.</li>
+                    publicly.</li>
                   <li>There is also the possibility that the camera data could be in error, and should be confirmed with
                     a
                     more accurate sensor.</li>
@@ -3136,7 +3159,7 @@
                 <li>Onboarding mechanism for rapidly deploying a large number of devices</li>
                 <li>Standard vocabulary for geolocation information</li>
                 <li>Implementations able to handle image payload formats, possibly in combination with non-image data
-                  (eg images and JSON in a single response)</li>
+                  (e.g. images and JSON in a single response)</li>
                 <li>Video streaming support (if we wish to serve video stream from the camera instead of still images)
                 </li>
                 <li>Standard ways to specify notification mechanisms and data payloads for things like SMS and email
@@ -3144,11 +3167,10 @@
               </ul>
 
             </dd>
-            <dt>Existing standards</dt>
+            <!--dt>Existing Standards</dt>
             <dd>
 
-
-            </dd>
+            </dd-->
             <dt>Comments</dt>
             <dd>
 
@@ -3175,11 +3197,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Tracker Issue ID</dt>
             <dd>
-
 
 
             </dd>
@@ -3187,17 +3207,14 @@
             <dd>
 
 
-
             </dd>
             <dt>Class</dt>
             <dd>
 
 
-
             </dd>
             <dt>Status</dt>
             <dd>
-
 
 
             </dd-->
@@ -3227,19 +3244,16 @@
               on patients, making it easier to deliver precision medicine.
 
             </dd>
-            <dt>Expected Devices</dt>
+            <!--dt>Expected Devices</dt>
             <dd>
-
 
             </dd>
             <dt>Expected Data</dt>
             <dd>
 
-
             </dd>
-            <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
-            <dd>
-
+            <dt>Affected WoT deliverables and/or work items</dt>
+            <dd-->
 
             </dd>
             <dt>Description</dt>
@@ -3286,7 +3300,6 @@
             <dt>Variants</dt>
             <dd>
 
-
               US military developed ONR SBIR (Automated Critical Care System Prototype), and found those issues.
 
               <ul>
@@ -3319,10 +3332,10 @@
                 and performance. Another issue with widely used transport-level security solutions is the lack of
                 support for multicast.
             </dd>
-            <dt>Privacy Considerations</dt>
+            <!--dt>Privacy Considerations</dt>
             <dd>
 
-              <!--section id="todo-privacy-2" class="ednote">TODO: Describe any issues related to privacy; if there are
+              <!- -section id="todo-privacy-2" class="ednote">TODO: Describe any issues related to privacy; if there are
                 none,
                 say "none" and justify</section>
 
@@ -3340,7 +3353,7 @@
               industrial systems.
 
             </dd>
-            <dt>Existing standards</dt>
+            <dt>Existing Standards</dt>
             <dd>
 
               <p><a href="https://www.astm.org/Standards/F2761.htm">F2761-09 (2013)</a> </p>
@@ -3392,11 +3405,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Tracker Issue ID</dt>
             <dd>
-
 
 
             </dd>
@@ -3410,11 +3421,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Status</dt>
             <dd-->
-
 
 
             </dd>
@@ -3423,7 +3432,7 @@
 
               End user with a health problem they wish to monitor.
 
-              Health services provider (doctor, nurse, paramedic, etc).
+              Health services provider (doctor, nurse, paramedic, etc.).
 
             </dd>
             <dt>Motivation</dt>
@@ -3480,7 +3489,6 @@
             <dt>Variants</dt>
             <dd>
 
-
               The user may have additional mobile devices they want to incorporate into
               an interaction, for example a headset acting as an auditory aid or personal speech output
               device.
@@ -3494,7 +3502,7 @@
               Ability to install applications based on links that can access IoT services.
 
             </dd>
-            <dt>Existing standards</dt>
+            <dt>Existing Standards</dt>
             <dd>
 
               This use case is based on MMI UC 3.2.
@@ -3519,7 +3527,7 @@
           <dt>Submitter(s)</dt>
           <dd>
 
-            Christian Glomb (Siemens)
+            Christian Glomb
 
           </dd>
           <!--dt>Reviewer(s)</dt>
@@ -3532,11 +3540,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Category</dt>
           <dd>
-
 
 
           </dd>
@@ -3544,11 +3550,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd>
-
 
 
           </dd-->
@@ -3568,9 +3572,8 @@
             </ul>
 
           </dd>
-          <dt>Motivation</dt>
-          <dd>
-
+          <!--dt>Motivation</dt>
+          <dd-->
 
           </dd>
           <dt>Expected Devices</dt>
@@ -3598,7 +3601,7 @@
             </ul>
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             WoT Architecture, WoT Binding Templates (covering protocol specifica)
@@ -3623,7 +3626,7 @@
           plants and for generation from renewable sources such as photovoltaic systems, solar thermal power plants,
           wind turbines and biogas plants. This leads to a much more complex structure, primarily in the area of
           load control, voltage maintenance in the distribution grid and maintenance of grid stability. In contrast
-          to medium to large power plants, smaller, decentralised generation plants also feed directly into the
+          to medium to large power plants, smaller, decentralized generation plants also feed directly into the
           lower voltage levels such as the low-voltage grid or the medium-voltage grid. This use case variants also
           includes operation and control of energy storages like batteries.
 
@@ -3662,9 +3665,9 @@
                 ensembles, also the operational data needs to be understood by the different stakeholders without
                 engineering effort.</li>
               <li>Push Services: As there is a fan-out with many devices that probably have a rate-limited connection
-                connecting to one single command centre, a bidirectional communication mechanism is needed rather than
+                connecting to one single command center, a bidirectional communication mechanism is needed rather than
                 polling for the reverse direction</li>
-              <li>Object Memory: As multiple and interchangable stakeholders are involved in the application, a
+              <li>Object Memory: As multiple and interchangeable stakeholders are involved in the application, a
                 backlog of the object is beneficial for scrollkeeping</li>
             </ul>
 
@@ -3672,13 +3675,13 @@
           <dt>Non-Functionals</dt>
           <dd>
             <ul>
-              <li>Privacy: As fine-grained metering informtion provides sensitive data about a household, the system
-                should show a high digree of privacy</li>
+              <li>Privacy: As fine-grained metering information provides sensitive data about a household, the system
+                should show a high degree of privacy</li>
               <li>Trust: Since the data exchange between the virtual power plant and the distributed energy resource
                 leads to a physical action that invokes high currents and monetary flows, the integrity of both
                 parties and the exchange's data is crucial</li>
               <li>Layered L7 Communication: Since multiple different links are used for monitoring and control,
-                integration requires a clear and consistent seperation of information from the used serialization and
+                integration requires a clear and consistent separation of information from the used serialization and
                 application protocols to enable the exchange of homogenous information over heterogenous application
                 layer protocols</li>
             </ul>
@@ -3686,7 +3689,7 @@
           <!--dt>Gaps</dt>
           <dd>
       </dd-->
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             IEC 61850 - International standard for data models and communication protocols
@@ -3772,17 +3775,17 @@
           Road information system (routes, conditions, navigation).
           Road control system (e.g. virtual rails).
           Traffic management services, e.g. intelligent traffic light system with localization and identification
-          (by satellite, radio frequency identification, cameras etc).
+          (by satellite, radio frequency identification, cameras etc.).
           Emergency monitoring and data/location sharing.
           Airport management.
           Shipping docks and ports management.
           Train networks management.
           Public transport vehicles (train, metro, tram, bus, minibus), mobility as a service (ride sharing, bicycle
-          sharing, scooters etc).
+          sharing, scooters etc.).
           Transportation network planning and management (hubs, backbones, sub-networks, last mile network).
           Electronic timetable management system.
           Vehicles (human driven, self-driving, isolated or part of fleet).
-          Connected vehicles (cars, ships, airplanes, trains, buses etc).
+          Connected vehicles (cars, ships, airplanes, trains, buses etc.).
 
         </dd>
         <dt>Expected Data</dt>
@@ -3790,7 +3793,7 @@
 
           Vehicle data (identification, location, speed, route, selected vehicle data).
           Weather and climate data.
-          Contextual data (representing various risk factors, delays, etc).
+          Contextual data (representing various risk factors, delays, etc.).
 
         </dd>
         <dt>Dependencies</dt>
@@ -3805,7 +3808,7 @@
         <dt>Description</dt>
         <dd>
 
-          Transportation system implementers will be able to use a unified data description model accoss various
+          Transportation system implementers will be able to use a unified data description model across various
           systems.
 
         </dd>
@@ -3826,7 +3829,7 @@
         <!--dt>Gaps</dt>
         <dd>
         </dd-->
-        <!--dt>Existing standards</dt>
+        <!--dt>Existing Standards</dt>
         <dd>
 
           <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
@@ -3835,7 +3838,6 @@
         </dd>
         <dt>Comments</dt-->
         <dd>
-
 
         </dd>
       </dl>
@@ -3857,11 +3859,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
 
 
           </dd-->
@@ -3966,7 +3966,7 @@
             Data format describing user interface preferences.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 2.1.
@@ -4000,11 +4000,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Reviewer(s)</dt>
           <dd>
-
 
 
           </dd>
@@ -4012,11 +4010,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Category</dt>
           <dd>
-
 
 
           </dd>
@@ -4024,11 +4020,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd>
-
 
 
           </dd>
@@ -4036,26 +4030,21 @@
           <dd>
 
 
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
 
           </dd>
           <dt>Expected Devices</dt>
           <dd>
 
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
 
-
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
 
           </dd>
           <dt>Description</dt>
@@ -4074,7 +4063,6 @@
           <dt>Variants</dt>
           <dd>
 
-
           </dd>
           <dt>Gaps</dt>
           <dd>
@@ -4083,7 +4071,7 @@
               TODO: Provide links to relevant standards that are relevant for this use case</section>
 
           </dd>
-          <dt>Existing standards & related information</dt>
+          <dt>Existing Standards & related information</dt>
           <dd>
 
             <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are
@@ -4091,7 +4079,6 @@
               <p>There are MANY TV standards and this would be a long list. Rather leave blank unless a very specific
                 standard provides more insight.</p>
             </section>
-
 
           </dd>
           <dt>Comments</dt>
@@ -4114,9 +4101,8 @@
 
     -->
 
-
       <section id="nhk-device-tv-sync">
-        <h2>Home WoT devices work according to TV programs</h2>
+        <h2>Home WoT devices synchronize to TV programs</h2>
         <dl>
 
           <dt>Submitter(s)</dt>
@@ -4126,7 +4112,6 @@
             Masaya Ikeo,
             Shinya Abe,
             Hiroshi Fujisawa
-
 
           </dd>
           <!--dt>Reviewer(s)</dt>
@@ -4154,7 +4139,7 @@
           <dd>
 
             A lot of home devices, such as TV, cleaner, and home lighting, connect to an IP network.
-            When you watch a content program, these devices should coorperate for enhancing your expereence.
+            When you watch a content program, these devices should cooperate for enhancing your experience.
 
             If the cleaning robot makes a loud noise while watching the TV program, it will hinder viewing.
             Also, even if you set up the theater environment with smart lights, it is troublesome to operate it
@@ -4191,9 +4176,8 @@
             Hybridcast connect application know the Thing Description of the devices in home. (Discovery?)
 
           </dd>
-          <dt>Dependencies</dt>
-          <dd>
-
+          <!--dt>Dependencies</dt>
+          <dd-->
 
 
           </dd>
@@ -4218,14 +4202,12 @@
           <!--dt>Variants</dt>
           <dd>
 
-
           </dd>
           <dt>Gaps</dt>
           <dd->
 
-
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system (<a href="http://www.iptvforum.jp/download/input.html">IPTVFJ STD-0013 "Hybridcast Operational Guideline Version 2.8" (Application Forms)</a>, <a href="https://github.com/nhkrd">Reference Implementations</a>),
@@ -4236,7 +4218,6 @@
           </dd>
           <dt>Comments</dt>
           <dd>
-
 
           </dd>
         </dl>
@@ -4283,7 +4264,6 @@
             </dd>
             <dt>Status</dt>
             <dd-->
-
 
 
           </dd>
@@ -4334,7 +4314,7 @@
             Atmospheric data of a room, machine sensors
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             Thing Description, Scripting API, possibly security
@@ -4350,9 +4330,8 @@
               href="https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950504601&pSpracheNr=1">here</a>.
 
           </dd>
-          <dt>Variants</dt>
-          <dd>
-
+          <!--dt>Variants</dt>
+          <dd-->
 
           </dd>
           <dt>Security Considerations</dt>
@@ -4392,7 +4371,7 @@
             </ul>
 
           </dd>
-          <!--dt>Existing standards</dt>
+          <!--dt>Existing Standards</dt>
             <dd>
     
     
@@ -4480,7 +4459,7 @@
           </ul>
 
         </dd>
-        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+        <dt>Affected WoT deliverables and/or work items</dt>
         <dd>
 
           <ul>
@@ -4501,7 +4480,7 @@
           satisfying certain semantic categories, having certain capabilities, or having specific sub-APIs
           (interfaces).
           Discovery is the general process whereby WoT Thing Descriptions satisfying a specific set of such
-          constraints are retreived by a running system.
+          constraints are retrieved by a running system.
 
         </dd>
 
@@ -4526,7 +4505,7 @@
             <li>The distribution mechanism needs to be able to clearly authenticate potential users.</li>
             <li>The distribution mechanism for metadata should only provide metadata to authorized users.</li>
             <li>The distribution mechanism should be able to resist denial-of-service attacks seeking to overwhelm it
-              withi spurious requests.</li>
+              within spurious requests.</li>
             <li>The distribution mechanism should be able to preserve the integrity of metadata.</li>
           </ul>
 
@@ -4553,7 +4532,7 @@
           </ul>
 
         </dd>
-        <dt>Existing standards</dt>
+        <dt>Existing Standards</dt>
         <dd>
 
           <ul>
@@ -4567,13 +4546,12 @@
         <dd>
 
           <ul>
-            <li>Many discovery mechansims already exist but many do not satisfy all the requirements above, e.g. they
+            <li>Many discovery mechanisms already exist but many do not satisfy all the requirements above, e.g. they
               may have insufficient
               privacy controls. A standards solution that builds upon prior work in this area is desirable.</li>
         </dd>
       </dl>
     </section>
-
 
     <section id="multi-vendor">
       <h2>Multi-Vendor System Integration - Out of the box interoperability</h2>
@@ -4596,11 +4574,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Category</dt>
             <dd>
-
 
 
             </dd>
@@ -4608,11 +4584,9 @@
             <dd>
 
 
-
             </dd>
             <dt>Status</dt>
             <dd-->
-
 
 
         </dd>
@@ -4632,7 +4606,7 @@
         <dd>
 
           <ul>
-            <li>As an device owner, I want to know whether a device will work with my system before I purchase it to
+            <li>As a device owner, I want to know whether a device will work with my system before I purchase it to
               avoid wasting money.</li>
             <ul>
               <li>Installers of IoT devices want to be able to determine if a given device will be compatible with
@@ -4673,7 +4647,7 @@
           discrete or streaming data.
 
         </dd>
-        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+        <dt>Affected WoT deliverables and/or work items</dt>
         <dd>
 
           WoT Profile, WoT Thing Description
@@ -4715,7 +4689,7 @@
                 this use case</section>
 
         </dd>
-        <dt>Existing standards</dt>
+        <dt>Existing Standards</dt>
         <dd>
 
           various.
@@ -4748,16 +4722,13 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
 
-
           </dd>
           <dt>Category</dt>
           <dd>
-
 
 
           </dd>
@@ -4765,11 +4736,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd-->
-
 
 
         </dd>
@@ -4813,7 +4782,6 @@
         <dt>Dependencies</dt>
         <dd>
 
-
           <ul>
             <li>WoT Architecture </li>
             <li>WoT Thing Description </li>
@@ -4851,7 +4819,6 @@
             <li>Integration of disparate systems: Connect with back-end applications related to supply chain
               operations such as manufacturing, procurement, warehousing, transportation, or logistics.</li>
           </ul>
-
 
         </dd>
         <dt>Variants</dt>
@@ -4924,7 +4891,7 @@
           WoT does not define a way to describe the behavior of a thing to use for a simulation.
 
         </dd>
-        <!--dt>Existing standards</dt>
+        <!--dt>Existing Standards</dt>
           <dd>
           
             <section id="todo-references-x" class="ednote">
@@ -4966,9 +4933,8 @@
 
           </dd>
           <dt>Status</dt>
-          <dd-->
-
-        </dd>
+          <dd>
+        </dd-->
         <dt>Target Users</dt>
         <dd>
 
@@ -5032,18 +4998,17 @@
             they include smart traffic lights, traffic monitoring, people counters, cameras.
           </p>
         </dd>
-        <!--dt>Variants</dt-->
+        <!--dt>Variants</d>
         <dd>
+        </dd-->
 
-
-        </dd>
         <dt>Gaps</dt>
         <dd>
 
           A common profile across protocols is required to address this use case.
 
         </dd>
-        <dt>Existing standards</dt>
+        <dt>Existing Standards</dt>
         <dd>
 
           MQTT, OPC-UA, BACNet, CoAP, various other home and industrial protocols.
@@ -5053,10 +5018,6 @@
           </dd-->
       </dl>
     </section>
-
-
-
-
 
     <section id="multimodal">
       <h2>Multimodal System Integration</h2>
@@ -5074,11 +5035,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
 
 
           </dd-->
@@ -5092,11 +5051,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd>
-
 
 
           </dd-->
@@ -5126,7 +5083,7 @@
 
             Video recognition service.
 
-            Devices capabale of presenting alerts in various modalities.
+            Devices capable of presenting alerts in various modalities.
 
           </dd>
           <dt>Expected Data</dt>
@@ -5163,7 +5120,6 @@
           <!--dt>Variants</dt>
           <dd-->
 
-
           </dd>
           <dt>Gaps</dt>
           <dd>
@@ -5171,7 +5127,7 @@
             Support for video and audio recognition services.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 5.1.
@@ -5198,11 +5154,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
 
 
           </dd-->
@@ -5216,17 +5170,14 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd>
 
 
-
           </dd>
           <dt>Target Users</dt>
           <dd-->
-
 
           </dd>
           <dt>Motivation</dt>
@@ -5304,17 +5255,15 @@
             or voice command devices.
 
           </dd>
-          <dt>Variants</dt>
+          <!--dt>Variants</dt>
           <dd>
-
 
           </dd>
           <dt>Gaps</dt>
-          <dd>
-
+          <dd-->
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 5.2.
@@ -5410,7 +5359,7 @@
 
             Text from an application that needs to be displayed at a larger size.
 
-            Visual alerts correspondig to audio stimuli, eg sound effects in a game mapped
+            Visual alerts corresponding to audio stimuli, e.g. sound effects in a game mapped
             to visual icons.
 
             Visual information mapped to audio information, for example,
@@ -5465,7 +5414,7 @@
           <dt>Variants</dt>
           <dd>
 
-            Modalities may be translated from one form to another to accomodate
+            Modalities may be translated from one form to another to accommodate
             accessibility issues, for example, visual cues into audio cues and
             vice-versa, as appropriate.
 
@@ -5477,7 +5426,7 @@
             object recognition.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 1.1.
@@ -5506,11 +5455,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
 
 
           </dd-->
@@ -5524,17 +5471,14 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd-->
 
 
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
 
           </dd>
           <dt>Motivation</dt>
@@ -5616,7 +5560,7 @@
             A service may be needed to recognize gestures and emotional states.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 1.2; original title was Intelligent Home Apparatus.
@@ -5630,7 +5574,6 @@
         </dl>
       </section>
     </section>
-
 
     <section id="Security">
       <h2>Security</h2>
@@ -5648,11 +5591,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
 
 
           </dd>
@@ -5660,11 +5601,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Class</dt>
           <dd>
-
 
 
           </dd>
@@ -5690,7 +5629,6 @@
           <dt>Motivation</dt>
           <dd>
 
-
             OAuth 2.0 is an authorization protocol widely known for its usage across several web services.
             It enables third-party applications to obtain limited access to HTTP services on behalf of the resource
             owner
@@ -5709,7 +5647,6 @@
               </ul>
             </ul>
 
-
             These actors can be mapped to WoT entities:
             <ul>
               <li>Client is a WoT Consumer</li>
@@ -5721,7 +5658,7 @@
                 A Thing Description may also combine resources from different owners or web server.</li>
             </ul>
             TO DO: Check the OAuth 2.0 spec to determine exactly how Resource Owner is defined.
-            Is it the actual owner of the resource (eg running the web server) or simply someone
+            Is it the actual owner of the resource (e.g. running the web server) or simply someone
             with the rights to access that resource?
             <br>
             The OAuth 2.0 protocol specifies an authorization layer that separates the client from the resource owner.
@@ -5811,7 +5748,7 @@
             the form.
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             Thing Description, Scripting API, Discovery, and Security.
@@ -5903,7 +5840,6 @@
 </pre>
             Notice that steps (A), (B) and (C) are broken in two parts as they pass through the User-Agent.
 
-
             <p>device</p>
 
             The device flow (IETF <a href="https://tools.ietf.org/html/rfc8628">RFC 8628</a>) is a variant of the code
@@ -5966,7 +5902,6 @@
               <li>Other user interactions methods may be used but are left out of scope</li>
             </ul>
 
-
             <p>client credential</p>
 
             The Client Credentials grant type is used by clients to obtain an access token outside of the context of
@@ -5974,7 +5909,7 @@
 
             <ul>
               <li>The client can request an access token using only its client
-                credentials (or other supported means of authentication) when the
+                credentials (or other supported means of authentication) when
                 the client is requesting access to the protected resources under its
                 control, or <b>those of another resource owner that has been previously
                   arranged with the authorization server</b> (the method of which is beyond
@@ -6125,7 +6060,6 @@
  +----------+
 </pre>
 
-
           </dd>
           <dt>Security Considerations</dt>
           <dd>
@@ -6149,7 +6083,7 @@
               not addressed in the current WoT standards and building blocks
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             <section id="todo-references-x" class="ednote" TODO:>TODO: Provide links to relevant standards that are
@@ -6187,11 +6121,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Category</dt>
           <dd>
-
 
 
           </dd>
@@ -6199,11 +6131,9 @@
           <dd>
 
 
-
           </dd>
           <dt>Status</dt>
           <dd>
-
 
 
           </dd-->
@@ -6273,7 +6203,7 @@
             additional states and transitions.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
             <ul>
               <li>WoT Security</li>
@@ -6418,7 +6348,7 @@
             </ul>
 
           </dd>
-          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
 
             <ul>
@@ -6445,7 +6375,7 @@
                 sensors, displays, and devices as well as the display of geolocation information from the virtual map.
               </li>
               <li>Discovery of sensors should take into account the position and field of view of the user
-                so that data can be retreived only for the relevant features of interest.</li>
+                so that data can be retrieved only for the relevant features of interest.</li>
               <li>Discovery may additionally want to consider the motion (e.g. velocity) of the user to that
                 data soon to come into view can be prefetched.</li>
               <li>Metadata for sensors needs to distinguish between the location of the device itself and the
@@ -6484,7 +6414,7 @@
                 area
                 on their own body, which is also modelled as a 'map' to show internal features and display a treatment
                 guide, including any WoT medical devices.</li>
-              <li>A virtual controller for a city engineer to visualise utilities, e.g. electrical cables or water
+              <li>A virtual controller for a city engineer to visualize utilities, e.g. electrical cables or water
                 pipes,
                 and control them. For example, a maintenance engineer could switch off an individual street lamp in
                 order
@@ -6520,7 +6450,7 @@
                 relevant regulations.</li>
               <li>Private data should not be retained by the device or used for purposes other than which it
                 was provided. This includes the location of personal devices. To display information from another's
-                personal device, permission needs to be explicity granted by that person and this permission should
+                personal device, permission needs to be explicitly granted by that person and this permission should
                 be time and possibly space-limited.
               </li>
             </ul>
@@ -6557,7 +6487,7 @@
             </ul>
 
           </dd>
-          <!--dt>Existing standards</dt>
+          <!--dt>Existing Standards</dt>
         <dd>
 
         </dd>
@@ -6624,12 +6554,12 @@
             <li>Offloading to the cloud typically involves relatively long latencies and may also
               have privacy implications. Edge computing implies offloading to a more "local" compute
               node with lower latency and optionally under more direct control of the user (improving
-              privacy). This can be important for control applications (eg in robotics), computer
-              graphics (eg gaming) and for applications processing imagery (eg facial recognition).</li>
+              privacy). This can be important for control applications (e.g. in robotics), computer
+              graphics (e.g. gaming) and for applications processing imagery (e.g. facial recognition).</li>
             <li>An edge computer is also a convenient place to run persistent computations such as
               IoT orchestration rules that need to be "always on". Such an IoT orchestration system,
               in addition to needing to read from sensors and send commands to actuators over the
-              network, may also invoke computationally-intensive services (eg image recognition). An
+              network, may also invoke computationally-intensive services (e.g. image recognition). An
               example would be a security system that when a motion sensor is tripped, runs a person
               detection computation, and if a person is detected when and where they should not be,
               sounds an alarm. The motion sensor and alarm can be IoT devices while the person
@@ -6657,7 +6587,7 @@
           </ul>
 
         </dd>
-        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+        <dt>Affected WoT deliverables and/or work items</dt>
         <dd>
           <ul>
             <li>WoT Discovery - needs to be designed to support services, not just physical devices.</li>
@@ -6733,16 +6663,16 @@
 
           <ul>
             <li>Explicit support for WoT Things that are services.</li>
-            <li>Sufficient abstraction capability (eg "interfaces") to support virtual devices.</li>
+            <li>Sufficient abstraction capability (e.g. "interfaces") to support virtual devices.</li>
             <li>A mechanism to package and install edge computations that can use the WoT scripting API for
               orchestration.
             </li>
-            <li>A general means to manage compute nodes to provide offload targets (eg a standardized
+            <li>A general means to manage compute nodes to provide offload targets (e.g. a standardized
               TD template for compute services).</li>
           </ul>
 
         </dd>
-        <dt>Existing standards</dt>
+        <dt>Existing Standards</dt>
         <dd>
 
           <ul>
@@ -6761,9 +6691,7 @@
     </section>
   </section> <!-- horizontal-ucs -->
 
-
   <!-- REQUIREMENTS -->
-
 
   <section id="requirements">
     <h1>Requirements</h1>
@@ -6922,7 +6850,7 @@
             functionality.</li>
           <li>WoT architecture should allow using a
             combination of multiple protocols to the
-            functionalities of the same thing (e.g., HTTP and
+            functionalities of the same thing (e.g. HTTP and
             WebSocket).</li>
         </ul>
       </section>
@@ -7033,7 +6961,7 @@
           protocols used.</p>
         <p>Because many systems based on Web of Things
           architecture are crossing system Domains,
-          vocabularies and meta data (e.g., ontologies) used in
+          vocabularies and meta data (e.g. ontologies) used in
           information models should be commonly understood by
           involved parties. In addition to REST transports,
           PubSub transports are also supported.</p>
@@ -7168,9 +7096,7 @@
       <h2>ITU-T SG 20</h2>
       <p>
 
-      <!--todo - complete after Monday's converation with ITU-T -->           
-
-
+      <!--todo - complete after Monday's conversation with ITU-T -->           
       </p>
     </section>
 
@@ -7193,28 +7119,51 @@
         definitions and incompatible OPC UA handlings in Thing Descriptions.
       </p>
     </section>
-
   </section>
-
 
   <!-- Acknowledgements -->
 
   <section id="acknowledgements" class="appendix normative">
     <h1>Acknowledgments</h1>
 
-    <section class="ednote" TODO:>
-      List all authors of contributions.
-    </section>
-    <p>Special thanks to all authors of use case descriptions
-      <!-- Michael McCool, Takuki Kamiya, Kazuyuki Ashimura,  
-        Sebastian Käbisch, Zoltan Kis, ... --> for their contributions to this document.
-    </p>
+      <p>Special thanks to all authors of use case descriptions (in alphabetical order) for their contributions to this document:
+      <ul>
+        <li>Shinya Abe (NHK)</li>
+        <li>Cristiano Aguzzi (University of Bologna)</li>
+        <li>Kaz Ashimura (W3C)</li>
+        <li>Raúl García Castro (Universidad Politécnica de Madrid)</li>
+        <li>Jean-Pierre Chanet (INRAE, France)</li>
+        <li>Edison Chung (MINES St. Etienne)</li>
+        <li>Andrea Cimmino (Universidad Politécnica de Madrid)</li>
+        <li>Hiroki Endo (NHK)</li>
+        <li>David Ezell (Conexxus)</li>
+        <li>Hiroshi Fujisawa (NHK)</li>
+        <li>Christian Glomb (Siemens)</li>
+        <li>Masaya Ikeo (NHK)</li>
+        <li>Sebastian Käbisch (Siemens)</li>
+        <li>Takuki Kamiya (Fujitsu)</li>
+        <li>Zoltan Kis (Intel)</li>
+        <li>Ege Korkan (Siemens)</li>
+        <li>Michael Lagally (Oracle)</li>
+        <li>Jennifer Lin (GovTech Singapore)</li>
+        <li>Ryuichi Matsukura (Fujitsu)</li>
+        <li>Michael McCool (Intel)</li>
+        <li>Hervé Pruvost (Fraunhofer IIS EAS)</li>
+        <li>Catherine Roussey (INRAE, France)</li>
+        <li>Georg Ferdinand Schneider (Schaeffler Technologies)</li>
+        <li>Rob Smith (Awayteam)</li>
+        <li>Farshid Tavakolizadeh (Fraunhofer)</li>
+      </ul>
     <p>
       Many thanks to the W3C staff and all other active Participants of the W3C Web
       of Things Interest Group (WoT IG) and Working Group (WoT WG) for their
       support, technical input and suggestions that led to improvements to
       this document.
     </p>
+      <p>
+        Special thanks to Kazuyuki Ashimura form the W3C for his continuous help and support
+        of the work of the WoT Use Cases Task Force.
+      </p>
   </section>
 
   <!--
