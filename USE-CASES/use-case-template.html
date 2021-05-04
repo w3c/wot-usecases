@@ -75,7 +75,25 @@ protection and preservation.
   
   A selective representative list of scenarios related to such a use case are listed below. Its scenario is classified to one of the abovementioned requirements:
   
-  
+Requirement (a) (trustworthy IoT entities representation and management):
+ Count all the sculptures of the museum that are related to visits made by trustworthy students (with a trust degree more than 0.8).
+ Name all the trustworthy paintings of the museum created by "Picasso" (paintings that were created by Picasso with a trust degree more than 0.9).
+Requirement (b) (interoperability and integration):
+ If there are more than two visitors in room "UoAMuseumRoomA1" close to (nearby) an exhibit, classify this exhibit as an "interesting exhibit in
+room UoAMuseumRoomA1", turn up the light of this exhibit, and lower the light of the remaining exhibits in the room. This scenario is related to objectives (c) and (d) at the same time.
+ If the temperature of room "UoAMuseumRoomA1" and room "UoA-MuseumRoomA2" is less than 18 degrees Celsius, and there are visits in progress in these rooms, then activate the heating device in the rooms
+that those visits take place, and deactivate other sources of energy in the remaining rooms of the building.
+Requirement (c) (energy saving):
+ If there are no visitors in room "UoAMuseumRoomA1", then turn the lights off (or all the sources of energy).
+ If the museum's internal and external temperature is between 20 and 30 degrees Celsius, then keep the heating and cooling devices off.
+Requirement (d) (enhancing visiting experience and comfort):
+ When a visitor enters the museum for the rst time, send him a message (e.g., SMS or tweet) with the number and types of rooms, the number
+and collections of exhibits, and the average duration of a visit per room.
+ If a visitor comes out of the museum, then send him a message with the names of the exhibits he liked most based on the observations he made
+during his/her visit.
+Requirement (e) (environmental conditions):
+ If the temperature in room "UoAMuseumRoomA1" is less than 18 degrees Celsius, then activate the heating device (for visitors' comfort).
+ If the humidity in room A is more than 55%, then activate the humidifier device (for exhibits protection).
   
   &gt;
 
@@ -83,13 +101,13 @@ protection and preservation.
 <dt>Expected Devices</dt>
 <dd>
 
-&lt;List the target devices, e.g. as a sensor, solar panel, air conditioner&gt;
+&lt;humidity sensor, temperature sensor, motion sensor, light sensor, proximity sensor, camera, aircondition, humidifier, light, smart lamp, smart lock, smart door &gt;
 
 </dd>
 <dt>Expected Data</dt>
 <dd>
 
-&lt;List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors, vehicle data&gt;
+&lt;weather (indoors/outdoors) and climate data, sensor data, visitors/visiting data, profile data, movement (trajectory) data, cultural data &gt;
 
 </dd>
 <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
