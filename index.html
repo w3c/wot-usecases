@@ -421,8 +421,8 @@
           <li>Energy</li>
           <li>Transportation</li>
           <li>Automotive</li>
-          <li>Snart Home</li>
-          <li>Eduction</li>
+          <li>Smart Home</li>
+          <li>Education</li>
         </ul>
         <li>Horizontal use cases that address multiple domains.</li>
         <ul>
@@ -577,7 +577,7 @@
             sensor status like sleeping.
 
           </dd>
-          <!--dt>Existing standards</dt>
+          <!--dt>Existing Standards</dt>
             <dd>
   
             </dd>
@@ -816,7 +816,7 @@
             Model historical and forecast data
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
             <ul>
               <li><a href="https://tools.ietf.org/html/rfc8376">LPWAN</a></li>
@@ -1046,7 +1046,7 @@
             availability.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             <ul>
@@ -1310,7 +1310,7 @@
               for metadata to be included in a TD itself would be useful.
             </p>
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
             <p>
             <ul>
@@ -1559,7 +1559,7 @@
             </ul>
             </p>
           </dd>
-          <!--dt>Existing standards</dt><dd>
+          <!--dt>Existing Standards</dt><dd>
   
           </dd>
           <dt>Comments</dt><dd-->
@@ -1602,14 +1602,14 @@
   
             </dd>
             <dt>Status</dt>
-            <dd-->
+            <dd>
 
 
-          </dd>
-          <dt>Target Users</dt>
+          </dd-->
+          <!--dt>Target Users</dt>
           <dd>
-            <!-- TODO -->
-          </dd>
+            <-- TODO >
+          </dd-->
           <dt>Motivation</dt>
           <dd>
 
@@ -1686,7 +1686,7 @@
             Data format describing user interface preferences.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 3.1.
@@ -1734,20 +1734,20 @@
   
             </dd>
             <dt>Status</dt>
-            <dd-->
+            <dd>
 
 
-          </dd>
-          <dt>Target Users</dt>
+          </dd-->
+          <!--dt>Target Users</dt>
           <dd>
-            <!-- TODO -->
+            <!- - TODO - ->
 
           </dd>
           <dt>Motivation</dt>
           <dd>
-            <!-- TODO -->
+            <!- - TODO - ->
 
-          </dd>
+          </dd-->
           <dt>Expected Devices</dt>
           <dd>
 
@@ -1818,7 +1818,7 @@
             Ability to install applications based on links that can access IoT services.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 3.2.
@@ -1968,10 +1968,10 @@
 
           </dd>
 
-          <dt>Variants</dt>
+          <!--dt>Variants</dt>
           <dd>
 
-          </dd>
+          </dd-->
           <dt>Security Considerations</dt>
           <dd>
             None, in this case an underneath infrastructure that handles security is assumed
@@ -1989,7 +1989,7 @@
             Been able to find suitable Middle-Nodes that are relevant to answer the query, with no prior knowledge
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
             None
           </dd>
@@ -2081,15 +2081,15 @@
             specifica)
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             BACnet, KNX, OPC-UA, Modbus
 
           </dd>
-          <dt>Comments</dt>
+          <!--dt>Comments</dt>
           <dd>
-          </dd>
+          </dd-->
         </dl>
       </section>
 
@@ -2195,11 +2195,11 @@
           <dd-->
 
           </dd>
-          <dt>Security Considerations</dt>
+          <!--dt>Security Considerations</dt>
           <dd>
-            <!-- TODO -->
+            <!- - TODO - ->
 
-          </dd>
+          </dd-->
           <dt>Privacy Considerations</dt>
           <dd>
             The TD may expose personal information about the building layout and residents.
@@ -2220,7 +2220,7 @@
             There is no standard API specification for the WoT Thing Directory to maintain and query TDs.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             <ul>
@@ -2313,7 +2313,8 @@
               <li>which other building things are involved (e.g. sensor hosted by a duct or a space).</li>
             </ul>
             <p>Through the increased use of model-based data exchange over the whole life cycle of a building, often
-              referred to as Building Information Modeling (BIM) (Sacks et al., 2018), a curated source for data describing the building
+              referred to as Building Information Modeling (BIM) (Sacks et al., 2018), a curated source for data
+              describing the building
               itself is available including, amongst others, the topology of the building structured into e.g. sites,
               stores and spaces.</p>
             <p>Automatically tracking down data and their related things in a building would especially ease the
@@ -2372,7 +2373,8 @@
               <li><a href="https://www.w3.org/TR/wot-thing-description/">Web of Things Thing Description (WoT TD)</a>
               </li>
               <li><a href="https://w3c.github.io/wot-binding-templates/">Web of Things Binding Templates</a></li>
-              <li><a href="https://github.com/w3c/wot-discovery/blob/main/proposals/geolocation.md">WoT Discovery and Geolocation</a></li>
+              <li><a href="https://github.com/w3c/wot-discovery/blob/main/proposals/geolocation.md">WoT Discovery and
+                  Geolocation</a></li>
             </ul>
 
           </dd>
@@ -2563,11 +2565,16 @@
                           ]
                         }
                         </code></pre>
-          <p>In this example query, the REST endpoint has been defined using the  <a href="https://www.openapis.org/">OpenAPI specification</a> 
-            and is provided by a RESTful server. A data binding is needed between the server and the underlying backend storage, here the triple store 
-            that contains the involved ontologies (osh, bot, ssn, brick...). The data binding relies on similar SPARQL queries as the one shown above. 
-            As a result the endpoint can deliver information to a target application that consumes custom JSON rather than triples.
-            Similar implmentation could be achieved using <a href="https://www.w3.org/community/graphql-rdf/">GraphQL</a>.
+          <p>In this example query, the REST endpoint has been defined using the <a
+              href="https://www.openapis.org/">OpenAPI specification</a>
+            and is provided by a RESTful server. A data binding is needed between the server and the underlying backend
+            storage, here the triple store
+            that contains the involved ontologies (osh, bot, ssn, brick...). The data binding relies on similar SPARQL
+            queries as the one shown above.
+            As a result the endpoint can deliver information to a target application that consumes custom JSON rather
+            than triples.
+            Similar implmentation could be achieved using <a
+              href="https://www.w3.org/community/graphql-rdf/">GraphQL</a>.
           </p>
           <dt><em>Automated Update of Fault Detection Rule based on Thing Description</em></dt>
           <p>Another related use case in smart buildings, which would greatly benefit from harmonised thing
@@ -2638,7 +2645,7 @@
             <p>None</p>
 
           </dd-->
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             <ul>
@@ -2655,13 +2662,13 @@
           <!--dt>Comments</dt>
           <dd-->
 
-            <p>References:</p>
-            <ul>
-              <a href="https://doi.org/10.1002/9781119287568">Sacks, R., Eastman, C., Lee, G., & Teicholz, P. (2018). 
-                BIM handbook: A guide to building information modeling for owners, designers, engineers, contractors, 
-                and facility managers. John Wiley & Sons.</a>
+          <p>References:</p>
+          <ul>
+            <a href="https://doi.org/10.1002/9781119287568">Sacks, R., Eastman, C., Lee, G., & Teicholz, P. (2018).
+              BIM handbook: A guide to building information modeling for owners, designers, engineers, contractors,
+              and facility managers. John Wiley & Sons.</a>
 
-            </ul>
+          </ul>
 
           </dd>
 
@@ -2784,7 +2791,7 @@
           <dd>
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
@@ -2940,7 +2947,7 @@
           </section>
 
         </dd>
-        <dt>Existing standards</dt>
+        <dt>Existing Standards</dt>
         <dd>
 
           <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
@@ -3169,10 +3176,10 @@
               </ul>
 
             </dd>
-            <dt>Existing standards</dt>
+            <!--dt>Existing Standards</dt>
             <dd>
 
-            </dd>
+            </dd-->
             <dt>Comments</dt>
             <dd>
 
@@ -3246,7 +3253,7 @@
               on patients, making it easier to deliver precision medicine.
 
             </dd>
-            <dt>Expected Devices</dt>
+            <!--dt>Expected Devices</dt>
             <dd>
 
             </dd>
@@ -3255,7 +3262,7 @@
 
             </dd>
             <dt>Affected WoT deliverables and/or work items</dt>
-            <dd>
+            <dd-->
 
             </dd>
             <dt>Description</dt>
@@ -3334,10 +3341,10 @@
                 and performance. Another issue with widely used transport-level security solutions is the lack of
                 support for multicast.
             </dd>
-            <dt>Privacy Considerations</dt>
+            <!--dt>Privacy Considerations</dt>
             <dd>
 
-              <!--section id="todo-privacy-2" class="ednote">TODO: Describe any issues related to privacy; if there are
+              <!- -section id="todo-privacy-2" class="ednote">TODO: Describe any issues related to privacy; if there are
                 none,
                 say "none" and justify</section>
 
@@ -3355,7 +3362,7 @@
               industrial systems.
 
             </dd>
-            <dt>Existing standards</dt>
+            <dt>Existing Standards</dt>
             <dd>
 
               <p><a href="https://www.astm.org/Standards/F2761.htm">F2761-09 (2013)</a> </p>
@@ -3504,7 +3511,7 @@
               Ability to install applications based on links that can access IoT services.
 
             </dd>
-            <dt>Existing standards</dt>
+            <dt>Existing Standards</dt>
             <dd>
 
               This use case is based on MMI UC 3.2.
@@ -3574,8 +3581,8 @@
             </ul>
 
           </dd>
-          <dt>Motivation</dt>
-          <dd>
+          <!--dt>Motivation</dt>
+          <dd-->
 
           </dd>
           <dt>Expected Devices</dt>
@@ -3691,7 +3698,7 @@
           <!--dt>Gaps</dt>
           <dd>
       </dd-->
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             IEC 61850 - International standard for data models and communication protocols
@@ -3831,7 +3838,7 @@
         <!--dt>Gaps</dt>
         <dd>
         </dd-->
-        <!--dt>Existing standards</dt>
+        <!--dt>Existing Standards</dt>
         <dd>
 
           <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
@@ -3968,7 +3975,7 @@
             Data format describing user interface preferences.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 2.1.
@@ -4073,7 +4080,7 @@
               TODO: Provide links to relevant standards that are relevant for this use case</section>
 
           </dd>
-          <dt>Existing standards & related information</dt>
+          <dt>Existing Standards & related information</dt>
           <dd>
 
             <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are
@@ -4104,7 +4111,7 @@
     -->
 
       <section id="nhk-device-tv-sync">
-        <h2>Home WoT devices synchronized to TV programs</h2>
+        <h2>Home WoT devices synchronize to TV programs</h2>
         <dl>
 
           <dt>Submitter(s)</dt>
@@ -4178,8 +4185,8 @@
             Hybridcast connect application know the Thing Description of the devices in home. (Discovery?)
 
           </dd>
-          <dt>Dependencies</dt>
-          <dd>
+          <!--dt>Dependencies</dt>
+          <dd-->
 
 
           </dd>
@@ -4209,7 +4216,7 @@
           <dd->
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system (<a href="http://www.iptvforum.jp/download/input.html">IPTVFJ STD-0013 "Hybridcast Operational Guideline Version 2.8" (Application Forms)</a>, <a href="https://github.com/nhkrd">Reference Implementations</a>),
@@ -4373,7 +4380,7 @@
             </ul>
 
           </dd>
-          <!--dt>Existing standards</dt>
+          <!--dt>Existing Standards</dt>
             <dd>
     
     
@@ -4534,7 +4541,7 @@
           </ul>
 
         </dd>
-        <dt>Existing standards</dt>
+        <dt>Existing Standards</dt>
         <dd>
 
           <ul>
@@ -4691,7 +4698,7 @@
                 this use case</section>
 
         </dd>
-        <dt>Existing standards</dt>
+        <dt>Existing Standards</dt>
         <dd>
 
           various.
@@ -4893,7 +4900,7 @@
           WoT does not define a way to describe the behavior of a thing to use for a simulation.
 
         </dd>
-        <!--dt>Existing standards</dt>
+        <!--dt>Existing Standards</dt>
           <dd>
           
             <section id="todo-references-x" class="ednote">
@@ -5010,7 +5017,7 @@
           A common profile across protocols is required to address this use case.
 
         </dd>
-        <dt>Existing standards</dt>
+        <dt>Existing Standards</dt>
         <dd>
 
           MQTT, OPC-UA, BACNet, CoAP, various other home and industrial protocols.
@@ -5129,7 +5136,7 @@
             Support for video and audio recognition services.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 5.1.
@@ -5258,14 +5265,14 @@
 
           </dd>
           <!--dt>Variants</dt>
-          <dd-->
-
-          </dd>
-          <dt>Gaps</dt>
           <dd>
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Gaps</dt>
+          <dd-->
+
+          </dd>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 5.2.
@@ -5428,7 +5435,7 @@
             object recognition.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 1.1.
@@ -5562,7 +5569,7 @@
             A service may be needed to recognize gestures and emotional states.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             This use case is based on MMI UC 1.2; original title was Intelligent Home Apparatus.
@@ -6085,7 +6092,7 @@
               not addressed in the current WoT standards and building blocks
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
 
             <section id="todo-references-x" class="ednote" TODO:>TODO: Provide links to relevant standards that are
@@ -6205,7 +6212,7 @@
             additional states and transitions.
 
           </dd>
-          <dt>Existing standards</dt>
+          <dt>Existing Standards</dt>
           <dd>
             <ul>
               <li>WoT Security</li>
@@ -6416,7 +6423,7 @@
                 area
                 on their own body, which is also modelled as a 'map' to show internal features and display a treatment
                 guide, including any WoT medical devices.</li>
-              <li>A virtual controller for a city engineer to visualizeutilities, e.g. electrical cables or water
+              <li>A virtual controller for a city engineer to visualize utilities, e.g. electrical cables or water
                 pipes,
                 and control them. For example, a maintenance engineer could switch off an individual street lamp in
                 order
@@ -6489,7 +6496,7 @@
             </ul>
 
           </dd>
-          <!--dt>Existing standards</dt>
+          <!--dt>Existing Standards</dt>
         <dd>
 
         </dd>
@@ -6674,7 +6681,7 @@
           </ul>
 
         </dd>
-        <dt>Existing standards</dt>
+        <dt>Existing Standards</dt>
         <dd>
 
           <ul>
