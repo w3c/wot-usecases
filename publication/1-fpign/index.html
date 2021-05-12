@@ -5146,11 +5146,11 @@ API response:
           </dd>
           <dt>Motivation</dt>
           <dd>
-            OAuth 2.0 is an authorization protocol widely known for
+           <p>OAuth 2.0 is an authorization protocol widely known for
             its usage across several web services. It enables
             third-party applications to obtain limited access to
             HTTP services on behalf of the resource owner or of
-            itself. The protocol defines the following actors:
+               itself. The protocol defines the following actors:</p>
             <ul>
               <li>Client: an application that wants to use a
               resource owned by the resource owner.</li>
@@ -5162,12 +5162,15 @@ API response:
               stored</li>
               <li>Resource Owner: the owner of a particular web
               resource. If it is a human is usually referred to as
-              an end-user. More specifically from the RFC:</li>
+                  an end-user. More specifically from the RFC:
               <ul>
                 <li>An entity capable of granting access to a
                 protected resource.</li>
               </ul>
-            </ul>These actors can be mapped to WoT entities:
+              </li>
+            </ul>
+
+            <p>These actors can be mapped to WoT entities:</p>
             <ul>
               <li>Client is a WoT Consumer</li>
               <li>Authorization Server is a third-party
@@ -5179,15 +5182,17 @@ API response:
               <li>Resource Owner might be different in each use
               case. A Thing Description may also combine resources
               from different owners or web server.</li>
-            </ul>TO DO: Check the OAuth 2.0 spec to determine
+            </ul>
+
+            <p>TO DO: Check the OAuth 2.0 spec to determine
             exactly how Resource Owner is defined. Is it the actual
             owner of the resource (e.g. running the web server) or
             simply someone with the rights to access that
-            resource?<br>
-            The OAuth 2.0 protocol specifies an authorization layer
+                resource?</p>
+            <p>The OAuth 2.0 protocol specifies an authorization layer
             that separates the client from the resource owner. The
             basic steps of this protocol are summarized in the
-            following diagram:
+            following diagram:</p>
             <pre aria-busy="false"><code class=
             "hljs">+--------+                               +---------------+
 |        |--(A)- Authorization Request -&gt;|   Resource    |
@@ -5205,20 +5210,24 @@ API response:
 |        |--(E)----- Access Token ------&gt;|    Resource   |
 |        |                               |     Server    |
 |        |&lt;-(F)--- Protected Resource ---|               |
-+--------+                               +---------------+</code></pre>Steps
-A and B defines what is known as authorization grant type or flow.
-What is important to realize here is that not all of these
-interactions are meant to take place over a network protocol. In
-some cases, interaction with with a human through a user interface
-may be intended. OAuth2.0 defines 4 basic flows plus an extension
-mechanism. The most common of which are:
++--------+                               +---------------+</code></pre>
+
+            <p>Steps A and B defines what is known as authorization
+            grant type or flow. What is important to realize here is
+            that not all of these interactions are meant to take place
+            over a network protocol. In some cases, interaction with
+            with a human through a user interface may be intended.
+            OAuth2.0 defines 4 basic flows plus an extension mechanism.
+            The most common of which are:</p>
             <ul>
               <li><code>code</code></li>
               <li><code>implicit</code></li>
               <li><code>password</code> (of resource owner)</li>
               <li><code>client</code> (credentials of the
               client)</li>
-            </ul>In addition, a particular extension which is of
+            </ul>
+
+            <p>In addition, a particular extension which is of
             interest to IoT is the <code>device</code> flow.
             Further information about the OAuth 2.0 protocol can be
             found in <a href=
@@ -5232,7 +5241,7 @@ mechanism. The most common of which are:
             can be denied if the token does not include a scope
             required by the interaction. This document describes
             relevant use cases for each of the OAuth 2.0
-            authorization flows.
+                authorization flows.</p>
           </dd>
           <dt>Expected Devices</dt>
           <dd>
@@ -5244,7 +5253,9 @@ mechanism. The most common of which are:
               <li>The producer must be able to verify an access
               (bearer) token (i.e. have sufficient computational
               power/connectivity).</li>
-            </ul>Comment:
+            </ul>
+          </dd>
+          <dd>Comment:
             <ul>
               <li>Investigate whether DTLS can be
               used.</li>Certainly the connection needs to be
@@ -5285,24 +5296,25 @@ mechanism. The most common of which are:
           the end-user inside an application.</dd>
           <dt>Variants</dt>
           <dd>
-            For each OAuth 2.0 flow, there is a corresponding use
+            <p>For each OAuth 2.0 flow, there is a corresponding use
             case variant. We also include the experimental "device"
-            flow for consideration.<br>
-            <br>
-            code A natural application of this protocol is when the
+                flow for consideration.</p>
+            <p><strong>code</strong></p>
+            <p>A natural application of this protocol is when the
             end-user wants to interact directly with the consumed
             thing or to grant his authorization to a remote device.
             In fact from the <a href=
-            "https://tools.ietf.org/html/rfc6749#section-4.1">RFC6749</a>
+            "https://tools.ietf.org/html/rfc6749#section-4.1">RFC6749</a></p>
             <ul>
               <li>Since this is a redirection-based flow, the
               client must be capable of interacting with the
               resource owner's user-agent (typically a web browser)
               and capable of receiving incoming requests (via
               redirection) from the authorization server.</li>
-            </ul>This implies that the code flow can be only used
+            </ul>
+            <p>This implies that the code flow can be only used
             when the resource owner interacts directly with the WoT
-            consumer at least once. Typical scenarios are:
+                consumer at least once. Typical scenarios are:</p>
             <ul>
               <li>In a home automation context, a device owner uses
               a third party software to interact with/orchestrate
@@ -5318,12 +5330,13 @@ mechanism. The most common of which are:
               human who has bought the device and installed
               it).</li>
               <li>...</li>
-            </ul>The following diagram shows the steps of the
+            </ul>
+            <p>The following diagram shows the steps of the
             protocol adapted to WoT idioms and entities. In this
             scenario, the WoT Consumer has read the Thing
             Description of a Remote Device and want to access one
             of its WoT Affordances protected with OAuth 2.0 code
-            flow.
+                flow.</p>
             <pre aria-busy="false"><code class=
             "hljs">                                                 +-----------+
   +----------+                                   |           |
@@ -5354,10 +5367,13 @@ mechanism. The most common of which are:
       v                                                               |
       |                                                               |
       +-----------(F)----- Access WoT --------------------------------+
-                           Affordance</code></pre>Notice that steps
-(A), (B) and (C) are broken in two parts as they pass through the
-User-Agent.
-            <p>device</p>The device flow (IETF <a href=
+                           Affordance</code></pre>
+
+            <p>Notice that steps (A), (B) and (C) are broken in two
+            parts as they pass through the User-Agent.</p>
+
+            <p><strong>device</strong></p>
+            <p>The device flow (IETF <a href=
             "https://tools.ietf.org/html/rfc8628">RFC 8628</a>) is
             a variant of the code flow for browserless and
             input-constrained devices. Similarly, to its
@@ -5373,7 +5389,8 @@ User-Agent.
             "https://tools.ietf.org/html/rfc8628#section-6.2">section-6.2</a>
             briefly describes an authentication using a companion
             app and BLE), as shown in the following (slightly
-            adapted) diagram:
+            adapted) diagram:</p>
+
             <pre aria-busy="false"><code class="hljs">+----------+
 |          |
 |  Remote  |
@@ -5405,11 +5422,12 @@ User-Agent.
 | End User |                                |                |
 |    at    +&lt;---(D)-- End user reviews  ---&gt;+                |
 |  Browser |          authorization request |                |
-+----------+                                +----------------+</code></pre>Notable
-mentions:
++----------+                                +----------------+</code></pre>
+
+            <p>Notable mentions:</p>
             <ul>
               <li>the protocol is heavily end-user oriented. In
-              fact, the RFC states the following</li>
+                  fact, the RFC states the following
               <ul>
                 <li>Due to the polling nature of this protocol (as
                 specified in Section 3.4), care is needed to avoid
@@ -5421,16 +5439,19 @@ mentions:
                 such as when the app starts or when the previous
                 authorization session expires or failAs.</li>
               </ul>
+              </li>
               <li>TLS is required both between WoT
               Consumer/Authorization Server and between
               Browser/Authorization Server</li>
               <li>Other user interactions methods may be used but
               are left out of scope</li>
             </ul>
-            <p>client credential</p>The Client Credentials grant
+
+            <p><strong>client credential</strong></p>
+            <p>The Client Credentials grant
             type is used by clients to obtain an access token
             outside of the context of an end-user. From <a href=
-            "https://tools.ietf.org/html/rfc6749#section-4.4">RFC6749</a>:
+            "https://tools.ietf.org/html/rfc6749#section-4.4">RFC6749</a>:</p>
             <ul>
               <li>The client can request an access token using only
               its client credentials (or other supported means of
@@ -5440,7 +5461,9 @@ mentions:
               previously arranged with the authorization server</b>
               (the method of which is beyond the scope of this
               specification).</li>
-            </ul>Therefore the client credential grant can be used:
+            </ul>
+
+            <p>Therefore the client credential grant can be used:</p>
             <ul>
               <li>When the resource owner is a public authority.
               For example, in a smart city context, the authority
@@ -5451,9 +5474,12 @@ mentions:
               the devices or services are provisioned with client
               credentials.</li>
               <li>...</li>
-            </ul>The Client Credentials flow is illustrated in the
+            </ul>
+
+            <p>The Client Credentials flow is illustrated in the
             following diagram. Notice how the Resource Owner is not
-            present.
+                present.</p>
+
             <pre aria-busy="false"><code class="hljs">+----------+
 |          |
 |  Remote  |
@@ -5470,18 +5496,22 @@ mentions:
 | Consumer +&lt;--(B)---- Access Token ---------&lt;+               |
 |          |                                  |               |
 |          |                                  +---------------+
-+----------+</code></pre>Comment: Usually client credentials are
-distributed using an external service which is used by humans to
-register a particular application. For example, the <code>
++----------+</code></pre>
+
+            <p>Comment: Usually client credentials are distributed using
+            an external service which is used by humans to register a
+            particular application. For example, the <code>
             npm</code> cli has a companion dashboard where a
             developer requests the generation of a token that is
             then passed to the cli. The token is used to verify the
             publishing process of <code>npm</code> packages in the
             registry. Further examples are Docker cli and OpenId
-            Connect Client Credentials.
-            <p>implicit</p><b>Deprecated</b> From <a href=
+                Connect Client Credentials.</p>
+
+            <p><strong>implicit</strong></p><b>Deprecated</b> From <a href=
             "https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">
-            OAuth 2.0 Security Best Current Practice</a>:
+                OAuth 2.0 Security Best Current Practice</a>:</p>
+
             <ul>
               <li>In order to avoid these issues, clients
               <em class="rfc2119">SHOULD NOT</em> use the implicit
@@ -5490,10 +5520,12 @@ register a particular application. For example, the <code>
               unless access token injection in the authorization,
               response is prevented and the aforementioned token
               leakage vectors are mitigated.</li>
-            </ul>The RFC above suggests using <code>code</code>
+            </ul>
+
+            <p>The RFC above suggests using <code>code</code>
             flow with Proof Key for Code Exchange (PKCE)
-            instead.<br>
-            The implicit flow was designed for public clients
+                instead.</p>
+            <p>The implicit flow was designed for public clients
             typically implemented inside a browser (i.e. javascript
             clients). As the <code>code</code> is a
             redirection-based flow and it requires direct
@@ -5505,7 +5537,8 @@ register a particular application. For example, the <code>
             particularly different from <code>code</code> grant and
             it can be used in the same scenarios.<br>
             Comment: even if the <code>implicit</code> flow is
-            deprecated existing services may still using it.
+                deprecated existing services may still using it.</p>
+
             <pre aria-busy="false"><code class="hljs">+----------+
 | Resource |
 |  Owner   |
@@ -5539,10 +5572,13 @@ register a particular application. For example, the <code>
 | Consumer |               Affordance          |          |
 |          |                                   +----------+
 +----------+</code></pre>
-            <p>resource owner password</p><b>Deprecated</b> From
+
+            <p><strong>resource owner password</strong></p>
+            <p><b>Deprecated</b> From
             <a href=
             "https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">
-            OAuth 2.0 Security Best Current Practice</a>:
+                OAuth 2.0 Security Best Current Practice</a>:</p>
+
             <ul>
               <li>The resource owner password credentials grant
               <em class="rfc2119">MUST NOT</em> be used. This grant
@@ -5552,8 +5588,11 @@ register a particular application. For example, the <code>
               (credentials can leak in more places than just the
               AS) and users are trained to enter their credentials
               in places other than the AS.</li>
-            </ul>For completeness the diagram flow is reported
-            below.
+            </ul>
+
+            <p>For completeness the diagram flow is reported
+                below.</p>
+
             <pre aria-busy="false"><code class="hljs"> +----------+
  | Resource |
  |  Owner   |
@@ -5580,6 +5619,7 @@ register a particular application. For example, the <code>
  |          |
  +----------+</code></pre>
           </dd>
+
           <dt>Security Considerations</dt>
           <dd>
             See OAuth 2.0 security considerations in <a href=
