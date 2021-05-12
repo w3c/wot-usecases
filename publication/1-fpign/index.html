@@ -3455,16 +3455,18 @@ API response:
                 <li>Timestamp</li>
                 <li>Number of people identified with a fever in
                 image</li>
-                <li>Estimated temperature for each person</li>
+                <li>Estimated temperature for each person
                 <ul>
                   <li>May be coarse, low/normal/high</li>
                 </ul>
-                <li>Location</li>
+                </li>
+                <li>Location
                 <ul>
                   <li>Latitude, Longitude, Altitude, Accuracy</li>
                   <li>Semantic (e.g. a particular building
                   entrance)</li>
                 </ul>
+                </li>
                 <li>Thermal image</li>
               </ul>
             </dd>
@@ -3479,23 +3481,24 @@ API response:
                 <li>Bounding boxes around faces of identified
                 people in image(s)</li>
                 <li>Data that can be used to uniquely identify a
-                face (distinguish it from others)</li>
+                    face (distinguish it from others)
                 <ul>
                   <li>Aggregation system may output the total
                   number of unique faces with fever</li>
                 </ul>
-              </ul>Note 1: the system should be capable of
+                </li>
+              </ul>
+
+             <p>Note 1: the system should be capable of
               notifying consumers (such as security personnel), of
               fever detections. This may be email, SMS, or some
-              other mechanism, such as MQTT publication.<br>
-              <br>
-              Note 2: In all cases where images are captured,
-              privacy considerations apply.<br>
-              <br>
-              It would also be useful to count unique individuals
+                 other mechanism, such as MQTT publication.</p>
+             <p>Note 2: In all cases where images are captured,
+                 privacy considerations apply.</p>
+             <p>It would also be useful to count unique individuals
               for statistics purposes, but not necessarily based on
               identifying particular people. This is to avoid
-              counting the same person multiple times.
+                 counting the same person multiple times.</p>
             </dd>
             <dt>Dependencies</dt>
             <dd>node-wot</dd>
