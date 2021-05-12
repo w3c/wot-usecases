@@ -122,6 +122,9 @@
   var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
   var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </style>
+  <style>
+   .resize img { width: 100%; }
+  </style>
   <script id="initialUserConfig" type="application/json">
   {
   "lint": {
@@ -1405,7 +1408,7 @@
             agriculture solution is described in the diagram
             below:<br>
             <br>
-            <img src="./images/Agriculture.svg"><br>
+            <div class="resize"><img src="./images/Agriculture.svg" alt="deployment topology of an open field agriculture solution"></div><br>
             <br>
           </dd>
           <dt>Variants</dt>
@@ -2483,7 +2486,7 @@
             sample topology of this scenario could be the
             following:<br>
             <br>
-            <img src="images/smart-campus-topology.svg"><br>
+            <div class="resize"><img src="images/smart-campus-topology.svg" alt="sample topology of a smart campus"></div><br>
             <br>
             In this scenario, energy-related IoT devices monitor
             the energy use and income in the campus, among other
@@ -2536,7 +2539,7 @@
             Therefore, the query will travel through the topology
             as follows:<br>
             <br>
-            <img src="images/smart-campus-sample.svg"><br>
+            <div class="resize"><img src="images/smart-campus-sample.svg" alt="query goes through the topology for a smart campus"></div><br>
             <br>
             Finally, when Middle Nodes B and H compute two partial
             query answers, those answers will be forwarded back to
@@ -4223,10 +4226,8 @@ API response:
             Hybridcast applications are HTML5 applications that
             work on Hybridcast TV.)</p>
             <p>Hybridcast Contact application receives the
-            information and controlls smart home devices.<br>
-            <br>
-            <img src="images/scenario_nhk.png" width="100%" height=
-            "100%"><br></p>
+            information and controlls smart home devices.</p>
+            <div class="resize"><img src="images/scenario_nhk.png" alt="Hybridcast Connect Application"></div>
           </dd>
         </dl>
       </section>
