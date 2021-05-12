@@ -1897,6 +1897,7 @@
               <li>Heading</li>
               <li>Speed</li>
               <li>Accuracy information</li>
+              <li>
               <ul>
                 <li>Confidence interval, e.g. distance that true
                 location will be within some probability.</li>
@@ -1905,18 +1906,22 @@
                 <li>For lat/long, may be a single value (see web
                 browser API; radius?)</li>
               </ul>
+              </li>
               <li>Geolocation technology (GPS, SLAM, etc.).</li>
+              <li>
               <ul>
                 <li>Note that multiple technologies might be used
                 together.</li>
                 <li>Include parameters such as sample interval,
                 accuracy</li>
               </ul>
+              </li>
               <li>For each geolocation technology, data specific to
-              that technology:</li>
+                  that technology:
               <ul>
                 <li>GPS: NMEA type</li>
               </ul>
+              </li>
               <li>Historical data</li>
             </ul>
             <p>Note: the system should be capable of notifying
