@@ -1875,8 +1875,7 @@
             <ul>
               <li>Sensor ID</li>
               <li>Timestamp of last geolocation</li>
-              <li>2D location</li>
-              <li>
+              <li>2D location
               <ul>
                 <li>typically latitude and longitude</li>
                 <li>May also be semantic, i.e. room in a building,
@@ -1884,17 +1883,16 @@
               </ul>
               </li>
             </ul>
-            <p>Optional:</p>
+          </dd>
+          <dd>Optional:
             <ul>
-              <li>Semantic location</li>
-              <li>
+                <li>Semantic location
               <ul>
                 <li>Possibly in addition to numerical lat/long
                 location.</li>
               </ul>
               </li>
-              <li>Altitude</li>
-              <li>
+              <li>Altitude
               <ul>
                 <li>May also be semantic, i.e. floor of a
                 building</li>
@@ -1902,8 +1900,7 @@
               </li>
               <li>Heading</li>
               <li>Speed</li>
-              <li>Accuracy information</li>
-              <li>
+              <li>Accuracy information
               <ul>
                 <li>Confidence interval, e.g. distance that true
                 location will be within some probability.</li>
@@ -1913,8 +1910,7 @@
                 browser API; radius?)</li>
               </ul>
               </li>
-              <li>Geolocation technology (GPS, SLAM, etc.).</li>
-              <li>
+              <li>Geolocation technology (GPS, SLAM, etc.).
               <ul>
                 <li>Note that multiple technologies might be used
                 together.</li>
@@ -2325,7 +2321,11 @@
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
-              <li>Optional: WoT Scripting API in application on
+            </ul>
+          </dd>
+          <dd>Optional:
+            <ul>
+            <li>WoT Scripting API in application on
               mobile personal device and possibly in IoT
               orchestration services in the public space.</li>
             </ul>
@@ -3423,16 +3423,18 @@ API response:
             This has additional requirements to avoid
             double-counting individuals.</dd>
             <dt>Expected Devices</dt>
-            <dd>
-              One of the following:
+            <dd>One of the following:
               <ul>
                 <li>A thermal camera.</li>
-                <li>Face detection (AI) service</li>
+                <li>Face detection (AI) service
                 <ul>
                   <li>May be on device or be an edge or cloud
                   service.</li>
                 </ul>
-              </ul>Optional:
+                </li>
+              </ul>
+            </dd>
+            <dd>Optional:
               <ul>
                 <li>RGB and/or depth camera registered with the
                 thermal camera</li>
@@ -3464,7 +3466,9 @@ API response:
                   entrance)</li>
                 </ul>
                 <li>Thermal image</li>
-              </ul>Optional:
+              </ul>
+            </dd>
+            <dd>Optional:
               <ul>
                 <li>RGB image</li>
                 <li>Depth image</li>
