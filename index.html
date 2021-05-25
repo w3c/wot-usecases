@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="tablestyle.css">
   <title>Web of Things (WoT): Use Cases and Requirements</title>
   <script class="remove" src="https://www.w3.org/Tools/respec/respec-w3c"></script>
   <script class="remove">
@@ -288,6 +287,9 @@
       }
     };
   </script>
+  <style>
+   .resize img { width: 100%; }
+  </style>
 </head>
 
 <body>
@@ -303,7 +305,7 @@
       these domains.
     </p>
     <p>
-      This Use Case and Requirements Document is created
+      This Use Cases and Requirements Document is created
       to collect new IoT use cases from various domains
       that have been contributed by various stakeholders.
       These serve as a baseline for identifying requirements
@@ -353,7 +355,7 @@
       <p>
         The collection of use cases can be separated into two categories:
       <ul>
-        <li>Domain specific (vertical) use cases for a single application domain.</li>
+        <li>Domain specific (vertical) use cases for a single application domain.
         <ul>
           <li>Agriculture</li>
           <li>Smart City</li>
@@ -367,7 +369,8 @@
           <li>Smart Home</li>
           <li>Education</li>
         </ul>
-        <li>Horizontal use cases that address multiple domains.</li>
+        </li>
+        <li>Horizontal use cases that address multiple domains.
         <ul>
           <li>Discovery</li>
           <li>Multi-Vendor System Integration</li>
@@ -380,6 +383,7 @@
           <li>VR/AR</li>
           <li>Edge Computing</li>
         </ul>
+        </li>
       </ul>
       Domain specific use cases are described in <a href="#sec-vertical-ucs"></a>,
       horizontal use cases are described in <a href="#sec-horizontal-ucs"></a>
@@ -597,7 +601,7 @@
             <p>Sensors:</p>
             <ul>
               <li>Weather sensors (maybe collected together inside a <a
-                  href="https://en.wikipedia.org/wiki/Weather_station)">weather station</a>)</li>
+                  href="https://en.wikipedia.org/wiki/Weather_station">weather station</a>)
               <ul>
                 <li>temperature</li>
                 <li>air humidity</li>
@@ -609,19 +613,22 @@
                 <li>global solar radiation and photosynthetically active radiation</li>
                 <li> gas/air quality sensor (i.e. CO2)</li>
               </ul>
-              <li>Soil sensors (usually packed together in soil probes)</li>
+              </li>
+              <li>Soil sensors (usually packed together in soil probes)
               <ul>
                 <li>soil temperature</li>
                 <li>soil moisture/water content</li>
                 <li>soil conductivity (detecting salt levels in the soil)</li>
                 <li> water table sensor</li>
               </ul>
-              <li>Drone sensors</li>
+              </li>
+              <li>Drone sensors
               <ul>
                 <li>camera</li>
                 <li>temperature sensitive camera</li>
                 <li>multispectral camera</li>
               </ul>
+              </li>
             </ul>
             <p>Actuators:</p>
             <ul>
@@ -707,7 +714,7 @@
             The complete deployment topology of an open field agriculture solution is described in the diagram below:
             <br>
             <br>
-            <img src="./images/Agriculture.svg" width="100%" height="100%">
+            <div class="resize" ><img src="./images/Agriculture.svg" alt="deployment topology of an open field agriculture solution"></div>
             <br>
             <br>
           </dd>
@@ -717,7 +724,7 @@
               href="http://swamp-project.org/">SWAMP project</a> there three different pilots with different
             requirement/constraints:
             <ul>
-              <li><a href="http://swamp-project.org/cbec/) (Reggio Emilia region">Italian pilot</a>:</li>
+              <li><a href="http://swamp-project.org/cbec/">Italian pilot</a> (Reggio Emilia region):
               <ul>
                 <li>Relative small field size</li>
                 <li>Multiple connectivity solutions available: 4G, LPWAN, and WiFi</li>
@@ -729,8 +736,8 @@
                 <li>Channel-based water distribution</li>
                 <li>The main goal is to optimize water consumption</li>
               </ul>
-              <li><a href="http://swamp-project.org/matopiba/) (Matopiba and Guaspari location">Brazilian pilot</a>:
               </li>
+              <li><a href="http://swamp-project.org/matopiba/">Brazilian pilot</a> (Matopiba and Guaspari location):
               <ul>
                 <li>Huge field size</li>
                 <li>Centra pivot irrigation systems: need to optimize each sprinkler output</li>
@@ -739,12 +746,14 @@
                 <li>Low crop type variance</li>
                 <li>the main goal is to optimize energy consumption</li>
               </ul>
-              <li><a href="http://swamp-project.org/intercrop/">Spain pilot</a></li>
+              </li>
+              <li><a href="http://swamp-project.org/intercrop/">Spain pilot</a>:
               <ul>
                 <li>Efficient localized irrigation and application of the right amount of water to the crop</li>
                 <li>arid location</li>
                 <li>The goal is to minimize water consumption but maintaining a good field yield.</li>
               </ul>
+              </li>
             </ul>
           </dd>
           <dt>Gaps</dt>
@@ -845,16 +854,18 @@
           <dd>
 
             <ul>
-              <li>6 tensiometers in the plot (soil moisture):</li>
+              <li>6 tensiometers in the plot (soil moisture):
               <ul>
                 <li> 3 tensiometers at 30 cm depth</li>
                 <li> 3 tensiometer at 60 cm depth</li>
               </ul>
-              <li>1 weather station:</li>
+              </li>
+              <li>1 weather station:
               <ul>
                 <li>thermometer (outdoor temperature)</li>
                 <li>pluviometer (rain quantity)</li>
               </ul>
+              </li>
               <li>1 mobile pluviometer (quantity of water provided by the watering system)</li>
             </ul>
 
@@ -866,7 +877,7 @@
             and the number of delay days:
 
             <ul>
-              <li>To evaluate the <b>Crop growth stage</b>, we need:</li>
+              <li>To evaluate the <b>Crop growth stage</b>, we need:
               <ul>
                 <li>Min and max temperature per day: the <b>min temperature per day</b> is evaluated on the period [d-1
                   18:00, d 18:00[. The <b>*max temperature per day</b> is evaluated on the period [d 06:00:00, d+1
@@ -875,7 +886,8 @@
                   min and max temperature per day, the sowing day and the type of seed. The Growing degree day is
                   compared to some thresholds to evaluate the crop growth stage</li>
               </ul>
-              <li>To evaluate the <b>Root zone moisture level</b>, we need: </li>
+              </li>
+              <li>To evaluate the <b>Root zone moisture level</b>, we need:
               <ul>
                 <li>Mean moisture per day per probe: in order to get reliable values, each tensiometer sends several
                   measurements of soil moisture, at fixed hours of the day (usually in the morning), that are
@@ -891,20 +903,22 @@
                 <li>The root zone moisture level is compared to some thresholds (dependent on the crop growth stage) to
                   evaluate if the crop needs water or not at the end of the basis irrigation period.</li>
               </ul>
-              <li>To determine the <b>number of delay days</b>, we need:</li>
+              </li>
+              <li>To determine the <b>number of delay days</b>, we need:
               <ul>
                 <li>The time period between two waterings of the same plot is dependent on the farm and known by the
                   farmer. When a watering is launched, no new watering should be planned during the basic irrigation
                   frequency. The quantity of rain that falls down on the plot may postpone the watering plan. The total
                   quantity of rain per day is compared to some thresholds to determine the number of delay days.</li>
               </ul>
+              </li>
             </ul>
 
             The mobile pluviometer is used to validate that the quantity of water received by the crop actually
             corresponds to the quantity of water provided by the watering system.
             <br>
             <br>
-            At the end, the farmer may decide if he follows the irrigation recommendations or not. He could force the
+            At the end, the farmer may decide if they follow the irrigation recommendations or not. They could force the
             watering for one of the next days.
             <br>
           </dd>
@@ -937,7 +951,7 @@
           </dd>
           <dt>Variants:</dt>
           <dd>
-            The crop growth stage may be observed by the farmer. In this case, he can force this value to update the
+            The crop growth stage may be observed by the farmer. In this case, they can force this value to update the
             service inputs.
 
           </dd>
@@ -1127,49 +1141,51 @@
           </dd>
           <dt>Expected Data</dt>
           <dd>
-            <p>
             <ul>
               <li>Sensor ID</li>
               <li>Timestamp of last geolocation</li>
-              <li>2D location</li>
+              <li>2D location
               <ul>
                 <li>typically latitude and longitude</li>
                 <li>May also be semantic, i.e. room in a building, exit</li>
               </ul>
+              </li>
             </ul>
-            </p>
-            <p>
-              Optional:
+          <dd>Optional:
             <ul>
-              <li>Semantic location</li>
+              <li>Semantic location
               <ul>
                 <li>Possibly in addition to numerical lat/long location.</li>
               </ul>
-              <li>Altitude</li>
+              </li>
+              <li>Altitude
               <ul>
                 <li>May also be semantic, i.e. floor of a building</li>
               </ul>
+              </li>
               <li>Heading</li>
               <li>Speed</li>
-              <li>Accuracy information</li>
+              <li>Accuracy information
               <ul>
                 <li>Confidence interval, e.g. distance that true location will be within some probability.</li>
                 <li>Gaussian covariance matrix</li>
                 <li>For each measurement</li>
                 <li>For lat/long, may be a single value (see web browser API; radius?)</li>
               </ul>
-              <li>Geolocation technology (GPS, SLAM, etc.). </li>
+              </li>
+              <li>Geolocation technology (GPS, SLAM, etc.). 
               <ul>
                 <li>Note that multiple technologies might be used together.</li>
                 <li>Include parameters such as sample interval, accuracy</li>
               </ul>
-              <li>For each geolocation technology, data specific to that technology:</li>
+              </li>
+              <li>For each geolocation technology, data specific to that technology:
               <ul>
                 <li>GPS: NMEA type</li>
               </ul>
+              </li>
               <li>Historical data</li>
             </ul>
-            </p>
             <p>
               Note: the system should be capable of notifying consumers
               of changes in location.
@@ -1202,12 +1218,12 @@
           <dd>
             <p>
             <ul>
-              <li>A version of the system may log historical data so the past</li>
-              locations of the devices can be recovered.
-              <li>Geolocation technologies other than GPS may be used. The payload</li>
+              <li>A version of the system may log historical data so the past
+                  locations of the devices can be recovered.</li>
+              <li>Geolocation technologies other than GPS may be used. The payload
               may contain additional information specific to the geolocation
               technology used. In particular, in indoor situations technologies such
-              as WiFi triangulation or (V)SLAM may be more appropriate.
+                  as WiFi triangulation or (V)SLAM may be more appropriate.</li>
               <li>Geofencing may be implemented using event notifications and
                 will require setting of additional parameters such as maximum distance.</li>
             </ul>
@@ -1256,14 +1272,15 @@
             <p>
             <ul>
               <li>NMEA: defines sentences from GPS devices</li>
-              <li><a href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS84</a>:</li>
+              <li><a href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS84</a>:
               <ul>
                 <li>World Geodetic System</li>
                 <li>Defines lat/long/alt coordinate system used by most other geolocation standards</li>
                 <li>More complicated than you would think (need to deal with deviations of Earth from
                   a true sphere, gravitational irregularities, position of centroid, etc. etc.)</li>
               </ul>
-              <li><a href="https://www.w3.org/2003/01/geo/">Basic Geo Vocabulary</a>:</li>
+              </li>
+              <li><a href="https://www.w3.org/2003/01/geo/">Basic Geo Vocabulary</a>:
               <ul>
                 <li>Very basic RDF definitions for lat, long, and alt</li>
                 <li>Does not define heading or speed</li>
@@ -1271,7 +1288,8 @@
                 <li>Does not define timestamps</li>
                 <li>Uses string as a data model (rather than a number)</li>
               </ul>
-              <li><a href="https://www.w3.org/TR/geolocation-API/">W3C Geolocalization API</a>:</li>
+              </li>
+              <li><a href="https://www.w3.org/TR/geolocation-API/">W3C Geolocalization API</a>:
               <ul>
                 <li>W3C Devices and Sensors WG is now handling</li>
                 <li>There is an updated proposal: <a
@@ -1283,7 +1301,8 @@
                   a little ambiguous, but probably intended to be a radius) and altitude, but not for heading or speed.
                 </li>
               </ul>
-              <li><a href="https://www.ogc.org/">Open Geospatial Consortium</a>:</li>
+              </li>
+              <li><a href="https://www.ogc.org/">Open Geospatial Consortium</a>:
               <ul>
                 <li>See <a
                     href="http://docs.opengeospatial.org/as/18-005r4/18-005r4.html">http://docs.opengeospatial.org/as/18-005r4/18-005r4.html</a>
@@ -1292,7 +1311,8 @@
                 <li>Has standards defining semantics for identifying locations</li>
                 <li>Useful for mapping</li>
               </ul>
-              <li>ISO</li>
+              </li>
+              <li>ISO:
               <ul>
                 <li><a href="https://www.iso.org/standard/74039.html">ISO19111</a>:</li>
                 <ul>
@@ -1301,10 +1321,11 @@
                 </ul>
                 <li>Various other standards that relate to remote sensing, geolocation, etc.</li>
                 <li>Here is an example (see references): <a
-                    href="https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en">https://www.iso.org/obp/ui/fr/#iso:std:iso:ts:19159:-2:ed-1:v1:en</a>
+                    href="https://www.iso.org/obp/ui/#iso:std:iso:ts:19159:-2:ed-1:v1:en">https://www.iso.org/obp/ui/#iso:std:iso:ts:19159:-2:ed-1:v1:en</a>
                 </li>
               </ul>
-              <li><a href="https://www.w3.org/TR/vocab-ssn/">SSN</a>:</li>
+              </li>
+              <li><a href="https://www.w3.org/TR/vocab-ssn/">SSN</a>:
               <ul>
                 <li>Defines "accuracy": <a
                     href="https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy">https://www.w3.org/TR/vocab-ssn/#SSNSYSTEMAccuracy</a>
@@ -1312,23 +1333,21 @@
                 <li>Definition of accuracy is consistent with how it is used in Web Geolocation API</li>
                 <li>Also defines related terms Precision, Resolution, Latency, Drift, etc.</li>
               </ul>
-              <li>Timestamps:</li>
+              </li>
+              <li>Timestamps:
               <ul>
                 <li>W3C standard in proposed new web geolocation API: <a
                     href="https://w3c.github.io/hr-time/#dom-domhighrestimestamp">https://w3c.github.io/hr-time/#dom-domhighrestimestamp</a>
                 </li>
                 <li>See also related issues such as latency defined in SSN</li>
               </ul>
-              </p>
+              </li>
+            </ul>
               <p>
                 Note that accuracy and time are issues that apply to all kinds of sensors, not just
                 geolocation. However, the specific geolocation technology of GPS
                 is special since it is also a source of accurate time.
               </p>
-          </dd>
-          <!--dt>Comments</dt-->
-          <dd>
-
           </dd>
         </dl>
       </section>
@@ -1424,9 +1443,8 @@
               <li>Safety monitoring (e.g.wearing construction helmets on a construction site)</li>
               <li>Reports from non-IoT sources (for example, police reports of crimes, hospital emergency case reports)
               </li>
-              <li>Images and data derived from images (people traffic and density can be derived from image analysis)
-              </li>
-              All data would need an associated geolocation and timestamp so it can be placed in time and space.
+              <li>Images and data derived from images (people traffic and density can be derived from image analysis).
+                  All data would need an associated geolocation and timestamp so it can be placed in time and space.</li>
             </ul>
             </p>
           </dd>
@@ -1482,8 +1500,8 @@
           <dd>
             <p>
             <ul>
-              <li>Management of privacy-sensitive information, for example images of people, </li>
-              should be controlled and ideally not associated with specific individuals
+              <li>Management of privacy-sensitive information, for example images of people,
+                  should be controlled and ideally not associated with specific individuals</li>
               <li>Data that can be used to track movements of particular individuals should be controlled or eliminated.
               </li>
               <li>Data purge functions should be supported to allow the permanent deletion of private data.</li>
@@ -1499,12 +1517,6 @@
               <li>Scalable Discovery</li>
             </ul>
             </p>
-          </dd>
-          <!--dt>Existing Standards</dt><dd>
-  
-          </dd>
-          <dt>Comments</dt><dd-->
-
           </dd>
         </dl>
       </section>
@@ -1583,18 +1595,19 @@
           </dd>
           <dt>Dependencies</dt>
           <dd>
-
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
-              <li>Optional: WoT Scripting API in application on mobile personal device and possibly
+            </ul>
+          </dd>
+          <dd>Optional:
+            <ul>
+               <li>WoT Scripting API in application on mobile personal device and possibly
                 in IoT orchestration services in the public space.</li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             Interactive installations such as touch-sensitive or gesture-tracking billboards
             may be set up in public places.
             Objects that present public information (e.g. a map of a shopping mall)
@@ -1608,7 +1621,7 @@
             (for example, with targeted/personalized alerts or advertisements),
             the user's mobile device acts as a mediator for the services
             running on the public network.
-            This allows the user to receive relevant information in the way she sees fit.
+            This allows the user to receive relevant information in the way they see fit.
             Notifications can serve as triggers for interaction with public devices and services
             if the user chooses to do so.
 
@@ -1736,7 +1749,7 @@
             audio instructions (MP3 audio guide, room speakers reproduction, HDTV audio)
             or RFID enhanced instructions (mobile SmartTag Reader, RFID Reader for smartphone).
             The chair of the meeting chooses the room speakers reproduction,
-            then the guiding Service is activated and he starts to set the video projector.
+            then the guiding Service is activated and they start to set the video projector.
             After some attendees arrive,
             the chair of the meeting changes to the slide show option and continues to
             follow the instructions at the same step it was paused but with another more
@@ -1864,8 +1877,7 @@
             <br>
             <br>
 
-            <img src="images/smart-campus-topology.svg" width="100%" height="100%">
-
+            <div class="resize" ><img src="images/smart-campus-topology.svg" alt="sample topology of a smart campus"></div>
             <br>
             <br>
 
@@ -1900,7 +1912,7 @@
             Thing Descriptions about IoT buildings. Therefore, the query will travel through the topology as follows:
             <br>
             <br>
-            <img src="images/smart-campus-sample.svg" width="100%" height="100%">
+            <div class="resize"><img src="images/smart-campus-sample.svg" alt="query goes through the topology for a smart campus"></div>
             <br>
             <br>
             Finally, when Middle Nodes B and H compute two partial query answers, those answers will be forwarded back
@@ -2583,7 +2595,6 @@
           </dd-->
           <dt>Existing Standards</dt>
           <dd>
-
             <ul>
               <li><a href="https://saref.etsi.org/saref4bldg/">SAREF4Bldg an ETSI Standard</a></li>
               <li><a href="https://www.w3.org/TR/vocab-ssn/">SOSA/SSN a W3C Recommendation</a></li>
@@ -2595,19 +2606,15 @@
             </ul>
 
           </dd>
-          <!--dt>Comments</dt>
-          <dd-->
-
-          <p>References:</p>
+          <dd>References:
           <ul>
+          <li>
             <a href="https://doi.org/10.1002/9781119287568">Sacks, R., Eastman, C., Lee, G., & Teicholz, P. (2018).
               BIM handbook: A guide to building information modeling for owners, designers, engineers, contractors,
               and facility managers. John Wiley & Sons.</a>
-
+          </li>
           </ul>
-
           </dd>
-
         </dl>
       </section>
     </section>
@@ -2959,18 +2966,17 @@
 
             </dd>
             <dt>Expected Devices</dt>
-            <dd>
-
-              One of the following:
+            <dd>One of the following:
               <ul>
                 <li>A thermal camera.</li>
-                <li>Face detection (AI) service</li>
+                <li>Face detection (AI) service
                 <ul>
                   <li>May be on device or be an edge or cloud service.</li>
                 </ul>
+                </li>
               </ul>
-
-              Optional:
+            </dd>
+            <dd>Optional:
               <ul>
                 <li>RGB and/or depth camera registered with the thermal camera</li>
                 <li>Cloud service for data aggregation and analytics.</li>
@@ -2988,43 +2994,40 @@
                 <li>Sensor ID</li>
                 <li>Timestamp</li>
                 <li>Number of people identified with a fever in image</li>
-                <li>Estimated temperature for each person</li>
+                <li>Estimated temperature for each person
                 <ul>
                   <li>May be coarse, low/normal/high</li>
                 </ul>
-                <li>Location</li>
+                </li>
+                <li>Location
                 <ul>
                   <li>Latitude, Longitude, Altitude, Accuracy</li>
                   <li>Semantic (e.g. a particular building entrance)</li>
                 </ul>
+                </li>
                 <li>Thermal image</li>
               </ul>
-
-              Optional:
+            </dd>
+            <dd>Optional:
               <ul>
                 <li>RGB image</li>
                 <li>Depth image</li>
                 <li>Localization technology (see localization use case)</li>
                 <li>Integration with local IoT devices: gates, lights, or people (guards)</li>
                 <li>Bounding boxes around faces of identified people in image(s)</li>
-                <li>Data that can be used to uniquely identify a face (distinguish it from others)</li>
+                <li>Data that can be used to uniquely identify a face (distinguish it from others)
                 <ul>
                   <li>Aggregation system may output the total number of unique faces with fever</li>
                 </ul>
+                </li>
               </ul>
-
-              Note 1: the system should be capable of notifying consumers (such as security personnel),
+              <p>Note 1: the system should be capable of notifying consumers (such as security personnel),
               of fever detections.
-              This may be email, SMS, or some other mechanism, such as MQTT publication.
-              <br>
-              <br>
-              Note 2: In all cases where images are captured, privacy considerations apply.
-              <br>
-              <br>
-              It would also be useful to count unique individuals for statistics purposes,
+                  This may be email, SMS, or some other mechanism, such as MQTT publication.</p>
+              <p>Note 2: In all cases where images are captured, privacy considerations apply.</p>
+              <p>It would also be useful to count unique individuals for statistics purposes,
               but not necessarily based on identifying particular people. This is to
-              avoid counting the same person multiple times.
-
+                  avoid counting the same person multiple times.</p>
             </dd>
             <dt>Dependencies</dt>
             <dd>
@@ -3083,7 +3086,7 @@
             <dt>Privacy Considerations</dt>
             <dd>
               <ul>
-                <li>Images of people and their health status is involved. </li>
+                <li>Images of people and their health status is involved.
                 <ul>
                   <li>If later these are made public then the health information of a particular person would be
                     released
@@ -3096,6 +3099,7 @@
                     deleted when no longer needed.</li>
                   <li>However, derived aggregate information can be kept and published.</li>
                 </ul>
+                </li>
               </ul>
             </dd>
             <dt>Gaps</dt>
@@ -3211,7 +3215,7 @@
               </p>
               <p>
                 Clinical scenario without PCLC. An elderly female with end-stage renal failure was given a standard
-                insulin infusion protocol to manage her blood glucose, but no glucose was provided. Her blood glucose
+                insulin infusion protocol to manage their blood glucose, but no glucose was provided. Their blood glucose
                 dropped to 33, then rebounded to over 200 after glucose was given. This scenario has not changed for
                 decades.
               </p>
@@ -3564,9 +3568,9 @@
           </dd>
           <dt>Variants</dt>
           <dd>
-
+          <dl>
           <dt>Decentralized Power Generation</dt>
-
+          <dd>
           While electricity grids with centralized power generation have dominated up to now, the trend is moving
           towards decentralized generation plants, both for generation from fossil primary energy through small CHP
           plants and for generation from renewable sources such as photovoltaic systems, solar thermal power plants,
@@ -3575,24 +3579,31 @@
           to medium to large power plants, smaller, decentralized generation plants also feed directly into the
           lower voltage levels such as the low-voltage grid or the medium-voltage grid. This use case variants also
           includes operation and control of energy storages like batteries.
+          </dd>
 
           <dt>Virtual Power Plants</dt>
-
+          <dd>
           A Virtual Power Plant (VPP) is an aggregation of Distributed Energy Resources (DERs) that can act as an
           entity on energy markets or as an ancillary service to grid operation.
           The individual DERs often have a primary use on their own, with electric generation/consumption being a
           side-effect resp. secondary use. This results in negotiations/collaborations between many different
           parties e.g. such as the DER owner, the VPP operator, the grid operator and others.
+          </dd>
 
           <dt>Smart Metering</dt>
+          <dd>
           For consumers, a major change is the installation of smart meters. Their core tasks are remote reading and
           the possibility to realize fluctuating prices within a day at short notice. All electricity meters must
           therefore be replaced by those with remote data transmission.
+          </dd>
 
           <dt>Other variants</dt>
+          <dd>
           Emergency response, grid synchronization, grid black start
-
           </dd>
+          </dl>
+          </dd>
+
           <dt>Building Blocks</dt>
           <dd>
             <ul>
@@ -3877,7 +3888,7 @@
 
             Basic in-car functionality is standardized to be managed by other devices.
             A user can control seat, radio or AC settings through a personalized multimodal interface
-            shared by the car and her personal mobile device.
+            shared by the car and their personal mobile device.
             User preferences are stored on the mobile Device (or in the cloud),
             and can be transferred across different car models handling a specific functionality
             (e.g. all cars with touchscreens should be able to adapt to a "high contrast" preference).
@@ -3890,7 +3901,7 @@
             certain user preferences may be shared with other environments.
 
             For example,
-            a user may opt to select the "high contrast" scheme at night on all of her displays,
+            a user may opt to select the "high contrast" scheme at night on all of their displays,
             in the car or at home.
             A car that provides a set of modalities can be also adapted by the mobile device
             to compose an interface for its functionality,
@@ -4137,13 +4148,8 @@
               (Hybridcast is a Japanese Integrated Broadcast-Broadband system. Hybridcast applications are HTML5
               applications that work on Hybridcast TV.)
             </p>
-            <p>
-              Hybridcast Contact application receives the information and controlls smart home devices.
-              <br>
-              <br>
-              <img src="images/scenario_nhk.png" width="100%" height=100%>
-              <br>
-            </p>
+            <p>Hybridcast Contact application receives the information and controlls smart home devices.</p>
+            <div class="resize"><img src="images/scenario_nhk.png" alt="Hybridcast Connect Application"></div>
           </dd>
           <!--dt>Variants</dt>
           <dd>
@@ -4174,7 +4180,7 @@
 
     <section id="education">
       <h2>Education</h2>
-      <section id="education">
+      <section id="shared-devices">
         <h2>Shared Devices</h2>
         <dl>
 
@@ -4553,20 +4559,22 @@
 
           <ul>
             <li>As a device owner, I want to know whether a device will work with my system before I purchase it to
-              avoid wasting money.</li>
+              avoid wasting money.
             <ul>
               <li>Installers of IoT devices want to be able to determine if a given device will be compatible with
                 the
                 rest of their installed systems and whether they will have access to its data and affordances.</li>
             </ul>
+            </li>
           </ul>
 
           <ul>
-            <li>As a developer, I want TDs to be as simple as possible so that I can efficiently develop them.</li>
+            <li>As a developer, I want TDs to be as simple as possible so that I can efficiently develop them.
             <ul>
               <li>Here "simple" should relate to the end goal, "efficiently develop"; that is, TDs should be
                 straightforward for the average developer to complete and validate.</li>
             </ul>
+            </li>
           </ul>
 
           <ul>
@@ -4576,32 +4584,19 @@
 
           <ul>
             <li>As a cloud provider I want to onboard, manage and communicate with as many devices as possible out
-              of the box.</li>
-            This should be possible without device specific customization.
+              of the box.
+                This should be possible without device specific customization.</li>
           </ul>
 
         </dd>
         <dt>Expected Devices</dt>
-        <dd>
-
-          sensors, actuators, gateways, cloud, directory service.
-
-        </dd>
+        <dd>sensors, actuators, gateways, cloud, directory service.</dd>
         <dt>Expected Data</dt>
-        <dd>
-
-          discrete or streaming data.
-
-        </dd>
+        <dd>discrete or streaming data.</dd>
         <dt>Affected WoT deliverables and/or work items</dt>
-        <dd>
-
-          WoT Profile, WoT Thing Description
-
-        </dd>
+        <dd>WoT Profile, WoT Thing Description</dd>
         <dt>Description</dt>
         <dd>
-
           As a consumer of devices I want to be able to process data from any device that conforms to a class of
           devices.
 
@@ -4769,8 +4764,9 @@
         </dd>
         <dt>Variants</dt>
         <dd>
-
+        <dl>
         <dt>Virtual Twin</dt>
+        <dd>
         <p>
           The virtual twin is a representation of a physical device or an asset. A virtual twin uses a model that
           contains observed and desired attribute values and also uses a semantic model of the behavior of the
@@ -4796,9 +4792,11 @@
           fuel level, location, speed and others. The semantics-based virtual twin model enables the user to decide
           whether the operating parameters are in normal range. In out of range conditions the user can take
           appropriate actions.
-
         </p>
+        </dd>
+
         <dt>Predictive Twin</dt>
+        <dd>
         <p>
           In a predictive twin, the digital twin implementation builds an analytical or statistical model for
           prediction by using a machine-learning technique. It need not involve the original designers of the
@@ -4817,8 +4815,10 @@
           The user can use the predictive twin model to determine trends and patterns from the contextual machine
           data. The model helps to address business problems.
         </p>
+        </dd>
 
         <dt>Twin Projections</dt>
+        <dd>
         <p>
           In twin projections, the predictions and the insights integrate with back-end business applications,
           making IoT an integral part of business processes.
@@ -4829,25 +4829,12 @@
           back-end applications infrastructure enables business applications to interact with the IoT system and
           transform into intelligent systems.
           </p>
-
         </dd>
+
         <dt>Gaps</dt>
-        <dd>
-
-          WoT does not define a way to describe the behavior of a thing to use for a simulation.
-
+        <dd>WoT does not define a way to describe the behavior of a thing to use for a simulation.</dd>
+        </dl>
         </dd>
-        <!--dt>Existing Standards</dt>
-          <dd>
-          
-            <section id="todo-references-x" class="ednote">
-              TODO: Provide links to relevant standards that are
-              relevant for this use case</section>
-          
-          </dd>
-          <dt>Comments</dt>
-          <dd>
-          </dd-->
       </dl>
     </section>
 
@@ -5185,11 +5172,10 @@
           </dd>
           <dt>Description</dt>
           <dd>
-
-            A person working mostly with a PC is having a problem with his right arm and hands.
-            He is unable to use a mouse or a keyboard for a few months.
-            He can point at things, sketch, clap, make gestures, but he can not make any precise movements.
-            A generic interface allows this person to perform his most important tasks in his
+            A person working mostly with a PC is having a problem with their right arm and hands.
+            They are unable to use a mouse or a keyboard for a few months.
+            They can point at things, sketch, clap, make gestures, but they can not make any precise movements.
+            A generic interface allows this person to perform their most important tasks in their
             personal devices:
             to call someone, open a mailbox, access his agenda or navigate over some Web pages.
             The generic interface can propose child-oriented intuitive interfaces like a
@@ -5199,7 +5185,6 @@
             very simple remote controls,
             screens displaying text at high resolution,
             or voice command devices.
-
           </dd>
           <!--dt>Variants</dt>
           <dd>
@@ -5352,7 +5337,7 @@
             while switching between modality sets.
             For example,
             if the user was navigating a GUI menu in the living room,
-            it is carried over to another screen when she switches rooms,
+            it is carried over to another screen when they switch rooms,
             or replaced with a different modality such as voice
             if there are no displays in the new location.
 
@@ -5574,12 +5559,11 @@
           </dd>
           <dt>Motivation</dt>
           <dd>
-
-            OAuth 2.0 is an authorization protocol widely known for its usage across several web services.
+            <p>OAuth 2.0 is an authorization protocol widely known for its usage across several web services.
             It enables third-party applications to obtain limited access to HTTP services on behalf of the resource
             owner
             or of itself.
-            The protocol defines the following actors:
+                The protocol defines the following actors:</p>
 
             <ul>
               <li>Client: an application that wants to use a resource owned by the resource owner. </li>
@@ -5587,28 +5571,27 @@
               <li>Resource: a web resource </li>
               <li>Resource Server: the server where the resource is stored</li>
               <li>Resource Owner: the owner of a particular web resource. If it is a human is usually referred to as an
-                end-user. More specifically from the RFC:</li>
+                end-user. More specifically from the RFC:
               <ul>
                 <li>An entity capable of granting access to a protected resource.</li>
               </ul>
+              </li>
             </ul>
-
-            These actors can be mapped to WoT entities:
+            <p>These actors can be mapped to WoT entities:</p>
             <ul>
               <li>Client is a WoT Consumer</li>
               <li>Authorization Server is a third-party service</li>
               <li>Resource is an interaction affordance</li>
-              <li>Resource Server is a Thing described by a Thing Description acting as a server. </li>
-              May be a device or a service.
+              <li>Resource Server is a Thing described by a Thing Description acting as a server. 
+                  May be a device or a service.</li>
               <li>Resource Owner might be different in each use case.
                 A Thing Description may also combine resources from different owners or web server.</li>
             </ul>
-            TO DO: Check the OAuth 2.0 spec to determine exactly how Resource Owner is defined.
+            <p>TO DO: Check the OAuth 2.0 spec to determine exactly how Resource Owner is defined.
             Is it the actual owner of the resource (e.g. running the web server) or simply someone
-            with the rights to access that resource?
-            <br>
-            The OAuth 2.0 protocol specifies an authorization layer that separates the client from the resource owner.
-            The basic steps of this protocol are summarized in the following diagram:
+                with the rights to access that resource?</p>
+            <p>The OAuth 2.0 protocol specifies an authorization layer that separates the client from the resource owner.
+                The basic steps of this protocol are summarized in the following diagram:</p>
             <pre>
      +--------+                               +---------------+
      |        |--(A)- Authorization Request -&gt;|   Resource    |
@@ -5628,14 +5611,14 @@
      |        |&lt;-(F)--- Protected Resource ---|               |
      +--------+                               +---------------+
 </pre>
-            Steps A and B defines what is known as authorization grant type or flow.
+            <p>Steps A and B defines what is known as authorization grant type or flow.
             What is important to realize here is that not all of these interactions
             are meant to take place over a network protocol.
             In some cases,
             interaction with with a human through a user interface may be intended.
 
             OAuth2.0 defines 4 basic flows plus an extension mechanism.
-            The most common of which are:
+                The most common of which are:</p>
             <ul>
               <li>`code`</li>
               <li>`implicit`</li>
@@ -5643,7 +5626,7 @@
               <li>`client` (credentials of the client)</li>
             </ul>
 
-            In addition, a particular extension which is of interest to IoT is the `device` flow.
+            <p>In addition, a particular extension which is of interest to IoT is the `device` flow.
 
             Further information about the OAuth 2.0 protocol can be found in
             <a href="https://tools.ietf.org/html/rfc6749#section-1">IETF RFC6749</a>.
@@ -5655,36 +5638,35 @@
             is attempted and access can be denied if the token does not include a scope
             required by the interaction.
 
-            This document describes relevant use cases for each of the OAuth 2.0 authorization flows.
-
+            This document describes relevant use cases for each of the OAuth 2.0 authorization flows.</p>
           </dd>
+
           <dt>Expected Devices</dt>
           <dd>
-
             To support OAuth 2.0, all devices must have the capability of:
             <ul>
               <li>Both the producer and consumer must be able to create and participate in a TLS connection.</li>
               <li>The producer must be able to verify an access (bearer) token (i.e. have sufficient computational
                 power/connectivity). </li>
             </ul>
-
-            Comment:
+          </dd>
+          <dd>Comment:
             <ul>
-              <li>Investigate whether DTLS can be used.</li>
-              Certainly the connection needs to be encrypted; this is required in the OAuth 2.0 specification.
-              <li>Investigate whether protocols other than HTTP can be used, e.g. CoAP.</li>
+              <li>Investigate whether DTLS can be used.
+                  Certainly the connection needs to be encrypted; this is required in the OAuth 2.0 specification.</li>
+              <li>Investigate whether protocols other than HTTP can be used, e.g. CoAP.
               <ul>
                 <li>found an interesting IETF draft RFC about CoAP support(encrypted using various mechanisms like DTLS
                   or
                   CBOR Object Signing and Encryption): <a
                     href="https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-35">draft-ietf-ace-oauth</a></li>
               </ul>
+              </li>
             </ul>
 
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Depending on the OAuth 2.0 flow specified, various URLs and elements need to be specified,
             for example, the location of an authorization token server.
             OAuth 2.0 is also based on bearer tokens and so
@@ -5714,18 +5696,13 @@
           </dd>
           <dt>Variants</dt>
           <dd>
+            <p>For each OAuth 2.0 flow, there is a corresponding use case variant.
+                We also include the experimental "device" flow for consideration.</p>
 
-            For each OAuth 2.0 flow, there is a corresponding use case variant.
-            We also include the experimental "device" flow for consideration.
-
-            <br>
-            <br>
-            code
-
-            A natural application of this protocol is when the end-user wants to interact directly with the consumed
-            thing or to grant his authorization to a remote device. In fact from the <a
-              href="https://tools.ietf.org/html/rfc6749#section-4.1">RFC6749</a>
-
+            <p><strong>code</strong></p>
+            <p>A natural application of this protocol is when the end-user wants to interact directly with the consumed
+            thing or to grant their authorization to a remote device. In fact from the <a
+            href="https://tools.ietf.org/html/rfc6749#section-4.1">RFC6749</a></p>
             <ul>
               <li>
                 Since this is a redirection-based flow, the client must be capable of
@@ -5735,9 +5712,8 @@
               </li>
             </ul>
 
-            This implies that the code flow can be only used when the resource owner interacts directly with the WoT
-            consumer at least once. Typical scenarios are:
-
+            <p>This implies that the code flow can be only used when the resource owner interacts directly with the WoT
+                consumer at least once. Typical scenarios are:</p>
             <ul>
               <li>In a home automation context, a device owner uses a third party software to interact
                 with/orchestrate one or more devices</li>
@@ -5749,9 +5725,9 @@
               <li>... </li>
             </ul>
 
-            The following diagram shows the steps of the protocol adapted to WoT idioms and entities. In this
+            <p>The following diagram shows the steps of the protocol adapted to WoT idioms and entities. In this
             scenario, the WoT Consumer has read the Thing Description of a Remote Device and want to access one of its
-            WoT Affordances protected with OAuth 2.0 code flow.
+                WoT Affordances protected with OAuth 2.0 code flow.</p>
             <pre>
                                                  +-----------+
   +----------+                                   |           |
@@ -5784,11 +5760,10 @@
       +-----------(F)----- Access WoT --------------------------------+
                            Affordance
 </pre>
-            Notice that steps (A), (B) and (C) are broken in two parts as they pass through the User-Agent.
+<p>Notice that steps (A), (B) and (C) are broken in two parts as they pass through the User-Agent.</p>
 
-            <p>device</p>
-
-            The device flow (IETF <a href="https://tools.ietf.org/html/rfc8628">RFC 8628</a>) is a variant of the code
+<p><strong>device</strong></p>
+            <p>The device flow (IETF <a href="https://tools.ietf.org/html/rfc8628">RFC 8628</a>) is a variant of the code
             flow for browserless and
             input-constrained devices. Similarly, to its <i>parent</i> flow, it requires a close interaction between the
             resource owner and the WoT consumer. Therefore, the use cases for this flow are the same as the code
@@ -5797,7 +5772,7 @@
             the protocol is an <b>end-user</b> interacting with a <b>browser</b> (even if <a
               href="https://tools.ietf.org/html/rfc8628#section-6.2">section-6.2</a>
             briefly describes an authentication using a companion app and BLE), as shown in the following (slightly
-            adapted) diagram:
+                adapted) diagram:</p>p>
 
             <pre>
 +----------+
@@ -5833,9 +5808,9 @@
 |  Browser |          authorization request |                |
 +----------+                                +----------------+
 </pre>
-            Notable mentions:
+<p>Notable mentions:</p>
             <ul>
-              <li>the protocol is heavily end-user oriented. In fact, the RFC states the following</li>
+              <li>the protocol is heavily end-user oriented. In fact, the RFC states the following
               <ul>
                 <li>Due to the polling nature of this protocol (as specified in Section 3.4), care is needed to avoid
                   overloading the capacity of the token endpoint. To avoid unneeded requests on the token endpoint, the
@@ -5843,16 +5818,15 @@
                     automatically</b>, such as when the app starts or when the previous authorization session expires or
                   failAs.</li>
               </ul>
+              </li>
               <li>TLS is required both between WoT Consumer/Authorization Server and between Browser/Authorization
                 Server</li>
               <li>Other user interactions methods may be used but are left out of scope</li>
             </ul>
 
-            <p>client credential</p>
-
-            The Client Credentials grant type is used by clients to obtain an access token outside of the context of
-            an end-user. From <a href="https://tools.ietf.org/html/rfc6749#section-4.4">RFC6749</a>:
-
+            <p><strong>client credential</strong></p>
+            <p>The Client Credentials grant type is used by clients to obtain an access token outside of the context of
+                an end-user. From <a href="https://tools.ietf.org/html/rfc6749#section-4.4">RFC6749</a>:</p>
             <ul>
               <li>The client can request an access token using only its client
                 credentials (or other supported means of authentication) when
@@ -5862,7 +5836,7 @@
                 the scope of this specification).</li>
             </ul>
 
-            Therefore the client credential grant can be used:
+            <p>Therefore the client credential grant can be used:</p>
             <ul>
               <li>When the resource owner is a public authority. For example, in a smart city context, the authority
                 provides a web service where to register an application id.</li>
@@ -5872,8 +5846,8 @@
               <li>...</li>
             </ul>
 
-            The Client Credentials flow is illustrated in the following diagram. Notice how the Resource Owner is not
-            present.
+            <p>The Client Credentials flow is illustrated in the following diagram. Notice how the Resource Owner is not
+                present.</p>
 
             <pre>
 +----------+
@@ -5894,16 +5868,16 @@
 |          |                                  +---------------+
 +----------+
 </pre>
-            Comment: Usually client credentials are distributed using an external service which is used by humans to
+            <p>Comment: Usually client credentials are distributed using an external service which is used by humans to
             register a particular application. For example, the `npm` cli has a companion dashboard where a developer
             requests the generation of a token that is then passed to the cli. The token is used to verify the
             publishing process of `npm` packages in the registry. Further examples are Docker cli and OpenId Connect
-            Client Credentials.
+                Client Credentials.</p>
 
-            <p>implicit</p>
-            <b>Deprecated</b>
+            <p><strong>implicit</strong></p>
+            <p><b>Deprecated</b>
             From <a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">OAuth 2.0
-              Security Best Current Practice</a>:
+                Security Best Current Practice</a>:</p>
             <ul>
               <li>
                 In order to avoid these issues, clients SHOULD NOT use the implicit
@@ -5914,17 +5888,14 @@
               </li>
             </ul>
 
-            The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE) instead.
-            <br>
-            The implicit flow was designed for public clients typically implemented inside a browser (i.e. javascript
+            <p>The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE) instead.</p>
+            <p>The implicit flow was designed for public clients typically implemented inside a browser (i.e. javascript
             clients). As the `code` is a redirection-based flow and it requires direct interaction with the resource's
             owner user-agent. However, it requires one less step to obtain a token as it is returned directly in the
-            authentication request (see the diagram below).
-            <br>
-            Considering the WoT context this flow is not particularly different from `code` grant and it can be used
-            in the same scenarios.
-            <br>
-            Comment: even if the `implicit` flow is deprecated existing services may still using it.
+                authentication request (see the diagram below).</p>
+            <p>Considering the WoT context this flow is not particularly different from `code` grant and it can be used
+                in the same scenarios.</p>
+            <p>Comment: even if the `implicit` flow is deprecated existing services may still using it.</p>
 
             <pre>
 +----------+
@@ -5963,10 +5934,10 @@
 
 </pre>
 
-            <p>resource owner password</p>
-            <b>Deprecated</b> From <a
+<p><strong>resource owner password</strong></p>
+            <p><b>Deprecated</b> From <a
               href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">OAuth 2.0 Security
-              Best Current Practice</a>:
+                Best Current Practice</a>:</p>
             <ul>
               <li>The resource owner password credentials grant MUST NOT be used. This
                 grant type insecurely exposes the credentials of the resource owner
@@ -5976,7 +5947,7 @@
                 places other than the AS.</li>
             </ul>
 
-            For completeness the diagram flow is reported below.
+            <p>For completeness the diagram flow is reported below.</p>
 
             <pre>
  +----------+
@@ -6166,34 +6137,37 @@
           <dd>
             All lifecycle contributions and discussion documents are available at:
             <a
-              href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle</a>
+              href="https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle">https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle</a>
             <br>
             <br>
             Documents that were created / discussed in the architecture TF.
             <ul>
               <li>Lifecycle comparisons:
                 <a
-                  href="https://github.com/w3c/wot-architecture/blob/master/proposals/Device-lifecycle-comparisons.pdf">https://github.com/w3c/wot-architecture/blob/master/proposals/Device-lifecycle-comparisons.pdf</a>
+                  href="https://github.com/w3c/wot-architecture/blob/main/proposals/Device-lifecycle-comparisons.pdf">https://github.com/w3c/wot-architecture/blob/main/proposals/Device-lifecycle-comparisons.pdf</a>
               </li>
               <li>Lifecycle states:
                 <a
-                  href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/lifecycle-states.md">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/lifecycle-states.md</a>
+                  href="https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/lifecycle-states.md">https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/lifecycle-states.md</a>
               </li>
               <li>Draft lifecycle diagram:
-                <a
-                  href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20lifecycle%20diagram-WoT%20new%20lifecycle.svg">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20lifecycle%20diagram-WoT%20new%20lifecycle.svg</a>
+                  <a href=
+                  "https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/WoT-lifecycle-diagram.svg">
+                  https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/WoT-lifecycle-diagram.svg</a>
               </li>
               <li>Layered lifecycle:
-                <a
-                  href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20layered%20%20lifecycle%20diagram-WoT%20new%20lifecycle.svg">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/WoT%20layered%20%20lifecycle%20diagram-WoT%20new%20lifecycle.svg</a>
+                 <a href=
+                 "https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/WoT-layered-lifecycle-diagram.svg">
+                     https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/WoT-layered-lifecycle-diagram.svg</a>
               </li>
               <li>System lifecycle:
-                <a
-                  href="https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/unified%20device%20lifecycle.svg">https://github.com/w3c/wot-architecture/blob/master/proposals/lifecycle/unified%20device%20lifecycle.svg</a>
+                <a href=
+                "https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/unified%20device%20lifecycle.svg">
+                https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/unified%20device%20lifecycle.svg</a>
               </li>
               <li>IoT Security Bootstrapping:
                 <a
-                  href="https://github.com/w3c/wot-security/blob/master/presentations/2020-03-16-Bootstrapping%20IoT%20Security%20-%20The%20IETF%20Anima%20and%20OPC-UA%20Recipes.pdf">https://github.com/w3c/wot-security/blob/master/presentations/2020-03-16-Bootstrapping%20IoT%20Security%20-%20The%20IETF%20Anima%20and%20OPC-UA%20Recipes.pdf</a>
+                  href="https://github.com/w3c/wot-security/blob/main/presentations/2020-03-16-Bootstrapping%20IoT%20Security%20-%20The%20IETF%20Anima%20and%20OPC-UA%20Recipes.pdf">https://github.com/w3c/wot-security/blob/main/presentations/2020-03-16-Bootstrapping%20IoT%20Security%20-%20The%20IETF%20Anima%20and%20OPC-UA%20Recipes.pdf</a>
               </li>
           </dd>
         </dl>
@@ -7066,7 +7040,7 @@
         this document.
       </p>
       <p>
-        Special thanks to Kazuyuki Ashimura form the W3C for his continuous help and support
+        Special thanks to Kazuyuki Ashimura from the W3C for the continuous help and support
         of the work of the WoT Use Cases Task Force.
       </p>
 
