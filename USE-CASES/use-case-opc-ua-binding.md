@@ -1,4 +1,4 @@
-## Title: Join Activity for OPC UA Binding 
+## Title: OPC UA and Industry 4.0
 
 ### Submitter(s): 
 
@@ -32,12 +32,14 @@ Micheal McCool, Ryuichi Matsukura, Kunihiko Toumura, Michael Legally, Michael Ko
 
 ### Motivation:
 
-OPC UA is one of the important automation standards for device communication in the factory domain as well as for Industry 4.0 scenarios such as like flexible manufacturing. WoT should support a standardized binding to OPC UA endpoints to enable simple application development such as for cross-domain applications. 
+OPC UA is one of the important automation standards for device communication in today's factory domain as well as for upcoming Industry 4.0 scenarios such as for smart and flexible manufacturing. UA is a platform independent service-oriented architecture that supports different machine to machine communication patterns (e.g., client-server, publish/subscribe) and comes with a core information model, e.g, that defines alarms and state machines, and a set of different companion information models such as for robots and CNC machines. 
+
+In the context of cross-domain applications in the Industrie 4.0 context, such as frequent exchange with suppliers or local infrastructure providers (e.g., power supplier), it is necessary to interact with UA-based and non-UA-based systems. A common and standardized application layer such as WoT is offer may a good solution. For this purpose, a binding template for OPC UA needs to be defined in order to describe UA systems with WoT Thing Descriptions in a common way.
 
 Such a binding needs an own set of OPC UA specific vocabulary definitions which should be developed together with the experts from the OPC Foundation. In the context of the existing [liason](https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/) a joint 
-working group should be established to work together on an OPC UA binding for the Web of Things. This guaranteed that the binding is getting accepted within the OPC UA community as well as in the WoT community and avoids heterogeneous (project specific) definitions and incompatible OPC UA handlings in Thing Descriptions. 
+activity can be established to work together on an OPC UA binding for the Web of Things. This guaranteed that the binding is getting accepted within the OPC UA community as well as in the WoT community and avoids heterogeneous (project specific) definitions and incompatible OPC UA handlings in Thing Descriptions. 
 
-To formalize this process we need an agreement of the W3M and OPC Foundation. A first draft of a joint activity is provided [here](https://github.com/w3c/wot/blob/master/charters/wot-ocpua-2021-charter-draft.md).
+A first draft of a joint activity is provided [here](https://github.com/w3c/wot/blob/master/charters/wot-ocpua-2021-charter-draft.md).
 
 
 ### Expected Devices:
