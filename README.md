@@ -1,6 +1,14 @@
-# W3C Web of Things Interest Group - Use Cases
+# W3C Web of Things Interest Group - Use Case Task Force
+The WoT Use Case task force is responsible for collecting use cases for WoT and extracting requirements. Use cases can include both specific vertical applications and relevant technologies or other horizontal usage patterns. Guests who are not WoT members but who have an interest in specific vertical application domains, technologies, or usage patterns are explicitly invited to engage with this task force to provide input.
 
-This repository includes various use case proposals and a consolidated document based on those proposals.
+If you would like to participate please contact the TF lead Michael.Lagally@oracle.com.
+
+Web conferences and agenda: https://www.w3.org/WoT/IG/wiki/IG_UseCase_WebConf
+
+## Repository Information
+
+All work on the Use Cases document is happening in this repository. 
+It includes various use case proposals and a consolidated document based on those proposals.
 
 Each commit here will sync it to the master, which will expose the content to http://w3c.github.io/wot-usecases/.
 
