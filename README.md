@@ -1,4 +1,10 @@
-# W3C Web of Things Interest Group - Use Case Task Force
+# Web of Things (WoT) Use Cases
+[![Follow on Twitter](https://img.shields.io/twitter/follow/W3C_WoT.svg?label=follow+W3C_WoT)](https://twitter.com/W3C_WoT)
+[![Stack Exchange questions](https://img.shields.io/stackexchange/stackoverflow/t/web-of-things?style=plastic)]( https://stackoverflow.com/questions/tagged/web-of-things)
+
+General information about the Web of Things can be found on https://www.w3.org/WoT/.
+  
+---
 The WoT Use Case task force is responsible for collecting use cases for WoT and extracting requirements. Use cases can include both specific vertical applications and relevant technologies or other horizontal usage patterns. Guests who are not WoT members but who have an interest in specific vertical application domains, technologies, or usage patterns are explicitly invited to engage with this task force to provide input.
 
 If you would like to participate please contact the TF lead Michael.Lagally@oracle.com.
