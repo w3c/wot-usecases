@@ -41,6 +41,7 @@ The operation modes of lighting, air conditioner and security sensor. Reading an
 
 
 ### Description:
+<img src="https://github.com/w3c/wot-usecases/blob/main/images/wot-use-case-echonet.png" alt="echonet use case" />
 
 * Configuration by a device user before starting to use a service
     * A device user logs in the server of a "home management service provider" with which the user has a contract.
