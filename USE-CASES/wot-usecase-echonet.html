@@ -4,87 +4,79 @@
 <dl>
 <dt>Submitter(s)</dt>
 <dd>
-
 Tetsushi Matsuda, Keiichi Teramoto, Takashi Murakami, Morio Hirahara (ECHONET Consortium)
-
 </dd>
+
 <dt>Tracker Issue ID</dt>
 <dd>
-
-
 </dd>
+
 <dt>Category</dt>
 <dd>
-
 vertical (Smart Home)
-
 </dd>
+
 <dt>Class</dt>
 <dd>
-
-
 </dd>
+
 <dt>Status</dt>
 <dd>
-
-
 </dd>
+
 <dt>Target Users</dt>
 <dd>
-
 <ul>
 <li>device user</li>
 <li>service provider (Home Management Service Provider)</li>
 <li>device manufacturer</li>
 </ul>
-
 </dd>
+
 <dt>Motivation</dt>
 <dd>
-
 The purpose of this use case is to improve the usability of home appliances for device users by allowing device users to configure the operation modes of all devices at home without configuring those devices one by one when they leave and come home.
-
 </dd>
+
 <dt>Expected Devices</dt>
 <dd>
-
 Lighting, Air Conditioner, Security Sensor, Smartphone
-
 </dd>
+
 <dt>Expected Data</dt>
 <dd>
-
 The operation modes of lighting, air conditioner and security sensor. Reading and updating those operation modes on demand.
-
 </dd>
+
 <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
 <dd>
-
-
 </dd>
+
 <dt>Description</dt>
 <dd>
 <img src="../images/wot-use-case-echonet.png" alt="echonet use case" />
 
 <ul>
-<li>Configuration by a device user before starting to use a service</li>
+<li>Configuration by a device user before starting to use a service
         <ul>
             <li>A device user logs in the server of a "home management service provider" with which the user has a contract.</li>
             <li>The user specifies the operation modes of lighting, air conditioner and security sensor for the time when the user is out of home, the time when the user comes home and the time when the specified amount of time has passed after the user comes home.</li>
         </ul>
+</li>
 </ul>
 
 <ul>
-<li>When the device user leaves home</li>
+<li>When the device user leaves home
         <ul>
             <li>The device user accesses the server of a "home management service provider" with a smartphone and notifies the server that the user is going to leave home.</li>
             <li>The server updates the operation modes of lighting, air conditioner and security sensor according to the configuration specified by the user for the time when the user is out of home.</li>
             <li>The server reads the operation modes of lighting, air conditioner and security sensor and informs the user's smartphone of those operation modes.</li>
         </ul>
+</li>
 </ul>
 
 <ul>
-<li>When the device user comes home</li>
+<li>When the device user comes home
         <ul>
             <li>The device user accesses the server of a "home management service provider" with a smartphone and notifies the server that the user will return home soon.</li>
             <li>The server updates the operation modes of lighting, air conditioner and security sensor according to the configuration specified by the user for the time when the user comes home.</li>
@@ -92,45 +84,40 @@ The operation modes of lighting, air conditioner and security sensor. Reading an
             <li>When the specified amount of time has passed after the user returns home, the server updates the operation modes of lighting, air conditioner and security sensor according to the configuration specified by the user for the time when the specified amount of time has passed after the user comes home.</li>
             <li>The server reads the operation modes of lighting, air conditioner and security sensor and informs the user's smartphone of those operation modes.</li>
         </ul>
+</li>
 </ul>
-
 </dd>
+
 <dt>Security Considerations</dt>
 <dd>
-
 <ul>
 <li>It is necessary to prevent unauthorized users other than the device user from using the service provided by the home management service provider.</li>
 <li>It is necessary to disallow home management service providers other than the home management service providers permitted by the device user in advance to control devices at the device user's home.</li>
 </ul>
-
 </dd>
+
 <dt>Privacy Considerations</dt>
 <dd>
-
 It is necessary to protect the information on what operations are done on the devices that are controlled or monitored at the device user's home. It is also necessary to protect the information obtained from the devices that are controlled or monitored at the device user's home.
-
 </dd>
+
 <dt>Accessibility Considerations</dt>
 <dd>
-
 User interface provided by a smartphone had better consider accessibility.
-
 </dd>
+
 <dt>Internationalisation (i18n) Considerations</dt>
 <dd>
-
 User interface provided by a smartphone had better support internationalization.
-
 </dd>
+
 <dt>Gaps</dt>
 <dd>
-
 The method for controlling multiple devices in an orchestrated manner is dependent on the implementation of a client application in the current WoT specification. That is a reasonable design choice. However, the orchestrated control of multiple devices needs to be implemented by each client application even if the same control is done by multiple client applications.
-
 </dd>
+
 <dt>Existing standards</dt>
 <dd>
-
 ECHONET Lite (https://echonet.jp/spec_v113_lite_en/ ) and ECHONET Lite Web API Guideline (https://echonet.jp/web_api/ in Japanese ).
 </dd>
 </dl>
