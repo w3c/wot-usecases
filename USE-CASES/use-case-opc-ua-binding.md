@@ -1,4 +1,4 @@
-## Title: OPC UA and Industry 4.0
+## Title: Industry 4.0
 
 ### Submitter(s): 
 
@@ -31,6 +31,8 @@ Micheal McCool, Ryuichi Matsukura, Kunihiko Toumura, Michael Legally, Michael Ko
 - directory service operator
 
 ### Motivation:
+Industry 4.0 is the next generation of manufacturing to increase efficiency, flexibility, and productivity.  
+
 
 OPC UA is one of the important automation standards for device communication in today's factory domain as well as for upcoming Industry 4.0 scenarios such as for smart and flexible manufacturing. UA is a platform independent service-oriented architecture that supports different machine to machine communication patterns (e.g., client-server, publish/subscribe) and comes with a core information model, e.g, that defines alarms and state machines, and a set of different companion information models such as for robots and CNC machines. 
 
