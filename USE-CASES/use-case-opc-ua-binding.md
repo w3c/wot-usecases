@@ -59,8 +59,7 @@ none
 
 ### Requirements:
 
-An OPC UA binding for Web of Things needs an own set of OPC UA specific vocabulary definitions which should be developed together with the experts from the OPC Foundation. In the context of the existing [liason](https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/) a joint activity can be established to work together on an OPC UA binding for the Web of Things. This guaranteed that the binding is getting accepted within the OPC UA community as well as in the WoT community and avoids heterogeneous (project specific) definitions and incompatible OPC UA handlings in Thing Descriptions. 
-
+An OPC UA binding for Web of Things needs an own set of OPC UA specific vocabulary definitions which should be developed together with the experts from the OPC Foundation. Also see the [liason](https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/).
  
 
 
