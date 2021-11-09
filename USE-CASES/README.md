@@ -68,7 +68,7 @@ Health Notifiers.
 Monitoring production lines and plants and predicting and preventing fault conditions. 
 
 
-OPC UA binding to connect WoT-based application to OPC UA endpoints. [use-case-opc-ua-binding.md](use-case-opc-ua-binding.md)
+Industry 4.0 scenarios which include innteractions to OPC UA endpoints. [use-case-opc-ua-binding.md](use-case-opc-ua-binding.md)
 
 
 ### Multi-Vendor System Integration 
