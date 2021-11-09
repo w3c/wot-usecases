@@ -45,7 +45,7 @@ There are some experiences of OPC-UA bindings in prevois WoT PlugFests and there
 ### Description
 A bottling line consists of a filling module (switchable between 2 fillers and 4 fillers), a capping module, a labeling module, and a transport system. The production line is provided via an OPC-UA endpoint for control and monitoring purposes.
 
-![image](https://user-images.githubusercontent.com/13832739/140924055-3c62fd76-22fe-47e3-9961-9a929cb31418.png)
+![image](https://user-images.githubusercontent.com/13832739/140924270-9ca88444-f48c-4978-b26b-ae5bf83303e8.png)
 
 In the context of enhancing productivity and sustainability, the goal is to operate the bottling line in such a way that production is further increased when sufficient or surplus renewable energy is available. 
 
