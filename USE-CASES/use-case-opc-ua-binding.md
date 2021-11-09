@@ -42,6 +42,22 @@ Typically automation devices or server endpoints that are able to host an OPC UA
 There are some experiences of OPC-UA bindings in prevois WoT PlugFests and there is a sample binding implementation in [node-wot](https://github.com/eclipse/thingweb.node-wot/). However, there needs an official formal definition how the forms in Thing Description have to be dessigend to describe OPC-UA endpoints. In that context an official OPC-UA Binding Note document schould be developed that can be used as official reference to design Thing Descriptions for OPC-UA use cases. 
 
 
+### Description
+A bottling line consists of a filling module (switchable between 2 fillers and 4 fillers), a capping module, a labeling module, and a transport system. The production line is provided via an OPC-UA endpoint for control and monitoring purposes.
+
+![image](https://user-images.githubusercontent.com/13832739/140924055-3c62fd76-22fe-47e3-9961-9a929cb31418.png)
+
+In the context of enhancing productivity and sustainability, the goal is to operate the bottling line in such a way that production is further increased when sufficient or surplus renewable energy is available. 
+
+The backend system requests frequently a Smart Grid endpoint (via HTTP) how the current power production is and how much renewable energy is produced. 
+
+Based on the bottling line's current power consumption, which is measured via Modbus, the backend system decides to increase productivity when surplus renewable energy is available.
+
+In doing so, the backend system interacts via OPC-UA to release the 4 fillers of the filling module and increases the speed of the transport system.
+
+If the backend system detects that less renewable energy is being produced, it will initiate standard production and reduce the transport speed and return the 2 fillers of the filling module.
+
+
 ### Security Considerations:
 
 OPC-UA has different security modes (sign and/or encrypted, policies, and authentication). Those should be addressed and described in Thing Descriptions with a standardized vocabulary definition. 
