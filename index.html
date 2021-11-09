@@ -284,6 +284,12 @@
           date: "April 2019",
           publisher: "Open Connectivity Foundation"
         },
+        "ECLASS": {
+          title: "ECLASS Standard",
+          href: "https://www.eclass.eu/",
+          date: "April 2019",
+          publisher: "ECLASS e.V."
+        },
       }
     };
   </script>
@@ -3880,6 +3886,7 @@
           Vehicles (human driven, self-driving, isolated or part of fleet).
           Connected vehicles (cars, ships, airplanes, trains, buses etc).
           Devices needed for cargo.
+
         </dd>
         <dt>Expected Data</dt>
         <dd>
@@ -6941,58 +6948,97 @@
           <h2>New Building Blocks</h2>
         </section>
       </section>
-    </section>
     -->
+  </section>
 
-    <!-- Acknowledgements -->
+  <!-- Liaisons -->
 
-    <section id="acknowledgements" class="appendix normative">
-      <h1>Acknowledgments</h1>
+  <section id="liaisons" class="appendix">
 
-      <p>Special thanks to all authors of use case descriptions (in alphabetical order) for their contributions to this
-        document:
-      <ul>
-        <li>Shinya Abe (NHK)</li>
-        <li>Cristiano Aguzzi (University of Bologna)</li>
-        <li>Kaz Ashimura (W3C)</li>
-        <li>Raúl García Castro (Universidad Politécnica de Madrid)</li>
-        <li>Jean-Pierre Chanet (INRAE, France)</li>
-        <li>Edison Chung (MINES St. Etienne)</li>
-        <li>Andrea Cimmino (Universidad Politécnica de Madrid)</li>
-        <li>Hiroki Endo (NHK)</li>
-        <li>David Ezell (Conexxus)</li>
-        <li>Hiroshi Fujisawa (NHK)</li>
-        <li>Christian Glomb (Siemens)</li>
-        <li>Morio Hirahara (ECHONET Consortium)</li>
-        <li>Masaya Ikeo (NHK)</li>
-        <li>Sebastian Käbisch (Siemens)</li>
-        <li>Takuki Kamiya (Fujitsu)</li>
-        <li>Zoltan Kis (Intel)</li>
-        <li>Ege Korkan (Siemens)</li>
-        <li>Michael Lagally (Oracle)</li>
-        <li>Jennifer Lin (GovTech Singapore)</li>
-        <li>Tetsushi Matsuda (ECHONET Consortium)</li>
-        <li>Ryuichi Matsukura (Fujitsu)</li>
-        <li>Michael McCool (Intel)</li>
-        <li>Takashi Murakami (ECHONET Consortium)</li>
-        <li>Hervé Pruvost (Fraunhofer IIS EAS)</li>
-        <li>Catherine Roussey (INRAE, France)</li>
-        <li>Georg Ferdinand Schneider (Schaeffler Technologies)</li>
-        <li>Rob Smith (Awayteam)</li>
-        <li>Farshid Tavakolizadeh (Fraunhofer)</li>
-        <li>Keiichi Teramoto (ECHONET Consortium)</li>
-      </ul>
+    <h1>Liasons</h1>
+    <p>
+      The Web of Things standardization initiative has liaisons with several other SDOs
+      and collaborates on common use cases and alignment of terminology.
+    </p>
+    <p>
+      The following section is not exhaustive, it describes the current status,
+      and additional liaisons are under consideration.
+    </p>
+
+    <section id="itu-t">
+      <h2>ITU-T SG20 (Kaz/McCool/Sebastian)</h2>
+      <section id="liaison-1" class="ednote">
+        TODO: Describe any gaps that are not addressed in the current WoT work
+        items.
+      </section>
+    </section>
+
+    <section id="ogc">
+      <h2>OGC and IEEE P2874 (McCool)</h2>
+      <section id="liaison-2" class="ednote">
+        TODO: Describe any gaps that are not addressed in the current WoT work
+        items.
+      </section>
+    </section>
+
+    <section id="echonet">
+      <h2>ECHONET (Kaz)</h2>
+      <section id="liaison-3" class="ednote">
+        TODO: Brief description of liaised SDO, work areas.
+        Scope of the collaboration.
+        Provide Website link.
+      </section>
+    </section>
+
+    <section id="eclass">
+      <h2>ECLASS</h2>
+      <p>
+        ECLASS has established itself as worldwide reference-data standard 
+        for the classification and unambiguous description of products and services. 
       </p>
       <p>
-        Many thanks to the W3C staff and all other active Participants of the W3C Web
-        of Things Interest Group (WoT IG) and Working Group (WoT WG) for their
-        support, technical input and suggestions that led to improvements to
-        this document.
+        The [[ECLASS]] e.V. association is currently
+        working on a RDF transformation of the ECLASS Standard
+        focusing the W3C WoT Standard.
+      </p>
+    </section>
+
+    <section id="opc-foundation">
+      <h2>OPC Foundation (Sebastian)</h2>
+      <p>
+        OPC UA is one of the important automation standards for device communication
+        in the factory domain as well as for Industry 4.0 scenarios such as like
+        flexible manufacturing.
+      </p>
+      <p>WoT should support a standardized binding to OPC UA endpoints
+        to enable simple application development such as for cross-domain applications.
       </p>
       <p>
-        Special thanks to Kazuyuki Ashimura from the W3C for the continuous help and support
-        of the work of the WoT Use Cases Task Force.
+        Such a binding needs an own set of OPC UA specific vocabulary definitions
+        which should be developed together with the experts from the OPC Foundation.
+      <p>
+        This guarantees that the binding is getting accepted within the OPC UA community
+        as well as in the WoT community and avoids heterogeneous (project specific)
+        definitions and incompatible OPC UA handlings in Thing Descriptions.
       </p>
+    </section>
+
+    <section id="iso-tc184">
+      <h2>ISO TC184/SC4 (Sebastian/Kaz)</h2>
+      <section id="liaison-5" class="ednote">
+        TODO: Brief description of liaised SDO, work areas.
+        Scope of the collaboration.
+        Provide Website link.
+      </section>
+    </section>
+
+    <section id="edgex">
+      <h2>EdgeX (McCool)</h2>
+      <section id="liaison-6" class="ednote">
+        TODO: Brief description of liaised SDO, work areas.
+        Scope of the collaboration.
+        Provide Website link.
+      </section>
 
       <p style="display: none;">
         <!-- This is a hack to make sure the local references are included in the informative reference section 
@@ -7033,10 +7079,99 @@
         [[?OCF]]
       </p>
     </section>
+  </section>
+  <!-- Acknowledgements -->
+
+  <section id="acknowledgements" class="appendix normative">
+    <h1>Acknowledgments</h1>
+
+    <p>
+      Many thanks to the W3C staff and all other active Participants of the W3C Web
+      of Things Interest Group (WoT IG) and Working Group (WoT WG) for their
+      support, technical input and suggestions that led to improvements to
+      this document.
+    </p>
+
+    <p>Special thanks to all authors of use case descriptions (in alphabetical order) for their contributions to this
+      document:
+    <ul>
+      <li>Shinya Abe (NHK)</li>
+      <li>Cristiano Aguzzi (University of Bologna)</li>
+      <li>Kaz Ashimura (W3C)</li>
+      <li>Raúl García Castro (Universidad Politécnica de Madrid)</li>
+      <li>Jean-Pierre Chanet (INRAE, France)</li>
+      <li>Edison Chung (MINES St. Etienne)</li>
+      <li>Andrea Cimmino (Universidad Politécnica de Madrid)</li>
+      <li>Hiroki Endo (NHK)</li>
+      <li>David Ezell (Conexxus)</li>
+      <li>Hiroshi Fujisawa (NHK)</li>
+      <li>Christian Glomb (Siemens)</li>
+      <li>Morio Hirahara (ECHONET Consortium)</li>
+      <li>Masaya Ikeo (NHK)</li>
+      <li>Sebastian Käbisch (Siemens)</li>
+      <li>Takuki Kamiya (Fujitsu)</li>
+      <li>Zoltan Kis (Intel)</li>
+      <li>Ege Korkan (Siemens)</li>
+      <li>Michael Lagally (Oracle)</li>
+      <li>Jennifer Lin (GovTech Singapore)</li>
+      <li>Tetsushi Matsuda (ECHONET Consortium)</li>
+      <li>Ryuichi Matsukura (Fujitsu)</li>
+      <li>Michael McCool (Intel)</li>
+      <li>Takashi Murakami (ECHONET Consortium)</li>
+      <li>Hervé Pruvost (Fraunhofer IIS EAS)</li>
+      <li>Catherine Roussey (INRAE, France)</li>
+      <li>Georg Ferdinand Schneider (Schaeffler Technologies)</li>
+      <li>Rob Smith (Awayteam)</li>
+      <li>Farshid Tavakolizadeh (Fraunhofer)</li>
+      <li>Keiichi Teramoto (ECHONET Consortium)</li>
+    </ul>
+    <p>
+      Special thanks to Dr. Kazuyuki Ashimura from the W3C for the continuous help and support
+      of the work of the WoT Use Cases Task Force.
+    </p>
+  </section>
+
+  <p style="display: none;">
+    <!-- This is a hack to make sure the local references are included in the informative reference section 
+    The proper solution is to replace the occurences with the proper Specref ids.
+    This should be done for the next published version -->
+    [JSON-SCHEMA]
+    [ISO-6709]
+    [Hybridcast]
+    [NMEA]
+    [WGS84]
+    [Basic Geo Vocabulary]
+    [W3C Geolocalization API]
+    [Open Geospatial Consortium]
+    [ISO19111]
+    [SSN]
+    [Timestamps]
+    [MMI UC3.1]
+    [MMI UC3.2]
+    [ICE F2761-09(2013)]
+    [OpenICE]
+    [MDIRA]
+    [MQTT]
+    [OPC UA]
+    [BACnet]
+    [CoAP]
+    [MMI UC5.1]
+    [MMI UC5.2]
+    [MMI UC1.1]
+    [MMI UC1.2]
+    [MMI UC2.1]
+    [IEC 61850]
+    [IEEE 1574]
+    [KNX]
+    [Modbus]
+    [OGC Sensor Things]
+    [OneM2M]
+    [LWM2M]
+    [OCF]
+  </p>
 
 
-
-    <!--
+  <!--
     <section id="references" class="appendix">
       <h2 id="a-references"><bdi class="secno">A.</bdi>
         References<a class="self-link" aria-label="§" href="#references"></a></h2>
@@ -7221,10 +7356,9 @@
         </dl>
       </section>
     </section>
-    -->
-    <!--
-Domains from the 1.0 UC document 
-                
+
+      Domains from the 1.0 UC document 
+         
                 <section id="domain-home_automation">
                         <h3>Domain: home automation</h3>
                         <section id="building-automation">
@@ -7282,7 +7416,6 @@ Domains from the 1.0 UC document
                 <section id="domain-other">
                         <h3>Domain: other</h3>
                         <section id="device-management">
-                        </section>
       </section-->
 </body>
 
