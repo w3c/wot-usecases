@@ -36,15 +36,10 @@ Industry 4.0 is associated with next generation of manufacturing to increase eff
 
 ### Expected Devices:
 
-Typically automation devices that are able to host an OPC UA server (controller, gateways / edges, etc). 
+Typically automation devices or server endpoints that are able to host an OPC UA server (controller, gateways / edges, etc). 
 
 ### Dependencies - Affected WoT deliverables and/or work items:
-OPC UA is one of the important automation standards for device communication in today's factory domain as well as for upcoming Industry 4.0 scenarios such as for smart and flexible manufacturing. UA is a platform independent service-oriented architecture that supports different machine to machine communication patterns (e.g., client-server, publish/subscribe) and comes with a core information model, e.g, that defines alarms and state machines, and a set of different companion information models such as for robots and CNC machines. 
-
-Such a binding needs an own set of OPC UA specific vocabulary definitions which should be developed together with the experts from the OPC Foundation. In the context of the existing [liason](https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/) a joint 
-activity can be established to work together on an OPC UA binding for the Web of Things. This guaranteed that the binding is getting accepted within the OPC UA community as well as in the WoT community and avoids heterogeneous (project specific) definitions and incompatible OPC UA handlings in Thing Descriptions. 
-
-To start this joint activity the work needs to be agreed by the W3M and OPC Foundation. 
+There are some experiences of OPC UA bindings in prevois WoT PlugFests and there is a sample binding implementation in [node-wot](https://github.com/eclipse/thingweb.node-wot/). However, there needs an official formal definition how the forms in Thing Description have to be dessigend to describe OPC UA endpoints. In that context an official OPC UA Binding Note document schould be developed that can be used as official reference to design Thing Descriptions for OPC UA use cases. 
 
 ### Security Considerations:
 
@@ -64,7 +59,7 @@ none
 
 ### Requirements:
 
-To formalize this process we need an agreement of the W3M and OPC Foundation. In addition a joint charter is required.  
+An OPC UA binding for Web of Things needs an own set of OPC UA specific vocabulary definitions which should be developed together with the experts from the OPC Foundation. In the context of the existing [liason](https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/) a joint activity can be established to work together on an OPC UA binding for the Web of Things. This guaranteed that the binding is getting accepted within the OPC UA community as well as in the WoT community and avoids heterogeneous (project specific) definitions and incompatible OPC UA handlings in Thing Descriptions. 
 
  
 
