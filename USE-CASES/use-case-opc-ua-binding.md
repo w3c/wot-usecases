@@ -39,11 +39,12 @@ Industry 4.0 is associated with next generation of manufacturing to increase eff
 Typically automation devices or server endpoints that are able to host an OPC UA server (controller, gateways / edges, etc). 
 
 ### Dependencies - Affected WoT deliverables and/or work items:
-There are some experiences of OPC UA bindings in prevois WoT PlugFests and there is a sample binding implementation in [node-wot](https://github.com/eclipse/thingweb.node-wot/). However, there needs an official formal definition how the forms in Thing Description have to be dessigend to describe OPC UA endpoints. In that context an official OPC UA Binding Note document schould be developed that can be used as official reference to design Thing Descriptions for OPC UA use cases. 
+There are some experiences of OPC-UA bindings in prevois WoT PlugFests and there is a sample binding implementation in [node-wot](https://github.com/eclipse/thingweb.node-wot/). However, there needs an official formal definition how the forms in Thing Description have to be dessigend to describe OPC-UA endpoints. In that context an official OPC-UA Binding Note document schould be developed that can be used as official reference to design Thing Descriptions for OPC-UA use cases. 
+
 
 ### Security Considerations:
 
-OPC UA has different security modes (sign and/or encrypted, policies, and authentication). Those should be addressed and described in Thing Descriptions with a standardized vocabulary definition. 
+OPC-UA has different security modes (sign and/or encrypted, policies, and authentication). Those should be addressed and described in Thing Descriptions with a standardized vocabulary definition. 
 
 ### Privacy Considerations:
 
@@ -59,7 +60,7 @@ none
 
 ### Requirements:
 
-An OPC UA binding for Web of Things needs an own set of OPC UA specific vocabulary definitions which should be developed together with the experts from the OPC Foundation. Also see the [liason](https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/).
+An OPC UA binding for Web of Things needs an own set of OPC-UA specific vocabulary definitions which should be developed together with the experts from the OPC Foundation. Also see the [liason](https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/).
  
 
 
