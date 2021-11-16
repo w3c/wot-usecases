@@ -1,4 +1,4 @@
-## Title:Cross-protocol Interaction in Industry 4.0 Scenarios
+## Title: Cross-protocol Interaction in Industry 4.0 Scenarios
 
 ### Submitter(s): 
 
