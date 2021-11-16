@@ -6,7 +6,7 @@ Sebastian Kaebisch
 
 ### Reviewer(s):
 
-Micheal McCool, Ryuichi Matsukura, Kunihiko Toumura, Michael Legally, Michael Koster
+Michael McCool, Ryuichi Matsukura, Kunihiko Toumura, Michael Legally, Michael Koster
 
 ### Tracker Issue ID:
 
@@ -39,7 +39,7 @@ Industry 4.0 is associated with next generation of manufacturing to increase eff
 Typically automation devices or server endpoints that are able to host an OPC UA server (controller, gateways / edges, etc). 
 
 ### Dependencies - Affected WoT deliverables and/or work items:
-There are some experiences of OPC-UA bindings in prevois WoT PlugFests and there is a sample binding implementation in [node-wot](https://github.com/eclipse/thingweb.node-wot/). However, there needs an official formal definition how the forms in Thing Description have to be dessigend to describe OPC-UA endpoints. In that context an official OPC-UA Binding Note document schould be developed that can be used as official reference to design Thing Descriptions for OPC-UA use cases. 
+There are some experiences of OPC-UA bindings in previous WoT PlugFests and there is a sample binding implementation in [node-wot](https://github.com/eclipse/thingweb.node-wot/). However, there needs to be a formal definition to map the interaction affordances of a TD to OPC-UA. In that context an official OPC-UA Binding Note document schould be developed that can be used as official reference to design Thing Descriptions for OPC-UA use cases. 
 
 
 ### Description
@@ -49,7 +49,7 @@ A bottling line consists of a filling module (switchable between 2 fillers and 4
 
 In the context of enhancing productivity and sustainability, the goal is to operate the bottling line in such a way that production is further increased when sufficient or surplus renewable energy is available. 
 
-The backend system requests frequently a Smart Grid endpoint (via HTTP) how the current power production is and how much renewable energy is produced. 
+The backend system checks periodically a Smart Grid endpoint (via HTTP) how the current power production is and how much renewable energy is produced. 
 
 Based on the bottling line's current power consumption, which is measured via Modbus, the backend system decides to increase productivity when surplus renewable energy is available.
 
