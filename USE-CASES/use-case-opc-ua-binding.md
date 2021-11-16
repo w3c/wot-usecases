@@ -64,7 +64,7 @@ OPC-UA has different security modes (sign and/or encrypted, policies, and authen
 
 ### Privacy Considerations:
 
-See security.
+OPC-UA comes with different approaches to protect data (also see Security Considerations above).
 
 ### Accessibility Considerations:
 
@@ -72,7 +72,7 @@ none
 
 ### Internationalisation (i18n) Considerations:
 
-none
+OPU-UA data model contains some places to provide human-readable text (e.g., browse name). This should be also reflected in the Thing Description with the correct language context. 
 
 ### Requirements:
 
