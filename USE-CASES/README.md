@@ -65,7 +65,10 @@ Health Notifiers.
 
 ### Manufacturing
 Monitoring production lines and plants and predicting and preventing fault conditions. 
-[big-data.md](big-data.md)
+
+
+Industry 4.0 scenarios which include innteractions to OPC UA endpoints. [use-case-opc-ua-binding.md](use-case-opc-ua-binding.md)
+
 
 ### Multi-Vendor System Integration 
 Out of the box interoperability of devices.
