@@ -1,0 +1,144 @@
+<section id="use-case-template">
+<h2>Retail Inventory and Equipment Management with ECLASS Semantics</h2>
+<dl>
+
+<dt>Submitter(s)</dt>
+<dd>
+Christian Block, Sebastian K&auml;bisch
+
+</dd>
+<dt>Reviewer(s)</dt>
+<dd>
+
+David Ezell
+
+</dd>
+<dt>Tracker Issue ID</dt>
+<dd>
+
+&lt;please leave blank&gt;
+
+</dd>
+<dt>Category</dt>
+  Retail
+<dd>
+
+vertical
+
+</dd>
+<dt>Class</dt>
+<dd>
+
+&lt;please leave blank&gt;
+
+</dd>
+<dt>Status</dt>
+<dd>
+
+&lt;please leave blank&gt;
+
+</dd>
+<dt>Target Users</dt>
+<dd>
+
+<ul>
+<li>Sales representative</li>
+<li>Buyer</li>
+<li>device owners</li>
+<li>device user</li>
+<li>service provider</li>
+<li>device manufacturer</li>
+<li>gateway manufacturer</li>
+<li>network operator (potentially transparent for WoT use cases)</li>
+</ul>
+
+</dd>
+<dt>Motivation</dt>
+<dd>
+Every product has a supplier and buyer. To bring the two together, both the product description and the requirements must be exchanged. Ideally, these should be transferred in a standardized way to enable mapping as well as search and find.<br>
+Furthermore, each product has a limited lifetime. The replacement and especially the fast and correct replacement of components is of high importance for efficient operation, e.g. of production, but also in the area of buildings, cities, farming, etc..<br>
+IoT not only supports the increase in efficiency through general data exchange in the networking among each other. IoT also enables the procurement of new items as well as spare parts. A detailed product description in online plattforms and the device itself makes it possible to search the IoT for required or equivalent components.<br>
+The Web of Things may help to exchange and look up the relevant product classification as well as product description.
+
+</dd>
+<dt>Expected Devices</dt>
+<dd>
+Each device from each domain.
+
+</dd>
+<dt>Expected Data</dt>
+<dd>
+To cover the case of retail as well as purchasing and sales, product master data has to be exchanged. 
+
+</dd>
+<dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+<dd>
+
+&lt;List the affected WoT deliverables that have to be changed to enable this use case&gt;
+Thing Model: Define a standardized way to bind standardized product master data including a structured form.
+
+</dd>
+<dt>Description</dt>
+<dd>
+
+Device trading is a crucial and economic factor in our daily lives. Automated trading in particular will increase in the context of IoT. In order for products to be findable, they must be well described. In order to compare products, the product descriptions must be uniform. At the very least, the same classification systems must be used. Especially in automated commerce, the machine interpretability of used properties is of high importance. This applies to the classical new acquisition of complete devices, components and also services from catalogs. But also the search and find of items already on the market or find needed services.
+
+<p>#### Variants:</p>
+
+Possible use case variants are:
+<ul>
+<li>Initial purchase incl. search and find in online shops</li>
+<li>Automatic spare part procurement</li>
+<li>Finding available components that can be used temporary. These can be rented at short notice, for example.</li>
+<li>Service provision</li>
+<li>Offering a specific function through a device which can be soled</li>
+</ul>
+
+</dd>
+<dt>Security Considerations</dt>
+<dd>
+none
+
+</dd>
+<dt>Privacy Considerations</dt>
+<dd>
+none
+
+</dd>
+<dt>Accessibility Considerations</dt>
+<dd>
+none
+
+</dd>
+<dt>Internationalisation (i18n) Considerations</dt>
+<dd>
+Internationalization is a very importnat toipic in this use case. Data must initially be maintained by humans. For this purpose, corresponding translations for characteristics and classes must be available, which are used to create the master data and to interpret the data. But also a machine-interpretable evaluation of the values is important.
+
+</dd>
+<dt>Requirements</dt>
+<dd>
+It is necessary to define a common way to define retail data in the WoT Thing Description or define Templates for each asset Type.
+
+</dd>
+<dt>Gaps</dt>
+<dd>
+There is no standardized semantic and vocabulary for product meta and master data as well as the InteractionAffordance.
+
+</dd>
+<dt>Existing standards</dt>
+<dd>
+The ECLASS Standard contains tens of thousands of product classes and unique properties. This lets you standardize procurement, storage, production, and distribution activities in and between companies - across sectors, countries and languages. Realize sales potentials and new synergies, reduce costs, and increase the efficiency of your merchandise and data management. <a href="https://www.eclass.eu/en">Get moren information about the ECLASS Standard on the website eclass.eu .</a>
+</dd>
+<dt>Comments</dt>
+<dd>
+The ECLASS association manages the ECLASS Standard and is currently working on an RDF representation of the dictionary to use it in WoT Thig Description.
+</dd>
+<dt>Other standards</dt>
+<dd>
+GS1
+</dd>
+  <dd>
+W3C Dataset Exchange Working Group (DXWG), data catalog
+</dd>
+  </dl>
+</section>
