@@ -60,7 +60,7 @@ If the backend system detects that less renewable energy is being produced, it w
 
 ### Security Considerations:
 
-OPC-UA has different security modes (sign and/or encrypted, policies, and authentication). Those should be addressed and described in Thing Descriptions with a standardized vocabulary definition. 
+OPC-UA has different security modes (sign and/or encrypted, policies, and authentication). Those should be addressed and described in Thing Descriptions with a standardized vocabulary definition. Additional security considerations may apply if a web bridge is created using WoT servients. OT networks are often isolated and OPC-UA may have special requirements for distribution of key materials and credentials.
 
 ### Privacy Considerations:
 
@@ -76,7 +76,7 @@ OPU-UA data model contains some places to provide human-readable text (e.g., bro
 
 ### Requirements:
 
-An OPC UA binding for Web of Things needs an own set of OPC-UA specific vocabulary definitions which should be developed together with the experts from the OPC Foundation. Also see the [liason](https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/).
+An OPC UA binding for Web of Things needs an own set of OPC-UA specific vocabulary definitions which should be developed together with the experts from the OPC Foundation. Also see the [liaison](https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/).
  
 
 
