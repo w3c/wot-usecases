@@ -4819,171 +4819,226 @@
 
     <section id="digital-twin">
       <h2>Digital Twin</h2>
-      <dl>
+      <section id="digital-twin-1">
+        <h2>Digital Twin 1</h2>
+        <dl>
 
-        <dt>Submitter(s)</dt>
-        <dd>
+          <dt>Submitter(s)</dt>
+          <dd>
 
-          Michael Lagally
+            Michael Lagally
 
-        </dd>
-        <dt>Target Users</dt>
-        <dd>
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
 
-          Device owners, cloud provider.
+            Device owners, cloud provider.
 
-        </dd>
-        <dt>Motivation</dt>
-        <dd>
-          <p>
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+            <p>
             A digital twin is the virtual representation of a physical asset such as a machine, a vehicle, robot,
             sensor.
             Using a digital twin allows businesses to analyze their physical assets to troubleshoot in real time,
             predict future problems, minimize downtime, and perform simulations to create new business opportunities.
-          </p>
-          <p>
+            </p>
+           <p>
             A digital twin may also be called a twin or a shadow. Digital twin technology may be referred to as device
             virtualization.
-          </p>
-          <p>
+            </p>
+            <p>
             Digital twins can be located in the edge or in the cloud.
-          </p>
-        </dd>
-        <dt>Expected Devices</dt>
-        <dd>
-          <p>
+            </p>
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+            <p>
             Various devices such as sensors, machines, vehicles, production lines, industry robots.
-          </p>
-          <p>
+            </p>
+            <p>
             Digital twin platforms at the edge or in the cloud.
-          </p>
-        </dd>
-        <dt>Expected Data</dt>
-        <dd>
+            </p>
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
 
           Machine status information, discrete sensor data or data streams.
 
-        </dd>
-        <dt>Dependencies</dt>
-        <dd>
+          </dd>
+          <dt>Dependencies</dt>
+          <dd>
 
-          <ul>
-            <li>WoT Architecture </li>
-            <li>WoT Thing Description </li>
-            <li>WoT Profile </li>
-            <li>WoT Scripting? </li>
-          </ul>
+           <ul>
+              <li>WoT Architecture </li>
+              <li>WoT Thing Description </li>
+              <li>WoT Profile </li>
+              <li>WoT Scripting? </li>
+           </ul>
 
-        </dd>
-        <dt>Description</dt>
-        <dd>
+          </dd>
+          <dt>Description</dt>
+          <dd>
 
           The user benefits from using digital twins with the following scenarios:
 
-          <ul>
-            <li>Better visibility: Continually view the operations of the machines or devices, and the status of
+            <ul>
+              <li>Better visibility: Continually view the operations of the machines or devices, and the status of
               their interconnected systems.</li>
-          </ul>
+            </ul>
 
-          <ul>
-            <li>Accurate prediction: Retrieve the future state of the machines from the digital twin model by using
+            <ul>
+              <li>Accurate prediction: Retrieve the future state of the machines from the digital twin model by using
               modeling.</li>
-          </ul>
+            </ul>
 
-          <ul>
-            <li>What-if analysis: Easily interact with the model to simulate unique machine conditions and perform
+            <ul>
+              <li>What-if analysis: Easily interact with the model to simulate unique machine conditions and perform
               what-if analysis using well-designed interfaces.</li>
-          </ul>
+            </ul>
 
-          <ul>
-            <li>Documentation and communication: Use of the digital twin model helps to understand, document, and
+            <ul>
+              <li>Documentation and communication: Use of the digital twin model helps to understand, document, and
               explain the behavior of a specific machine or a collection of machines.</li>
-          </ul>
+            </ul>
 
-          <ul>
-            <li>Integration of disparate systems: Connect with back-end applications related to supply chain
+            <ul>
+              <li>Integration of disparate systems: Connect with back-end applications related to supply chain
               operations such as manufacturing, procurement, warehousing, transportation, or logistics.</li>
-          </ul>
+            </ul>
 
-        </dd>
-        <dt>Variants</dt>
-        <dd>
-          <dl>
-            <dt>Virtual Twin</dt>
-            <dd>
-              <p>
+          </dd>
+          <dt>Variants</dt>
+          <dd>
+            <dl>
+              <dt>Virtual Twin</dt>
+              <dd>
+                <p>
                 The virtual twin is a representation of a physical device or an asset. A virtual twin uses a model that
                 contains observed and desired attribute values and also uses a semantic model of the behavior of the
                 device.
-              </p>
-              <p>
+                </p>
+                <p>
                 Intermittent connectivity: An application may not be able to connect to the physical asset. In such a
                 scenario, the application must be able to retrieve the last known status and to control the operation
                 states of other assets.
-              </p>
-              <p>
+                </p>
+                <p>
                 Protocol abstraction: Typically, devices use a variety of protocols and methods to connect to the IoT
                 network. From a users perspective this complexity should not affect other business applications such as
                 an
                 enterprise resource planning (ERP) application.
-              </p>
-              <p>
+                </p>
+                <p>
                 Business rules: The user can specify the normal operating range of a property in a semantic model.
                 Business rules can be declaratively defined and actions can be automatically invoked in the edge or on
                 the
                 device.
-              </p>
-              <p>
+                </p>
+                <p>
                 Example: In a fleet of connected vehicles, the user monitors a collection of operating parameters, such
                 as
                 fuel level, location, speed and others. The semantics-based virtual twin model enables the user to
                 decide
                 whether the operating parameters are in normal range. In out of range conditions the user can take
                 appropriate actions.
-              </p>
-            </dd>
+                </p>
+              </dd>
 
-            <dt>Predictive Twin</dt>
-            <dd>
-              <p>
+              <dt>Predictive Twin</dt>
+              <dd>
+                <p>
                 In a predictive twin, the digital twin implementation builds an analytical or statistical model for
                 prediction by using a machine-learning technique. It need not involve the original designers of the
                 machine. It is different from the physics-based models that are static, complex, do not adapt to a
                 constantly changing environment, and can be created only by the original designers of the machine.
-              </p>
-              <p>
+                </p>
+                <p>
                 A data analyst can easily create a model based on external observation of a machine and can develop
                 multiple models based on the user’s needs.
                 The model considers the entire business scenario and generates contextual data for analysis and
                 prediction.
-              </p>
-              <p>
+                </p>
+                <p>
                 When the model detects a future problem or a future state of a machine, the user can prevent or prepare
                 for them.
                 The user can use the predictive twin model to determine trends and patterns from the contextual machine
                 data. The model helps to address business problems.
-              </p>
-            </dd>
+                </p>
+              </dd>
 
-            <dt>Twin Projections</dt>
-            <dd>
-              <p>
+              <dt>Twin Projections</dt>
+              <dd>
+                <p>
                 In twin projections, the predictions and the insights integrate with back-end business applications,
                 making IoT an integral part of business processes.
                 When projections are integrated with a business process, they can trigger a remedial business workflow.
-              </p>
-              <p>
+                </p>
+                <p>
                 Prediction data offers insights into the operations of machines. Projecting these insights into the
                 back-end applications infrastructure enables business applications to interact with the IoT system and
                 transform into intelligent systems.
-              </p>
-            </dd>
+                </p>
+              </dd>
 
-            <dt>Gaps</dt>
-            <dd>WoT does not define a way to describe the behavior of a thing to use for a simulation.</dd>
-          </dl>
-        </dd>
-      </dl>
+              <dt>Gaps</dt>
+              <dd>WoT does not define a way to describe the behavior of a thing to use for a simulation.</dd>
+            </dl>
+          </dd>
+        </dl>
+      </section>
+
+      <section id="digital-twin-2">
+        <h2>Digital Twin 2</h2>
+        <dl>
+          <dt>Submitter(s)</dt>
+          <dd>
+            Qing An
+          </dd>
+          <dt>Category</dt>
+          <dd>
+          horizontal
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+            Digital twin involves managing a physical device or a group of connected physical devices which needs to be virtually represented, and whose data needs to be understood.
+            Stakeholders include:
+            <ul>
+              <li>device owners: need to make data from devices available to digital twin system.</li>
+              <li>device user: users of the digital twin system are indirectly using the devices by accessing their data generated by the devices and sent to the digital twin, and also, by sending commands to the digital twin and corresponding actions can be automatically invoked on the device.</li>
+              <li>cloud or edge provider: the digital twin system may be hosted in the cloud or in the edge.</li>
+            </ul>
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+            A digital twin is a virtual and digital representation, located in the cloud or in the edge, of a real-world entity or system that mirrors a unique physical object, or a group of connected physical devices. 
+            Simply by describing a single device’s functionalities is not enough to support the accurate virtual representation in the cloud or edge. To accurately simulate the physical entity or system, the real-time status of device, the relation and rules among a collection of connected devices need be standardized.
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+            Devices can include sensors, actuators, machines, vehicles, production lines, industry robots.
+            Cloud or edge, to host the digital twin. 
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+            Device status information, discrete sensor data.
+            Device relation information, indicating one device’s relation with other devices in a group of connected devices, and what-if rules.
+          </dd>
+          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dd>
+            WoT Thing Description and Thing Model, WoT Architecture
+          </dd>
+          <dt>Description</dt>
+          <dd>
+            By virtually represent the devices and understand their data in context, a digital twin can reflect, in a timely manner across life cycle, the state of the devices based on the historical data and real-time device data.
+            Based on the virtual representation, further services can be provided, like real-time troubleshooting, simulation and prediction.
+          </dd>
+          <dt>Gaps</dt>
+          <dd>
+            WoT does not define a way to describe the relationship and behabior of connected things to use for a simulation.
+          </dd>
+        </dl>
+      </section>
     </section>
 
     <section id="X-Protocol-Interworking">
@@ -6559,6 +6614,80 @@
         <!--dt>Comments</dt>
         <dd>
         </dd-->
+      </dl>
+    </section>
+    <section id="use-case-opc-ua-binding">
+      <h2>Cross-protocol Interaction in Industry 4.0 Scenarios</h2>
+      <dl>
+
+        <dt>Submitter(s)</dt>
+        <dd>
+          Sebastian Kaebisch 
+        </dd>
+        <dt>Reviewer(s)</dt>
+        <dd>
+          Michael McCool, Ryuichi Matsukura, Kunihiko Toumura, Michael Legally, Michael Koster
+        </dd>
+        <dt>Category</dt>
+        <dd>
+          vertical
+        </dd>
+        <dt>Target Users</dt>
+        <dd>
+          <ul>
+            <li>device owners</li>
+            <li>device user</li>
+            <li>cloud provider</li>
+            <li>service provider</li>
+            <li>device manufacturer</li>
+            <li>gateway manufacturer</li>
+            <li>network operator (potentially transparent for WoT use cases)</li>
+            <li>identity provider</li>
+            <li>directory service operator</li>
+          </ul>
+        </dd>
+        <dt>Motivation</dt>
+        <dd>
+          Industry 4.0 is associated with next generation of manufacturing to increase efficiency, flexibility, and productivity. This also includes the broader interplay between the OT and IT domain as well as the further integration of services from different application areas. Technology domains such as from smart infrastructure and web forecasting services like traffic and weather forecasts are expected to be integrated directly into the manufacturing process as well as in the product lifecycle. To realize cross-domain applications for the Industrie 4.0 context, a frequent exchange with suppliers or local infrastructure providers (e.g., power supplier) is needed and it is necessary to interact with manufacturing systems that usally offers an OPC-UA interface. WoT can act as a common and standardized application layer and can be used to support Industry 4.0 use cases. In this context, well-formed bindings for most established industry standards such as OPC-UA should be supported.
+        </dd>
+        <dt>Expected Devices</dt>
+        <dd>
+          Typically automation devices or server endpoints that are able to host an OPC UA server (controller, gateways / edges, etc). 
+        </dd>
+        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+        <dd>
+          There are some experiences of OPC-UA bindings in previous WoT PlugFests and there is a sample binding implementation in <a href="https://github.com/eclipse/thingweb.node-wot/">node-wot</a>. However, there needs to be a formal definition to map the interaction affordances of a TD to OPC-UA. In that context an official OPC-UA Binding Note document schould be developed that can be used as official reference to design Thing Descriptions for OPC-UA use cases. 
+        </dd>
+        <dt>Description</dt>
+        <dd>
+          A bottling line consists of a filling module (switchable between 2 fillers and 4 fillers), a capping module, a labeling module, and a transport system. The production line is provided via an OPC-UA endpoint for control and monitoring purposes.
+          !<a href="https://user-images.githubusercontent.com/13832739/140924270-9ca88444-f48c-4978-b26b-ae5bf83303e8.png">image</a>
+          In the context of enhancing productivity and sustainability, the goal is to operate the bottling line in such a way that production is further increased when sufficient or surplus renewable energy is available. 
+          The backend system checks periodically a Smart Grid endpoint (via HTTP) how the current power production is and how much renewable energy is produced. 
+          Based on the bottling line's current power consumption, which is measured via Modbus, the backend system decides to increase productivity when surplus renewable energy is available.
+          In doing so, the backend system interacts via OPC-UA to release the 4 fillers of the filling module and increases the speed of the transport system.
+          If the backend system detects that less renewable energy is being produced, it will initiate standard production and reduce the transport speed and return the 2 fillers of the filling module.
+        </dd>
+        <dt>Security Considerations</dt>
+        <dd>
+          OPC-UA has different security modes (sign and/or encrypted, policies, and authentication). Those should be addressed and described in Thing Descriptions with a standardized vocabulary definition. Additional security considerations may apply if a web bridge is created using WoT servients. OT networks are often isolated and OPC-UA may have special requirements for distribution of key materials and credentials.
+        </dd>
+        <dt>Privacy Considerations</dt>
+        <dd>
+          OPC-UA comes with different approaches to protect data (also see Security Considerations above).
+        </dd>
+        <dt>Accessibility Considerations</dt>
+        <dd>
+          none
+        </dd>
+        <dt>Internationalisation (i18n) Considerations</dt>
+        <dd>
+          OPU-UA data model contains some places to provide human-readable text (e.g., browse name). This should be also reflected in the Thing Description with the correct language context. 
+        </dd>
+        <dt>Requirements</dt>
+        <dd>
+          An OPC UA binding for Web of Things needs an own set of OPC-UA specific vocabulary definitions which should be developed together with the experts from the OPC Foundation. Also see the <a href="https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/">liaison</a>.
+        </dd>
       </dl>
     </section>
   </section> <!-- horizontal-ucs -->
