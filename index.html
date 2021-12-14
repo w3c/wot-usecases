@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
   <meta charset="utf-8" />
   <title>Web of Things (WoT): Use Cases and Requirements</title>
@@ -45,7 +44,6 @@
         companyURL: "https://www.iri.co.jp/"
       }
       ],
-
       otherLinks: [
         {
           key: "Contributors",
@@ -93,7 +91,6 @@
         "NMEA": {
           title: "National Marine Electronics Association",
           href: "https://www.nmea.org",
-
         },
         "WGS84": {
           title: "WGS84",
@@ -300,7 +297,6 @@
     }
   </style>
 </head>
-
 <body>
   <section id="abstract">
     <p>
@@ -345,12 +341,10 @@
       use cases and requirements for the first version of the WoT specifications,
       which are documented in <a href="https://w3c.github.io/wot/ucr-doc/">
         https://w3c.github.io/wot/ucr-doc/</a>
-
     <p>
       The present document gathers and describes new use cases and requirements
       for future standardization work in the WoT standard.
     </p>
-
     <p>
       This document contains chapters describing the use cases that were contributed by multiple authors,
       functional and technical requirements on the Web of Things standards.
@@ -358,7 +352,6 @@
       writing.
       Since this document is a WG note, additional use cases will be added in future revisions of this document.
     </p>
-
     <section id="domains">
       <h2>Domains</h2>
       <p>
@@ -398,14 +391,12 @@
       horizontal use cases are described in <a href="#sec-horizontal-ucs"></a>
       </p>
     </section>
-
     <section id="definitions">
       <h2>Terminology, Stakeholders and Roles</h2>
       <section id="terminology">
         <h2>Terminology</h2>
         The present document uses the terminology from WoT Architecture [[wot-architecture]].
       </section>
-
       <section id="stakeholders">
         <h2>Stakeholders and Roles</h2>
         <p>
@@ -426,65 +417,51 @@
       </ul>
     </section>
   </section>
-
   <!-- DOMAIN SPECIFIC USE CASES -->
-
   <section id="sec-vertical-ucs">
     <h2>Domain Specific Use Cases</h2>
-
     <section id="agriculture">
       <h2>Smart Agriculture</h2>
       <section id="smart-agriculture">
         <h2>Greenhouse Horticulture</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
             Ryuichi Matsukura, Takuki Kamiya
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), Cloud provider
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             Greenhouse Horticulture controlled by computers can create an optimal environment for growing plants. This
             enables to improve productivity and ensure stable vegetable production throughout the year, independent of
             the weather. This is the result of research on the growth of plants in the 1980s. For example, in
             tomatoes, switching to hydroponics and optimizing the temperature, humidity and CO2 concentration required
             for photosynthesis resulted in a five times increase in yield. The growth conditions for other vegetables
             also have been investigated, and this control system is applied now.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Sensors (temperature, humidity, brightness, UV brightness, air pressure, and CO2)
             Heating, CO2 generator, open and close sunlight shielding sheet.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Sensors values to clarify the gaps between conditions for maximizing photosynthesis and the current
             environment.
             Following sensors values at one or some points in the greenhouse: temperature, humidity, brightness, and
             CO2.
-
           </dd>
           <dt>Dependencies</dt>
           <dd>
             WoT Architecture
             <br>
             WoT Thing Description
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             Sensors and some facilities like heater, CO2 generator, sheet controllers are connected to the gateway via
             wired or wireless networks. The gateway is connected to the cloud via the Internet. All sensors and
             facilities can be accessed and controlled from the cloud.
@@ -494,24 +471,19 @@
             greenhouse is adjusted by controlling the heater and the sunlight shielding sheet.
             The cloud gathers all sensor data and the status of the facilities. The application makes the best
             configuration for the region of the greenhouse located.
-
             <!--/dd>
             <dt>Variants</dt>
             <dd-->
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             In the case of the wireless connection to the sensors, the gateway should keep the latest value of the
             sensors since the wireless connection is sometimes broken. The gateway can create a virtual entity
             corresponding to the sensor and allow the application to access this virtual entity having the actual
             sensor status like sleeping.
-
           </dd>
           <!--dt>Existing Standards</dt>
             <dd>
-  
             </dd>
             <dt>Comments</dt>
             <dd>
@@ -521,19 +493,14 @@
       <section id="smart-agriculture-openfield">
         <h2>Open-field Agriculture</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Cristiano Aguzzi
-
           </dd>
             <dt>Target Users</dt>
           <dd>
-
             Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), Cloud provider, Middleware
             provider, Network providers, service provider.
-
           </dd>
           <dt>Motivation</dt>
           <dd>
@@ -544,7 +511,6 @@
             efficiently and effectively, avoiding both under-irrigation and over-irrigation. However, in an attempt to
             avoid under-irrigation, farmers feed more water than is needed resulting not only to productivity losses,
             but also water wastages.
-
             Therefore, technology should be developed and deployed for sensing water needs and automatically manage
             water supply to crops. However, open field agriculture is characterized by a quite dynamic range of
             requirements. Usually, solutions developed for one particular crop type cannot be reused in other
@@ -552,16 +518,13 @@
             years, meaning that technology to monitor the state of crop growth should be highly configurable and
             adaptive. Even agriculture and irrigation methods can change and also they are very different depending on
             the size of the field and its clime type.
-
             Consequently, silos applications are deployed leveraging on IoT technologies to gather data about the crop
             growth state and irrigation needs. The Web of Things may help to create a single platform where
             cost-effective applications could adapt seamlessly between different scenarios, breaking the silos and
             giving value both to the environment and the market.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             <p>Sensors:</p>
             <ul>
               <li>Weather sensors (maybe collected together inside a <a
@@ -608,27 +571,22 @@
               <li>Loggers: units that collect data from close sensors. </li>
               <li>Gateways</li>
             </ul>
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
             Sensor data plays a central role in Smart Agriculture. In particular, it is critical that the information
             sensed is associated with a timestamp. Common algorithms use *time series* to calculate the water needs of a
             crop.
-
             Furthermore, soil sensors usually are calibrated over a specific soil type (which may differ even in the
             same geographic region). For example, the calibration data for a soil moisture sensor is represented by a
             function that maps sensor output to soil water content. In literature, this function is knowns as a
             *calibration curve*. Commercial sensors are precalibrated with a "standard" curve but on most occasions, it
             fails to accurately measure the water content. Therefore, it can be configured during the installation phase
             (which may happen every time the soil is plowed).
-
             Finally, a crucial aspect is forecasting. Farmers use this information to actively change their management
             procedures. Services exploit it to suggest irrigation schedule or change device settings to behave
             accordingly to environmental changes.
-
             To summarize here it is a list of most important expected data from Open field agriculture:
-
             <ul>
               <li>Calibration curve</li>
               <li>Time series</li>
@@ -644,13 +602,10 @@
               <li>Device owner information</li>
               <li>Battery level and energy consumption</li>
             </ul>
-
           </dd>
           <dt>Dependencies</dt>
           <dd>
-
             WoT Architecture, WoT Thing Description
-
           </dd>
           <dt>Description</dt>
           <dd>
@@ -674,7 +629,6 @@
                 is possible to advise farms with the best times to irrigate a crop. </li>
               <li>Pesticide and fertilize planning</li>
             </ul>
-
             The complete deployment topology of an open field agriculture solution is described in the diagram below:
             <br>
             <br>
@@ -729,7 +683,6 @@
             Handle both geographical position and depth information.
             Ontology class for battery and energy consumption
             Model historical and forecast data
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
@@ -743,7 +696,6 @@
           </dd>
           <dt>Comments</dt>
           <dd>
-
             This use case is designed using the experience gained in the European-Brazil Horizon 2020 SWAMP project.
             Please follow the
             <a href="http://swamp-project.org/">link</a> for further information. Since SWAMP is heavily oriented to
@@ -757,10 +709,8 @@
       <section id="Agricultural-irrigation">
         <h2>Irrigation in Outdoor Environment</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             <ul>
               <li>Catherine Roussey
                 <!--, INRAE [1], France-->
@@ -769,20 +719,16 @@
                 <!--, INRAE [1], France-->
               </li>
             </ul>
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             <ul>
               <li>device users: farmers</li>
               <li>service provider</li>
             </ul>
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             Depending on the type of crops (e.g. maize), cultivated plots may need specific irrigation processes
             in outdoor environments. Depending on the country there exist some specific pedo-climatic conditions
             and some water consumption restrictions. Thus an irrigation system is installed on the plot. It is used
@@ -793,11 +739,9 @@
             <br>
             This use case aims to evaluate the number of days to delay the irrigation system, in addition to the basis
             irrigation frequency (e.g. 2 delay days means 9 days between two irrigations).
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             <ul>
               <li>6 tensiometers in the plot (soil moisture):
                 <ul>
@@ -813,14 +757,11 @@
               </li>
               <li>1 mobile pluviometer (quantity of water provided by the watering system)</li>
             </ul>
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             To decide when to water a cultivated plot, we evaluate the crop growth stage, the root zone moisture level
             and the number of delay days:
-
             <ul>
               <li>To evaluate the <b>Crop growth stage</b>, we need:
                 <ul>
@@ -864,7 +805,6 @@
                 </ul>
               </li>
             </ul>
-
             The mobile pluviometer is used to validate that the quantity of water received by the crop actually
             corresponds to the quantity of water provided by the watering system.
             <br>
@@ -875,7 +815,6 @@
           </dd>
           <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
             <ul>
               <li>WoT Architecture: wireless communication in outdoor environments presents some issues: communication
                 consumes lots of energy, sensor nodes have limited energy, weather conditions impact communication
@@ -883,11 +822,9 @@
               <li>WoT Thing Description: the affordance should be precise enough to describe the soil at a specific
                 depth or the root zone volume or the min temperature per day</li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             To avoid Property right and consent management issues between farmers and cloud service providers on these
             computed data, sensors are connected to the farm infrastructure and the services that evaluate aggregated
             data are executed locally on this infrastructure.
@@ -898,31 +835,24 @@
             <br>
             The tensiometers are located inside the farm. The tensiometers and the mobile pluviometer are connected
             using wireless communication to the gateway. The gateway sends the measurements to the farm infrastructure.
-
           </dd>
           <dt>Variants:</dt>
           <dd>
             The crop growth stage may be observed by the farmer. In this case, they can force this value to update the
             service inputs.
-
           </dd>
           <dt>Security Considerations</dt>
           <dd>
-
             The 6 tensiometers and 1 pluviometer are installed on the plot, but only the farmer should be able to change
             their configurations (frequency of communication). Wireless communication should be used but the measurement
             data should only be accessible through the farm network infrastructure.
-
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
-
             Data concerning quantity of water, type of seed, sowing day should be protected.
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             The main potential issues come from tensiometers located in the plot, as they are known to be cheap and easy
             to use probes but not always reliable. They can face multiple issues: if the soil gets too dry or the probe
             is improperly installed, there may be air between the probe and the soil, therefore preventing the probe
@@ -950,11 +880,9 @@
             a tractor that comes too close to the sensor node may move the communication device and destroy some
             components. Some kind of network supervision must be achieved (for instance by the gateway) to check node
             availability.
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             <ul>
               <li><a href="https://www.w3.org/TR/vocab-ssn/">Semantic Sensor Network</a></li>
               <li><a href="https://saref.etsi.org/saref4agri/v1.1.2/">SAREF4Agri</a></li>
@@ -964,7 +892,6 @@
               </li>
               <li><a href="http://www.w3id.org/def/irrig">IRRIG</a></li>
             </ul>
-
             The CASO and IRRIG ontologies extend SSN, PROV-O and SAREF4AGRI to implement an irrigation expert system.
             <br>
             <br>
@@ -974,11 +901,9 @@
             <br>
             The weather measurements provided by the agricultural weather station of Agrotechnopole is available at <a
               href="http://ontology.irstea.fr/weather/snorql/">http://ontology.irstea.fr/weather/snorql/</a>. [5]
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
             This use case has been implemented in France, following local conditions and regulations. There exists an
             open manual irrigation decision method called <a
               href="http://www.irrinov.arvalisinstitutduvegetal.fr/irrinov.asp">IRRINOV®</a> developed by Arvalis [2]
@@ -995,11 +920,9 @@
             Météo France[4]. Its web site defines how to evaluate the min and max temperatures per day in <a
               href="http://www.meteofrance.fr/publications/glossaire/154123-temperature-minimale">http://www.meteofrance.fr/publications/glossaire/154123-temperature-minimale</a>
             (in French, we found no equivalent description in English).
-
           </dd>
           <dt>References</dt>
           <dd>
-
             [1] <a href="https://www.inrae.fr/">https://www.inrae.fr/</a>
             <br>
             [2] <a href="https://www.arvalisinstitutduvegetal.fr/">https://www.arvalisinstitutduvegetal.fr/</a>
@@ -1017,7 +940,6 @@
         </dl>
       </section>
     </section>
-
     <section id="smart-city">
       <h2>Smart City</h2>
       <section id="smartcity-geolocation">
@@ -1446,51 +1368,39 @@
       <section id="mmi-3-1_interactive-public-spaces">
         <h2>Interactive Public Spaces</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Michael McCool
-
           </dd>
           <dt>Category</dt>
           <dd>
-
             Accessibility
-
          <!--dt>Target Users</dt>
           <dd>
             <-- TODO >
           </dd-->
           <dt>Motivation</dt>
           <dd>
-
             Public spaces provide many opportunities for engaging, social and fun interaction.
             At the same time,
             preserving privacy while sharing tasks and activities with other people is a major issue
             in ambient systems.
             These systems may also deliver personalized information in combination
             with more general services presented publicly.
-
             A trustful discovery of the services and devices available in such environments
             is a necessity to guarantee personalization and privacy in public-space applications.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Public spaces supporting personalizable services and device access.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Command and status information transferred between the personal mobile device
             application and the public space's services and devices.
             <br>
             <br>
             Profile data for user preferences.
-
           </dd>
           <dt>Dependencies</dt>
           <dd>
@@ -1523,31 +1433,23 @@
             This allows the user to receive relevant information in the way they see fit.
             Notifications can serve as triggers for interaction with public devices and services
             if the user chooses to do so.
-
           </dd>
           <dt>Variants</dt>
           <dd>
-
             The user may have additional mobile devices they want to incorporate into
             an interaction, for example a headset acting as an auditory aid or personal speech output
             device.
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             Data format describing user interface preferences.
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             This use case is based on MMI UC 3.1.
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
             Does not include Requirements section from original MMI use case.
           </dd>
         </dl>
@@ -1555,48 +1457,35 @@
       <section id="mmi-3-2_meeting-room-event-assistance">
         <h2>Meeting Room Event Assistance</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Michael McCool
-
           </dd>
           <dt>Category</dt>
           <dd>
-
             Accessibility
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Meeting space supporting personalizable services and device access.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Command and status information transferred between the personal mobile device
             application and the meeting space's services and devices.
-
             Profile data for user preferences.
-
           </dd>
           <dt>Dependencies</dt>
           <dd>
-
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
               <li>Optional: WoT Scripting API in application on mobile personal device and possibly
                 in IoT orchestration services in the meeting space.</li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             A conference room where a series of meetings will take place.
             People can go in and out of the room before,
             after and during the meeting.
@@ -1608,7 +1497,6 @@
             audio notification or a mobile phone notification,
             about available devices and services, and
             can install applications indicated by links.
-
             The chair of the meeting selects a setup procedure by text amongst the provided links.
             These options could be, for example:
             photo step-by-step instructions (smartphone, HDTV display, Web site),
@@ -1620,67 +1508,51 @@
             the chair of the meeting changes to the slide show option and continues to
             follow the instructions at the same step it was paused but with another more
             private modality for example, a smartphone slideshow.
-
           </dd>
           <dt>Variants</dt>
           <dd>
-
             The user may have additional mobile devices they want to incorporate into
             an interaction, for example a headset acting as an auditory aid or personal speech output
             device.
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             Data format describing user interface preferences.
-
             Ability to install applications based on links that can access IoT services.
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             This use case is based on MMI UC 3.2.
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
             Does not include Requirements section from original MMI use case.
           </dd>
         </dl>
       </section>
-
       <section id="smart-campus">
         <h2>Cross-Domain Discovery in a Smart Campus</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
             Andrea Cimmino and Raúl García Castro
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             <ul>
               <li> device owners</li>
               <li> service provider</li>
               <li> network operator (potentially transparent for WoT use cases)</li>
               <li> directory service operator</li>
             </ul>
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             In this use case a network full of IoT devices is presented, in which these devices are registered in
             several Middle-Nodes. The challenge presented in this scenario is to be able to discover the different
             sensors, by issues a SPARQL query, and without having prior knowledge of where those devices are allocated.
             Therefore, the discovery SPARQL query must start from a specific Middle-Node and reach all those
             Middle-Nodes that are relevant to answer the query.
-
             This scenario requires that discovery does not only happen locally when a Middle-Node receives the query and
             checks if some Thing Description registered is suitable to answer the query. Instead, the scenario requires
             also that the Middle-Node forwards the query through the network (topology conformed by the middle-nodes) in
@@ -1689,29 +1561,22 @@
             Middle-Nodes follow some discovery heuristic to know where the query should be forwarded. Also, notice that
             in this scenario not all the Middle-Nodes have the IoT devices registered directly within, they are
             Middle-Nodes collectors, such as Middle-Node C, I, G, and D.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Any device from the energy context (e.g. solar panels, smart plugs, or smart energy meters), devices from
             the building context (e.g. light bulbs, light switches, occupancy sensors, or thermostats), devices from
             the environmental context (e.g. soil moisture, flood detection, or air humidity), devices from the
             wearables context (e.g. smart bands), and/or devices from the water context (e.g. water valves, or water
             quality sensors)
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Data coming from different contexts, such as Energy, Building, Environmental Wearables and Water.
-
           </dd>
           <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
             Current WoT-Discovery approach
-
           </dd>
           <dt> Description</dt>
           <dd>
@@ -1719,15 +1584,12 @@
             different domains in a smart city, such as, energy, buildings, environment, water, wearable, etc. The IoT
             devices are distributed across the campus and belong to different infrastructures or even to individuals. A
             sample topology of this scenario could be the following:
-
             <br>
             <br>
-
             <div class="resize"><img src="images/smart-campus-topology.svg" alt="sample topology of a smart campus">
             </div>
             <br>
             <br>
-
             In this scenario, energy-related IoT devices monitor the energy use and income in the campus, among other
             things. From these measurements, an Energy Management System may predict a negative peak of incoming energy
             that would entail the failure of the whole system. In this case, a Service or a User needs to discover all
@@ -1737,7 +1599,6 @@
             that are critical for the well-functioning of the campus (such as magnetic locks, water distribution system,
             or fire/smoke sensors) and ensure that they are up and running. Additionally, the Service or the User, will
             discover relevant people's wearable to warn them about the situation.
-
             <p>Sample flow:</p> A service, or a user, sends a (SPARQL) query to the discovery endpoint of a known
             Middle-Node (which can be wrapped by a GUI). The Middle-Node will try to answer the query first checking the
             Thing Descriptions of the IoT devices registered in such Middle-Node. Then, if the query requires further
@@ -1746,10 +1607,8 @@
             known Middle-Nodes. When one Middle-Node is able to answer the query it will forward back to the former
             Middle-Node the partial query answer. Finally, when the discovery task finishes, the former Middle-Node will
             join all the partial query answers producing an unified view (which could be synchronous or asynchronous).
-
             <br>
             <br>
-
             For instance, assuming Middle-Node F receives a query that asks about all the discoverable Building IoT
             devices in the campus. First, the Middle-Node F will try to answer the query with the Thing Descriptions of
             the IoT registered within. Since Middle-Node F contains some Building IoT devices a partial query answer is
@@ -1766,29 +1625,22 @@
             Finally, when Middle Nodes B and H compute two partial query answers, those answers will be forwarded back
             to Middle-Node F which will join them with its former partial query answer obtained from its registered
             Thing Descriptions. Finally, a global query answer will be provided.
-
           </dd>
-
           <!--dt>Variants</dt>
           <dd>
-
           </dd-->
           <dt>Security Considerations</dt>
           <dd>
             None, in this case an underneath infrastructure that handles security is assumed
-
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
             None, although relevant in this case the core of the use case relies on the feature of finding across the
             network different IoT devices. It is assumed that there is an underneath infrastructure that handles privacy
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             Been able to find suitable Middle-Nodes that are relevant to answer the query, with no prior knowledge
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
@@ -1800,16 +1652,12 @@
           </dd>
         </dl>
       </section>
-
       <section id="cultural-spaces">
         <h2>Cultural Spaces (Museums)</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             K. Kotis, K. Zachila, A. Dimara
-
           </dd>
           <dt>Target Users</dt>
           <dd>
@@ -1818,11 +1666,9 @@
               <li>device user</li>
               <li>service provider</li>
             </ul>
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             <!--Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users -->
             <p>
               This use case is related to the semantic modeling of trustworthy IoT entities in energy-efficient cultural
@@ -1879,7 +1725,6 @@
                 artwork via
                 continuous monitoring.</li>
               </ol>
-
             A selective representative list of scenarios related to such a use case are listed below. Its scenario is
             classified to one of the abovementioned requirements:
             <ul>
@@ -1928,36 +1773,28 @@
                 (for visitors' comfort).
                  If the humidity in room A is more than 55%, then activate the humidifier device (for exhibits
                 protection).
-
                 In respect to current WoT Things Description, the requirement here is to extend schema in order to
                 represent
                 trust
                 (trustworthy things, trustworthy devices, trustworthy IoT entities in general).</li>
             </ul>
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Humidity sensor, temperature sensor, motion sensor, light sensor, proximity sensor, camera, aircondition,
             humidifier, light, smart lamp, smart lock, smart door.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Weather (indoors/outdoors) and climate data, sensor data, visitors/visiting data, profile data, movement
             (trajectory) data, cultural data.
-
           </dd>
           <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
           <dd>
-
             <!--List the affected WoT deliverables that have to be changed to enable this use case-->
             Web of Things Thing Description (WoT TD): to represent trust (trustworthy things and trustworthy IoT
             entities in
             general i.e., devices, people, processes, data).
-
           </dd>
           <dt>Description</dt>
           <dd>
@@ -1996,44 +1833,33 @@
           </dd>
           <dt>Security Considerations</dt>
           <dd>
-
             Due to visitors/visiting and profile data access requirement, as well as access to data related to
             public/private
             buildings, security issues must be considered.
-
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
-
             Due to visitors/visiting and profile data access requirement, as well as access to data related to
             public/private
             buildings, privacy issues must be considered.
-
           </dd>
           <dt>Accessibility Considerations</dt>
           <dd>
-
             Accessibility must be a concern in the Cultural Spaces domain. Collabration with the W3C Linked Data for
             Accessbility Community Group is needed.
-
           </dd>
           <dt>Internationalisation (i18n) Considerations</dt>
           <dd>
-
             Internationalization must be a concern as the Culture is an international industry. Need to provide
             multilanguage
             labels in different languages e.g., English, French, Chinese.
-
           </dd>
           <dt>Requirements</dt>
           <dd>
-
             <!--Describe a high level summary of any requirements that are not addressed in the current WoT standards and building blocks.-->
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             <!--Describe any gaps that are not addressed in the current WoT standards and building blocks-->
             <p>Web of Things Thing Description (WoT TD): representation of IoT entities trust (trustworthy things,
             trustworthy
@@ -2052,13 +1878,11 @@
           </dd>
           <dt>Existing standards</dt>
           <dd>
-
             <ul>
               <li><a href="https://saref.etsi.org/saref4ener/">SAREF4ENER ETSI Standard</a></li>
               <li><a href="https://saref.etsi.org/saref4bldg/">SAREF4Bldg ETSI Standard</a></li>
               <li><a href="https://www.w3.org/TR/vocab-ssn/">SOSA/SSN W3C Recommendation</a></li>
             </ul>
-
           </dd>
           <dt>Comments</dt>
           <dd>
@@ -2083,17 +1907,12 @@
           </dd>
         </dl>
       </section>
-
-
-
     </section>
-
     <section id="smart-buildings">
       <h2>Building Technologies</h2>
       <section id="smart-building">
         <h2>Smart Building</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
             Sebastian Kaebisch
@@ -2101,99 +1920,75 @@
           </dd>
           <dt>Target Users</dt>
           <dd>
-
           </dd>
           <dt>Motivation and Description</dt>
           <dd>
-
             Buildings such as office buildings, hotels, airports, hospitals, train stations and sports stadiums
             typically consist of heterogeneous IoT systems such as lightings, elevators, security (e.g. door
             control), air-conditionings, fire warnings, heatings, pools, parking control, etc.
-
             Monitoring, controlling, and management of such a heterogeneous IoT landscape is quite challenging in
             terms of engineering and maintenance.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             All kind of sensors and actuators (e.g. HVAC).
-
           </dd>
           <dt>Expected Users</dt>
           <dd>
-
             <ul>
               <li>systems engineers</li>
               <li>system administrators</li>
               <li>third party user</li>
             </ul>
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Heterogeneous data models from different IoT systems such as BACnet, KNX, and Modbus.
-
           </dd>
           <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
             WoT Thing Description and Thing Model, WoT Architecture, WoT Binding Templates (covering protocol
             specifica)
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             BACnet, KNX, OPC-UA, Modbus
-
           </dd>
           <!--dt>Comments</dt>
           <dd>
           </dd-->
         </dl>
       </section>
-
       <section id="connected-building-energy-efficiency">
         <h2>Connected Building Energy Efficiency</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Farshid Tavakolizadeh
             <!--(Fraunhofer)-->
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             <ul>
               <li>device owners</li>
               <li>device user</li>
               <li>directory service operator</li>
             </ul>
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             Construction and renovation companies often deal with the challenge of delivering target energy-efficient
             buildings given specific budget and time constraints. Energy efficiency, as one of the key factors for
             renovation investments, depends on the availability of various data sources to support the renovation
             design and planning. These include climate data and building material along with residential comfort and
             energy consumption profiles. The profiles are created using a combination of manual inputs and sensory
             data collected from residents.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             <ul>
               <li>Gateway (e.g. Single-board computer with a Z-Wave controller)</li>
             </ul>
-
             Z-wave Sensors:
             <ul>
               <li>Power Meter</li>
@@ -2205,24 +2000,19 @@
               <li>Thermostat</li>
               <li>Multi-sensors (Motion, Temperature, Light, Humidity, Vibration, UV)</li>
             </ul>
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             <ul>
               <li>Ambient conditions</li>
               <li>Occupancy model</li>
             </ul>
-
           </dd>
           <!--dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
           </dd-->
           <dt>Description</dt>
           <dd>
-
             Renovation of residential buildings to improve energy efficiency depend on a wide range of sensory
             information to understand the building conditions and consumption models. As part of the pre-renovation
             activities, the renovation companies deploy various sensors to collect relevant data over a period of
@@ -2231,16 +2021,13 @@
             flows to securely access the current and historical measurements. The renovation applications need to
             discover the sensors, their endpoints and how to interact with them based on search criteria such as the
             physical location, mapping to the building model or measurement type.
-
           </dd>
           <!--dt>Variants</dt>
           <dd-->
-
           </dd>
           <!--dt>Security Considerations</dt>
           <dd>
             <!- - TODO - ->
-
           </dd-->
           <dt>Privacy Considerations</dt>
           <dd>
@@ -2248,7 +2035,6 @@
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             There is no standard vocabulary for embedding application-specific meta data inside the TD. It is possible
             to extend the TD context and add additional fields but with too much flexibility, every application may
             end up with a completely different structure, making such information more difficult to discover. In this
@@ -2258,46 +2044,35 @@
               <li>various identifiers for each thing (e.g. sensor serial number, z-wave ID, SenML name)</li>
               <li>indoor coordinates</li>
             </ul>
-
             There is no standard API specification for the WoT Thing Directory to maintain and query TDs.
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             <ul>
               <li><a href="https://www.ogc.org/standards/sensorthings">OGC SensorThings</a> model includes a
                 `properties` property for each Thing which is a non-normative JSON Object for application-specific
                 information (not to be confused with TD's `properties` which is a Map of instances of PropertyAffordance
               </li>
             </ul>
-
           </dd>
           <!--dt>Comments</dt>
           <dd>
-
           </dd-->
         </dl>
       </section>
-
-
       <section id="smart-building-things">
         <h2>Automated Smart Building Management</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
             Edison Chung, Hervé Pruvost, Georg Ferdinand Schneider
           </dd>
           <dt>Category</dt>
           <dd>
-
             Smart Building
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             <ul>
               <li>device owners</li>
               <li>device user</li>
@@ -2307,11 +2082,9 @@
               <li>identity provider</li>
               <li>directory service operator</li>
             </ul>
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             <p>When operating smart buildings, aggregating and managing all data provided by heterogeneous devices in
               these buildings still require a lot of manual effort. Besides the hurdles of data acquisition that
               relies on multiple protocols, the acquired data generally lacks contextual information and metadata
@@ -2350,11 +2123,9 @@
               building information is usually obtained from a BIM model. The use case builds on Web of Data technologies
               and reuses schemas available from the Linked Building Data domain. It should serve as a use case template
               for many applications in an Internet of Building Things (IoBT).</p>
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             <ul>
               <li>Actuators</li>
               <li>Sensors</li>
@@ -2362,11 +2133,9 @@
               <li>Devices from the HVAC system</li>
               <li>Smart devices</li>
             </ul>
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             <ul>
               <li>Sensor ID</li>
               <li>Thing Descriptions</li>
@@ -2376,11 +2145,9 @@
               <li>Semantic location</li>
               <li>Geolocation</li>
             </ul>
-
           </dd>
           <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
             <ul>
               <li><a href="https://www.w3.org/TR/wot-thing-description/">Web of Things Thing Description (WoT TD)</a>
               </li>
@@ -2388,11 +2155,9 @@
               <li><a href="https://github.com/w3c/wot-discovery/blob/main/proposals/geolocation.md">WoT Discovery and
                   Geolocation</a></li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             <p>The goal of this use case is to show the potential to automate workflows and address the heterogeneity of
               data as observed in the smart building domain. The examples show the potential benefits of combining WoT
               TD with contextual data obtained from BIM.</p>
@@ -2528,7 +2293,6 @@
             for example, queried via <a href="https://www.w3.org/TR/sparql11-query/">SPARQL</a>. Here the query uses
             some additional classification of sensors from <a href="https://brickschema.org/ontology/1.1">BRICK
               schema</a>.</p>
-
           <pre class="example" id="sparql">
                             <code class="lang-sparql">PREFIX <span class="hljs-string">bot:</span> &lt;<span class="hljs-string">https:</span><span class="hljs-comment">//w3id.org/bot&gt;</span>
                             PREFIX <span class="hljs-string">brick:</span> &lt;<span class="hljs-string">https:</span><span class="hljs-comment">//brickschema.org/schema/Brick#&gt;</span>
@@ -2598,49 +2362,39 @@
             (see above) to obtain the parameters to configure the mentioned rule. Again, a query or API call
             retrieving this information (schema:minValue/ schema:maxValue) can be used to update the upper and lower
             bound of the values provided by the <a href="#TemperatureSensor">sensor</a>.</p>
-
           </dd>
           <dt>Security Considerations</dt>
           <dd>
-
             <p>Security in smart buildings is of importance. In particular, access control needs to be properly secured.
               This applies also for data access which can be secured using existing security schemes (API Keys,
               OAuth2...).
               Moreover, from certain observations, e.g. electricity consumption, clues can be indirectly given such as
               presence in a
               home. Hence, security needs must be defined and properly addressed.</p>
-
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
-
             <p>Privacy considerations can be of a concern if observations of sensors can be matched to individuals.
               It is of the responsibility of building owners, managers and users to define their own privacy policies
               for their data and share necessary consents if necessary.
             </p>
-
           </dd>
           <dt>Accessibility Considerations</dt>
           <dd>
-
             <p>Accessibility is a major concern in the buildings domain. Efforts exist in also providing accessibility
               data in a
               electronic format. The W3C LBD CG is in contact with the <a href="https://www.w3.org/community/lda/">W3C
                 Linked Data for Accessbility Community Group</a>.
             </p>
-
           </dd>
           <dt>Internationalization (i18n) Considerations</dt>
           <dd>
-
             <p>Internationalization is a concern as the Buildings industry is a global industry. This is reflected in
               some efforts, e.g. BOT used in the examples above does provide multilanguage labels in up to 16
               different languages including english, french and chinese.</p>
-
           </dd>
           <!--dt>Requirements</dt>
           <dd>
-
             <p>
               For the realization of the intented use case for automated things location and fault detection as well as further potentially 
               automatable analyses, a smart building or smart home ecosystem is required. More specifically, BACS components are needed 
@@ -2649,13 +2403,10 @@
               payloads following the data structuration and representation proposed by the 
               <a href="https://www.w3.org/TR/wot-thing-description/">Web of Things Thing Description (WoT TD)</a>.
             </p>
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             <p>None</p>
-
           </dd-->
           <dt>Existing Standards</dt>
           <dd>
@@ -2668,7 +2419,6 @@
               <li><a href="https://w3id.org/bot">Building Topology Ontology (BOT)</a></li>
               <li><a href="https://brickschema.org">BRICK</a></li>
             </ul>
-
           </dd>
           <dd>References:
             <ul>
@@ -2681,20 +2431,15 @@
           </dd>
         </dl>
       </section>
-
       <section id="portable-building-applications">
         <h2>Portable Building Applications</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Gabe Fierro
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             <ul>
               <li>device owners</li>
               <li>device user</li>
@@ -2704,11 +2449,9 @@
               <li>gateway manufacturer</li>
               <li>directory service operator</li>
             </ul>
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             The growing adoption of energy management systems, building automation and management systems and IoT
             devices is producing larger volumes and varieties of data.
             As a result, data-driven smart building applications are becoming increasingly common and practical to
@@ -2722,7 +2465,6 @@
               <li>predictive occupancy, energy consumption models</li>
               <li>high-performance "sequences of operations" for various subsystems, such as HVAC</li>
             </ul>
-
             There is still significant cost in deploying these applications because of the effort required to customize
             and configure their operation for each individual building.
             While ontologies exist for describing sensors and the data they produce and for describing the spatial
@@ -2732,11 +2474,9 @@
             systems, lighting systems, electrical systems, domestic water systems and hot and chilled water systems.
             This must be done in a way that adequately contextualizes data but also provides necessary metadata to
             determine which applications or which analyses are appropriate.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             <ul>
               <li>Actuators</li>
               <li>Sensors</li>
@@ -2744,26 +2484,21 @@
               <li>Devices from the HVAC system</li>
               <li>Smart devices</li>
             </ul>
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             <ul>
               <li>thing descriptions</li>
               <li>building system topology and composition</li>
               <li>building topology and composition</li>
             </ul>
-
           </dd>
           <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
           <dd>
-
             <ul>
               <li><a href="https://www.w3.org/TR/wot-thing-description/">Web of Things Thing Description (WoT TD)</a>
               </li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
@@ -2810,12 +2545,10 @@
             ?zone a brick:HVAC_Zone .
             ?sat a brick:Supply_Air_Temperature_Sensor .
             ?sp a brick:Supply_Air_Temperature_Setpoint .
-
             ?term brick:feeds ?zone .
             ?term brick:hasPoint ?sat, ?sp .
             }
             </pre>
-
             <p><strong>Example: Measuring Temperature Before and After a Cooling Coil</strong></p>
             <p>
             A common fault detection and diagnosis operation is to detect broken or underperforming cooling coils. These
@@ -2834,58 +2567,46 @@
             ?ccv a brick:Cooling_Valve .
             ?pos a brick:Position_Sensor .
             ?room a brick:Room .
-
             ?ahu brick:hasPoint ?mat, ?sat .
             ?ahu brick:hasPart ?ccv .
             ?ccv brick:hasPoint ?pos .
             ?ahu brick:feeds+/brick:hasPart? ?room .
             }
           </pre>
-
           </dd>
           <dt>Security Considerations</dt>
           <dd>
-
             It is important to protect access to this representation of the building and its devices; access to the
             model can reveal the uses of space within the building and what equipment is required to make those spaces
             comfortable and safe. Proper threat models, modes of access and effective security must all be developed.
-
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
-
             With the detail available in the model, it is possible to associate data sources with the spaces in the
             building (indeed, this is one of the purposes of the use case) which may then be linked to individuals or
             organizations within the building. It is of the responsibility of building owners, managers and users to
             define their own privacy policies for their data and share necessary consents if necessary.
-
           </dd>
           <dt>Accessibility Considerations</dt>
           <dd>
-
             Accessibility is a major concern in the buildings domain. Efforts exist in also providing accessibility data
             in a electronic format. The W3C LBD CG is in contact with the <a
               href="https://www.w3.org/community/lda/">W3C Linked Data for Accessbility Community Group</a>.
-
           </dd>
           <dt>Internationalisation (i18n) Considerations</dt>
           <dd>
-
             Internationalization is a concern as the building industry is a global industry. Not only are translations
             of the concepts and properties to other languages necessary, but the ontology should give consideration to
             alternative categories and organizations. For example, in hot and humid climates, the term HVAC (*Heating*,
             Ventilation and Air Condition) is often abandoned in favor of ACMV (Air-Conditioning and Mechanical
             Ventilation) due to the lack of a need for heating.
-
           </dd>
           <dt>Requirements</dt>
           <dd>
-
             <ul>
               <li>Integration with Brick Ontology: Brick has not yet decided on how the values coming out of devices,
                 sensors, etc. should be represented. WoT has the potential to fulfill that role.</li>
             </ul>
-
           </dd>
           <dt>Gaps</dt>
           <dd>
@@ -2903,7 +2624,6 @@
           </dd>
           <dt>Existing standards</dt>
           <dd>
-
             <ul>
               <li><a href="https://brickschema.org/">Brick</a></li>
               <li><a href="https://w3c-lbd-cg.github.io/bot/index.html">BOT</a></li>
@@ -2912,32 +2632,25 @@
               <li><a href="https://saref.etsi.org/saref4syst/">SAREF4SYST</a></li>
               <li><a href="https://www.w3.org/TR/wot-thing-description/">Web of Things</a></li>
             </ul>
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
-
           </dd>
         </dl>
       </section>
     </section>
-
     <section id="manufacturing">
       <h2>Manufacturing</h2>
       <section id="big-data">
         <h2>Manufacturing</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
             Michael Lagally
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             Device owners, cloud provider.
-
           </dd>
           <dt>Motivation</dt>
           <dd>
@@ -2954,27 +2667,20 @@
               The results of this analysis can be used for optimizing consumption of raw materials, checking the status
               of production lines and plants and predicting and preventing fault conditions.
             </p>
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Various sensors, e.g. temperature, light, humidity, vibration, noise, air quality.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Discrete sensor values, such as temperature, light, humidity, vibration, noise, air quality readings.
             The data can be delivered periodically or on demand.
-
           </dd>
           <dt>Dependencies</dt>
           <dd>
-
             Thing Description: groups of devices, aggregation / composition mechanism, thing models
             Discovery/Onboarding: Onboarding of groups of devices
-
           </dd>
           <dt>Description</dt>
           <dd>
@@ -3007,18 +2713,14 @@
           </dd>
           <!--dt>Variants</dt>
           <dd>
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
               are relevant for this use case</section>
-
           </dd-->
           <dt>Comments</dt>
           <dd>
@@ -3027,22 +2729,16 @@
         </dl>
       </section>
     </section>
-
     <section id="retail">
       <h2>Retail</h2>
       <dl>
-
         <dt>Submitter(s)</dt>
         <dd>
-
           David Ezell, Michael Lagally, Michael McCool
-
         </dd>
         <dt>Target Users</dt>
         <dd>
-
           Retailers, customers, suppliers.
-
         </dd>
         <dt>Motivation</dt>
         <dd>
@@ -3059,55 +2755,42 @@
         </dd>
         <dt>Expected Devices</dt>
         <dd>
-
           Connected sensors, such as people counters, presence sensors, air quality, room occupancy, door sensors.
           Cloud services. Video analytics edge services.
-
         </dd>
         <dt>Expected Data</dt>
         <dd>
-
           Inventory data, supply chain status information, discrete sensor data or data streams.
-
         </dd>
         <!--dt>Dependencies</dt>
         <dd>
-
           tbd
-
         </dd-->
         <dt>Description</dt>
         <dd>
-
           Falling costs of sensors, communications, and handling of very large volumes of data combined with cloud
           computing enable retail business operations with increased operational efficiency, better customer
           service,
           and even increased revenue growth and return on investment.
-
           Accurate forecasts allow retailers to coordinate demand-driven outcomes that deliver connected customer
           interactions.
           They drive optimal strategies in planning, increasing inventory productivity in retail supply chains,
           decreasing operational costs and driving customer satisfaction from engagement, to sale, to fulfilment.
-
           Understanding of store activity juxtaposed with traditional information streams can boost worker and
           consumer safety,
           comply better with work safety regulations, enhance system and site security, and improve worker
           efficiency
           by providing real-time visibility into worker status, location, and work environment.
-
         </dd>
         <dt>Variants</dt>
         <dd>
-
           <ul>
             <li>Use edge computing, in particular video analytics, in combination with IoT devices to deliver an
               enhanced
               customer experience, better manage inventory, or otherwise improve the store workflow.</li>
-
         </dd>
         <dt>Security Considerations</dt>
         <dd>
-
           <ul>
             <li>In retail, replay attacks can cause monetary loss, customers may be incorrectly charged or
               over-charged.</li>
@@ -3123,20 +2806,22 @@
             <li>Implement IP white list, that could be part of the DoS early detection system.</li>
             <li>Make sure your network perimeter is defended with up to date firewall software.</li>
           </ul>
-
         </dd>
         <dt>Privacy Considerations</dt>
         <dd>
-
+          <p>
           As a general rule, personal consumer information should not be stored.
           That is especially true in the retail industry where a security breach could cause financial, reputation,
           and brand damage.
+          </p><p>
           If personal or information that can identify a consumer is to be stored,
           it should be to conduct business and with the explicit acknowledgment of the consumer.
           WoT vendors and integrators should always have a privacy policy and make it easily available.
+        </p><p>
           By default, devices should adopt an opt-out policy.
+        </p><p>
           That means, unless the consumer explicitly allowed for the data capture and storage, avoid doing it.
-
+        </p>
         </dd>
         <!--dt>Gaps</dt>
         <dd>
@@ -3144,56 +2829,43 @@
             TODO: Describe any gaps that are not addressed in the current WoT work
             items.
           </section>
-
         </dd>
         <dt>Existing Standards</dt>
         <dd>
-
           <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
             are relevant for this use case
         </section-->
     </section>
-
     <section id="health">
       <h2>Health</h2>
-
       <section id="public-health">
         <h2>Public Health</h2>
         <section id="smartcity-health-monitoring">
           <h2>Public Health Monitoring</h2>
           <dl>
-
             <dt>Submitter(s)</dt>
             <dd>
-
               Jennifer Lin
               <!--(GovTech Singapore)-->
             </dd>
-
             </dd>
             <dt>Target Users</dt>
             <dd>
-
               Agencies, companies and other organizations in a Smart City with
               significant pedestrian traffic in a pandemic situation.
-
             </dd>
             <dt>Motivation</dt>
             <dd>
-
               A system to monitor the health of people in public places is useful to
               control the spread of infectious diseases. In particular, we would like
               to identify individuals with temperatures outside the norm (i.e. running
               a fever) and then take appropriate action. Actions can include sending
               a notification or actuating a security device, such as a gate.
-
               This mechanism should be non-invasive and non-contact since the solution
               should not itself contribute to the spread of infectious diseases.
-
               Data may also be aggregated for statistics purposes, for example, to
               identify the number of people in an area with elevated temperatures.
               This has additional requirements to avoid double-counting individuals.
-
             </dd>
             <dt>Expected Devices</dt>
             <dd>One of the following:
@@ -3215,11 +2887,9 @@
                   but might also be based on a localization technology if the device needs to be
                   portable (for example, if it needs to be set up quickly for an event).</li>
               </ul>
-
             </dd>
             <dt>Expected Data</dt>
             <dd>
-
               <ul>
                 <li>Sensor ID</li>
                 <li>Timestamp</li>
@@ -3261,13 +2931,10 @@
             </dd>
             <dt>Dependencies</dt>
             <dd>
-
               node-wot
-
             </dd>
             <dt>Description</dt>
             <dd>
-
               A thermal camera image is taken of a group of people
               and an AI service is used to identify faces in the image.
               The temperature of each person is then estimated from the registered face;
@@ -3277,11 +2944,9 @@
               thresholds and a notification (or other action) is taken if the
               temperature is outside the norm.
               Additional features may be extracted to identify unique individuals.
-
             </dd>
             <dt>Variants</dt>
             <dd>
-
               <ul>
                 <li>Enough information is included in the notification that the specific
                   person that raised the alarm can be identified. For example, if an RGB
@@ -3302,16 +2967,13 @@
                   an app that notifies users when a destination is crowded) in a pandemic situation.</li>
                 <li>Cameras that provide video streams rather than still images.</li>
               </ul>
-
             </dd>
             <dt>Security Considerations</dt>
             <dd>
-
               <ul>
                 <li>Because PII is involved (see below) access should be controlled (only provided to authorized
                   users) and communications protected (encrypted).</li>
               </ul>
-
             </dd>
             <dt>Privacy Considerations</dt>
             <dd>
@@ -3335,7 +2997,6 @@
             </dd>
             <dt>Gaps</dt>
             <dd>
-
               <ul>
                 <li>Onboarding mechanism for rapidly deploying a large number of devices</li>
                 <li>Standard vocabulary for geolocation information</li>
@@ -3346,35 +3007,29 @@
                 <li>Standard ways to specify notification mechanisms and data payloads for things like SMS and email
                   (in addition to the expected MQTT, CoAP, and HTTP event mechanisms)</li>
               </ul>
-
             </dd>
             <!--dt>Existing Standards</dt>
-            <dd>
-
-            </dd-->
+                <dd>
+                </dd-->
             <dt>Comments</dt>
             <dd>
-
               <ul>
                 <li>May be additional requirements for privacy since images of people and their health status is
                   involved.</li>
                 <li>Different sub-use cases: immediate alerts or actions vs. aggregate data gathering</li>
               </ul>
-
             </dd>
           </dl>
         </section>
         <section id="MedicalDevices">
           <h2>Interconnected Medical Devices in a Hospital ICU</h2>
           <dl>
-
             <dt>Submitter(s)</dt>
             <dd>
               Taki Kamiya
             </dd>
             <dt>Target Users</dt>
             <dd>
-
               <ul>
                 <li>device owners</li>
                 <li>device user</li>
@@ -3384,11 +3039,9 @@
                 <li>gateway manufacturer</li>
                 <li>identity provider</li>
               </ul>
-
             </dd>
             <dt>Motivation</dt>
             <dd>
-
               Preventable medical errors may account for more than 100,000 deaths per year in U.S. alone. These errors
               are mainly caused by failures of communication such as a chart misread or the wrong data passed along to
               machines or staffs. Part of the problem could be solved if the machines could speak to one another.
@@ -3396,19 +3049,15 @@
               process able by their competitors’ machines. So the task of middleman falls to the hospital staffs. In
               addition to saving lives, a common framework could result in collecting and recording more clinical data
               on patients, making it easier to deliver precision medicine.
-
             </dd>
             <!--dt>Expected Devices</dt>
-            <dd>
-
-            </dd>
-            <dt>Expected Data</dt>
-            <dd>
-
-            </dd>
-            <dt>Affected WoT deliverables and/or work items</dt>
-            <dd-->
-
+                <dd>
+                </dd>
+                <dt>Expected Data</dt>
+                <dd>
+                </dd>
+                <dt>Affected WoT deliverables and/or work items</dt>
+                <dd-->
             </dd>
             <dt>Description</dt>
             <dd>
@@ -3454,15 +3103,12 @@
             </dd>
             <dt>Variants</dt>
             <dd>
-
               US military developed ONR SBIR (Automated Critical Care System Prototype), and found those issues.
-
               <ul>
                 <li>No plug and play, i.e. cannot swap O2 Sat with another manufacturer.</li>
                 <li>No standardization of data outputs for devices to interoperate.</li>
                 <li>Must have the exact make/model to replace a faulty device or system will not work.</li>
               </ul>
-
             </dd>
             <dt>Security Considerations</dt>
             <dd>
@@ -3488,85 +3134,62 @@
                 support for multicast.
             </dd>
             <!--dt>Privacy Considerations</dt>
-            <dd>
-
-              <!- -section id="todo-privacy-2" class="ednote">TODO: Describe any issues related to privacy; if there are
-                none,
-                say "none" and justify</section>
-
-            </dd>
-            <dt>References</dt>
-            <dd>
-              <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
-                for this use case</section>
-
-            </dd-->
+                <dd>
+                  <!- -section id="todo-privacy-2" class="ednote">TODO: Describe any issues related to privacy; if there are
+                    none,
+                    say "none" and justify</section>
+                </dd>
+                <dt>References</dt>
+                <dd>
+                  <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
+                    for this use case</section>
+                </dd-->
             <dt>Gaps</dt>
             <dd>
-
               Multicast support. It has proven useful for efficient and scalable discovery and information exchange in
               industrial systems.
-
             </dd>
             <dt>Existing Standards</dt>
             <dd>
-
               <p><a href="https://www.astm.org/Standards/F2761.htm">F2761-09 (2013)</a> </p>
-
               Medical Devices and Medical Systems - Essential safety requirements for equipment comprising the
               patient-centric integrated clinical environment (ICE) - Part 1: General requirements and conceptual
               model.
-
               The idea behind ICE is to allow medical devices that conform to the ICE standard, either natively or
               using an adapter, to interoperate with other ICE-compliant devices regardless of manufacturer.
-
               <p><a href="https://www.openice.info/">OpenICE</a></p>
-
               OpenICE is an initiative to create a community implementation of F2761-09 (ICE - Integrated Clinical
               Environment) based on <a href="https://www.omg.org/spec/DDS/About-DDS/">DDS</a>.
-
               <p><a href="https://secwww.jhuapl.edu/mdira/documents">MDIRA Specification Document Version
                   1.0</a>. </p>
-
               MDIRA Version 1.0 provides requirements and implementation guidance for MDIRA-compliant systems focused
               on trauma and critical care in austere environments.
-
               Johns Hopkins University Applied Physics Laboratory (JHU-APL) lead a research project in collaboration
               with US military to develop a framework of autonomous / closed loop prototypes for military health care
               which are dual use for the civilian healthcare system.
-
             </dd>
             <!--dt>Comments</dt>
-            <dd-->
-
+                <dd-->
             </dd>
           </dl>
         </section>
       </section>
-
       <section id="private-health">
         <h2>Private Health</h2>
         <section id="mmi-4-1_health-notifiers">
           <h2>Health Notifiers</h2>
           <dl>
-
             <dt>Submitter(s)</dt>
             <dd>
-
               Michael McCool
-
             </dd>
             <dt>Target Users</dt>
             <dd>
-
               End user with a health problem they wish to monitor.
-
               Health services provider (doctor, nurse, paramedic, etc.).
-
             </dd>
             <dt>Motivation</dt>
             <dd>
-
               In critical situations regarding health,
               like a medical emergency,
               media multimodality may be the most effective way to communicate alerts,
@@ -3574,37 +3197,28 @@
               person in both emergency and non-emergency contexts,
               access via networked devices may be the most effective way to collect data and
               monitor a patient's status.
-
             </dd>
             <dt>Expected Devices</dt>
             <dd>
-
               Medical facilities supporting device and service access.
-
             </dd>
             <dt>Expected Data</dt>
             <dd>
-
               Command and status information transferred between the personal mobile device
               application and the meeting space's services and devices.
-
               Profile data for user preferences.
-
             </dd>
             <dt>Dependencies</dt>
             <dd>
-
               <ul>
                 <li>WoT Thing Description</li>
                 <li>WoT Discovery</li>
                 <li>Optional: WoT Scripting API in application on mobile personal device and possibly
                   in IoT orchestration services.</li>
               </ul>
-
             </dd>
             <dt>Description</dt>
             <dd>
-
               In medical facilities,
               a system may provide multiple options to control sensor operations
               by voice or gesture ("start reading my blood pressure now").
@@ -3613,55 +3227,208 @@
               (for example, blood pressure and heart rate);
               reports medical sensor readings periodically (for example, to a remote medical facility)
               and sends alerts when unusual readings/events are detected.
-
             </dd>
             <dt>Variants</dt>
             <dd>
-
               The user may have additional mobile devices they want to incorporate into
               an interaction, for example a headset acting as an auditory aid or personal speech output
               device.
-
             </dd>
             <dt>Gaps</dt>
             <dd>
-
               Data format describing user interface preferences.
-
               Ability to install applications based on links that can access IoT services.
-
             </dd>
             <dt>Existing Standards</dt>
             <dd>
-
               This use case is based on MMI UC 3.2.
-
             </dd>
             <dt>Comments</dt>
             <dd>
-
               Does not include Requirements section from original MMI use case.
             </dd>
           </dl>
         </section>
       </section>
-    </section>
-
-    <section id="energy">
+      <section id="Biomedical">
+        <h2>Biomedical Devices</h2>
+        <section id="biomedical">
+          <h2>Digital Microscopes</h2>
+          <dt>Submitter(s)</dt>
+          <dd>
+            Adam Sobieski
+          </dd>
+          <dt>Category</dt>
+          <dd>
+            This use case could be horizontal, insofar as it advances digital microscopy for consumers, and could be
+            vertical,
+            insofar as it equips biomedical professionals, scientists, and educators.
+          </dd>
+          <dt>Target Users</dt>
+          <dd>
+            <ul>
+              <li>device owners</li>
+              <li>device users</li>
+              <li>cloud providers</li>
+              <li>service providers</li>
+              <li>device manufacturers</li>
+              <li>identity providers</li>
+            </ul>
+          </dd>
+          <dt>Motivation</dt>
+          <dd>
+            Microscopes are utilized throughout biomedicine, the sciences, and education. Advancing digital microscopes and
+            enabling their interoperability with mixed-reality collaborative spaces via WoT architecture and standards can
+            equip
+            biomedical professionals, scientists, and educators, amplifying and accelerating their performance and
+            productivity.
+          </dd>
+          <dt>Expected Devices</dt>
+          <dd>
+            Mixed-reality collaborative spaces are device agnostic. Users can collaborate while making use of AR devices, VR
+            devices, mobile computers, and desktop computers.
+            The expected devices include AR and VR equipment (e.g., head-mounted displays), computing devices, and digital
+            microscopes.
+          </dd>
+          <dt>Expected Data</dt>
+          <dd>
+            <p>
+              The expected data include 2D and 3D streams produced by digital microscopes and recordings thereof. These
+              streams
+              may contain metadata which describe the instantaneous magnifications and timescales of data.
+              The expected data also include the output streams produced by services. These streams could, for instance,
+              contain
+              annotation data.
+            </p>
+            <p>
+              With respect to annotating video streams, one could make use of secondary video tracks with
+              uniquely-identified
+              bounding boxes or more intricate silhouettes defining spatial regions on which to attach semantic data, e.g.,
+              metadata or annotations, using yet other secondary tracks. Similar approaches could work for point-cloud-based
+              and
+              mesh-based animations.
+            </p>
+          </dd>
+          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dd>
+            To be determined
+          </dd>
+          <dt>Description</dt>
+          <dd>
+            <p>
+              Mixed-reality collaborative spaces enable users to visualize and interact with data and to work together from
+              multiple locations on shared tasks and projects.
+            </p>
+            <p>
+              Digital microscopes could be accessed and utilized from mixed-reality collaborative spaces via WoT
+              architecture and
+              standards. Digital microscopes could be thusly utilized throughout biomedicine, the sciences, and education.
+              Data from digital microscopes could be processed by services to produce outputs useful to users. Users could
+              select
+              and configure one or more such services and route streaming data or recordings through them to consume
+              resultant
+              data in a mixed-reality collaborative space. Graphs, or networks, of such services could be created by users.
+              Services could also communicate back to digital microscopes to control their mechanisms and settings. Services
+              which
+              simultaneously process digital microscope data and communicate back to control such devices could be of use
+              for
+              providing users with automatic focusing, magnification, and tracking.
+            </p>
+            </p>
+            Multimodal user interfaces could be dynamically generated for digital microscope content by making use of the
+            output
+            data provided by computer-vision-related services. Such dynamic multimodal user interfaces could provide users
+            with
+            the means of pointing and using spoken natural language to indicate precisely which contents that they wish to
+            focus
+            on, magnify, or track.
+            </p>
+            <p>
+              For example, a digital microscope could be magnifying and streaming 2D or 3D imagery of a living animal cell.
+              This
+              data could be processed by a service which provides computer-vision-related annotations, labeling parts of the
+              cell:
+              the cell nucleus, Golgi apparatus, ribosomes, the endoplasmic reticulum, mitochondria, and so forth. The
+              resultant
+              visual content with its algorithmically-generated annotations could then be interacted with by users. Users
+              could
+              point and use spoken natural language to indicate precisely which parts of the living animal cell that they
+              wished
+              for the digital microscope to focus on, magnify, or track.
+            </p>
+          </dd>
+          <dt>Security Considerations</dt>
+          <dd>
+            The streaming of digital microscope data should be securable for biomedical scenarios.
+            Access to the controls and settings of digital microscopes should be securable for education scenarios so that
+            teachers can adjust the controls and students cannot.
+          </dd>
+          <dt>Privacy Considerations</dt>
+          <dd>
+            In biomedical scenarios, there are privacy issues pertaining to the use of biological samples and medical data
+            from
+            patients.
+          </dd>
+          <dt>Accessibility Considerations</dt>
+          <dd>
+            To be determined
+          </dd>
+          <dt>Internationalisation (i18n) Considerations</dt>
+          <dd>
+            Output data from services could include natural-language content or labels. Such content or labels could be
+            multilingual.
+            Dynamically generated multimodal user interfaces utilizing such content or labels could also be multilingual.
+          </dd>
+          <dt>Requirements</dt>
+          <dd>
+            <p>
+              Requirements that are not addressed in the current WoT standards or building blocks include streaming
+              protocols and
+              formats for 3D digital microscope data and recordings. While digital microscopes could stream video using a
+              variety
+              of existing protocols and formats, the streaming of other forms of 3D data and animations, e.g., point clouds
+              and
+              meshes, could be facilitated by recommendation.
+            </p>
+            <p>
+              Users could select and configure one or more services and route data streaming from digital microscopes
+              through them
+              to consume the resultant data in a mixed-reality collaborative space. Additionally, services could be designed
+              to
+              communicate back to and control the mechanisms and settings of digital microscopes.
+              Requirements that are not addressed in the current WoT standards or building blocks include a means of
+              interconnecting services. Perhaps services could utilize WoT architecture and could be described as WoT
+              things, or
+              virtual devices, which provide functionality including that with which to establish data connectivity between
+              them.
+            </p>
+          </dd>
+          <!--           <dt>Gaps</dt>
+              <dd>
+                To be determined
+              </dd>
+              <dt>Existing standards</dt>
+              <dd>
+                To be determined
+              </dd>
+              <dt>Comments</dt>
+              <dd>
+              </dd>
+     -->
+          </dl>
+        </section>
+      </section>   
+      <section id="energy">
       <h2>Energy</h2>
       <section id="smart-grid">
         <h2>Smart Grids</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Christian Glomb
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             <ul>
               <li>Grid operators on all voltage levels line Distribution System Operators (DSO), Transmission System
                 Operators (TSO)</li>
@@ -3673,15 +3440,12 @@
               <li>Device manufacturers, owners, and users; devices include communication gateways, monitoring and
                 control units</li>
             </ul>
-
           </dd>
           <!--dt>Motivation</dt>
           <dd-->
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             A smart grid integrates all players in the electricity market into one overall system through the
             interaction of generation, storage, grid management and consumption. Power and storage plants are already
             controlled today in such a way that only as much electricity is produced as is needed. Smart grids include
@@ -3689,11 +3453,9 @@
             so that on the one hand, consumption is more homogeneous in terms of time and space (see also intelligent
             electricity consumption) and on the other hand, in principle inhomogeneous producers (e.g. wind power) and
             consumers (e.g. lighting) can be better integrated.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             <ul>
               <li>Weather and climate data</li>
               <li>Metering data (both production as well as consumption as well as storage, e.g. 15 min. intervals)
@@ -3702,22 +3464,17 @@
               <li>Machine and equipment monitoring data (enabling health checks)</li>
               <li>...</li>
             </ul>
-
           </dd>
           <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
             WoT Architecture, WoT Binding Templates (covering protocol specifica)
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             The term Smart Grid refers to the communicative networking and control of power generators, storage
             facilities, electrical consumers, and grid equipment in power transmission and distribution networks for
             electricity supply. This enables the optimization and monitoring of the interconnected components. The aim
             is to secure the energy supply on the basis of efficient and reliable system operation.
-
           </dd>
           <dt>Variants</dt>
           <dd>
@@ -3737,7 +3494,6 @@
                 also
                 includes operation and control of energy storages like batteries.
               </dd>
-
               <dt>Virtual Power Plants</dt>
               <dd>
                 A Virtual Power Plant (VPP) is an aggregation of Distributed Energy Resources (DERs) that can act as an
@@ -3746,7 +3502,6 @@
                 side-effect resp. secondary use. This results in negotiations/collaborations between many different
                 parties e.g. such as the DER owner, the VPP operator, the grid operator and others.
               </dd>
-
               <dt>Smart Metering</dt>
               <dd>
                 For consumers, a major change is the installation of smart meters. Their core tasks are remote reading
@@ -3754,14 +3509,12 @@
                 the possibility to realize fluctuating prices within a day at short notice. All electricity meters must
                 therefore be replaced by those with remote data transmission.
               </dd>
-
               <dt>Other variants</dt>
               <dd>
                 Emergency response, grid synchronization, grid black start
               </dd>
             </dl>
           </dd>
-
           <dt>Building Blocks</dt>
           <dd>
             <ul>
@@ -3785,7 +3538,6 @@
               <li>Object Memory: As multiple and interchangeable stakeholders are involved in the application, a
                 backlog of the object is beneficial for scrollkeeping</li>
             </ul>
-
           </dd>
           <dt>Non-Functionals</dt>
           <dd>
@@ -3806,11 +3558,9 @@
       </dd-->
           <dt>Existing Standards</dt>
           <dd>
-
             IEC 61850 - International standard for data models and communication protocols
             <br>
             IEEE 1547 - US standard for interconnecting distributed resources with electric power systems
-
           </dd>
           <!--dt>Comments</dt>
       <dd>
@@ -3818,11 +3568,9 @@
         </dl>
       </section>
     </section>
-
     <section id="transportation">
       <h2>Transportation</h2>
       <dl>
-
         <dt>Submitter(s)</dt>
         <dd>
           Zoltan Kis
@@ -3832,7 +3580,6 @@
           Transportation - Infrastructure
           Transportation - Cargo
           Transportation - People
-
         </dd>
         <dt>Target Users</dt>
         <dd>
@@ -3870,7 +3617,6 @@
         </dd>
         <dt>Expected Devices</dt>
         <dd>
-
           Road information system (routes, conditions, navigation).
           Road control system (e.g. virtual rails).
           Traffic management services, e.g. intelligent traffic light system with localization and identification
@@ -3886,37 +3632,28 @@
           Vehicles (human driven, self-driving, isolated or part of fleet).
           Connected vehicles (cars, ships, airplanes, trains, buses etc).
           Devices needed for cargo.
-
         </dd>
         <dt>Expected Data</dt>
         <dd>
-
           Vehicle data (identification, location, speed, route, selected vehicle data).
           Weather and climate data.
           Contextual data (representing various risk factors, delays, etc.).
-
         </dd>
         <dt>Dependencies</dt>
         <dd>
-
           Localization technologies.
           Automotive data.
           Contextual data.
           Cloud integration.
-
         </dd>
         <dt>Description</dt>
         <dd>
-
           Transportation system implementers will be able to use a unified data description model across various
           systems.
-
         </dd>
         <dt>Variants</dt>
         <dd>
-
           There will be different verticals, such as:
-
           <ul>
             <li>Smart City public transport</li>
             <li>Smart City traffic management</li>
@@ -3924,36 +3661,28 @@
             <li>Cargo traffic management</li>
             <li>Cargo vehicle management</li>
           </ul>
-
         </dd>
         <!--dt>Gaps</dt>
         <dd>
         </dd-->
         <!--dt>Existing Standards</dt>
         <dd>
-
           <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that
             are relevant for this use case</section>
-
         </dd>
         <dt>Comments</dt-->
         <dd>
-
         </dd>
       </dl>
     </section>
-
     <section id="automotive">
       <h2>Automotive</h2>
       <section id="mmi-2-1_smart-car-configuration-management">
         <h2>Smart Car Configuration Management</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Michael McCool
-
           </dd>
           <dt>Category</dt>
           <dd>
@@ -3961,66 +3690,52 @@
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             User interface personalization is a task that most often needs to be repeated
             for all Devices a user wishes to interact with recurringly.
             With complex devices,
             this task can also be very time-consuming,
             which is problematic if the user regularly accesses similar,
             but not identical devices, as in the case of several cars rented over a month.
-
             A standardized set of personal information and preferences that could be used
             to configure personalizable devices automatically would be very helpful for all
             these cases in which the interaction becomes a customary practice.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Personal mobile device running an application providing command
             mediation capabilities.
-
             IoT-enabled smart car supporting
             remote sensing, actuation, and configuration functionality.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Command and status information transferred between the personal mobile device
             application and the car's services and devices.
-
             Profile data for user preferences.
-
           </dd>
           <dt>Dependencies</dt>
           <dd>
-
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
               <li>Optional: WoT Scripting API in application on mobile personal device and possibly
                 in IoT orchestration services in the car.</li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             Basic in-car functionality is standardized to be managed by other devices.
             A user can control seat, radio or AC settings through a personalized multimodal interface
             shared by the car and their personal mobile device.
             User preferences are stored on the mobile Device (or in the cloud),
             and can be transferred across different car models handling a specific functionality
             (e.g. all cars with touchscreens should be able to adapt to a "high contrast" preference).
-
             The car can make itself available as a complex modality component that wraps around all
             functionality and supported modalities,
             or as a collection of modality components such as touchscreen, speech recognition system,
             or audio player.
             In the latter case,
             certain user preferences may be shared with other environments.
-
             For example,
             a user may opt to select the "high contrast" scheme at night on all of their displays,
             in the car or at home.
@@ -4029,105 +3744,73 @@
             for example to manage playback of music tracks through the car's voice control system.
             Sensor data provided by the phone can be mixed with data recorded by the car's own sensors
             to profile user behavior which can be used as context in multimodal interaction.
-
           </dd>
           <dt>Variants</dt>
           <dd>
-
             Additional portable devices may be brought into the car and also be
             incorporated into an application, for example, a GPS navigation system.
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             Data format describing user interface preferences.
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             This use case is based on MMI UC 2.1.
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
             Does not include Requirements section from original MMI use case.
           </dd>
         </dl>
       </section>
     </section>
-
     <section id="smart-home">
       <h2>Smart Home</h2>
-
       <!-- section id="audio_video">
       <h2>Audio/Video</h2>
       <!--
       <section id="media-information-references">
         <h2>Media Use Cases</h2>
         <dl>
-
           This section is not a full use case description. It is rather a collection of
           thoughts and ideas to capture information and provide references and have a common discussion basis.
-
           The intention is to trigger new ideas and collect them in a single chapter.
-
           <dt>Submitter(s)</dt>
           <dd>
-
-
           </dd>
           <dt>Reviewer(s)</dt>
           <dd>
-
-
           </dd>
           <dt>Tracker Issue ID</dt>
           <dd>
-
-
           </dd>
           <dt>Category</dt>
           <dd>
-
-
           </dd>
           <dt>Class</dt>
           <dd>
-
-
           </dd>
           <dt>Status</dt>
           <dd>
-
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
           </dd>
           <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             <ul>
               <li>Sync of media across different devices:</li>
               <li>people in different homes watch the same content at the same time. Conversation about content.</li>
@@ -4140,30 +3823,23 @@
           </dd>
           <dt>Variants</dt>
           <dd>
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             <section id="todo-gaps-1" class="ednote">
               TODO: Provide links to relevant standards that are relevant for this use case</section>
-
           </dd>
           <dt>Existing Standards & related information</dt>
           <dd>
-
             <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are
               relevant for this use case.
               <p>There are MANY TV standards and this would be a long list. Rather leave blank unless a very specific
                 standard provides more insight.</p>
             </section>
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
             Further information and resources:
-
             <ul>
               <li><a
                   href="https://www.w3.org/2011/webtv/wiki/images/d/d1/MediaTimedEventsInHybridcast_TPAC20190916.pdf">NHK
@@ -4176,53 +3852,39 @@
           </dd>
         </dl>
       </section>
-
     -->
-
       <section id="nhk-device-tv-sync">
         <h2>Home WoT devices synchronize to TV programs</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Hiroki Endo,
             Masaya Ikeo,
             Shinya Abe,
             Hiroshi Fujisawa
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             Person watching TV, Broadcasters
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             A lot of home devices, such as TV, cleaner, and home lighting, connect to an IP network.
             When you watch a content program, these devices should cooperate for enhancing your experience.
-
             If the cleaning robot makes a loud noise while watching the TV program, it will hinder viewing.
             Also, even if you set up the theater environment with smart lights, it is troublesome to operate it
             yourself each time the TV program switches.
-
             Therefore, by WoT device to operate in accordance with the TV program being viewed, thereby improving the
             user experience.
-
             WoT devices work according to TV programs:
-
             <ul>
               <li>Cleaning robot stops at an important situation,</li>
               <li>Color of smart lights are changed according to TV programs,</li>
               <li>Smart Mirror is notified that favorite TV show will start.</li>
             </ul>
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             <ul>
               <li>Hybridcast TV</li>
               <li>Hybridcast Connect application (in a smartdevice such as smartphone)</li>
@@ -4230,19 +3892,14 @@
               <li>Smart Light (such as Philips Hue)</li>
               <li>Smart Mirror</li>
             </ul>
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             The trigger value of the scene of the TV program.
             Hybridcast connect application know the Thing Description of the devices in home. (Discovery?)
-
           </dd>
           <!--dt>Dependencies</dt>
           <dd-->
-
-
           </dd>
           <dt>Description</dt>
           <dd>
@@ -4259,39 +3916,30 @@
           </dd>
           <!--dt>Variants</dt>
           <dd>
-
           </dd>
           <dt>Gaps</dt>
           <dd->
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system (<a href="http://www.iptvforum.jp/download/input.html">IPTVFJ STD-0013 "Hybridcast Operational Guideline Version 2.8" (Application Forms)</a>, <a href="https://github.com/nhkrd">Reference Implementations</a>),
             HbbTV,
             ATSC 3.0,
             ...etc.
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
           </dd>
         </dl>
       </section-->
-
       </section>
-
       <section id="echonet-use-case">
         <h2>Leaving and Coming Home</h2>
-
         <dl>
           <dt>Submitter(s)</dt>
           <dd>
             Tetsushi Matsuda, Keiichi Teramoto, Takashi Murakami, Morio Hirahara (ECHONET Consortium)
           </dd>
-
           <dt>Target Users</dt>
           <dd>
             <ul>
@@ -4300,33 +3948,27 @@
               <li>device manufacturer</li>
             </ul>
           </dd>
-
           <dt>Motivation</dt>
           <dd>
             The purpose of this use case is to improve the usability of home appliances for device users by allowing
             device users to configure the operation modes of all devices at home without configuring those devices one
             by one when they leave and come home.
           </dd>
-
           <dt>Expected Devices</dt>
           <dd>
             Lighting, Air Conditioner, Security Sensor, Smartphone
           </dd>
-
           <dt>Expected Data</dt>
           <dd>
             The operation modes of lighting, air conditioner and security sensor. Reading and updating those operation
             modes on demand.
           </dd>
-
           <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
           <dd>
           </dd>
-
           <dt>Description</dt>
           <dd>
             <div class="resize"><img src="./images/wot-use-case-echonet.png" alt="echonet use case" /></div>>
-
             <ul>
               <li>Configuration by a device user before starting to use a service
                 <ul>
@@ -4338,7 +3980,6 @@
                 </ul>
               </li>
             </ul>
-
             <ul>
               <li>When the device user leaves home
                 <ul>
@@ -4351,7 +3992,6 @@
                 </ul>
               </li>
             </ul>
-
             <ul>
               <li>When the device user comes home
                 <ul>
@@ -4371,7 +4011,6 @@
               </li>
             </ul>
           </dd>
-
           <dt>Security Considerations</dt>
           <dd>
             <ul>
@@ -4381,24 +4020,20 @@
                 providers permitted by the device user in advance to control devices at the device user's home.</li>
             </ul>
           </dd>
-
           <dt>Privacy Considerations</dt>
           <dd>
             It is necessary to protect the information on what operations are done on the devices that are controlled or
             monitored at the device user's home. It is also necessary to protect the information obtained from the
             devices that are controlled or monitored at the device user's home.
           </dd>
-
           <dt>Accessibility Considerations</dt>
           <dd>
             User interface provided by a smartphone had better consider accessibility.
           </dd>
-
           <dt>Internationalisation (i18n) Considerations</dt>
           <dd>
             User interface provided by a smartphone had better support internationalization.
           </dd>
-
           <dt>Gaps</dt>
           <dd>
             The method for controlling multiple devices in an orchestrated manner is dependent on the implementation of
@@ -4406,7 +4041,6 @@
             orchestrated control of multiple devices needs to be implemented by each client application even if the same
             control is done by multiple client applications.
           </dd>
-
           <dt>Existing standards</dt>
           <dd>
             ECHONET Lite (https://echonet.jp/spec_v113_lite_en/ ) and ECHONET Lite Web API Guideline
@@ -4414,50 +4048,38 @@
           </dd>
         </dl>
       </section>
-
     </section>
-
     <section id="education">
       <h2>Education</h2>
       <section id="shared-devices">
         <h2>Shared Devices</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Ege Korkan
-
           </dd>
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             For the education category:
-
             <ul>
               <li>device owners : The university -&gt; Research Group -&gt; Specific Lab</li>
               <li>device user : Students and potentially anyone who participates in plugfests</li>
               <li>service provider : The university -&gt; Research Group</li>
               <li>network operator : The university</li>
             </ul>
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             This use case motivates a standardized use of shared resources. One example is when a physical resource of
             the Thing should not be used by multiple Consumers at the same time like the arm of the robot but its
             position can be read my multiple Consumers.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Concrete devices are irrelevant for this use case but devices with a physical state is required. However,
             we have currently the following devices that are connected to Raspberry Pis where the WoT stack (node-wot
             or similar) is running. Concrete device models can be given upon request.
-
             <ul>
               <li>Robotic arms</li>
               <li>Conveyor belts</li>
@@ -4467,57 +4089,42 @@
               <li>Various sensors (brightness, humidity, temperature, gyroscopic sensors)</li>
               <li>LED Screen to display messages</li>
             </ul>
-
             There are also IP Cameras but they are not WoT compatible and are not planned to be made compatible.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Atmospheric data of a room, machine sensors
-
           </dd>
           <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
             Thing Description, Scripting API, possibly security
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             We are offering a practical course for the students where they can interact fully remotely with WoT
             devices and verify their physical actions via video streams. We have sensors and actuators like robots.
             Students then build mashup applications to deepen their knowledge of WoT technologies. Official page of
             the course is <a
               href="https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950504601&pSpracheNr=1">here</a>.
-
           </dd>
           <!--dt>Variants</dt>
           <dd-->
-
           </dd>
           <dt>Security Considerations</dt>
           <dd>
-
             The devices are connected to the Internet and are secured behind a router and proxy.
-
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
-
             None from the WoT point of view since we want the devices to be used by anyone and the devices do not
             share any information that is related to the students or us as the provider of the devices.
             However, there are cameras which can show humans entering the room as a side effect (they are meant to
             monitor the devices). The streams are accessible only to authorized users, the room has signs on the door
             and there is a cage around the area that is filmed.
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             <p>Thing Description</p>
-
             <ul>
               <li>How to give hints that a particular action should not be used by others at the same time. A new
                 keyword (like `"shared":true`) would be needed for devices that do not implement a describable
@@ -4525,18 +4132,14 @@
               <li>How to describe the mechanism that the Thing implements to manage the shared resources. Does it
                 happen in the security level? </li>
             </ul>
-
             <p>Scripting API</p>
-
             <ul>
               <li>How does the Consumer code change when this mechanism is used. Does it get settled in the
                 implementation or scripting level. </li>
             </ul>
-
           </dd>
           <!--dt>Existing Standards</dt>
             <dd>
-    
     
             </dd>
             <dt>Comments</dt>
@@ -4545,12 +4148,9 @@
         </dl>
       </section>
     </section>
-
   </section> <!-- vertical-ucs -->
-
   <section id="sec-horizontal-ucs">
     <h2>Use Cases for multiple domains</h2>
-
     <section id="Discovery">
       <h2>Discovery</h2>
       <dl>
@@ -4563,7 +4163,6 @@
         </dd>
         <dt>Target Users</dt>
         <dd>
-
           All stakeholders:
           <ul>
             <li>device owners</li>
@@ -4576,21 +4175,17 @@
             <li>identity provider</li>
             <li>directory service operator</li>
           </ul>
-
         </dd>
         <dt>Motivation</dt>
         <dd>
-
           Discovery defines a distribution mechanism for the metadata contained in WoT Things Descriptions,
           and allows Things to advertise their capabilities and for potential consumers to find Things that
           match their needs. A standardized discovery mechanism is an enabler for convenient and ad-hoc
           orchestration of combinations of Things from different vendors while supporting appropriate security
           and privacy controls.
-
         </dd>
         <dt>Expected Devices</dt>
         <dd>
-
           <ul>
             <li>Thing - any device or service that wishes to distribute (advertise) its metadata.</li>
             <li>Consumer - any device or service that wishes to find Things whose location and metadata satisfies
@@ -4599,29 +4194,22 @@
               services to handle spatial and semantic queries, register Thing Descriptions, provide access controls,
               etc.</li>
           </ul>
-
         </dd>
         <dt>Expected Data</dt>
         <dd>
-
           <ul>
             <li>Thing Descriptions - metadata describing a Thing</li>
           </ul>
-
         </dd>
         <dt>Affected WoT deliverables and/or work items</dt>
         <dd>
-
           <ul>
             <li>WoT Discovery</li>
           </ul>
-
           Note: this is a "horizontal" use case, and is driven by requirements in multiple verticals.
-
         </dd>
         <dt>Description</dt>
         <dd>
-
           A user wishing to build or instantiate an IoT service needs access to Thing Descriptions of installed and
           running
           devices satisfying specific requirements. These requirements can include being in or near a certain
@@ -4631,9 +4219,7 @@
           (interfaces).
           Discovery is the general process whereby WoT Thing Descriptions satisfying a specific set of such
           constraints are retrieved by a running system.
-
         </dd>
-
         <dt>Variants</dt>
         <dd>
           <ul>
@@ -4646,11 +4232,9 @@
               Models,
               not specific Thing Descriptions.</li>
           </ul>
-
         </dd>
         <dt>Security Considerations</dt>
         <dd>
-
           <ul>
             <li>The distribution mechanism needs to be able to clearly authenticate potential users.</li>
             <li>The distribution mechanism for metadata should only provide metadata to authorized users.</li>
@@ -4658,11 +4242,9 @@
               within spurious requests.</li>
             <li>The distribution mechanism should be able to preserve the integrity of metadata.</li>
           </ul>
-
         </dd>
         <dt>Privacy Considerations</dt>
         <dd>
-
           <ul>
             <li>Metadata should only be distributed to appropriate sets of requesters, with the definition of
               "appropriate" configurable by the source of the metadata.</li>
@@ -4671,30 +4253,24 @@
             <li>Providers of metadata should be able to withdraw metadata from distribution at any time.</li>
             <li>Metadata should not be retained indefinitely.</li>
           </ul>
-
         </dd>
         <dt>Gaps</dt>
         <dd>
-
           <ul>
             <li>The current WoT standards define a metadata format (the Thing Description) but not a means of
               distributing it.</li>
           </ul>
-
         </dd>
         <dt>Existing Standards</dt>
         <dd>
-
           <ul>
             <li>WoT Thing Description</li>
             <li>CoreRD</li>
             <li>DID</li>
           </ul>
-
         </dd>
         <dt>Comments</dt>
         <dd>
-
           <ul>
             <li>Many discovery mechanisms already exist but many do not satisfy all the requirements above, e.g. they
               may have insufficient
@@ -4702,7 +4278,6 @@
         </dd>
       </dl>
     </section>
-
     <section id="multi-vendor">
       <h2>Multi-Vendor System Integration - Out of the box interoperability</h2>
       <dl>
@@ -4712,7 +4287,6 @@
         </dd>
         <dt>Target Users</dt>
         <dd>
-
           <ul>
             <li>device owner</li>
             <li>service provider</li>
@@ -4720,11 +4294,9 @@
             <li>device manufacturer</li>
             <li>gateway manufacturer</li>
           </ul>
-
         </dd>
         <dt>Motivation</dt>
         <dd>
-
           <ul>
             <li>As a device owner, I want to know whether a device will work with my system before I purchase it to
               avoid wasting money.
@@ -4735,7 +4307,6 @@
               </ul>
             </li>
           </ul>
-
           <ul>
             <li>As a developer, I want TDs to be as simple as possible so that I can efficiently develop them.
               <ul>
@@ -4744,18 +4315,15 @@
               </ul>
             </li>
           </ul>
-
           <ul>
             <li>As a developer, I want to be able to validate that a Thing will be compatible with a Consumer
               without having to test against every possible consumer.</li>
           </ul>
-
           <ul>
             <li>As a cloud provider I want to onboard, manage and communicate with as many devices as possible out
               of the box.
               This should be possible without device specific customization.</li>
           </ul>
-
         </dd>
         <dt>Expected Devices</dt>
         <dd>sensors, actuators, gateways, cloud, directory service.</dd>
@@ -4767,46 +4335,34 @@
         <dd>
           As a consumer of devices I want to be able to process data from any device that conforms to a class of
           devices.
-
           I want to have a guarantee that I'm able to correctly interact with all affordances of the Thing that
           complies with this class of devices.
           Behavioral ambiguities between different implementations of the same description should not be possible.
-
           I want to integrate it into my existing scenarios out of the box, i.e. with close to zero configuration
           tasks.
-
         </dd>
         <!--dt>Variants</dt>
             <dd>
-
               N/A
-
             </dd-->
         <!--dt>Gaps</dt>
             <dd>
-
               <section id="todo-gaps-x" class="ednote">
                 TODO: Describe any gaps that are not addressed in the current WoT standards and building blocks
               </section>
-
             </dd>
             <dt>References</dt>
             <dd>
-
               <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are relevant
                 for
                 this use case</section>
-
         </dd>
         <dt>Existing Standards</dt>
         <dd>
-
           various.
-
         </dd-->
         <dt>Comments</dt>
         <dd>
-
           The profile specification is currently in development by the architecture task force.
           The current draft of the specification is available at: <a
             href="https://github.com/w3c/wot-profile">https://github.com/w3c/wot-profile</a>
@@ -4816,22 +4372,16 @@
         </dd>
       </dl>
     </section>
-
     <section id="digital-twin">
       <h2>Digital Twin</h2>
       <dl>
-
         <dt>Submitter(s)</dt>
         <dd>
-
           Michael Lagally
-
         </dd>
         <dt>Target Users</dt>
         <dd>
-
           Device owners, cloud provider.
-
         </dd>
         <dt>Motivation</dt>
         <dd>
@@ -4860,51 +4410,40 @@
         </dd>
         <dt>Expected Data</dt>
         <dd>
-
           Machine status information, discrete sensor data or data streams.
-
         </dd>
         <dt>Dependencies</dt>
         <dd>
-
           <ul>
             <li>WoT Architecture </li>
             <li>WoT Thing Description </li>
             <li>WoT Profile </li>
             <li>WoT Scripting? </li>
           </ul>
-
         </dd>
         <dt>Description</dt>
         <dd>
-
           The user benefits from using digital twins with the following scenarios:
-
           <ul>
             <li>Better visibility: Continually view the operations of the machines or devices, and the status of
               their interconnected systems.</li>
           </ul>
-
           <ul>
             <li>Accurate prediction: Retrieve the future state of the machines from the digital twin model by using
               modeling.</li>
           </ul>
-
           <ul>
             <li>What-if analysis: Easily interact with the model to simulate unique machine conditions and perform
               what-if analysis using well-designed interfaces.</li>
           </ul>
-
           <ul>
             <li>Documentation and communication: Use of the digital twin model helps to understand, document, and
               explain the behavior of a specific machine or a collection of machines.</li>
           </ul>
-
           <ul>
             <li>Integration of disparate systems: Connect with back-end applications related to supply chain
               operations such as manufacturing, procurement, warehousing, transportation, or logistics.</li>
           </ul>
-
         </dd>
         <dt>Variants</dt>
         <dd>
@@ -4942,7 +4481,6 @@
                 appropriate actions.
               </p>
             </dd>
-
             <dt>Predictive Twin</dt>
             <dd>
               <p>
@@ -4964,7 +4502,6 @@
                 data. The model helps to address business problems.
               </p>
             </dd>
-
             <dt>Twin Projections</dt>
             <dd>
               <p>
@@ -4978,60 +4515,45 @@
                 transform into intelligent systems.
               </p>
             </dd>
-
             <dt>Gaps</dt>
             <dd>WoT does not define a way to describe the behavior of a thing to use for a simulation.</dd>
           </dl>
         </dd>
       </dl>
     </section>
-
     <section id="X-Protocol-Interworking">
       <h2>Cross Protocol Interworking</h2>
       <dl>
         <dt>Submitter(s)</dt>
         <dd>
-
           Michael Lagally
-
         </dd>
         <dt>Target Users</dt>
         <dd>
-
           Device owners, cloud providers.
-
         </dd>
         <dt>Motivation</dt>
         <dd>
-
           In smart city, home and industrial scenarios various devices are connected to a common network. These
           devices implement different protocols. To enable interoperability, an "agent" needs to communicate across
           different protocols. Platforms for this agent can be edge devices, gateways or cloud services.
-
           Interoperability across protocols is a must for all user scenarios that integrate devices from more than
           one protocol.
-
         </dd>
         <dt>Expected Devices</dt>
         <dd>
-
           Various sensors, e.g. temperature, light, humidity, vibration, noise, air quality, edge devices, gateways,
           cloud servers and services.
-
         </dd>
         <dt>Expected Data</dt>
         <dd>
-
           Discrete sensor values, such as temperature, light, humidity, vibration, noise, air quality readings.
           A/V streams.
           The data can be delivered periodically or on demand.
-
         </dd>
         <dt>Dependencies</dt>
         <dd>
-
           WoT Profiles.
-
         </dd>
         <dt>Description</dt>
         <dd>
@@ -5061,16 +4583,12 @@
         <!--dt>Variants</d>
         <dd>
         </dd-->
-
         <dt>Gaps</dt>
         <dd>
-
           A common profile across protocols is required to address this use case.
-
         </dd>
         <dt>Existing Standards</dt>
         <dd>
-
           MQTT, OPC-UA, BACNet, CoAP, various other home and industrial protocols.
         </dd>
         <!--dt>Comments</dt>
@@ -5078,16 +4596,13 @@
           </dd-->
       </dl>
     </section>
-
     <section id="multimodal">
       <h2>Multimodal System Integration</h2>
       <section id="mmi-5-1_multimodal-recognition-support">
         <h2>Multimodal Recognition Support</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Michael McCool
           <dt>Category</dt>
           <dd>
@@ -5095,7 +4610,6 @@
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             Recognizer system development has arrived at a point of maturity where
             if we want to dramatically enhance recognition performance,
             sensor fusion from multiple modalities is needed.
@@ -5103,72 +4617,52 @@
             an image recognizer should incorporate results coming from other
             kinds of recognizers (e.g. audio recognizer) within the network
             engaged in the same interaction cycle.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Audio sensing device (microphone).
-
             Video sensing device (camera).
-
             Audio recognition service.
-
             Video recognition service.
-
             Devices capable of presenting alerts in various modalities.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Command and status information transferred between the sensing devices,
             the recognition services, and the alert devices.
-
             Profile data for user preferences.
-
           </dd>
           <dt>Dependencies</dt>
           <dd>
-
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
               <li>Optional: WoT Scripting API in application on mobile personal device and possibly
                 in IoT orchestration services.</li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             An audio recognizer has been trained with the more common sounds in the house,
             in order to provide alerts in case of an emergency.
             In the same house a security system uses a video recognizer to identify people
             at the front door.
             These two systems need to cooperate with a remote home management system
             to provide integrated services.
-
           </dd>
           <!--dt>Variants</dt>
           <dd-->
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             Support for video and audio recognition services.
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             This use case is based on MMI UC 5.1.
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
             Does not include Requirements section from original MMI use case.
           </dd>
         </dl>
@@ -5176,23 +4670,16 @@
       <section id="mmi-5-2_enhancement-of-synergistic-interactions">
         <h2>Enhancement of Synergistic Interactions</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Michael McCool
-
           </dd>
-
           <dt>Category</dt>
           <dd>
-
             Accessibility
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             One of the main indicators concerning the usability of a system
             is the corresponding level of accessibility provided by it.
             The opportunity for all the users to receive and to deliver all kinds of information,
@@ -5200,7 +4687,6 @@
             state or impairment is a recurrent need in web applications.
             One of the means to achieve accessibility is the design of a more
             synergic interaction based on the discovery of multimodal Modality Components.
-
             Synergy is two or more entities functioning together to produce a result
             that is not obtainable independently.
             It means "working together".
@@ -5217,35 +4703,26 @@
             Such a system can also enhance the fusion process for target groups of
             users experiencing permanent or temporary learning difficulties or with sensorial,
             emotional or social impairments.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             A normal client computer with I/O devices that need to be emulated.
-
             Alternative I/O devices that need to be interfaced to the client system.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Command and status information transferred between the client computer
             and the alternative I/O devices.
-
             Profile data for user preferences.
-
           </dd>
           <dt>Dependencies</dt>
           <dd>
-
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
               <li>Optional: WoT Scripting API in application on mobile personal device and possibly
                 in IoT orchestration services.</li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
@@ -5265,38 +4742,29 @@
           </dd>
           <!--dt>Variants</dt>
           <dd>
-
           </dd>
           <dt>Gaps</dt>
           <dd-->
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             This use case is based on MMI UC 5.2.
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
             Does not include Requirements section from original MMI use case.
           </dd>
         </dl>
       </section>
     </section>
-
     <section id="accessibility">
       <h2>Accessibility</h2>
       <section id="mmi-1-1_audiovisual-devices-as-smartphone-extensions">
         <h2>Audiovisual Devices Acting as Smartphone Extensions</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Michael McCool
-
           </dd>
            <dt>Category</dt>
           <dd>
@@ -5327,50 +4795,37 @@
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Mobile phone or other client running an application requiring a extended and
             more accessible user interface.
-
             IoT-enabled audio-visual devices providing audio and visual information
             display capabilities that can be used to augment the user interface of the
             application.
-
             Possible edge computation services providing speech-to-text or described video
             (e.g. object detection) capabilities.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Visual display information mapping information from audio to visual modalities,
             for example text generated from voice recognition.
-
             Text from an application that needs to be displayed at a larger size.
-
             Visual alerts corresponding to audio stimuli, e.g. sound effects in a game mapped
             to visual icons.
-
             Visual information mapped to audio information, for example,
             described video based on an AI service providing object recognition.
-
           </dd>
           <dt>Dependencies</dt>
           <dd>
-
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
               <li>Optional: WoT Scripting API accessible from application for interacting
                 with devices.</li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             A home entertainment system is adapted by a mobile device
             as a set of user interface components.
-
             In addition to media rendering and playback,
             these Devices also act as input or output modalities for
             an application, for example an application running on a smartphone.
@@ -5380,7 +4835,6 @@
             and a wide-range microphone can handle speech input.
             Spatial (Kinect-style) gestures may also be used to control
             application behavior.
-
             Accessibility support software on the smartphone
             discovers available modalities and arranges them to best
             serve the user's purpose.
@@ -5397,32 +4851,24 @@
             it is carried over to another screen when they switch rooms,
             or replaced with a different modality such as voice
             if there are no displays in the new location.
-
           </dd>
           <dt>Variants</dt>
           <dd>
-
             Modalities may be translated from one form to another to accommodate
             accessibility issues, for example, visual cues into audio cues and
             vice-versa, as appropriate.
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             An AI service may be require to perform modality mapping, for example,
             object recognition.
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             This use case is based on MMI UC 1.1.
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
             Does not include Requirements section from original MMI use case.
             Variant supporting
             modality conversion is not included in the original MMI use case.
@@ -5432,65 +4878,49 @@
       <section id="mmi-1-2_unified-smart-home-control-and-status">
         <h2>Unified Smart Home Control and Status Interface</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Michael McCool
-
           </dd>
           <dt>Category</dt>
           <dd>
-
             Accessibility
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             The increase in the number of controllable devices in an
             intelligent home creates a problem with controlling all available services
             in a coherent and useful manner.
             Having a shared context,
             built from information collected through sensors and direct user input,
             would improve recognition of user intent, and thus simplify interactions.
-
             In addition,
             multiple input mechanisms could be selected by the user based on device type,
             level of trust and the type of interaction required for a particular task.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             Mobile phone or other client running an application providing command
             mediation capabilities.
-
             IoT-enabled smart home devices supporting
             remote sensing and actuation functionality.
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             Command and status information transferred between the command mediation
             application and one or more devices.
-
           </dd>
           <dt>Dependencies</dt>
           <dd>
-
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Discovery</li>
               <li>Optional: WoT Scripting API accessible from application for interacting
                 with devices.</li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
@@ -5516,48 +4946,36 @@
           </dd>
           <dt>Variants</dt>
           <dd>
-
             The intelligent home in tandem with the user's personal
             devices can additionally monitor user behavior for emotional patterns
             such as 'tired' or 'busy' and adapt further.
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             A service may be needed to recognize gestures and emotional states.
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             This use case is based on MMI UC 1.2; original title was Intelligent Home Apparatus.
-
           </dd>
           <dt>Comments</dt>
           <dd>
-
             Does not include Requirements section from original MMI use case.
           </dd>
         </dl>
       </section>
     </section>
-
     <section id="Security">
       <h2>Security</h2>
       <section id="oauth">
         <h2>OAuth2 Flows</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Michael McCool, Cristiano Aguzzi
-
           </dd>
           <dt>Target Users</dt>
           <dd>
-
             <ul>
               <li>device owner</li>
               <li>device user</li>
@@ -5566,7 +4984,6 @@
               <li>identity provider</li>
               <li>directory service</li>
             </ul>
-
           </dd>
           <dt>Motivation</dt>
           <dd>
@@ -5575,7 +4992,6 @@
               owner
               or of itself.
               The protocol defines the following actors:</p>
-
             <ul>
               <li>Client: an application that wants to use a resource owned by the resource owner. </li>
               <li>Authorization Server: An intermediary that authorizes the client for a particular `scope`. </li>
@@ -5628,7 +5044,6 @@
               are meant to take place over a network protocol.
               In some cases,
               interaction with with a human through a user interface may be intended.
-
               OAuth2.0 defines 4 basic flows plus an extension mechanism.
               The most common of which are:</p>
             <ul>
@@ -5637,9 +5052,7 @@
               <li>`password` (of resource owner)</li>
               <li>`client` (credentials of the client)</li>
             </ul>
-
             <p>In addition, a particular extension which is of interest to IoT is the `device` flow.
-
               Further information about the OAuth 2.0 protocol can be found in
               <a href="https://tools.ietf.org/html/rfc6749#section-1">IETF RFC6749</a>.
               In addition to the flows, OAuth 2.0 also supports scopes.
@@ -5649,11 +5062,9 @@
               Each token carries a set of scopes and these can be checked when an interaction
               is attempted and access can be denied if the token does not include a scope
               required by the interaction.
-
               This document describes relevant use cases for each of the OAuth 2.0 authorization flows.
             </p>
           </dd>
-
           <dt>Expected Devices</dt>
           <dd>
             To support OAuth 2.0, all devices must have the capability of:
@@ -5677,7 +5088,6 @@
                 </ul>
               </li>
             </ul>
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
@@ -5688,31 +5098,24 @@
             Finally,
             OAuth 2.0 supports scopes so these need to be defined in the security scheme and specified in
             the form.
-
           </dd>
           <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
             Thing Description, Scripting API, Discovery, and Security.
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             A general use case for OAuth 2.0 is when a WoT consumer wants to access restricted interaction
             affordances.
             In particular, when those affordances have a specific resource owner which
             may grant some temporary permissions to the consumer.
-
             The WoT consumer can either be hosted in a remote device or interact directly with the end-user inside an
             application.
-
           </dd>
           <dt>Variants</dt>
           <dd>
             <p>For each OAuth 2.0 flow, there is a corresponding use case variant.
               We also include the experimental "device" flow for consideration.</p>
-
             <p><strong>code</strong></p>
             <p>A natural application of this protocol is when the end-user wants to interact directly with the consumed
               thing or to grant their authorization to a remote device. In fact from the <a
@@ -5725,7 +5128,6 @@
                 from the authorization server.
               </li>
             </ul>
-
             <p>This implies that the code flow can be only used when the resource owner interacts directly with the WoT
               consumer at least once. Typical scenarios are:</p>
             <ul>
@@ -5738,7 +5140,6 @@
                 request to the device owner (i.e. an human who has bought the device and installed it). </li>
               <li>... </li>
             </ul>
-
             <p>The following diagram shows the steps of the protocol adapted to WoT idioms and entities. In this
               scenario, the WoT Consumer has read the Thing Description of a Remote Device and want to access one of its
               WoT Affordances protected with OAuth 2.0 code flow.</p>
@@ -5775,7 +5176,6 @@
                            Affordance
 </pre>
             <p>Notice that steps (A), (B) and (C) are broken in two parts as they pass through the User-Agent.</p>
-
             <p><strong>device</strong></p>
             <p>The device flow (IETF <a href="https://tools.ietf.org/html/rfc8628">RFC 8628</a>) is a variant of the
               code
@@ -5789,7 +5189,6 @@
                 href="https://tools.ietf.org/html/rfc8628#section-6.2">section-6.2</a>
               briefly describes an authentication using a companion app and BLE), as shown in the following (slightly
               adapted) diagram:</p>p>
-
             <pre>
 +----------+
 |          |
@@ -5841,7 +5240,6 @@
                 Server</li>
               <li>Other user interactions methods may be used but are left out of scope</li>
             </ul>
-
             <p><strong>client credential</strong></p>
             <p>The Client Credentials grant type is used by clients to obtain an access token outside of the context of
               an end-user. From <a href="https://tools.ietf.org/html/rfc6749#section-4.4">RFC6749</a>:</p>
@@ -5853,7 +5251,6 @@
                   arranged with the authorization server</b> (the method of which is beyond
                 the scope of this specification).</li>
             </ul>
-
             <p>Therefore the client credential grant can be used:</p>
             <ul>
               <li>When the resource owner is a public authority. For example, in a smart city context, the authority
@@ -5863,10 +5260,8 @@
                 credentials. </li>
               <li>...</li>
             </ul>
-
             <p>The Client Credentials flow is illustrated in the following diagram. Notice how the Resource Owner is not
               present.</p>
-
             <pre>
 +----------+
 |          |
@@ -5891,7 +5286,6 @@
               requests the generation of a token that is then passed to the cli. The token is used to verify the
               publishing process of `npm` packages in the registry. Further examples are Docker cli and OpenId Connect
               Client Credentials.</p>
-
             <p><strong>implicit</strong></p>
             <p><b>Deprecated</b>
               From <a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">OAuth 2.0
@@ -5905,7 +5299,6 @@
                 token leakage vectors are mitigated.
               </li>
             </ul>
-
             <p>The RFC above suggests using `code` flow with Proof Key for Code Exchange (PKCE) instead.</p>
             <p>The implicit flow was designed for public clients typically implemented inside a browser (i.e. javascript
               clients). As the `code` is a redirection-based flow and it requires direct interaction with the resource's
@@ -5914,7 +5307,6 @@
             <p>Considering the WoT context this flow is not particularly different from `code` grant and it can be used
               in the same scenarios.</p>
             <p>Comment: even if the `implicit` flow is deprecated existing services may still using it.</p>
-
             <pre>
 +----------+
 | Resource |
@@ -5949,9 +5341,7 @@
 | Consumer |               Affordance          |          |
 |          |                                   +----------+
 +----------+
-
 </pre>
-
             <p><strong>resource owner password</strong></p>
             <p><b>Deprecated</b> From <a
                 href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">OAuth 2.0 Security
@@ -5964,9 +5354,7 @@
                 just the AS) and users are trained to enter their credentials in
                 places other than the AS.</li>
             </ul>
-
             <p>For completeness the diagram flow is reported below.</p>
-
             <pre>
  +----------+
  | Resource |
@@ -5994,36 +5382,28 @@
  |          |
  +----------+
 </pre>
-
           </dd>
           <dt>Security Considerations</dt>
           <dd>
-
             See OAuth 2.0 security considerations in <a
               href="https://tools.ietf.org/html/rfc6749#section-10">RFC6749</a>.
             See also <a href="https://tools.ietf.org/html/rfc8628#section-5">RFC 8628 section 5</a> for `device` flow.
-
           </dd>
           <!--dt>Privacy Considerations</dt>
           <dd>
             <section id="todo--privacy-x" class="ednote">TODO:
               Describe any issues related to privacy; if there are none, say "none" and justify
             </section>
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             <section id="todo-gaps-x" class="ednote" TODO:>TODO: Describe any gaps that are
               not addressed in the current WoT standards and building blocks
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
-
             <section id="todo-references-x" class="ednote" TODO:>TODO: Provide links to relevant standards that are
               relevant for this use case</section>
-
           </dd-->
           <dt>Comments</dt>
           <dd>
@@ -6033,30 +5413,22 @@
         </dl>
       </section>
     </section>
-
     <section id="lifecycle">
       <h2>Lifecycle</h2>
       <section id="device-lifecycle">
         <h2>Device Lifecycle</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             Michael Lagally
-
           </dd>
             <dt>Target Users</dt>
           <dd>
-
             device manufacturer, gateway manufacturer, cloud provider
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             The architecture specification currently does not address lifecycle.
-
           </dd>
           <!--dt>Expected Devices</dt>
           <dd>
@@ -6069,48 +5441,39 @@
           </dd>
           <dt>Description</dt>
           <dd>
-
             Handle the entire device lifecycle:
             Define terminology for lifecycle states and transitions.
-
             <p>Actors (represent a physical person or group of persons (company))</p>
             Manufacturer
             Service Provider
             Network Provider (potentially transparent for WoT use cases)
             Device Owner (User)
             Others?
-
             <p>Roles:</p>
             Depending on the use case, an actor can have multiple roles,
             e.g. security maintainer.
             Roles can be delegated.
-
           </dd>
           <dt>Variants</dt>
           <dd>
-
             There are (at least) two different entities to consider:
             <ul>
               <li>Things / Devices</li>
               <li>Consumers, e.g. cloud services or gateways</li>
             </ul>
-
             In more complex use cases there are additional entities:
             <ul>
               <li>Intermediates</li>
               <li>Directories</li>
             </ul>
-
           </dd>
           <dt>Gaps</dt>
           <dd>
-
             The current architecture spec does not describe device lifecycle in detail.
             A common lifecycle model helps to clarify terminology and structures the discussion
             in different groups.
             Interaction of a device with other entities such as directories may introduce
             additional states and transitions.
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
@@ -6165,22 +5528,17 @@
         </dl>
       </section>
     </section>
-
     <section id="VR/AR">
       <h2>VR/AR</h2>
-
       <section id="ar-guide">
         <h2>AR Virtual Guide</h2>
         <dl>
-
           <dt>Submitter(s)</dt>
           <dd>
-
             <ul>
               <li>Rob Smith</li>
               <li>Kaz Ashimura</li>
             </ul>
-
           </dd>
           <dt>Target Users</dt>
           <dd>
@@ -6194,11 +5552,9 @@
               <li>identity provider</li>
               <li>directory service operator</li>
             </ul>
-
           </dd>
           <dt>Motivation</dt>
           <dd>
-
             Using a wearable semi-transparent display,
             users can be guided by a virtual assistant through a physical area of interest with
             a rendered overlay to visualize events, annotate structures and other physical features,
@@ -6207,11 +5563,9 @@
             An annotated map may provide additional geospatial guidance, including
             identification of landmarks, locations of devices. The system may also guide the
             user along a specific trajectory.
-
           </dd>
           <dt>Expected Devices</dt>
           <dd>
-
             <ul>
               <li>Wearable, semi-transparent head-mounted display</li>
               <li>Headphones for speakers for audio output</li>
@@ -6222,11 +5576,9 @@
               <li>Data processor to integrate all data (including live an historical data and geopose),
                 generate annotations for the display, and record/play scenes</li>
             </ul>
-
           </dd>
           <dt>Expected Data</dt>
           <dd>
-
             <ul>
               <li>3D Position, orientation, velocity, and acceleration of the user</li>
               <li>Corresponding geolocation information (latitude, longitude, altitude) for all features of interest,
@@ -6236,22 +5588,18 @@
               <li>Timestamps to allow synchronization between the annotations and data streams and the user's movement
               </li>
             </ul>
-
           </dd>
           <dt>Affected WoT deliverables and/or work items</dt>
           <dd>
-
             <ul>
               <li>WoT Thing Description</li>
               <li>WoT Binding Templates</li>
               <li>WoT Discovery</li>
               <li>Optional: WoT Scripting API accessible from application for interacting with devices.</li>
             </ul>
-
           </dd>
           <dt>Description</dt>
           <dd>
-
             <ul>
               <li>The user can travel around a real space with guidance from virtually defined geospatial
                 data projected on a head-mounted wearable display synchronized with the view of the physical
@@ -6273,10 +5621,8 @@
                 The feature of interest is the location on the highway being monitored, while the location of the
                 camera might be quite far away (e.g. mounted on top of a building).</li>
             </ul>
-
             See also the <a href="https://w3c.github.io/sdw/proposals/geotagging/webvmt/#virtualguide">Use Case
               description from the WebVMT Editor's draft</a>
-
           </dd>
           <dt>Variants</dt>
           <dd>
@@ -6313,11 +5659,9 @@
                 to the recording, playing, and distribution of video content when the data is stored.
                 Playback of stored data and movements would be useful for simulation and debugging.</li>
             </ul>
-
           </dd>
           <dt>Security Considerations</dt>
           <dd>
-
             <ul>
               <li>If an AR systems is compromised it could be used to guide a user into a dangerous
                 situation while hiding that fact from them, e.g. encouraging them to step over a drop.</li>
@@ -6330,11 +5674,9 @@
               <li>For all systems the user should have a simple
                 way (e.g. a single button push) of viewing "baseline reality".</li>
             </ul>
-
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
-
             <ul>
               <li>Systems that handle or display private data, e.g. medical applications, should respect the
                 relevant regulations.</li>
@@ -6344,7 +5686,6 @@
                 be time and possibly space-limited.
               </li>
             </ul>
-
           </dd>
           <dt>Requirements</dt>
           <dd>
@@ -6367,7 +5708,6 @@
                 directly to determine their most recent geolocation.
               </li>
             </ul>
-
           </dd>
           <dt>Gaps</dt>
           <dd>
@@ -6375,11 +5715,9 @@
               <li>Geospatial queries for discovery.</li>
               <li>Standardized encodings of geospatial metadata in TDs.</li>
             </ul>
-
           </dd>
           <!--dt>Existing Standards</dt>
         <dd>
-
         </dd>
         <dt>Comments</dt>
         <dd>
@@ -6387,16 +5725,12 @@
         </dl>
       </section>
     </section>
-
     <section id="edge-computing">
       <h2>Edge Computing</h2>
       <dl>
-
         <dt>Submitter(s)</dt>
         <dd>
-
           Michael McCool
-
         </dd>
         <dt>Target Users</dt>
         <dd>
@@ -6414,7 +5748,6 @@
         </dd>
         <dt>Motivation</dt>
         <dd>
-
           <ul>
             <li>IoT devices are often designed to be inexpensive (so they can be used at scale),
               small (for ease of installation) and are often power-limited, for example needing to
@@ -6437,7 +5770,6 @@
               sounds an alarm. The motion sensor and alarm can be IoT devices while the person
               detection is a computationally-intensive service.</li>
           </ul>
-
         </dd>
         <dt>Expected Devices</dt>
         <dd>
@@ -6447,17 +5779,14 @@
             <li>A directory or other discovery mechanism that allows IoT devices and edge computers to advertize their
               availability.</li>
           </ul>
-
         </dd>
         <dt>Expected Data</dt>
         <dd>
-
           <ul>
             <li>Thing descriptions for IoT devices</li>
             <li>Thing descriptions for compute services</li>
             <li>Compute service configurations, e.g container images, WASM code, scripts, ONNX files, etc.</li>
           </ul>
-
         </dd>
         <dt>Affected WoT deliverables and/or work items</dt>
         <dd>
@@ -6469,7 +5798,6 @@
         </dd>
         <dt>Description</dt>
         <dd>
-
           The WoT architecture can provide an interesting approach to edge computing:
           <ul>
             <li>An IoT orchestration running in an edge computer can consume WoT Thing Descriptions
@@ -6484,9 +5812,7 @@
               TDs and advertise their availability via WoT discovery mechanisms.</li>
           </ul>
         </dd>
-
         <dt>Variants</dt>
-
         <dd>
           <ul>
             <li>An edge computer can provide facilities either for general-purpose computation (e.g.
@@ -6505,34 +5831,26 @@
           </ul>
         </dd>
         <dt>Security Considerations</dt>
-
         <dd>
-
           Edge compute services supporting the specification of generic computation has many security
           challenges. In addition to the challenges common to cloud computing, e.g. protecting "tenants"
           from seeing each other's activity, additional challenges arise if the edge computer is offering
           computation as an ad-hoc service. For example, there needs to be a way to project the edge
           computer from denial-of-service attacks.
-
           An edge computer may also need to be protected from physical attacks. There is also the
           possibility that an edge computer might be physically compromised so approaches such as
           isolated containers (protecting the contents from the edge computer's hypervisor), and/or
           validated boot, might be necessary in some circumstances.
-
         </dd>
         <dt>Privacy Considerations</dt>
-
         <dd>
-
           Edge computers can theoretically improve privacy since sensitive data can be processed "locally"
           without having to be transmitted to a remote site. This however is tempered by edge computer's
           greater vulnerability to physical attacks. To avoid offloading work to a malicious edge computer,
           some means of evaluating the trustworthiness of edge computers is needed.
         </dd>
         <dt>Gaps</dt>
-
         <dd>
-
           <ul>
             <li>Explicit support for WoT Things that are services.</li>
             <li>Sufficient abstraction capability (e.g. "interfaces") to support virtual devices.</li>
@@ -6542,11 +5860,9 @@
             <li>A general means to manage compute nodes to provide offload targets (e.g. a standardized
               TD template for compute services).</li>
           </ul>
-
         </dd>
         <dt>Existing Standards</dt>
         <dd>
-
           <ul>
             <li><a href="https://tools.ietf.org/html/draft-hong-t2trg-iot-edge-computing-04">IoT Edge Challenges and
                 Functions</a>, IETF Internet-Draft, Network Working Group, version 04, expires 26 November 2020.</li>
@@ -6562,17 +5878,13 @@
       </dl>
     </section>
   </section> <!-- horizontal-ucs -->
-
   <!-- REQUIREMENTS -->
-
   <section id="requirements">
     <h1>Requirements</h1>
-
     <section id="sec-functional-requirement">
       <h2>Functional Requirements</h2>
       <p>This section defines the properties required in an
         abstract Web of Things (WoT) architecture.</p>
-
       <section id="sec-requirements-principles">
         <h3>Common Principles</h3>
         <ul>
@@ -6765,7 +6077,6 @@
           <li>WoT architecture should allow transparent
             use of existing IP protocols without
             translation, which follow RESTful architecture.</li>
-
           <li>WoT architecture must not enforce client or server
             roles on devices and services.
             An IoT device can be either a client or a server,
@@ -6775,14 +6086,12 @@
         </ul>
       </section>
     </section>
-
     <!--section id="non-functionals">
         <h2>Non-Functional Requirements</h2>
         <section id="security-privacy">
           <h2>Security and Privacy</h2>
         </section>
       </section-->
-
     <section id="sec-technical-requirements">
       <h2>Technical Requirements</h2>
       <p>
@@ -6792,7 +6101,6 @@
         technical requirements derived from the abstract
         architecture.
       </p>
-
       <section>
         <h3>Components in the Web of Things and the Web
           of Things Architecture</h3>
@@ -6922,7 +6230,6 @@
           using physical devices and IoT-related applications.</p>
       </section>
     </section>
-
     <!--
       <section id="sec-building-block-requirements">
         <h2>Requirements for individual WoT Building Blocks</h2>
@@ -6950,11 +6257,8 @@
       </section>
     -->
   </section>
-
   <!-- Liaisons -->
-
   <section id="liaisons" class="appendix">
-
     <h1>Liasons</h1>
     <p>
       The Web of Things standardization initiative has liaisons with several other SDOs
@@ -6964,7 +6268,6 @@
       The following section is not exhaustive, it describes the current status,
       and additional liaisons are under consideration.
     </p>
-
     <section id="itu-t">
       <h2>ITU-T SG20 (Kaz/McCool/Sebastian)</h2>
       <section id="liaison-1" class="ednote">
@@ -6974,7 +6277,6 @@
           Provide Website link.
       </section>
     </section>
-
     <section id="ogc">
       <h2>OGC and IEEE P2874 (McCool)</h2>
       <section id="liaison-2" class="ednote">
@@ -6983,7 +6285,6 @@
           Provide Website link.  
       </section>
     </section>
-
     <section id="echonet">
       <h2>ECHONET Consortium</h2>
       <section id="liaison-3">
@@ -6994,7 +6295,6 @@
           with support for commercialization of devices which support the ECHONET Lite standards
           and cooperation with related industries. We also develop guidelines for ECHONET Lite Web API
           which can be used to access ECHONET Lite devices via a Web server with RESTful Web API.</p>
-        
         <p>At the PlugFest in October 2021, WoT consumers connected to ECHONET Lite Web API devices
           via an intermediary, which translates HTTP message format. We think that it is desirable
           for WoT specification to support transparent interconnection between a WoT consumer and
@@ -7002,7 +6302,6 @@
           We hope that WoT WG would investigate a solution for it.</p>
       </section>
     </section>
-
     <section id="eclass">
       <h2>ECLASS</h2>
       <p>
@@ -7015,7 +6314,6 @@
         focusing the W3C WoT Standard.
       </p>
     </section>
-
     <section id="opc-foundation">
       <h2>OPC Foundation</h2>
       <p>
@@ -7035,7 +6333,6 @@
         definitions and incompatible OPC UA handlings in Thing Descriptions.
       </p>
     </section>
-
     <section id="iso-tc184">
       <h2>ISO TC184/SC4 (Sebastian/Kaz)</h2>
       <section id="liaison-5" class="ednote">
@@ -7044,7 +6341,6 @@
         Provide Website link.
       </section>
     </section>
-
     <section id="edgex">
       <h2>EdgeX (McCool)</h2>
       <section id="liaison-6" class="ednote">
@@ -7054,17 +6350,14 @@
       </section>
     </section>
   <!-- Acknowledgements -->
-
   <section id="acknowledgements" class="appendix normative">
     <h1>Acknowledgments</h1>
-
     <p>
       Many thanks to the W3C staff and all other active Participants of the W3C Web
       of Things Interest Group (WoT IG) and Working Group (WoT WG) for their
       support, technical input and suggestions that led to improvements to
       this document.
     </p>
-
     <p>Special thanks to all authors of use case descriptions (in alphabetical order) for their contributions to this
       document:
     <ul>
@@ -7095,6 +6388,7 @@
       <li>Catherine Roussey (INRAE, France)</li>
       <li>Georg Ferdinand Schneider (Schaeffler Technologies)</li>
       <li>Rob Smith (Awayteam)</li>
+      <li>Adam Sobieski</li>
       <li>Farshid Tavakolizadeh (Fraunhofer)</li>
       <li>Keiichi Teramoto (ECHONET Consortium)</li>
     </ul>
@@ -7103,7 +6397,6 @@
       of the work of the WoT Use Cases Task Force.
     </p>
   </section>
-
   <p style="display: none;">
     <!-- This is a hack to make sure the local references are included in the informative reference section 
     The proper solution is to replace the occurences with the proper Specref ids.
@@ -7142,8 +6435,6 @@
     [LWM2M]
     [OCF]
   </p>
-
-
   <!--
     <section id="references" class="appendix">
       <h2 id="a-references"><bdi class="secno">A.</bdi>
@@ -7329,9 +6620,7 @@
         </dl>
       </section>
     </section>
-
       Domains from the 1.0 UC document 
-         
                 <section id="domain-home_automation">
                         <h3>Domain: home automation</h3>
                         <section id="building-automation">
@@ -7391,5 +6680,4 @@
                         <section id="device-management">
       </section-->
 </body>
-
 </html>
