@@ -1808,7 +1808,7 @@
           <dt>Submitter(s)</dt>
           <dd>
 
-            K. Kotis, K. Zachila, A. Dimara
+            Konstantinos Kotis, K. Zachila, A. Dimara
 
           </dd>
           <dt>Target Users</dt>
@@ -5436,8 +5436,7 @@
 
           <dt>Description</dt>
           <dd>
-            <div class="resize"><img src="./images/wot-use-case-echonet.png" alt="echonet use case" /></div>>
-
+            <div class="resize"><img src="./images/wot-use-case-echonet.png" alt="echonet use case" /></div>
             <ul>
               <li>Configuration by a device user before starting to use a service
                 <ul>
@@ -5669,11 +5668,8 @@
         <dd>
           Michael McCool
         </dd>
-        <dt>Status</dt>
-        <dd-->
-          </dd>
-          <dt>Target Users</dt>
-          <dd>
+        <dt>Target Users</dt>
+        <dd>
 
             All stakeholders:
             <ul>
@@ -5823,7 +5819,6 @@
         </dd>
         <dt>Target Users</dt>
         <dd>
-
           <ul>
             <li>device owner</li>
             <li>service provider</li>
@@ -5846,7 +5841,6 @@
               </ul>
             </li>
           </ul>
-
           <ul>
             <li>As a developer, I want TDs to be as simple as possible so that I can efficiently develop them.
               <ul>
@@ -5855,18 +5849,15 @@
               </ul>
             </li>
           </ul>
-
           <ul>
             <li>As a developer, I want to be able to validate that a Thing will be compatible with a Consumer
               without having to test against every possible consumer.</li>
           </ul>
-
           <ul>
             <li>As a cloud provider I want to onboard, manage and communicate with as many devices as possible out
               of the box.
               This should be possible without device specific customization.</li>
           </ul>
-
         </dd>
         <dt>Expected Devices</dt>
         <dd>sensors, actuators, gateways, cloud, directory service.</dd>
@@ -5876,16 +5867,17 @@
         <dd>WoT Profile, WoT Thing Description</dd>
         <dt>Description</dt>
         <dd>
+          <p>
           As a consumer of devices I want to be able to process data from any device that conforms to a class of
           devices.
-
+         </p><p>
           I want to have a guarantee that I'm able to correctly interact with all affordances of the Thing that
           complies with this class of devices.
           Behavioral ambiguities between different implementations of the same description should not be possible.
-
+          </p><p>
           I want to integrate it into my existing scenarios out of the box, i.e. with close to zero configuration
           tasks.
-
+      </p>
         </dd>
         <!--dt>Variants</dt>
             <dd>
@@ -5925,6 +5917,161 @@
           Recommendations for commonalities and interoperability profiles of IoT platforms:<a
             href="https://european-iot-pilots.eu/wp-content/uploads/2018/11/D06_02_WP06_H2020_CREATE-IoT_Final.pdf">https://european-iot-pilots.eu/wp-content/uploads/2018/11/D06_02_WP06_H2020_CREATE-IoT_Final.pdf</a>
         </dd>
+      </dl>
+    </section>
+
+    <section id="USE-CASES/Retail-virtual-thing">
+      <h2>Virtual Thing</h2>
+      <dl>
+    
+        <dt>Submitter(s)</dt>
+        <dd>
+    
+          <ul>
+            <li>David Ezell, Conexxus</li>
+            <li>Jack Dickinson, Conexxus (Dover Fueling Solutions)</li>
+          </ul>
+    
+        </dd>
+<!--         <dt>Reviewer(s)</dt>
+        <dd>
+    
+        </dd>
+        <dt>Tracker Issue ID</dt>
+        <dd>
+    
+        </dd>
+ -->        <dt>Category</dt>
+        <dd>
+    
+          Retail
+    
+        </dd>
+        <dt>Class</dt>
+        <dd>
+    
+          Indoor Facilities and Power Equipment
+    
+        </dd>
+    
+        </dd>
+        <dt>Target Users</dt>
+        <dd>
+          <ul>
+            <li>device owners (retailers)</li>
+            <li>device manufacturers</li>
+            <li>gateway manufacturer</li>
+            <li>network operator (potentially transparent for WoT use cases)</li>
+          </ul>
+    
+        </dd>
+        <dt>Motivation</dt>
+        <dd>
+          <p>
+          One of the most powerful features of the Web of Things is the ability for Thing Descriptions (TDs) to provide and
+          abstract interface. This abstraction can remain constant when device capabilities change, when device suppliers
+          are changed, or when new computational capabilities become available.
+          </p><p>
+          A "Virtual Thing" refers to a software simulation of a device conforming to a TD. That TD describes affordances
+          generated in software from inputs that may or may not be similar to a physical thing that the same TD defines.
+          </p><p>
+          These inputs most often (but not always) will refer to data streams which, when examined with intelligent software
+          (an AI), will allow that software to imitate the properties, actions, and events that an actual physical device
+          would normally provide.
+          </p>
+          <div class="resize"><img src="./images/DataStreamToWoT.png" alt="Virtual Thing - Message Flow" /></div>
+          <p>    
+          In a simple case, software could interpret data from a new door sensor product (possibly from a new manufacturer)
+          and imitate the actions, properties, and events supported by the older device. This capability allows consuming
+          software to remain unchanged and insulated from the churn caused by introducing new devices into the ecosystem.
+          The consuming software will continue to use the original Thing Description as the interface definition.
+          </p><p>  
+          In a more complex case, a data stream can be processed in software to imitate a physical device. Such "virtual
+          things" allow the sensing hardware to be upgraded (in this case to video camera devices) without forcing a
+          complete rewrite of software that was built to consume the original Thing Description. It is also possible for the
+          data stream to be used to imitate multiple "virtual things", and also support new Thing Descriptions alongside the
+          older ones.
+          </p><p>
+          Being able to use existing Thing Descriptions as an abstraction for "virtual things" will allow those with a
+          device estate to save considerable time and effort in maintaining software and hardware in the estate.
+          </p><p>
+          Expected outcomes:
+          <ul>
+            <li>Allow newer devices to support older Thing Descriptions using software imitation.</li>
+            <li>Provide powerful new multi-purpose devices, supporting multiple Thing Descriptions.</li>
+            <li>Allow new and old devices to exist side by side in the device estate.</li>
+            <li>Insulate existing software from changes.</li>
+          </ul>
+        </dd>
+        <dt>Expected Devices</dt>
+        <dd>
+          <ul>
+            <li>Digital camera device.</li>
+            <li>Digital audio device.</li>
+          </ul>
+        </dd>
+        <dt>Expected Data</dt>
+        <dd>
+          <ul>
+            <li>Expected data is defined in the original TDs, and software is used to imitate the older devices</li>
+          </ul>
+        </dd>
+        <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+        <dd>
+          <ul>
+            <li>WoT Thing Description</li>
+            <li>WoT Discovery</li>
+          </ul>
+         </dd>
+        <dt>Description</dt>
+        <dd>
+          <p>
+          Retailers would like to avoid the expense of rewriting software when new capabilities become available, and would
+          like to maintain existing functionality even while introducing new and more powerful TDs.
+        </p><p>
+          A video camera produces a data stream that can be processed to imitate a variety of "virtual things" defined with
+          existing TDs. One such TD is a "door sensor." The video data stream can be processed to recognize when the door is
+          open or closed, and can the processing software can emit "doorOpen" boolean events when the door is open or
+          closed, and also emit "doorOpenPastLimit" events if the door has been open for too long. Any consuming software
+          designed to understand the original door sensor TD will continue to work with this more advanced camera hardware,
+          eliminating logistical challenges for retail management and reducing costs.
+        </p>
+        </dd>
+        <dt>Security Considerations</dt>
+        <dd>
+          Devices subject to replay attacks and DOS attacks.
+        </dd>
+        <dt>Privacy Considerations</dt>
+        <dd>
+          Any recording of individuals must be protected as PII. This use case will likely keep any data stream for local
+          processing, reducing the danger of video or audio capture.
+        </dd>
+        <dt>Accessibility Considerations</dt>
+        <dd>
+          None. No direct user (human) interface is affected.
+        </dd>
+        <dt>Internationalisation (i18n) Considerations</dt>
+        <dd>
+          None. No direct user (internationalized) interface is affected.
+        </dd>
+  
+<!--         <dt>Requirements</dt>
+        <dd>
+    
+        </dd>
+        <dt>Gaps</dt>
+        <dd>
+    
+        </dd>
+        <dt>Existing standards</dt>
+        <dd>
+    
+        </dd>
+        <dt>Comments</dt>
+        <dd>
+    
+        </dd>
+ -->      
       </dl>
     </section>
 
@@ -6627,25 +6774,25 @@
 
             Accessibility
 
-          </dd>
+          <!-- </dd>
           <dt>Target Users</dt>
-          <dd>
+          <dd> -->
 
           </dd>
           <dt>Motivation</dt>
           <dd>
-
+            <p>
             The increase in the number of controllable devices in an
             intelligent home creates a problem with controlling all available services
             in a coherent and useful manner.
             Having a shared context,
             built from information collected through sensors and direct user input,
             would improve recognition of user intent, and thus simplify interactions.
-
+          </p><p>
             In addition,
             multiple input mechanisms could be selected by the user based on device type,
             level of trust and the type of interaction required for a particular task.
-
+            </p>
           </dd>
           <dt>Expected Devices</dt>
           <dd>
@@ -8249,44 +8396,48 @@
         this document.
       </p>
 
-      <p>Special thanks to all authors of use case descriptions (in alphabetical order) for their contributions to this
-        document:
-      <ul>
-        <li>Shinya Abe (NHK)</li>
-        <li>Cristiano Aguzzi (University of Bologna)</li>
-        <li>Kaz Ashimura (W3C)</li>
-        <li>Raúl García Castro (Universidad Politécnica de Madrid)</li>
-        <li>Jean-Pierre Chanet (INRAE, France)</li>
-        <li>Edison Chung (MINES St. Etienne)</li>
-        <li>Andrea Cimmino (Universidad Politécnica de Madrid)</li>
-        <li>Hiroki Endo (NHK)</li>
-        <li>David Ezell (Conexxus)</li>
-        <li>Hiroshi Fujisawa (NHK)</li>
-        <li>Christian Glomb (Siemens)</li>
-        <li>Morio Hirahara (ECHONET Consortium)</li>
-        <li>Masaya Ikeo (NHK)</li>
-        <li>Sebastian Käbisch (Siemens)</li>
-        <li>Takuki Kamiya (Fujitsu)</li>
-        <li>Zoltan Kis (Intel)</li>
-        <li>Ege Korkan (Siemens)</li>
-        <li>Michael Lagally (Oracle)</li>
-        <li>Jennifer Lin (GovTech Singapore)</li>
-        <li>Tetsushi Matsuda (ECHONET Consortium)</li>
-        <li>Ryuichi Matsukura (Fujitsu)</li>
-        <li>Michael McCool (Intel)</li>
-        <li>Takashi Murakami (ECHONET Consortium)</li>
-        <li>Hervé Pruvost (Fraunhofer IIS EAS)</li>
-        <li>Catherine Roussey (INRAE, France)</li>
-        <li>Georg Ferdinand Schneider (Schaeffler Technologies)</li>
-        <li>Rob Smith (Awayteam)</li>
-        <li>Farshid Tavakolizadeh (Fraunhofer)</li>
-        <li>Keiichi Teramoto (ECHONET Consortium)</li>
-      </ul>
-      <p>
-        Special thanks to Dr. Kazuyuki Ashimura from the W3C for the continuous help and support
-        of the work of the WoT Use Cases Task Force.
-      </p>
-    </section>
+    <p>Special thanks to all authors of use case descriptions (in alphabetical order) for their contributions to this
+      document:
+    <ul>
+      <li>Shinya Abe (NHK)</li>
+      <li>Cristiano Aguzzi (University of Bologna)</li>
+      <li>Kaz Ashimura (W3C)</li>
+      <li>Raúl García Castro (Universidad Politécnica de Madrid)</li>
+      <li>Jean-Pierre Chanet (INRAE, France)</li>
+      <li>Edison Chung (MINES St. Etienne)</li>
+      <li>Andrea Cimmino (Universidad Politécnica de Madrid)</li>
+      <li>Jack Dickinson, Conexxus (Dover Fueling Solutions)</li>
+      <li>A. Dimara (University of the Aegean)</li>
+      <li>Hiroki Endo (NHK)</li>
+      <li>David Ezell (Conexxus)</li>
+      <li>Hiroshi Fujisawa (NHK)</li>
+      <li>Christian Glomb (Siemens)</li>
+      <li>Morio Hirahara (ECHONET Consortium)</li>
+      <li>Masaya Ikeo (NHK)</li>
+      <li>Sebastian Käbisch (Siemens)</li>
+      <li>Takuki Kamiya (Fujitsu)</li>
+      <li>Zoltan Kis (Intel)</li>
+      <li>Ege Korkan (Siemens)</li>
+      <li>Konstantinos Kotis (University of the Aegean)</li>
+      <li>Michael Lagally (Oracle)</li>
+      <li>Jennifer Lin (GovTech Singapore)</li>
+      <li>Tetsushi Matsuda (ECHONET Consortium)</li>
+      <li>Ryuichi Matsukura (Fujitsu)</li>
+      <li>Michael McCool (Intel)</li>
+      <li>Takashi Murakami (ECHONET Consortium)</li>
+      <li>Hervé Pruvost (Fraunhofer IIS EAS)</li>
+      <li>Catherine Roussey (INRAE, France)</li>
+      <li>Georg Ferdinand Schneider (Schaeffler Technologies)</li>
+      <li>Rob Smith (Awayteam)</li>
+      <li>Farshid Tavakolizadeh (Fraunhofer)</li>
+      <li>Keiichi Teramoto (ECHONET Consortium)</li>
+      <li>K. Zachila (University of the Aegean)</li>
+    </ul>
+    <p>
+      Special thanks to Dr. Kazuyuki Ashimura from the W3C for the continuous help and support
+      of the work of the WoT Use Cases Task Force.
+    </p>
+  </section>
 
     <p style="display: none;">
       <!-- This is a hack to make sure the local references are included in the informative reference section 
