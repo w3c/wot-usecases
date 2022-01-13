@@ -25,7 +25,7 @@ Please put your proposed requirements into a separate section and mark it with y
 we discuss with the appropriate contributors.  
 
 ### Interoperability 
-Supprters: Oracle, Intel, Siemens, Fujitsu
+Supporters: Oracle, Intel, Siemens, Fujitsu, Ben, Cristano
 
 This is the most important objective of the profile.
 A TD Consumer satisfying the requirements of a profile should be able to process any TD also
@@ -37,18 +37,40 @@ Note: this implies that a profile has three parts:
 2. Implementation requirements, constraints and behavioral assertions for Consumers
 3. Implementation requirements, constraints and behavioral assertions on Things
 
+Note: We don't want to prevent a TD to have forms for additional protocols,
+but these can be ignored by compliant consumers, 
+and could be removed without affecting profile comformance and compatibility.
+This may be useful for consumers that support multiple profiles.
+
 ### Limit and reduce complexity 
-Supporters: Oracle, Siemens
+Supporters: Oracle, Siemens, Ben, Cristiano(*)
 
 Complexity addresses at least the follwing two things to simplify the development and reduce
 the implementation effort:
-1. Implementation complexity on a thing and consumer, e.g. eliminating the need of RDF processing
-2. simplify thing description to have less variations
+1. Implementation complexity on a thing and consumer, e.g. eliminating the need of RDF processing, 
+2. but semantic annotations should be possible
+3. simplify thing description to have less variations
 
 Other aspects are:
 - Effort for JSON implementation
-- Limit storage and bandwidth requirements
-- Use finite (maximum) resources
+
+
+Note: 
+Siemens:
+There should be multiple forms permitted, concerns on size limits on TDs, there may be edge devices
+with huge TDs. We should not limit the length of a TD.
+Context extensions (e.g. for units) may need RDF processing, semantic annotations are needed for that purpose.
+For simple semantic annotations, a JSON parser is sufficient. 
+It is not required for all uses cases of the profile to implement RDF processing.
+It is hard to find these numbers for limitations, in some cases you have to do a specific agreement with
+a customer to agree on their constaints / system limits, need to discuss with the customer, identify frameworks,
+background, we cannot find a consensus. Each IoT project is different, each customer uses a different framework.
+Ben:
+agree with all points of Sebastian, not all profiles should impose storage size and bandwidth limits.
+Cristiano: Disagree with limit storage and bandwidth requirements and Use finite (maximum) resources.
+
+
+
 
 ### Ambiguities
 Supporters: Oracle, Fujitsu, Intel(*) 
