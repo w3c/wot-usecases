@@ -24,6 +24,12 @@ The following possible requirements are still under discussion and definition.
 Please put your proposed requirements into a separate section and mark it with your company name to make sure
 we discuss with the appropriate contributors.  
 
+### Legend:
+
+* means partially agree, need to refine / rework the requirement
+* - means oppose
+
+
 ### Interoperability 
 Supporters: Oracle, Intel, Siemens, Fujitsu, Ben, Cristano
 
@@ -43,7 +49,7 @@ and could be removed without affecting profile comformance and compatibility.
 This may be useful for consumers that support multiple profiles.
 
 ### Limit and reduce complexity 
-Supporters: Oracle, Siemens, Ben, Cristiano(*)
+Supporters: Oracle, Siemens, Ben, Cristiano
 
 Complexity addresses at least the follwing two things to simplify the development and reduce
 the implementation effort:
@@ -56,7 +62,7 @@ Other aspects are:
 
 
 Note: 
-Siemens:
+* Siemens:
 There should be multiple forms permitted, concerns on size limits on TDs, there may be edge devices
 with huge TDs. We should not limit the length of a TD.
 Context extensions (e.g. for units) may need RDF processing, semantic annotations are needed for that purpose.
@@ -65,25 +71,33 @@ It is not required for all uses cases of the profile to implement RDF processing
 It is hard to find these numbers for limitations, in some cases you have to do a specific agreement with
 a customer to agree on their constaints / system limits, need to discuss with the customer, identify frameworks,
 background, we cannot find a consensus. Each IoT project is different, each customer uses a different framework.
-Ben:
+* Ben:
 agree with all points of Sebastian, not all profiles should impose storage size and bandwidth limits.
-Cristiano: Disagree with limit storage and bandwidth requirements and Use finite (maximum) resources.
+* Cristiano: Disagree with limit storage and bandwidth requirements and Use finite (maximum) resources.
+* Ege: agree on the requirement, we need to determine what we exactly mean with "complexity"
+* Oracle: Complexity applies to all potential adopters, i.e. things, gateways, edge, cloud
 
 
 
 
-### Ambiguities
-Supporters: Oracle, Fujitsu, Intel(*) 
+### Ambiguities, select single choice
+Supporters: Oracle, Fujitsu, Intel, Ben, Cristiano, Ege 
 Get rid of ambiguities, i.e. clarify specifications to define interpretation of a TD
 and behavior of the thing and consumer. 
 
 Examples are the choice of properties vs. actions, use of PUT or POST for HTTP,
 observe protocols.
 
+Notes:
+Intel: If something is really ambiguous, it needs to be updated in the TD,
+if there are multiple choices, Profile can narrow down to one choice.
+Ben: broadly support the requirement, however requiring that all profiles 
+adopt the same ontology. Choice of actions vs. properties should be done in the TD.
+
 This will probably create new requirements for the TD spec.
 
 ### Human readability
-Suppporters: Oracle
+Suppporters: Oracle, 
 
 Human-readable information such as title and description should be mandatory to
 encourage inclusion of this information for documentation purposes.
