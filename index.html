@@ -67,14 +67,6 @@
           }]
         }],
       localBiblio: {
-        "JSON-SCHEMA": {
-          title: "JSON Schema Validation: A Vocabulary for Structural Validation of JSON",
-          href: "https://tools.ietf.org/html/draft-handrews-json-schema-validation-01",
-          authors: ["Austin Wright", "Henry Andrews", "Geraint Luff"],
-          status: "Internet-Draft",
-          date: "19 March 2018",
-          publisher: "IETF"
-        },
         "ISO-6709": {
           title: "ISO-6709:2008 : Standard representation of geographic point location by coordinates",
           href: "https://www.iso.org/standard/39242.html",
@@ -83,41 +75,30 @@
           publisher: "ISO"
         },
         "Hybridcast": {
-          title: "Hybridcast",
-          href: "...",
-          authors: ["..."],
-          status: "...",
-          date: "..",
-          publisher: "..."
+          title: "IPTVFJ STD-0013 Hybridcast Operational Guideline Version 2.8",
+          href: "https://www.iptvforum.jp/en/hybridcast/specification.html",
+          date: "19 September 2020",
+          publisher: "IPTVFJ"
         },
-        "NMEA": {
-          title: "National Marine Electronics Association",
-          href: "https://www.nmea.org"
+        "NMEA-0183": {
+	  title: "NMEA 0183 Interface Standard",
+          publisher: "National Marine Electronics Association",
+	  date: "November 2018",
+          href: "https://www.nmea.org/content/STANDARDS/NMEA_0183_Standard"
         },
         "EDGEX": {
           title: "EdgeX Foundry",
           href: "https://www.edgexfoundry.org/"
         },
-        "WGS84": {
-          title: "WGS84",
-          href: "https://en.wikipedia.org/wiki/World_Geodetic_System",
-        },
-        "Basic Geo Vocabulary": {
-          title: "W3C Semantic Web Interest Group",
-          href: "https://www.w3.org/2003/01/geo/",
-          publisher: "W3C"
-        },
-        "W3C Geolocalization API": {
-          title: "Geolocation API Specification 2nd Edition",
-          href: "https://www.w3.org/TR/geolocation-API/",
-          authors: ["Andrei Popescu"],
-          status: "Published",
-          date: "8 Nov 2016",
-          publisher: "W3C"
-        },
-        "Open Geospatial Consortium": {
+        "OGC": {
           title: "Open Geospatial Consortium",
-          href: "http://docs.opengeospatial.org/as/18-005r4/18-005r4.html"
+          href: "https://www.ogc.org/"
+        },
+        "OGC-coords": {
+          title: "OGC Abstract Specification Topic 2: Referencing by coordinates",
+          href: "http://docs.opengeospatial.org/as/18-005r4/18-005r4.html",
+	  date: "8 February 2019",
+	  publisher: "Open Geospatial Consortium"
         },
         "Brick": {
 	  title: "Brick Schema",
@@ -136,8 +117,8 @@
 	  publisher: "W3C Linked Building Data Community Group",
 	  date: "28 June 2021"
 	},
-        "ISO19111": {
-          title: "ISO19111",
+        "iso-19111-2019": {
+          title: "ISOi 19111:2019 - Geographic information — Referencing by coordinates",
           href: "https://www.iso.org/standard/74039.html",
           status: "Published",
           date: "Jan 2019",
@@ -1171,7 +1152,7 @@
               </li>
               <li>For each geolocation technology, data specific to that technology:
                 <ul>
-                  <li>GPS: NMEA type</li>
+                  <li>GPS: NMEA type [[NMEA-0183]]</li>
                 </ul>
               </li>
               <li>Historical data</li>
@@ -1261,16 +1242,15 @@
           <dd>
             <p>
             <ul>
-              <li>NMEA: defines sentences from GPS devices</li>
-              <li><a href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS84</a>:
+              <li>NMEA: defines sentences from GPS devices [[NMEA-0183]]</li>
+              <li>World Geodetic System (WGS84) [[WGS84]]:
                 <ul>
-                  <li>World Geodetic System</li>
                   <li>Defines lat/long/alt coordinate system used by most other geolocation standards</li>
                   <li>More complicated than you would think (need to deal with deviations of Earth from
                     a true sphere, gravitational irregularities, position of centroid, etc. etc.)</li>
                 </ul>
               </li>
-              <li><a href="https://www.w3.org/2003/01/geo/">Basic Geo Vocabulary</a>:
+              <li>Basic Geo Vocabulary [[w3c-basic-geo]]:
                 <ul>
                   <li>Very basic RDF definitions for lat, long, and alt</li>
                   <li>Does not define heading or speed</li>
@@ -1279,7 +1259,7 @@
                   <li>Uses string as a data model (rather than a number)</li>
                 </ul>
               </li>
-              <li><a href="https://www.w3.org/TR/geolocation-API/">W3C Geolocalization API</a>:
+              <li>W3C Geolocation API [[geolocation-API]]:
                 <ul>
                   <li>W3C Devices and Sensors WG is now handling</li>
                   <li>There is an updated proposal: <a
@@ -1294,11 +1274,9 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="https://www.ogc.org/">Open Geospatial Consortium</a>:
+              <li>Open Geospatial Consortium [[OGC]]</a>:
                 <ul>
-                  <li>See <a
-                      href="http://docs.opengeospatial.org/as/18-005r4/18-005r4.html">http://docs.opengeospatial.org/as/18-005r4/18-005r4.html</a>
-                  </li>
+                  <li>See OGC Abstract Specification Topic 2: Referencing by coordinates [[OGC-coords]]</li>
                   <li>Referring to locations by coordinates</li>
                   <li>Has standards defining semantics for identifying locations</li>
                   <li>Useful for mapping</li>
@@ -1306,7 +1284,7 @@
               </li>
               <li>ISO:
                 <ul>
-                  <li><a href="https://www.iso.org/standard/74039.html">ISO19111</a>:</li>
+                  <li>ISO 19111 [[iso-19111-2007]], [[iso-19111-2019]]</li>
                   <ul>
                     <li>Standard for referring to locations by coordinates</li>
                     <li>Related to OGS standard above and WGS84</li>
@@ -5482,15 +5460,13 @@
             <section id="todo-gaps-1" class="ednote">
               TODO: Provide links to relevant standards that are relevant for this use case</section>
 
-          </dd>
+	      </dd>
           <dt>Existing Standards & related information</dt>
           <dd>
-
-            <section id="todo-references-x" class="ednote">TODO: Provide links to relevant standards that are
-              relevant for this use case.
-              <p>There are MANY TV standards and this would be a long list. Rather leave blank unless a very specific
-                standard provides more insight.</p>
-            </section>
+	    <ul>
+		    <li>Hybridcast [[Hybridcast]]</li>
+                    <li>... and many other TV standards, including additional Hybridcast standards cited from the above reference.</li>
+            </ul>
 
           </dd>
           <dt>Comments</dt>
@@ -5588,7 +5564,7 @@
               (Hybridcast is a Japanese Integrated Broadcast-Broadband system. Hybridcast applications are HTML5
               applications that work on Hybridcast TV.)
             </p>
-            <p>Hybridcast Contact application receives the information and controlls smart home devices.</p>
+            <p>Hybridcast Contact application receives the information and controls smart home devices.</p>
             <div class="resize"><img src="images/scenario_nhk.png" alt="Hybridcast Connect Application"></div>
           </dd>
           <!--dt>Variants</dt>
@@ -5596,16 +5572,17 @@
 
           </dd>
           <dt>Gaps</dt>
-          <dd->
+          <dd-->
 
           </dd>
           <dt>Existing Standards</dt>
           <dd>
 
-            Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system (<a href="http://www.iptvforum.jp/download/input.html">IPTVFJ STD-0013 "Hybridcast Operational Guideline Version 2.8" (Application Forms)</a>, <a href="https://github.com/nhkrd">Reference Implementations</a>),
+            Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system [[Hybridcast]], 
+	    <a href="https://github.com/nhkrd">Reference Implementations</a>),
             HbbTV,
             ATSC 3.0,
-            ...etc.
+            etc.
 
           </dd>
           <dt>Comments</dt>
@@ -5613,7 +5590,6 @@
 
           </dd>
         </dl>
-      </section-->
 
       </section>
 
@@ -8677,19 +8653,26 @@
   </section>
 
     <p style="display: none;">
-      <!-- This is a hack to make sure the local references are included in the informative reference section 
-    The proper solution is to replace the occurences with the proper Specref ids.
-    This should be done for the next published version -->
-      [JSON-SCHEMA]
-      [ISO-6709]
-      [Hybridcast]
-      [NMEA]
-      [WGS84]
-      [Basic Geo Vocabulary]
-      [W3C Geolocalization API]
-      [Open Geospatial Consortium]
-      [ISO19111]
-      [SSN]
+    <!-- This is a hack to make sure the local references are included in the informative reference section -->
+
+    <!-- The following are local references and do not seem to exist in the specref database -->
+      [[ISO-6709]]
+      [[Hybridcast]]
+      [[NMEA-0183]]
+      [[OGC]]
+      [[OGC-coords]]
+      [[iso-19111-2019]
+
+     <!-- and some references that ARE in the specref database, and we should cite, but are not currently cited -->
+      [[json-schema]]
+
+     <!-- These are cited, and are in specref, but to be sure, including them here anyway -->
+      [[WGS84]]
+      [[w3c-basic-geo]
+      [[geolocation-API]]
+      [[iso-19111-2007]
+
+     <!-- the following MAY be in specref -->
       [Timestamps]
       [MMI UC3.1]
       [MMI UC3.2]
