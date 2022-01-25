@@ -154,24 +154,16 @@
           href: "http://www.bacnet.org",
           publisher: "ASHRAE"
         },
-        "CoAP": {
-          title: "The Constrained Application Protocol (CoAP)",
-          href: "https://tools.ietf.org/html/rfc7252",
-          authors: [
-            "Z. Shelby",
-            "K. Hartke",
-            "C. Bormann"
-          ],
-          status: "Published",
-          date: "June 2014",
-          publisher: "IETF"
-        },
         "IEC 61850": {
-          title: "IEC 61850",
-          publisher: "IEC"
+          title: "IEC 61850:2022 - Communication networks and systems for power utility automation",
+	  date: "4 January 2022",
+	  href: "https://webstore.iec.ch/publication/6028",
+          publisher: "IEC TC 57"
         },
-        "IEEE 1574": {
-          title: "IEEE 1574",
+        "IEEE 1547": {
+          title: "IEEE 1547-2018 - Interconnection and Interoperability of Distributed Energy Resources with Associated Electric Power Systems Interfaces",
+	  date: "15 February 2018",
+	  href: "https://standards.ieee.org/standard/1547-2018.html",
           publisher: "IEEE"
         },
         "KNX": {
@@ -187,6 +179,7 @@
         "OGC Sensor Things": {
           title: "OGC Sensor Things API",
           href: "https://www.ogc.org/standards/sensorthings",
+	  date: "4 August 2021",
           publisher: "Open Geospatial Consortium"
         },
         "OneM2M": {
@@ -705,11 +698,11 @@
           <dt>Existing Standards</dt>
           <dd>
             <ul>
-              <li><a href="https://tools.ietf.org/html/rfc8376">LPWAN</a></li>
+              <li>LPWAN [[rfc8376]]</li>
               <li><a href="http://www.sdi-12.org/current_specification/SDI-12_version-1_4-Jan-10-2019.pdf">SDI 12</a>
               </li>
-              <li><a href="https://tools.ietf.org/html/rfc7252">CoAP</a></li>
-              <li><a href="https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.html">MQTT</a></li>
+              <li>CoAP [[rfc7252]]</li>
+              <li>MQTT [[MQTT]]</li>
             </ul>
           </dd>
           <dt>Comments</dt>
@@ -2123,7 +2116,7 @@
           <dt>Existing Standards</dt>
           <dd>
 
-            BACnet, KNX, OPC-UA, Modbus
+            BACnet [[BACnet]], KNX [[KNX]], OPC UA [[OPC UA]], Modbus [[Modbus]]
 
           </dd>
           <!--dt>Comments</dt>
@@ -2243,7 +2236,7 @@
           <dd>
 
             <ul>
-              <li><a href="https://www.ogc.org/standards/sensorthings">OGC SensorThings</a> model includes a
+              <li>OGC Sensor Things [[OGC Sensor Things]] model includes a
                 `properties` property for each Thing which is a non-normative JSON Object for application-specific
                 information (not to be confused with TD's `properties` which is a Map of instances of PropertyAffordance
               </li>
@@ -3057,9 +3050,9 @@
             and web forecasting services like traffic and weather forecasts are expected to be integrated directly into
             the manufacturing process as well as in the product lifecycle. To realize cross-domain applications for the
             Industrie 4.0 context, a frequent exchange with suppliers or local infrastructure providers (e.g., power
-            supplier) is needed and it is necessary to interact with manufacturing systems that usally offers an OPC-UA
+            supplier) is needed and it is necessary to interact with manufacturing systems that usally offers an OPC UA [[OPC UA]]
             interface. WoT can act as a common and standardized application layer and can be used to support Industry 4.0
-            use cases. In this context, well-formed bindings for most established industry standards such as OPC-UA should
+            use cases. In this context, well-formed bindings for most established industry standards such as OPC UA should
             be supported.
           </dd>
           <dt>Expected Devices</dt>
@@ -3069,16 +3062,16 @@
           </dd>
           <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
           <dd>
-            There are some experiences of OPC-UA bindings in previous WoT PlugFests and there is a sample binding
+            There are some experiences of OPC UA bindings in previous WoT PlugFests and there is a sample binding
             implementation in <a href="https://github.com/eclipse/thingweb.node-wot/">node-wot</a>. However, there needs
-            to be a formal definition to map the interaction affordances of a TD to OPC-UA. In that context an official
-            OPC-UA Binding Note document schould be developed that can be used as official reference to design Thing
-            Descriptions for OPC-UA use cases.
+            to be a formal definition to map the interaction affordances of a TD to OPC UA. In that context an official
+            OPC UA Binding Note document schould be developed that can be used as official reference to design Thing
+            Descriptions for OPC UA use cases.
           </dd>
           <dt>Description</dt>
           <dd>
             A bottling line consists of a filling module (switchable between 2 fillers and 4 fillers), a capping module, a
-            labeling module, and a transport system. The production line is provided via an OPC-UA endpoint for control
+            labeling module, and a transport system. The production line is provided via an OPC UA endpoint for control
             and monitoring purposes.
             <div class="resize"><img src="images/industry-4.0.png" alt="Bottling Line Example"></div>
             In the context of enhancing productivity and sustainability, the goal is to operate the bottling line in such
@@ -3087,21 +3080,21 @@
             and how much renewable energy is produced.
             Based on the bottling line's current power consumption, which is measured via Modbus, the backend system
             decides to increase productivity when surplus renewable energy is available.
-            In doing so, the backend system interacts via OPC-UA to release the 4 fillers of the filling module and
+            In doing so, the backend system interacts via OPC UA to release the 4 fillers of the filling module and
             increases the speed of the transport system.
             If the backend system detects that less renewable energy is being produced, it will initiate standard
             production and reduce the transport speed and return the 2 fillers of the filling module.
           </dd>
           <dt>Security Considerations</dt>
           <dd>
-            OPC-UA has different security modes (sign and/or encrypted, policies, and authentication). Those should be
+            OPC UA has different security modes (sign and/or encrypted, policies, and authentication). Those should be
             addressed and described in Thing Descriptions with a standardized vocabulary definition. Additional security
             considerations may apply if a web bridge is created using WoT servients. OT networks are often isolated and
-            OPC-UA may have special requirements for distribution of key materials and credentials.
+            OPC UA may have special requirements for distribution of key materials and credentials.
           </dd>
           <dt>Privacy Considerations</dt>
           <dd>
-            OPC-UA comes with different approaches to protect data (also see Security Considerations above).
+            OPC UA comes with different approaches to protect data (also see Security Considerations above).
           </dd>
           <dt>Accessibility Considerations</dt>
           <dd>
@@ -3114,7 +3107,7 @@
           </dd>
           <dt>Requirements</dt>
           <dd>
-            An OPC UA binding for Web of Things needs an own set of OPC-UA specific vocabulary definitions which should be
+            An OPC UA binding for Web of Things needs an own set of OPC UA specific vocabulary definitions which should be
             developed together with the experts from the OPC Foundation. Also see the <a
               href="https://opcfoundation.org/news/opc-foundation-news/w3c-and-opcf-to-integrate-opc-ua-into-the-web-of-things/">liaison</a>.
           </dd>
@@ -5052,10 +5045,9 @@
       </dd-->
           <dt>Existing Standards</dt>
           <dd>
-
-            IEC 61850 - International standard for data models and communication protocols
-            <br>
-            IEEE 1547 - US standard for interconnecting distributed resources with electric power systems
+            <ul>
+	    <li>IEC 61850 - International standard for data models and communication protocols [[IEC 61850]]</li>
+	    <li>IEEE 1547 - US standard for interconnecting distributed resources with electric power systems [[IEEE 1547]]</li>
 
           </dd>
           <!--dt>Comments</dt>
@@ -6508,7 +6500,7 @@
           </p>
           <p>
             In an industrial environment individual actuators and production devices use different protocols.
-            Examples include MQTT, OPC-UA, Modbus, Fieldbus, and others.
+            Examples include MQTT [[MQTT]], OPC UA [[OPC UA]], Modbus [[Modbus]], Fieldbus, and others.
             Gathering data from these devices, e.g. to support digital twins or big data use cases requires an "Agent"
             to bridge across these protocols.
             To provide interoperability and to reduce implementation complexity of this agent a common set of (minimum
@@ -6534,7 +6526,7 @@
         <dt>Existing Standards</dt>
         <dd>
 
-          MQTT, OPC-UA, BACNet, CoAP, various other home and industrial protocols.
+          MQTT [[MQTT]], OPC-UA [OPC UA], BACNet [[BACnet]], CoAP [[rfc7252]], various other home and industrial protocols.
         </dd>
         <!--dt>Comments</dt>
           <dd>
@@ -8483,7 +8475,7 @@
     <section id="opc-foundation">
       <h2>OPC Foundation</h2>
       <p>
-        OPC UA is one of the important automation standards for device communication
+        OPC UA [[OPC UA]]  is one of the important automation standards for device communication
         in the factory domain as well as for Industry 4.0 scenarios such as like
         flexible manufacturing.
       </p>
@@ -8596,6 +8588,20 @@
       [[OGC]]
       [[OGC-coords]]
       [[iso-19111-2019]
+      [[IEC 61850]]
+      [[IEEE 1547]]
+      [[OGC Sensor Things]]
+      [[OPC UA]]
+      [[MQTT]]
+      [[BACnet]]
+      [[KNX]]
+      [[Modbus]]
+      [[ICE F2761-09(2013)]]
+      [[OpenICE]]
+      [[MDIRA]]
+      [[OneM2M]] <!-- Many, many citations of specific specs in specref; but this is for the ORG -->
+      [[LWM2M]] <!-- only ref in specref is for interop with OneM2M; this is for the org -->
+      [[OCF]]
 
      <!-- and some references that ARE in the specref database, and we should cite, but are not currently cited -->
       [[json-schema]]
@@ -8606,23 +8612,8 @@
       [[geolocation-API]]
       [[iso-19111-2007]
       [[hr-time-3]] <!-- replaces [Timestamps] -->
-
-     <!-- the following MAY be in specref -->
-      [ICE F2761-09(2013)]
-      [OpenICE]
-      [MDIRA]
-      [MQTT]
-      [OPC UA]
-      [BACnet]
-      [CoAP]
-      [IEC 61850]
-      [IEEE 1574]
-      [KNX]
-      [Modbus]
-      [OGC Sensor Things]
-      [OneM2M]
-      [LWM2M]
-      [OCF]
+      [[rfc7252]] <!-- replaces [CoAP] -->
+      [[rfc8376]] <!-- LPWAN -->
     </p>
 
 
