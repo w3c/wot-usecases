@@ -159,28 +159,41 @@ There should be a mechanism to identify which profiles a TD satisfies.
 This mechanism should be intrinsic to a TD, i.e. be in-band.
 
 ### Profile should define a finite set of features and capabilities to implement by the consumer.
-Supporters: Intel, Oracle, Fujitsu
+Supporters: Intel, Oracle, Fujitsu, Ben(*), IRI
 
 A profile should limit the number of options, for example the set of possible protocols, to
 a finite set, so that a consumer can consume any TD in a given profile with a finite and static code base.
 
+Notes:
+Ben: A profile should not rule out other protocols. Things should be permitted to support other protocols, e.g. CoAP. Websockets are another example, these should be allowed in the same TD
+
+
 ### Limit resource consumption
-Supporters: Intel, Oracle, Siemens, Fujitsu
+Supporters: Oracle, Siemens (-), Fujitsu, Ben (-), Cristiano (-)
 
 Profiles should limit the maximum amount of resources necessary to generate and consume a TD.
 
+Notes:
+Sebastian: We do not want limits in a profile for non-resource constrained devices.
+I don't see the need for the current profile.
+Ben: Agree that it is fine to have a profile for resource constrained devices, but should not be here.
+Cristiano: Goal overlaps with limit and reduce complexity, this is use case specific, for a set of constrained devices
+Oracle: All devices have resource limits. Reasonable limits increase interop, because they can be supported by a wide population of things. This will increase the likeliness of profile adoption/WoT adoption.
+
 ### Follow Security and Privacy Best Practices
-Proposers: Intel
+Proposers: Intel, Ben(*)
 
 Profiles should not specify security and protocol combinations that do not satisfy security best practices
 as described in the WoT Security Best Practices document.
 
 New security schemes may be added, others may be deprecated.
+McCool: Security best practices / guidelines are not published yet, no single scheme can be recommended, we cannot implement it across the use cases. Profile should follow best practices, we should discourage usage of insecure protocol. This could be a note to an informative document.
+Ben: subject to review of the actual best practices
 
 ### Developer Mode
-Proposers: Intel
+Proposers: Intel, Ben(-)
 
 There should be a mechanism to allow the "nosec" security scheme but only in a Developer context.
-Nosec may still be useful in a closed network even for production.
+Nosec may still be useful in a closed network even for productio
 
-
+Notes: this overlaps with previus section 
