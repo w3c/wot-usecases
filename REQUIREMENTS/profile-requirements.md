@@ -97,22 +97,24 @@ adopt the same ontology. Choice of actions vs. properties should be done in the 
 This will probably create new requirements for the TD spec.
 
 ### Human readability
-Suppporters: Oracle, 
+Suppporters: Oracle, IRI, Fujitsu, Ben(-), Intel(-), Cristiano(-), Siemens(-)
 
 Human-readable information such as title and description should be mandatory to
 encourage inclusion of this information for documentation purposes.
 Consider defining the value to use if these fields must be empty.
 Privacy may require removing human readable information.
 
+
+
 ### Developer guidance 
-Supporters: Fujitsu, Siemens, Intel
+Supporters: Fujitsu, Siemens, Intel, Oracle, Ben, Cristiano
 
 A profile should help define what needs to be implemented.
 This requirement also includes behavioral goals and 
 recommendations about best practice for the implementation of Consumers and Things.
 
-### Multiple profiles
-Supporters: Intel, Siemens
+### Multiple profiles (mechanism)
+Supporters: Intel, Siemens, Ben, Cristiano, Hitachi
 
 The mechanism used to indicate that a TD satisfies a profile should be
 general enough to indicate the TD satisfies the requirements for multiple profiles.
@@ -120,8 +122,14 @@ general enough to indicate the TD satisfies the requirements for multiple profil
 Some people are concerned about fragmentation, if multiple profiles would be defined. 
 However this requirement is about the *mechanism* to identify the profile in use.
 
+Discussion: 
+Does this mean a thing can support multiple profiles?
+TD already supports multiple profiles
+Profiling mechanism is described in the profile spec, may need to be polished 
+
+
 ### Composable profiles
-Proposer: Intel
+Proposer: Intel, Hitachi, Siemens, Ben(*)
 
 It should be possible to combine multiple profiles both for production and
 consumption:
@@ -136,7 +144,7 @@ should be able to indicate that.
 
 
 ### Validatible TDs
-Supporters: Intel, Oracle
+Supporters: Intel, Oracle, Ben, Cristiano
 
 Whether or not a TD satisfies the requirements of a given profile should
 be verifiable with automated tools.
@@ -145,7 +153,7 @@ We can use the existing TD JSDON Schema as a basis and reuse the existing toolin
 (TD-playground)
 
 ### Identification of profiles
-Supporters: Intel, Siemens, Fujitsu
+Supporters: Intel, Siemens, Fujitsu, Hitachi, Ben, Oracle
 
 There should be a mechanism to identify which profiles a TD satisfies.
 This mechanism should be intrinsic to a TD, i.e. be in-band.
