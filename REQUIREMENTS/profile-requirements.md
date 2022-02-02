@@ -194,6 +194,7 @@ Ben: subject to review of the actual best practices
 Proposers: Intel, Ben(-)
 
 There should be a mechanism to allow the "nosec" security scheme but only in a Developer context.
-Nosec may still be useful in a closed network even for productio
+Nosec may still be useful in a closed network even for production.
 
-Notes: this overlaps with previus section 
+Notes: this overlaps with previous section 
+Cristiano: We can make this just a recommendation.
