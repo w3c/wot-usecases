@@ -1,7 +1,8 @@
-This directory contains the use cases 
-for the next revision (V1.1) of the WoT architecture.
+This directory contains the use cases for the next revisions of the WoT specifications.
 
-Please put all your use cases into this directory adopting the format in <em>use-case-template.md</em>.
+Please document new **use cases** in this directory adopting the template [use-case-template.md](USE-CASES/use-case-template.md) (Markdown) or [use-case-template.html](USE-CASES/use-case-template.html) (HTML). The HTML template is the preferred form.
+
+Use cases that have been reviewed and approved for inclusion in the WG note are moved to https://github.com/w3c/wot-usecases/tree/master/USE-CASES/processed for archival purposes.
 
 Please avoid domain specific terminology, e.g. don't use MNO, telco. Better use network operator instead.
 
@@ -64,7 +65,10 @@ Health Notifiers.
 
 ### Manufacturing
 Monitoring production lines and plants and predicting and preventing fault conditions. 
-[big-data.md](big-data.md)
+
+
+Industry 4.0 scenarios which include innteractions to OPC UA endpoints. [use-case-opc-ua-binding.md](use-case-opc-ua-binding.md)
+
 
 ### Multi-Vendor System Integration 
 Out of the box interoperability of devices.
