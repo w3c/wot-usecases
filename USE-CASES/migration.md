@@ -47,11 +47,17 @@ WoT Discovery
 
 ### Description:
 
-<Provide a description from the users perspective>
+The migration use case can be enabled in WoT by taking into consideration the following aspects, which are mainly related to management of the servient state and IP addressing:
+- A microservice can be implemented as a WoT servient that exposes and/or consumes Web Things (WTs). The servient is hosted within a container, and its lifecycle is managed using container tools.
+ * State management - A servient can expose and/or consume WTs. If a servient exposes a WT, its state is represented by: (i) the values of its Properties; (ii) the Thing Description of the exposed WT; (iii) the state of handlers of Interaction Affordances; (iv) the data structures required to handle observing of Properties and subscriptions to Events; and (v) the state of the autonomous behavior. If a servient consumes a WT, its state is represented by: (i) The Thing Description that was fetched and was used to instantiate the Consumed Thing; (ii) the state of handlers that are associated to consuming operations, such handling of Event notifications; and (iii) the state of the autonomous behavior. As part of the migration, the state of the servient needs to be transferred to the destination node. This can be done with different approaches, as better explained in “Variants”.
+* Addressing – When a servient migrates between nodes, it typically undergoes a change of IP address. This is especially true when migration is performed between edge nodes across a WAN network. Aiming at guaranteeing service continuity, a mechanism is needed to let endpoints of a communication reach each other after migration and the resulting change of IP address. In this context, WoT presents a limitation, as it assumes IP addresses associated to Interaction Affordances to be statically defined and to never change. Different ways to solve this addressing issue can be considered, as better reported in “Variants”. 
+
 
 #### Variants:
 
-<Describe possible use case variants, if applicable>
+- State management – One approach [2] to transfer the state of a servient is to transfer the whole container environment using well-established container migration technologies, e.g., CRIU. This approach allows to transfer the state in a transparent way to applications and to the WoT layer. Besides, it allows to restore the servient at the exact state in which it was before the beginning of the migration process. However, this approach may cause a great amount of data to be transferred and does not give the possibility to migrate WTs separately – the whole container is migrated, with the servient inside. Another approach [1] is using agent-based technologies. In this case, the application itself and the WoT layer have full responsibility of saving the state of the servient, transferring it (directly or by means of a Thing Description Directory as intermediary), and restoring it at the destination node. Besides, this approach saves the application-level state, hence at a coarser granularity than the previous approach. Nonetheless, with this second approach less data are typically transferred, and WTs can be migrated individually, without the need to transfer the whole servient/container.
+- Addressing – Different ways can be leveraged to extend WoT towards maintaining connectivity between communicating servients after migration and the resulting change of IP address. One approach [2] is to implement the necessary mechanisms at the WoT layer (by introducing new Interaction Affordances and the relative handlers), in a transparent way to applications and involving only the two communicating servients (end-to-end solution). Another approach [1] can still involve only the WoT layer. However, it can exploit a Thing Description Directory to: (i) let the migrated servient register the updated Thing Description (i.e., the one including the new IP address of the migrated servient); (ii) notify the other servient so that it can fetch the updated Thing Description and consume it again.  
+
 
 ### Security Considerations:
 
@@ -68,6 +74,7 @@ Swarm.
 ### Gaps:
 
 - Managment APIs for servients
+- If two servients communicate using TCP at transport layer, their established connection cannot survive a change of IP address. QUIC is a transport-layer, connection-oriented protocol that allows a connection to survive a change of IP address at the client side. Recently, QUIC has been extended in [3] towards server-side connection migration. Therefore, QUIC represents a way to maintain connectivity between endpoints and preserve any active connection, at transport level and thus transparently to both the application and WoT. Including a Protocol Binding to HTTP/3 (i.e., HTTP over QUIC) in WoT would let WoT enjoy this feature of QUIC. 
 
 ### Existing standards:
 
@@ -77,3 +84,6 @@ Swarm.
   
 ### References
 [1] -  C. Aguzzi, L. Gigli, L. Sciullo, A. Trotta, and M. Di Felice, “From cloud to edge: Seamless software migration at the era of the web of things,” IEEE Access, vol. 8, pp. 228118–228135, 2020
+[2] C. Bonsignori, C. Puliafito, A. Virdis, E. Mingozzi, G. Iannaccone, “Integrating mobile iot devices into the arrowhead framework using web of things”, IEEE 1st International Workshop on IoT Interoperability and the Web of Things (IIWOT), 2022.
+[3] L. Conforti, A. Virdis, C. Puliafito, E. Mingozzi, "Extending the QUIC Protocol to Support Live Container Migration at the Edge", IEEE 22nd International Symposium on a World of Wireless, Mobile and Multimedia Networks (WoWMoM), 2021, pp. 61-70.
+
