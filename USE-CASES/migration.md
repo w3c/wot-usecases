@@ -1,4 +1,4 @@
-## Title: Service migration with the Web of Things
+## Service migration
 
 ### Submitter(s): 
 
@@ -31,8 +31,9 @@ For further motivations and a detailed definition of the migration process refer
 
 ### Expected Devices:
 
-- Gateways
+- Gateways (WiFi access points, Cellular base stations, etc.)
 - HUBs
+- Data centers 
 
 ### Expected Data:
 
@@ -76,5 +77,3 @@ Swarm.
   
 ### References
 [1] -  C. Aguzzi, L. Gigli, L. Sciullo, A. Trotta, and M. Di Felice, “From cloud to edge: Seamless software migration at the era of the web of things,” IEEE Access, vol. 8, pp. 228118–228135, 2020
-
-
