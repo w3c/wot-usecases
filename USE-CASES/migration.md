@@ -84,6 +84,8 @@ Swarm.
   
 ### References
 [1] -  C. Aguzzi, L. Gigli, L. Sciullo, A. Trotta, and M. Di Felice, “From cloud to edge: Seamless software migration at the era of the web of things,” IEEE Access, vol. 8, pp. 228118–228135, 2020
+  
 [2] C. Bonsignori, C. Puliafito, A. Virdis, E. Mingozzi, G. Iannaccone, “Integrating mobile iot devices into the arrowhead framework using web of things”, IEEE 1st International Workshop on IoT Interoperability and the Web of Things (IIWOT), 2022.
+  
 [3] L. Conforti, A. Virdis, C. Puliafito, E. Mingozzi, "Extending the QUIC Protocol to Support Live Container Migration at the Edge", IEEE 22nd International Symposium on a World of Wireless, Mobile and Multimedia Networks (WoWMoM), 2021, pp. 61-70.
 
