@@ -25,12 +25,9 @@ Horizontal
 - directory service operator
 
 ### Motivation:
-IoT systems are a particular kind of distrubed systems, as such they require particular attention in regards of deployment polices and strategies; expecially,
-when IoT systems are deployed in high dinamic scenarios where users can phisically move between one system to another. The litteraturature suggets a multidute of approaches when it comes to tackle the deployment of distributed system in dynamic enviroments. However, at the best of our knowledge, there haven't been much studies about the specific challages of service migration in a WoT based system. 
-The W3C Web of Things allows interactions among heterogeneous software components through the operation of WebThing consuming.  
-If a WebThing migrates to a different node, all the other WebThings that were consuming it must be notified in order to update their Consumed objects and point to the new TD address. Consider a scenario where two WTs A and B are consuming WT C and the latter is migrated from Host 1 to Host 2 at some future instant. As a result, a proper signaling procedure must be employed in order to inform WTs A and B of when the activation of WT C at Host 2 has been completed, so that they could consume again the updated TD of WT C. 
-
-For futher motivations and detailed defintion of the the migration process refer to [1]. 
+IoT systems are a particular kind of distributed systems; as such they require particular attention in regards to deployment policies and strategies. Especially, when IoT systems are deployed in high dynamic scenarios where users can physically move from one system to another. The literature suggests a multitude of approaches when it comes to tackling the deployment of a distributed system in dynamic environments. However, to the best of our knowledge, there haven't been many studies about the specific challenges of service migration in a WoT based system. The W3C Web of Things allows interactions among heterogeneous software components through the operation of WebThing consuming.
+If a WebThing migrates to a different node, all the other WebThings that were consuming it must be notified to update their Consumed objects and point to the new TD address. Consider a scenario where two WTs A and B are consuming WT C and the latter is migrated from Host 1 to Host 2 at some future instant. As a result, a proper signaling procedure must be employed to inform WTs A and B of when the activation of WT C at Host 2 has been completed, so that they could consume again the updated TD of WT C.
+For further motivations and a detailed definition of the migration process refer to [1].
 
 ### Expected Devices:
 
