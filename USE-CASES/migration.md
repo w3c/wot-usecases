@@ -6,7 +6,7 @@ Carlo Puliafito, Cristiano Aguzzi
 
 ### Reviewer(s):
 
-Micheal Lagally, Micheal Mccool
+Michael Lagally, Michael McCool
 
 ### Tracker Issue ID:
 
