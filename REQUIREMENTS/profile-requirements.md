@@ -26,8 +26,8 @@ we discuss with the appropriate contributors.
 
 ### Legend:
 
-* means partially agree, need to refine / rework the requirement
-* - means oppose
+`*` means partially agree, need to refine / rework the requirement  
+`-` means oppose
 
 
 ### Interoperability 
@@ -82,6 +82,7 @@ agree with all points of Sebastian, not all profiles should impose storage size 
 
 ### Ambiguities, select single choice
 Supporters: Oracle, Fujitsu, Intel, Ben, Cristiano, Ege 
+
 Get rid of ambiguities, i.e. clarify specifications to define interpretation of a TD
 and behavior of the thing and consumer. 
 
