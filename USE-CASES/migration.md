@@ -78,7 +78,7 @@ Swarm.
 
 ### Existing standards:
 
-<Provide links to relevant standards that are relevant for this use case>
+- [Web & Network Interest Group](https://www.w3.org/2021/04/web-networks-charter.html) is working on similar topics
 
 ### Comments:
   
