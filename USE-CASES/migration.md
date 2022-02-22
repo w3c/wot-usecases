@@ -1,4 +1,4 @@
-## Service migration
+## Thing migration
 
 ### Submitter(s): 
 
