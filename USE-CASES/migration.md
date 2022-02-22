@@ -1,4 +1,4 @@
-## Thing migration
+## Web Thing migration
 
 ### Submitter(s): 
 
