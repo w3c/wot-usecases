@@ -1,8 +1,7 @@
  UC    , Architecture, TD , Profile , Discovery , Scripting , Binding Templates , Requirement reference 
- 2. Domain Specific Use Cases ,,,,,,,
- 2.1 Agriculture ,,,,,,,
- 2.1.1 Greenhouse Horticulture - (example only - not realistic), ok  , async actions, human readable identifiers     , ok        ,  binding to error response      ,   ok              , links to requirement documents 
+2. Domain Specific Use Cases ,,,,,,,
 2.1 Smart Agriculture ,,,,,,,
+2.1.1 Greenhouse Horticulture - (example only - not realistic), ok, async actions, human readable identifiers, ok,  binding to error response, ok , links to requirement documents 
 2.1.1 Greenhouse Horticulture ,,,,,,,
 2.1.2 Open-field Agriculture ,,,,,,,
 2.1.3 Irrigation in Outdoor Environment ,,,,,,,
