@@ -1,0 +1,4 @@
+ID,Title,Description,Use Cases,Deliverables
+R1,Geolocation,Identify location of a Thing,UC1,Discovery TD
+R1a,Geolocation - Stationary,Identify location of stationary Things,UC1,Discovery TD
+R1b,Geolocation - Mobile,Identify location of mobile Things,UC1,Discovery TD
