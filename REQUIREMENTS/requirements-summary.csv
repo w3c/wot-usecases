@@ -48,4 +48,3 @@ R10, "Privacy",                             "Protect and control distribution of
   R10b, "Privacy - Lifecycle",                "Support device and information lifecycles (esp deletion of information at eol)",
   R10c, "Privacy - Trust",                    "Support mechanisms to manage level of trust in entities",
   R10d, "Privacy - PII",                      "Control distribution of data and metadata that contains or can be used to infer PII",
-  
