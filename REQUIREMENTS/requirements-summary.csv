@@ -10,9 +10,12 @@ R1,  "Geolocation",                         "Identify physical location of a Thi
   R1h, "Geolocation - Paths",                 "Define representations for paths and tracks",                                                            "Transportation, Automotive"
 R2,  "Multiple Protocols",                  "Connect physical devices with various network protocols",                                                 "Smart Agriculture (Greenhouse Horticulture)"
 R3,  "Gateway Consolidation",               "Consolidate and integrate access to many physical devices",                                              "Smart Agriculture (Greenhouse Horticulture)"
-R4,  "Secure Access",                       "Secure access to things (authentication, access control, confidentiality, integrity, etc)",              "Smart Agriculture (Greenhouse Horticulture), Smart Home, Smart Building"
-  R4a,  "Secure Remote Access - Local",       "Secure access from local systems (e.g. on the same LAN)",                                                "Smart Home, Smart Building"
-  R4b,  "Secure Remote Access - Remote",      "Secure access from remote systems (e.g. cloud) through firewalls",                                       "Smart Agriculture (Greenhouse Horticulture)"
+R4,  "Security",                            "Secure access to things (authentication, access control, confidentiality, integrity, etc)",              "Smart Agriculture (Greenhouse Horticulture), Smart Home, Smart Building"
+  R4a,  "Security - Local Access",       "Secure access from local systems (e.g. on the same LAN)",                                                "Smart Home, Smart Building"
+  R4b,  "Security - Remote Access",      "Secure access from remote systems (e.g. cloud) through firewalls",                                       "Smart Agriculture (Greenhouse Horticulture)"
+  R4c,  "Security - Confidentiality",    "Protect data in transit and at rest",
+  R4d,  "Security - Authentication",     "Verify the identity (and/or roles) of participants in network interactions",
+  R4e,  "Security - Access Control",     "Control which entities (or roles) can perform what operations or access what data",
 R5,  "Constrained Devices",                 "Allows connection of devices with constraints",                                                          "Smart Agriculture (Greenhouse Horticulture, Open-field Agriculture)"
   R5a,  "Constrained Devices - Performance",  "Allows connection of devices with constraints on performance",                                           "Smart Agriculture (Greenhouse Horticulture)"
   R5b,  "Constrained Devices - Energy",       "Allows connection of devices with constraints on energy",                                                "Smart Agriculture (Greenhouse Horticulture, Open-field Agriculture)"
