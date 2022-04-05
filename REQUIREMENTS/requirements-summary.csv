@@ -39,3 +39,5 @@ R8,   "Discovery",                          "Access metadata (TDs) about a Thing
  R8l,  "Discovery - Deletion",                "Support explicit deletion of metadata (TDs)",                                                             "TBD"
  R8m,  "Discovery - Cleanup",                 "Support automatic deletion of metadata (TDs)",                                                            "TBD"
  R8n,  "Discovery - Alignment",               "Align with and support existing standards for discovery",                                                 "TBD"
+R9,  "Accessibilty",                        "Support users with sensory, motor, or cognitive limitations",                                             "TBD"
+R10, "Privacy",                             "Protect and control distribution of personal information",                                                "TBD"
