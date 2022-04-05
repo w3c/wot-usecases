@@ -21,3 +21,4 @@ R6,  "Virtual Things",                     "Support software-based virtual Thing
  R6c,  "Virtual Things - Monitor",            "Support software-based Things monitoring the status of other Things (eg active, sleeping, etc.)",        "Smart Agriculture (Greenhouse Horticulture)"
  R6d,  "Virtual Things - Digital Twins",      "Support software-based Things enhancing other Things",                                                   "Smart Agriculture (Greenhouse Horticulture)"
  R6e,  "Virtual Things - Services",           "Support software-based Things providing support services",                                               "Edge Computing"
+R7,   "Units"                               "Identify units of values (as defined by other standards)",                                               "Smart Agriculture (Greenhouse Horticulture)"
