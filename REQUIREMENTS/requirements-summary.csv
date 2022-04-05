@@ -1,4 +1,4 @@
 ID,  Title,                        Description,                                         Use Cases
-R1,  "Geolocation",                "Identify location of a Thing",                      "Smart Cities"
- R1a, "Geolocation - Stationary",   "Identify location of stationary Things",            "Smart Cities"
- R1b, "Geolocation - Mobile",       "Identify location of mobile Things",                "Smart Cities"
+R1,  "Geolocation",                "Identify physical location of a Thing",                      "Smart City (Geolocation, Dashboard), Transportation, Automotive, VR/AR (AR Virtual Guide), Smart Agriculture (Open-field Agriculture, Irrigation in Outdoor Environment)"
+ R1a, "Geolocation - Stationary",   "Identify physical location of a stationary Thing",           "Smart City (Geolocation, Dashboard), VR/AR (AR Virtual Guide), Smart Agriculture (Open-field Agriculture, Irrigation in Outdoor Environment)"
+ R1b, "Geolocation - Mobile",       "Identify physical location of a mobile Thing",               "Smart City (Geolocation, Dashboard), Transportation, Automotive, VR/AR (AR Virtual Guide)"
