@@ -3,7 +3,7 @@
 2.1 Smart Agriculture ,,,,,,,,
 2.1.1 Greenhouse Horticulture ,, device shadow,,,,,,
 2.1.2 Open-field Agriculture ,, time series/historical data /units/battery level/relative values/precision,,,,,,
-2.1.3 Irrigation in Outdoor Environment ,,additional ontologies for location / temperature,,,,,,
+2.1.3 Irrigation in Outdoor Environment ,,additional ontologies for location / temperature,,,,,
 2.2 Smart City ,,,,,,,,,
 2.2.1 Geolocation ,,location format / additional ontologies + data format,,,,,
 2.2.2 Dashboard ,,hint for UI elements / geolocation / timestamps,,geolocation discovery,,,,
