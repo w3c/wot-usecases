@@ -11,7 +11,7 @@
 2.2.4 Meeting Room Event Assistance ,,hint for UI elements / indoor location,,(indoor) geolocation,,,,
 2.2.5 Cross-Domain Discovery in a Smart Campus ,,,cross domain discovery,-,,,,
 2.2.6 Cultural Spaces (Museums) ,,IoT trust ontology,,data-based; trust metrics; (indoor) geolocation; semantic query,,,,
-2.3 Building Technologies ,,,,(indoor) geolocation; FoI; topology; semantic query,,,,
+2.3 Building Technologies ,,,,(indoor) geolocation; feature of interest; topology; semantic query,,,,
 2.3.1 Smart Building ,,,,(indoor) geolocation; semantic query,,protocol binding for building protocols(BACnet/KNX/Modbus),,
 2.3.2 Connected Building Energy Efficiency ,,embedding of application-specific metadata ,,(indoor) geolocation,,,,
 2.3.3 Automated Smart Building Management ,,,,(indoor) geolocation; FoI; topology; semantic query,,,,
