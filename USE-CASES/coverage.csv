@@ -11,7 +11,7 @@
 2.2.4 Meeting Room Event Assistance ,,indoor location,,(indoor) geolocation,,,,
 2.2.5 Cross-Domain Discovery in a Smart Campus ,,,,-,,,,
 2.2.6 Cultural Spaces (Museums) ,,,,data-based discovery; trust metrics; (indoor) geolocation; semantic query,,,,
-2.3 Building Technologies ,,,,,,,,
+2.3 Building Technologies ,,,,(indoor) geolocation; FoI; topology; semantic query,,,,
 2.3.1 Smart Building ,,,,(indoor) geolocation; semantic query,,,,
 2.3.2 Connected Building Energy Efficiency ,,,,(indoor) geolocation,,,,
 2.3.3 Automated Smart Building Management ,,,,(indoor) geolocation; FoI; topology; semantic query,,,,
