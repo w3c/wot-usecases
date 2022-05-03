@@ -10,8 +10,8 @@
 2.2.3 Interactive Public Spaces ,,hint for UI elements /geolocation,,-,,,,
 2.2.4 Meeting Room Event Assistance ,,hint for UI elements / indoor location,,(indoor) geolocation,,,,
 2.2.5 Cross-Domain Discovery in a Smart Campus ,,,cross domain discovery,-,,,,
-2.2.6 Cultural Spaces (Museums) ,,IoT trust ontology,,data-based; trust metrics; (indoor) geolocation; semantic query,,,,
-2.3 Building Technologies ,,,,(indoor) geolocation; feature of interest; topology; semantic query,,,,
+2.2.6 Cultural Spaces (Museums) ,,IoT trust ontology,,data-based; trust metrics; (indoor) geolocation; semantic query,,,,data-based: discover based on historical or current data (as opposed to metadata like TDs)
+2.3 Building Technologies ,,,,(indoor) geolocation; feature of interest (as in SSN); topology; semantic query,,,,
 2.3.1 Smart Building ,,,,(indoor) geolocation; semantic query,,protocol binding for building protocols(BACnet/KNX/Modbus),,
 2.3.2 Connected Building Energy Efficiency ,,embedding of application-specific metadata ,,(indoor) geolocation,,,,
 2.3.3 Automated Smart Building Management ,,,,(indoor) geolocation; FoI; topology; semantic query,,,,
@@ -41,7 +41,7 @@
 2.7 Energy ,,,,ensemble; geolocation; topology,,,,
 2.7.1 Smart Grids ,,,,ensemble; geolocation; topology,,,,
 2.8 Transportation ,,,,geolocation,,,,
-2.9 Automotive ,,,,proximity; ad-hoc,,,,
+2.9 Automotive ,,,,proximity; ad-hoc,,,,ad-hoc: causal discovery of public services (as opposed to during installation)
 2.9.1 Smart Car Configuration Management ,,,,proximity; ad-hoc,,,,
 2.10 Smart Home ,,,,presence; context,,,,
 2.10.1 Home WoT devices synchronize to TV programs ,,,,presence; context,,,,
