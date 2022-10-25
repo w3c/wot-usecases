@@ -10,6 +10,6 @@ Please use the following conventions:
 * Use N/A, if the requirement does not affect y deliverable.
 * Use the comment column to describe open issues, questions.
 * Use "-" if there is no gap on your deliverable.
-* Use "gap" to mark that there is a gap with that deliverable. In this case, create an issue in the corresponding deliverable. In that issue, make sure to use the name of the use case.
+* Write the idenfitied gap, e.g. "hint for UI", if there is a gap with that deliverable. In this case, create an issue in the corresponding deliverable. In that issue, make sure to use the name of the use case.
 * Do not use "," to separate entries in a single column, use "/" instead.
 
