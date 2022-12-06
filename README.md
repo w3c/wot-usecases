@@ -33,6 +33,10 @@ To make direct changes to the IG document, please provide pull-requests to the h
 * You can contribute even if you don't have access by forking this repository and doing a Pull Request from your fork.
 * When you are doing a Pull Request, try to make little changes per Pull Request, which makes it easier to review.
 
+### Publication Status
+
+* The latest version of the Use Cases WG note has been published on 7. March 2022: https://www.w3.org/TR/wot-usecases/
+
 ### Status
 
 In the virtual F2F members of the Architecture WG and Use Case WG assigned the following priorities
