@@ -5,6 +5,9 @@ There will be duplicates in the table, this is expected.
 
 The table has some initial contents that can help as examples for some identified gaps.
 
+
+ All task forces are requested together with the use case author(s) to assess the coverage of use cases by their specification.
+
 Please use the following conventions:
 
 * Use N/A, if the requirement does not affect the deliverable in the column.
