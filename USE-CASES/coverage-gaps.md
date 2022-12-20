@@ -2,17 +2,17 @@
 
 ## Geolocation
 
-vocabulary
-geofencing
-static geolocation
-dynamic geolocation
-proximity; ad-hoc, e.g. bluetooth device identifies user is at home
-semantic location format, e.g. (BiM)  / additional ontologies + data format/historical data
-topology
-indoor/outdoor geolocation
-FoI; feature of interest (as in SSN);
-semantic query
-geopose - orientation
+* vocabulary
+* geofencing
+* static geolocation
+* dynamic geolocation
+* proximity; ad-hoc, e.g. bluetooth device identifies user is at home
+* semantic location format, e.g. (BiM)  / additional ontologies + data format/historical data
+* topology
+* indoor/outdoor geolocation
+* FoI; feature of interest (as in SSN);
+* semantic query
+* geopose - orientation
 
 ## Protocol Bindings
 
@@ -54,6 +54,8 @@ geopose - orientation
 * historical data 
 * links between TDs (see also Thing Relationship)
 * service interconnection
+
+- reviewed until here on Dec 20th
 
 ## Metrics/Ontologies
 data-based; trust metrics; (indoor) geolocation; semantic query
