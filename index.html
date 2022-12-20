@@ -1057,7 +1057,7 @@
 	  
 	  <dt>Expected devices</dt>
 	  <dd>
-	    <li>RFID tag/reader for cow identification</li>
+	    <li>Object (cow) identifier such as RFID reader, QR code scanner or barcode scanner</li>
 	    <li>sensors for detecting position and behavioral characteristic of cows, for measuring milking volume, and for monitoring environmental conditions inside and outside the livestock barn</li>
 	    <li>3D camera, laser equipment for identification of nipple location of a cow</li>
 	    <li>Robot arms for attaching/removing milking cups</li>
@@ -1090,7 +1090,7 @@
 	  <dt>Descriptions</dt>
 	  <dd>
 	    <p>
-	    When a cow enters a milking box, RFID reader installed in the milking room identifies the cow’s ID from the RFID tag attached to the cow. 
+	    When a cow enters a milking box, a object identifier installed in the milking room identifies the cow’s ID from the RFID tag, QR code or bar code attached to the cow. 
 	    Through this, the milking can be performed more systematically based on historical data, such as the number of milking or milk yield, managed by AMS.
 	    </p>
 	    <p>
@@ -1127,7 +1127,7 @@
 	  <dt>Security Considerations</dt>
 	  <dd>
 	    <p>
-	    This use case does not specify any specific requirements on security matters. Any well-defined existing security capabilities can be applied for
+	    This use case does not specify any specific requirements on security matters. Any well-defined security management mechanisms can be applied for
 	    this use case.
 	    </p>
 	  </dd>
@@ -1172,8 +1172,9 @@
 	  <dd>
 	    <p>
 	    In general, a gateway, which is a controller, installed in a dairy farm collects data and transmits the data to an external cloud connected through
-	    a network. The gateway also delivers the control commands received from the cloud to the various actuators through the network. However, the milking 
-	    operations may have difficulty being efficient and reliable when bottleneck or disconnection of network occurs. In order to solve the problem, 
+	    a network. The gateway also delivers the control commands received from the cloud to the various actuators through the network. 
+	    However, if data loss or delay occurs due to a bottleneck, a disconnection between the gateway and the cloud, or due to the excessive internal 
+	    processing time of the cloud, it may be difficult to perform efficient and reliable milking operations. In order to solve these problems, 
 	    it is recommended to applying edge computing technologies to maintain essential functionalities for performing agricultural works including the milking.
 	    </p>	    
 	  </dd>
