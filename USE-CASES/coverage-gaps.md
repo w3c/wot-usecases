@@ -30,29 +30,37 @@ geopose - orientation
 * websocket or SSE since a dashboard on a browser would be limited if we only have HTTP
 * multicast
 
-## Onboarding, Security and trust
-IoT trust ontology
-access control; roles/scopes; onboarding
-more implementation needed for different flows
+## Onboarding, Security and Trust
+* IoT trust ontology
+* access control; roles/scopes; onboarding
+* more implementation needed for different flows
+* emerging standards, e.g. DID, SSI
+* key distribution
+* encryption on isolated networks
 
-## Complex interactions, thing graphs
-orchestration / aggregation / automation rules
-behavior description
-service interconnection
-links between TDs
-Groups of devices and linking (virtual compositions)
+## Complex Interactions
+* orchestration / aggregation / automation rules
+* behavior description
 
-## Digital twins, twin graphs
-device shadow / historical data
-connected&disconnected status / time series/historical data /units/battery level/
-links between TDs
-service interconnection
+## Thing Relationships
+* service interconnection
+* links between TDs (see also Digital Twins)
+* Groups of devices and linking (virtual compositions)
+
+## Digital Twins
+* device shadow
+* connected & disconnected status 
+* time series
+* historical data 
+* links between TDs (see also Thing Relationship)
+* service interconnection
 
 ## Metrics/Ontologies
 data-based; trust metrics; (indoor) geolocation; semantic query
 data-driven; latency/metric ranking
 additional ontologies for location / temperature
 relative values/precision
+/units/battery level
 
 ## UI
 hint for UI elements / geolocation / timestamps
