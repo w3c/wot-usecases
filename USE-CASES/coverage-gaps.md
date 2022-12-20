@@ -1,44 +1,34 @@
-# Use case coverage - Gaps
+# Use case coverage - Gaps to consider for next WG charter
 
 ## Geolocation
 
-geolocation
-geolocation vocabulary
-geolocation; FoI
-geolocation; geofencing
-geolocation; sensory modalities
-geolocation; sensory modalities; alternative I/O
-
+vocabulary
+geofencing
 static geolocation
 dynamic geolocation
-proximity; ad-hoc
-
-semantic location format / additional ontologies + data format/historical data
-
-data-based; geolocation
-data-based; geolocation; multicast
-data-based; geolocation; topology
-
-ensemble; geolocation; topology
-
-(indoor) geolocation
-(indoor) geolocation; FoI; topology; semantic query
-(indoor) geolocation; feature of interest (as in SSN); topology; semantic query
-(indoor) geolocation; semantic query
-(indoor) geolocation; sensory modalities
-(indoor) geolocation; topology
-geopose; (indoor) geolocation
+proximity; ad-hoc, e.g. bluetooth device identifies user is at home
+semantic location format, e.g. (BiM)  / additional ontologies + data format/historical data
+topology
+indoor/outdoor geolocation
+FoI; feature of interest (as in SSN);
+semantic query
+geopose - orientation
 
 ## Protocol Bindings
-BACnet and OPCUA Binding
-ECHONET Lite Web API Binding
-Groups of devices and linking (virtual compositions)
-Hybridcast Binding
-LPWAN and SDI 12 usage in WoT
-OPC-UA Binding Template
-protocol binding for building protocols(BACnet/KNX/Modbus)
-websocket or SSE since a dashboard on a browser would be limited if we only have HTTP
-multicast
+
+### other IOT standards and ecosystems
+* BACnet
+* KNX
+* Modbus
+* ECHONET Lite Web API Binding
+* OPC-UA Binding Template
+* Hybridcast Binding
+* emerging standards, e.g. Matter
+
+### Low level protocols and connection mechanisms
+* LPWAN and SDI 12 usage in WoT
+* websocket or SSE since a dashboard on a browser would be limited if we only have HTTP
+* multicast
 
 ## Onboarding, Security and trust
 IoT trust ontology
@@ -50,6 +40,7 @@ orchestration / aggregation / automation rules
 behavior description
 service interconnection
 links between TDs
+Groups of devices and linking (virtual compositions)
 
 ## Digital twins, twin graphs
 device shadow / historical data
@@ -68,6 +59,11 @@ hint for UI elements / geolocation / timestamps
 hint for UI elements / indoor location
 hint for UI elements /geolocation
 ui preference description
+
+## Accessibility
+sensory modalities
+alternative I/O
+
 
 ## Video
 video streaming
