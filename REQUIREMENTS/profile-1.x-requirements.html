@@ -1,0 +1,105 @@
+<section id="requirements">
+    <h2>Profile Requirements</h2>
+    <p>
+      The following requirements were identified by the WoT profile task force and are addressed by the
+      Profile 1.0 specification.
+    </p>
+    <h3>Interoperability</h3>
+    <!-- Supporters: Oracle, Intel, Siemens, Fujitsu, Ben, Cristano -->
+    <p>
+      This is the most important objective of the profile.
+      A TD Consumer satisfying the requirements of a profile should be able to process any TD also satisfying the
+      profile
+      and should be able to correctly interact with all affordances of the Thing such a TD describes.
+    </p>
+
+    This implies that a profile has three parts:
+    <ul>
+      <li>Restrictions on TDs</li>
+      <li>Implementation requirements, constraints and behavioral assertions for Consumers</li>
+      <li>Implementation requirements, constraints and behavioral assertions on Things</li>
+    </ul>
+
+    <section class="note">
+      Note: The WoT HTTP Basic Profile does not prevent a TD to have forms for additional protocols,
+      but these can be ignored by compliant consumers, and could be removed without
+      affecting profile conformance and compatibility.
+      This may be useful for consumers that support multiple profiles.
+    </section>
+
+    <h3>Limit and reduce complexity</h3>
+    <!-- Supporters: Oracle, Siemens, Ben, Cristiano -->
+    <p>
+      Complexity addresses at least the following two things to simplify the development and
+      reduce the implementation effort:
+    </p>
+    <ul>
+      <li>Implementation complexity on a thing and consumer, e.g. eliminating the need of RDF processing,
+        but still permitting semantic annotations.</li>
+      <li>Simplifying thing description to have fewer variations.</li>
+      <li>Limiting the effort for JSON implementation.</li>
+    </ul>
+    
+    <h3>No Ambiguities, select single choice</h3>
+    <!-- Supporters: Oracle, Fujitsu, Intel, Ben, Cristiano, Ege -->
+    <p>
+      Get rid of ambiguities, i.e. clarify specifications to define interpretation of a TD and behavior of the thing and
+      consumer.
+    </p>
+    <p>
+      Examples are the choice of properties vs. actions, use of PUT or POST for HTTP, observe protocols.
+    </p>
+    
+    <h3>Developer guidance</h3>
+    <!-- Supporters: Fujitsu, Siemens, Intel, Oracle, Ben, Cristiano-->
+    <p>
+      A profile should help define what needs to be implemented. This requirement also includes behavioral goals and
+      recommendations about best practice for the implementation of Consumers and Things.
+    </p>
+    <h3>Multiple profiles (mechanism)</h3>
+    <!-- Supporters: Intel, Siemens, Ben, Cristiano, Hitachi -->
+    <p>
+      The mechanism used to indicate that a TD satisfies a profile should be general enough to indicate
+      the TD satisfies the requirements for multiple profiles.
+    </p>
+ 
+    <h3>Composable profiles</h3>
+    <!-- Proposer: Intel, Hitachi, Siemens, Ben(*)-->
+    <p>
+      It should be possible to combine multiple profiles both for production and consumption:
+    </p>
+    <p>
+      It should be possible to indicate that a consumer can ingest TDs that satisfy one or more profiles, even if each
+      TDs
+      individually only satisfies one profile. For example, a Smart Building may need to use both "constrained" devices
+      and
+      "unconstrained" devices. A gateway consuming TDs should be able to ingest TDs designed for both the constrained
+      and unconstrained
+      contexts.
+    </p>
+    <p>
+      A Thing that satisfies all the requirements for multiple TDs (for example, a device using protocols common to two
+      different usage contexts) should be able to indicate that.
+    </p>
+
+    <h3>Validatible TDs</h3>
+    <!-- Supporters: Intel, Oracle, Ben, Cristiano -->
+    <p>
+      Whether or not a TD satisfies the requirements of a given profile should be verifiable with automated tools.
+      We can use the existing TD JSDON Schema as a basis and reuse the existing tooling (TD-playground)
+    </p>
+    <h3>Identification of profiles</h3>
+    <!-- Supporters: Intel, Siemens, Fujitsu, Hitachi, Ben, Oracle -->
+    <p>
+      There should be a mechanism to identify which profiles a TD satisfies. This mechanism should be intrinsic to a TD,
+      i.e. be in-band.
+    </p>
+
+    <h3>Finite set of features and capabilities</h3>
+    <!-- Supporters: Intel, Oracle, Fujitsu, Ben(*), IRI -->
+    <p>
+      A profile should limit the number of options, for example the set of possible protocols, 
+      to a finite set, so that a consumer can consume any TD in a given profile with 
+      a finite and static code base.
+    </p>
+  </section>
