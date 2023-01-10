@@ -999,8 +999,174 @@
           </dd>
         </dl>
       </section>
+      <section id="Automatic-milking-system">  
+	<h2>Automatic milking system for dairy farm</h2>
+	<dl>
+	  <dt>Submitter(s)</dt>
+          <dd>
+	    Mun Hwan CHOI, ChangKyu LEE, Sunghyun YOON
+	  </dd> 	  
+	  
+	  <dt>Target Users</dt>
+	  <dd>
+	    Service provider, device manufacturer, device owner, cloud provider
+	  </dd>
+	  
+	  <dt>Motivation</dt>
+	  <dd>
+	    <p>
+	    Dairy farming requires significant labor in the feeding, milking, breeding, and manure disposal as well as the control and management of 
+	    the environmental conditions inside and outside the livestock barn. In particular, the milking accounts for more than 40% of the total 
+	    working time for handling a cow.
+	    </p>
+	    <p>
+	    Recently, advanced countries in the dairy industry have introduced an IoT-based automatic milking system using various IoT devices and 
+	    equipment to reduce the labor for milking. The automatic milking system (AMS) with IoT devices and equipment, such as sensors, 
+	    high performance cameras, laser equipment, and robot arms, can perform the entire milking process which includes identification of cows 
+	    entering the milking box, washing udders, milking, collection, sterilization, storage, and milk composition analysis. The AMS has advantage
+	    of solving the labor shortage problem in the dairy farm by enabling labor allocation for tasks other than milking unlike conventional methods
+	    like pipeline, herringbone, tandem machines, etc. In addition, the AMS can improve productivity and quality of milk while reducing the 
+	    incidence rate of disease in cows.
+	    </p>
+	  </dd>  
+	  
+	  <dt>Expected devices</dt>
+	  <dd>
+	    <li>Object (cow) identifier such as RFID reader, QR code scanner or barcode scanner</li>
+	    <li>sensors for detecting position and behavioral characteristic of cows, for measuring milking volume, and for monitoring environmental conditions inside and outside the livestock barn</li>
+	    <li>3D camera, laser equipment for identification of nipple location of a cow</li>
+	    <li>Robot arms for attaching/removing milking cups</li>
+	    <li>Milk composition analyzer</li>
+	    <li>Milk tank with cooling function</li>
+	  </dd>
+	  
+	  <dt>Expected data</dt>
+	  <dd>
+	    <p>
+	    The AMS generates the following data, and the data need to be managed in an organic relationship with data for other purposes such as feeding, 
+	    parturition, disease control, and growth control in order to establish a comprehensive production and operation management strategy for dairy farms.
+	    </p>
+	    <p>	    
+	    <li>Daily Number of milking, milking volume, and milking time per cow</li>
+	    <li>Target production and actual production of the farm</li>
+	    <li>Historical data for milking</li>
+	    <li>Target milk yield for each cow and/or farm based on historical data</li>
+	    <li>Health and disease management data for each cow</li>
+	    <li>Component analysis results of milk</li>
+	    <li>Operational status of devices, equipment, etc. installed in dairy farm</li>
+	    </p>
+	  </dd>
+	  
+	  <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+	  <dd>
+	    WoT Thing Description
+	  </dd>
+	  
+	  <dt>Descriptions</dt>
+	  <dd>
+	    <p>
+	    When a cow enters a milking box, a object identifier installed in the milking room identifies the cow’s ID from the RFID tag, QR code or bar code attached to the cow. 
+	    Through this, the milking can be performed more systematically based on historical data, such as the number of milking or milk yield, managed by AMS.
+	    </p>
+	    <p>
+	    Then, 3D camera, laser equipment, and sensors accurately identify the position of udders, and the robot arm attaches the milking cups to the udders
+	    quickly to perform milking. Before and after the milking, cleaning and disinfection should be performed to remove any contaminant and bacteria. 
+	    A sensor installed in the milking cup measures the elapsed time and milk yield during milking.
+	    </p>
+	    <p>
+	    In addition, the components of milk, which are content of fat, protein, lactose, etc., are analyzed, and the analysis results are transmitted
+	    to the AMS in order to manage the quality of milk, disease and health status of the cow. After milking, the milk is delivered to a milk tank 
+	    with cooling capability to maintain freshness of the milk. The AMS collects the data generated during the entire milking process, and analyzes
+	    the data to establish a milk production strategy of a dairy farm. The farmer or the manager of a dairy farm can monitor the milking process 
+	    through a web page or a mobile app.
+	    </p>
+	    <p>
+	    Automated system should be designed to minimize human intervention; however, it is more desirable to have the capability to directly control 
+	    the AMS in order to respond to an emergency situation.
+	    </p>
+	    <p>
+	    The devices and equipment such as RFID reader/tags, milking cups, robot arms, milk component analyzer, and sensor are connected to a gateway, 
+	    which is a controller, installed in a dairy farm through wired or wireless networks. The gateway controlling various actuators and transferring 
+	    the data is connected to the cloud system through the Internet. Thus, all devices and equipment on the dairy farm can be accessed and controlled
+	    through the cloud. The cloud utilizes technologies, such as AI and big data, to analyze the data transferred from the AMS. The analysis result 
+	    can be shared and distributed to all stakeholders and can be utilized as basic information for the creation of various new services enhancing 
+	    productivity and convenience of the dairy farm.
+	    </p>
+	  </dd>
+	  
+	  <dt>Variants</dt>
+	  <dd>
+	    None.
+	  </dd>
+	  
+	  <dt>Security Considerations</dt>
+	  <dd>
+	    <p>
+	    This use case does not specify any specific requirements on security matters. Any well-defined security management mechanisms can be applied for
+	    this use case.
+	    </p>
+	  </dd>
+	  
+	  <dt>Privacy Considerations</dt>
+	  <dd>
+	    <p>
+	    In addition to farmers, various stakeholders such as farm workers, service providers, manufacturers, consumers of agricultural products, 
+	    third-party companies and government departments are also involved with the operation of a dairy farm. The data with various types and 
+	    characteristics generated during the operation of the AMS can be shared and distributed to one or more stakeholders.
+	    </p>
+	    <p>
+	    Consequently, the right to access the data must be systematically managed according to the type, characteristics, and purpose of data utilization. 
+	    Through this, it is possible to protect the experience, know-how and unique agricultural knowledge or techniques of a farmer, and to secure the 
+	    dairy farm’s competitiveness.
+	    </p>
+	  </dd>
+	  
+	  <dt>Accessibility Considerations</dt>
+	  <dd>
+	    None.
+	  </dd>
+	  
+	  <dt>Internationalisation (i18n) Considerations</dt>
+	  <dd>
+	    None.
+	  </dd>
+	  
+	  <dt>Requirements</dt>
+	  <dd>
+	    <p>
+	    A wired or wireless communication link is required to exchange data generated by operation of AMS and commands for controlling IoT devices
+	    and equipment. To prevent interfering with the free movement of cows and other agricultural works, using wireless communication link is recommended.
+	    </p>
+	    <p>
+	    The data for the AMS should be delivered and stored with a common format regardless of device types and manufacturers, and should be expressed
+	    in a standardized way for AI-based analysis and processing.
+	    </p>
+	  </dd>
+	  
+	  <dt>Gaps</dt>
+	  <dd>
+	    <p>
+	    In general, a gateway, which is a controller, installed in a dairy farm collects data and transmits the data to an external cloud connected through
+	    a network. The gateway also delivers the control commands received from the cloud to the various actuators through the network. 
+	    However, if data loss or delay occurs due to a bottleneck, a disconnection between the gateway and the cloud, or due to the excessive internal 
+	    processing time of the cloud, it may be difficult to perform efficient and reliable milking operations. In order to solve these problems, 
+	    it is recommended to applying edge computing technologies to maintain essential functionalities for performing agricultural works including the milking.
+	    </p>	    
+	  </dd>
+	  
+	  <dt>Existing standards</dt>
+	  <dd>
+	    None.
+	  </dd>
+	  
+	  <dt>Comments</dt>
+	  <dd>
+	    None.
+	  </dd>
+	<dl>
+      </section>
     </section>
-
+	  
     <section id="smart-city">
       <h2>Smart City</h2>
       <section id="smartcity-geolocation">
@@ -8585,6 +8751,8 @@
       <li>Farshid Tavakolizadeh (Fraunhofer)</li>
       <li>Keiichi Teramoto (ECHONET Consortium)</li>
       <li>K. Zachila (University of the Aegean)</li>
+      <li>Mun Hwan Choi (ETRI)</li>
+      <li>Changkyu Lee (ETRI)</li>
     </ul>
     <p>
       Special thanks to Dr. Kazuyuki Ashimura from the W3C for the continuous help and support
