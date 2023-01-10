@@ -1,5 +1,8 @@
 # Use case coverage - Gaps to consider for next WG charter
 
+The following technical topics and high level gaps were identified by TF leads based on the latest published version of the use cases document.
+Each technical topic needs to be described in more detail in a dedicated requirements doucment.
+
 ## Geolocation
 
 * vocabulary
@@ -13,6 +16,9 @@
 * FoI; feature of interest (as in SSN);
 * semantic query
 * geopose - orientation
+* time synchronisation for geolocation
+* presence; context
+
 
 ## Protocol Bindings
 
@@ -24,6 +30,8 @@
 * OPC-UA Binding Template
 * Hybridcast Binding
 * emerging standards, e.g. Matter
+* email binding
+* sms binding
 
 ### Low level protocols and connection mechanisms
 * LPWAN and SDI 12 usage in WoT
@@ -37,6 +45,9 @@
 * emerging standards, e.g. DID, SSI
 * key distribution
 * encryption on isolated networks
+* registration
+* roles/scopes
+* simple rules/automatic onboarding/configuration
 
 ## Complex Interactions
 * orchestration / aggregation / automation rules
@@ -55,38 +66,32 @@
 * links between TDs (see also Thing Relationship)
 * service interconnection
 
-- reviewed until here on Dec 20th
-
 ## Metrics/Ontologies
-data-based; trust metrics; (indoor) geolocation; semantic query
-data-driven; latency/metric ranking
-additional ontologies for location / temperature
-relative values/precision
-/units/battery level
+* trust metrics
+* latency / metric ranking
+* additional ontologies for location 
+* additional ontologies for temperature
+* relative values
+* precision
+* units
+* battery level
+* embedding of application-specific metadata 
 
 ## UI
-hint for UI elements / geolocation / timestamps
-hint for UI elements / indoor location
-hint for UI elements /geolocation
-ui preference description
+* hint for UI elements
+* ui preference description
+* image payload formats
 
 ## Accessibility
-sensory modalities
-alternative I/O
-
+* sensory modalities
+* alternative I/O
 
 ## Video
-video streaming
-video streaming protocol binding template
-"Video streaming binding/email and sms binding, image payload formats"
-
-## Onboarding
-onboarding; registration
+* video streaming
+* video streaming protocol binding template
 
 ## Miscellaneous
-Usage cycle description
-embedding of application-specific metadata 
-presence; context
-roles/scopes; onboarding
-sensory modalities
-simple rules/automatic onboarding/configuration
+* Usage cycle description
+
+
+
