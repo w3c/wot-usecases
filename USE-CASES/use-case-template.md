@@ -80,6 +80,22 @@
 ### Requirements:
 
 <Describe a high level summary of any requirements that are not addressed in the current WoT standards and building blocks>
+  
+#### Protocol Requirements
+  
+<Write the protocols that are required or usually used in your use case. Write "flexible" if it does not matter.>  
+  
+#### Content Type Requirements
+  
+<Write the content types that are required or usually used in your use case. Write "flexible" if it does not matter,>
+  
+#### Platform or Standard Requirements
+  
+<Write the platforms or standards that are required or usually used in your use case. Write "none" if there is none.>
+  
+#### Authentication and Authorization Mechanisms Requirements
+  
+<Write the authentication and authorization mechanisms that are required or usually used in your use case. Write "flexible" if it does not matter, "none" if your use case requires that there is no authentication.>
 
 ### Gaps:
 
