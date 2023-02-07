@@ -113,6 +113,35 @@ may be indoor or outdoor, and may be static or dynamic.
 
 <additional references that provide more context>
 
+### Variants
+Geolocation use cases may depend upon one or more of the following variants of this requirement:
+* Indoor 
+   - When geolocation needs to be performed inside a building or other structure.  In this case, rather than or in additional to a numerical coordinate system to identify location, a named room or a feature may be used as a reference (for example, a named room, or a particular numbered HVAC vent, etc.)
+* Topology
+   - When relationships between locations are useful, for example connections between rooms or HVAC vents.
+* Outdoor 
+   - When geolocation can be accomplished using a numerical coordinate system relative to the Earth, e.g. using WGS84 latitude, longitude, and altitude.
+* Pose
+   - When orientation information is needed, either in addition to location or by itself.  This might also be generalized to include other
+     information related to but distinct from location, such as velocity or acceleration.
+* Dynamic
+   - When location needs to be updated frequently, for example when the location of a vehicle needs to be tracked.
+* Static
+   - When location does not need to be updated frequently, for example for a sensor installed on a pole.
+* Geofencing
+   - When it needs to be determined if a location is inside a region. An event or notification should be generated when and entity moves into or out of a region.
+     Proximity can be used to define a region without knowing its absolute location, although geofencing (as a more general concept) 
+     can also be based on regions defined using absolute locations.
+* Proximity
+   - When only the distance between two entities needs to be known (but not necessarily their absolute location).  This might be used to enable geofencing when
+     the region is defined as being within some radius of a particular entity.
+* FoI (Feature of Interest)
+   - As defined in the W3C SSN standard, an FoI is an entity being sensed or acted upon by a Thing, which may be at a different location than the Thing itself.
+     For example, consider a thermal camera pointed at a certain location in a factory.  The sensor reports a temperature at a location (the location of the FoI) 
+     distinct from (and perhaps
+     quite far away from) the sensor itself.  If we want to act on the measured data, we need to know the location of the FoI.  If we want to physically
+     access the sensor (e.g. for maintenance) then we instead need the location of the sensor itself.
+
 ### Comments:
 
 <additional comments>
