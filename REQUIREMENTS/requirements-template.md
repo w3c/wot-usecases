@@ -20,10 +20,6 @@
 
 <list all affected deliverables, e.g. TD spec, Profile spec, Scripting API, Security best practices, Discovery, ...>
 
-### Business Justification/Motivation:
- 
-<short description of motivation and business justification>
-
 ### Requirements:
 
 <short description of all requirements>
