@@ -6,13 +6,13 @@ Michael McCool
 
 ### Reviewer(s):
 
-<reviewers>
+{reviewers}
 
 ### Tracker Issue ID:
 
-<please leave blank>
+{please leave blank}
 
-### Use case reference(s):
+### Use Case Reference(s):
   
 [Domain Specific:](link)
 * [Smart Agriculture](https://www.w3.org/TR/wot-usecases/#agriculture) (indoor/outdoor, static)
@@ -59,7 +59,7 @@ Michael McCool
 
 ### Business Justification/Motivation:
  
-<short description of motivation and business justification>
+{short description of motivation and business justification}
 
 ### Requirements:
 
@@ -69,49 +69,49 @@ may be indoor or outdoor, and may be static or dynamic.
     
 #### User Needs:
 
-<Describe additional needs of a human user; if there are none, say "none">
+{Describe additional needs of a human user; if there are none, say "none"}
 
 #### Technical Needs:
   
-<Describe technical needs>
+{Describe technical needs}
   
 #### Security:
 
-<Describe security features needed; if there are none, say "none">
+{Describe security features needed; if there are none, say "none"}
 
 #### Privacy:
 
-<Describe privacy features needed; if there are none, say "none">
+{Describe privacy features needed; if there are none, say "none"}
 
 #### Accessibility:
 
-<Describe accessibility requirements needed; if there are none, say "none">
+{Describe accessibility requirements needed; if there are none, say "none"}
 
  #### Protocol Requirements
 
- <Write the protocols that are required or usually used in your use case. Write "flexible" if it does not matter.>  
+ {Write the protocols that are required or usually used in your use case. Write "flexible" if it does not matter.} 
 
  #### Content Type Requirements
 
- <Write the content types that are required or usually used in your use case. Write "flexible" if it does not matter,>
+ {Write the content types that are required or usually used in your use case. Write "flexible" if it does not matter.}
 
  #### Platform or Standard Requirements
 
- <Write the platforms or standards that are required or usually used in your use case. Write "none" if there is none.>
+ {Write the platforms or standards that are required or usually used in your use case. Write "none" if there is none.}
 
  #### Authentication and Authorization Mechanisms Requirements
 
- <Write the authentication and authorization mechanisms that are required or usually used in your use case. Write "flexible" if it does not matter, "none" if your use case requires that there is no authentication.>
+ {Write the authentication and authorization mechanisms that are required or usually used in your use case. Write "flexible" if it does not matter, "none" if your use case requires that there is no authentication.}
    
    
 
 ### Related standards:
 
-<list related standards>
+{list related standards}
 
 ### Other references:
 
-<additional references that provide more context>
+{additional references that provide more context}
 
 ### Variants
 Geolocation use cases may depend upon one or more of the following variants of this requirement:
@@ -144,4 +144,4 @@ Geolocation use cases may depend upon one or more of the following variants of t
 
 ### Comments:
 
-<additional comments>
+{additional comments}
