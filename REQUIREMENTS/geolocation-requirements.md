@@ -69,23 +69,46 @@ may be indoor or outdoor, and may be static or dynamic.
     
 #### User Needs:
 
-{Describe additional needs of a human user; if there are none, say "none"}
+Users may need locations that are referenced to named locations, such as rooms, landmarks, addresses or other
+"semantic" references.  A location may also be indicated on a map, which is a visual representation of its
+relationship to other known landmarks.  Often height above ground is more useful than height above sea level.
+An absolute latitude/longitude/altitude reference will usually not be the most
+convenient format for the user to interpret location information.
+
+Certain applications need additional information in addition to location, such as orientation (useful for AR rendering)
+or velocity (useful when tracking a moving vehicle).
 
 #### Technical Needs:
   
-{Describe technical needs}
+Location information can be determined in a variety of ways.  The simplest case is that location is 
+recorded using a separate measuring device during installation, for example when attaching a fixed sensor to a 
+pole.  In other cases a location-determining technology such as GPS might be used to determine a location
+relative to an Earth-centric coordinate system.  It is also possible to use only relative location information,
+for example distance to some other entity (proximity) can be used to implement geofencing (e.g. to raise
+an alert when an entity is too far away from another one).  Such proximity sensors can be approximate, e.g.
+using Bluetooth or WiFi signal strength.
+
+Because the technologies vary on how location is determined, it is useful to also indicate the 
+accuracy of the measurements and the coordinate systems they are based on (if there is one) and the
+units used for measurements e.g. of distances or altitude.
   
 #### Security:
 
-{Describe security features needed; if there are none, say "none"}
+In many cases it will be important to ensure that locations are not spoofed.  For example,
+if geofencing is being used to prevent theft of an item, spoofing its location to avoid triggering
+a geofence violation would allow the item to be moved without an alert.
 
 #### Privacy:
 
-{Describe privacy features needed; if there are none, say "none"}
+The location of personal devices that are carried by or attached to a person (e.g. phones, watches, etc) can be considered
+personal information and should be treated as such.
+Some devices are designed entirely for tracking (e.g. AirTags, iBeacons) and should not be used without consent.
 
 #### Accessibility:
 
-{Describe accessibility requirements needed; if there are none, say "none"}
+As an extension of user needs, location should be conveyed in a format suitable for the user to understand.
+For the visually impaired, for example, describing a location verbally relative to landmarks ("On Charles Street,
+east of the river, near the clock tower") may be more useful than displaying a map.
 
  #### Protocol Requirements
 
@@ -93,7 +116,7 @@ may be indoor or outdoor, and may be static or dynamic.
 
  #### Content Type Requirements
 
- {Write the content types that are required or usually used in your use case. Write "flexible" if it does not matter.}
+ Data returned by certain types of devices, e.g. GPS sensors, may follow specific data formats.
 
  #### Platform or Standard Requirements
 
