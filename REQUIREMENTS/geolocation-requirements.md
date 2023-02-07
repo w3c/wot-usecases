@@ -14,8 +14,42 @@ Michael McCool
 
 ### Use case reference(s):
   
-* [Smart City/Geolocation](https://w3c.github.io/wot-usecases/#smartcity-geolocation)
-* Others... To do
+[Domain Specific:](link)
+* [Smart Agriculture](https://www.w3.org/TR/wot-usecases/#agriculture) (indoor/outdoor, static)
+    - [Greenhouse Horticulture](https://www.w3.org/TR/wot-usecases/#smart-agriculture) (indoor, static)
+    - [Open-Field Agriculture](https://www.w3.org/TR/wot-usecases/#smart-agriculture-openfield) (outdoor, static)
+    - [Irrigation in Outdoor Environment](https://www.w3.org/TR/wot-usecases/#Agricultural-irrigation) (outdoor, static)
+* [Smart City](https://www.w3.org/TR/wot-usecases/#smart-city) (indoor/outdoor, static/dynamic)
+    - [Geolocation](https://www.w3.org/TR/wot-usecases/#smartcity-geolocation)
+    - [Dashboard](https://www.w3.org/TR/wot-usecases/#smartcity-dashboard) 
+    - [Meeting Room Event Assistance](https://www.w3.org/TR/wot-usecases/#mmi-3-2_meeting-room-event-assistance) (indoor)
+    - [Cultural Spaces (Museums)](https://www.w3.org/TR/wot-usecases/#cultural-spaces) (indoor)
+* [Building Technologies](https://www.w3.org/TR/wot-usecases/#smart-buildings) (indoor, FoI, topology)
+    - [Smart Building](https://www.w3.org/TR/wot-usecases/#smart-building) (indoor)
+    - [Connected Building Energy Efficiency](https://www.w3.org/TR/wot-usecases/#connected-building-energy-efficiency) (indoor)
+    - [Automated Smart Building Management](https://www.w3.org/TR/wot-usecases/#smart-building-things) (indoor, FoI, topology)
+    - [Portable Building Applications](https://www.w3.org/TR/wot-usecases/#portable-building-applications) (indoor, topology)
+* [Health](https://www.w3.org/TR/wot-usecases/#health)
+    - [Public Health](https://www.w3.org/TR/wot-usecases/#public-health)
+        - [Public Health Monitoring](https://www.w3.org/TR/wot-usecases/#smartcity-health-monitoring)
+* [Energy](https://www.w3.org/TR/wot-usecases/#energy) (topology)
+    - [Smart Grids](https://www.w3.org/TR/wot-usecases/#smart-grid) (topology)
+* [Transportation](https://www.w3.org/TR/wot-usecases/#transportation) (dynamic, proximity)
+* [Automotive](https://www.w3.org/TR/wot-usecases/#automotive)
+    - [Smart Car Configuration Management](https://www.w3.org/TR/wot-usecases/#mmi-2-1_smart-car-configuration-management) (dynamic, proximity)
+* [Smart Home](https://www.w3.org/TR/wot-usecases/#smart-home) (geofencing)
+    - [Leaving and Coming Home](https://www.w3.org/TR/wot-usecases/#echonet-use-case) (geofencing)
+    
+[Multiple Domains:](https://www.w3.org/TR/wot-usecases/#sec-horizontal-ucs)
+* [Digital Twin](https://www.w3.org/TR/wot-usecases/#digital-twin) (topology)
+    - [Digital Twin 1](https://www.w3.org/TR/wot-usecases/#digital-twin-1) (topology)
+    - [Digital Twin 2](https://www.w3.org/TR/wot-usecases/#digital-twin-2) (topology)
+* [Multimodal System Integration](https://www.w3.org/TR/wot-usecases/#multimodal)
+    - [Enhancement of Synergistic Interactions](https://www.w3.org/TR/wot-usecases/#mmi-5-2_enhancement-of-synergistic-interactions) 
+* [Accessibility](https://www.w3.org/TR/wot-usecases/#accessibility) (indoor)
+    - [Audiovisual Devices Acting as Smartphone Extensions](https://www.w3.org/TR/wot-usecases/#mmi-1-1_audiovisual-devices-as-smartphone-extensions) (indoor)
+* [VR/AR](https://www.w3.org/TR/wot-usecases/#VR/AR) (pose, FoI)
+    - [AR Virtual Guide](https://www.w3.org/TR/wot-usecases/#ar-guide) (pose, FoI)
 
 ### Affected WoT Deliverables:
 
