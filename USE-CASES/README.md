@@ -1,6 +1,6 @@
 This directory contains the use cases for the next revisions of the WoT specifications.
 
-Please document new **use cases** in this directory adopting the template [use-case-template.md](USE-CASES/use-case-template.md) (Markdown) or [use-case-template.html](USE-CASES/use-case-template.html) (HTML). The HTML template is the preferred form.
+Please document new **use cases** in this directory adopting the template [use-case-template.md](use-case-template.md) (Markdown) or [use-case-template.html](use-case-template.html) (HTML). The HTML template is the preferred form.
 
 Use cases that have been reviewed and approved for inclusion in the WG note are moved to https://github.com/w3c/wot-usecases/tree/master/USE-CASES/processed for archival purposes.
 
