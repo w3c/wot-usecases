@@ -1276,6 +1276,138 @@
           <dd>None.</dd>        
       </dl>
   </section>
+	<!--new use case starts here -->
+    <section id="Livestock Health Management">
+      <h2>Livestock Health Management</h2>
+      <dl>
+          <dt>Submitter(s)</dt>
+          <dd>ChangKyu LEE, Mun Hwan CHOI, Sunghyun YOON</dd>
+          
+          <dt>Target Users</dt>
+          <dd>service providers, device manufacturers, device users</dd>
+  
+          <dt>Motivation</dt>
+          <dd>
+            <p>
+            IoT and AI-based animal health management technologies are being introduced to overcome the difficulty of separating sick livestock from other livestock 
+            in narrow spaces where many livestock herds live. This helps to safely maintain livestock by monitoring their behavior and health status and taking quick and 
+            appropriate responses if disease is expected or occurs.
+            </p>
+            <p>
+            IoT and AI-based animal health management technology plays an important role in monitoring livestock health, preventing diseases, and detecting them early. 
+            Through this technology, livestock's health status can be monitored in real-time by collecting and analyzing their biological signals, such as body temperature, 
+            heart rate, and respiration, and setting normal ranges. If abnormal data is detected, it sends an alert to the famer to take appropriate measures.
+            </p>            
+            <p>
+            Additionally, AI technology can be used to predict livestock's health status. By analyzing the relationship between livestock's health status and disease occurrence 
+            using AI models, predictive results on health status can be provided to take preventive measures.
+            </p>            
+            <p>
+            This IoT and AI-based animal health management technology is very useful for maintaining livestock's health, improving productivity, and minimizing disease occurrence 
+            by monitoring their health status, taking preventive measures, and providing early responses.                
+            </p>            
+          </dd>
+  
+          <dt>Expected devides</dt>
+          <dd>
+              <li>Sensors and/or cameras to collect data on behavioral characteristics and health status of livestock, environmental conditions inside and outside the livestock barn</li>
+              <li>Wearable devices such as collars or ear tags attached to the livestock’s body to monitor the livestock’s location, behavior, and vital signs</li>
+              <li>Communication devices including object identifiers (RFID readers, QR code scanners or barcode scanners), Bluetooth or Wi-Fi modules, and cellular to transmit 
+                the data from the sensors, cameras or wearable devices to a cloud server for analysis</li>
+              <li>Environmental control devices such as light, air conditioner, etc.) to control the breeding environment of livestock</li>
+              <li>Cloud-based analytical system to analyze the collected data. Edge devices including microcontrollers, gateways, and edge servers may be required for network 
+                stability and real-time data processing</li>      
+          </dd>
+  
+          <dt>Expected data</dt>
+          <dd>
+              <li>Identification data of a livestock: identification number, sex, age, etc.</li>
+              <li>Health status data of a livestock: body weight, body temperature, heart rate, respiration rate, activity level, feed and water intake, fecal volume and its condition, etc.</li>
+              <li>Disease data of a livestock: disease occurrence, type of disease, diagnosis and prescription results, etc.</li>
+              <li>Environmental condition data of a livestock barn: temperature, humidity, ammonia, carbon dioxide level, etc.</li>              
+          </dd>
+  
+          <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
+          <dd>WoT Thing Description</dd>
+  
+          <dt>Description</dt>
+          <dd>
+            <p>
+            Overall, livestock health management involves a complex system of data collection, transmission, processing, analysis, and decision-making. By using this, 
+            it is possible to improve livestock health, prevent the spread of disease, and increase productivity. Livestock health management can be described from the perspective 
+            of data flow as follows.
+            </p>
+            <p>
+            (Data collection) Data for livestock health management are collected from the livestock and the livestock barn being monitored. This data can include various types of 
+            physiological data, such as body temperature, heart rate, respiration rate, and fecal output, as well as environmental data, such as temperature, humidity, and air quality.
+            </p>
+            <p>
+            (Data Processing) The data is then preprocessed on edge devices before being sent to the cloud server. The preprocessing step can involve cleaning the data, compressing it, 
+            and performing basic analysis to reduce the amount of data that needs to be transmitted.
+            </p>
+            <p>
+            (Data transmission) Collected data is transmitted to a cloud server for analysis. This is typically done using wireless communication technologies such as Bluetooth, 
+            Wi-Fi, RFID, or cellular networks.
+            </p>
+            <p>
+            (Data Analysis) The cloud server uses machine learning algorithms and AI models to analyze the data collected from the sensors and wearable devices. 
+            The analysis can include identifying patterns, predicting future health risks, and detecting early signs of illness or disease.
+            </p>
+            <p>
+            (Decision Making) Based on the data analysis results, the livestock health management service provider or veterinarian with insights can make decisions about the care 
+            and treatment of the livestock. This can include taking preventative measures to reduce the risk of disease or illness, administering medication, or isolating sick livestock 
+            from the rest of the herd. Also, the livestock health management service provider or veterinarian establish a livestock health management plan that reflects the results of analysis.
+            </p>
+          </dd>
+  
+          <dt>Variants</dt>
+          <dd>None.</dd>
+  
+          <dt>Security Considerations</dt>
+          <dd>
+            This use case does not define specific considerations for security issues. However, all data collected and analyzed for livestock health management should be managed 
+            using well-defined security technologies. In particular, it should be treated more safely because it is used as data for prescribing medicines for disease treatment. 
+          </dd>
+  
+          <dt>Privacy Considerations</dt>
+          <dd>
+            Establishing a systematic access method for all data acquired in livestock health management is necessary to protect the agricultural technology of farmers and 
+            ensure competitiveness. Only stakeholders who have a pre-existing contract or agreement are permitted to access and share/distribute the data.
+          </dd>
+  
+          <dt>Accessibility Considerations</dt>
+          <dd>None.</dd>
+  
+          <dt>Internationalisation (i18n) Considerations</dt>
+          <dd>None.</dd>
+  
+          <dt>Requirements</dt>
+          <dd>
+            <li>Protocol Requirements: Flexible.</li>              
+            <li>Contents Type Requirements: Flexible.</li>
+            <li>Platform or Standard Requirements: None.</li>
+            <li>Authentication and Authorization Mechanisms Requirements: Flexible.</li>
+            <li>Communication Requirements: To transmit and share data collected from livestock or from the livestock barn, appropriate communication links and identification methods 
+                for individual livestock are necessary. High-speed communication links may be required to collect large data such as images or videos in real-time or to transmit data to 
+                external cloud server for data analysis.</li>
+            <li>Data expression Requirements: Various data for livestock health management should be represented in a standardized format that is independent of the type or 
+                manufacturer of the device or equipment. Furthermore, all of this data must be stored and managed in a separate repository to maintain a history of the data, 
+                and data interoperability must be ensured.</li>
+            <li>Other Requirements: Unlike a greenhouse or an open field, a livestock barn has an environment that is very humid and easily exposed to toxic gases due to manure. 
+                Since devices such as sensors and cameras installed in livestock barn can easily fail, the state of the device must be continuously managed remotely, 
+                and it must be replaced immediately if necessary.</li>
+          </dd>
+
+          <dt>Gaps</dt>
+          <dd>None.</dd>
+
+          <dt>Existing Standards</dt>
+            <dd>None.</dd>
+  
+          <dt>Comments</dt>
+            <dd>None.</dd>        
+      </dl>
+  </section>
 </section>
 
     <section id="smart-city">
