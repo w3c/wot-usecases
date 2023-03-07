@@ -77,6 +77,7 @@ convenient format for the user to interpret location information.
 
 Certain applications need additional information in addition to location, such as orientation (useful for AR rendering)
 or velocity (useful when tracking a moving vehicle).
+This may also include dynamic locations, paths and historical locations.
 
 #### Technical Needs:
   
