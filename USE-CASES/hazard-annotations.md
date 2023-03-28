@@ -39,13 +39,15 @@ The use-case originated within [SIFIS-Home](https://sifis-home.eu) project, wher
 The user should be made fully aware of the hazards related to the connected devices operations, be able to declare policies regarding acceptable risks, and have the home system enforce them.
 
 The focus is on the problem of having the information available and how to deliver it to all the possible actors.
-Few scenarios on how the information could be consumed in useful and advanced ways are provided.
+Some scenarios on how the information could be consumed in useful and advanced ways are provided.
 
 ### Expected Devices:
 
 Any device that may pose a physical or privacy hazard to the user should provide information on the risks e.g.:
     - Fire hazards: Ovens, Stoves, Lamps
     - Flood hazards: Windows, Faucets
+    - Chemical hazards: CO emissions e.g. for cars or heating systems, Battery venting
+    - Electrical hazards: Solar panels, Batteries
     - Invasion: Doors, Windows
     - Privacy: Cameras, Microphones
 
@@ -60,15 +62,15 @@ Any device with the ability to aggregate the information available and either pr
 The devices should provide some kind of labeling metadata to deliver the hazard information connected with all the possible interactions with it.
 
 It could be as coarse as cover any access to the device or specific to the point of selecting a range of operation within the single specific interaction, e.g.:
-- Accessing a connected camera is a privacy hazard
+- Providing a feed from a connected camera is a privacy hazard
 - Setting an high level of brightness on an halogen lamp might involve risks of overheating it or setting something nearby on fire.
 
 Some devices may provide additional information on hazards they may simply detect and default policies other devices may try to enforce e.g.:
 - A smart meter may notify that the energy flowing through it is over a threshold and the information may trigger a policy that sets some smart switches off.
 
 Some devices may provide information that can be aggregated together to derive/evaluate a risk:
-- A CO₂/VOC sensor may provide a default policy that modulate the smoke and fire hazard evaluation based on its own information, but in itself may not detect smoke or temperature.
-- A connected Oven may not have a smart meter embedded but may provide enough information to desume the energy consumption by the temperature of its heating elements.
+- A CO/CO₂/VOC sensor may provide a default policy that modulate the smoke and fire hazard evaluation based on its own information, but in itself may not detect smoke or temperature.
+- A connected Oven may not have a smart meter embedded but may provide enough information to determine the energy consumption by the temperature of its heating elements.
 
 ### Dependencies - Affected WoT deliverables and/or work items:
 
@@ -76,9 +78,10 @@ The current Thing Description is adequate to support the model, the hazards anno
 Additional vocabulary terms may be needed to support a finer level of granularity or declare default policies or formulas to derive additional hazard based on the aggregation of information provided by different devices..
 
 ### Description:
-
-The user may have a mean of setting policies to restrict interactions with connected devices, e.g.:
-- Stop any interaction with the TV between 3:00PM and 5:00PM if an unattended children is detected.
+While the focus of this use case is on awareness, once we have established awareness 
+we can consider the related issues of policy and enforcement.
+The user may have a mechanism to set policies to restrict interactions with connected devices, e.g.:
+- Stop any interaction with the TV between 3:00PM and 5:00PM if unattended children are detected.
 - Require stronger authentication to open a door if the user is considered already inside the house.
 
 The home system may automously change the state of a device to reduce the risk level, e.g.:
@@ -105,7 +108,8 @@ The system may be extended to cover accessibility concerns and have specific pol
 
 ### Internationalisation (i18n) Considerations:
 
-Being also user-facing, the hazard information should be translated.
+Being also user-facing, hazard information should be translated or otherwise made
+available in the users' language.
 
 ### Requirements:
 
@@ -131,5 +135,13 @@ Any interaction among Things and Consumers is within the normal operation and sh
 ### Gaps:
 
 ### Existing standards:
+
+There are many existing standards for various types of hazards in specific industries and
+locals, for example for electrical or chemical hazards.  There are also in many locales legal
+requirements for package labelling and in-package notifications, e.g. for chemical, electrical,
+or ergonomic hazards.  However, this information needs to be presented in a common
+electronic format that is accessible to e.g. home automation systems.  It may be necessary
+to develop a new ontology for general categories of hazards that are location-idenpendent,
+but this should be based on existing hazard labelling whenever possible.
 
 ### Comments:
