@@ -38,7 +38,7 @@ Connected devices have an impact on the physical world, more than often interact
 The use-case originated within [SIFIS-Home](https://sifis-home.eu) project, where the focus is on trustworthy connected homes:
 The user should be made fully aware of the hazards related to the connected devices operations, be able to declare policies regarding acceptable risks, and have the home system enforce them.
 
-The focus is on the problem of having the information available and how to deliver it to all the possible actors.
+This use case discusses all three aspects (awareness, policies, and enforcement) but the focus is on the foundational problem of awareness: having the information hazards available and delivering it to all the possible actors.
 Some scenarios on how the information could be consumed in useful and advanced ways are provided.
 
 ### Expected Devices:
