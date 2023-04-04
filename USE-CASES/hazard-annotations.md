@@ -41,6 +41,8 @@ The user should be made fully aware of the hazards related to the connected devi
 This use case discusses all three aspects (awareness, policies, and enforcement) but the focus is on the foundational problem of awareness: having the information hazards available and delivering it to all the possible actors.
 Some scenarios on how the information could be consumed in useful and advanced ways are provided.
 
+With hazard and risks we consider the most broader scope, it can be an operational hazard as defined by `ISO/DIS 45001` and similar standards or a privacy concern as defined by legislations such as the European General Data Protection Regulation (GDPR).
+
 ### Expected Devices:
 
 Any device that may pose a physical or privacy hazard to the user should provide information on the risks e.g.:
@@ -78,7 +80,7 @@ The current Thing Description is adequate to support the model, the hazards anno
 Additional vocabulary terms may be needed to support a finer level of granularity or declare default policies or formulas to derive additional hazard based on the aggregation of information provided by different devices..
 
 ### Description:
-While the focus of this use case is on awareness, once we have established awareness 
+While the focus of this use case is on awareness, once we have established awareness
 we can consider the related issues of policy and enforcement.
 The user may have a mechanism to set policies to restrict interactions with connected devices, e.g.:
 - Stop any interaction with the TV between 3:00PM and 5:00PM if unattended children are detected.
@@ -100,16 +102,16 @@ The system relies on being able to trust the information exchanged and has to de
 
 ### Privacy Considerations:
 
-Privacy is one of the possible category of hazards that may be accounted for, it is no different from a physical hazard in this use-case.
+Privacy is one of the possible category of hazards that may be accounted for, it is no different from a physical hazard regarding the flow of information, but the categorization source is different.
 
 ### Accessibility Considerations:
 
-The system may be extended to cover accessibility concerns and have specific policies.
+The user-facing alerts must be accessible and risk evaluation, policies and enforcement may take in account the users' different abilities.
+The system may be extended to cover specific accessibility concerns and provide additional hazard information.
 
 ### Internationalisation (i18n) Considerations:
 
-Being also user-facing, hazard information should be translated or otherwise made
-available in the users' language.
+Being also user-facing, hazard information should be translated or otherwise made available in the users' language.
 
 ### Requirements:
 
