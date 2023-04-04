@@ -33,13 +33,13 @@ Luca Barbato
 
 ### Motivation:
 
-Connected devices have an impact on the physical world, more than often interacting with them may have unintended consequences.
+Connected devices have an impact on the physical world, and interacting with them may have unintended consequences.
 
-The use-case originated within [SIFIS-Home](https://sifis-home.eu) project, where the focus is on trustworthy connected homes:
+The use-case originated within [SIFIS-Home](https://sifis-home.eu) project, where the focus is on trustworthy connected homes.  One of the principles of trustworthiness is the following:
 The user should be made fully aware of the hazards related to the connected devices operations, be able to declare policies regarding acceptable risks, and have the home system enforce them.
 
 This use case discusses all three aspects (awareness, policies, and enforcement) but the focus is on the foundational problem of awareness: having the information hazards available and delivering it to all the possible actors.
-Some scenarios on how the information could be consumed in useful and advanced ways are provided.
+Some examples are provided on how the information could be consumed in useful and advanced ways, but the focus of this use case is on providing awareness of a hazard, not responding to it.
 
 With hazard and risks we consider the most broader scope, it can be an operational hazard as defined by `ISO/DIS 45001` and similar standards or a privacy concern as defined by legislations such as the European General Data Protection Regulation (GDPR).
 
@@ -65,10 +65,10 @@ The devices should provide some kind of labeling metadata to deliver the hazard 
 
 It could be as coarse as cover any access to the device or specific to the point of selecting a range of operation within the single specific interaction, e.g.:
 - Providing a feed from a connected camera is a privacy hazard
-- Setting an high level of brightness on an halogen lamp might involve risks of overheating it or setting something nearby on fire.
+- Setting an high level of brightness on an halogen lamp might involve risks of overheating it or setting something nearby on fire, result in a fire hazard.
 
 Some devices may provide additional information on hazards they may simply detect and default policies other devices may try to enforce e.g.:
-- A smart meter may notify that the energy flowing through it is over a threshold and the information may trigger a policy that sets some smart switches off.
+- A smart meter may notify that the energy flowing through it is over a threshold, resulting in the risk of an electrical or fire hazard, and the information may trigger a policy that sets some smart switches off.
 
 Some devices may provide information that can be aggregated together to derive/evaluate a risk:
 - A CO/CO₂/VOC sensor may provide a default policy that modulate the smoke and fire hazard evaluation based on its own information, but in itself may not detect smoke or temperature.
@@ -77,7 +77,7 @@ Some devices may provide information that can be aggregated together to derive/e
 ### Dependencies - Affected WoT deliverables and/or work items:
 
 The current Thing Description is adequate to support the model, the hazards annotations can be bound to the specific Form Operation for each Interaction Affordance.
-Additional vocabulary terms may be needed to support a finer level of granularity or declare default policies or formulas to derive additional hazard based on the aggregation of information provided by different devices..
+Additional vocabulary terms may be needed to support a finer level of granularity or declare default policies or formulas to derive additional hazards based on the aggregation of information provided by different devices..
 
 ### Description:
 While the focus of this use case is on awareness, once we have established awareness
@@ -99,6 +99,8 @@ The risk categories may be diversified to cover field-specific risks, but the st
 ### Security Considerations:
 
 The system relies on being able to trust the information exchanged and has to detect bad actors.
+For example, if a sensor can be spoofed as to report a fire hazard that results in a door unlocking (even though there
+is no fire), that would result in a physical security issue.
 
 ### Privacy Considerations:
 
