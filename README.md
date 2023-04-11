@@ -20,6 +20,10 @@ Each commit here will sync it to the master, which will expose the content to ht
 
 ## Contributing
 
+** At the moment the Use Cases TF is defining the policy for the next WG charter, potential contributors are asked not to
+create pull requests with new contributions until the next charter period begins. Ideas can still be proposed, but the review and
+inclusion might be delayed.
+
 Please document new **use cases** in the [USE-CASES](USE-CASES) directory adopting the template [use-case-template.md](USE-CASES/use-case-template.md) (Markdown) or [use-case-template.html](USE-CASES/use-case-template.html) (HTML). The HTML template is the preferred form.
 
 Describe new **requirements** in the [REQUIREMENTS](REQUIREMENTS) directory using the template [requirements-template.md](REQUIREMENTS/requirements.md) (Markdown) or [requirements-template.html](REQUIREMENTS/requirements.html) (HTML). The HTML template is the preferred form.
