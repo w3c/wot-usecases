@@ -2,12 +2,15 @@
 [![Follow on Twitter](https://img.shields.io/twitter/follow/W3C_WoT.svg?label=follow+W3C_WoT)](https://twitter.com/W3C_WoT)
 [![Stack Exchange questions](https://img.shields.io/stackexchange/stackoverflow/t/web-of-things?style=plastic)]( https://stackoverflow.com/questions/tagged/web-of-things)
 
+### Announcement: 
+#### The Web of Things Use Cases Task force will be reorganized for the new charter. Contributions are currently paused.
+
 General information about the Web of Things can be found on https://www.w3.org/WoT/.
   
 ---
 The WoT Use Case task force is responsible for collecting use cases for WoT and extracting requirements. Use cases can include both specific vertical applications and relevant technologies or other horizontal usage patterns. Guests who are not WoT members but who have an interest in specific vertical application domains, technologies, or usage patterns are explicitly invited to engage with this task force to provide input.
 
-If you would like to participate please contact the TF lead Michael.Lagally@oracle.com.
+If you would like to participate please contact the chairs at team-wot@w3.org.
 
 Web conferences and agenda: https://www.w3.org/WoT/IG/wiki/IG_UseCase_WebConf
 
