@@ -8937,8 +8937,6 @@ Therefore, various data for agricultural machinery management should be represen
           using physical devices and IoT-related applications.</p>
       </section>
     </section>
-
-    <!--
       <section id="sec-building-block-requirements">
         <h2>Requirements for individual WoT Building Blocks</h2>
         <section id="arch">
@@ -8958,12 +8956,59 @@ Therefore, various data for agricultural machinery management should be represen
         </section>
         <section id="discovery">
           <h2>Discovery</h2>
+		The WoT discovery process should have the following capabilities:
+
+<section>System</section>
+<dl>
+<dt id="REQ-Discovery-Network-Scope">REQ-Discovery-Network-Scope</dt><dd>Support peer-to-peer (self-identifying), local (network segment),
+  and global (internet-wide) discovery.  Supporting Use Cases: <a href="#discovery">UC-Discovery</a>.<dd>
+* Support discovery via third-party services (e.g. a directory service)
+  in order to support sleeping devices and search over collections.
+* Be compatible with discovery support in the WoT Scripting API.
+</dl>
+<section>Search</section>
+* Support various forms of query, including keyword, template, 
+  and semantic queries.
+* Support spatial and sub-net limited queries.
+* Support queries that can span a subnet or multiple directory services.
+* Be scalable to large databases of TDs.
+
+<section>Data Management</section>
+* Support both Dynamic and Static TDs.
+* Support explicit deletion and access control management of TDs.
+* Automatically clean up TDs for devices that are no longer accessible or active.
+
+<section>Alignment with Existing Standards</section>
+* Align with IETF CoRE Resource Directories, CoRE Link Format, and DIDs.
+* Be accessible via a variety of existing discovery mechanisms,
+  including DNS-SD, DNS-SRV, DHCP, QR codes, and Bluetooth beacons.
+  
+<section>Security</section>
+* Support best known methods for confidentiality and authentication.
+* Support authorization and role management.
+
+<section>Privacy</section>
+
+* Support authentication and authorization mechanisms that do not reveal user identities.
+* Support device and information lifecycle, trust management, access controls.
+* Distribute TDs and other metadata only to authenticated and authorized entities.
+* Don’t leak TDs, other metadata, or queries to unauthorized entities.
+
+<section>User Needs</section>
+
+* Simple automatic discovery of Things and services with minimum to no human interaction
+* Support for human authentication (eg pairing button presses) when appropriate
+
+<section>Accessibility</section>
+
+* It should be possible for a user to discover devices even if they have sensory or motor limitations.
+* Alternative forms of discovery should be supported to address different accessibility requirements
+
         </section>
         <section id="new-building-blocks">
           <h2>New Building Blocks</h2>
         </section>
       </section>
-    -->
   </section>
 
   <!-- Liaisons -->
