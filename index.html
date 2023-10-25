@@ -8958,52 +8958,159 @@ Therefore, various data for agricultural machinery management should be represen
           <h2>Discovery</h2>
 		The WoT discovery process should have the following capabilities:
 
-<section>System</section>
+<section>
+<h3>System</h3>
 <dl>
-<dt id="REQ-Discovery-Network-Scope">REQ-Discovery-Network-Scope</dt><dd>Support peer-to-peer (self-identifying), local (network segment),
-  and global (internet-wide) discovery.  Supporting Use Cases: <a href="#discovery">UC-Discovery</a>.<dd>
-* Support discovery via third-party services (e.g. a directory service)
+<dt id="REQ-discovery-network-scope">Discovery Network Scope:</dt><dd>
+  Support peer-to-peer (self-identifying), local (network segment),
+  and global (internet-wide) discovery.  
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-via-third-party">Discovery via Third Party</dt><dd>
+  Support discovery via third-party services (e.g. a directory service)
   in order to support sleeping devices and search over collections.
-* Be compatible with discovery support in the WoT Scripting API.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-via-scripting-api">Discovery via Scripting API:</dt><dd>
+  Be compatible with discovery support in the WoT Scripting API.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
 </dl>
-<section>Search</section>
-* Support various forms of query, including keyword, template, 
-  and semantic queries.
-* Support spatial and sub-net limited queries.
-* Support queries that can span a subnet or multiple directory services.
-* Be scalable to large databases of TDs.
+</section>
+<section>
+<h3>Search</h3>
+<dl>
+<dt id="REQ-discovery-filtering">Discovery Filtering:</dt><dd>
+  Support various forms of query, including keyword, template, and semantic queries to
+  filter results.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-spatial-queries">Discovery Spatial Queries:</dt><dd>
+  Support spatial and sub-net limited queries.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-subnet-spanning-queries">Discovery Subnet Spanning Queries:</dt><dd>
+  Support spatial and sub-net limited queries.
+  Support queries that can span a subnet or multiple directory services.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-scalablity">Discovery Scalability:</dt><dd>
+  Be scalable to large databases of TDs.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+</dl>
+</section>
 
-<section>Data Management</section>
-* Support both Dynamic and Static TDs.
-* Support explicit deletion and access control management of TDs.
-* Automatically clean up TDs for devices that are no longer accessible or active.
+<section>
+<h3>Data Management</h3>
+<dl>
+<dt id="REQ-discovery-dynamic-and-static-metadata">Discovery Dynamic and Static Metadata:</dt><dd>
+  Support both dynamic and static metadata (TDs).
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-deletion">Discovery Deletion:</dt><dd>
+  Support explicit deletion of TDs.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-access-control">Discovery Access Control:</dt><dd>
+  Support access control for TDs.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-clean-up">Discovery Clean Up:</dt><dd>
+  Automatically clean up TDs for devices that are no longer accessible or active.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+</dl>
+</section>
 
-<section>Alignment with Existing Standards</section>
-* Align with IETF CoRE Resource Directories, CoRE Link Format, and DIDs.
-* Be accessible via a variety of existing discovery mechanisms,
-  including DNS-SD, DNS-SRV, DHCP, QR codes, and Bluetooth beacons.
-  
-<section>Security</section>
-* Support best known methods for confidentiality and authentication.
-* Support authorization and role management.
-
-<section>Privacy</section>
-
-* Support authentication and authorization mechanisms that do not reveal user identities.
-* Support device and information lifecycle, trust management, access controls.
-* Distribute TDs and other metadata only to authenticated and authorized entities.
-* Don’t leak TDs, other metadata, or queries to unauthorized entities.
-
-<section>User Needs</section>
-
-* Simple automatic discovery of Things and services with minimum to no human interaction
-* Support for human authentication (eg pairing button presses) when appropriate
-
-<section>Accessibility</section>
-
-* It should be possible for a user to discover devices even if they have sensory or motor limitations.
-* Alternative forms of discovery should be supported to address different accessibility requirements
-
+<section>
+<h3>Alignment with Existing Standards</h3>
+<dl>
+<dt id="REQ-discovery-ietf-core">Discovery IETF CoRE Alignment:</dt><dd>
+  Align with IETF CoRE Resource Directories and CoRE Link Format, and DIDs.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-did">Discovery DID Alignment:</dt><dd>
+  Align with W3C DIDs.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-extensible-introductions">Discovery Extensible Introductions:</dt><dd>
+  Be accessible via a variety of existing discovery mechanisms as first contact mechanisms,
+  including DNS-SD, DNS-SRV, DHCP, QR codes, and Bluetooth beacons,
+  and allow these to be extended.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+</dl>
+</section>
+		
+<section>
+<h3>Security</h3>
+<dl>
+<dt id="REQ-discovery-confidentiality">Discovery Confidentiality:</dt><dd>
+  Support best known methods for confidentiality.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-authentication">Discovery Authentication:</dt><dd>
+  Support best known methods for authentication.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-authorization">Discovery Authorization:</dt><dd>
+  Support best known methods for authorization and role management.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+</dl>
+</section>
+		
+<section>
+<h3>Privacy</h3>
+<dl>
+<dt id="REQ-discovery-anonymous-authentication">Discovery Anonymous Authentication:</dt><dd>
+  Support authentication and authorization mechanisms that do not reveal user identities.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-lifecycle">Discovery Lifecycle:</dt><dd>
+ Support device and information lifecycle, trust management, and access controls.
+ Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-limit-distribution">Discovery Limit Distribution:</dt><dd>
+  Distribute TDs and other metadata only to authenticated and authorized entities.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-no-leaks">Discovery No Leaks:</dt><dd>
+  Don’t leak TDs, other metadata, or queries to unauthorized entities.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+</dl>
+</section>
+		
+<section>
+<h3>User Needs</h3>
+<dl>
+<dt id="REQ-discovery-simplicity">Discovery Simplicity:</dt><dd>
+  Simple automatic discovery of Things and services with minimum to no human interaction.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-human-authentication">Discovery Human Authentication:</dt><dd>
+  Support for human authentication (eg pairing button presses) when appropriate.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+</dl>
+</section>
+		
+<section>
+<h3>Accessibility</h3>
+<dl>
+<dt id="REQ-discovery-user-limitations">Discovery User Limitations:</dt><dd>
+  It should be possible for a user to discover devices even if they have sensory or motor limitations.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+<dt id="REQ-discovery-alternatives">Discovery Alternatives:</dt><dd>
+  Alternative forms of discovery should be supported to address different accessibility requirements.
+  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+</dd>
+</dl>
+</section>
+		
         </section>
         <section id="new-building-blocks">
           <h2>New Building Blocks</h2>
