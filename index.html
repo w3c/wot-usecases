@@ -5859,8 +5859,8 @@ Therefore, various data for agricultural machinery management should be represen
     <section id="smart-home">
       <h2>Smart Home</h2>
 
-      <!-- section id="audio_video">
-      <h2>Audio/Video</h2>
+      <section id="audio_video">
+      <h2>Audio/Video</h2> 
       <!--
       <section id="UC-media-use-cases-1"> <!-- old id: media-information-references -->
         <h2>Media Use Cases</h2>
@@ -8964,16 +8964,25 @@ Therefore, various data for agricultural machinery management should be represen
 <dt id="REQ-discovery-network-scope">Discovery Network Scope:</dt><dd>
   Support peer-to-peer (self-identifying), local (network segment),
   and global (internet-wide) discovery.  
-  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+  <ul>
+  <li>Status: satisfied.</li>
+  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  </ul>
 </dd>
 <dt id="REQ-discovery-via-third-party">Discovery via Third Party</dt><dd>
   Support discovery via third-party services (e.g. a directory service)
   in order to support sleeping devices and search over collections.
+  <ul>
+  <li>Status: satisfied.</li>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 <dt id="REQ-discovery-via-scripting-api">Discovery via Scripting API:</dt><dd>
   Be compatible with discovery support in the WoT Scripting API.
+  <ul>
+  Status: Partially satisfied.  Not all features supported.
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 </dl>
 </section>
@@ -8982,21 +8991,29 @@ Therefore, various data for agricultural machinery management should be represen
 <dl>
 <dt id="REQ-discovery-filtering">Discovery Filtering:</dt><dd>
   Support various forms of query, including keyword, template, and semantic queries to
-  filter results.
+  filter results.  
+  <ul>
+  Status: Partially satisfied.  Query interface defined but optional.
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 <dt id="REQ-discovery-spatial-queries">Discovery Spatial Queries:</dt><dd>
   Support spatial and sub-net limited queries.
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	  </ul>
 </dd>
 <dt id="REQ-discovery-subnet-spanning-queries">Discovery Subnet Spanning Queries:</dt><dd>
   Support spatial and sub-net limited queries.
   Support queries that can span a subnet or multiple directory services.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 <dt id="REQ-discovery-scalablity">Discovery Scalability:</dt><dd>
   Be scalable to large databases of TDs.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 </dl>
 </section>
@@ -9006,19 +9023,27 @@ Therefore, various data for agricultural machinery management should be represen
 <dl>
 <dt id="REQ-discovery-dynamic-and-static-metadata">Discovery Dynamic and Static Metadata:</dt><dd>
   Support both dynamic and static metadata (TDs).
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 <dt id="REQ-discovery-deletion">Discovery Deletion:</dt><dd>
   Support explicit deletion of TDs.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 <dt id="REQ-discovery-access-control">Discovery Access Control:</dt><dd>
   Support access control for TDs.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 <dt id="REQ-discovery-clean-up">Discovery Clean Up:</dt><dd>
   Automatically clean up TDs for devices that are no longer accessible or active.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 </dl>
 </section>
@@ -9028,17 +9053,22 @@ Therefore, various data for agricultural machinery management should be represen
 <dl>
 <dt id="REQ-discovery-ietf-core">Discovery IETF CoRE Alignment:</dt><dd>
   Align with IETF CoRE Resource Directories and CoRE Link Format, and DIDs.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 <dt id="REQ-discovery-did">Discovery DID Alignment:</dt><dd>
   Align with W3C DIDs.
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	  </ul>
 </dd>
 <dt id="REQ-discovery-extensible-introductions">Discovery Extensible Introductions:</dt><dd>
   Be accessible via a variety of existing discovery mechanisms as first contact mechanisms,
   including DNS-SD, DNS-SRV, DHCP, QR codes, and Bluetooth beacons,
   and allow these to be extended.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
+	    </ul>
 </dd>
 </dl>
 </section>
@@ -9048,14 +9078,17 @@ Therefore, various data for agricultural machinery management should be represen
 <dl>
 <dt id="REQ-discovery-confidentiality">Discovery Confidentiality:</dt><dd>
   Support best known methods for confidentiality.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 <dt id="REQ-discovery-authentication">Discovery Authentication:</dt><dd>
   Support best known methods for authentication.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 <dt id="REQ-discovery-authorization">Discovery Authorization:</dt><dd>
   Support best known methods for authorization and role management.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 </dl>
@@ -9066,18 +9099,22 @@ Therefore, various data for agricultural machinery management should be represen
 <dl>
 <dt id="REQ-discovery-anonymous-authentication">Discovery Anonymous Authentication:</dt><dd>
   Support authentication and authorization mechanisms that do not reveal user identities.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 <dt id="REQ-discovery-lifecycle">Discovery Lifecycle:</dt><dd>
  Support device and information lifecycle, trust management, and access controls.
+  <ul>
  Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 <dt id="REQ-discovery-limit-distribution">Discovery Limit Distribution:</dt><dd>
   Distribute TDs and other metadata only to authenticated and authorized entities.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 <dt id="REQ-discovery-no-leaks">Discovery No Leaks:</dt><dd>
   Don’t leak TDs, other metadata, or queries to unauthorized entities.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 </dl>
@@ -9088,10 +9125,12 @@ Therefore, various data for agricultural machinery management should be represen
 <dl>
 <dt id="REQ-discovery-simplicity">Discovery Simplicity:</dt><dd>
   Simple automatic discovery of Things and services with minimum to no human interaction.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 <dt id="REQ-discovery-human-authentication">Discovery Human Authentication:</dt><dd>
   Support for human authentication (eg pairing button presses) when appropriate.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 </dl>
@@ -9102,10 +9141,12 @@ Therefore, various data for agricultural machinery management should be represen
 <dl>
 <dt id="REQ-discovery-user-limitations">Discovery User Limitations:</dt><dd>
   It should be possible for a user to discover devices even if they have sensory or motor limitations.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 <dt id="REQ-discovery-alternatives">Discovery Alternatives:</dt><dd>
   Alternative forms of discovery should be supported to address different accessibility requirements.
+  <ul>
   Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.
 </dd>
 </dl>
