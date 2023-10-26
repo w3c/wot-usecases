@@ -8920,7 +8920,9 @@ Therefore, various data for agricultural machinery management should be represen
 	<section>
 	<h4>Use Case Categories</h4>
 	<dl>
-        <dt id="CAT-Security-Public">CAT-Security-Public/dt><dd>"Description".
+        <dt id="CAT-Security-Public">CAT-Security-Public</dt><dd>"Description".
+        Use Cases Included: <a href="#UC-smart-cities">UC-Smart-Cities</a>.</dd>
+	<dt id="CAT-Security-Private">CAT-Security-Private</dt><dd>"Description".
         Use Cases Included: <a href="#UC-smart-cities">UC-Smart-Cities</a>.</dd>
         </dl>
 	</section>
@@ -8928,11 +8930,14 @@ Therefore, various data for agricultural machinery management should be represen
 		<h4>Risks</h4>
 	<p>Risks are defined in detail in the Security and Privacy Guidelines document.
 	The following just relates risks to categories.  Each use case that is subject
-	to a risk results in a requirement to mitigate that risk for that use case.</p>
+	to a risk results in requirements to mitigate that risk for that use case.
+	Requirements are named for the associated mitigation.  Some risks may require
+	multiple mitigations.
+	</p>
 	<dl>
-        <dt id="REQ-Security-Access">REQ-Security-Access</dt><dd>
+        <dt id="REQ-Security-Access-Control">Security Access Control</dt><dd>
 	Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-unauthorized-wot-interface-access">Wot Interface Threat - Unauthorized WoT Interface Access</a>.
-        Categories Impacted: <a href="#CAT-private">CAT-Private</a>.</dd>
+        Categories Impacted: <a href="#CAT-private">CAT-Security-Private</a>.</dd>
         </dl>
 	</section>
       </section>
