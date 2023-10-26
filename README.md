@@ -2,8 +2,10 @@
 [![Follow on Twitter](https://img.shields.io/twitter/follow/W3C_WoT.svg?label=follow+W3C_WoT)](https://twitter.com/W3C_WoT)
 [![Stack Exchange questions](https://img.shields.io/stackexchange/stackoverflow/t/web-of-things?style=plastic)]( https://stackoverflow.com/questions/tagged/web-of-things)
 
-### Announcement: 
-#### The Web of Things Use Cases Task force will be reorganized for the new charter. Contributions are currently paused.
+## Announcement: 
+The Web of Things Use Cases Task force will be reorganized for the new charter. 
+Currently we are working on the requirements process and are not actively
+seeking new use cases, but if you want to contribute one contact us (see below).
 
 General information about the Web of Things can be found on https://www.w3.org/WoT/.
   
