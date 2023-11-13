@@ -494,7 +494,7 @@
           </dd>
           <!--dt>Existing Standards</dt>
             <dd>
-  
+
             </dd>
             <dt>Comments</dt>
             <dd>
@@ -1006,31 +1006,31 @@
 	  <dt>Submitter(s)</dt>
           <dd>
 	    Mun Hwan CHOI, ChangKyu LEE, Sunghyun YOON
-	  </dd> 	  
-	  
+	  </dd>
+
 	  <dt>Target Users</dt>
 	  <dd>
 	    Service provider, device manufacturer, device owner, cloud provider
 	  </dd>
-	  
+
 	  <dt>Motivation</dt>
 	  <dd>
 	    <p>
-	    Dairy farming requires significant labor in the feeding, milking, breeding, and manure disposal as well as the control and management of 
-	    the environmental conditions inside and outside the livestock barn. In particular, the milking accounts for more than 40% of the total 
+	    Dairy farming requires significant labor in the feeding, milking, breeding, and manure disposal as well as the control and management of
+	    the environmental conditions inside and outside the livestock barn. In particular, the milking accounts for more than 40% of the total
 	    working time for handling a cow.
 	    </p>
 	    <p>
-	    Recently, advanced countries in the dairy industry have introduced an IoT-based automatic milking system using various IoT devices and 
-	    equipment to reduce the labor for milking. The automatic milking system (AMS) with IoT devices and equipment, such as sensors, 
-	    high performance cameras, laser equipment, and robot arms, can perform the entire milking process which includes identification of cows 
+	    Recently, advanced countries in the dairy industry have introduced an IoT-based automatic milking system using various IoT devices and
+	    equipment to reduce the labor for milking. The automatic milking system (AMS) with IoT devices and equipment, such as sensors,
+	    high performance cameras, laser equipment, and robot arms, can perform the entire milking process which includes identification of cows
 	    entering the milking box, washing udders, milking, collection, sterilization, storage, and milk composition analysis. The AMS has advantage
 	    of solving the labor shortage problem in the dairy farm by enabling labor allocation for tasks other than milking unlike conventional methods
-	    like pipeline, herringbone, tandem machines, etc. In addition, the AMS can improve productivity and quality of milk while reducing the 
+	    like pipeline, herringbone, tandem machines, etc. In addition, the AMS can improve productivity and quality of milk while reducing the
 	    incidence rate of disease in cows.
 	    </p>
-	  </dd>  
-	  
+	  </dd>
+
 	  <dt>Expected devices</dt>
 	  <dd>
 	    <li>Object (cow) identifier such as RFID reader, QR code scanner or barcode scanner</li>
@@ -1040,14 +1040,14 @@
 	    <li>Milk composition analyzer</li>
 	    <li>Milk tank with cooling function</li>
 	  </dd>
-	  
+
 	  <dt>Expected data</dt>
 	  <dd>
 	    <p>
-	    The AMS generates the following data, and the data need to be managed in an organic relationship with data for other purposes such as feeding, 
+	    The AMS generates the following data, and the data need to be managed in an organic relationship with data for other purposes such as feeding,
 	    parturition, disease control, and growth control in order to establish a comprehensive production and operation management strategy for dairy farms.
 	    </p>
-	    <p>	    
+	    <p>
 	    <li>Daily Number of milking, milking volume, and milking time per cow</li>
 	    <li>Target production and actual production of the farm</li>
 	    <li>Historical data for milking</li>
@@ -1057,49 +1057,49 @@
 	    <li>Operational status of devices, equipment, etc. installed in dairy farm</li>
 	    </p>
 	  </dd>
-	  
+
 	  <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
 	  <dd>
 	    WoT Thing Description
 	  </dd>
-	  
+
 	  <dt>Descriptions</dt>
 	  <dd>
 	    <p>
-	    When a cow enters a milking box, a object identifier installed in the milking room identifies the cow’s ID from the RFID tag, QR code or bar code attached to the cow. 
+	    When a cow enters a milking box, a object identifier installed in the milking room identifies the cow’s ID from the RFID tag, QR code or bar code attached to the cow.
 	    Through this, the milking can be performed more systematically based on historical data, such as the number of milking or milk yield, managed by AMS.
 	    </p>
 	    <p>
 	    Then, 3D camera, laser equipment, and sensors accurately identify the position of udders, and the robot arm attaches the milking cups to the udders
-	    quickly to perform milking. Before and after the milking, cleaning and disinfection should be performed to remove any contaminant and bacteria. 
+	    quickly to perform milking. Before and after the milking, cleaning and disinfection should be performed to remove any contaminant and bacteria.
 	    A sensor installed in the milking cup measures the elapsed time and milk yield during milking.
 	    </p>
 	    <p>
 	    In addition, the components of milk, which are content of fat, protein, lactose, etc., are analyzed, and the analysis results are transmitted
-	    to the AMS in order to manage the quality of milk, disease and health status of the cow. After milking, the milk is delivered to a milk tank 
+	    to the AMS in order to manage the quality of milk, disease and health status of the cow. After milking, the milk is delivered to a milk tank
 	    with cooling capability to maintain freshness of the milk. The AMS collects the data generated during the entire milking process, and analyzes
-	    the data to establish a milk production strategy of a dairy farm. The farmer or the manager of a dairy farm can monitor the milking process 
+	    the data to establish a milk production strategy of a dairy farm. The farmer or the manager of a dairy farm can monitor the milking process
 	    through a web page or a mobile app.
 	    </p>
 	    <p>
-	    Automated system should be designed to minimize human intervention; however, it is more desirable to have the capability to directly control 
+	    Automated system should be designed to minimize human intervention; however, it is more desirable to have the capability to directly control
 	    the AMS in order to respond to an emergency situation.
 	    </p>
 	    <p>
-	    The devices and equipment such as RFID reader/tags, milking cups, robot arms, milk component analyzer, and sensor are connected to a gateway, 
-	    which is a controller, installed in a dairy farm through wired or wireless networks. The gateway controlling various actuators and transferring 
+	    The devices and equipment such as RFID reader/tags, milking cups, robot arms, milk component analyzer, and sensor are connected to a gateway,
+	    which is a controller, installed in a dairy farm through wired or wireless networks. The gateway controlling various actuators and transferring
 	    the data is connected to the cloud system through the Internet. Thus, all devices and equipment on the dairy farm can be accessed and controlled
-	    through the cloud. The cloud utilizes technologies, such as AI and big data, to analyze the data transferred from the AMS. The analysis result 
-	    can be shared and distributed to all stakeholders and can be utilized as basic information for the creation of various new services enhancing 
+	    through the cloud. The cloud utilizes technologies, such as AI and big data, to analyze the data transferred from the AMS. The analysis result
+	    can be shared and distributed to all stakeholders and can be utilized as basic information for the creation of various new services enhancing
 	    productivity and convenience of the dairy farm.
 	    </p>
 	  </dd>
-	  
+
 	  <dt>Variants</dt>
 	  <dd>
 	    None.
 	  </dd>
-	  
+
 	  <dt>Security Considerations</dt>
 	  <dd>
 	    <p>
@@ -1107,31 +1107,31 @@
 	    this use case.
 	    </p>
 	  </dd>
-	  
+
 	  <dt>Privacy Considerations</dt>
 	  <dd>
 	    <p>
-	    In addition to farmers, various stakeholders such as farm workers, service providers, manufacturers, consumers of agricultural products, 
-	    third-party companies and government departments are also involved with the operation of a dairy farm. The data with various types and 
+	    In addition to farmers, various stakeholders such as farm workers, service providers, manufacturers, consumers of agricultural products,
+	    third-party companies and government departments are also involved with the operation of a dairy farm. The data with various types and
 	    characteristics generated during the operation of the AMS can be shared and distributed to one or more stakeholders.
 	    </p>
 	    <p>
-	    Consequently, the right to access the data must be systematically managed according to the type, characteristics, and purpose of data utilization. 
-	    Through this, it is possible to protect the experience, know-how and unique agricultural knowledge or techniques of a farmer, and to secure the 
+	    Consequently, the right to access the data must be systematically managed according to the type, characteristics, and purpose of data utilization.
+	    Through this, it is possible to protect the experience, know-how and unique agricultural knowledge or techniques of a farmer, and to secure the
 	    dairy farm’s competitiveness.
 	    </p>
 	  </dd>
-	  
+
 	  <dt>Accessibility Considerations</dt>
 	  <dd>
 	    None.
 	  </dd>
-	  
+
 	  <dt>Internationalisation (i18n) Considerations</dt>
 	  <dd>
 	    None.
 	  </dd>
-	  
+
 	  <dt>Requirements</dt>
 	  <dd>
 	    <p>
@@ -1143,23 +1143,23 @@
 	    in a standardized way for AI-based analysis and processing.
 	    </p>
 	  </dd>
-	  
+
 	  <dt>Gaps</dt>
 	  <dd>
 	    <p>
 	    In general, a gateway, which is a controller, installed in a dairy farm collects data and transmits the data to an external cloud connected through
-	    a network. The gateway also delivers the control commands received from the cloud to the various actuators through the network. 
-	    However, if data loss or delay occurs due to a bottleneck, a disconnection between the gateway and the cloud, or due to the excessive internal 
-	    processing time of the cloud, it may be difficult to perform efficient and reliable milking operations. In order to solve these problems, 
+	    a network. The gateway also delivers the control commands received from the cloud to the various actuators through the network.
+	    However, if data loss or delay occurs due to a bottleneck, a disconnection between the gateway and the cloud, or due to the excessive internal
+	    processing time of the cloud, it may be difficult to perform efficient and reliable milking operations. In order to solve these problems,
 	    it is recommended to applying edge computing technologies to maintain essential functionalities for performing agricultural works including the milking.
-	    </p>	    
+	    </p>
 	  </dd>
-	  
+
 	  <dt>Existing standards</dt>
 	  <dd>
 	    None.
 	  </dd>
-	  
+
 	  <dt>Comments</dt>
 	  <dd>
 	    None.
@@ -1172,25 +1172,25 @@
       <dl>
           <dt>Submitter(s)</dt>
           <dd>Mun Hwan CHOI, ChangKyu LEE, Sunghyun YOON</dd>
-          
+
           <dt>Target Users</dt>
           <dd>Service provider, device manufacturer, device owner, device user, cloud provider</dd>
-  
+
           <dt>Motivation</dt>
           <dd>
-              Recently, the interest in pest control using unmanned aerial vehicles (UAVs), such as drones, for open-field agriculture is 
+              Recently, the interest in pest control using unmanned aerial vehicles (UAVs), such as drones, for open-field agriculture is
               growing as the technology related to smart agriculture is advanced.<br><br>
-              UAVs equipped with high-performance cameras and a variety of sensors closely monitor a wide range of agricultural land 
-              and detect unique spectral signals of crops. Meanwhile, sensors installed on the ground collect crop-growth status information. 
-              The data collected by UAVs and ground sensors are analyzed using various technologies including AI. 
-              UAVs take appropriate pest control, if the occurrence of pests is identified according to the analysis results. 
-              UAVs can set the target area and use the minimum amount of pesticides on the area in order to improve the productivity of 
-              farmhouses while minimizing the damage caused by pests. The pest control using UAVs can alleviate the labor shortage in 
-              rural areas due to the decrease of the agricultural population and the aging of the farmers. 
-              In addition, UAVs can also be an effective solution to protect farmers from serious side effects of pesticides by reducing 
+              UAVs equipped with high-performance cameras and a variety of sensors closely monitor a wide range of agricultural land
+              and detect unique spectral signals of crops. Meanwhile, sensors installed on the ground collect crop-growth status information.
+              The data collected by UAVs and ground sensors are analyzed using various technologies including AI.
+              UAVs take appropriate pest control, if the occurrence of pests is identified according to the analysis results.
+              UAVs can set the target area and use the minimum amount of pesticides on the area in order to improve the productivity of
+              farmhouses while minimizing the damage caused by pests. The pest control using UAVs can alleviate the labor shortage in
+              rural areas due to the decrease of the agricultural population and the aging of the farmers.
+              In addition, UAVs can also be an effective solution to protect farmers from serious side effects of pesticides by reducing
               the frequency of farmer’s contact with chemicals such as pesticides.
           </dd>
-  
+
           <dt>Expected devides</dt>
           <dd>
               <li>UAVs (drones) equipped with high-performance cameras and sensors for monitoring and detecting pests</li>
@@ -1198,7 +1198,7 @@
               <li>Controllers for UAVs, and for related actuators installed in ground</li>
               <li>Data (image, video, etc.) analyzer in cloud</li>
           </dd>
-  
+
           <dt>Expected data</dt>
           <dd>
               <li>Image and/or video data of farmland and crops
@@ -1206,74 +1206,74 @@
               <li>Data on types of pests and appropriate control methods</li>
               <li>Result of pest control works</li>
           </dd>
-  
+
           <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
           <dd>WoT Thing Description</dd>
-  
+
           <dt>Description</dt>
           <dd>
-              The pest control using UAVs includes the steps of data collection, data analysis and prescription, pest control operation, 
-              and utilization of data including operation results.<br><br>            
+              The pest control using UAVs includes the steps of data collection, data analysis and prescription, pest control operation,
+              and utilization of data including operation results.<br><br>
               <li>In data collection step, UAVs collect data, such as images and/or videos, on farmland and crops by using built-in high-performance
                   cameras and sensors, and transmit them to the cloud. In addition, the sensors installed on the ground collect data related to
                   the soil condition and crop-growth status and transmit them to the cloud through a controller.</li>
               <li>In data analysis and prescription step, the cloud analyzes the collected data using various technologies including AI and big data technologies
-                  to identify the occurrence of pests, occurrence area and the range of occurred pests, and types of occurred pests. 
-                  Then the cloud generates a prescription including the type, amount, and spray method of appropriate pesticides based on the 
-                  analysis results. This prescription is delivered to UAVs or a separate ground-operated pest control machine. 
+                  to identify the occurrence of pests, occurrence area and the range of occurred pests, and types of occurred pests.
+                  Then the cloud generates a prescription including the type, amount, and spray method of appropriate pesticides based on the
+                  analysis results. This prescription is delivered to UAVs or a separate ground-operated pest control machine.
                   To generate accurate and effective prescription, the cloud may utilize public database provided by government or related service providers.</li>
-              <li>In pest control operation step, according to the prescription received from the cloud, UAVs perform pest control operation. 
+              <li>In pest control operation step, according to the prescription received from the cloud, UAVs perform pest control operation.
                   UAVs can spray the correct amount of pesticide around the area where the pests occur, depending on the type of pests and the severity of symptoms.</li>
-              <li>In data utilization step, the cloud stores and manages the data collected throughout the entire process for pest control. 
-                  The accumulated data are used as basic materials for establishing an optimal control plan regarding the location of farmland, 
-                  soil condition, the types and status of crops, the types of pests. Farmers can monitor the details and results of the overall control 
+              <li>In data utilization step, the cloud stores and manages the data collected throughout the entire process for pest control.
+                  The accumulated data are used as basic materials for establishing an optimal control plan regarding the location of farmland,
+                  soil condition, the types and status of crops, the types of pests. Farmers can monitor the details and results of the overall control
                   operations using the web page or mobile app.</li>
           </dd>
-  
+
           <dt>Variants</dt>
           <dd>None.</dd>
-  
+
           <dt>Security Considerations</dt>
           <dd>
-              This use case does not specify any specific requirements on security matters. Any well-defined existing security capabilities can be applied for this use case. 
+              This use case does not specify any specific requirements on security matters. Any well-defined existing security capabilities can be applied for this use case.
               However, appropriate security plan is required to protect the image or video data for pest control which are closely related to the profits of the farmhouse.
           </dd>
-  
+
           <dt>Privacy Considerations</dt>
           <dd>
-              To protect the agricultural technology of the farmer and secure competitiveness, it is required to establish a systematic access method for all data acquired 
-              during the pest control using UAVs. Only the stakeholders who have been contracted or promised in advance are allowed to access the data to be share or distributed, 
+              To protect the agricultural technology of the farmer and secure competitiveness, it is required to establish a systematic access method for all data acquired
+              during the pest control using UAVs. Only the stakeholders who have been contracted or promised in advance are allowed to access the data to be share or distributed,
               because various stakeholders may participate in other agricultural works as well as pest control.
           </dd>
-  
+
           <dt>Accessibility Considerations</dt>
           <dd>None.</dd>
-  
+
           <dt>Internationalisation (i18n) Considerations</dt>
           <dd>None.</dd>
-  
+
           <dt>Requirements</dt>
-          <dd>In addition to the International Civil Aviation Organization (ICAO), each country has regulations for the safe operation and management of UAVs 
-              for non-military purposes. UAVs for pest control should be operated safely within the scope of related regulations, such as the available altitude 
+          <dd>In addition to the International Civil Aviation Organization (ICAO), each country has regulations for the safe operation and management of UAVs
+              for non-military purposes. UAVs for pest control should be operated safely within the scope of related regulations, such as the available altitude
               and range of flight and the allowable weight of the payload.<br><br>
-              UAVs, sensors and equipment from different manufacturers may not be compatible with each other. For data sharing and analysis, 
+              UAVs, sensors and equipment from different manufacturers may not be compatible with each other. For data sharing and analysis,
               a standardized data format and compatible connection interface between different types of equipment and devise should be provided.
           </dd>
-  
+
           <dt>Gaps</dt>
           <dd>
-              Farmers may have own database and analysis system for pest control using UAVs. However, a significant cost is required to secure high-performance 
-              computing resources for analyzing images or videos and to manage large-capacity storage space. 
+              Farmers may have own database and analysis system for pest control using UAVs. However, a significant cost is required to secure high-performance
+              computing resources for analyzing images or videos and to manage large-capacity storage space.
               Therefore, it can be much more economical to utilize the cloud service.<br><br>
-              In addition, a large-capacity battery and fast charging technology should be considered for the stable operation of UAVs that require a long flight. 
-              Wireless power transfer (WPT) technology may be a potential charging method for future agricultural UAVs. 
+              In addition, a large-capacity battery and fast charging technology should be considered for the stable operation of UAVs that require a long flight.
+              Wireless power transfer (WPT) technology may be a potential charging method for future agricultural UAVs.
           </dd>
-  
+
           <dt>Existing Standards</dt>
           <dd>None.</dd>
-  
+
           <dt>Comments</dt>
-          <dd>None.</dd>        
+          <dd>None.</dd>
       </dl>
   </section>
         <!--new use case starts here -->
@@ -1282,119 +1282,119 @@
       <dl>
           <dt>Submitter(s)</dt>
           <dd>ChangKyu LEE, Mun Hwan CHOI, Sunghyun YOON</dd>
-          
+
           <dt>Target Users</dt>
           <dd>service providers, device manufacturers, device users</dd>
-  
+
           <dt>Motivation</dt>
           <dd>
             <p>
-            IoT and AI-based animal health management technologies are being introduced to overcome the difficulty of separating sick livestock from other livestock 
-            in narrow spaces where many livestock herds live. This helps to safely maintain livestock by monitoring their behavior and health status and taking quick and 
+            IoT and AI-based animal health management technologies are being introduced to overcome the difficulty of separating sick livestock from other livestock
+            in narrow spaces where many livestock herds live. This helps to safely maintain livestock by monitoring their behavior and health status and taking quick and
             appropriate responses if disease is expected or occurs.
             </p>
             <p>
-            IoT and AI-based animal health management technology plays an important role in monitoring livestock health, preventing diseases, and detecting them early. 
-            Through this technology, livestock's health status can be monitored in real-time by collecting and analyzing their biological signals, such as body temperature, 
+            IoT and AI-based animal health management technology plays an important role in monitoring livestock health, preventing diseases, and detecting them early.
+            Through this technology, livestock's health status can be monitored in real-time by collecting and analyzing their biological signals, such as body temperature,
             heart rate, and respiration, and setting normal ranges. If abnormal data is detected, it sends an alert to the famer to take appropriate measures.
-            </p>            
+            </p>
             <p>
-            Additionally, AI technology can be used to predict livestock's health status. By analyzing the relationship between livestock's health status and disease occurrence 
+            Additionally, AI technology can be used to predict livestock's health status. By analyzing the relationship between livestock's health status and disease occurrence
             using AI models, predictive results on health status can be provided to take preventive measures.
-            </p>            
+            </p>
             <p>
-            This IoT and AI-based animal health management technology is very useful for maintaining livestock's health, improving productivity, and minimizing disease occurrence 
-            by monitoring their health status, taking preventive measures, and providing early responses.                
-            </p>            
+            This IoT and AI-based animal health management technology is very useful for maintaining livestock's health, improving productivity, and minimizing disease occurrence
+            by monitoring their health status, taking preventive measures, and providing early responses.
+            </p>
           </dd>
-  
+
           <dt>Expected devides</dt>
           <dd>
               <li>Sensors and/or cameras to collect data on behavioral characteristics and health status of livestock, environmental conditions inside and outside the livestock barn</li>
               <li>Wearable devices such as collars or ear tags attached to the livestock’s body to monitor the livestock’s location, behavior, and vital signs</li>
-              <li>Communication devices including object identifiers (RFID readers, QR code scanners or barcode scanners), Bluetooth or Wi-Fi modules, and cellular to transmit 
+              <li>Communication devices including object identifiers (RFID readers, QR code scanners or barcode scanners), Bluetooth or Wi-Fi modules, and cellular to transmit
                 the data from the sensors, cameras or wearable devices to a cloud server for analysis</li>
               <li>Environmental control devices such as light, air conditioner, etc.) to control the breeding environment of livestock</li>
-              <li>Cloud-based analytical system to analyze the collected data. Edge devices including microcontrollers, gateways, and edge servers may be required for network 
-                stability and real-time data processing</li>      
+              <li>Cloud-based analytical system to analyze the collected data. Edge devices including microcontrollers, gateways, and edge servers may be required for network
+                stability and real-time data processing</li>
           </dd>
-  
+
           <dt>Expected data</dt>
           <dd>
               <li>Identification data of a livestock: identification number, sex, age, etc.</li>
               <li>Health status data of a livestock: body weight, body temperature, heart rate, respiration rate, activity level, feed and water intake, fecal volume and its condition, etc.</li>
               <li>Disease data of a livestock: disease occurrence, type of disease, diagnosis and prescription results, etc.</li>
-              <li>Environmental condition data of a livestock barn: temperature, humidity, ammonia, carbon dioxide level, etc.</li>              
+              <li>Environmental condition data of a livestock barn: temperature, humidity, ammonia, carbon dioxide level, etc.</li>
           </dd>
-  
+
           <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
           <dd>WoT Thing Description</dd>
-  
+
           <dt>Description</dt>
           <dd>
             <p>
-            Overall, livestock health management involves a complex system of data collection, transmission, processing, analysis, and decision-making. By using this, 
-            it is possible to improve livestock health, prevent the spread of disease, and increase productivity. Livestock health management can be described from the perspective 
+            Overall, livestock health management involves a complex system of data collection, transmission, processing, analysis, and decision-making. By using this,
+            it is possible to improve livestock health, prevent the spread of disease, and increase productivity. Livestock health management can be described from the perspective
             of data flow as follows.
             </p>
             <p>
-            (Data collection) Data for livestock health management are collected from the livestock and the livestock barn being monitored. This data can include various types of 
+            (Data collection) Data for livestock health management are collected from the livestock and the livestock barn being monitored. This data can include various types of
             physiological data, such as body temperature, heart rate, respiration rate, and fecal output, as well as environmental data, such as temperature, humidity, and air quality.
             </p>
             <p>
-            (Data Processing) The data is then preprocessed on edge devices before being sent to the cloud server. The preprocessing step can involve cleaning the data, compressing it, 
+            (Data Processing) The data is then preprocessed on edge devices before being sent to the cloud server. The preprocessing step can involve cleaning the data, compressing it,
             and performing basic analysis to reduce the amount of data that needs to be transmitted.
             </p>
             <p>
-            (Data transmission) Collected data is transmitted to a cloud server for analysis. This is typically done using wireless communication technologies such as Bluetooth, 
+            (Data transmission) Collected data is transmitted to a cloud server for analysis. This is typically done using wireless communication technologies such as Bluetooth,
             Wi-Fi, RFID, or cellular networks.
             </p>
             <p>
-            (Data Analysis) The cloud server uses machine learning algorithms and AI models to analyze the data collected from the sensors and wearable devices. 
+            (Data Analysis) The cloud server uses machine learning algorithms and AI models to analyze the data collected from the sensors and wearable devices.
             The analysis can include identifying patterns, predicting future health risks, and detecting early signs of illness or disease.
             </p>
             <p>
-            (Decision Making) Based on the data analysis results, the livestock health management service provider or veterinarian with insights can make decisions about the care 
-            and treatment of the livestock. This can include taking preventative measures to reduce the risk of disease or illness, administering medication, or isolating sick livestock 
+            (Decision Making) Based on the data analysis results, the livestock health management service provider or veterinarian with insights can make decisions about the care
+            and treatment of the livestock. This can include taking preventative measures to reduce the risk of disease or illness, administering medication, or isolating sick livestock
             from the rest of the herd. Also, the livestock health management service provider or veterinarian establish a livestock health management plan that reflects the results of analysis.
             </p>
           </dd>
-  
+
           <dt>Variants</dt>
           <dd>None.</dd>
-  
+
           <dt>Security Considerations</dt>
           <dd>
-            This use case does not define specific considerations for security issues. However, all data collected and analyzed for livestock health management should be managed 
-            using well-defined security technologies. In particular, it should be treated more safely because it is used as data for prescribing medicines for disease treatment. 
+            This use case does not define specific considerations for security issues. However, all data collected and analyzed for livestock health management should be managed
+            using well-defined security technologies. In particular, it should be treated more safely because it is used as data for prescribing medicines for disease treatment.
           </dd>
-  
+
           <dt>Privacy Considerations</dt>
           <dd>
-            Establishing a systematic access method for all data acquired in livestock health management is necessary to protect the agricultural technology of farmers and 
+            Establishing a systematic access method for all data acquired in livestock health management is necessary to protect the agricultural technology of farmers and
             ensure competitiveness. Only stakeholders who have a pre-existing contract or agreement are permitted to access and share/distribute the data.
           </dd>
-  
+
           <dt>Accessibility Considerations</dt>
           <dd>None.</dd>
-  
+
           <dt>Internationalisation (i18n) Considerations</dt>
           <dd>None.</dd>
-  
+
           <dt>Requirements</dt>
           <dd>
-            <li>Protocol Requirements: Flexible.</li>              
+            <li>Protocol Requirements: Flexible.</li>
             <li>Contents Type Requirements: Flexible.</li>
             <li>Platform or Standard Requirements: None.</li>
             <li>Authentication and Authorization Mechanisms Requirements: Flexible.</li>
-            <li>Communication Requirements: To transmit and share data collected from livestock or from the livestock barn, appropriate communication links and identification methods 
-                for individual livestock are necessary. High-speed communication links may be required to collect large data such as images or videos in real-time or to transmit data to 
+            <li>Communication Requirements: To transmit and share data collected from livestock or from the livestock barn, appropriate communication links and identification methods
+                for individual livestock are necessary. High-speed communication links may be required to collect large data such as images or videos in real-time or to transmit data to
                 external cloud server for data analysis.</li>
-            <li>Data expression Requirements: Various data for livestock health management should be represented in a standardized format that is independent of the type or 
-                manufacturer of the device or equipment. Furthermore, all of this data must be stored and managed in a separate repository to maintain a history of the data, 
+            <li>Data expression Requirements: Various data for livestock health management should be represented in a standardized format that is independent of the type or
+                manufacturer of the device or equipment. Furthermore, all of this data must be stored and managed in a separate repository to maintain a history of the data,
                 and data interoperability must be ensured.</li>
-            <li>Other Requirements: Unlike a greenhouse or an open field, a livestock barn has an environment that is very humid and easily exposed to toxic gases due to manure. 
-                Since devices such as sensors and cameras installed in livestock barn can easily fail, the state of the device must be continuously managed remotely, 
+            <li>Other Requirements: Unlike a greenhouse or an open field, a livestock barn has an environment that is very humid and easily exposed to toxic gases due to manure.
+                Since devices such as sensors and cameras installed in livestock barn can easily fail, the state of the device must be continuously managed remotely,
                 and it must be replaced immediately if necessary.</li>
           </dd>
 
@@ -1403,9 +1403,9 @@
 
           <dt>Existing Standards</dt>
             <dd>None.</dd>
-  
+
           <dt>Comments</dt>
-            <dd>None.</dd>        
+            <dd>None.</dd>
       </dl>
   </section>
     <section id="UC-agricultural-machinery-management-1"> <!-- old id: Agricultural Machinery Management -->
@@ -1413,41 +1413,41 @@
       <dl>
           <dt>Submitter(s)</dt>
           <dd>Mun Hwan CHOI, ChangKyu LEE, Sunghyun YOON</dd>
-          
+
           <dt>Target Users</dt>
           <dd>service providers, machinery manufacturers, machinery owners, device manufacturer</dd>
-  
+
           <dt>Motivation</dt>
           <dd>
             <p>
-            Smart agriculture in open fields, which covers a considerably large area, requires various types of agricultural machinery such as tractors, combines, weeders, and pesticide sprayers, 
-            unlike greenhouse with limited space. However, since the cost of agricultural machinery is generally high, it is important to efficiently operate and manage the machinery 
+            Smart agriculture in open fields, which covers a considerably large area, requires various types of agricultural machinery such as tractors, combines, weeders, and pesticide sprayers,
+            unlike greenhouse with limited space. However, since the cost of agricultural machinery is generally high, it is important to efficiently operate and manage the machinery
             to save costs and labor required for operating them.
             </p>
             <p>
-            To manage agricultural machinery efficiently, farmers need to first establish an agricultural works plan that reflects the type of agricultural works required 
-            for each growth stage of the crops, the estimated time required, the type and quantity of machinery needed for each agricultural works. 
-            By implementing the established agricultural work plan, farmers can use machinery to complete the required agricultural work in the shortest time possible. 
-            In addition, IoT-connected machinery can share real-time progress status of the agricultural work and, if necessary, additional idle machinery can be added 
+            To manage agricultural machinery efficiently, farmers need to first establish an agricultural works plan that reflects the type of agricultural works required
+            for each growth stage of the crops, the estimated time required, the type and quantity of machinery needed for each agricultural works.
+            By implementing the established agricultural work plan, farmers can use machinery to complete the required agricultural work in the shortest time possible.
+            In addition, IoT-connected machinery can share real-time progress status of the agricultural work and, if necessary, additional idle machinery can be added
             to shorten the time required for agricultural work.
-            </p>            
+            </p>
             <p>
-            Various types of sensor devices installed on agricultural machinery collect data related to environmental conditions of the field and crop growth status. 
-            The collected data is used for the establishment of optimal production management strategies and optimization (update) of agricultural works plan to improve the productivity 
-            (convenience, operating cost) of farmhouse through AI-based analysis. Farmers can monitor the operational status of the agricultural machinery and the progress 
+            Various types of sensor devices installed on agricultural machinery collect data related to environmental conditions of the field and crop growth status.
+            The collected data is used for the establishment of optimal production management strategies and optimization (update) of agricultural works plan to improve the productivity
+            (convenience, operating cost) of farmhouse through AI-based analysis. Farmers can monitor the operational status of the agricultural machinery and the progress
             of the agricultural work anytime, anywhere through web or mobile devices, and can also transmit appropriate instructions in case of changes in the farming plan or equipment failures.
-            </p>            
+            </p>
           </dd>
-  
+
           <dt>Expected devides</dt>
           <dd>
               <li>Communication device for data sharing between agricultural machinery and farm operation system</li>
               <li>GNSS (Global navigation satellite system) device or other geolocation system for tracking and monitoring the location of agricultural machinery</li>
               <li>IoT sensor devices for collecting environmental conditions and crop-growth status of farmland</li>
               <li>Operation recording devices of agricultural machinery and component failure monitoring sensors</li>
-              <li>Data analysis systems for optimizing agricultural works plan and agricultural machinery management model</li>      
+              <li>Data analysis systems for optimizing agricultural works plan and agricultural machinery management model</li>
           </dd>
-  
+
           <dt>Expected data</dt>
           <dd>
               <li>Data including type of agricultural works, necessary agricultural machinery, required working hours for agricultural works plan according to crop-growth stages</li>
@@ -1456,81 +1456,81 @@
               <li>Agricultural work progress status and result report data</li>
               <li>Historical data related to agricultural works and agricultural machinery</li>
           </dd>
-  
+
           <dt>Dependencies - Affected WoT deliverables and/or work items</dt>
           <dd>WoT Thing Description</dd>
-  
+
           <dt>Description</dt>
           <dd>
             <p>
-            Efficient management of agricultural machinery is achieved through systematic management of various data, such as optimal agricultural works plans, machinery operation status, 
-            agricultural works execution results, and history of malfunctions or damages. This data can be analyzed based on AI and big data technology to establish the optimal 
+            Efficient management of agricultural machinery is achieved through systematic management of various data, such as optimal agricultural works plans, machinery operation status,
+            agricultural works execution results, and history of malfunctions or damages. This data can be analyzed based on AI and big data technology to establish the optimal
             production management strategy. Through this series of procedures, farm productivity can be improved.
             </p>
             <p>
-            The farmer or agricultural machinery management service provider establish an agricultural works plan based on data such as the location of farmland, 
-            the types of agricultural works required, the time required to perform the agricultural works, the types of agricultural machinery required and their availability, 
-            and the history of past agricultural works execution. The establishment of the agricultural works plan is crucial because it serves as the basis for efficiently 
-            operating and managing agricultural machinery at the lowest cost possible. To establish an agricultural works plan, the farmer's requirements must be reflected, 
-            and consulting results from an agricultural expert group or expert system should be incorporated as necessary.  
+            The farmer or agricultural machinery management service provider establish an agricultural works plan based on data such as the location of farmland,
+            the types of agricultural works required, the time required to perform the agricultural works, the types of agricultural machinery required and their availability,
+            and the history of past agricultural works execution. The establishment of the agricultural works plan is crucial because it serves as the basis for efficiently
+            operating and managing agricultural machinery at the lowest cost possible. To establish an agricultural works plan, the farmer's requirements must be reflected,
+            and consulting results from an agricultural expert group or expert system should be incorporated as necessary.
 The system may also take into account factors such as local weather conditions and forecasts, including
 historical conditions such as accumulated precipitation.
-Management of machinery can also take into account predicted events, such as the 
+Management of machinery can also take into account predicted events, such as the
 possible need for maintenance or repairs.
             </p>
             <p>
-            Based on the established agricultural works plan, the necessary agricultural machinery is deployed and executes the corresponding agricultural works. 
-            During the process of agricultural works, the agricultural machinery collects and reports data on its operating status, occurrence of malfunctions or damages, 
-            agricultural works execution status and its results, as well as the status of the farmland and crops-growth to the farm operation system. 
-            The farm operation system can monitor the agricultural works progress in real-time, and can modify the agricultural works plan to immediately deploy the machinery 
+            Based on the established agricultural works plan, the necessary agricultural machinery is deployed and executes the corresponding agricultural works.
+            During the process of agricultural works, the agricultural machinery collects and reports data on its operating status, occurrence of malfunctions or damages,
+            agricultural works execution status and its results, as well as the status of the farmland and crops-growth to the farm operation system.
+            The farm operation system can monitor the agricultural works progress in real-time, and can modify the agricultural works plan to immediately deploy the machinery
             that is not yet deployed or that can finish the assigned agricultural work soon, thus improving the operational efficiency of the agricultural machinery for the farm.
             </p>
             <p>
-            The farm operation system analyzes the collected data comprehensively and utilizes it to update existing agricultural works plan and optimize production management 
-            strategies for the improvement of farm productivity. The collected and analyzed data can be shared with stakeholders, such as service providers, agricultural machinery 
-            manufacturers, and maintenance companies. Based on the shared data, service providers can improve the quality of agricultural machinery management services, 
-            while agricultural machinery manufacturers and maintenance companies can utilize the data to produce and maintain agricultural machinery that is optimized for 
-            the agricultural works demanded by farmers. Additionally, farmers can monitor the progress status and results of agricultural works through web or mobile devices.  
+            The farm operation system analyzes the collected data comprehensively and utilizes it to update existing agricultural works plan and optimize production management
+            strategies for the improvement of farm productivity. The collected and analyzed data can be shared with stakeholders, such as service providers, agricultural machinery
+            manufacturers, and maintenance companies. Based on the shared data, service providers can improve the quality of agricultural machinery management services,
+            while agricultural machinery manufacturers and maintenance companies can utilize the data to produce and maintain agricultural machinery that is optimized for
+            the agricultural works demanded by farmers. Additionally, farmers can monitor the progress status and results of agricultural works through web or mobile devices.
             </p>
           </dd>
-  
+
           <dt>Variants</dt>
           <dd>
-            In small-scale farms, individual systems can be installed for managing agricultural machinery, but for managing various types of machinery in large-scale farms, 
-            it would be more cost-effective to use agricultural machinery management services provided by related business. In this case, the agricultural machinery is 
-            directly connected to the cloud server of the service provider to receive instructions for performing agricultural works and to report the results of the agricultural works.   
+            In small-scale farms, individual systems can be installed for managing agricultural machinery, but for managing various types of machinery in large-scale farms,
+            it would be more cost-effective to use agricultural machinery management services provided by related business. In this case, the agricultural machinery is
+            directly connected to the cloud server of the service provider to receive instructions for performing agricultural works and to report the results of the agricultural works.
           </dd>
-  
+
           <dt>Security Considerations</dt>
           <dd>
-            This use case does not define specific considerations for security issues. However, all data collected and analyzed for the agricultural machinery management 
-            should be managed using well-defined security technologies. 
+            This use case does not define specific considerations for security issues. However, all data collected and analyzed for the agricultural machinery management
+            should be managed using well-defined security technologies.
           </dd>
-  
+
           <dt>Privacy Considerations</dt>
           <dd>
-            In order to safeguard the agricultural technology utilized by farmers and maintain their competitiveness, it is essential to establish a structured approach 
-            for accessing all the data collected and shared during agricultural machinery management. Only stakeholders who have a pre-existing contract or agreement may be 
+            In order to safeguard the agricultural technology utilized by farmers and maintain their competitiveness, it is essential to establish a structured approach
+            for accessing all the data collected and shared during agricultural machinery management. Only stakeholders who have a pre-existing contract or agreement may be
             granted access to the data that is intended to be shared or distributed.
           </dd>
-  
+
           <dt>Accessibility Considerations</dt>
           <dd>None.</dd>
-  
+
           <dt>Internationalisation (i18n) Considerations</dt>
           <dd>The data formats and units need to be adapted to the local standards, instructions need to be made available in the farmer's language, and scheduling needs to take into account cultural differences, such as holidays, daylight saving changes, or required breaks and hours for workers.</dd>
-  
+
           <dt>Requirements</dt>
           <dd>
-            <li>Protocol Requirements: Flexible.</li>              
+            <li>Protocol Requirements: Flexible.</li>
             <li>Contents Type Requirements: Flexible.</li>
             <li>Platform or Standard Requirements: None.</li>
             <li>Authentication and Authorization Mechanisms Requirements: Flexible.</li>
-            <li>Communication Requirements: Diverse agricultural machinery and farm operation systems must be connected through a communication network to direct agricultural works and 
-              transmits the agricultural works execution results and collected data. As agricultural machinery is placed across a significantly large area for agricultural works, 
+            <li>Communication Requirements: Diverse agricultural machinery and farm operation systems must be connected through a communication network to direct agricultural works and
+              transmits the agricultural works execution results and collected data. As agricultural machinery is placed across a significantly large area for agricultural works,
               wireless communication methods utilizing technologies such as GSM, UMTS, LTE, CDMA, or 5G should be considered.</li>
             <li>Data Expression Requirement: Farmers may need or want to use equipment from various different manufacturers, either simultaneously or over time.
-Therefore, various data for agricultural machinery management should be represented in a standardized format that is independent of the type or manufacturer of the agricultural 
+Therefore, various data for agricultural machinery management should be represented in a standardized format that is independent of the type or manufacturer of the agricultural
               machinery or equipment. Furthermore, all of this data must be stored and managed in a separate repository to maintain a history of the data, and data interoperability must be ensured.</li>
           </dd>
 
@@ -1539,9 +1539,9 @@ Therefore, various data for agricultural machinery management should be represen
 
           <dt>Existing Standards</dt>
             <dd>None.</dd>
-  
+
           <dt>Comments</dt>
-            <dd>None.</dd>        
+            <dd>None.</dd>
       </dl>
   </section>
 </section>
@@ -2690,7 +2690,7 @@ Therefore, various data for agricultural machinery management should be represen
       </section>
 
       <section id="UC-connected-building-energy-efficiency-1"> <!-- old id: connected-building-energy-efficiency -->
-        <h2>Connected Building Energy Efficiency</h2> 
+        <h2>Connected Building Energy Efficiency</h2>
         <dl>
 
           <dt>Submitter(s)</dt>
@@ -3174,11 +3174,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dd>
 
             <p>
-              For the realization of the intented use case for automated things location and fault detection as well as further potentially 
-              automatable analyses, a smart building or smart home ecosystem is required. More specifically, BACS components are needed 
-              that support existing communication protocols (e.g. MQTT, OPC-UA, CoAP, BACNet...) to share data and metadata 
-              with each other and necessary gateways or smart hubs. They should be able to share information that can be translated into JSON 
-              payloads following the data structuration and representation proposed by the 
+              For the realization of the intented use case for automated things location and fault detection as well as further potentially
+              automatable analyses, a smart building or smart home ecosystem is required. More specifically, BACS components are needed
+              that support existing communication protocols (e.g. MQTT, OPC-UA, CoAP, BACNet...) to share data and metadata
+              with each other and necessary gateways or smart hubs. They should be able to share information that can be translated into JSON
+              payloads following the data structuration and representation proposed by the
               <a href="https://www.w3.org/TR/wot-thing-description/">Web of Things Thing Description (WoT TD)</a>.
             </p>
 
@@ -3579,7 +3579,7 @@ Therefore, various data for agricultural machinery management should be represen
       <section id="UC-cross-protocol-interaction-in-industry-4.0-scenarios-1"> <!-- old id: use-case-opc-ua-binding -->
         <h2>Cross-protocol Interaction in Industry 4.0 Scenarios</h2>
         <dl>
-  
+
           <dt>Submitter(s)</dt>
           <dd>
             Sebastian Kaebisch
@@ -4687,7 +4687,7 @@ Therefore, various data for agricultural machinery management should be represen
             None. No direct user (internationalized) interface is affected.
           </dd>
         </dl>
-      </section>      
+      </section>
       <section id="UC-retail-camera-device-1"> <!-- old id: Retail-indoor-camera -->
         <h2>Retail Camera Device</h2>
         <dl>
@@ -4782,7 +4782,7 @@ Therefore, various data for agricultural machinery management should be represen
             None. No direct user (internationalized) interface is affected.
           </dd>
         </dl>
-      </section>      
+      </section>
     </section>
 
     <section id="health">
@@ -5124,7 +5124,7 @@ Therefore, various data for agricultural machinery management should be represen
             </dd>
             <dt>References</dt>
             <dd>
-              Standards relevant to this use case include regional standards for the management of personal health data, 
+              Standards relevant to this use case include regional standards for the management of personal health data,
               including but not limited to [[HIPAA]] in the United States, [[GDPR]] in the EU, and [[PIPEDA]] in Canada.
             </dd>
             <dt>Gaps</dt>
@@ -5442,7 +5442,7 @@ Therefore, various data for agricultural machinery management should be represen
           </dl>
         </section>
       </section>
-      </section>   
+      </section>
 
 
     <section id="energy">
@@ -5860,7 +5860,7 @@ Therefore, various data for agricultural machinery management should be represen
       <h2>Smart Home</h2>
 
       <section id="audio_video">
-      <h2>Audio/Video</h2> 
+      <h2>Audio/Video</h2>
       <!--
       <section id="UC-media-use-cases-1"> <!-- old id: media-information-references -->
         <h2>Media Use Cases</h2>
@@ -6063,7 +6063,7 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Existing Standards</dt>
           <dd>
 
-            Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system [[Hybridcast]], 
+            Hybridcast and Hybridcast Connect: a Japanese Integrated Broadcast-Broadband system [[Hybridcast]],
 	    <a href="https://github.com/nhkrd">Reference Implementations</a>),
             HbbTV,
             ATSC 3.0,
@@ -6330,8 +6330,8 @@ Therefore, various data for agricultural machinery management should be represen
           </dd>
           <!--dt>Existing Standards</dt>
             <dd>
-    
-    
+
+
             </dd>
             <dt>Comments</dt>
             <dd>
@@ -6607,37 +6607,37 @@ Therefore, various data for agricultural machinery management should be represen
     <section id="UC-virtual-thing-1"> <!-- old id: USE-CASES/Retail-virtual-thing -->
       <h2>Virtual Thing</h2>
       <dl>
-    
+
         <dt>Submitter(s)</dt>
         <dd>
-    
+
           <ul>
             <li>David Ezell, Conexxus</li>
             <li>Jack Dickinson, Conexxus (Dover Fueling Solutions)</li>
           </ul>
-    
+
         </dd>
 <!--         <dt>Reviewer(s)</dt>
         <dd>
-    
+
         </dd>
         <dt>Tracker Issue ID</dt>
         <dd>
-    
+
         </dd>
  -->        <dt>Category</dt>
         <dd>
-    
+
           Retail
-    
+
         </dd>
         <dt>Class</dt>
         <dd>
-    
+
           Indoor Facilities and Power Equipment
-    
+
         </dd>
-    
+
         </dd>
         <dt>Target Users</dt>
         <dd>
@@ -6647,7 +6647,7 @@ Therefore, various data for agricultural machinery management should be represen
             <li>gateway manufacturer</li>
             <li>network operator (potentially transparent for WoT use cases)</li>
           </ul>
-    
+
         </dd>
         <dt>Motivation</dt>
         <dd>
@@ -6664,12 +6664,12 @@ Therefore, various data for agricultural machinery management should be represen
           would normally provide.
           </p>
           <div class="resize"><img src="./images/DataStreamToWoT.png" alt="Virtual Thing - Message Flow" /></div>
-          <p>    
+          <p>
           In a simple case, software could interpret data from a new door sensor product (possibly from a new manufacturer)
           and imitate the actions, properties, and events supported by the older device. This capability allows consuming
           software to remain unchanged and insulated from the churn caused by introducing new devices into the ecosystem.
           The consuming software will continue to use the original Thing Description as the interface definition.
-          </p><p>  
+          </p><p>
           In a more complex case, a data stream can be processed in software to imitate a physical device. Such "virtual
           things" allow the sensing hardware to be upgraded (in this case to video camera devices) without forcing a
           complete rewrite of software that was built to consume the original Thing Description. It is also possible for the
@@ -6738,24 +6738,24 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           None. No direct user (internationalized) interface is affected.
         </dd>
-  
+
 <!--         <dt>Requirements</dt>
         <dd>
-    
+
         </dd>
         <dt>Gaps</dt>
         <dd>
-    
+
         </dd>
         <dt>Existing standards</dt>
         <dd>
-    
+
         </dd>
         <dt>Comments</dt>
         <dd>
-    
+
         </dd>
- -->      
+ -->
       </dl>
     </section>
 
@@ -8230,7 +8230,7 @@ Therefore, various data for agricultural machinery management should be represen
               <li>Wearable, semi-transparent head-mounted display</li>
               <li>Headphones for speakers for audio output</li>
               <li>Geopose and motion estimator (various technologies can be used)</li>
-              <!-- Do we need this?  Its function is handled by the data processor 
+              <!-- Do we need this?  Its function is handled by the data processor
             <li>Recorder and Player to store and reproduce the scenes</li>
 -->
               <li>Data processor to integrate all data (including live an historical data and geopose),
@@ -8963,7 +8963,7 @@ Therefore, various data for agricultural machinery management should be represen
 <dl>
 <dt id="REQ-discovery-network-scope">Discovery Network Scope:</dt><dd>
   Support peer-to-peer (self-identifying), local (network segment),
-  and global (internet-wide) discovery.  
+  and global (internet-wide) discovery.
   <ul>
   <li>Status: satisfied.</li>
   <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
@@ -8991,7 +8991,7 @@ Therefore, various data for agricultural machinery management should be represen
 <dl>
 <dt id="REQ-discovery-filtering">Discovery Filtering:</dt><dd>
   Support various forms of query, including keyword, template, and semantic queries to
-  filter results.  
+  filter results.
   <ul>
   <li>Status: partially satisfied.  Query interface defined but optional.
   <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
@@ -9084,7 +9084,7 @@ Therefore, various data for agricultural machinery management should be represen
 </dd>
 </dl>
 </section>
-		
+
 <section>
 <h3>Security</h3>
 <dl>
@@ -9111,7 +9111,7 @@ Therefore, various data for agricultural machinery management should be represen
 </dd>
 </dl>
 </section>
-		
+
 <section>
 <h3>Privacy</h3>
 <dl>
@@ -9145,7 +9145,7 @@ Therefore, various data for agricultural machinery management should be represen
 </dd>
 </dl>
 </section>
-		
+
 <section>
 <h3>User Needs</h3>
 <dl>
@@ -9165,7 +9165,7 @@ Therefore, various data for agricultural machinery management should be represen
 </dd>
 </dl>
 </section>
-		
+
 <section>
 <h3>Accessibility</h3>
 <dl>
@@ -9185,7 +9185,7 @@ Therefore, various data for agricultural machinery management should be represen
 </dd>
 </dl>
 </section>
-		
+
         </section>
         <section id="new-building-blocks">
           <h2>New Building Blocks</h2>
@@ -9222,7 +9222,7 @@ Therefore, various data for agricultural machinery management should be represen
       <section id="liaison-2" class="ednote">
           TODO: Brief description of liaised SDO, work areas.
           Scope of the collaboration.
-          Provide Website link.  
+          Provide Website link.
       </section>
     </section>
  -->
@@ -9292,10 +9292,10 @@ Therefore, various data for agricultural machinery management should be represen
       <p>
         The EdgeX Foundry [EDGEX] is a community-driven project,
         organized under the Linux Foundation, to define
-        a reference software architecture for IoT hubs. 
+        a reference software architecture for IoT hubs.
         Its goal is to enable interoperability
         by combining a set of key IoT services with a set of interfaces to a variety
-        of IoT device protocols and ecosystems.  
+        of IoT device protocols and ecosystems.
         There is a reference implementation of the EdgeX architecture.
       </p>
       <p>
@@ -9304,7 +9304,7 @@ Therefore, various data for agricultural machinery management should be represen
         lacks a standard and IoT-appropriate metadata standard to describe the device interfaces
         (and the data models for those interfaces) that it exposes on the network.
         The WoT Thing Description could fulfill this role; otherwise, the EdgeX Foundry
-        architecture fits within the general framework of a WoT system. 
+        architecture fits within the general framework of a WoT system.
       </p>
       </section>
     </section>
@@ -9589,8 +9589,8 @@ Therefore, various data for agricultural machinery management should be represen
       </section>
     </section>
 
-      Domains from the 1.0 UC document 
-         
+      Domains from the 1.0 UC document
+
                 <section id="domain-home_automation">
                         <h3>Domain: home automation</h3>
                         <section id="building-automation">
