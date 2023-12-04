@@ -1,13 +1,13 @@
-UC,Public Service,Private Information,Safety Critical,Business Critical
-2 Domain Specific Use Cases,,,,
-2.1Smart Agriculture,,,,
-2.1.1Greenhouse Horticulture,no,no,maybe,yes
-2.1.2Open-field Agriculture,,,,
-2.1.3Irrigation in Outdoor Environment,,,,
-2.1.4Automatic milking system for dairy farm,,,,
-2.1.5Pest control in Open-field,,,,
-2.1.6Livestock Health Management,,,,
-2.1.7Agricultural Machinery Management,,,,
+UC,Public Service,Private Information,Safety Critical,Business Critical,Comment
+2 Domain Specific Use Cases,,,,,
+2.1Smart Agriculture,,,,,
+2.1.1Greenhouse Horticulture,no,no,maybe,yes,
+2.1.2Open-field Agriculture,no,yes,yes,yes,"Drones potential airspace hazard if leave farm area; also, cameras can track people"
+2.1.3Irrigation in Outdoor Environment,no,conf,no,yes,"Privacy->Confidential"
+2.1.4Automatic milking system for dairy farm,no,no,no,yes,"Safety for people; not cows?  Also, cameras assumed not to include people"
+2.1.5Pest control in Open-field,no,yes,yes,yes,"Drones can be airspace risk and privacy risk (cameras)"
+2.1.6Livestock Health Management,no,no,maybe,yes,"Diseases can cross to people (bird flue); cameras can be set to monitor livestock only"
+2.1.7Agricultural Machinery Management,no,no,yes,yes,"Safety issue if dangerous maintenance problem hidden"
 2.2Smart City,,,,
 2.2.1Smart City Geolocation,,,,
 2.2.2Smart City Dashboard,,,,
