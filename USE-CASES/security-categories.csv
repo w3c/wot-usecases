@@ -6,13 +6,13 @@ UC,Public Service,Private Information,Safety Critical,Business Critical,Comment
 2.1.3Irrigation in Outdoor Environment,no,conf,no,yes,"Privacy->Confidential"
 2.1.4Automatic milking system for dairy farm,no,no,no,yes,"Safety for people; not cows?  Also, cameras assumed not to include people"
 2.1.5Pest control in Open-field,no,yes,yes,yes,"Drones can be airspace risk and privacy risk (cameras)"
-2.1.6Livestock Health Management,no,no,maybe,yes,"Diseases can cross to people (bird flue); cameras can be set to monitor livestock only"
+2.1.6Livestock Health Management,no,no,maybe,yes,"Diseases can cross to people (bird flu); cameras can be set to monitor livestock only"
 2.1.7Agricultural Machinery Management,no,no,yes,yes,"Safety issue if dangerous maintenance problem hidden"
 2.2Smart City,,,,,
-2.2.1Smart City Geolocation,,,,,
-2.2.2Smart City Dashboard,,,,,
-2.2.3Interactive Public Spaces,,,,,
-2.2.4Meeting Room Event Assistance,,,,,
+2.2.1Smart City Geolocation,yes,"maybe (public servant only?)",yes,yes,"Phone tracking - but of (only?) public employees in their roles"
+2.2.2Smart City Dashboard,no,no,yes,yes,"Same issue as Smart City Geolocation - are phones of private citizens included?"
+2.2.3Interactive Public Spaces,yes,yes,no,yes,
+2.2.4Meeting Room Event Assistance,no,yes,no,yes,"To the extent that mtgs are business critical"
 2.2.5Cross-Domain Discovery in a Smart Campus,,,,,
 2.2.6Cultural Spaces (Museums),,,,,
 2.3Building Technologies,,,,,
