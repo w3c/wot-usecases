@@ -4,7 +4,7 @@ To generate expected deliverable specification documents smoothly, we should def
 
 We could manage the following phases using GitHub's Project capability like the [Strategy Pipline](https://github.com/w3c/strategy/projects/2).
 
-## Basic seven phases
+## Basic seven phases plus Backlog
 1. Use Case Definition
 2. Requirement Extraction
 3. Gap Analysis
