@@ -2,7 +2,7 @@
 
 To generate expected deliverable specification documents smoothly, we should define several key phases for specification generation and clarify what to do in each phase.
 
-We could manage the following phases using GitHub's Project capability like the [Strategy Pipline](https://github.com/w3c/strategy/projects/2).
+We could manage the following phases using GitHub's Project capability like the [Strategy Pipeline](https://github.com/w3c/strategy/projects/2) with [clear description on each phase](https://github.com/w3c/strategy/blob/main/README.md).
 
 ## Basic seven phases plus Backlog
 1. Use Case Definition
