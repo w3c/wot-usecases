@@ -13,7 +13,7 @@ I'd propose the following flow to manage the feedback from brainstorming discuss
 3. Think about how we could solve the issues (both from the UC calls and added offline) and generate Pullrequests for the [proposed Process.md](https://github.com/w3c/wot-usecases/blob/main/Process.md) and put "Process" label to them
 4. Discuss the Issues/Pullrequests labeled with "Process" during the Use Cases TF call
 
-## Extract ideas from the Use Cases call minutes and categorie the ideas
+## Extract ideas from the Use Cases call minutes and categorize the ideas
 [Jan-24 minutes](https://www.w3.org/2024/01/24-wot-uc-minutes.html)
 
 Who gave what kind of ideas about what topic during the call?
