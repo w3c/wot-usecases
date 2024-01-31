@@ -5,7 +5,7 @@ Basd on the comment from McCool at the end of the previous Use Cases TF call:
 > McCool:how to proceed?<br/>
 > ... can Mizushma-san provide some Issues/PRs for us to give comments?
 
-I'd propose the following flow to manage the feedback from brainstorming discussions:
+I'd propose the following flow to manage the feedback from brainstorming discussions during UseCases Calls:
 1. Minutes review and idea extraction from the minutes
 2. Generation of GitHub Issues and PRs (with a label of "Process")
 3. Review the GitHub Issues/PRs with "Process" label
