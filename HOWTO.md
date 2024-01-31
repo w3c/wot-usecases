@@ -16,8 +16,6 @@ I'd propose the following flow to manage the feedback from brainstorming discuss
 Who gave what kind of ideas about what topic during the call?
 1. How to deal with GitHub Issues/PRs?
     * McCool: would like to suggest we look at proposal from ege/toumura regarding user stories before we dive into the template, may need multiple templates
-        * https://github.com/w3c/wot-usecases/issues/257#issuecomment-1907308039
-        * https://github.com/w3c/wot-usecases/issues/261
 2. How to extract information, e.g., about requirements, from the UC description?
     * McCool: we should also think about how to extract information from the use case description.
         * we should extract user story as well
