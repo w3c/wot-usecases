@@ -40,7 +40,7 @@ Questions:
 * Approve the Minutes or not?
 * Approve the extracted topics or not?
 
-#### Generation of GitHub Issues and PRs (with a label of "Process")
+## Generation of GitHub Issues and PRs (with a label of "Process")
 Created draft GitHub Issues one by on unless related issue exists.
 
 Concentrte on the following questions here (and review the detail later):
@@ -64,7 +64,7 @@ Concentrte on the following questions here (and review the detail later):
 7. How to manage the feedback from brainstorming discussions?
     * no need to create a new Issue but this comment was a great input to improve the workflow
 
-#### Review the GitHub Issues/PRs with "Process" label
+## Review the GitHub Issues/PRs with "Process" label
 * [Issues with "Process" label](https://github.com/w3c/wot-usecases/issues?q=is%3Aissue+is%3Aopen+label%3AProcess)
 * [Proposed Process.md](https://github.com/w3c/wot-usecases/blob/main/Process.md)
 
