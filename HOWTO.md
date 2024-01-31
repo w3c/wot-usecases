@@ -65,7 +65,7 @@ Would like to discuss:
 
 GitHub Issues:
 1. How to deal with GitHub Issues/PRs?
-    * no need to create new issues
+    * no need to create new issues but made me think about this improved workflow. thanks.
 2. How to extract information, e.g., about requirements, from the UC description?
     * [Issue 263](https://github.com/w3c/wot-usecases/issues/263) - NEW
 3. When/which level of UC description to be generated?
