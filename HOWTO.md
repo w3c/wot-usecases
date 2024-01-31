@@ -37,7 +37,7 @@ Who gave what kind of ideas about what topic during the call?
         * [Issue 258](https://github.com/w3c/wot-usecases/issues/258) - Existing one from Ege
         * [Issue 259](https://github.com/w3c/wot-usecases/issues/259) - Existing one from Ege
         * [Issue 266](https://github.com/w3c/wot-usecases/issues/266) - NEW
-6. Technical use cases vs Functional use cases
+6. Technical requirements vs Functional requirements
     * Ege: last week some discussion on use cases outreach and standardization.
         * [Issue 257](https://github.com/w3c/wot-usecases/issues/257) - Exisiting one from McCool
 7. How to manage the feedback from brainstorming discussions?
