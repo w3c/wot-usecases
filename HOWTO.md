@@ -2,10 +2,8 @@
 
 ## Basic flow
 Basd on the comment from McCool at the end of the previous Use Cases TF call:
-[[
-McCool:how to proceed?
-... can Mizushma-san provide some Issues/PRs for us to give comments?
-]]
+> McCool:how to proceed?<br/>
+> ... can Mizushma-san provide some Issues/PRs for us to give comments?
 
 I'd propose the following flow to manage the feedback from brainstorming discussions:
 1. Extract ideas from the Use Cases TF call minutes (during the minutes review) and categorize the ideas based on the topic
