@@ -64,20 +64,21 @@ Would like to discuss:
 * whether created draft GitHub Issues are appropriate or not
 * if appropriate, how to resolve the Issues
 
+GitHub Issues:
 1. How to deal with GitHub Issues/PRs?
     * no need to create new issues
 2. How to extract information, e.g., about requirements, from the UC description?
-    * [Issue 263](https://github.com/w3c/wot-usecases/issues/263)
+    * [Issue 263](https://github.com/w3c/wot-usecases/issues/263) - NEW
 3. When/which level of UC description to be generated?
-    * [Issue 264](https://github.com/w3c/wot-usecases/issues/264)
+    * [Issue 264](https://github.com/w3c/wot-usecases/issues/264) - NEW
 4. Who/how to submit UCs?
-    * [Issue 265](https://github.com/w3c/wot-usecases/issues/265)
+    * [Issue 265](https://github.com/w3c/wot-usecases/issues/265) - NEW
 5. How to deal with gap analysis?
-    * [Issue 258](https://github.com/w3c/wot-usecases/issues/258)
-    * [Issue 259](https://github.com/w3c/wot-usecases/issues/259)
-    * [Issue 266](https://github.com/w3c/wot-usecases/issues/266)
+    * [Issue 258](https://github.com/w3c/wot-usecases/issues/258) - Existing one from Ege
+    * [Issue 259](https://github.com/w3c/wot-usecases/issues/259) - Existing one from Ege
+    * [Issue 266](https://github.com/w3c/wot-usecases/issues/266) - NEW
 6. Technical use cases vs Functional use cases
-    * [Issue 257](https://github.com/w3c/wot-usecases/issues/257)
+    * [Issue 257](https://github.com/w3c/wot-usecases/issues/257) - Exisiting one from McCool
 7. How to manage the feedback from brainstorming discussions?
     * no need to create a new Issue but this comment was a great input to improve the workflow
 
