@@ -45,7 +45,6 @@ Created draft GitHub Issues one by on unless related issue exists.
 
 Concentrte on the following questions here (and review the detail later):
 * whether created draft GitHub Issues are appropriate or not
-* if appropriate, how to resolve the Issues
 
 7 topics to be files as GitHub Issues or not:
 1. How to deal with GitHub Issues/PRs?
