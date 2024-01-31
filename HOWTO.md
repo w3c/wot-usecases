@@ -6,10 +6,9 @@ Basd on the comment from McCool at the end of the previous Use Cases TF call:
 > ... can Mizushma-san provide some Issues/PRs for us to give comments?
 
 I'd propose the following flow to manage the feedback from brainstorming discussions:
-1. Extract ideas from the Use Cases TF call minutes (during the minutes review) and categorize the ideas based on the topic
-2. Generate GitHub Issues for each category of the ideas and put "Process" label to them
-3. Think about how we could solve the issues (both from the UC calls and added offline) and generate Pullrequests for the [proposed Process.md](https://github.com/w3c/wot-usecases/blob/main/Process.md) and put "Process" label to them
-4. Discuss the Issues/Pullrequests labeled with "Process" during the Use Cases TF call
+1. Minutes review and idea extraction from the minutes
+2. Generation of GitHub Issues and PRs (with a label of "Process")
+3. Review the GitHub Issues/PRs with "Process" label
 
 ## Minutes review and idea extraction from the minutes
 [Jan-24 minutes](https://www.w3.org/2024/01/24-wot-uc-minutes.html)
@@ -57,7 +56,7 @@ Questions:
 * Approve the Minutes or not?
 * Approve the extracted topics or not?
 
-#### GitHub Issues
+#### Generation of GitHub Issues and PRs (with a label of "Process")
 Created draft GitHub Issues one by on unless related issue exists.
 
 Would like to discuss:
