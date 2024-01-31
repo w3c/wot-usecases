@@ -7,7 +7,6 @@ Basd on the comment from McCool at the end of the previous Use Cases TF call:
 
 I'd propose the following flow to manage the feedback from brainstorming discussions during UseCases Calls:
 1. Minutes review and GitHub Issue creation (with "Process" label)
-Minutes review and idea extraction from the minutes
 2. Review the GitHub Issues/PRs with "Process" label
 
 ## Minutes review and GitHub Issue creation (with "Process" label)
