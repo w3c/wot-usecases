@@ -11,7 +11,7 @@ I'd propose the following flow to manage the feedback from brainstorming discuss
 3. Think about how we could solve the issues (both from the UC calls and added offline) and generate Pullrequests for the [proposed Process.md](https://github.com/w3c/wot-usecases/blob/main/Process.md) and put "Process" label to them
 4. Discuss the Issues/Pullrequests labeled with "Process" during the Use Cases TF call
 
-## Extract ideas from the Use Cases call minutes and categorize the ideas
+## Minutes review and idea extraction from the minutes
 [Jan-24 minutes](https://www.w3.org/2024/01/24-wot-uc-minutes.html)
 
 Who gave what kind of ideas about what topic during the call?
@@ -81,7 +81,7 @@ Would like to discuss:
 7. How to manage the feedback from brainstorming discussions?
     * no need to create a new Issue but this comment was a great input to improve the workflow
 
-#### Review the GitHub Issues with "Process" label
+#### Review the GitHub Issues/PRs with "Process" label
 * [Issues with "Process" label](https://github.com/w3c/wot-usecases/issues?q=is%3Aissue+is%3Aopen+label%3AProcess)
 * [Proposed Process.md](https://github.com/w3c/wot-usecases/blob/main/Process.md)
 
