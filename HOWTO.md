@@ -43,11 +43,7 @@ Questions:
 #### Generation of GitHub Issues and PRs (with a label of "Process")
 Created draft GitHub Issues one by on unless related issue exists.
 
-Would like to discuss:
-* whether created draft GitHub Issues are appropriate or not
-* if appropriate, how to resolve the Issues
-
-GitHub Issues:
+7 topics to be files as GitHub Issues or not:
 1. How to deal with GitHub Issues/PRs?
     * no need to create new issues but made me think about this improved workflow. thanks.
 2. How to extract information, e.g., about requirements, from the UC description?
@@ -64,6 +60,10 @@ GitHub Issues:
     * [Issue 257](https://github.com/w3c/wot-usecases/issues/257) - Exisiting one from McCool
 7. How to manage the feedback from brainstorming discussions?
     * no need to create a new Issue but this comment was a great input to improve the workflow
+
+Questions:
+* whether created draft GitHub Issues are appropriate or not
+* if appropriate, how to resolve the Issues
 
 #### Review the GitHub Issues/PRs with "Process" label
 * [Issues with "Process" label](https://github.com/w3c/wot-usecases/issues?q=is%3Aissue+is%3Aopen+label%3AProcess)
