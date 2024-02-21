@@ -43,7 +43,7 @@ The use case template should explain:
 
 When the Use Cases TF determine that the proposed use case idea has concrete description based on the use case template, the Use Cases TF should evaluate:
 * Which one(s) of all the proposed use case descriptions are typical and atomic?
-* Categorize durplicated use case descriptions based on the atomic one
+* Categorize duplicated use case descriptions based on the atomic one
 
 After evaluating the above, the Use Cases TF should get an assignee to lead the discussion around requirements based on the use case description and then should move the use case to the Requirements phase.
 
