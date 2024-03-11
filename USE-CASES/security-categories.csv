@@ -15,12 +15,12 @@ UC,Public Service,Private Information,Safety Critical,Business Critical,Comment
 2.2.4Meeting Room Event Assistance,no,yes,no,yes,"To the extent that mtgs are business critical"
 2.2.5Cross-Domain Discovery in a Smart Campus,,,,,
 2.2.6Cultural Spaces (Museums),,,,,
-2.3Building Technologies,,,,,
+2.3Building Technologies,,,,,"Mahda to do"
 2.3.1Smart Building,,,,,
 2.3.2Connected Building Energy Efficiency,,,,,
 2.3.3Automated Smart Building Management,,,,,
 2.3.4Portable Building Applications,,,,,
-2.4Manufacturing,,,,,
+2.4Manufacturing,,,,,"Mahda to do"
 2.4.1Production Monitoring,,,,,
 2.4.2Cross-protocol Interaction in Industry 4.0 Scenarios,,,,,
 2.5Retail,,,,,
@@ -42,7 +42,7 @@ UC,Public Service,Private Information,Safety Critical,Business Critical,Comment
 2.6.2.1Health Notifiers,,,,,
 2.6.3Biomedical Devices,,,,,
 2.6.3.1Digital Microscopes,,,,,
-2.7Energy,,,,,
+2.7Energy,,,,,"Mahda to do"
 2.7.1Smart Grids,,,,,
 2.8Transportation,,,,,
 2.9Automotive,,,,,
