@@ -23,54 +23,54 @@
 2.4Manufacturing,,,,,,"Mahda to do"
 2.4.1Production Monitoring,,,,,,"Mahda to do"
 2.4.2Cross-protocol Interaction in Industry 4.0 Scenarios,,,,,,"Mahda to do"
-2.5Retail,,,,,,"Mahda to do"
-2.5.1Retail Operations,,,,,,"Mahda to do"
-2.5.2Retail All Stop Button (Outdoor Emergency Stop Plunger),,,,,,"Mahda to do"
-2.5.3Retail Indoor Door Sensor,,,,,,"Mahda to do"
-2.5.4Retail Indoor and Outdoor Freezers,,,,,,"Mahda to do"
-2.5.5Retail Kitchen Refrigerator,,,,,,"Mahda to do"
-2.5.6Retail Restroom Devices,,,,,,"Mahda to do"
-2.5.7Retail Lighting Control,,,,,,"Mahda to do"
-2.5.8Retail Outdoor Canopy Lighting Control,,,,,,"Mahda to do"
-2.5.9Retail Fountain Drink Ice Machine,,,,,,"Mahda to do"
-2.5.10Retail Camera Device,,,,,,"Mahda to do"
-2.6Health,,,,,,
-2.6.1Public Health,,,,,,
-2.6.1.1Smart City Public Health Monitoring,,,,,,
-2.6.1.2Interconnected Medical Devices in a Hospital ICU,,,,,,
-2.6.2Private Health,,,,,,
-2.6.2.1Health Notifiers,,,,,,
-2.6.3Biomedical Devices,,,,,,
-2.6.3.1Digital Microscopes,,,,,,
+2.5Retail,,,,,,"McCool to do"
+2.5.1Retail Operations,,,,,,"McCool to do"
+2.5.2Retail All Stop Button (Outdoor Emergency Stop Plunger),,,,,,"McCool to do"
+2.5.3Retail Indoor Door Sensor,,,,,,"McCool to do"
+2.5.4Retail Indoor and Outdoor Freezers,,,,,,"McCool to do"
+2.5.5Retail Kitchen Refrigerator,,,,,,"McCool to do"
+2.5.6Retail Restroom Devices,,,,,,"McCool to do"
+2.5.7Retail Lighting Control,,,,,,"McCool to do"
+2.5.8Retail Outdoor Canopy Lighting Control,,,,,,"McCool to do"
+2.5.9Retail Fountain Drink Ice Machine,,,,,,"McCool to do"
+2.5.10Retail Camera Device,,,,,,"McCool to do"
+2.6Health,,,,,,"McCool to do"
+2.6.1Public Health,,,,,,"McCool to do"
+2.6.1.1Smart City Public Health Monitoring,,,,,,"McCool to do"
+2.6.1.2Interconnected Medical Devices in a Hospital ICU,,,,,,"McCool to do"
+2.6.2Private Health,,,,,,"McCool to do"
+2.6.2.1Health Notifiers,,,,,,"McCool to do"
+2.6.3Biomedical Devices,,,,,,"McCool to do"
+2.6.3.1Digital Microscopes,,,,,,"McCool to do"
 2.7Energy,,,,,,"Mahda to do"
 2.7.1Smart Grids,,,,,,"Mahda to do"
-2.8Transportation,,,,,,
-2.9Automotive,,,,,,
-2.9.1Smart Car Configuration Management,,,,,,
-2.10Smart Home,,,,,,
-2.10.1Audio/Video,,,,,,
-2.10.1.1Media Use Cases,,,,,,
-2.10.2Home WoT devices synchronize to TV programs,,,,,,
-2.10.3Leaving and Coming Home,,,,,,
-2.11Education,,,,,,
-2.11.1Education Shared Devices,,,,,,
-3.Use Cases for multiple domains,,,,,,
-3.1Discovery,,,,,,
-3.2Multi-Vendor System Integration - Out of the box interoperability,,,,,,
-3.3Virtual Thing,,,,,,
-3.4Digital Twin,,,,,,
-3.4.1Digital Twin (1),,,,,,
-3.4.2Digital Twin (2),,,,,,
-3.5Cross Protocol Interworking,,,,,,
-3.6Multimodal System Integration,,,,,,
-3.6.1Multimodal Recognition Support,,,,,,
-3.6.2Enhancement of Synergistic Interactions,,,,,,
-3.7Accessibility,,,,,,
-3.7.1Audiovisual Devices Acting as Smartphone Extensions,,,,,,
-3.8Security,,,,,,
-3.8.1OAuth2 Flows,,,,,,
-3.9Lifecycle,,,,,,
-3.9.1Device Lifecycle,,,,,,
-3.10VR/AR,,,,,,
-3.10.1AR Virtual Guide,,,,,,
-3.11Edge Computing,,,,,,
+2.8Transportation,,,,,,"McCool to do"
+2.9Automotive,,,,,,"McCool to do"
+2.9.1Smart Car Configuration Management,,,,,,"McCool to do"
+2.10Smart Home,,,,,,"McCool to do"
+2.10.1Audio/Video,,,,,,"McCool to do"
+2.10.1.1Media Use Cases,,,,,,"McCool to do"
+2.10.2Home WoT devices synchronize to TV programs,,,,,,"McCool to do"
+2.10.3Leaving and Coming Home,,,,,,"McCool to do"
+2.11Education,,,,,,"McCool to do"
+2.11.1Education Shared Devices,,,,,,"McCool to do"
+3.Use Cases for multiple domains,,,,,,"McCool to do"
+3.1Discovery,,,,,,"McCool to do"
+3.2Multi-Vendor System Integration - Out of the box interoperability,,,,,,"McCool to do"
+3.3Virtual Thing,,,,,,"McCool to do"
+3.4Digital Twin,,,,,,"McCool to do"
+3.4.1Digital Twin (1),,,,,,"McCool to do"
+3.4.2Digital Twin (2),,,,,,"McCool to do"
+3.5Cross Protocol Interworking,,,,,,"McCool to do"
+3.6Multimodal System Integration,,,,,,"McCool to do"
+3.6.1Multimodal Recognition Support,,,,,,"McCool to do"
+3.6.2Enhancement of Synergistic Interactions,,,,,,"McCool to do"
+3.7Accessibility,,,,,,"McCool to do"
+3.7.1Audiovisual Devices Acting as Smartphone Extensions,,,,,,"McCool to do"
+3.8Security,,,,,,"McCool to do"
+3.8.1OAuth2 Flows,,,,,,"McCool to do"
+3.9Lifecycle,,,,,,"McCool to do"
+3.9.1Device Lifecycle,,,,,,"McCool to do"
+3.10VR/AR,,,,,,"McCool to do"
+3.10.1AR Virtual Guide,,,,,,"McCool to do"
+3.11Edge Computing,,,,,,"McCool to do"
