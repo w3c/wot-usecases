@@ -8,7 +8,7 @@
 2.1.5Pest control in Open-field,no,yes,no,yes,yes,"Drones can be airspace risk and privacy risk (cameras)"
 2.1.6Livestock Health Management,no,no,no,maybe,yes,"Diseases can cross to people (bird flu); cameras can be set to monitor livestock only"
 2.1.7Agricultural Machinery Management,no,no,no,yes,yes,"Safety issue if dangerous maintenance problem hidden"
-2.2Smart City,,,,,
+2.2Smart City,,,,,,
 2.2.1Smart City Geolocation,yes,"maybe (public servant only?)",,yes,yes,"Phone tracking - but of (only?) public employees in their roles"
 2.2.2Smart City Dashboard,no,maybe,no,yes,yes,"Same issue as Smart City Geolocation - are phones of private citizens included?"
 2.2.3Interactive Public Spaces,yes,yes,no,no,yes,
