@@ -1,4 +1,5 @@
-Use case of "[Leaving and Coming Home](https://w3c.github.io/wot-usecases/#UC-leaving-and-coming-home-1)"
+# Smart Home
+See also the existing use case of "[Leaving and Coming Home](https://w3c.github.io/wot-usecases/#UC-leaving-and-coming-home-1)".
 
 * [ ] Submitter [ASIS]
     * ECHONET Consortium
