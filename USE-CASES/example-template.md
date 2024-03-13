@@ -57,9 +57,6 @@
         * [ ] Expected relationship (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
             * would be better to make WoT compatible with ECHONET Lite Web API
             * Make WoT compatible by adding new features (impact for WoT)
-* [ ] Gaps between ***the user's need*** and ***what's possible today*** ***[UPDATED]***
-    * The method for controlling multiple devices in an orchestrated manner is dependent on the implementation of a client application in the current WoT specification. That is a reasonable design choice.
-    * However, the orchestrated control of multiple devices needs to be implemented by each client application even if the same control is done by multiple client applications.
 * [ ] Optional clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later)
     * Security Considerations
         * It is necessary to prevent unauthorized users other than the device user from using the service provided by the home management service provider.
@@ -69,4 +66,8 @@
     * Accessibility Considerations
         * User interface provided by a smartphone had better consider accessibility.
     * Internationalisation (i18n) Considerations
+* [ ] Gaps between ***the user's need*** and ***what's possible today*** ***[UPDATED]***
+    * The method for controlling multiple devices in an orchestrated manner is dependent on the implementation of a client application in the current WoT specification. That is a reasonable design choice.
+    * However, the orchestrated control of multiple devices needs to be implemented by each client application even if the same control is done by multiple client applications.
+
         * User interface provided by a smartphone had better support internationalization.
