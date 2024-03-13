@@ -1,6 +1,3 @@
-# Smart Home - Leaving and coming home
-See also the existing use case of "[Leaving and Coming Home](https://w3c.github.io/wot-usecases/#UC-leaving-and-coming-home-1)".
-
 * [ ] Submitter [ASIS]
     * ECHONET Consortium
 * [ ] Motivation ***[UPDATED]***
@@ -23,7 +20,7 @@ See also the existing use case of "[Leaving and Coming Home](https://w3c.github.
         * The server reads the operation modes of lighting, air conditioner and security sensor and informs the user's smartphone of those operation modes.
         * When the specified amount of time has passed after the user returns home, the server updates the operation modes of lighting, air conditioner and security sensor according to the configuration specified by the user for the time when the specified amount of time has passed after the user comes home.
         * The server reads the operation modes of lighting, air conditioner and security sensor and informs the user's smartphone of those operation modes.
-* [ ] Expectations for stakeholders and environments ***[UPDATED]***
+* [ ] Expectations for stakeholders and environments
     * [ ] Target Users
         * device user
         * service provider (Home Management Service Provider)
@@ -40,28 +37,30 @@ See also the existing use case of "[Leaving and Coming Home](https://w3c.github.
     * [ ] Potential applications
         * Cloud service for smartphones
     * [ ] expected protocol
-* Relationships
-    * [ ] Existing similar use case already defined?
+* [ ] Relationships with existing resources and standards ***[UPDATED]***
+    * [ ] Existing similar WoT use case already defined?
         * [Greenhouse Horticulture](https://w3c.github.io/wot-usecases/#UC-greenhouse-horticulture-1)
         * [Multi-Vendor System Integration - Out of the box interoperability](https://w3c.github.io/wot-usecases/#UC-multi-vendor-system-integration-out-of-the-box-interoperability-1)
         * [Cross Protocol Interworking](https://w3c.github.io/wot-usecases/#UC-cross-protocol-interworking-1)
         * [Digital Twin (1)](https://w3c.github.io/wot-usecases/#UC-digital-twin-1)
-    * [ ] Existing standards outside WoT and expected relationship
-        * [ ] External standards
+    * [ ] Dependencies on WoT - Affected WoT deliverables and/or work items
+        * WoT Thing Description
+        * WoT Binding Templates
+        * WoT Discovery
+    * [ ] Existing standards by other WGs within W3C
+        * [ ] Other WG's standards, e.g., HTML/CSS, Device APIs, DID/Vefiable Credentials, JSON-LD and RDF
+        * [ ] Expected relationship (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
+    * [ ] Existing standards outside W3C
+        * [ ] External SDOs' standards
             * [ECHONET Lite](https://echonet.jp/spec_v113_lite_en/)
             * [ECHONET Lite Web API Guideline](https://echonet.jp/web_api/) (Japanese-only)
         * [ ] Expected relationship (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
             * would be better to make WoT compatible with ECHONET Lite Web API
             * Make WoT compatible by adding new features (impact for WoT)
-    * [ ] Dependencies on WoT - Affected WoT deliverables and/or work items
-        * WoT Thing Description
-        * WoT Binding Templates
-        * WoT Discovery
-* [ ] Gaps ***[UPDATED]***
-    * [ ] What is impossible/difficult today?
-        * The method for controlling multiple devices in an orchestrated manner is dependent on the implementation of a client application in the current WoT specification. That is a reasonable design choice.
-        * However, the orchestrated control of multiple devices needs to be implemented by each client application even if the same control is done by multiple client applications.
-* [ ] Optional clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later) ***[UPDATED]***
+* [ ] Gaps between ***the user's need*** and ***what's possible today*** ***[UPDATED]***
+    * The method for controlling multiple devices in an orchestrated manner is dependent on the implementation of a client application in the current WoT specification. That is a reasonable design choice.
+    * However, the orchestrated control of multiple devices needs to be implemented by each client application even if the same control is done by multiple client applications.
+* [ ] Optional clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later)
     * Security Considerations
         * It is necessary to prevent unauthorized users other than the device user from using the service provided by the home management service provider.
         * It is necessary to disallow home management service providers other than the home management service providers permitted by the device user in advance to control devices at the device user's home.
