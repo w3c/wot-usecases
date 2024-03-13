@@ -6,7 +6,7 @@
             * The purpose of this use case is to improve the usability of home appliances for device users by allowing device users to configure the operation modes of all devices at home without configuring those devices one by one when they leave and come home.
     * [ ] Why WoT? (Stackholder's interest in using WoT)
         * Within a smart home, there are multiple devices and services from multiple vendors, which are not interoperable. Currently they need to be configured one by one based on some vendor-specific methods. However, WoT lets them get integrated with each other easily by a stadardized method.
-* [ ] Description [Figure: example system structure of smart home](https://w3c.github.io/wot-usecases/images/wot-use-case-echonet.png)
+* [ ] Description ![Figure: example system structure of smart home](https://w3c.github.io/wot-usecases/images/wot-use-case-echonet.png)
     * Configuration by a device user before starting to use a service
         * A device user logs in the server of a "home management service provider" with which the user has a contract.
         * The user specifies the operation modes of lighting, air conditioner and security sensor for the time when the user is out of home, the time when the user comes home and the time when the specified amount of time has passed after the user comes home.
