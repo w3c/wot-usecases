@@ -1,4 +1,4 @@
-"UC","Public Service","Private Information","Confidential Information","Safety Critical","Business Critical","Comment"
+"UC","Public Service","PII","Business Confidential","Safety Critical","Business Critical","Comment"
 2 Domain Specific Use Cases,,,,,,
 2.1Smart Agriculture,,,,,,
 2.1.1Greenhouse Horticulture,no,no,no,maybe,yes,
