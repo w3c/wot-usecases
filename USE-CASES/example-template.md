@@ -48,7 +48,7 @@
         * WoT Binding Templates
         * WoT Discovery
     * [ ] Existing standards by other WGs within W3C
-        * [ ] Other WG's standards, e.g., HTML/CSS, Device APIs, DID/Vefiable Credentials, JSON-LD and RDF
+        * [ ] Other WG's standards, e.g., HTML/CSS, Device APIs, DID/Verifiable Credentials, JSON-LD and RDF
         * [ ] Expected relationship (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
     * [ ] Existing standards outside W3C
         * [ ] External SDOs' standards
