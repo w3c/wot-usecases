@@ -57,15 +57,15 @@
         * [ ] Expected relationship (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
             * would be better to make WoT compatible with ECHONET Lite Web API
             * Make WoT compatible by adding new features (impact for WoT)
-* [ ] Optional clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later)
-    * Security Considerations
+* [ ] Optional clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later) ***[UPDATED]***
+    * Security Considerations - As a guide, see also the security part of [security and privacy review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/security_and_privacy.md)
         * It is necessary to prevent unauthorized users other than the device user from using the service provided by the home management service provider.
         * It is necessary to disallow home management service providers other than the home management service providers permitted by the device user in advance to control devices at the device user's home.
-    * Privacy Considerations
+    * Privacy Considerations - As a guide, see also the privacy part of [security and privacy review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/security_and_privacy.md)
         * It is necessary to protect the information on what operations are done on the devices that are controlled or monitored at the device user's home. It is also necessary to protect the information obtained from the devices that are controlled or monitored at the device user's home.
-    * Accessibility Considerations
+    * Accessibility Considerations -  As a guide, see also [accessibility review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/accessibility.md)
         * User interface provided by a smartphone had better consider accessibility.
-    * Internationalisation (i18n) Considerations
+    * Internationalisation (i18n) Considerations - As a guide, see also [internationalization review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/internationalization.md)
 * [ ] Gaps between ***the user's need*** and ***what's possible today*** ***[UPDATED]***
     * The method for controlling multiple devices in an orchestrated manner is dependent on the implementation of a client application in the current WoT specification. That is a reasonable design choice.
     * However, the orchestrated control of multiple devices needs to be implemented by each client application even if the same control is done by multiple client applications.
