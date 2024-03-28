@@ -26,7 +26,7 @@
 2.4.2Cross-protocol Interaction in Industry 4.0 Scenarios,,,,,,"Mahda to do",
 2.5Retail,,,,,,"McCool to do",
 2.5.1Retail Operations,no,yes,yes,maybe,yes,"Worker/customer PII. Payments business crit.  Equip maint may be safety crit.",
-2.5.2Retail All Stop Button (Outdoor Emergency Stop Plunger),,,,,,"McCool to do",
+2.5.2Retail All Stop Button (Outdoor Emergency Stop Plunger),no,no,no,yes,yes,"Emerg. stop safety crit. Downtime business crit.",
 2.5.3Retail Indoor Door Sensor,,,,,,"McCool to do",
 2.5.4Retail Indoor and Outdoor Freezers,,,,,,"McCool to do",
 2.5.5Retail Kitchen Refrigerator,,,,,,"McCool to do",
