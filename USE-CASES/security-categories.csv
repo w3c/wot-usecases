@@ -15,7 +15,7 @@
 2.2.3Interactive Public Spaces,yes,yes,no,no,yes,,
 2.2.4Meeting Room Event Assistance,no,yes,yes,no,yes,"To the extent that mtgs are business critical",
 2.2.5Cross-Domain Discovery in a Smart Campus,maybe,maybe,yes,yes,yes,"Some public service use cases.  PII if wearables incl.",
-2.2.6Cultural Spaces (Museums),no,no,no,no,maybe,"Anonymous occupancy not PII.  Business crit - art needs strict temp/humidity limits.",
+2.2.6Cultural Spaces (Museums),no,yes,no,no,maybe,"Tracking visitors PII.  Business crit - art needs strict temp/humidity limits.",
 2.3Building Technologies,,,,,,"Mahda to do",
 2.3.1Smart Building,,,,,,"Mahda to do",
 2.3.2Connected Building Energy Efficiency,,,,,,"Mahda to do",
