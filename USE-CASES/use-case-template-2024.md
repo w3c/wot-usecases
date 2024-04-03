@@ -6,7 +6,7 @@
     * [ ] Why WoT? (Stackholder's interest in using WoT)
 
 * [ ] Description
-<Provide a description from the users perspective>
+
 * [ ] Expectations for stakeholders and environments
     * [ ] Target Users
 
