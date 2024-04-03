@@ -1,16 +1,24 @@
+# Basic Flow of Use Case Submission
+
 This directory contains the use cases for the next revisions of the WoT specifications.
 
-Please document new **use cases** in this directory adopting the template [use-case-template.md](use-case-template.md) (Markdown) or [use-case-template.html](use-case-template.html) (HTML). The HTML template is the preferred form.
+## How to submit use cases
 
-Use cases that have been reviewed and approved for inclusion in the WG note are moved to https://github.com/w3c/wot-usecases/tree/master/USE-CASES/processed for archival purposes.
+1. Please describe new **use cases** useing the [Markdown template](use-case-template.md) [HTML template](use-case-template.html). (The HTML template is preferred.)
+2. Please submit your use cases to [this directory](https://github.com/w3c/wot-usecases/tree/main/USE-CASES) using [Pull Request](https://github.com/w3c/wot-usecases/pulls).
 
-Please avoid domain specific terminology, e.g. don't use MNO, telco. Better use network operator instead.
+## After approval by the Use Cases TF
+
+1. Use cases that have been reviewed and approved for inclusion in [the IG note](https://w3c.github.io/wot-usecases/) are moved to https://github.com/w3c/wot-usecases/tree/master/USE-CASES/processed for archival purposes.
+
 
 # Terminology
 
 We use common terminology across the use cases to make sure 
 everybody has the same understanding and the descriptions match
 when we combine the use case in a single document.
+
+Please avoid domain specific terminology, e.g. don't use MNO, telco. Better use network operator instead.
 
 ## Stakeholders and actors
 
