@@ -1,7 +1,7 @@
 "UC","Public Service","Private/PII","Business Confidential","Safety Critical","Business Critical","Comment","Validated?"
 
-2 Domain Specific Use Cases,,,,,,"CATEGORY",
-2.1Smart Agriculture,,,,,,"CATEGORY",
+2 Domain Specific Use Cases,-,-,-,-,-,"CATEGORY",
+2.1Smart Agriculture,-,-,-,-,-,"CATEGORY",
 2.1.1Greenhouse Horticulture,no,no,no,maybe,yes,,
 2.1.2Open-field Agriculture,no,yes,no,yes,yes,"Drones potential airspace hazard if leave farm area; also, cameras can track people",
 2.1.3Irrigation in Outdoor Environment,no,no,yes,no,yes,"Privacy->Confidential",
