@@ -38,7 +38,7 @@
 2.6Health,-,-,-,-,-,"CATEGORY",
 2.6.1Public Health,-,-,-,-,-,"CATEGORY",
 2.6.1.1Smart City Public Health Monitoring,yes,yes,no,yes,no,"Safety critical in long run (monitoring infection rates); aggregated data as public service",
-2.6.1.2Interconnected Medical Devices in a Hospital ICU,no,yes,no,yes,no,"Medical data PII; alerts safety-critical",
+2.6.1.2Interconnected Medical Devices in a Hospital ICU,no,yes,no,yes,no,"Medical data PII; alerts, process controls safety-critical",
 2.6.2Private Health,-,-,-,-,-,"CATEGORY",
 2.6.2.1Health Notifiers,no,yes,no,yes,no,"Medical data PII; emergency alerts safety-critical",
 2.6.3Biomedical Devices,-,-,-,-,-,"CATEGORY",
