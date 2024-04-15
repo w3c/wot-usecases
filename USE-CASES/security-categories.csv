@@ -36,7 +36,7 @@
 2.5.9Retail Fountain Drink Ice Machine,no,no,no,no,yes,"Drinks out -> lost business -> business crit.",
 2.5.10Retail Camera Device,no,yes,yes,yes,yes,"Worker monitoring PII; Safety rule, money handling validation safety business crit.",
 2.6Health,,,,,,"CATEGORY",
-2.6.1Public Health,,,,,,"CATEGORY"",
+2.6.1Public Health,,,,,,"CATEGORY",
 2.6.1.1Smart City Public Health Monitoring,,,,,,"McCool to do",
 2.6.1.2Interconnected Medical Devices in a Hospital ICU,,,,,,"McCool to do",
 2.6.2Private Health,,,,,,"CATEGORY",
