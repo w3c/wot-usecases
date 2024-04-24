@@ -6,9 +6,7 @@ This directory contains the use cases for the next revisions of the WoT specific
 
 Please submit your **use case** via [Github Issues](https://github.com/w3c/wot-usecases/issues/new/choose).
 
-***Note***
-* Please refer to the notes marked by "&lt;" and "&gt;" when you describe your use case.
-* Please remove the notes marked by "&lt;" and "&gt;" before submitting your use case.
+***Note:*** Please refer to the [notes below](#notes-on-the-items-within-the-use-case-template) when you describe your use case.
 
 ## Review by the Use Cases TF
 
