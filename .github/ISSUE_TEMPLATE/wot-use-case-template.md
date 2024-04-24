@@ -1,7 +1,7 @@
 ---
 name: WoT Use Case Template
 about: Let people submit their use cases
-title: "[UC] submit new use cases"
+title: "[UC] submit a new use case"
 labels: ''
 assignees: chachamimm
 
