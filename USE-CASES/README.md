@@ -4,13 +4,17 @@ This directory contains the use cases for the next revisions of the WoT specific
 
 ## How to submit use cases
 
-1. Please describe new **use cases** useing the [Markdown template](use-case-template.md) [HTML template](use-case-template.html). (The HTML template is preferred.)
-2. Please submit your use cases to [this directory](https://github.com/w3c/wot-usecases/tree/main/USE-CASES) using [Pull Request](https://github.com/w3c/wot-usecases/pulls).
+Please submit your **use case** via [Github Issues](https://github.com/w3c/wot-usecases/issues/new/choose).
 
-## After approval by the Use Cases TF
+***Note***
+* Please refer to the notes marked by "&lt;" and "&gt;" when you describe your use case.
+* Please remove the notes marked by "&lt;" and "&gt;" before submitting your use case.
 
-1. Use cases that have been reviewed and approved for inclusion in [the IG note](https://w3c.github.io/wot-usecases/) are moved to https://github.com/w3c/wot-usecases/tree/master/USE-CASES/processed for archival purposes.
+## Review by the Use Cases TF
 
+1. The proposed use case will be reviewed by the Use Cases TF.
+1. If the use case is appoved, the Use Cases TF will include the use case into the [WoT Use Cases and Requirements Note](https://w3c.github.io/wot-usecases/).
+1. If the use case has any problems, e.g., need further clarification about the items, the Use Cases TF will give a comment on the GitHub Issue of the use case.
 
 # Terminology
 
