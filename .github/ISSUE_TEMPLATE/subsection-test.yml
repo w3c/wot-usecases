@@ -8,6 +8,8 @@ body:
       value: |
         > [!Note]
         Thank you for proposing a new spec! Spec suggestions use a structured issue so that we can semi-automate the process. A bot will check the suggestion after creation, and report on missing properties or other problems before we review the suggestion.
+        * opt 1
+        * opt 2
 
   - type: input
     id: url
@@ -18,7 +20,6 @@ body:
       value: "https://"
     validations:
       required: true
-        - label: here
 
   - type: textarea
     id: rationale
