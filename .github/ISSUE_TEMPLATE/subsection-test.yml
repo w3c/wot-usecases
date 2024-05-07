@@ -18,7 +18,7 @@ body:
       value: "https://"
     validations:
       required: true
-    - label: here
+        - label: here
 
   - type: textarea
     id: rationale
