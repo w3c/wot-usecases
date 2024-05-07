@@ -19,15 +19,15 @@ body:
     validations:
       required: true
 
-      - type: input
-        id: old-url
-        attributes:
-          labl: OLD-URL
-          description: |
-            put old URL if any
-          value: "https://"
-        validations:
-          requred: true
+    - type: input
+      id: old-url
+      attributes:
+        label: OLD-URL
+        description: |
+          put old URL if any
+        value: "https://"
+      validations:
+        requred: true
 
   - type: textarea
     id: rationale
