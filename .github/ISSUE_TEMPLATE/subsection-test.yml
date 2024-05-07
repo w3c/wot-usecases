@@ -32,6 +32,7 @@ body:
     attributes:
       value: |
         ## Section 2
+        ----
 
   - type: textarea
     id: custom
