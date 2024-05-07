@@ -7,6 +7,7 @@ body:
     attributes:
       value: |
         ## Section 1
+        ----
 
   - type: input
     id: url
