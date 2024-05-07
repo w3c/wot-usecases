@@ -18,6 +18,13 @@ body:
       value: "https://"
     validations:
       required: true
+      - type: input
+        id: old-url
+        attributes:
+          labl: OLD-URL
+          description: |
+            put old URL if any
+          value: "https://"
 
   - type: textarea
     id: rationale
