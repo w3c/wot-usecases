@@ -19,14 +19,14 @@ body:
     validations:
       required: true
 
-    - type: textarea
-      id: rationale
-      attributes:
-        label: Rationale
-        description: |
-          Please explain how the spec meets the [spec selection criteria](https://github.com/w3c/browser-specs/#spec-selection-criteria), e.g., with a pointer to an intent to implement or to a sister project issue. You may leave this field blank if that seems straightforward.
-      validations:
-        required: false
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: |
+        Please explain how the spec meets the [spec selection criteria](https://github.com/w3c/browser-specs/#spec-selection-criteria), e.g., with a pointer to an intent to implement or to a sister project issue. You may leave this field blank if that seems straightforward.
+    validations:
+      required: false
 
   - type: textarea
     id: custom
