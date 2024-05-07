@@ -7,7 +7,6 @@ body:
     attributes:
       value: |
         ## Section 1
-        ### subsecion 1.1
 
   - type: input
     id: url
@@ -27,6 +26,11 @@ body:
         Please explain how the spec meets the [spec selection criteria](https://github.com/w3c/browser-specs/#spec-selection-criteria), e.g., with a pointer to an intent to implement or to a sister project issue. You may leave this field blank if that seems straightforward.
     validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 2
 
   - type: textarea
     id: custom
