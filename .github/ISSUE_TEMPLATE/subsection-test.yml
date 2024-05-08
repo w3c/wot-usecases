@@ -3,16 +3,7 @@ description: "Use this issue template to suggest a new use case for WoT standard
 labels: ["WoT Use Case"]
 title: "[UC]: "
 body:
-  - type: markdown
-    attributes:
-      value: |
-        This is an issue template to describe a use case. Please fill in the required information for each item below.
 
-  - type: markdown
-    attributes:
-      value: |
-        ## Title
-        ----
   - type: textarea
     id: uc-title
     attributes:
