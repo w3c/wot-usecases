@@ -134,3 +134,40 @@ body:
       label: Expected relationship with existing standards outside W3C (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Optional clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later)
+  - type: textarea
+    id: security
+    attributes:
+      label: Security Considerations - As a guide, see also the security part of security and privacy review
+      description: |
+        Describe any issues related to security; if there are none, say "none" and justify.
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy Considerations - As a guide, see also the privacy part of security and privacy review
+      description: |
+        Describe any issues related to privacy; if there are none, say "none" and justify.
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Accessibility Considerations - As a guide, see also accessibility review
+      description: |
+        Describe any issues related to accessibility; if there are none, say "none" and justify.
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Internationalisation (i18n) Considerations - As a guide, see also internationalization review
+      description: |
+        Describe any issues related to internationalization; if there are none, say "none" and justify.
+    validations:
+      required: true
