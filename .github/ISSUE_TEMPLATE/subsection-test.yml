@@ -2,9 +2,6 @@ name: "WoT Use Case Template"
 description: "Use this issue template to suggest a new use case for WoT standards"
 labels: ["WoT Use Case"]
 title: "[UC]: "
-assignees:
-  - chachamimm
-  - ashimura
 body:
   - type: markdown
     attributes:
