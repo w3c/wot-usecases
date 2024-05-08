@@ -110,3 +110,20 @@ body:
         List the affected WoT deliverables that have to be changed to enable this use case.
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Existing standards by other WGs within W3C
+  - type: textarea
+    id: existingw3cstandards
+    attributes:
+      label: Other WG's standards, e.g., HTML/CSS, Device APIs, DID/Verifiable Credentials, JSON-LD and RDF
+    validations:
+      required: true
+  - type: textarea
+    id: expectedrelationship
+    attributes:
+      label: Expected relationship (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
+    validations:
+      required: true
