@@ -16,6 +16,28 @@ body:
       description: Please enter your name.
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Motivation
+        ----
+  - type: textarea
+    id: what_to_be_done
+    attributes:
+      label: "What to be done?"
+      description: |
+        Please describe any problems or improvements you would like to make in your use case.
+    validations:
+      required: true
+  - type: textarea
+    id: why_wot
+    attributes:
+      label: Why WoT? (Stackholder's interest in using WoT)
+      description: |
+        Please describe why you would like to use WoT in your use case.
+    validations:
+      required: true
+
 
   - type: input
     id: url
