@@ -51,7 +51,14 @@ body:
   - type: textarea
     id: targetusers
     attributes:
-      label: 4.1.Target Users
+      label: Target Users
       description: Please describe your target users for your use cases.
+    validations:
+      required: false
+  - type: textarea
+    id: expecteddevices
+    attributes:
+      label: Expected Devices
+      description: Please describe your expected devices for your use cases.
     validations:
       required: false
