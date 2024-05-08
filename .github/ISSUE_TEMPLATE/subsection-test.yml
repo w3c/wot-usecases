@@ -1,13 +1,13 @@
-name: New spec
-description: Use this issue template to suggest that a new spec be added to the list.
-labels: ["new spec"]
-title: "Add new spec: <title>"
+name: New Use Case
+description: Use this issue template to suggest a new use case to be added to the WoT standards.
+labels: ["UC"]
+title: "Add new use case: <title>"
 body:
   - type: markdown
     attributes:
       value: |
         > [!Note]
-        Thank you for proposing a new spec! Spec suggestions use a structured issue so that we can semi-automate the process. A bot will check the suggestion after creation, and report on missing properties or other problems before we review the suggestion.
+        Thank you for proposing a new use case! Use case proposals use a structured GitHub issue so that we can semi-automate the process. A bot will check the suggestion after creation, and report on missing properties or other problems before we review the suggestion.
 
   - type: input
     id: url
