@@ -42,7 +42,6 @@ body:
       value: |
         ## Use Case Description and Expectations for stakeholders and environments
 
-
   - type: textarea
     id: description
     attributes:
@@ -80,28 +79,28 @@ body:
     id: expecteddevices
     attributes:
       label: Expected Devices
-      description: Please describe your expected devices for your use cases.
+      description: Please describe the expected devices for your use cases.
     validations:
       required: true
   - type: textarea
     id: expecteddata
     attributes:
       label: Expected Data
-      description: Please describe your expected data for your use cases.
+      description: Please describe the expected data for your use cases.
     validations:
       required: true
   - type: textarea
     id: potentialadopters
     attributes:
       label: Potential Adopters
-      description: Please describe your potential adopters for your use cases.
+      description: Please describe the potential adopters for your use cases.
     validations:
       required: true
   - type: textarea
     id: potentialapplications
     attributes:
       label: Potential Applications
-      description: Please describe your potential applications for your use cases.
+      description: Please describe the potential applications of your use cases.
     validations:
       required: true
   - type: textarea
@@ -122,7 +121,7 @@ body:
       label: Existing similar WoT use case already defined?
       description: Please describe your expected protocol for your use cases.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: dependenciesonwot
     attributes:
@@ -130,13 +129,13 @@ body:
       description: |
         List the affected WoT deliverables that must be changed to enable this use case.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: existingw3cstandards
     attributes:
       label: Other WG's standards, e.g., HTML/CSS, Device APIs, DID/Verifiable Credentials, JSON-LD, and RDF
     validations:
-      required: true
+      required: false
   - type: textarea
     id: expectedrelationshipwithw3cstandards
     attributes:
