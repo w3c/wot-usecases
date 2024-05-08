@@ -40,7 +40,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Use Case Description and Expectations
+        ## Use Case Description and Expectations for stakeholders and environments
+
+
   - type: textarea
     id: description
     attributes:
