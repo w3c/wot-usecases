@@ -48,5 +48,8 @@ body:
       description: "Please describe your use case details."
     validations:
       required: true
-
-
+  - type: markdown
+    attributes:
+      value: |
+        # Use Case Issue Template
+        This is a issue templnate that is described a use case. Please fill in the required information for each item.
