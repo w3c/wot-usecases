@@ -16,7 +16,7 @@ body:
         ## Title
         ----
   - type: input
-    id: title
+    id: uc-title
     attributes:
       label: Title
       description: |
