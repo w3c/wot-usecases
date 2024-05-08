@@ -43,5 +43,12 @@ body:
       value: |
         ## Description
         ----
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Please describe your use case details."
+    validations:
+      required: true
 
 
