@@ -10,6 +10,14 @@ body:
         Thank you for proposing a new use case! Use case proposals use a structured GitHub issue so that we can semi-automate the process. A bot will check the suggestion after creation, and report on missing properties or other problems before we review the suggestion.
 
   - type: input
+    id: submitter
+    attributes:
+      label: Submitter
+      description: Please enter your name.
+    validations:
+      required: true
+
+  - type: input
     id: url
     attributes:
       label: URL
