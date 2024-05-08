@@ -159,7 +159,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later)
+        ## Clarificaitons on user's needs<br/>(optional but to be described as specific as possible so that requirements can be extracted precisely later)
   - type: textarea
     id: securityconsiderations
     attributes:
