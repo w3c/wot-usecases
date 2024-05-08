@@ -140,7 +140,7 @@ body:
       value: |
         ## Optional clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later)
   - type: textarea
-    id: security
+    id: securityconsiderations
     attributes:
       label: Security Considerations - As a guide, see also the security part of security and privacy review
       description: |
@@ -148,7 +148,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: privacy
+    id: privacyconsideations
     attributes:
       label: Privacy Considerations - As a guide, see also the privacy part of security and privacy review
       description: |
@@ -156,7 +156,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: privacy
+    id: accessibilitycosiderations
     attributes:
       label: Accessibility Considerations - As a guide, see also accessibility review
       description: |
@@ -164,9 +164,9 @@ body:
     validations:
       required: true
   - type: textarea
-    id: privacy
+    id: internationalizatio considerations
     attributes:
-      label: Internationalisation (i18n) Considerations - As a guide, see also internationalization review
+      label: Internationalization (i18n) Considerations - As a guide, see also internationalization review
       description: |
         Describe any issues related to internationalization; if there are none, say "none" and justify.
     validations:
