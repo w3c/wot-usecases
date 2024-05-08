@@ -1,14 +1,17 @@
-name: "WoT Use Case Template"
-description: "Use this issue template to suggest a new use case for WoT standards"
+name: WoT Use Case Template
+description: Use this issue template to suggest a new use case for WoT standards
 labels: ["WoT Use Case"]
-title: "[UC]: "
+title: "Add new use case: <title>"
 body:
-
-  - type: textarea
-    id: uc-title
+  - type: markdown
     attributes:
-      label: "UC Title"
-      description: |
-        Simple title describing the use case briefly.
+      value: This is an issue template to describe a use case. Please fill in the required information for each item below.
+
+  - type: input
+    id: Submitter
+    attributes:
+      label: Submitter
+      description: Please enter your name.
+      # placeholder: ex. email@example.com
     validations:
       required: true
