@@ -15,3 +15,11 @@ body:
       value: |
         ## Title
         ----
+  - type: input
+    id: uc-title
+    attributes:
+      label: UC Title
+      description: |
+        Simple title describing the use case briefly.
+    validations:
+      required: true
