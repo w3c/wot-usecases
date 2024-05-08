@@ -48,7 +48,10 @@ body:
       description: "Please describe your use case details."
     validations:
       required: true
-- type: markdown
+  - type: textarea
+    id: targetusers
     attributes:
-      value: |
-        ### 4. Expectations for stakeholders and environments
+      label: 4.1.Target Users
+      description: Please describe your target users for your use cases.
+    validations:
+      required: false
