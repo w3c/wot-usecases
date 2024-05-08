@@ -38,6 +38,17 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        ## Description
+        ----
+ - type: textarea
+    id: description
+    attributes:
+      description: "Please describe your use case details."
+    validations:
+      required: true
 
   - type: input
     id: url
