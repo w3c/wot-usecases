@@ -168,6 +168,20 @@ body:
     attributes:
       label: Internationalization (i18n) Considerations - As a guide, see also internationalization review
       description: |
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Gaps between the user's need and what's possible today
+  - type: textarea
+    id: gaps
+    attributes:
+      label: Gaps
+      description: |
+        Describe any gaps that are not addressed in the current WoT standards and building blocks
+    validations:
+      true
+
         Describe any issues related to internationalization; if there are none, say "none" and justify.
     validations:
       required: true
