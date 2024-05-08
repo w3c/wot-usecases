@@ -49,6 +49,14 @@ body:
     validations:
       required: true
   - type: textarea
+    id: gaps
+    attributes:
+      label: Gaps between the user's need and what's possible today
+      description: |
+        Describe any gaps that are not addressed in the current WoT standards and building blocks
+    validations:
+      required: true
+  - type: textarea
     id: targetusers
     attributes:
       label: Target Users
@@ -138,7 +146,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Optional clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later)
+        ## Clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later)
   - type: textarea
     id: securityconsiderations
     attributes:
@@ -150,9 +158,10 @@ body:
   - type: textarea
     id: privacyconsideations
     attributes:
-      label: Privacy Considerations - As a guide, see also the privacy part of security and privacy review
+      label: Privacy Considerations
       description: |
-        Describe any issues related to privacy; if there are none, say "none" and justify.
+        Describe any issues related to privacy as a guide. See also the privacy part of [security and privacy review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/security_and_privacy.md).
+        If there are none, say "none" and justify.
     validations:
       required: true
   - type: textarea
@@ -162,7 +171,7 @@ body:
       description: |
         Describe any issues related to accessibility; if there are none, say "none" and justify.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: internationalizationconsiderations
     attributes:
@@ -170,17 +179,5 @@ body:
       description: |
         Describe any issues related to internationalization; if there are none, say "none" and justify.
     validations:
-      required: true
+      required: false
 
-  - type: markdown
-    attributes:
-      value: |
-        ## Gaps between the user's need and what's possible today
-  - type: textarea
-    id: gaps
-    attributes:
-      label: Gaps
-      description: |
-        Describe any gaps that are not addressed in the current WoT standards and building blocks
-    validations:
-      required: true
