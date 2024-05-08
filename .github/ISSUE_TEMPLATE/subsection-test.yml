@@ -2,9 +2,6 @@ name: New Use Case
 description: Use this issue template to suggest a new use case to be added to the WoT standards.
 labels: ["UC"]
 title: "Add new use case: <title>"
-assignees:
-  * chachamim
-  * ashimura
 body:
   - type: markdown
     attributes:
