@@ -62,7 +62,18 @@ body:
     id: targetusers
     attributes:
       label: Target Users
-      description: Please describe your target users for your use cases.
+      description: |
+        List all stakeholders that are involved in the use case from the following list:
+        * Device owners
+        * Device user
+        * Cloud provider
+        * Service provider
+        * Device manufacturer
+        * Gateway manufacturer
+        * Network operator (potentially transparent for WoT use cases)
+        * Identity provider
+        * Directory service operator
+        * Other (please specify)
     validations:
       required: true
   - type: textarea
