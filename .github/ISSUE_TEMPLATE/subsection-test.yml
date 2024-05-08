@@ -152,7 +152,8 @@ body:
     attributes:
       label: Security Considerations - As a guide, see also the security part of security and privacy review
       description: |
-        Describe any issues related to security; if there are none, say "none" and justify.
+        Describe any issues related to security as a guide. See also the privacy part of [security and privacy review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/security_and_privacy.md).
+        If there are none, say "none" and justify.
     validations:
       required: true
   - type: textarea
@@ -167,17 +168,19 @@ body:
   - type: textarea
     id: accessibilitycosiderations
     attributes:
-      label: Accessibility Considerations - As a guide, see also accessibility review
+      label: Accessibility Considerations
       description: |
-        Describe any issues related to accessibility; if there are none, say "none" and justify.
+        Describe any issues related to accessibility as a guide. See also [accessibility review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/accessibility.md).
+        If there are none, say "none" and justify.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: internationalizationconsiderations
     attributes:
-      label: Internationalization (i18n) Considerations - As a guide, see also internationalization review
+      label: Internationalization (i18n) Considerations
       description: |
-        Describe any issues related to internationalization; if there are none, say "none" and justify.
+        Describe any issues related to internationalization as a guide. See also [internationalization review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/internationalization.md).
+        If there are none, say "none" and justify.
     validations:
-      required: false
+      required: true
 
