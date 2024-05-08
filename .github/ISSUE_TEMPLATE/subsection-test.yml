@@ -13,7 +13,7 @@ body:
     id: submitter
     attributes:
       label: Submitter
-      description: Please enter your name.
+      description: Please enter your full name. While not required for submission of a use case for consideration, the email of the submitter should be requested and recorded before a use case is published in case followup is necessary.  These emails will be kept private and only used for communication on the use case.
     validations:
       required: true
   - type: markdown
@@ -31,7 +31,7 @@ body:
   - type: textarea
     id: why_wot
     attributes:
-      label: Why WoT? (Stackholder's interest in using WoT)
+      label: Why WoT? (Stakeholder's interest in using WoT)
       description: |
         Please describe why you would like to use WoT in your use case.
     validations:
@@ -87,28 +87,28 @@ body:
     id: expecteddata
     attributes:
       label: Expected Data
-      description: Please descrive your expected data for your use cases.
+      description: Please describe your expected data for your use cases.
     validations:
       required: true
   - type: textarea
     id: potentialadopters
     attributes:
       label: Potential Adopters
-      description: Please descrive your potential adopters for your use cases.
+      description: Please describe your potential adopters for your use cases.
     validations:
       required: true
   - type: textarea
     id: potentialapplications
     attributes:
       label: Potential Applications
-      description: Please descrive your potential applications for your use cases.
+      description: Please describe your potential applications for your use cases.
     validations:
       required: true
   - type: textarea
     id: expectedprotocol
     attributes:
       label: Expected Protocol
-      description: Please descrive your expected protocol for your use cases.
+      description: Please describe your expected protocol for your use cases.
     validations:
       required: true
 
@@ -120,7 +120,7 @@ body:
     id: similarusecases
     attributes:
       label: Existing similar WoT use case already defined?
-      description: Please describe eyour expected protocol for your use cases.
+      description: Please describe your expected protocol for your use cases.
     validations:
       required: true
   - type: textarea
@@ -128,13 +128,13 @@ body:
     attributes:
       label: Dependencies on WoT - Affected WoT deliverables and/or work items
       description: |
-        List the affected WoT deliverables that have to be changed to enable this use case.
+        List the affected WoT deliverables that must be changed to enable this use case.
     validations:
       required: true
   - type: textarea
     id: existingw3cstandards
     attributes:
-      label: Other WG's standards, e.g., HTML/CSS, Device APIs, DID/Verifiable Credentials, JSON-LD and RDF
+      label: Other WG's standards, e.g., HTML/CSS, Device APIs, DID/Verifiable Credentials, JSON-LD, and RDF
     validations:
       required: true
   - type: textarea
@@ -144,13 +144,13 @@ body:
       description: |
         Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT).
     validations:
-      required: true
+      required: false
   - type: textarea
     id: existingextenalstandards
     attributes:
       label: Existing standards outside W3C
     validations:
-      required: true
+      required: false
   - type: textarea
     id: expectedrelationshipwithexternalstandards
     attributes:
@@ -158,12 +158,12 @@ body:
       description: |
         Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT).
     validations:
-      required: true
+      required: false
 
   - type: markdown
     attributes:
       value: |
-        ## Clarificaitons on user's needs<br/>(optional but to be described as specific as possible so that requirements can be extracted precisely later)
+        ## Clarifications on user's needs<br/>(optional but to be described as specific as possible so that requirements can be extracted precisely later)
   - type: textarea
     id: securityconsiderations
     attributes:
@@ -172,7 +172,7 @@ body:
         Describe any issues related to security as a guide. See also the privacy part of [security and privacy review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/security_and_privacy.md).
         If there are none, say "none" and justify.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: privacyconsideations
     attributes:
@@ -181,7 +181,7 @@ body:
         Describe any issues related to privacy as a guide. See also the privacy part of [security and privacy review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/security_and_privacy.md).
         If there are none, say "none" and justify.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: accessibilitycosiderations
     attributes:
@@ -190,7 +190,7 @@ body:
         Describe any issues related to accessibility as a guide. See also [accessibility review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/accessibility.md).
         If there are none, say "none" and justify.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: internationalizationconsiderations
     attributes:
@@ -199,5 +199,5 @@ body:
         Describe any issues related to internationalization as a guide. See also [internationalization review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/internationalization.md).
         If there are none, say "none" and justify.
     validations:
-      required: true
+      required: false
 
