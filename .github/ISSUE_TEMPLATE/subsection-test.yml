@@ -48,13 +48,26 @@ body:
       description: "Please describe your use case details."
     validations:
       required: true
-  - type: textarea
+  - type: checkboxes
     id: targetusers
     attributes:
       label: Target Users
-      description: Please describe your target users for your use cases.
+      description: |
+        Please choose your target users for your use cases the following list:
+      options:
+        - device owners
+        - device user
+        - cloud provider
+        - service provider
+        - device manufacturer
+        - gateway manufacturer
+        - network operator (potentially transparent for WoT use cases)
+        - identity provider
+        - directory service operator
+        - other
     validations:
       required: true
+
   - type: textarea
     id: expecteddevices
     attributes:
