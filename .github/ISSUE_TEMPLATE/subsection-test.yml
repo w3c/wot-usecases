@@ -13,10 +13,9 @@ body:
     id: submitter
     attributes:
       label: Submitter
-      description: Put your name here.
+      description: Please enter your name.
     validations:
       required: true
-
   - type: markdown
     attributes:
       value: |
@@ -26,7 +25,7 @@ body:
     attributes:
       label: "What to be done?"
       description: |
-        Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users
+        Please describe any problems or improvements you would like to make in your use case.
     validations:
       required: true
   - type: textarea
@@ -41,173 +40,53 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Use Case Description and Expectations for User Environments
+        ## Use Case Description and Expectations
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: |
-        Provide a description from the users perspective.
+      description: "Please describe your use case details."
     validations:
       required: true
-  - type: checkboxes
+  - type: textarea
     id: targetusers
     attributes:
       label: Target Users
-      description: |
-        Please choose your target users for your use cases the following list:
-      options:
-        - device owners
-        - device user
-        - cloud provider
-        - service provider
-        - device manufacturer
-        - gateway manufacturer
-        - network operator (potentially transparent for WoT use cases)
-        - identity provider
-        - directory service operator>
-        - other
+      description: Please describe your target users for your use cases.
     validations:
       required: true
   - type: textarea
     id: expecteddevices
     attributes:
       label: Expected Devices
-      description: |
-        Please describe your expected devices for your use cases, e.g., a sensor, solar panel or air conditioner.
+      description: Please describe your expected devices for your use cases.
     validations:
       required: true
   - type: textarea
     id: expecteddata
     attributes:
       label: Expected Data
-      description: Please describe your expected data for your use cases, e.g., weather and climate data, medical conditions, machine sensors or vehicle data.
+      description: Please descrive your expected data for your use cases.
     validations:
       required: true
   - type: textarea
     id: potentialadopters
     attributes:
       label: Potential Adopters
-      description: Please describe your potential adopters for your use cases.
+      description: Please descrive your potential adopters for your use cases.
     validations:
       required: true
   - type: textarea
     id: potentialapplications
     attributes:
       label: Potential Applications
-      description: Please describe your potential applications for your use cases.
+      description: Please descrive your potential applications for your use cases.
     validations:
       required: true
   - type: textarea
     id: expectedprotocol
     attributes:
       label: Expected Protocol
-      description: Please describe your expected protocol for your use cases.
+      description: Please descrive your expected protocol for your use cases.
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ## Relationships with existing resources and standards
-  - type: textarea
-    id: similarusecases
-    attributes:
-      label: Existing similar WoT use case already defined?
-      description: Please describe eyour expected protocol for your use cases.
-    validations:
-      required: true
-  - type: textarea
-    id: dependenciesonwot
-    attributes:
-      label: Dependencies on WoT - Affected WoT deliverables and/or work items
-      description: |
-        List the affected WoT deliverables that have to be changed to enable this use case.
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ### Existing standards by other WGs within W3C
-  - type: textarea
-    id: existingw3cstandards
-    attributes:
-      label: Other WG's standards, e.g., HTML/CSS, Device APIs, DID/Verifiable Credentials, JSON-LD and RDF
-    validations:
-      required: true
-  - type: textarea
-    id: existingw3cstandards
-    attributes:
-      label: Expected relationship (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ### Existing standards outside W3C
-  - type: textarea
-    id: existingw3cstandards
-    attributes:
-      label: External SDOs' standards
-    validations:
-      required: true
-  - type: textarea
-    id: existingw3cstandards
-    attributes:
-      label: Expected relationship (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ## Optional clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later)
-  - type: textarea
-    id: security
-    attributes:
-      label: Security Considerations - As a guide, see also the security part of security and privacy review
-      description: |
-        Describe any issues related to security; if there are none, say "none" and justify.
-    validations:
-      required: true
-  - type: textarea
-    id: privacy
-    attributes:
-      label: Privacy Considerations - As a guide, see also the privacy part of security and privacy review
-      description: |
-        Describe any issues related to privacy; if there are none, say "none" and justify.
-    validations:
-      required: true
-  - type: textarea
-    id: privacy
-    attributes:
-      label: Accessibility Considerations - As a guide, see also accessibility review
-      description: |
-        Describe any issues related to accessibility; if there are none, say "none" and justify.
-    validations:
-      required: true
-  - type: textarea
-    id: privacy
-    attributes:
-      label: Internationalisation (i18n) Considerations - As a guide, see also internationalization review
-      description: |
-        Describe any issues related to internationalization; if there are none, say "none" and justify.
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ## Gaps between the user's need and what's possible today
-  - type: textarea
-    id: security
-    attributes:
-      label: Gaps
-      description: |
-        Describe any gaps that are not addressed in the current WoT standards and building blocks
-    validations:
-      true
-
-
