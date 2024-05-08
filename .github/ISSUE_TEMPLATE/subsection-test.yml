@@ -183,4 +183,4 @@ body:
       description: |
         Describe any gaps that are not addressed in the current WoT standards and building blocks
     validations:
-      rrequired: true
+      required: true
