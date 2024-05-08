@@ -15,7 +15,7 @@ body:
       value: |
         ## Title
         ----
-  - type: input
+  - type: textarea
     id: uc-title
     attributes:
       label: UC Title
