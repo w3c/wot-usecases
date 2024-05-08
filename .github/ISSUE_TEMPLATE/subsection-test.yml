@@ -140,7 +140,9 @@ body:
   - type: textarea
     id: expectedrelationshipwithw3cstandards
     attributes:
-      label: Expected relationship with Existing standards by other WGs within W3C (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
+      label: Expected relationship with Existing standards by other WGs within W3C
+      description: |
+        Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT).
     validations:
       required: true
   - type: textarea
@@ -152,7 +154,9 @@ body:
   - type: textarea
     id: expectedrelationshipwithexternalstandards
     attributes:
-      label: Expected relationship with existing standards outside W3C (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
+      label: Expected relationship with existing standards outside W3C
+      description: |
+        Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT).
     validations:
       required: true
 
