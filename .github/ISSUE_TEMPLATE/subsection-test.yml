@@ -117,19 +117,19 @@ body:
     validations:
       required: true
   - type: textarea
-    id: expectedrelationship
+    id: expectedrelationshipwithw3cstandards
     attributes:
       label: Expected relationship with Existing standards by other WGs within W3C (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
     validations:
       required: true
   - type: textarea
-    id: existingw3cstandards
+    id: existingextenalstandards
     attributes:
       label: Existing standards outside W3C
     validations:
       required: true
   - type: textarea
-    id: existingw3cstandards
+    id: expectedrelationshipwithexternalstandards
     attributes:
       label: Expected relationship with existing standards outside W3C (Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT))
     validations:
