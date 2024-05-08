@@ -164,7 +164,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: internationalizatio considerations
+    id: internationalizationconsiderations
     attributes:
       label: Internationalization (i18n) Considerations - As a guide, see also internationalization review
       description: |
