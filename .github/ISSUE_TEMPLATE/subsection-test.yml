@@ -90,3 +90,23 @@ body:
       description: Please descrive your expected protocol for your use cases.
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Relationships with existing resources and standards
+  - type: textarea
+    id: similarusecases
+    attributes:
+      label: Existing similar WoT use case already defined?
+      description: Please describe eyour expected protocol for your use cases.
+    validations:
+      required: true
+  - type: textarea
+    id: dependenciesonwot
+    attributes:
+      label: Dependencies on WoT - Affected WoT deliverables and/or work items
+      description: |
+        List the affected WoT deliverables that have to be changed to enable this use case.
+    validations:
+      required: true
