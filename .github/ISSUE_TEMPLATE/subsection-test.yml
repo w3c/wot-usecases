@@ -1,4 +1,4 @@
-name: New Use Case
+dname: New Use Case
 description: Use this issue template to suggest a new use case to be added to the WoT standards.
 labels: ["UC"]
 title: "Add new use case: <title>"
@@ -183,4 +183,4 @@ body:
       description: |
         Describe any gaps that are not addressed in the current WoT standards and building blocks
     validations:
-      true
+      rrequired: true
