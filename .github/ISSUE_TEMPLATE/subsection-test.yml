@@ -1,21 +1,56 @@
-name: New spec
-description: Use this issue template to suggest that a new spec be added to the list.
-labels: ["new spec"]
-title: "Add new spec: <title>"
+name: WoT Use Case Template
+description: Use this issue template to suggest a new use case for WoT standards
+labels: ["WoT Use Case"]
+title: "[UC]: "
+assignees:
+  - chachamimm
+  - ashimura
 body:
   - type: markdown
     attributes:
-      value: |
-        ## Section 1
-        ----
+      value: This is an issue template to describe a use case. Please fill in the required information for each item below.
 
-  - type: input
-    id: url
+  - type: markdown
     attributes:
-      label: URL
+      value: |
+        ## Title
+        ----
+  - type: input
+    id: title
+    attributes:
+      label: Title
       description: |
-        *Somewhat* stable spec URL. See [`url`](https://github.com/w3c/browser-specs/#url) for details.
-      value: "https://"
+        Simple title describing the use case briefly.
+    validations:
+      required: true
+  - type: input
+    id: Submitter
+    attributes:
+      label: Submitter
+      description: Please enter your name.
+      # placeholder: ex. email@example.com
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Motivation
+        ----
+  - type: textarea
+    id: what_to_be_done
+    attributes:
+      label: "What to be done?"
+      description: |
+        Please describe any problems or improvements you would like to make in your use case.
+    validations:
+      required: true
+  - type: textarea
+    id: why_wot
+    attributes:
+      label: Why WoT? (Stackholder's interest in using WoT)
+      description: |
+        Please describe why you would like to use WoT in your use case.
     validations:
       required: true
 
@@ -44,3 +79,4 @@ body:
       value: "{}"
     validations:
       required: false
+
