@@ -60,8 +60,8 @@
 3.2,Multi-Vendor System Integration - Out of the box interoperability,no,no,no,no,no,"System property facilitating onboarding",
 3.3,Virtual Thing,no,yes,yes,yes,yes,"Camera images are PII. May relate to critical systems. Could be classed under Digital Twin",
 3.4,Digital Twin,-,-,-,-,-,"CATEGORY",
-3.4.1,Digital Twin (1),no,yes,yes,yes,yes,"Camera images are PII. May relate to critical systems."
-3.4.2,Digital Twin (2),no,yes,yes,yes,yes,"Camera images are PII. May relate to critical systems."
+3.4.1,Digital Twin (1),no,yes,yes,yes,yes,"Camera images are PII. May relate to critical systems.",
+3.4.2,Digital Twin (2),no,yes,yes,yes,yes,"Camera images are PII. May relate to critical systems.",
 3.5,Cross Protocol Interworking,yes,yes,yes,yes,yes,"System property facilitating communication, depending on usage can fall under all categories.",
 3.6,Multimodal System Integration,-,-,-,-,-,"CATEGORY",
 3.6.1,Multimodal Recognition Support,,,,,,"McCool to do",
