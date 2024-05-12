@@ -13,9 +13,16 @@ body:
     id: submitter
     attributes:
       label: Submitter
-      description: Please enter your full name. While not required for submission of a use case for consideration, the email of the submitter should be requested and recorded before a use case is published in case followup is necessary.  These emails will be kept private and only used for communication on the use case.
+      description: Please enter your full name.
     validations:
       required: true
+  - type: input
+    id: submitter-email
+    attributes:
+      label: Submitter Email
+      description: While not required for submission of a use case for consideration, the email of the submitter must be recorded before a use case is published in case follow-up is necessary. If you do not want to share your email here, please send an email to <mailto:ashimura@w3.org>. These email addresses will be kept private and only used for communication on the use case.
+    validations:
+      required: false
   - type: markdown
     attributes:
       value: |
