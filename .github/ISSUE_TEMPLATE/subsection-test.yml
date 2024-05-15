@@ -31,7 +31,7 @@ body:
   - type: textarea
     id: why_wot
     attributes:
-      label: Why WoT? (Stackholder's interest in using WoT)
+      label: Why WoT? (Stakeholder's interest in using WoT)
       description: |
         Please describe why you would like to use WoT in your use case.
     validations:
@@ -87,28 +87,28 @@ body:
     id: expecteddata
     attributes:
       label: Expected Data
-      description: Please descrive your expected data for your use cases.
+      description: Please describe your expected data for your use cases.
     validations:
       required: true
   - type: textarea
     id: potentialadopters
     attributes:
       label: Potential Adopters
-      description: Please descrive your potential adopters for your use cases.
+      description: Please describe your potential adopters for your use cases.
     validations:
       required: true
   - type: textarea
     id: potentialapplications
     attributes:
       label: Potential Applications
-      description: Please descrive your potential applications for your use cases.
+      description: Please describe your potential applications for your use cases.
     validations:
       required: true
   - type: textarea
     id: expectedprotocol
     attributes:
       label: Expected Protocol
-      description: Please descrive your expected protocol for your use cases.
+      description: Please describe your expected protocol for your use cases.
     validations:
       required: true
 
@@ -120,7 +120,7 @@ body:
     id: similarusecases
     attributes:
       label: Existing similar WoT use case already defined?
-      description: Please describe eyour expected protocol for your use cases.
+      description: Please describe your expected protocol for your use cases.
     validations:
       required: true
   - type: textarea
@@ -163,13 +163,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Clarificaitons on user's needs<br/>(optional but to be described as specific as possible so that requirements can be extracted precisely later)
+        ## Clarifications of user's needs<br/>(optional but to be described as specific as possible so that requirements can be extracted precisely later)
   - type: textarea
     id: securityconsiderations
     attributes:
       label: Security Considerations
       description: |
-        Describe any issues related to security as a guide. See also the privacy part of [security and privacy review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/security_and_privacy.md).
+        Describe any issues related to security as a guide. See also the security part of [security and privacy review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/security_and_privacy.md).
         If there are none, say "none" and justify.
     validations:
       required: true
