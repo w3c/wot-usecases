@@ -1,36 +1,48 @@
-name: WoT Use Case Template
-description: Submit Use Case
-title: "[UC]: "
-labels: ["Use Case"]
-# projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - chachamimm
+name: New Use Case
+description: Use this issue template to suggest a new use case to be added to the WoT standards.
+labels: ["UC"]
+title: "Add new use case: <title>"
 body:
   - type: markdown
     attributes:
-      value: This is a issue templnate that is described a use case. Please fill in the required information for each item.
+      value: |
+        > [!Note]
+        Thank you for proposing a new use case! Use case proposals use a structured GitHub issue so that we can semi-automate the process. A bot will check the suggestion after creation, and report on missing properties or other problems before we review the suggestion.
+
   - type: input
-    id: Submitter
+    id: submitter
     attributes:
       label: Submitter
       description: Please enter your name.
-      # placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Motivation
+  - type: textarea
+    id: what_to_be_done
+    attributes:
+      label: "What to be done?"
+      description: |
+        Please describe any problems or improvements you would like to make in your use case.
     validations:
       required: true
   - type: textarea
-    id: motivation1
+    id: why_wot
     attributes:
-      label: "Motivation - What to be done?"
-      description: "Please describe any problems or improvements you would like to make in your use case."
+      label: Why WoT? (Stackholder's interest in using WoT)
+      description: |
+        Please describe why you would like to use WoT in your use case.
     validations:
       required: true
-  - type: textarea
-    id: motivation2
+
+  - type: markdown
     attributes:
-      label: "Motivation - Why WoT? (Stackholder's interest in using WoT)"
-      description: "Please describe why you would like to use WoT in your use case."
-    validations:
-      required: true
+      value: |
+        ## Use Case Description and Expectations for stakeholders and environments
+
+
   - type: textarea
     id: description
     attributes:
@@ -39,51 +51,161 @@ body:
     validations:
       required: true
   - type: textarea
+    id: gaps
+    attributes:
+      label: Gaps between the user's need and what's possible today
+      description: |
+        Describe any gaps that are not addressed in the current WoT standards and building blocks
+    validations:
+      required: true
+  - type: dropdown
     id: targetusers
     attributes:
-      label: "Expectations for stakeholders and environments - Target Users"
-      description: Please describe your target users for your use cases.
+      label: Target Users
+      description: |
+        List all stakeholders that are involved in the use case from the following list
+      multiple: true
+      options:
+        - Device owners
+        - Device user
+        - Cloud provider
+        - Service provider
+        - Device manufacturer
+        - Gateway manufacturer
+        - Network operator (potentially transparent for WoT use cases)
+        - Identity provider
+        - Directory service operator
+        - Other (please specify)
     validations:
-      required: false
+      required: true
+  - type: textarea
+    id: targetusers_custom
+    attributes:
+      label: Other Target Users
+      description: Other stakeholders
   - type: textarea
     id: expecteddevices
     attributes:
-      label: "Expectations for stakeholders and environments - Expected Devices"
+      label: Expected Devices
       description: Please describe your expected devices for your use cases.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: expecteddata
     attributes:
-      label: "Expectations for stakeholders and environments - Expected Data"
+      label: Expected Data
       description: Please descrive your expected data for your use cases.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: potentialadopters
     attributes:
-      label: "Expectations for stakeholders and environments - Potential Adopters"
+      label: Potential Adopters
       description: Please descrive your potential adopters for your use cases.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: potentialapplications
     attributes:
-      label: "Expectations for stakeholders and environments - Potential Applications"
+      label: Potential Applications
       description: Please descrive your potential applications for your use cases.
     validations:
-      required: false
+      required: true
   - type: textarea
     id: expectedprotocol
     attributes:
-      label: "Expectations for stakeholders and environments - Expected Protocol"
+      label: Expected Protocol
       description: Please descrive your expected protocol for your use cases.
     validations:
-      required: false
-  - type: textarea
-    id: existing-similar-wot-use-case
+      required: true
+
+  - type: markdown
     attributes:
-      label: "Existing similar WoT use case already defined?"
-      description: If there are similar to your use case in [the WoT Use Cases and Requirements note](https://w3c.github.io/wot-usecases/), please describe them.
+      value: |
+        ## Relationships with existing resources and standards
+  - type: textarea
+    id: similarusecases
+    attributes:
+      label: Existing similar WoT use case already defined?
+      description: Please describe eyour expected protocol for your use cases.
     validations:
-      required: false
+      required: true
+  - type: textarea
+    id: dependenciesonwot
+    attributes:
+      label: Dependencies on WoT - Affected WoT deliverables and/or work items
+      description: |
+        List the affected WoT deliverables that have to be changed to enable this use case.
+    validations:
+      required: true
+  - type: textarea
+    id: existingw3cstandards
+    attributes:
+      label: Other WG's standards, e.g., HTML/CSS, Device APIs, DID/Verifiable Credentials, JSON-LD and RDF
+    validations:
+      required: true
+  - type: textarea
+    id: expectedrelationshipwithw3cstandards
+    attributes:
+      label: Expected relationship with Existing standards by other WGs within W3C
+      description: |
+        Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT).
+    validations:
+      required: true
+  - type: textarea
+    id: existingextenalstandards
+    attributes:
+      label: Existing standards outside W3C
+    validations:
+      required: true
+  - type: textarea
+    id: expectedrelationshipwithexternalstandards
+    attributes:
+      label: Expected relationship with existing standards outside W3C
+      description: |
+        Refer to the existing standards (no change for WoT) / Make WoT compatible by adding new features (impact for WoT).
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Clarificaitons on user's needs<br/>(optional but to be described as specific as possible so that requirements can be extracted precisely later)
+  - type: textarea
+    id: securityconsiderations
+    attributes:
+      label: Security Considerations
+      description: |
+        Describe any issues related to security as a guide. See also the privacy part of [security and privacy review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/security_and_privacy.md).
+        If there are none, say "none" and justify.
+    validations:
+      required: true
+  - type: textarea
+    id: privacyconsideations
+    attributes:
+      label: Privacy Considerations
+      description: |
+        Describe any issues related to privacy as a guide. See also the privacy part of [security and privacy review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/security_and_privacy.md).
+        If there are none, say "none" and justify.
+    validations:
+      required: true
+  - type: textarea
+    id: accessibilitycosiderations
+    attributes:
+      label: Accessibility Considerations
+      description: |
+        Describe any issues related to accessibility as a guide. See also [accessibility review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/accessibility.md).
+        If there are none, say "none" and justify.
+    validations:
+      required: true
+  - type: textarea
+    id: internationalizationconsiderations
+    attributes:
+      label: Internationalization (i18n) Considerations
+      description: |
+        Describe any issues related to internationalization as a guide. See also [internationalization review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/internationalization.md).
+        If there are none, say "none" and justify.
+    validations:
+      required: true
+
+
