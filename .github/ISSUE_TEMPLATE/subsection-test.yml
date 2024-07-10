@@ -58,24 +58,30 @@ body:
         Describe any gaps that are not addressed in the current WoT standards and building blocks
     validations:
       required: true
-  - type: textarea
+  - type: checkboxes
     id: targetusers
     attributes:
       label: Target Users
       description: |
-        List all stakeholders that are involved in the use case from the following list:
-        * Device owners
-        * Device user
-        * Cloud provider
-        * Service provider
-        * Device manufacturer
-        * Gateway manufacturer
-        * Network operator (potentially transparent for WoT use cases)
-        * Identity provider
-        * Directory service operator
-        * Other (please specify)
+        List all stakeholders that are involved in the use case from the following list
+      options:
+        - label: Device owners
+        - label: Device user
+        - label: Cloud provider
+        - label: Service provider
+        - label: Device manufacturer
+        - label: Gateway manufacturer
+        - label: Network operator (potentially transparent for WoT use cases)
+        - label: Identity provider
+        - label: Directory service operator
+        - label: Other (please specify)
     validations:
       required: true
+  - type: textarea
+    id: targetusers_custom
+    attributes:
+      label: Other Target Users
+      description: Other stakeholders
   - type: textarea
     id: expecteddevices
     attributes:
