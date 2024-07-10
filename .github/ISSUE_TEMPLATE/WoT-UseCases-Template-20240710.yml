@@ -1,4 +1,4 @@
-name: New Use Case
+name: New Use Case Template 20240710
 description: Use this issue template to suggest a new use case to be added to the WoT standards.
 labels: ["UC"]
 title: "Add new use case: <title>"
