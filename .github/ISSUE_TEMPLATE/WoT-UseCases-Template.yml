@@ -126,7 +126,7 @@ body:
     id: similarusecases
     attributes:
       label: Existing similar WoT use case already defined?
-      description: Please describe your expected protocol for your use cases.
+      description: Please provide links
     validations:
       required: true
   - type: textarea
