@@ -1,7 +1,7 @@
 name: New Use Case Template 20240710
-description: This is the latest UseCases Iusse Template. Please use this issue template to suggest a new use case to be added to the WoT standards.
+description: This is the latest WoT Use Case Issue Template. Please use this issue template to suggest a new use case to be added to the WoT standards.
 labels: ["UC"]
-title: "Add new use case: <title>"
+title: ""
 body:
   - type: markdown
     attributes:
@@ -126,7 +126,7 @@ body:
     id: similarusecases
     attributes:
       label: Existing similar WoT use case already defined?
-      description: Please describe your expected protocol for your use cases.
+      description: Please provide links
     validations:
       required: true
   - type: textarea
