@@ -8919,33 +8919,80 @@ Therefore, various data for agricultural machinery management should be represen
 	<h4>Use Case Categories</h4>
 	<dl>
         <dt id="CAT-Security-Public-Service">Security Public Service</dt><dd>
-	<p>Provides a public service; misuse can result in lack of support to other users.
-        Use Cases Included:</p>
-	  <ul>
-	    <li><a href="#UC-smart-cities">Smart Cities</a></li>
-	  </ul>
+	<p>Provides a public service; misuse can result in lack of support to other users.</p>
+	  <ul>  
+      <li>
+        Supporting Use Cases:
+        <ul>
+          <li>
+            [[[#UC-interactive-public-spaces-1]]]
+          </li>
+          <li>
+            [[[#UC-edge-computing-1]]]
+          </li>
+          <li>
+            [[[#UC-ar-virtual-guide-1]]]
+          </li>
+        </ul>
+      </li>
+    </ul>
 	</dd>
 	<dt id="CAT-Security-Private-Information">Security Private Information</dt><dd>
-	<p></p>Handles personal or confidential information.
-	<p>Misuse could disclose privately identifiable information (PII) or sensitive business information.
-        Use Cases Included:</p>
-	  <ul>
-	    <li><a href="#UC-smart-cities">Smart Cities</a></li>
-	  </ul>
+	<p>Handles personal or confidential information. Misuse could disclose privately identifiable information (PII) or sensitive business information.</p> 
+    <ul>  
+      <li>
+        Supporting Use Cases:
+        <ul>
+          <li>
+            [[[#UC-interactive-public-spaces-1]]]
+          </li>
+          <li>
+            [[[#UC-edge-computing-1]]]
+          </li>
+          <li>
+            [[[#UC-ar-virtual-guide-1]]]
+          </li>
+        </ul>
+      </li>
+    </ul>
 	</dd>
 	<dt id="CAT-Security-Safety-Critical">Security Safety Critical</dt><dd>
-	<p>Misuse has the potential to cause personal injury.
-        Use Cases Included:</p>
-	  <ul>
-	    <li><a href="#UC-smart-cities">Smart Cities</a></li>
-	  </ul>
+	<p>Misuse has the potential to cause personal injury.</p> 
+	  <ul>  
+      <li>
+        Supporting Use Cases:
+        <ul>
+          <li>
+            [[[#UC-interactive-public-spaces-1]]]
+          </li>
+          <li>
+            [[[#UC-edge-computing-1]]]
+          </li>
+          <li>
+            [[[#UC-ar-virtual-guide-1]]]
+          </li>
+        </ul>
+      </li>
+    </ul>
 	</dd>
 	<dt id="CAT-Security-Business-Critical">Security Business Critical</dt><dd>
-	Misuse has the potential to cause financial injury or damage to business operations or reputation.
-        Use Cases Included:</p>
-	  <ul>
-	    <li><a href="#UC-smart-cities">Smart Cities</a></li>
-	  </ul>
+	Misuse has the potential to cause financial injury or damage to business operations or reputation.</p> 
+  <ul>  
+    <li>
+      Supporting Use Cases:
+      <ul>
+        <li>
+          [[[#UC-interactive-public-spaces-1]]]
+        </li>
+        <li>
+          [[[#UC-edge-computing-1]]]
+        </li>
+        <li>
+          [[[#UC-ar-virtual-guide-1]]]
+        </li>
+      </ul>
+    </li>
+  </ul>
 	</dd>
         </dl>
 	</section>
@@ -9103,9 +9150,15 @@ Therefore, various data for agricultural machinery management should be represen
         </section>
         <section id="discovery">
           <h2>Discovery</h2>
-		The WoT discovery process should have the following capabilities:
+                <p class="ednote" title="Under Review">The following is under review and development.
+                In particular, the association of use cases with requirements ideally should be reviewed by use case
+                submitters and the status of completion of each requirement is mostly still marked as TBD while
+                we review the alignment of these requirements with current publications.</p>
+		<p>The WoT discovery process should have the following capabilities:</p>
+
 
 <section>
+  <!-- Use-cases not supporting a requirement are commented out (for now) -->
 <h3>General</h3>
 <dl>
 <dt id="REQ-discovery-network-scope">Discovery Network Scope:</dt><dd>
@@ -9113,22 +9166,173 @@ Therefore, various data for agricultural machinery management should be represen
   and global (internet-wide) discovery.
   <ul>
   <li>Status: satisfied.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>
+    Supporting Use Cases:
+      <ul>
+        <li>
+          [[[#UC-interactive-public-spaces-1]]]
+        </li>
+        <li>
+          [[[#UC-smartcity-geolocation-1]]]
+        </li>
+        <li>
+          [[[#UC-meeting-room-event-assistance-1]]]
+        </li>
+        <li>
+          [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+        </li>
+        <li>
+          [[[#UC-cultural-spaces-museums-1]]]
+        </li>
+        <li>
+          [[[#UC-connected-building-energy-efficiency-1]]]
+        </li>
+        <li>
+          [[[#UC-automated-smart-building-management-1]]]
+        </li>
+        <li>
+          [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+        </li>
+        <li>
+          [[[#UC-retail-fountain-drink-ice-machine-1]]]
+        </li>
+        <li>
+          [[[#UC-retail-camera-device-1]]]
+        </li>
+        <li>
+          [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+        </li>
+        <li>
+          [[[#UC-health-notifiers-1]]]
+        </li>
+        <li>
+          [[[#UC-smart-car-configuration-management-1]]]
+        </li>
+        <li>
+          [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+        </li>
+        <li>
+          [[[#UC-discovery-1]]]
+        </li>
+        <li>
+          [[[#UC-multimodal-recognition-support-1]]]
+        </li>
+        <li>
+          [[[#UC-enhancement-of-synergistic-interactions-1]]]
+        </li>
+        <li>
+          [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+        </li>
+        <li>
+          [[[#UC-ar-virtual-guide-1]]]
+        </li>
+        <li>
+          [[[#UC-edge-computing-1]]]
+        </li>
+      </ul>
+    </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-via-third-party">Discovery via Third Party</dt><dd>
   Support discovery via third-party services (e.g. a directory service)
   in order to support sleeping devices and search over collections.
   <ul>
-  <li>Status: satisfied.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+    <li>Status: satisfied.</li>
+    <li> Supporting Use Cases:
+      <ul>
+        <!-- <li>
+          [[[#UC-interactive-public-spaces-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-smartcity-geolocation-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-meeting-room-event-assistance-1]]]
+        </li> -->
+        <li>
+          [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+        </li>
+        <li>
+          [[[#UC-cultural-spaces-museums-1]]]
+        </li>
+        <li>
+          [[[#UC-connected-building-energy-efficiency-1]]]
+        </li>
+        <li>
+          [[[#UC-automated-smart-building-management-1]]]
+        </li>
+        <li>
+          [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+        </li>
+        <li>
+          [[[#UC-retail-fountain-drink-ice-machine-1]]]
+        </li>
+        <li>
+          [[[#UC-retail-camera-device-1]]]
+        </li>
+        <!-- <li>
+          [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-health-notifiers-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-smart-car-configuration-management-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+        </li> -->
+        <li>
+          [[[#UC-discovery-1]]]
+        </li>
+        <!-- <li>
+          [[[#UC-multimodal-recognition-support-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-enhancement-of-synergistic-interactions-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-ar-virtual-guide-1]]]
+        </li> -->
+        <li>
+          [[[#UC-edge-computing-1]]]
+        </li>
+      </ul>
+    </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-via-scripting-api">Discovery via Scripting API:</dt><dd>
   Be compatible with discovery support in the WoT Scripting API.
   <ul>
-  <li>Status: partially satisfied.  Not all features supported.
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+    <li>Status: partially satisfied.  Not all features supported.
+    <li>Supporting Use Cases:
+      <ul>
+        <li>
+          [[[#UC-interactive-public-spaces-1]]]
+        </li>
+        <li>
+          [[[#UC-discovery-1]]]
+        </li>
+        <li>
+          [[[#UC-multimodal-recognition-support-1]]]
+        </li>
+        <li>
+          [[[#UC-enhancement-of-synergistic-interactions-1]]]
+        </li>
+        <li>
+          [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+        </li>
+        <li>
+          [[[#UC-ar-virtual-guide-1]]]
+        </li>
+        <li>
+          [[[#UC-edge-computing-1]]]
+        </li>
+      </ul>
+    </li>
   </ul>
 </dd>
 </dl>
@@ -9140,15 +9344,142 @@ Therefore, various data for agricultural machinery management should be represen
   Support various forms of query, including keyword, template, and semantic queries to
   filter results.
   <ul>
-  <li>Status: partially satisfied.  Query interface defined but optional.
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+    <li>Status: partially satisfied.  Query interface defined but optional.
+    <li>Supporting Use Cases:
+      <ul>
+        <!-- <li>
+          [[[#UC-interactive-public-spaces-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-smartcity-geolocation-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-meeting-room-event-assistance-1]]]
+        </li> -->
+        <li>
+          [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+        </li>
+        <li>
+          [[[#UC-cultural-spaces-museums-1]]]
+        </li>
+        <li>
+          [[[#UC-connected-building-energy-efficiency-1]]]
+        </li>
+        <li>
+          [[[#UC-automated-smart-building-management-1]]]
+        </li>
+        <!-- <li>
+          [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-retail-fountain-drink-ice-machine-1]]]
+        </li> -->
+        <li>
+          [[[#UC-retail-camera-device-1]]]
+        </li>
+        <!-- <li>
+          [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-health-notifiers-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-smart-car-configuration-management-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+        </li> -->
+        <li>
+          [[[#UC-discovery-1]]]
+        </li>
+        <!-- <li>
+          [[[#UC-multimodal-recognition-support-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-enhancement-of-synergistic-interactions-1]]]
+        </li> -->
+        <!-- <li>
+          [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+        </li> -->
+        <li>
+          [[[#UC-ar-virtual-guide-1]]]
+        </li>
+        <li>
+          [[[#UC-edge-computing-1]]]
+        </li>
+      </ul>
+    </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-spatial-queries">Discovery Spatial Queries:</dt><dd>
   Support spatial and sub-net limited queries.
   <ul>
-  <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+    <li>Status: TBD.</li>
+    <li>Supporting Use Cases:
+      <ul>
+        <li>
+          [[[#UC-interactive-public-spaces-1]]]
+        </li>
+        <li>
+          [[[#UC-smartcity-geolocation-1]]]
+        </li>
+        <!-- <li>
+          [[[#UC-meeting-room-event-assistance-1]]]
+        </li> -->
+        <li>
+          [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+        </li>
+        <li>
+          [[[#UC-cultural-spaces-museums-1]]]
+        </li>
+        <li>
+          [[[#UC-connected-building-energy-efficiency-1]]]
+        </li>
+        <li>
+          [[[#UC-automated-smart-building-management-1]]]
+        </li>
+        <li>
+          <!-- TODO: Is this a supporting use case?-->
+          [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+        </li>
+        <!-- <li>
+          [[[#UC-retail-fountain-drink-ice-machine-1]]]
+        </li> -->
+        <li>
+          [[[#UC-retail-camera-device-1]]]
+        </li>
+        <li>
+          [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+        </li>
+        <!-- <li>
+          [[[#UC-health-notifiers-1]]]
+        </li> -->
+        <li>
+          [[[#UC-smart-car-configuration-management-1]]]
+        </li>
+        <li>
+          [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+        </li>
+        <li>
+          [[[#UC-discovery-1]]]
+        </li>
+        <li>
+          [[[#UC-multimodal-recognition-support-1]]]
+        </li>
+        <li>
+          [[[#UC-enhancement-of-synergistic-interactions-1]]]
+        </li>
+        <li>
+          [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+        </li>
+        <li>
+          [[[#UC-ar-virtual-guide-1]]]
+        </li>
+        <li>
+          [[[#UC-edge-computing-1]]]
+        </li>
+      </ul>
+    </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-subnet-spanning-queries">Discovery Subnet Spanning Queries:</dt><dd>
@@ -9156,14 +9487,146 @@ Therefore, various data for agricultural machinery management should be represen
   Support queries that can span a subnet or multiple directory services.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        <!-- TODO: Is this really a supporting use-case? -->
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+      <!-- TODO: Not sure about this one-->
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+      <!-- TODO: Not sure about this one-->
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-scalablity">Discovery Scalability:</dt><dd>
   Be scalable to large databases of TDs.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        <!-- TODO: Is this really a supporting use-case? -->
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+      <!-- TODO: Not sure about this one-->
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+      <!-- TODO: Not sure about this one-->
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 </dl>
@@ -9176,28 +9639,175 @@ Therefore, various data for agricultural machinery management should be represen
   Support both dynamic and static metadata (TDs).
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        <!-- TODO: Is this really a supporting use-case? -->
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-deletion">Discovery Deletion:</dt><dd>
   Support explicit deletion of TDs.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-access-control">Discovery Access Control:</dt><dd>
   Support access control for TDs.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        <!-- TODO: Is this really a supporting use-case? -->
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-clean-up">Discovery Clean Up:</dt><dd>
   Automatically clean up TDs for devices that are no longer accessible or active.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        <!-- TODO: Is this really a supporting use-case? -->
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 </dl>
@@ -9210,14 +9820,140 @@ Therefore, various data for agricultural machinery management should be represen
   Align with IETF CoRE Resource Directories and CoRE Link Format, and DIDs.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <!-- <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-health-notifiers-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li> -->
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-edge-computing-1]]]
+      </li> -->
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-did">Discovery DID Alignment:</dt><dd>
   Align with W3C DIDs.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <!-- <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-health-notifiers-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li> -->
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-edge-computing-1]]]
+      </li> -->
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-extensible-introductions">Discovery Extensible Introductions:</dt><dd>
@@ -9226,7 +9962,72 @@ Therefore, various data for agricultural machinery management should be represen
   and allow these to be extended.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <!-- TODO: In general, Use-cases do not mention concrete mechanisms -->
+      <!-- <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li> -->
+
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-health-notifiers-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li> -->
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li> -->
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 </dl>
@@ -9239,21 +10040,212 @@ Therefore, various data for agricultural machinery management should be represen
   Support best known methods for confidentiality.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-authentication">Discovery Authentication:</dt><dd>
   Support best known methods for authentication.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-authorization">Discovery Authorization:</dt><dd>
   Support best known methods for authorization and role management.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 </dl>
@@ -9266,28 +10258,284 @@ Therefore, various data for agricultural machinery management should be represen
   Support authentication and authorization mechanisms that do not reveal user identities.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+
+      <!-- <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li> -->
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-health-notifiers-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li> -->
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-edge-computing-1]]]
+      </li> -->
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-lifecycle">Discovery Lifecycle:</dt><dd>
  Support device and information lifecycle, trust management, and access controls.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-limit-distribution">Discovery Limit Distribution:</dt><dd>
   Distribute TDs and other metadata only to authenticated and authorized entities.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-no-leaks">Discovery No Leaks:</dt><dd>
   Don’t leak TDs, other metadata, or queries to unauthorized entities.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 </dl>
@@ -9300,14 +10548,133 @@ Therefore, various data for agricultural machinery management should be represen
   Simple automatic discovery of Things and services with minimum to no human interaction.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li> -->
+
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li>
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li>
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 <dt id="REQ-discovery-human-authentication">Discovery Human Authentication:</dt><dd>
   Support for human authentication (eg pairing button presses) when appropriate.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li> -->
+
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li> -->
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li> -->
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 </dl>
@@ -9320,14 +10687,142 @@ Therefore, various data for agricultural machinery management should be represen
   It should be possible for a user to discover devices even if they have sensory or motor limitations.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li>
+
+      <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li>
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li>
+      <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li> -->
+      <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li> -->
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li> -->
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
   </ul>
 </dd>
 <dt id="REQ-discovery-alternatives">Discovery Alternatives:</dt><dd>
+  <!-- In general, this requirement seems a bit vague – alternative to what? -->
   Alternative forms of discovery should be supported to address different accessibility requirements.
   <ul>
   <li>Status: TBD.</li>
-  <li>Supporting Use Cases: <a href="#UC-discovery-1">UC-discovery-1</a>.</li>
+  <li>Supporting Use Cases:
+    <ul>
+      <li>
+        [[[#UC-interactive-public-spaces-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-smartcity-geolocation-1]]]
+      </li> -->
+
+      <!-- <li>
+        [[[#UC-meeting-room-event-assistance-1]]]
+      </li> -->
+      <li>
+        [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
+      </li>
+      <li>
+        [[[#UC-cultural-spaces-museums-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-connected-building-energy-efficiency-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-automated-smart-building-management-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-fountain-drink-ice-machine-1]]]
+      </li> -->
+      <!-- <li>
+        [[[#UC-retail-camera-device-1]]]
+      </li> -->
+      <li>
+        [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]
+      </li>
+      <li>
+        [[[#UC-health-notifiers-1]]]
+      </li>
+      <li>
+        [[[#UC-smart-car-configuration-management-1]]]
+      </li>
+      <!-- <li>
+        [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]
+      </li> -->
+      <li>
+        [[[#UC-discovery-1]]]
+      </li>
+      <li>
+        [[[#UC-multimodal-recognition-support-1]]]
+      </li>
+      <li>
+        [[[#UC-enhancement-of-synergistic-interactions-1]]]
+      </li>
+      <li>
+        [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]
+      </li>
+      <li>
+        [[[#UC-ar-virtual-guide-1]]]
+      </li>
+      <li>
+        [[[#UC-edge-computing-1]]]
+      </li>
+    </ul>
+  </li>
   </ul>
 </dd>
 </dl>
