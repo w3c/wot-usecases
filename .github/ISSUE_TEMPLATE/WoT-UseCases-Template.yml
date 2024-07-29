@@ -24,7 +24,7 @@ body:
     attributes:
       label: "Summary"
       description: |
-        Please describe the summary of any problems or improvements you would like to make in your use case.
+        Please summarize any problems or improvements you would like to make in your use case.
     validations:
       required: true
   - type: textarea
@@ -51,7 +51,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: "Please describe your use case details."
+      description: "Please describe your use case in detail."
     validations:
       required: true
   - type: checkboxes
