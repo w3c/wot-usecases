@@ -8,7 +8,6 @@ body:
       value: |
         > [!Note]
         Thank you for proposing a new use case! Use case proposals use a structured GitHub issue so that we can semi-automate the process. A bot will check the suggestion after creation, and report on missing properties or other problems before we review the suggestion.
-
   - type: input
     id: submitter
     attributes:
@@ -21,11 +20,11 @@ body:
       value: |
         ## Motivation
   - type: textarea
-    id: what_to_be_done
+    id: Summary
     attributes:
-      label: "What to be done?"
+      label: "Summary"
       description: |
-        Please describe any problems or improvements you would like to make in your use case.
+        Please summarize any problems or improvements you would like to make in your use case.
     validations:
       required: true
   - type: textarea
@@ -36,26 +35,23 @@ body:
         Please describe why you would like to use WoT in your use case.
     validations:
       required: true
-
   - type: markdown
     attributes:
       value: |
         ## Use Case Description and Expectations for stakeholders and environments
-
-
-  - type: textarea
-    id: description
-    attributes:
-      label: Description
-      description: "Please describe your use case details."
-    validations:
-      required: true
   - type: textarea
     id: gaps
     attributes:
       label: Gaps between the user's need and what's possible today
       description: |
         Describe any gaps that are not addressed in the current WoT standards and building blocks
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Please describe your use case in detail."
     validations:
       required: true
   - type: checkboxes
