@@ -12,7 +12,7 @@ body:
     id: submitter
     attributes:
       label: Submitter Contact Information
-      description: Please enter your desired form of contact (e.g. Email, GitHub account name). Write "Separate" if you want to provide this in another way.
+      description: Please enter your desired form of contact (e.g., email, GitHub account name). Write "Separate" if you want to provide this in another way.
     validations:
       required: true
   - type: markdown
@@ -23,28 +23,28 @@ body:
     id: domain
     attributes:
       label: Domain or Industry
-      description: If your use case is from a specific domain, please provide here.
+      description: If your use case is from a specific domain, please identify it here.
     validations:
       required: false
   - type: textarea
     id: introduction
     attributes:
       label: Introduction
-      description: Give a basic, non-technical introduction of the use case
+      description: Give a basic, non-technical introduction to the use case.
     validations:
       required: true
   - type: textarea
     id: wot-usage
     attributes:
       label: WoT Usage
-      description: How do you already use the Web of Things specifications such as Thing Description, Discovery, Bindings, Profiles, Scripting API? If you are not using WoT, please write "None".
+      description: How do you already use Web of Things specifications such as Thing Description, Discovery, Bindings, Profiles, Scripting API? If you are not using WoT, please write "None".
     validations:
       required: true
   - type: textarea
     id: environment
     attributes:
       label: Technical Environment
-      description: What kind of protocols, devices, data types, existing standards are present in the environment of the use case?
+      description: What kind(s) of protocol, device, data type, and/or existing standard are present in the environment of the use case?
     validations:
       required: false
   - type: markdown
@@ -55,7 +55,7 @@ body:
     id: problem
     attributes:
       label: Problem
-      description: What is the problem you want to highlight with this use case? What is missing in the specifications? Remove irrelevant specifications.
+      description: What is the problem you want to highlight with this use case? What is missing in the specifications? (Remove irrelevant specifications from this list.)
       value: |
         Overall Problem:
         Missing part in the specifications:
@@ -78,7 +78,7 @@ body:
     id: solution
     attributes:
       label: Solution Proposal
-      description: Do you already have a technical solution in mind? Please provide example TDs, specification text, code or similar.
+      description: Do you already have a technical solution in mind? Please provide example TDs, specification text, code, or similar.
     validations:
       required: false
   - type: markdown
@@ -89,7 +89,7 @@ body:
     id: comments
     attributes:
       label: Comments
-      description: Do you have other information you wish to provide?
+      description: Do you have any other information you wish to provide?
     validations:
       required: false
   
