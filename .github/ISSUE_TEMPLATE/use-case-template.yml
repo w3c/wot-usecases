@@ -23,7 +23,8 @@ body:
     id: domain
     attributes:
       label: Domain or Industry
-      description: If your use case is from a specific domain, please identify it here.
+      description: If your use case is from a [specific domain](https://w3c.github.io/wot-usecases/#domains), please identify it here.
+      placeholder: Examples such as Smart Home, Factory Automation, Building Automation, Smart City, Agriculture are available in the link
     validations:
       required: false
   - type: textarea
@@ -38,6 +39,12 @@ body:
     attributes:
       label: WoT Usage
       description: How do you already use Web of Things specifications such as Thing Description, Discovery, Bindings, Profiles, Scripting API? If you are not using WoT, please write "None".
+      value: |
+        Thing Description:
+        Discovery: 
+        Bindings: 
+        Profiles:
+        Scripting API
     validations:
       required: true
   - type: textarea
@@ -89,7 +96,7 @@ body:
     id: comments
     attributes:
       label: Comments
-      description: Do you have any other information you wish to provide?
+      description: Do you have any other information you wish to provide? If there are any security, privacy, accesibility or internationlization concerns, please provide them here.
     validations:
       required: false
   
