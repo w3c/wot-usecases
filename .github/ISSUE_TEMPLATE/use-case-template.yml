@@ -1,0 +1,102 @@
+name: Use Case Proposal for Gaps
+description: Use this template to provide a use case to motivate standardization work for a gap in the WoT specifications
+labels: ["UC"]
+title: "Provide a title for your use case..."
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!Note]
+        Thank you for proposing a new use case to motivate working on the gaps of WoT specifications! Use case proposals use a structured GitHub issue so that we can semi-automate the process. A bot will check the suggestion after creation, and report on missing properties or other problems before we review the suggestion.
+  - type: input
+    id: submitter
+    attributes:
+      label: Submitter Contact Information
+      description: Please enter your desired form of contact (e.g., email, GitHub account name). Write "Separate" if you want to provide this in another way.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Background
+  - type: input
+    id: domain
+    attributes:
+      label: Domain or Industry
+      description: If your use case is from a [specific domain](https://w3c.github.io/wot-usecases/#domains), please identify it here.
+      placeholder: Examples such as Smart Home, Factory Automation, Building Automation, Smart City, Agriculture are available in the link
+    validations:
+      required: false
+  - type: textarea
+    id: introduction
+    attributes:
+      label: Introduction
+      description: Give a basic, non-technical introduction to the use case.
+    validations:
+      required: true
+  - type: textarea
+    id: wot-usage
+    attributes:
+      label: WoT Usage
+      description: How do you already use Web of Things specifications such as Thing Description, Discovery, Bindings, Profiles, Scripting API? If you are not using WoT, please write "None".
+      value: |
+        Thing Description:
+        Discovery: 
+        Bindings: 
+        Profiles:
+        Scripting API
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Technical Environment
+      description: What kind(s) of protocol, device, data type, and/or existing standard are present in the environment of the use case?
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ## Problem
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is the problem you want to highlight with this use case? What is missing in the specifications? (Remove irrelevant specifications from this list.)
+      value: |
+        Overall Problem:
+        Missing part in the specifications:
+        - Thing Description
+        - Discovery: 
+        - Bindings:
+        - Profiles:
+        - Scripting API:
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: Expectation
+      description: How should this problem be solved? What is your expectation for the specifications to include?
+    validations:
+      required: false
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution Proposal
+      description: Do you already have a technical solution in mind? Please provide example TDs, specification text, code, or similar.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ## Other
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: Do you have any other information you wish to provide? If there are any security, privacy, accesibility or internationlization concerns, please provide them here.
+    validations:
+      required: false
+  
