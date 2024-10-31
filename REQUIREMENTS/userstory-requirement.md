@@ -17,6 +17,7 @@ Information about person or group submitting requirement.
 - Solve a Problem
 - Meet an Objective
 - **Link to at least one Use Case or Use Case Category (e.g. "ease of use")**
+    - Propose a new category if necessary, linking to at least one use case
 
 ## Details (optional):
 - Free-form extra details as needed
