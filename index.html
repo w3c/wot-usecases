@@ -8582,7 +8582,91 @@ Therefore, various data for agricultural machinery management should be represen
 
   <section id="requirements">
     <h1>Requirements</h1>
-
+    <section>
+      <h4>Use Case Categories</h4>
+      <p>The following categories group Use Cases that share a common requirement.
+      In the definition of a User Story, use case categories can be cited as  
+      motivations rather than (or in addition to) specific use cases.</p>
+      <dl>
+      <dt id="CAT-Security-Public-Service">Security Public Service</dt><dd>
+	<p>Provides a public service; misuse can result in lack of support to other users.</p>
+    <ul>  
+      <li>
+        Supporting Use Cases:
+        <ul>
+          <li>
+            [[[#UC-interactive-public-spaces-1]]]
+          </li>
+          <li>
+            [[[#UC-edge-computing-1]]]
+          </li>
+          <li>
+            [[[#UC-ar-virtual-guide-1]]]
+          </li>
+        </ul>
+      </li>
+    </ul>
+	</dd>
+	<dt id="CAT-Security-Private-Information">Security Private Information</dt><dd>
+	<p>Handles personal or confidential information. Misuse could disclose privately identifiable information (PII) or sensitive business information.</p> 
+    <ul>  
+      <li>
+        Supporting Use Cases:
+        <ul>
+          <li>
+            [[[#UC-interactive-public-spaces-1]]]
+          </li>
+          <li>
+            [[[#UC-edge-computing-1]]]
+          </li>
+          <li>
+            [[[#UC-ar-virtual-guide-1]]]
+          </li>
+        </ul>
+      </li>
+    </ul>
+	</dd>
+	<dt id="CAT-Security-Safety-Critical">Security Safety Critical</dt><dd>
+	<p>Misuse has the potential to cause personal injury.</p> 
+	  <ul>  
+      <li>
+        Supporting Use Cases:
+        <ul>
+          <li>
+            [[[#UC-interactive-public-spaces-1]]]
+          </li>
+          <li>
+            [[[#UC-edge-computing-1]]]
+          </li>
+          <li>
+            [[[#UC-ar-virtual-guide-1]]]
+          </li>
+        </ul>
+      </li>
+    </ul>
+	</dd>
+	<dt id="CAT-Security-Business-Critical">Security Business Critical</dt><dd>
+	Misuse has the potential to cause financial injury or damage to business operations or reputation.</p> 
+  <ul>  
+    <li>
+      Supporting Use Cases:
+      <ul>
+        <li>
+          [[[#UC-interactive-public-spaces-1]]]
+        </li>
+        <li>
+          [[[#UC-edge-computing-1]]]
+        </li>
+        <li>
+          [[[#UC-ar-virtual-guide-1]]]
+        </li>
+      </ul>
+    </li>
+  </ul>
+	</dd>
+        </dl>
+	</section>
+	  <p class="ednote">The following subsections will eventually be reorganized into user stories.</p>
     <section id="sec-functional-requirement">
       <h2>Functional Requirements</h2>
       <p>This section defines the properties required in an
@@ -8917,87 +9001,6 @@ Therefore, various data for agricultural machinery management should be represen
           mechanism commonly used in the web, such as Basic,
           Digest, Bearer and OAuth2.0.</p>
 	      -->
-	<section>
-	<h4>Use Case Categories</h4>
-	<dl>
-        <dt id="CAT-Security-Public-Service">Security Public Service</dt><dd>
-	<p>Provides a public service; misuse can result in lack of support to other users.</p>
-	  <ul>  
-      <li>
-        Supporting Use Cases:
-        <ul>
-          <li>
-            [[[#UC-interactive-public-spaces-1]]]
-          </li>
-          <li>
-            [[[#UC-edge-computing-1]]]
-          </li>
-          <li>
-            [[[#UC-ar-virtual-guide-1]]]
-          </li>
-        </ul>
-      </li>
-    </ul>
-	</dd>
-	<dt id="CAT-Security-Private-Information">Security Private Information</dt><dd>
-	<p>Handles personal or confidential information. Misuse could disclose privately identifiable information (PII) or sensitive business information.</p> 
-    <ul>  
-      <li>
-        Supporting Use Cases:
-        <ul>
-          <li>
-            [[[#UC-interactive-public-spaces-1]]]
-          </li>
-          <li>
-            [[[#UC-edge-computing-1]]]
-          </li>
-          <li>
-            [[[#UC-ar-virtual-guide-1]]]
-          </li>
-        </ul>
-      </li>
-    </ul>
-	</dd>
-	<dt id="CAT-Security-Safety-Critical">Security Safety Critical</dt><dd>
-	<p>Misuse has the potential to cause personal injury.</p> 
-	  <ul>  
-      <li>
-        Supporting Use Cases:
-        <ul>
-          <li>
-            [[[#UC-interactive-public-spaces-1]]]
-          </li>
-          <li>
-            [[[#UC-edge-computing-1]]]
-          </li>
-          <li>
-            [[[#UC-ar-virtual-guide-1]]]
-          </li>
-        </ul>
-      </li>
-    </ul>
-	</dd>
-	<dt id="CAT-Security-Business-Critical">Security Business Critical</dt><dd>
-	Misuse has the potential to cause financial injury or damage to business operations or reputation.</p> 
-  <ul>  
-    <li>
-      Supporting Use Cases:
-      <ul>
-        <li>
-          [[[#UC-interactive-public-spaces-1]]]
-        </li>
-        <li>
-          [[[#UC-edge-computing-1]]]
-        </li>
-        <li>
-          [[[#UC-ar-virtual-guide-1]]]
-        </li>
-      </ul>
-    </li>
-  </ul>
-	</dd>
-        </dl>
-	</section>
 	<section>
 		<h4>Risks</h4>
 	<p>Risks are defined in detail in the Security and Privacy Guidelines document.
