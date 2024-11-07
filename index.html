@@ -8582,8 +8582,8 @@ Therefore, various data for agricultural machinery management should be represen
 
   <section id="requirements">
     <h1>Requirements</h1>
-    <section>
-      <h4>Use Case Categories</h4>
+    <section id="sec-use-case-categories">
+      <h2>Use Case Categories</h2>
       <p>The following categories group Use Cases that share a common requirement.
       In the definition of a User Story, use case categories can be cited as  
       motivations rather than (or in addition to) specific use cases.</p>
@@ -8664,11 +8664,61 @@ Therefore, various data for agricultural machinery management should be represen
     </li>
   </ul>
 	</dd>
+	      	<dt id="CAT-TD-Creation-Simplification">TD Creation Simplification</dt><dd>
+	Simplifying the process of TD construction is helpful to ease the task of TD writers and generators.</p> 
+  <ul>  
+    <li>
+      Supporting Use Cases: All.
+    </li>
+  </ul>
+	</dd>
         </dl>
 	</section>
-	  <p class="ednote">The following subsections will eventually be reorganized into user stories.</p>
+    <section id="sec-user-stories">
+      <h2>User Stories</h2>
+      <p>User stories provide a high-level summary of a requirement in the form of
+      a single sentence that describes a stakeholder (Who has the need),
+      a technical requirement (What they need; a capability or condition; features),
+      and a functional requirement (Why they need it; the purpose or motivation; use cases).
+      These are often stated in the form of a sentence: "As a <em>Who</em> I need <em>What</em> so that I can <em>Why</em>."
+      For clarity, the following user stories break out each part in a list.
+      Each user story will in addition identify one or more Use Case (or Use Case Categories)
+      that establishes the motivation for the identified capability.
+      Capabilities correspond to sets of features in other technical specifications.
+      </p>
+      <p class="ednote">Define how user stories and features are linked.  We can link back from 
+      implemented features to user stories, but want to avoid unstable links e.g. to documents
+      maintained in github.  If we have bidirectional links we need some mechanism to keep them
+      consistent.</p>
+      <section id="US-connection-oriented-protocols">
+	      <h3>Connection Oriented Protocols</h3>
+	      <dl><dt>Who (As a...):</dt><dd>Deployer of devices with connection oriented protocols</dd>
+	          <dt>What (I need...):</dt><dd>Reusable Connection descriptions in a TD</dd>
+	          <dt>Why (so that I can...):</dt><dd>Better describe connection oriented protocols such as MQTT and WebSockets</dd>
+	      </dl>
+	      <p>Motivating Use Case: <a href="#UC-open-field-agriculture-1">Open Field Agriculture</a></p>
+	      <p>Details: For protocols that are based on an initial connection and then subsequent messages, 
+	      a Consumer can reuse the initial connection rather than opening a new connection each time.
+	      </p>
+      </section>
+      <section id="US-reusable-defaults-per-TD">
+	      <h3>Reusable Defaults per TD</h3>
+	      <dl><dt>Who (As a...):</dt><dd>Designer/Developer of TDs</dd>
+	          <dt>What (I need...):</dt><dd>Reusable Connection descriptions in a TD</dd>
+	          <dt>Why (so that I can...):</dt><dd>Simplify TDs in cases without usage of default terms or to avoid redundancy</dd>
+	      </dl>
+	      <p>Motivating Use Case Category: <a href="#CAT-TD-Creation-Simplification">TD Creation Simplification</a>.</p>
+	      <p>Details: There are at least three sub-problems that motivate this feature:</p>
+	      <ol><li>If the media type is common across forms but is not `application/json`, it otherwise needs to be repeated in each form.</li>
+                  <li>If there are common protocol stack configurations such as different default verbs, baud rates, and endianness, they otherwise need to be repeated in each form.</li>
+                  <li>Multiple bases are not otherwise possible, so each form repeats multiple bases. This is relevant (for example) when a TD has both local and public IP addresses.</li>
+	      </ol>
+      </section>
+    </section>  
     <section id="sec-functional-requirement">
+    
       <h2>Functional Requirements</h2>
+      <p class="ednote">We will keep this and following subsection for now but should consider reorganizing them into user stories.</p>
       <p>This section defines the properties required in an
         abstract Web of Things (WoT) architecture.</p>
 
