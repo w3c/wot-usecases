@@ -8576,15 +8576,12 @@ Therefore, various data for agricultural machinery management should be represen
       </dl>
     </section>
 
-  </section> <!-- horizontal-ucs -->
-
-  <!-- REQUIREMENTS -->
-
-  <section id="requirements">
-    <h1>Requirements</h1>
+  <!-- CATEGORIES -->
+	  
+  </section> 
     <section id="sec-use-case-categories">
-      <h2>Use Case Categories</h2>
-      <p>The following categories group Use Cases that share a common requirement.
+      <h1>Use Case Categories</h1>
+      <p>The following categories group Use Cases that share a common property.
       In the definition of a User Story, use case categories can be cited as  
       motivations rather than (or in addition to) specific use cases.</p>
       <dl>
@@ -8674,6 +8671,12 @@ Therefore, various data for agricultural machinery management should be represen
 	</dd>
         </dl>
 	</section>
+		
+  <!-- REQUIREMENTS -->
+
+  <section id="requirements">
+    <h1>Requirements</h1>
+
     <section id="sec-user-stories">
       <h2>User Stories</h2>
       <p>User stories provide a high-level summary of a requirement in the form of
@@ -8692,31 +8695,40 @@ Therefore, various data for agricultural machinery management should be represen
       consistent.</p>
       <section id="US-connection-oriented-protocols">
 	      <h3>Connection Oriented Protocols</h3>
-	      <dl><dt>Who (As a...):</dt><dd>Deployer of devices with connection oriented protocols</dd>
-	          <dt>What (I need...):</dt><dd>Reusable Connection descriptions in a TD</dd>
-	          <dt>Why (so that I can...):</dt><dd>Better describe connection oriented protocols such as MQTT and WebSockets</dd>
+	      <dl><dt>Who (As a...):</dt><dd>Deployer of devices with connection oriented protocols.</dd>
+	          <dt>What (I need...):</dt><dd><p>Reusable Connection descriptions in a TD.</p>
+		      <dl>
+	              <dt>Details:</dt><dd>For protocols that are based on an initial connection and then subsequent messages, 
+	                 a Consumer can reuse the initial connection rather than opening a new connection each time.</dd>
+		      </dl>
+                  <dt>Why (so that I can...):</dt><dd><p>Better describe connection oriented protocols such as MQTT and WebSockets.</p>
+		      <dl>
+	              <dt>Motivating Use Case:</dt><dd><a href="#UC-open-field-agriculture-1">Open Field Agriculture</a></dd>
+		      </dl>
+	          </dd>
 	      </dl>
-	      <p>Motivating Use Case: <a href="#UC-open-field-agriculture-1">Open Field Agriculture</a></p>
-	      <p>Details: For protocols that are based on an initial connection and then subsequent messages, 
-	      a Consumer can reuse the initial connection rather than opening a new connection each time.
 	      </p>
       </section>
       <section id="US-reusable-defaults-per-TD">
 	      <h3>Reusable Defaults per TD</h3>
 	      <dl><dt>Who (As a...):</dt><dd>Designer/Developer of TDs</dd>
 	          <dt>What (I need...):</dt><dd>Reusable Connection descriptions in a TD</dd>
-	          <dt>Why (so that I can...):</dt><dd>Simplify TDs in cases without usage of default terms or to avoid redundancy</dd>
+	          <dt>Why (so that I can...):</dt><dd><p>Simplify TDs in cases without usage of default terms or to avoid redundancy</p>
+		     <dl>
+	               <dt>Motivating Use Case Category:</dt><dd><p><a href="#CAT-TD-Creation-Simplification">TD Creation Simplification</a>.</p>
+	               <dt>Details:</dt><dd><p>There are at least three sub-problems that motivate this feature:</p>
+	                <ol><li>If the media type is common across forms but is not `application/json`, it otherwise needs to be repeated in each form.</li>
+                            <li>If there are common protocol stack configurations such as different default verbs, baud rates, and endianness, they otherwise need to be repeated in each form.</li>
+                            <li>Multiple bases are not otherwise possible, so each form repeats multiple bases. This is relevant (for example) when a TD has both local and public IP addresses.</li>
+	                </ol>
+		       </dd>
+		     </dl>
+	       </dd>
 	      </dl>
-	      <p>Motivating Use Case Category: <a href="#CAT-TD-Creation-Simplification">TD Creation Simplification</a>.</p>
-	      <p>Details: There are at least three sub-problems that motivate this feature:</p>
-	      <ol><li>If the media type is common across forms but is not `application/json`, it otherwise needs to be repeated in each form.</li>
-                  <li>If there are common protocol stack configurations such as different default verbs, baud rates, and endianness, they otherwise need to be repeated in each form.</li>
-                  <li>Multiple bases are not otherwise possible, so each form repeats multiple bases. This is relevant (for example) when a TD has both local and public IP addresses.</li>
-	      </ol>
       </section>
     </section>  
+	  
     <section id="sec-functional-requirement">
-    
       <h2>Functional Requirements</h2>
       <p class="ednote">We will keep this and following subsection for now but should consider reorganizing them into user stories.</p>
       <p>This section defines the properties required in an
