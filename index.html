@@ -7675,21 +7675,15 @@ Therefore, various data for agricultural machinery management should be represen
                 power/connectivity). </li>
             </ul>
           </dd>
-          <dd>Comment:
-            <ul>
-              <li>Investigate whether DTLS can be used.
-                Certainly the connection needs to be encrypted; this is required in the OAuth 2.0 specification.</li>
-              <li>Investigate whether protocols other than HTTP can be used, e.g. CoAP.
-                <ul>
-                  <li>found an interesting IETF draft RFC about CoAP support(encrypted using various mechanisms like
-                    DTLS
-                    or
-                    CBOR Object Signing and Encryption): <a
-                      href="https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-35">draft-ietf-ace-oauth</a></li>
-                </ul>
-              </li>
-            </ul>
-
+          <dd>
+            Constrained devices can be covered by this use-case by implementing
+            the authentication and authorization framework ACE-OAuth specified
+            in [[RFC9200]].
+            ACE-OAuth adapts OAuth 2.0 concepts to constrained environments with
+            the help of so-called profiles, which, for instance, enable the use
+            of CoAP with DTLS [[RFC9202]] or OSCORE [[RFC9203]].
+            However, the framework is also adaptable to other protocols such as
+            MQTT [[RFC9431]] by using a dedicated profile.
           </dd>
           <dt>Expected Data</dt>
           <dd>
