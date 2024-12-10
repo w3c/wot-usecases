@@ -28,7 +28,7 @@ body:
     attributes:
       value: |
         ## Who (As a...)
-  - type: textarea
+  - type: input
     id: who
     attributes:
       label: Main Stakeholder
@@ -43,7 +43,8 @@ body:
     attributes:
       label: Other Stakeholders
       description: |
-          Other stakeholders that may be impacted.
+          Other stakeholders that may be impacted.  Use a markdown list, with one stakeholder per line,
+          providing definitions in the Details field if necessary.
     validations:
       required: false
   - type: textarea
@@ -61,7 +62,7 @@ body:
     attributes:
       value: |
         ## What (I need...)
-  - type: textarea
+  - type: input
     id: what
     attributes:
       label: Capability
@@ -88,7 +89,7 @@ body:
     attributes:
       value: |
         ## Why (so that I can...)
-  - type: textarea
+  - type: input
     id: why
     attributes:
       label: Purpose
