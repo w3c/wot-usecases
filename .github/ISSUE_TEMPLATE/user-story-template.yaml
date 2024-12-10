@@ -45,6 +45,7 @@ body:
       description: |
           Other stakeholders that may be impacted.  Use a markdown list, with one stakeholder per line,
           providing definitions in the Details field if necessary.
+      render: markdown
     validations:
       required: false
   - type: textarea
@@ -71,7 +72,6 @@ body:
         summary suitable for inclusion in a user story sentence.  This should be a single
         noun phrase.  If multiple, distinct capabilities are needed to satisfy a single
         purpose consider proposing multiple user stories.
-      render: markdown
     validations:
       required: true
   - type: textarea
@@ -83,6 +83,7 @@ body:
          capability already exists (if you are documenting the requirements for an existing feature)
          or link to an issue or MD file describing the technical details for a feature if the
          feature does not yet exist but is to be proposed.
+      render: markdown
     validations:
       required: false
   - type: markdown
