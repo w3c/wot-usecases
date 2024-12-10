@@ -38,6 +38,7 @@ body:
         Define the property that the set of use cases in the category have in common.
         This property is to be used to motivate one or more requirements that use cases in the
         category also have in common.
+      render: markdown
     validations:
       required: true
   - type: markdown
