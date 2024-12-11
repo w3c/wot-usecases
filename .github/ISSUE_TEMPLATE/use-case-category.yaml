@@ -54,6 +54,8 @@ body:
         Use cases should be referenced by links.  If a Use Case has not yet been
         merged into the document it is permissible to link to an issue proposing
         a new Use Case.
+        If the property applies to all Use Cases (is a universal goal)
+        then "All" may be used here.
       render: markdown
     validations:
       required: true
