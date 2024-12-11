@@ -1,0 +1,62 @@
+name: Use Case Category
+description: |
+  Use this template to propose a Use Case Category, which groups use cases by
+  a common property.
+labels: ["UCC"]
+title: "Provide a concise title for your Use Case Category (will be used to form an id)."
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!Note]
+        Thank you for proposing a new use case category!
+        Use case category proposals use a structured GitHub issue so that we can semi-automate the process.
+        Use case categories are sets of use cases that share some common property, which allows
+        use cases with requirements in common to be grouped.  Use cases can belong to more than
+        one category, but are not required to belong to any.
+        See the document for examples.
+        A bot will check the suggestion after creation, and report on missing properties or other problems
+        before we review the suggestion.
+  - type: input
+    id: submitter
+    attributes:
+      label: Submitter Contact Information
+      description: |
+        Please enter your desired form of contact (e.g. email or GitHub account name).
+        Write "Separate" if you want to provide this in another way.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Defining Property
+  - type: textarea
+    id: property
+    attributes:
+      label: Property
+      description: |
+        Define the property that the set of use cases in the category have in common.
+        This property is to be used to motivate one or more requirements that use cases in the
+        category also have in common.
+      render: markdown
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Members
+  - type: textarea
+    id: members
+    attributes:
+      label: Members
+      description: |
+        List one or more use cases that hold the property defining the category.
+        Use cases should be referenced by links.  If a Use Case has not yet been
+        merged into the document it is permissible to link to an issue proposing
+        a new Use Case.
+        If the property applies to all Use Cases (is a universal goal)
+        then "All" may be used here.
+      render: markdown
+    validations:
+      required: true
+  
