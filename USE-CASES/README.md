@@ -4,7 +4,6 @@
 
 Please submit your use cases to using a GitHub issue with the provided Use Case template.
   - A Pull Request is preferred if you are a member of the WoT IG or WG. For external collaborators, issues are the only way to submit Use Cases.
-2. Make sure to use <https://w3c.github.io/wot-usecases/#definitions> when formulating your use case.
 
 ## After approval by the Use Cases TF
 
