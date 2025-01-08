@@ -11,8 +11,8 @@ Please submit your **use case** via [Github Issues](https://github.com/w3c/wot-u
 ## Review by the Use Cases TF
 
 1. The proposed use case will be reviewed by the Use Cases TF.
-1. If the use case is appoved, the Use Cases TF will include the use case into the [WoT Use Cases and Requirements Note](https://w3c.github.io/wot-usecases/).
-1. If the use case has any problems, e.g., need further clarification about the items, the Use Cases TF will give a comment on the GitHub Issue of the use case.
+2. If the use case is approved, the Use Cases TF will add the use case to the [WoT Use Cases and Requirements Note](https://w3c.github.io/wot-usecases/).
+3. If the use case has any problems, e.g., it needs further clarification about the some element(s), the Use Cases TF will request those clarification(s) in a comment on the GitHub Issue of the use case.
 
 ## Notes on the items within the Use Case Template
 
