@@ -83,7 +83,7 @@ Provide links to relevant standards that are relevant for this use case
 * Describe any issues related to accessibility; if there are none, say "none" and justify
 * As a guide, see also [accessibility review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/accessibility.md)
 
-#### Internationalisation (i18n) Considerations:
+#### Internationalization (i18n) Considerations:
 
 * Describe any issues related to internationalization; if there are none, say "none" and justify
 * As a guide, see also [internationalization review](https://github.com/w3c/wot-architecture/blob/main/publication/ver11/internationalization.md)
