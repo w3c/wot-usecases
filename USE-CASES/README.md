@@ -22,7 +22,7 @@ Put your name here
     
 ### Motivation
 
-Provide a description of the problem that is solved by the use case and a reason why this use case is important for the users
+Provide a description of the problem that is solved by the use case. Include some reason(s) why this use case is important for the users.
     
 ### Description
 
