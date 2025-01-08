@@ -7,4 +7,4 @@ Please submit your use cases to using a GitHub issue with the provided Use Case 
 
 ## After approval by the Use Cases TF
 
-1. Use cases that have been reviewed and approved for inclusion in [the IG note](https://w3c.github.io/wot-usecases/) are moved to https://github.com/w3c/wot-usecases/tree/master/USE-CASES/processed for archival purposes.
+Use cases that have been reviewed and approved for inclusion in [the IG note](https://w3c.github.io/wot-usecases/) are closed but not deleted for archival purposes.
