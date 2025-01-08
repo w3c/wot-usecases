@@ -98,7 +98,7 @@ We use common terminology across the use cases to make sure
 everybody has the same understanding and the descriptions match
 when we combine the use case in a single document.
 
-Please avoid domain specific terminology, e.g. don't use MNO, telco. Better use network operator instead.
+Please avoid domain specific terminology, e.g., don't use "MNO", "telco". Better to use "network operator" instead.
 
 ### Stakeholders and actors
 
