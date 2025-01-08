@@ -3,7 +3,6 @@
 ## How to submit use cases
 
 Please submit your use cases to using a GitHub issue with the provided Use Case template.
-  - A Pull Request is preferred if you are a member of the WoT IG or WG. For external collaborators, issues are the only way to submit Use Cases.
 
 ## After approval by the Use Cases TF
 
