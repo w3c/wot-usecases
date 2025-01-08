@@ -66,7 +66,7 @@ Provide links to relevant standards that are relevant for this use case
 
 Provide links to relevant standards that are relevant for this use case
 
-### Optional clarificaitons on user's needs (optional but to be described as specific as possible so that requirements can be extracte precisely later)
+### Clarifications of user's needs (optional, but to be described as specifically as possible, so that precise requirements can be extracted later)
 
 #### Security Considerations
 
