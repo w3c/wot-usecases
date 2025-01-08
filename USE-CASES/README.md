@@ -58,7 +58,7 @@ List the type of expected data, e.g. weather and climate data, medical condition
 List the affected WoT deliverables that have to be changed to enable this use case
 
 
-#### Existing standards by other WGs within W3C
+#### Existing standards from other WGs within W3C
 
 Provide links to relevant standards that are relevant for this use case
 
