@@ -49,7 +49,7 @@ List the target devices, e.g. as a sensor, solar panel, air conditioner
 
 #### Expected Data
 
-List the type of expected data, e.g. weather and climate data, medical conditions, machine sensors, vehicle data
+List the type(s) of expected data, e.g., weather and climate data, medical conditions, machine sensors, vehicle data
 
 ### Relationships with existing resources and standards
 
