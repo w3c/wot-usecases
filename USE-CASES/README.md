@@ -90,7 +90,7 @@ Provide links to relevant standards that are relevant for this use case
 
 ### Gaps between the user's need and what's possible today
 
-Describe any gaps that are not addressed in the current WoT standards and building blocks
+Describe any gaps that are not addressed by the current WoT standards and building blocks
 
 ## Terminology
 
