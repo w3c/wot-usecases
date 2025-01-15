@@ -17,7 +17,7 @@ Provide a description from the user's perspective.
 #### Target Users
 
 List all stakeholders that are involved in the use case from the following list:
-- device owners
+- device owner
 - device user
 - cloud provider
 - service provider
