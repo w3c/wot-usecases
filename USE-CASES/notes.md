@@ -44,7 +44,7 @@ List any WoT deliverables that will have to be changed to enable this use case.
 
 #### Existing standards from other WGs within W3C
 
-Provide links to relevant standards that are relevant for this use case
+Provide links to standards that are relevant to this use case.
 
 #### Existing standards outside W3C
 
