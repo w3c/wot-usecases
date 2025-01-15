@@ -48,7 +48,7 @@ Provide links to standards that are relevant to this use case.
 
 #### Existing standards outside W3C
 
-Provide links to relevant standards that are relevant for this use case
+Provide links to standards that are relevant to this use case.
 
 ### Clarifications of user's needs (optional, but to be described as specifically as possible, so that precise requirements can be extracted later)
 
