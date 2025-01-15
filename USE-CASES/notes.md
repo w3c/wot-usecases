@@ -94,7 +94,7 @@ Please avoid domain specific terminology, e.g., don't use "MNO", "telco". Better
 - gateway manufacturer  
 - network operator (potentially transparent for WoT use cases)  
 - identity provider  
-- directory service operator?  
+- directory service operator
 
 ### Categories and Domains
 
