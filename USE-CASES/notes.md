@@ -39,7 +39,7 @@ List the type(s) of expected data, e.g., weather and climate data, medical data,
 
 #### Dependencies on WoT- Affected WoT deliverables and/or work items
 
-List the affected WoT deliverables that have to be changed to enable this use case
+List any WoT deliverables that will have to be changed to enable this use case.
 
 
 #### Existing standards from other WGs within W3C
