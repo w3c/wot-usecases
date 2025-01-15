@@ -29,7 +29,7 @@ List all stakeholders that are involved in the use case from the following list:
 
 #### Expected Devices
 
-List the target device(s), e.g., a sensor, a solar panel, an air conditioner
+List the target device(s), e.g., a sensor, a solar panel, an air conditioner.
 
 #### Expected Data
 
