@@ -2793,8 +2793,6 @@ Therefore, various data for agricultural machinery management should be represen
               <li>indoor coordinates</li>
             </ul>
 
-            There is no standard API specification for the WoT Thing Directory to maintain and query TDs.
-
           </dd>
           <dt>Existing Standards</dt>
           <dd>
@@ -7677,21 +7675,15 @@ Therefore, various data for agricultural machinery management should be represen
                 power/connectivity). </li>
             </ul>
           </dd>
-          <dd>Comment:
-            <ul>
-              <li>Investigate whether DTLS can be used.
-                Certainly the connection needs to be encrypted; this is required in the OAuth 2.0 specification.</li>
-              <li>Investigate whether protocols other than HTTP can be used, e.g. CoAP.
-                <ul>
-                  <li>found an interesting IETF draft RFC about CoAP support(encrypted using various mechanisms like
-                    DTLS
-                    or
-                    CBOR Object Signing and Encryption): <a
-                      href="https://tools.ietf.org/html/draft-ietf-ace-oauth-authz-35">draft-ietf-ace-oauth</a></li>
-                </ul>
-              </li>
-            </ul>
-
+          <dd>
+            Constrained devices can be covered by this use-case by implementing
+            the authentication and authorization framework ACE-OAuth specified
+            in [[RFC9200]].
+            ACE-OAuth adapts OAuth 2.0 concepts to constrained environments with
+            the help of so-called profiles, which, for instance, enable the use
+            of CoAP with DTLS [[RFC9202]] or OSCORE [[RFC9203]].
+            However, the framework is also adaptable to other protocols such as
+            MQTT [[RFC9431]] by using a dedicated profile.
           </dd>
           <dt>Expected Data</dt>
           <dd>
@@ -8562,8 +8554,8 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
 
           <ul>
-            <li><a href="https://tools.ietf.org/html/draft-hong-t2trg-iot-edge-computing-04">IoT Edge Challenges and
-                Functions</a>, IETF Internet-Draft, Network Working Group, version 04, expires 26 November 2020.</li>
+            <li><a href="https://datatracker.ietf.org/doc/html/draft-irtf-t2trg-iot-edge-10">IoT Edge Challenges and
+                Functions</a>, IETF Internet-Draft, Network Working Group, version 10, expires 18 March 2024.</li>
             <li><a href="https://www.iiconsortium.org/fog-and-edge-white-papers.htm">IIC/OpenFog</a>, Fog and Edge
               Computing White Papers</li>
             <li><a href="https://www.etsi.org/technologies/multi-access-edge-computing">ETSI MEC</a>, ETSI standards for
@@ -8576,15 +8568,167 @@ Therefore, various data for agricultural machinery management should be represen
       </dl>
     </section>
 
-  </section> <!-- horizontal-ucs -->
+  <!-- CATEGORIES -->
+	  
+  </section> 
+    <section id="sec-use-case-categories">
+      <h1>Use Case Categories</h1>
+      <p>The following categories group Use Cases that share a common property.
+      In the definition of a User Story, use case categories can be cited as  
+      motivations rather than (or in addition to) specific use cases.</p>
 
+
+      <section id="CAT-Security-Public-Service">
+      <h2>Security Public Service</h2>
+	<p>Provides a public service. Misuse can result in lack of support to other users.</p>
+	<ul>  
+      <li>
+        Supporting Use Cases:
+        <ul>
+          <li>
+            [[[#UC-interactive-public-spaces-1]]]
+          </li>
+          <li>
+            [[[#UC-edge-computing-1]]]
+          </li>
+          <li>
+            [[[#UC-ar-virtual-guide-1]]]
+          </li>
+        </ul>
+      </li>
+    </ul>
+      </section>
+	
+	<section id="CAT-Security-Private-Information">
+	<h2>Security Private Information</h2>
+	<p>Handles personal or confidential information. Misuse could disclose privately identifiable information (PII) or sensitive business information.</p> 
+    <ul>  
+      <li>
+        Supporting Use Cases:
+        <ul>
+          <li>
+            [[[#UC-interactive-public-spaces-1]]]
+          </li>
+          <li>
+            [[[#UC-edge-computing-1]]]
+          </li>
+          <li>
+            [[[#UC-ar-virtual-guide-1]]]
+          </li>
+        </ul>
+      </li>
+    </ul>
+	</section>
+	<section id="CAT-Security-Safety-Critical">
+	<h2>Security Safety Critical</h2>
+	<p>Misuse has the potential to cause personal injury.</p> 
+	  <ul>  
+      <li>
+        Supporting Use Cases:
+        <ul>
+          <li>
+            [[[#UC-interactive-public-spaces-1]]]
+          </li>
+          <li>
+            [[[#UC-edge-computing-1]]]
+          </li>
+          <li>
+            [[[#UC-ar-virtual-guide-1]]]
+          </li>
+        </ul>
+      </li>
+    </ul>
+	</section>
+	<section id="CAT-Security-Business-Critical">
+		<h2>Security Business Critical</h2>
+	<p>Misuse has the potential to cause financial injury or damage to business operations or reputation.</p> 
+  <ul>  
+    <li>
+      Supporting Use Cases:
+      <ul>
+        <li>
+          [[[#UC-interactive-public-spaces-1]]]
+        </li>
+        <li>
+          [[[#UC-edge-computing-1]]]
+        </li>
+        <li>
+          [[[#UC-ar-virtual-guide-1]]]
+        </li>
+      </ul>
+    </li>
+  </ul>
+	</section>
+	      	<section id="CAT-TD-Creation-Simplification">
+			<h2>TD Creation Simplification</h2>
+	<p>Simplifying the process of TD construction is helpful to ease the task of TD writers and generators.</p> 
+  <ul>  
+    <li>
+      Supporting Use Cases: All.
+    </li>
+  </ul>
+	</section>
+</section>
+		
   <!-- REQUIREMENTS -->
 
   <section id="requirements">
     <h1>Requirements</h1>
 
+    <section id="sec-user-stories">
+      <h2>User Stories</h2>
+      <p>User stories provide a high-level summary of a requirement in the form of
+      a single sentence that describes a stakeholder (Who has the need),
+      a technical requirement (What they need; a capability or condition; features),
+      and a functional requirement (Why they need it; the purpose or motivation; use cases).
+      These are often stated in the form of a sentence: "As a <em>Who</em> I need <em>What</em> so that I can <em>Why</em>."
+      For clarity, the following user stories break out each part in a list.
+      Each user story will in addition identify one or more Use Case (or Use Case Categories)
+      that establishes the motivation for the identified capability.
+      Capabilities correspond to sets of features in other technical specifications.
+      </p>
+      <p class="ednote">Define how user stories and features are linked.  We can link back from 
+      implemented features to user stories, but want to avoid unstable links e.g. to documents
+      maintained in github.  If we have bidirectional links we need some mechanism to keep them
+      consistent.</p>
+      <section id="US-connection-oriented-protocols">
+	      <h3>Connection Oriented Protocols</h3>
+	      <dl><dt>Who (As a...):</dt><dd>Deployer of devices with connection oriented protocols.</dd>
+	          <dt>What (I need...):</dt><dd><p>Reusable Connection descriptions in a TD.</p>
+		      <dl>
+	              <dt>Details:</dt><dd>For protocols that are based on an initial connection and then subsequent messages, 
+	                 a Consumer can reuse the initial connection rather than opening a new connection each time.</dd>
+		      </dl>
+                  <dt>Why (so that I can...):</dt><dd><p>Better describe connection oriented protocols such as MQTT and WebSockets.</p>
+		      <dl>
+	              <dt>Motivating Use Case:</dt><dd><a href="#UC-open-field-agriculture-1">Open Field Agriculture</a></dd>
+		      </dl>
+	          </dd>
+	      </dl>
+	      </p>
+      </section>
+      <section id="US-reusable-defaults-per-TD">
+	      <h3>Reusable Defaults per TD</h3>
+	      <dl><dt>Who (As a...):</dt><dd>Designer/Developer of TDs</dd>
+	          <dt>What (I need...):</dt><dd>Reusable Connection descriptions in a TD</dd>
+	          <dt>Why (so that I can...):</dt><dd><p>Simplify TDs in cases without usage of default terms or to avoid redundancy</p>
+		     <dl>
+	               <dt>Motivating Use Case Category:</dt><dd><p><a href="#CAT-TD-Creation-Simplification">TD Creation Simplification</a>.</p>
+	               <dt>Details:</dt><dd><p>There are at least three sub-problems that motivate this feature:</p>
+	                <ol><li>If the media type is common across forms but is not `application/json`, it otherwise needs to be repeated in each form.</li>
+                            <li>If there are common protocol stack configurations such as different default verbs, baud rates, and endianness, they otherwise need to be repeated in each form.</li>
+                            <li>Multiple bases are not otherwise possible, so each form repeats multiple bases. This is relevant (for example) when a TD has both local and public IP addresses.</li>
+	                </ol>
+		       </dd>
+		     </dl>
+	       </dd>
+	      </dl>
+      </section>
+    </section>  
+	  
     <section id="sec-functional-requirement">
       <h2>Functional Requirements</h2>
+      <p class="ednote">We will keep this and following subsection for now but should consider reorganizing them into user stories.</p>
       <p>This section defines the properties required in an
         abstract Web of Things (WoT) architecture.</p>
 
@@ -8918,87 +9062,6 @@ Therefore, various data for agricultural machinery management should be represen
           Digest, Bearer and OAuth2.0.</p>
 	      -->
 	<section>
-	<h4>Use Case Categories</h4>
-	<dl>
-        <dt id="CAT-Security-Public-Service">Security Public Service</dt><dd>
-	<p>Provides a public service; misuse can result in lack of support to other users.</p>
-	  <ul>  
-      <li>
-        Supporting Use Cases:
-        <ul>
-          <li>
-            [[[#UC-interactive-public-spaces-1]]]
-          </li>
-          <li>
-            [[[#UC-edge-computing-1]]]
-          </li>
-          <li>
-            [[[#UC-ar-virtual-guide-1]]]
-          </li>
-        </ul>
-      </li>
-    </ul>
-	</dd>
-	<dt id="CAT-Security-Private-Information">Security Private Information</dt><dd>
-	<p>Handles personal or confidential information. Misuse could disclose privately identifiable information (PII) or sensitive business information.</p> 
-    <ul>  
-      <li>
-        Supporting Use Cases:
-        <ul>
-          <li>
-            [[[#UC-interactive-public-spaces-1]]]
-          </li>
-          <li>
-            [[[#UC-edge-computing-1]]]
-          </li>
-          <li>
-            [[[#UC-ar-virtual-guide-1]]]
-          </li>
-        </ul>
-      </li>
-    </ul>
-	</dd>
-	<dt id="CAT-Security-Safety-Critical">Security Safety Critical</dt><dd>
-	<p>Misuse has the potential to cause personal injury.</p> 
-	  <ul>  
-      <li>
-        Supporting Use Cases:
-        <ul>
-          <li>
-            [[[#UC-interactive-public-spaces-1]]]
-          </li>
-          <li>
-            [[[#UC-edge-computing-1]]]
-          </li>
-          <li>
-            [[[#UC-ar-virtual-guide-1]]]
-          </li>
-        </ul>
-      </li>
-    </ul>
-	</dd>
-	<dt id="CAT-Security-Business-Critical">Security Business Critical</dt><dd>
-	Misuse has the potential to cause financial injury or damage to business operations or reputation.</p> 
-  <ul>  
-    <li>
-      Supporting Use Cases:
-      <ul>
-        <li>
-          [[[#UC-interactive-public-spaces-1]]]
-        </li>
-        <li>
-          [[[#UC-edge-computing-1]]]
-        </li>
-        <li>
-          [[[#UC-ar-virtual-guide-1]]]
-        </li>
-      </ul>
-    </li>
-  </ul>
-	</dd>
-        </dl>
-	</section>
-	<section>
 		<h4>Risks</h4>
 	<p>Risks are defined in detail in the Security and Privacy Guidelines document.
 	The following just relates risks to categories.  Each use case that is subject
@@ -9010,7 +9073,7 @@ Therefore, various data for agricultural machinery management should be represen
 	<dt id="REQ-to-do-PBT">PBT: MITIGATIONS TO BE NAMED</dt><dd>
 	  <ul>
 	    <li>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-protocol-binding-threat">WoT Protocol Binding Threat</a></li>
-            <li>Categories Impacted: 
+            <li>Categories Impacted:
               <ul>
 		<li><a href="#CAT-Security-Private-Information">Security Private Information</a></li>
 	      </ul>
@@ -9020,7 +9083,7 @@ Therefore, various data for agricultural machinery management should be represen
 	<dt id="REQ-to-do-ETC">ETC: MITIGATIONS TO BE NAMED</dt><dd>
 	  <ul>
 	    <li>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-exposed-thing-compromise">WoT Interface Threat - Exposed Thing Compromise</a></li>
-            <li>Categories Impacted: 
+            <li>Categories Impacted:
               <ul>
 		<li><a href="#CAT-Security-Private-Information">Security Private Information</a></li>
 		<li><a href="#CAT-Security-Safety-Critical">Security Safety Critical</a></li>
@@ -9028,11 +9091,11 @@ Therefore, various data for agricultural machinery management should be represen
 	      </ul>
 	    </li>
 	  </ul>
-	</dd>	 
+	</dd>
         <dt id="REQ-Security-Access-Control">Security Access Control</dt><dd>
 	  <ul>
 	    <li>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-unauthorized-wot-interface-access">WoT Interface Threat - Unauthorized WoT Interface Access</a></li>
-            <li>Categories Impacted:  
+            <li>Categories Impacted:
               <ul>
 		<li><a href="#CAT-Security-Private-Information">Security Private Information</a></li>
 	      </ul>
@@ -9042,7 +9105,7 @@ Therefore, various data for agricultural machinery management should be represen
 	<dt id="REQ-to-do-DOS">DOS: MITIGATIONS TO BE NAMED</dt><dd>
 	  <ul>
 	    <li>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-dos-threat">WoT DoS Threat</a></li>
-            <li>Categories Impacted: 
+            <li>Categories Impacted:
               <ul>
 		<li><a href="#CAT-Security-Public-Service">Security Public Service</a></li>
 	      </ul>
@@ -9052,7 +9115,7 @@ Therefore, various data for agricultural machinery management should be represen
 	<dt id="REQ-to-do-DDOS">DDOS: MITIGATIONS TO BE NAMED</dt><dd>
 	  <ul>
 	    <li>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-ddos-threat">WoT DDoS Threat</a></li>
-            <li>Categories Impacted: 
+            <li>Categories Impacted:
               <ul>
 		<li><a href="#CAT-Security-Public-Service">Security Public Service</a></li>
 	      </ul>
@@ -9062,7 +9125,7 @@ Therefore, various data for agricultural machinery management should be represen
 	<dt id="REQ-to-do-CTDA">CTDA: MITIGATIONS TO BE NAMED</dt><dd>
 	  <ul>
 	    <li>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-td-authenticity">WoT Communication Threat - TD Authenticity</a></li>
-            <li>Categories Impacted: 
+            <li>Categories Impacted:
               <ul>
 		<li><a href="#CAT-Security-Public-Service">Security Public Service</a></li>
 	      </ul>
@@ -9072,7 +9135,7 @@ Therefore, various data for agricultural machinery management should be represen
 	<dt id="REQ-to-do-CTDCP">CTDCP: MITIGATIONS TO BE NAMED</dt><dd>
 	  <ul>
 	    <li>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-td-confidentiality-and-privacy">WoT Communication Threat - TD Confidentiality and Privacy</a></li>
-            <li>Categories Impacted: 
+            <li>Categories Impacted:
               <ul>
 		<li><a href="#CAT-Security-Public-Service">Security Public Service</a></li>
 	      </ul>
@@ -9082,7 +9145,7 @@ Therefore, various data for agricultural machinery management should be represen
 	<dt id="REQ-to-do-CSUDA">CSUDA: MITIGATIONS TO BE NAMED</dt><dd>
 	  <ul>
 	    <li>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-system-user-data-authenticity">WoT Communication Threat - System User Data Authenticity</a></li>
-            <li>Categories Impacted: 
+            <li>Categories Impacted:
               <ul>
 		<li><a href="#CAT-Security-Public-Service">Security Public Service</a></li>
 	      </ul>
@@ -9092,7 +9155,7 @@ Therefore, various data for agricultural machinery management should be represen
 	<dt id="REQ-to-do-CSUDCP">CSUDCP: MITIGATIONS TO BE NAMED</dt><dd>
 	  <ul>
 	    <li>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-system-user-data-confidentiality-and-privacy">WoT Communication Threat - System User Data Confidentiality and Privacy</a></li>
-            <li>Categories Impacted: 
+            <li>Categories Impacted:
               <ul>
 		<li><a href="#CAT-Security-Public-Service">Security Public Service</a></li>
 	      </ul>
@@ -9102,7 +9165,7 @@ Therefore, various data for agricultural machinery management should be represen
 	<dt id="REQ-to-do-CSC">CSC: MITIGATIONS TO BE NAMED</dt><dd>
 	  <ul>
 	    <li>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-side-channels">WoT Communication Threat - Side Channels</a></li>
-            <li>Categories Impacted: 
+            <li>Categories Impacted:
               <ul>
 		<li><a href="#CAT-Security-Public-Service">Security Public Service</a></li>
 	      </ul>
@@ -9171,6 +9234,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>
     Supporting Use Cases:
       <ul>
+	<li>
+	  [[[#UC-irrigation-in-outdoor-environment-1]]]
+	</li>
         <li>
           [[[#UC-interactive-public-spaces-1]]]
         </li>
@@ -9358,6 +9424,9 @@ Therefore, various data for agricultural machinery management should be represen
         <!-- <li>
           [[[#UC-meeting-room-event-assistance-1]]]
         </li> -->
+	<li>
+	  [[[#UC-irrigation-in-outdoor-environment-1]]]
+	</li>
         <li>
           [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]
         </li>
@@ -9419,6 +9488,9 @@ Therefore, various data for agricultural machinery management should be represen
     <li>Status: TBD.</li>
     <li>Supporting Use Cases:
       <ul>
+	<li>
+	  [[[#UC-irrigation-in-outdoor-environment-1]]]
+	</li>
         <li>
           [[[#UC-interactive-public-spaces-1]]]
         </li>
@@ -9491,6 +9563,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Status: TBD.</li>
   <li>Supporting Use Cases:
     <ul>
+      <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
       <li>
         <!-- TODO: Is this really a supporting use-case? -->
         [[[#UC-interactive-public-spaces-1]]]
@@ -9644,6 +9719,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Supporting Use Cases:
     <ul>
       <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
+      <li>
         <!-- TODO: Is this really a supporting use-case? -->
         [[[#UC-interactive-public-spaces-1]]]
       </li>
@@ -9716,6 +9794,9 @@ Therefore, various data for agricultural machinery management should be represen
     <ul>
       <li>
         [[[#UC-discovery-1]]]
+      </li>
+      <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
       </li>
     </ul>
   </li>
@@ -10045,6 +10126,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Supporting Use Cases:
     <ul>
       <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
+      <li>
         [[[#UC-interactive-public-spaces-1]]]
       </li>
       <li>
@@ -10114,6 +10198,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Status: TBD.</li>
   <li>Supporting Use Cases:
     <ul>
+      <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
       <li>
         [[[#UC-interactive-public-spaces-1]]]
       </li>
@@ -10185,6 +10272,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Status: TBD.</li>
   <li>Supporting Use Cases:
     <ul>
+      <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
       <li>
         [[[#UC-interactive-public-spaces-1]]]
       </li>
@@ -10334,6 +10424,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Supporting Use Cases:
     <ul>
       <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
+      <li>
         [[[#UC-interactive-public-spaces-1]]]
       </li>
       <li>
@@ -10405,6 +10498,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Supporting Use Cases:
     <ul>
       <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
+      <li>
         [[[#UC-interactive-public-spaces-1]]]
       </li>
       <li>
@@ -10475,6 +10571,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Status: TBD.</li>
   <li>Supporting Use Cases:
     <ul>
+      <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
       <li>
         [[[#UC-interactive-public-spaces-1]]]
       </li>
@@ -10553,6 +10652,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Supporting Use Cases:
     <ul>
       <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
+      <li>
         [[[#UC-interactive-public-spaces-1]]]
       </li>
       <!-- <li>
@@ -10624,6 +10726,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Supporting Use Cases:
     <ul>
       <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
+      <li>
         [[[#UC-interactive-public-spaces-1]]]
       </li>
       <!-- <li>
@@ -10691,6 +10796,9 @@ Therefore, various data for agricultural machinery management should be represen
   <li>Status: TBD.</li>
   <li>Supporting Use Cases:
     <ul>
+      <li>
+	[[[#UC-irrigation-in-outdoor-environment-1]]]
+      </li>
       <li>
         [[[#UC-interactive-public-spaces-1]]]
       </li>
