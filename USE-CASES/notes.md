@@ -128,7 +128,7 @@ Monitor the health of people in public places to
 control the spread of infectious diseases.
 [smartcity-health-monitoring.md](smartcity-health-monitoring.md)
 
-Connected devices in ICU units.
+Connected devices in ICUs (Intensive Care Units).
 [MedicalDevices.md](MedicalDevices.md)
 
 ##### Private Health
