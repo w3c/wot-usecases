@@ -79,10 +79,10 @@ Describe any gaps that are not addressed by the current WoT standards and buildi
 ## Terminology
 
 We use common terminology across the use cases to make sure 
-everybody has the same understanding and the descriptions match
+everybody has the same understanding and the descriptions will match
 when we combine the use cases into a single document.
 
-Please avoid domain specific terminology, e.g., don't use "MNO", "telco". Better to use "network operator" instead.
+Please avoid domain-specific terminology, e.g., don't use "MNO" or "telco"; better to use "network operator" or "telephone company" instead.
 
 ### Stakeholders and actors
 
