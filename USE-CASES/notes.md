@@ -86,7 +86,7 @@ Please avoid domain specific terminology, e.g., don't use "MNO", "telco". Better
 
 ### Stakeholders and actors
 
-- device owners  
+- device owner
 - device user  
 - cloud provider  
 - service provider  
