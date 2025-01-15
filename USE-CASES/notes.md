@@ -10,7 +10,7 @@ Provide a description of the problem that is solved by the use case. Include som
     
 ### Description
 
-Provide a description from the users perspective
+Provide a description from the user's perspective.
 
 ### Expectations for stakeholders and environments
 
