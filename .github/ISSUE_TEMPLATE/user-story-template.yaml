@@ -51,7 +51,7 @@ body:
   - type: textarea
     id: who-details
     attributes:
-      label: Stakholder Details
+      label: Stakeholder Details
       description: |
           Additional information on the stakeholders, if required.
           If any stakeholder is not one already defined in the document, propose a definition (if a user role)
