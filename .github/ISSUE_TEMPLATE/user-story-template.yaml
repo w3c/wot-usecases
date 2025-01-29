@@ -31,7 +31,7 @@ body:
   - type: input
     id: who
     attributes:
-      label: Main Stakeholder
+      label: Main Stakeholder (As a...)
       description: |
         The stakeholder who would benefit from or needs the feature.
         This may be an organization, such as an SDO, or a user role, such as a system owner or TD developer.
@@ -51,7 +51,7 @@ body:
   - type: textarea
     id: who-details
     attributes:
-      label: Details
+      label: Stakeholder Details
       description: |
           Additional information on the stakeholders, if required.
           If any stakeholder is not one already defined in the document, propose a definition (if a user role)
@@ -66,7 +66,7 @@ body:
   - type: input
     id: what
     attributes:
-      label: Capability
+      label: Capability (I need...)
       description: |
         What is the desired capability, capacity, or feature?  Provide a short
         summary suitable for inclusion in a user story sentence.  This should be a single
@@ -77,7 +77,7 @@ body:
   - type: textarea
     id: what-details
     attributes:
-      label: Details
+      label: Capability Details
       description: |
          Link to existing features (e.g. sets of assertions) in published WoT standards if the
          capability already exists (if you are documenting the requirements for an existing feature)
@@ -93,7 +93,7 @@ body:
   - type: input
     id: why
     attributes:
-      label: Purpose
+      label: Purpose (so that I can...)
       description: |
         Provide a simple verb phrase summarizing the purpose of the requested feature.
     validations:
@@ -101,7 +101,7 @@ body:
   - type: textarea
     id: why-details
     attributes:
-      label: Details
+      label: Purpose Details
       description: |
         Any additional details needed to better explain the purpose of the
         proposed capability.  If there are multiple reasons for a particular
@@ -112,7 +112,7 @@ body:
   - type: textarea
     id: why-motivation
     attributes:
-      label: Motivation
+      label: Purpose Motivation
       description: |
         Provide links to one or more motivating Use Cases or Use Case Categories.
         If a new Use Case or Use Case Category is needed submit separate issues
