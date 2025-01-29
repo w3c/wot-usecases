@@ -22,6 +22,16 @@ It includes various use case proposals and a consolidated document based on thos
 
 Each commit here will sync it to the master, which will expose the content to http://w3c.github.io/wot-usecases/.
 
+## Definitions
+A **Use Case** documents a scenario that accomplishes a specific set of goals that need to be supported by
+WoT.  Ideally Use Cases identify specific necessary features or gaps in current standards.
+
+A **User Story** relates one or more Use Cases and a specific feature or set of features in the WoT specifications.
+They document requirements, and also indicate the stakeholder that requires the feature.
+
+A **Use Case Category** is a set of Use Cases with a common property.  These are used to group Use Cases so they
+can be referred to easily when defining requirements, i.e., User Stories.
+
 ## Contributing
 The following documents the process to submit a Use Case Proposal for consideration in the WoT Use Cases and Requirements
 document.  The process is similar for User Stories and Use Case Categories, but with the corresponding template.
