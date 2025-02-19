@@ -96,7 +96,7 @@ body:
     id: comments
     attributes:
       label: Comments
-      description: Do you have any other information you wish to provide? If there are any security, privacy, accesibility or internationlization concerns, please provide them here.
+      description: Do you have any other information you wish to provide? If there are any security, privacy, accessibility or internationalization concerns, please provide them here.
     validations:
       required: false
-  
+
