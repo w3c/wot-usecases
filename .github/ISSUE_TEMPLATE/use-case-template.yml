@@ -38,13 +38,27 @@ body:
     id: wot-usage
     attributes:
       label: WoT Usage
-      description: How do you already use Web of Things specifications such as Thing Description, Discovery, Bindings, Profiles, Scripting API? If you are not using WoT, please write "None".
+      description: How do you already use Web of Things specifications such as Thing Description, Discovery, Bindings, Profiles, Scripting API? If you are not using WoT, please write "None".  Delete any sections that are not relevant.
       value: |
-        Thing Description:
-        Discovery: 
-        Bindings: 
-        Profiles:
-        Scripting API
+        #### Thing Description
+
+
+
+        #### Discovery
+
+
+
+        #### Bindings
+
+
+
+        #### Profiles
+
+
+
+        #### Scripting API
+
+
     validations:
       required: true
   - type: textarea
@@ -62,16 +76,35 @@ body:
     id: problem
     attributes:
       label: Problem
-      description: What is the problem you want to highlight with this use case? What is missing in the specifications? (Remove irrelevant specifications from this list.)
+      description: What is the problem you want to highlight with this use case? What is missing in the specifications? Remove irrelevant specifications from the list under "Missing parts of the specifications".
       value: |
-        Overall Problem:
-        Missing part in the specifications:
-        - Thing Description
-        - Discovery: 
-        - Bindings:
-        - Profiles:
-        - Scripting API:
-      render: markdown
+        #### Overall Problem
+
+
+
+        #### Missing parts of the specifications
+
+
+
+        ##### Thing Description
+
+
+
+        ##### Discovery
+
+
+
+        ##### Bindings
+
+
+
+        ##### Profiles
+
+
+
+        ##### Scripting API
+
+
     validations:
       required: true
   - type: textarea
