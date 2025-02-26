@@ -1,8 +1,8 @@
-# [DRAFT] Task Force Issue Filtering Process
+# Suggested Task Force Issue Filtering Process
 
 Task forces can look into issues to find "promising use cases". Below is a process to extract such use cases in the task force level. 
 
-Note: This process is already in the TD TF. If agreed upon, it can be a guideline for all TFs.
+Note: This process is already used in the TD TF. If agreed upon, it can be a guideline for all TFs.
 
 ## Procedure
 
@@ -22,9 +22,12 @@ Note: This process is already in the TD TF. If agreed upon, it can be a guidelin
 - If you think they are relevant for the charter, add the "Selected for Use Case" label.
 - In the end, we will provide Use Case or User Story descriptions for the issues that have "Needs use case" and "Selected for Use Case" labels. This will create input for step 1 of the Process document.
 
-3. Once an issue has "Needs use case" and "Selected for Use Case" labels, the TF waits for the Use Case TF to finalize the input template.
-   Once the template is finalized, the TF moves all the issue content into the use cases repository via the template.
-   Once that is agreed upon (e.g. merged into the use cases repository), the TF closes the issue by linking to the document in the use case repository.          
+3. Once an issue has "Needs use case" and "Selected for Use Case" labels, the TF creates an issue in the use cases repository via the template reflecting the content of the original issue.
+   Once that issue is accepted by the Use Case TF (e.g. merged into the Use Cases and Requirements editor's draft), the TF closes the issue by linking to the document in the use case repository.
+
+NOTE: The "Needs Use Case" label in the source TF covers User Stories, Use Cases, and Use Case Categories.  When the issues are created in
+the Use Case TF repository, a source "use case" may be broken up into multiple user stories, use cases, or use case categories as needed.
+The TF should try to break down submissions into small, clear user stories as appropriate, and create new actual use cases only when necessary.
 
 For this to work, the repository should have the following labels ready:
   - Has Use Case Potential
