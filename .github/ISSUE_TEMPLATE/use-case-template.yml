@@ -76,33 +76,33 @@ body:
     id: problem
     attributes:
       label: Problem
-      description: What is the problem you want to highlight with this use case? What is missing in the specifications? (Remove irrelevant specifications from this list.)
+      description: What is the problem you want to highlight with this use case? What is missing in the specifications? Remove irrelevant specifications from the list under "Missing parts of the specifications".
       value: |
         #### Overall Problem
 
 
 
-        #### Missing part in the specifications
+        #### Missing parts of the specifications
 
 
 
-        #### Thing Description
+        ##### Thing Description
 
 
 
-        #### Discovery
+        ##### Discovery
 
 
 
-        #### Bindings
+        ##### Bindings
 
 
 
-        #### Profiles
+        ##### Profiles
 
 
 
-        #### Scripting API
+        ##### Scripting API
 
 
     validations:
