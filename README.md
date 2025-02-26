@@ -36,6 +36,9 @@ can be referred to easily when defining requirements, i.e., User Stories.
 The following documents the process to submit a Use Case Proposal for consideration in the WoT Use Cases and Requirements
 document.  The process is similar for User Stories and Use Case Categories, but with the corresponding template.
 
+A TF may want to follow the process for generating and organizing use cases, user stories, and use case
+categories [suggested here](tf-issue-process.md).
+
 ### How to Submit a Use Case Proposal
 Please submit your Use Case Proposal via a [Github Issue](https://github.com/w3c/wot-usecases/issues/new/choose) using the appropriate template.
 The [notes](notes.md) file has additional information on how to prepare a Use Case Proposal.
