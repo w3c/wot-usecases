@@ -38,7 +38,7 @@ body:
     id: wot-usage
     attributes:
       label: WoT Usage
-      description: How do you already use Web of Things specifications such as Thing Description, Discovery, Bindings, Profiles, Scripting API? If you are not using WoT, please write "None".
+      description: How do you already use Web of Things specifications such as Thing Description, Discovery, Bindings, Profiles, Scripting API? If you are not using WoT, please write "None".  Delete any sections that are not relevant.
       value: |
         #### Thing Description
 
