@@ -45,7 +45,6 @@ body:
       description: |
           Other stakeholders that may be impacted.  Use a markdown list, with one stakeholder per line,
           providing definitions in the Details field if necessary.
-      render: markdown
     validations:
       required: false
   - type: textarea
@@ -56,7 +55,6 @@ body:
           Additional information on the stakeholders, if required.
           If any stakeholder is not one already defined in the document, propose a definition (if a user role)
           or a link (if an organization, such as an SDO).
-      render: markdown
     validations:
       required: false
   - type: markdown
@@ -83,7 +81,6 @@ body:
          capability already exists (if you are documenting the requirements for an existing feature)
          or link to an issue or MD file describing the technical details for a feature if the
          feature does not yet exist but is to be proposed.
-      render: markdown
     validations:
       required: false
   - type: markdown
@@ -106,7 +103,6 @@ body:
         Any additional details needed to better explain the purpose of the
         proposed capability.  If there are multiple reasons for a particular
         capability provide them as a list.
-      render: markdown
     validations:
       required: false
   - type: textarea
@@ -117,8 +113,5 @@ body:
         Provide links to one or more motivating Use Cases or Use Case Categories.
         If a new Use Case or Use Case Category is needed submit separate issues
         and link to these issues, otherwise link to corresponding sections in the document.
-      render: markdown
     validations:
       required: true
-
-  
