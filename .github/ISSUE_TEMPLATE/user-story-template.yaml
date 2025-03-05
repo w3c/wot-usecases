@@ -111,7 +111,7 @@ body:
   - type: textarea
     id: why-motivation
     attributes:
-      label: Purpose Motivation
+      label: Motivating Use Cases
       description: |
         Provide links to one or more motivating Use Cases or Use Case Categories.
         If a new Use Case or Use Case Category is needed submit separate issues
