@@ -25,6 +25,7 @@ body:
       description: |
         Please enter a compact version of the title, consisting of three or four words at most,
         that can be used as a section header.  This will also be converted into a section id.
+        It should not be duplicate of an existing id or section header.
     validations:
       required: true
   - type: input
