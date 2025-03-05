@@ -69,6 +69,9 @@ while (<IN>) {
         print "</ul>\n";
         $is_list = 0;
     }
+    if (/^```/) {
+      print "</code>\n";
+    }
     if (/^```json/ && /^```js/) {
       print "<code>\n";
     } else {
