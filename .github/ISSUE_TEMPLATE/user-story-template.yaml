@@ -17,7 +17,7 @@ body:
         before we review the suggestion.
 
         If you want to insert code or json examples in markdown as code blocks,
-        please use "```js" or "```json" at the start and "```" at the end.
+        please use "\`\`\`js" or "\`\`\`json" at the start and "\`\`\`" at the end.
   - type: input
     id: submitter
     attributes:
