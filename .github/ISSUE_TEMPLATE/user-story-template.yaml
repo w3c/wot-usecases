@@ -2,6 +2,8 @@ name: User Story Proposal
 description: |
   Use this template to provide a User Story for a WoT requirement,
   connecting motivating use cases to features.
+  If you want to insert code or json examples in markdown as code blocks,
+  please use "```js" or "```json" at the start and "```" at the end.
 labels: ["US"]
 title: "Provide a concise title for your user story (will be used to form an id)."
 body:
