@@ -3,7 +3,7 @@ description: |
   Use this template to provide a User Story for a WoT requirement,
   connecting motivating use cases to features.
 labels: ["US"]
-title: "Provide a concise title for your user story (will be used to form an id)."
+title: "Provide a concise title for your user story.  This will be used as the issue title."
 body:
   - type: markdown
     attributes:
@@ -18,6 +18,15 @@ body:
 
         If you want to insert code or json examples in markdown as code blocks,
         please use "\`\`\`js" or "\`\`\`json" at the start and "\`\`\`" at the end.
+  - type: input
+    id: identifier
+    attributes:
+      label: Identifier
+      description: |
+        Please enter a compact version of the title, consisting of three or four words at most,
+        that can be used as a section header.  This will also be converted into a section id.
+    validations:
+      required: true
   - type: input
     id: submitter
     attributes:
