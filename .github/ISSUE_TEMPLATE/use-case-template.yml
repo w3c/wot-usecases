@@ -8,6 +8,9 @@ body:
       value: |
         > [!Note]
         Thank you for proposing a new use case to motivate working on the gaps of WoT specifications! Use case proposals use a structured GitHub issue so that we can semi-automate the process. A bot will check the suggestion after creation, and report on missing properties or other problems before we review the suggestion.
+        
+        If you want to insert code or json examples in markdown as code blocks,
+        please use "\`\`\`js" or "\`\`\`json" at the start and "\`\`\`" at the end.
   - type: input
     id: submitter
     attributes:
