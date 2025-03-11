@@ -27,13 +27,6 @@ while (<IN>) {
     $_ =~ s/\[(.*)\]\((.*)\)/<a href="$2">$1<\/a>/;
   }
 
-  if (/^## Title: (.*)$/) {
-    $current_level = 2;
-    ${title} = $1;
-    print "<section id=\"${id}\">\n";
-    print "<h2>${title}</h2>\n";
-    print "<dl>\n";
-    $is_list = 0;
   if (/^### Identifier/) {
     $title_flag = 1;
   } elsif ( $title_flag eq 1 ) {
@@ -76,13 +69,6 @@ while (<IN>) {
     }
     print "<li>${topic}</li>\n";
     $is_list = 1;
-
-  } else {
-    if (($is_list eq 1) && (/^$/)) {
-        print "</ul>\n";
-        $is_list = 0;
-    }
-
   } elsif (($is_list eq 1) && (/^$/)) {
     print "</ul>\n";
     $is_list = 0;
