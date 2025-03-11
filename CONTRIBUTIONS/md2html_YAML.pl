@@ -9,6 +9,8 @@ my $is_list = 0;
 my $topic = "";
 my $current_level = 0;
 my $prev_level = 0;
+my $code = 0;
+my $title_flag = 0;
 
 $src = $ARGV[0];
 $id = $src;
@@ -32,7 +34,18 @@ while (<IN>) {
     print "<h2>${title}</h2>\n";
     print "<dl>\n";
     $is_list = 0;
-
+  if (/^### Identifier/) {
+    $title_flag = 1;
+  } elsif ( $title_flag eq 1 ) {
+    if ( /^\w/ ) {
+      $current_level = 2;
+      ${title} = $_;
+      print "<section id=\"${id}\">\n";
+      print "<h3>${title}</h>\n";
+      print "<dl>\n";
+      $is_list = 0;
+      $title_flag = 0;
+      }
   } elsif (/^### (.*)$/) {
     $current_level = 3;
     ${section} = $1;
@@ -69,13 +82,21 @@ while (<IN>) {
         print "</ul>\n";
         $is_list = 0;
     }
-    if (/^```/) {
-      print "</code>\n";
-    }
-    if (/^```json/ && /^```js/) {
-      print "<code>\n";
-    } else {
-        print "$_\n";
+
+  } elsif (($is_list eq 1) && (/^$/)) {
+    print "</ul>\n";
+    $is_list = 0;
+  } elsif ( (/^```json/) || (/^```js/)) {
+    print "<code>\n";
+    $code = 1;
+  } elsif ( ($code eq 1 ) && (/^```/) ) {
+    print "</code>\n";
+    $code = 0;
+  } elsif ( ($code eq 1 )) {
+    print "$_\n";
+  } else {
+    if ( /^\w/ ) {
+      print "$_\n";
     }
   }
 }
