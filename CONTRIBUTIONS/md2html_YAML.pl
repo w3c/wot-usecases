@@ -34,7 +34,7 @@ while (<IN>) {
       $current_level = 2;
       ${title} = $_;
       print "<section id=\"${id}\">\n";
-      print "<h3>${title}</h>\n";
+      print "<h3>${title}</h3>\n";
       print "<dl>\n";
       $is_list = 0;
       $title_flag = 0;
