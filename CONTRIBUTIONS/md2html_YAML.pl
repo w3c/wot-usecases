@@ -38,7 +38,7 @@ while (<IN>) {
       print "<dl>\n";
       $is_list = 0;
       $title_flag = 0;
-      }
+    }
   } elsif (/^### (.*)$/) {
     $current_level = 3;
     ${section} = $1;
