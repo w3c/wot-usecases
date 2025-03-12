@@ -17,7 +17,7 @@ body:
         See the document for examples.
         A bot will check the suggestion after creation, and report on missing properties or other problems
         before we review the suggestion.
-- type: input
+  - type: input
     id: identifier
     attributes:
       label: Identifier
