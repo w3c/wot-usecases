@@ -1,7 +1,7 @@
 name: Use Case Proposal
 description: Use this template to provide a use case to motivate standardization work for a gap in the WoT specifications
 labels: ["UC"]
-title: "Provide a title for your use case..."
+title: "Provide a concise title for your use case.  This will be used as the issue title."
 body:
   - type: markdown
     attributes:
