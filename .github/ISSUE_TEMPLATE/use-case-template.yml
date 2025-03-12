@@ -12,6 +12,16 @@ body:
         If you want to insert code or json examples in markdown as code blocks,
         please use "\`\`\`js" or "\`\`\`json" at the start and "\`\`\`" at the end.
   - type: input
+    id: identifier
+    attributes:
+      label: Identifier
+      description: |
+        Please enter a compact version of the title, consisting of three or four words at most,
+        that can be used as a section header.  This will also be converted into a section id.
+        It should not be duplicate of an existing id or section header.
+    validations:
+      required: true
+  - type: input
     id: submitter
     attributes:
       label: Submitter Contact Information
