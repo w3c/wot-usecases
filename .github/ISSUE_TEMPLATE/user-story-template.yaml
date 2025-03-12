@@ -2,7 +2,7 @@ name: User Story Proposal
 description: |
   Use this template to provide a User Story for a WoT requirement,
   connecting motivating use cases to features.
-labels: ["User Story"]
+labels: ["user-story"]
 title: "Provide a concise title for your user story.  This will be used as the issue title."
 body:
   - type: markdown
