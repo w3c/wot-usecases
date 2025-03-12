@@ -2,7 +2,7 @@ name: Use Case Category Proposal
 description: |
   Use this template to propose a Use Case Category, which groups use cases by
   a common property.
-labels: ["Use Case Category"]
+labels: ["use-case-category"]
 title: "Provide a concise title for your use case category.  This will be used as the issue title."
 body:
   - type: markdown
