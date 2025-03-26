@@ -99,11 +99,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Why (so that I can...)
+        ## Why (so that...)
   - type: input
     id: why
     attributes:
-      label: Purpose (so that I can...)
+      label: Purpose (so that...)
       description: |
         Provide a simple verb phrase summarizing the purpose of the requested feature.
     validations:
