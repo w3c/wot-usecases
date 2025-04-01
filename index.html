@@ -8724,6 +8724,83 @@ Therefore, various data for agricultural machinery management should be represen
 	       </dd>
 	      </dl>
       </section>
+      <section id="td-byte-ordering">
+        <h3>Byte Ordering for Binary Data Formats</h3>
+        <dl>
+          <dt>Submitter Contact Information</dt>
+            <dd>
+              Ege Korkan, Michael McCool
+            </dd>
+          <dt>Main Stakeholder (As a...)</dt>
+            <dd>
+              device manufacturer
+            </dd>
+          <dt>Other Stakeholders</dt>
+            <dd>
+              TD consumer
+            </dd>
+          <dt>Capability (I need...)</dt>
+            <dd>
+              express the byte ordering of data from my devices in binary protocols (such as Modbus, Profinet, etc)
+            </dd>
+          <dt>Capability Details</dt>
+            <dd>
+              <ul>
+                <li><a href="https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms">https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms</a></li>
+                <li><a href="https://github.com/w3c/wot-binding-templates/pull/331">feat(modbus): introduce modbus type and byte/word order wot-binding-templates#331</a></li>
+              </ul>
+            </dd>
+          <dt>Purpose (so that...)</dt>
+            <dd>
+              TD consumers can communicate with my devices
+            </dd>
+          <dt>Motivating Use Cases</dt>
+            <dd>
+              <ul>
+                <li><a href="https://w3c.github.io/wot-usecases/#UC-production-monitoring-1">https://w3c.github.io/wot-usecases/#UC-production-monitoring-1</a></li>
+                <li><a href="https://w3c.github.io/wot-usecases/#UC-smart-grids-1">https://w3c.github.io/wot-usecases/#UC-smart-grids-1</a></li>
+                <li><a href="https://w3c.github.io/wot-usecases/#UC-smart-building-1">https://w3c.github.io/wot-usecases/#UC-smart-building-1</a></li>
+            </dd>
+        </dl>
+      </section>
+      <section id="td-polling-rate-limit">
+        <h3>Polling Rate Limit</h3>
+          <dl>
+            <dt>Submitter Contact Information</dt>
+              <dd>
+                Ege Korkan, Michael McCool
+              </dd>
+            <dt>Main Stakeholder (As a...)</dt>
+              <dd>
+                device manufacturer
+              </dd>
+            <dt>Other Stakeholders</dt>
+              <dd>
+                TD consumer
+              </dd>
+            <dt>Capability (I need...)</dt>
+              <dd>
+                express the polling rate limit from devices without event notifications (such as Modbus, Profinet, etc.)
+              </dd>
+            <dt>Capability Details</dt>
+              <dd>
+                <ul>
+                  <li><a href="https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms">https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms</a></li>
+                </ul>
+              </dd>
+            <dt>Purpose (so that...)</dt>
+              <dd>
+                TD consumers can use an appropriate polling rate
+              </dd>
+            <dt>Motivating Use Cases</dt>
+              <dd>
+                <ul>
+                  <li><a href="https://w3c.github.io/wot-usecases/#UC-production-monitoring-1">https://w3c.github.io/wot-usecases/#UC-production-monitoring-1</a></li>
+                  <li><a href="https://w3c.github.io/wot-usecases/#UC-smart-grids-1">https://w3c.github.io/wot-usecases/#UC-smart-grids-1</a></li>
+                  <li><a href="https://w3c.github.io/wot-usecases/#UC-smart-building-1">https://w3c.github.io/wot-usecases/#UC-smart-building-1</a></li>
+              </dd>
+          </dl>
+      </section>
     </section>  
 	  
     <section id="sec-functional-requirement">
