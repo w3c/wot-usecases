@@ -8693,15 +8693,16 @@ Therefore, various data for agricultural machinery management should be represen
       consistent.</p>
       <section id="US-connection-oriented-protocols">
 	      <h3>Connection Oriented Protocols</h3>
-	      <dl><dt>Who (As a...):</dt><dd>Deployer of devices with connection oriented protocols.</dd>
+	      <dl><dt>Submitters</dt><dd>Ege Korkan</dd>
+		  <dt>Who (As a...):</dt><dd>Deployer of devices with connection oriented protocols.</dd>
 	          <dt>What (I need...):</dt><dd><p>Reusable Connection descriptions in a TD.</p>
 		      <dl>
 	              <dt>Details:</dt><dd>For protocols that are based on an initial connection and then subsequent messages, 
 	                 a Consumer can reuse the initial connection rather than opening a new connection each time.</dd>
 		      </dl>
-                  <dt>Why (so that I can...):</dt><dd><p>Better describe connection oriented protocols such as MQTT and WebSockets.</p>
+                  <dt>Why (so that...):</dt><dd><p>Better describe connection oriented protocols such as MQTT and WebSockets.</p>
 		      <dl>
-	              <dt>Motivating Use Case:</dt><dd><a href="#UC-open-field-agriculture-1">Open Field Agriculture</a></dd>
+	              <dt>Motivating Use Case:</dt><dd>[[[#UC-open-field-agriculture-1]]]</dd>
 		      </dl>
 	          </dd>
 	      </dl>
@@ -8709,11 +8710,12 @@ Therefore, various data for agricultural machinery management should be represen
       </section>
       <section id="US-reusable-defaults-per-TD">
 	      <h3>Reusable Defaults per TD</h3>
-	      <dl><dt>Who (As a...):</dt><dd>Designer/Developer of TDs</dd>
+	      <dl><dt>Submitters</dt><dd>Ege Korkan</dd>
+                  <dt>Who (As a...):</dt><dd>Designer/Developer of TDs</dd>
 	          <dt>What (I need...):</dt><dd>Reusable Connection descriptions in a TD</dd>
-	          <dt>Why (so that I can...):</dt><dd><p>Simplify TDs in cases without usage of default terms or to avoid redundancy</p>
+	          <dt>Why (so that...):</dt><dd><p>Simplify TDs in cases without usage of default terms or to avoid redundancy</p>
 		     <dl>
-	               <dt>Motivating Use Case Category:</dt><dd><p><a href="#CAT-TD-Creation-Simplification">TD Creation Simplification</a>.</p>
+	               <dt>Motivating Use Case Category:</dt><dd><p>[[[#CAT-TD-Creation-Simplification]]].</p>
 	               <dt>Details:</dt><dd><p>There are at least three sub-problems that motivate this feature:</p>
 	                <ol><li>If the media type is common across forms but is not `application/json`, it otherwise needs to be repeated in each form.</li>
                             <li>If there are common protocol stack configurations such as different default verbs, baud rates, and endianness, they otherwise need to be repeated in each form.</li>
@@ -8768,39 +8770,40 @@ Therefore, various data for agricultural machinery management should be represen
       <section id="td-polling-rate-limit">
         <h3>Polling Rate Limit</h3>
           <dl>
-            <dt>Submitter Contact Information</dt>
+	<dt>Issue:</dt>
+	    <dd>
+		<a href="https://github.com/w3c/wot-usecases/issues/346">Issue 346</a>
+	    </dd>
+            <dt>Submitters</dt>
               <dd>
                 Ege Korkan, Michael McCool
               </dd>
-            <dt>Main Stakeholder (As a...)</dt>
+            <dt>Who (As a...)</dt>
               <dd>
-                device manufacturer
-              </dd>
-            <dt>Other Stakeholders</dt>
+                <p>Device manufacturer</p> 
+            <dl><dt>Other Stakeholders</dt>
               <dd>
                 TD consumer
-              </dd>
-            <dt>Capability (I need...)</dt>
+              </dd></dl></dd
+            <dt>What (I need...)</dt>
               <dd>
-                express the polling rate limit from devices without event notifications (such as Modbus, Profinet, etc.)
-              </dd>
-            <dt>Capability Details</dt>
+                <p>Express the polling rate limit from devices without event notifications (such as Modbus, Profinet, etc.)</p>
+            <dl><dt>Capability Details</dt>
               <dd>
                 <ul>
                   <li><a href="https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms">https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms</a></li>
                 </ul>
-              </dd>
-            <dt>Purpose (so that...)</dt>
+              </dd></dl></dd>
+            <dt>Why (so that...)</dt>
               <dd>
-                TD consumers can use an appropriate polling rate
-              </dd>
-            <dt>Motivating Use Cases</dt>
+                <p>TD consumers can use an appropriate polling rate</p>
+            <dl><dt>Motivating Use Cases</dt>
               <dd>
                 <ul>
-                  <li><a href="https://w3c.github.io/wot-usecases/#UC-production-monitoring-1">https://w3c.github.io/wot-usecases/#UC-production-monitoring-1</a></li>
-                  <li><a href="https://w3c.github.io/wot-usecases/#UC-smart-grids-1">https://w3c.github.io/wot-usecases/#UC-smart-grids-1</a></li>
-                  <li><a href="https://w3c.github.io/wot-usecases/#UC-smart-building-1">https://w3c.github.io/wot-usecases/#UC-smart-building-1</a></li>
-              </dd>
+                  <li>[[[#UC-production-monitoring-1]]]</li>
+                  <li>[[[#UC-smart-grids-1]]]</li>
+                  <li>[[[#UC-smart-building-1]]]</li>
+              </dd></dl></dd>
           </dl>
       </section>
     </section>  
