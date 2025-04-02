@@ -126,5 +126,7 @@ body:
         Provide links to one or more motivating Use Cases or Use Case Categories.
         If a new Use Case or Use Case Category is needed submit separate issues
         and link to these issues, otherwise link to corresponding sections in the document.
+
+        You should use ReSpec link format here, e.g. [[[#id]]].
     validations:
       required: true
