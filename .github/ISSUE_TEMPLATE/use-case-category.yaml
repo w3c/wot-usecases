@@ -65,8 +65,6 @@ body:
         a new Use Case.
         If the property applies to all Use Cases (is a universal goal)
         then "All" may be used here.
-
-        You should use ReSpec link format here, e.g. [[[#id]]].
     validations:
       required: true
   
