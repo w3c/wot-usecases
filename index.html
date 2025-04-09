@@ -8434,6 +8434,11 @@ Therefore, various data for agricultural machinery management should be represen
               node with lower latency and optionally under more direct control of the user (improving
               privacy). This can be important for control applications (e.g. in robotics), computer
               graphics (e.g. gaming) and for applications processing imagery (e.g. facial recognition).</li>
+	    <li>For edge computing, "locality" is about network latency (and perhaps other properties,
+	      such as connection reliability or bandwidth) but there may also be requirements
+	      directly related to physical location, for example to satisfy regional privacy requirements.
+	      In such a case, the geolocation of both the edge computer and the device using it
+	      may be relevant.</li>
             <li>An edge computer is also a convenient place to run persistent computations such as
               IoT orchestration rules that need to be "always on". Such an IoT orchestration system,
               in addition to needing to read from sensors and send commands to actuators over the
@@ -8468,7 +8473,7 @@ Therefore, various data for agricultural machinery management should be represen
         <dt>Affected WoT deliverables and/or work items</dt>
         <dd>
           <ul>
-            <li>WoT Discovery - needs to be designed to support services, not just physical devices.</li>
+            <li>WoT Discovery - needs to be designed to support services, not just physical devices.  May need to support geolocation.</li>
             <li>WoT Architecture - concept of Thing needs to be expanded to include computational services.</li>
             <li>WoT Scripting API - essential for programming IoT orchestrations.</li>
           </ul>
