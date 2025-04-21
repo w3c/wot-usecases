@@ -9865,21 +9865,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-dynamic-and-static-metadata">
       <h3>Discovery Dynamic and Static Metadata</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially Satisfied; proposal for dynamic/static geolocation data exists.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9889,13 +9884,20 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              Some metadata is fixed and some changes frequenty, for some value of "frequent".  The discovery
+	      mechanism should be flexible enough to support updates and notify subscribers of changes when
+	      requested.  If the changes are very frequent, there should be some way to indicate to the user
+	      that the data should be accessed from the device or service directly rather than through metadata.
+	      Some data, such as location, might be either static or dynamic.  This specific form of metadata will
+	      also be useful for filtering criteria.  The discovery mechansim should work with a wide range of scales
+	      for the frequency of updates.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Data that does not change often can be stored efficiently but that data that does changes can be
+	  updated in a timely manner.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
