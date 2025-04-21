@@ -9661,7 +9661,6 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-spatial-queries">
       <h3>Discovery Spatial Queries</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
         <dt>Status:</dt><dd>Proposal only, not in current specification.</dd>
         <dt>Submitters</dt><dd>Michael McCool</dd>
@@ -9732,19 +9731,15 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Discovery Subnet Spanning Queries</h3>
       <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Not in current specification.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9754,13 +9749,17 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              The discovery mechanism should be flexible enough to span and
+	      combine discovery results from multiple subnets.  This may require combining 
+	      multiple mechanisms, e.g. a broadcast network protocol may be acceptable on a LAN
+	      but is not generally suitable for use on the large-scale internet, where one or
+	      more directory services may have to be used instead.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>discovery of devices independent of the network segmentation is possible.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
