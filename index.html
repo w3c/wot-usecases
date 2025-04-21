@@ -9729,9 +9729,8 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-subnet-spanning-queries">
       <h3>Discovery Subnet Spanning Queries</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt><dd>Not in current specification.</dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
@@ -9750,10 +9749,9 @@ Therefore, various data for agricultural machinery management should be represen
             <dt>Capability Details</dt>
             <dd>
               The discovery mechanism should be flexible enough to span and
-	      combine discovery results from multiple subnets.  This may require combining 
-	      multiple mechanisms, e.g. a broadcast network protocol may be acceptable on a LAN
-	      but is not generally suitable for use on the large-scale internet, where one or
-	      more directory services may have to be used instead.
+	      combine discovery results from multiple subnets.  Some mechanisms acceptable on a LAN,
+	      e.g. broadcast, are not generally suitable for use on the large-scale internet.  A directory
+	      service is one way to support this capability.
             </dd>
           </dl>
         </dd>
@@ -9794,21 +9792,17 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-scalablity">
       <h3>Discovery Scalability</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
+	      <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
             </dd>
           </dl>
         </dd>
@@ -9818,13 +9812,17 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              Discovery should work for large systems with hundreds, thousands, or even millions of devices and 
+	      services.  Several other capabilities are needed to support large scale applciations, including
+	      the ability to span network segments and filter results by search criteria at the source.  It is 
+	      not acceptable to send all metadata for all possible devices to the requester for large-scale
+	      systems.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Very large systems of IoT devices and services can be accessed and managed.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
