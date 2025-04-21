@@ -63,6 +63,12 @@ As for the Use Case Proposal process, except the User Story Proposal template sh
 
 As for the Use Case Proposal process, except the Use Case Category Proposal template should be used. 
 
+### Important Notice
+Merging of PRs for new Use Cases, User Stories, or Use Case Categories from sources that are not WG members and not
+"sponsored" by an existing TF will require a WG Resolution.  It is however acceptable for non-members to submit
+issues using the provided template for the WG's consideration, subject to W3C IP rules.  Generally such non-members should
+at least be members of the WoT CG and have agreed to abide by the WoT CG's IP policies.
+
 ### Other Changes
 To make direct changes to the WoT Use Cases and Requirements document not covered by the above, please provide pull-requests to the HTML file, see [github help](https://help.github.com/articles/using-pull-requests/).  These will be reviewed by the WoT Use Cases TF as appropriate.
 * You can contribute even if you don't have access by forking this repository and doing a Pull Request from your fork.
