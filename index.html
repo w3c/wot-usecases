@@ -9415,21 +9415,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-network-scope">
       <h3>Discovery Network Scope</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>Satisfied.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              System Integrator
             </dd>
           </dl>
         </dd>
@@ -9440,13 +9435,22 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Discovery should include the ability to discover devices at multiple scales,
+	      and should support both devices that can self-identify and those that need to be
+	      described by third-party services.  Scales should include both local networks
+	      (e.g. on a single subnet, such as on a LAN) and internet-scale discovery
+	      (e.g. discovering services made available by a city).
+	      Devices and services discovered at different scales should be consolidated through
+	      a common discovery abstraction even if different mechanisms are required for
+	      implementatoin.</p>
+	      <p>It should also be possible to use discovery during system setup for use during 
+	      system integration or application (for example, dashboard) configuration.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>IoT services and devices can be located and their descriptions retreived independently of network location.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
