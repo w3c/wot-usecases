@@ -9932,21 +9932,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-deletion">
       <h3>Discovery Deletion</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-          <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9956,13 +9951,17 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              When metadata (TDs) are stored remotely in a discovery system, it should be possible to remove stale or
+	      incorrect metadata.  It may also be necessary to support deletion to support privacy goals.
+	      Deletion should take place as soon as possible after the request is made, and it should
+	      be possible to follow up a discovery action with a deletion action.  Deletion actions should however be
+	      protected so only authorized owners of the metadata can request its deletion.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Stale, incorrect, or private metadata can be removed when no longer needed or appropriate.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9978,37 +9977,37 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-access-control">
       <h3>Discovery Access Control</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
+	      <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Support access control for TDs.</p>
+          <p>Support access control for metadata.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              When metadata for a device or service is stored in a third party directory service, it may need to be 
+	      updated, managed, modified, or deleted.  Such actions should only be performed by authenticated 
+	      an authorized entities, such as those that originally created the entry in the directory service.
+	      If the metadata is stored on a device, then updates to that information should also be subject to suitable
+	      access controls, similar to that for firmware updates.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>the integrity of metadata can be maintained</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10025,21 +10024,17 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-clean-up">
       <h3>Discovery Clean Up</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
-        <dd>
-          <p>WHO</p>
+        <<dd>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
+	      <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
             </dd>
           </dl>
         </dd>
@@ -10049,13 +10044,15 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              Metadata (TDS) that are stored in third-party directory services should have a limited lifetime
+	      and should be automatically deleted if that lifetime is not extended by an authorized entity,
+	      such as the entity that originally created the metadata record or a delegate.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Obsolete metadata can be removed, saving space and avoiding attempts to access inactive devices and services.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
