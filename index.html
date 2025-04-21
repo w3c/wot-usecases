@@ -9424,7 +9424,7 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              System Integrator
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9435,16 +9435,13 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              <p>Discovery should include the ability to discover devices at multiple scales,
-	      and should support both devices that can self-identify and those that need to be
-	      described by third-party services.  Scales should include both local networks
+              <p>Discovery should include the ability to discover devices at multiple scales.
+	      Scales should include both local networks
 	      (e.g. on a single subnet, such as on a LAN) and internet-scale discovery
 	      (e.g. discovering services made available by a city).
 	      Devices and services discovered at different scales should be consolidated through
 	      a common discovery abstraction even if different mechanisms are required for
-	      implementatoin.</p>
-	      <p>It should also be possible to use discovery during system setup for use during 
-	      system integration or application (for example, dashboard) configuration.</p>
+	      implementation.</p>
             </dd>
           </dl>
         </dd>
@@ -9483,23 +9480,18 @@ Therefore, various data for agricultural machinery management should be represen
       </dl>
     </section>
 
-    <section id="US-disc-via-third-party">
-      <h3>Discovery via Third Party</h3>
-      <p>TO DO: Details to be filled in.</p>
+    <section id="US-disc-via-third-party-services">
+      <h3>Discovery via Third Party Services</h3>
       <dl>
-        <dt>Status:</dt>
-        <dd>Satisfied.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9509,13 +9501,16 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              for example, a directory service
+	      <p>Discovery should include the ability to discover devices via a third-party services, such as directory service.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>to support sleeping devices and search over collections.</p>
+          <p>To support sleeping devices, brownfield devices (devices whose interfaces can be described by WoT but for which
+          explicit, built-in support is not included in their design), small devices (that cannot self-describe for capabilty reasons),
+          cross-network discovery (for scalability and security reasons, small devices may not want to be directly discoverable outside the local
+	  network), and to search over collections.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9549,21 +9544,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-via-scripting-api">
       <h3>Discovery via Scripting API</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>Partially satisfied. Not all features supported.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially satisfied. Not all features supported.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9573,13 +9563,14 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              An API should be provided in the WoT Scripting API so that WoT Discovery functionality
+	      can be accessed.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT Consumers can find and access WoT TDs for available WoT services dynamically.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9608,38 +9599,34 @@ Therefore, various data for agricultural machinery management should be represen
           
     <section id="US-disc-filtering">
       <h3>Discovery Filtering</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>Partially satisfied. Query interface defined but optional.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially satisfied. Query interface defined but optional.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Support various forms of query, including keyword, template, and semantic queries to
+          <p>Support for various forms of query, including keyword, template, and semantic queries to
             filter results.</p>
           <dl>
             <dt>Capability Details</dt>
-            <dd>
-              DETAILS
+            <dd>When discovering devices and services, especially at internet scale, it is not feasible to
+            access the metadata (Thing Descriptions) for all accessible devices.  Instead a suitable subset needs to
+	    be selected using suitable criteria.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>discovery can scale to a large number of devices and services.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9676,19 +9663,15 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Discovery Spatial Queries</h3>
       <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Proposal only, not in current specification.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9697,14 +9680,22 @@ Therefore, various data for agricultural machinery management should be represen
           <p>Support spatial and sub-net limited queries.</p>
           <dl>
             <dt>Capability Details</dt>
-            <dd>
-              DETAILS
+            <dd>One fundamental filtering capability for discovery should include filtering by location,
+	    so that only devices nearby physically can be discovered.  Subnet-limited discovery can be a 
+	    proxy for this in some circumstances, for instance a Smart Home will generally have all devices
+	    on a single subnet and limiting search to this subnet is acceptable to limit searches to that specific
+	    home.  However, more generally, larger buildings and institutions may have multiple subnets,
+	    and in use cases like a Smart City explicitly limiting searches to specific geographical areas or
+	    semantic areas (e.g. a named neighborhood, a specific floor of a building) is needed.
+	    In some cases, a search may also be limited to an area that is not in the physical proximity of 
+	    the user, for example a user checking the weather in another city before travel, or a city dashboard
+	    checking pollution conditions neighborhood by neighborhood.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Internet-scale searches can be limited to a set near or within a specific location (which may or may not be the user's location).</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
