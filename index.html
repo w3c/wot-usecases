@@ -10499,21 +10499,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-anonymous-authentication">
       <h3>Discovery Anonymous Authentication</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10523,13 +10518,18 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>In cases where the identity of the requester is not important, to protect their privacy
+	      an anonymous mechanism for authentication should be possible.  Well-known web technologies can
+	      be used for this, such as bearer tokens.  This only applies to the second stage of WoT Discovery,
+	      but not to "introductions".  Some introduction mechanisms may not preserve privacy and these
+	      should be avoided if privacy it critical.  At least one introduction mechanism will be avaialble
+	      that does not reveal the identity of the requestor.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT services and metadata can be accessed while preserving privacy.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
