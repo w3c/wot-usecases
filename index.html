@@ -10295,21 +10295,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-confidentiality">
       <h3>Discovery Confidentiality</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10319,13 +10314,17 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be visible to unauthorized network participants.
+	      This can be accomplished by only providing WoT TDs through HTTP-based network APIs with appropriate 
+	      encryption, so transmissions can be protected at least as well as existing web APIs.  Note that this applies only to the second
+	      stage of WoT discovery.  The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.
+	      </p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT metadata (TDs) can be protected from unauthorized access.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10360,21 +10359,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-authentication">
       <h3>Discovery Authentication</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10384,13 +10378,17 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be provided to unauthorized requesters.
+	      This can be accomplished by only providing WoT TDs through HTTP-based network APIs with appropriate 
+	      authentication combined with encryption, so WoT interfaces to access metadata can be protected at least as well as existing web APIs.
+	      Note that this applies only to the second stage of WoT discovery.
+	      The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT metadata (TDs) can be protected from unauthorized access.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10425,21 +10423,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-authorization">
       <h3>Discovery Authorization</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10449,13 +10442,20 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be provided to unauthorized requesters.
+	      This can be accomplished by only providing WoT TDs through HTTP-based network APIs with appropriate 
+	      authorization and role management, so WoT interfaces to access metadata can be protected at least as well as existing web APIs.
+	      For example, it should be possible to use web tokens as API keys to control access and also allow per-user
+	      revocation of access rights.
+	      Note that this applies only to the second stage of WoT discovery.
+	      The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.</p>
+            </dd>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT metadata (TDs) can be protected from unauthorized access.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
