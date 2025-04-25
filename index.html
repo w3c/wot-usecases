@@ -10097,21 +10097,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-ietf-core">
       <h3>Discovery IETF CoRE Alignment</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10121,13 +10116,14 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>It should be possible to use mechanisms defined by the IETF, such as CoRE Resource Directories,
+	      to discover WoT resources including Thing Descriptions and Thing Description Directories.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>IETF CoRE and WoT Ecosystem can co-exist and WoT resources can be discovered from IETF CoRE-compliant systems.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10163,35 +10159,34 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Discovery DID Alignment</h3>
       <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-          <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Align with W3C DIDs.</p>
+          <p>Align with W3C DIDs and DID Documents.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Given a DID for a Thing, it should be possible to discovery the TD for that Thing
+	      by resolving the DID Document and following links contained in it.   Conversely, it should
+	      be possible to use DIDs for Thing identifiers.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>DID identifiers for Things can be used to access Thing metadata using DID mechanisms, so
+	  the DID and WoT ecosystems can work together.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10225,38 +10220,39 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-extensible-introductions">
       <h3>Discovery Extensible Introductions</h3>
-      <p>TO DO: Details to be filled in.</p>
-      <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dl>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Be accessible via a variety of existing discovery mechanisms as first contact mechanisms</p>
+          <p>WoT TDs should be accessible via a variety of existing discovery mechanisms</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              Including but not limited to DNS-SD, DNS-SRV, DHCP, QR codes, and Bluetooth beacons,
-              and allow these to be extended.
+              <p>Many existing discovery mechanisms exist and WoT should work with them, as well
+	      as being extensible to new discovery mechanisms.  This can be accomplished by using
+	      existing non-WoT discovery mechanisms as a "first contact" or "introduction" mechanism
+	      resolving into a URL that can then be used to access WoT-specific discovery mechanisms.
+	      Existing discovery mechansism supported this way should include but not be limited to 
+	      DNS-SD, DNS-SRV, DHCP, QR codes, and Bluetooth beacons.  In general, it should be possible
+	      to use any mechanims that returns a URL as an "introduction" mechanism.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT systems can interoperate with existing and new disoovery mechanisms, including mechanisms
+	  appropriate to different network scales.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
