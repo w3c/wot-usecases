@@ -9415,21 +9415,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-network-scope">
       <h3>Discovery Network Scope</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>Satisfied.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9440,13 +9435,19 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Discovery should include the ability to discover devices at multiple scales.
+	      Scales should include both local networks
+	      (e.g. on a single subnet, such as on a LAN) and internet-scale discovery
+	      (e.g. discovering services made available by a city).
+	      Devices and services discovered at different scales should be consolidated through
+	      a common discovery abstraction even if different mechanisms are required for
+	      implementation.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>IoT services and devices can be located and their descriptions retreived independently of network location.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9479,23 +9480,18 @@ Therefore, various data for agricultural machinery management should be represen
       </dl>
     </section>
 
-    <section id="US-disc-via-third-party">
-      <h3>Discovery via Third Party</h3>
-      <p>TO DO: Details to be filled in.</p>
+    <section id="US-disc-via-third-party-services">
+      <h3>Discovery via Third Party Services</h3>
       <dl>
-        <dt>Status:</dt>
-        <dd>Satisfied.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9505,13 +9501,16 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              for example, a directory service
+	      <p>Discovery should include the ability to discover devices via a third-party services, such as directory service.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>to support sleeping devices and search over collections.</p>
+          <p>To support sleeping devices, brownfield devices (devices whose interfaces can be described by WoT but for which
+          explicit, built-in support is not included in their design), small devices (that cannot self-describe for capabilty reasons),
+          cross-network discovery (for scalability and security reasons, small devices may not want to be directly discoverable outside the local
+	  network), and to search over collections.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9545,21 +9544,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-via-scripting-api">
       <h3>Discovery via Scripting API</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>Partially satisfied. Not all features supported.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially satisfied. Not all features supported.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9569,13 +9563,14 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              An API should be provided in the WoT Scripting API so that WoT Discovery functionality
+	      can be accessed.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT Consumers can find and access WoT TDs for available WoT services dynamically.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9604,38 +9599,34 @@ Therefore, various data for agricultural machinery management should be represen
           
     <section id="US-disc-filtering">
       <h3>Discovery Filtering</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>Partially satisfied. Query interface defined but optional.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially satisfied. Query interface defined but optional.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Support various forms of query, including keyword, template, and semantic queries to
+          <p>Support for various forms of query, including keyword, template, and semantic queries to
             filter results.</p>
           <dl>
             <dt>Capability Details</dt>
-            <dd>
-              DETAILS
+            <dd>When discovering devices and services, especially at internet scale, it is not feasible to
+            access the metadata (Thing Descriptions) for all accessible devices.  Instead a suitable subset needs to
+	    be selected using suitable criteria.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>discovery can scale to a large number of devices and services.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9670,21 +9661,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-spatial-queries">
       <h3>Discovery Spatial Queries</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Proposal only, not in current specification.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9693,14 +9679,22 @@ Therefore, various data for agricultural machinery management should be represen
           <p>Support spatial and sub-net limited queries.</p>
           <dl>
             <dt>Capability Details</dt>
-            <dd>
-              DETAILS
+            <dd>One fundamental filtering capability for discovery should include filtering by location,
+	    so that only devices nearby physically can be discovered.  Subnet-limited discovery can be a 
+	    proxy for this in some circumstances, for instance a Smart Home will generally have all devices
+	    on a single subnet and limiting search to this subnet is acceptable to limit searches to that specific
+	    home.  However, more generally, larger buildings and institutions may have multiple subnets,
+	    and in use cases like a Smart City explicitly limiting searches to specific geographical areas or
+	    semantic areas (e.g. a named neighborhood, a specific floor of a building) is needed.
+	    In some cases, a search may also be limited to an area that is not in the physical proximity of 
+	    the user, for example a user checking the weather in another city before travel, or a city dashboard
+	    checking pollution conditions neighborhood by neighborhood.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Internet-scale searches can be limited to a set near or within a specific location (which may or may not be the user's location).</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9735,21 +9729,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-subnet-spanning-queries">
       <h3>Discovery Subnet Spanning Queries</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9759,13 +9748,16 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              The discovery mechanism should be flexible enough to span and
+	      combine discovery results from multiple subnets.  Some mechanisms acceptable on a LAN,
+	      e.g. broadcast, are not generally suitable for use on the large-scale internet.  A directory
+	      service is one way to support this capability.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>discovery of devices independent of the network segmentation is possible.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9800,21 +9792,17 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-scalablity">
       <h3>Discovery Scalability</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
+	      <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
             </dd>
           </dl>
         </dd>
@@ -9824,13 +9812,17 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              Discovery should work for large systems with hundreds, thousands, or even millions of devices and 
+	      services.  Several other capabilities are needed to support large scale applciations, including
+	      the ability to span network segments and filter results by search criteria at the source.  It is 
+	      not acceptable to send all metadata for all possible devices to the requester for large-scale
+	      systems.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Very large systems of IoT devices and services can be accessed and managed.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9873,21 +9865,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-dynamic-and-static-metadata">
       <h3>Discovery Dynamic and Static Metadata</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially Satisfied; proposal for dynamic/static geolocation data exists.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9897,13 +9884,20 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              Some metadata is fixed and some changes frequenty, for some value of "frequent".  The discovery
+	      mechanism should be flexible enough to support updates and notify subscribers of changes when
+	      requested.  If the changes are very frequent, there should be some way to indicate to the user
+	      that the data should be accessed from the device or service directly rather than through metadata.
+	      Some data, such as location, might be either static or dynamic.  This specific form of metadata will
+	      also be useful for filtering criteria.  The discovery mechansim should work with a wide range of scales
+	      for the frequency of updates.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Data that does not change often can be stored efficiently but that data that does changes can be
+	  updated in a timely manner.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9938,21 +9932,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-deletion">
       <h3>Discovery Deletion</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-          <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9962,13 +9951,17 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              When metadata (TDs) are stored remotely in a discovery system, it should be possible to remove stale or
+	      incorrect metadata.  It may also be necessary to support deletion to support privacy goals.
+	      Deletion should take place as soon as possible after the request is made, and it should
+	      be possible to follow up a discovery action with a deletion action.  Deletion actions should however be
+	      protected so only authorized owners of the metadata can request its deletion.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Stale, incorrect, or private metadata can be removed when no longer needed or appropriate.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9984,37 +9977,37 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-access-control">
       <h3>Discovery Access Control</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
+	      <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Support access control for TDs.</p>
+          <p>Support access control for metadata.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              When metadata for a device or service is stored in a third party directory service, it may need to be 
+	      updated, managed, modified, or deleted.  Such actions should only be performed by authenticated 
+	      an authorized entities, such as those that originally created the entry in the directory service.
+	      If the metadata is stored on a device, then updates to that information should also be subject to suitable
+	      access controls, similar to that for firmware updates.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>the integrity of metadata can be maintained</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10031,21 +10024,17 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-clean-up">
       <h3>Discovery Clean Up</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
-        <dd>
-          <p>WHO</p>
+        <<dd>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
+	      <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
             </dd>
           </dl>
         </dd>
@@ -10055,13 +10044,15 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              Metadata (TDS) that are stored in third-party directory services should have a limited lifetime
+	      and should be automatically deleted if that lifetime is not extended by an authorized entity,
+	      such as the entity that originally created the metadata record or a delegate.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Obsolete metadata can be removed, saving space and avoiding attempts to access inactive devices and services.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
