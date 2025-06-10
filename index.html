@@ -10001,7 +10001,7 @@ Therefore, various data for agricultural machinery management should be represen
             <dt>Other Stakeholders</dt>
             <dd>
               <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
-	            <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
+	      <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
             </dd>
           </dl>
         </dd>
@@ -10175,7 +10175,6 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-did">
       <h3>Discovery DID Alignment</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
         <dt>Status:</dt><dd>Satisfied.</dd>
         <dt>Submitters</dt><dd>Michael McCool</dd>
@@ -10195,9 +10194,9 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              <p>Given a DID for a Thing, it should be possible to discovery the TD for that Thing
+              <p>Given a DID for a Thing, it should be possible to discover the TD for that Thing
 	      by resolving the DID Document and following links contained in it.   Conversely, it should
-	      be possible to use DIDs for Thing identifiers.</p>
+	      be possible to use DIDs as Thing identifiers.</p>
             </dd>
           </dl>
         </dd>
@@ -10339,7 +10338,7 @@ Therefore, various data for agricultural machinery management should be represen
               <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be visible to unauthorized network participants.
 	      This can be accomplished by only providing WoT TDs through HTTP-based network APIs with appropriate 
 	      encryption, so transmissions can be protected at least as well as existing web APIs.  Note that this applies only to the second
-	      stage of WoT discovery.  The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.
+	      stage of WoT discovery, "exploration".  The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.
 	      </p>
             </dd>
           </dl>
@@ -10403,7 +10402,7 @@ Therefore, various data for agricultural machinery management should be represen
               <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be provided to unauthorized requesters.
 	      This can be accomplished by only providing WoT TDs through HTTP-based network APIs with appropriate 
 	      authentication combined with encryption, so WoT interfaces to access metadata can be protected at least as well as existing web APIs.
-	      Note that this applies only to the second stage of WoT discovery.
+	      Note that this applies only to the second stage of WoT discovery, "exploration".
 	      The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.</p>
             </dd>
           </dl>
@@ -10469,7 +10468,7 @@ Therefore, various data for agricultural machinery management should be represen
 	      authorization and role management, so WoT interfaces to access metadata can be protected at least as well as existing web APIs.
 	      For example, it should be possible to use web tokens as API keys to control access and also allow per-user
 	      revocation of access rights.
-	      Note that this applies only to the second stage of WoT discovery.
+	      Note that this applies only to the second stage of WoT discovery, "exploration".
 	      The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.</p>
             </dd>
             </dd>
@@ -10589,37 +10588,34 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-lifecycle">
       <h3>Discovery Lifecycle</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Support device and information lifecycle, trust management, and access controls.</p>
+          <p>Support device and information lifecycle, trust management, and access controls</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              All stages of a device lifecycle should be supported by the discovery process, in 
+	      particular it should be possible to onboard devices into a WoT system conveniently and,
+	      at the end of their life, delete their metadata.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>The process of adding and removing devices from a system is as simple as possible while preserving privacy and confidentiality</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10654,37 +10650,34 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-limit-distribution">
       <h3>Discovery Limit Distribution</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Distribute TDs and other metadata only to authenticated and authorized entities.</p>
+          <p>To distribute TDs and other metadata only to authenticated and authorized entities.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              Detailed metadata should not be made generally available to unauthorized users; or at 
+	      least, there should be the capability to only provide information to authorized users if
+	      such restrictions are appropriate.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>privacy and confidentiality can be maintained</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10719,21 +10712,16 @@ Therefore, various data for agricultural machinery management should be represen
     
     <section id="US-disc-no-leaks">
       <h3>Discovery No Leaks</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10743,13 +10731,15 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              TDs should not be distributed by means other than defined mechanisms that can
+	      be protected with authentication.  In addition, queries and other metadata should be 
+	      protected as much as possible.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>privacy and confidentiality can be maintained</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10790,21 +10780,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-simplicity">
       <h3>Discovery Simplicity</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.  However, there is probably room for improvement.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10814,13 +10799,13 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              Discovery should be as simple as possible, consistent with other goals, such as privacy and security
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>automated systems can use discovery for system management and implementation is as straightforward as possible</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10857,21 +10842,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-human-authentication">
       <h3>Discovery Human Authentication</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially Satisfied.  Some supported authentication mechanisms support human-based pairing, but not all, and secure communication is still an issue.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10881,13 +10861,14 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              A standard mechanism to "pair" devices using e.g. button presses can be useful.
+	      There are some supported authentication mechanisms that support this, e.g. OAuth.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>New devices can be easily and securely onboarded in a home environment</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10926,21 +10907,16 @@ Therefore, various data for agricultural machinery management should be represen
 -->
     <section id="US-disc-user-limitations">
       <h3>Discovery User Limitations</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially Satisfied.  There are some authentication methods that do NOT require human input-based pairing.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10950,13 +10926,14 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              It should be possible to onboard devices without having to push a button on the device.
+	      Some authentication mechanisms support this, including OAuth, but it may require an alternative authentication path.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Users with sensory or motor limitations can use WoT systems</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10993,38 +10970,33 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-alternatives">
       <h3>Discovery Alternatives</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially Satisfied.  There are some authentication methods that do NOT require human input-based pairing.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p><!-- In general, this requirement seems a bit vague – alternative to what? -->
-            Alternative forms of discovery should be supported to address different accessibility requirements.</p>
+          <p>Alternative forms of discovery should be supported to address different accessibility and use case needs.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              The system and devices should be able to support multiple authentication mechanisms so suitable alternatives can be selected
+	      appropriate to the situation
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>the system can accomodate the needs of different users</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
