@@ -63,6 +63,13 @@ As for the Use Case Proposal process, except the User Story Proposal template sh
 
 As for the Use Case Proposal process, except the Use Case Category Proposal template should be used. 
 
+### Important Notice
+Merging of PRs for new User Stories require a formal resolution before they can be merged.
+In the case of User Stories proposed by a WoT WG TF that only impact that TF's deliverable,
+this only needs to be a TF resolution.  In all other cases, a Working Group resolution is needed.
+In addition, only WoT CG, IG, or WG members who have agreed to the W3C IP policy may submit 
+User Stories, Use Cases, or Use Case Categories.
+
 ### Other Changes
 To make direct changes to the WoT Use Cases and Requirements document not covered by the above, please provide pull-requests to the HTML file, see [github help](https://help.github.com/articles/using-pull-requests/).  These will be reviewed by the WoT Use Cases TF as appropriate.
 * You can contribute even if you don't have access by forking this repository and doing a Pull Request from your fork.
