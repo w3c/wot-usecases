@@ -9422,21 +9422,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-network-scope">
       <h3>Discovery Network Scope</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>Satisfied.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9447,13 +9442,19 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Discovery should include the ability to discover devices at multiple scales.
+	      Scales should include both local networks
+	      (e.g. on a single subnet, such as on a LAN) and internet-scale discovery
+	      (e.g. discovering services made available by a city).
+	      Devices and services discovered at different scales should be consolidated through
+	      a common discovery abstraction even if different mechanisms are required for
+	      implementation.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>IoT services and devices can be located and their descriptions retreived independently of network location.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9486,23 +9487,18 @@ Therefore, various data for agricultural machinery management should be represen
       </dl>
     </section>
 
-    <section id="US-disc-via-third-party">
-      <h3>Discovery via Third Party</h3>
-      <p>TO DO: Details to be filled in.</p>
+    <section id="US-disc-via-third-party-services">
+      <h3>Discovery via Third Party Services</h3>
       <dl>
-        <dt>Status:</dt>
-        <dd>Satisfied.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9512,20 +9508,20 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              for example, a directory service
+	            <p>Discovery should include the ability to discover devices via a third-party services, such as directory service.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>to support sleeping devices and search over collections.</p>
+          <p>To support sleeping devices, brownfield devices (devices whose interfaces can be described by WoT but for which
+          explicit, built-in support is not included in their design), small devices (that cannot self-describe for capabilty reasons),
+          cross-network discovery (for scalability and security reasons, small devices may not want to be directly discoverable outside the local
+	        network), and to search over collections.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
-                <li>MAYBE [[[#UC-interactive-public-spaces-1]]]</li>
-                <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
-                <li>MAYBE [[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
                 <li>[[[#UC-cultural-spaces-museums-1]]]</li>
                 <li>[[[#UC-connected-building-energy-efficiency-1]]]</li>
@@ -9533,16 +9529,21 @@ Therefore, various data for agricultural machinery management should be represen
                 <li>[[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
                 <li>[[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
                 <li>[[[#UC-retail-camera-device-1]]]</li>
-                <li>MAYBE [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
-                <li>MAYBE [[[#UC-health-notifiers-1]]]</li>
-                <li>MAYBE [[[#UC-smart-car-configuration-management-1]]]</li>
-                <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
-                <li>MAYBE [[[#UC-multimodal-recognition-support-1]]]</li>
-                <li>MAYBE [[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
-                <li>MAYBE [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
-                <li>MAYBE [[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- MAYBE
+		  <li>[[[#UC-interactive-public-spaces-1]]]</li>
+                  <li>[[[#UC-smartcity-geolocation-1]]]</li>
+                  <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
+		  <li>[[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
+                  <li>[[[#UC-health-notifiers-1]]]</li>
+                  <li>[[[#UC-smart-car-configuration-management-1]]]</li>
+                  <li>[[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
+		  <li>[[[#UC-multimodal-recognition-support-1]]]</li>
+                  <li>[[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
+                  <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
+                  <li>[[[#UC-ar-virtual-guide-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -9552,21 +9553,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-via-scripting-api">
       <h3>Discovery via Scripting API</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>Partially satisfied. Not all features supported.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially satisfied. Not all features supported.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9576,13 +9572,14 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>An API should be provided in the WoT Scripting API so that WoT Discovery functionality
+                can be accessed.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT Consumers can find and access WoT TDs for available WoT services dynamically.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9611,63 +9608,62 @@ Therefore, various data for agricultural machinery management should be represen
           
     <section id="US-disc-filtering">
       <h3>Discovery Filtering</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>Partially satisfied. Query interface defined but optional.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially satisfied. Query interface defined but optional.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Support various forms of query, including keyword, template, and semantic queries to
+          <p>Support for various forms of query, including keyword, template, and semantic queries to
             filter results.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>When discovering devices and services, especially at internet scale, it is not feasible to
+              access the metadata (Thing Descriptions) for all accessible devices.  Instead a suitable subset needs to
+              be selected using suitable criteria.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>discovery can scale to a large number of devices and services.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
-                <li>MAYBE [[[#UC-interactive-public-spaces-1]]]</li>
-                <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
-                <li>MAYBE [[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-irrigation-in-outdoor-environment-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
                 <li>[[[#UC-cultural-spaces-museums-1]]]</li>
                 <li>[[[#UC-connected-building-energy-efficiency-1]]]</li>
                 <li>[[[#UC-automated-smart-building-management-1]]]</li>
-                <li>MAYBE [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
-                <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
                 <li>[[[#UC-retail-camera-device-1]]]</li>
-                <li>MAYBE [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
-                <li>MAYBE [[[#UC-health-notifiers-1]]]</li>
-                <li>MAYBE [[[#UC-smart-car-configuration-management-1]]]</li>
-                <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
-                <li>MAYBE [[[#UC-multimodal-recognition-support-1]]]</li>
-                <li>MAYBE [[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
-                <li>MAYBE [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
                 <li>[[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- MAYBE
+		  <li>[[[#UC-interactive-public-spaces-1]]]</li>
+                  <li>[[[#UC-smartcity-geolocation-1]]]</li>
+                  <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
+		  <li>[[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
+                  <li>[[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
+		  <li>[[[#UC-multimodal-recognition-support-1]]]</li>
+                  <li>[[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
+                  <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
+		  <li>[[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
+                  <li>[[[#UC-health-notifiers-1]]]</li>
+                  <li>[[[#UC-smart-car-configuration-management-1]]]</li>
+                  <li>[[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -9677,21 +9673,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-spatial-queries">
       <h3>Discovery Spatial Queries</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Proposal only, not in current specification.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9701,13 +9692,22 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>One fundamental filtering capability for discovery should include filtering by location,
+	            so that only devices nearby physically can be discovered.  Subnet-limited discovery can be a 
+	            proxy for this in some circumstances, for instance a Smart Home will generally have all devices
+	            on a single subnet and limiting search to this subnet is acceptable to limit searches to that specific
+	            home.  However, more generally, larger buildings and institutions may have multiple subnets,
+	            and in use cases like a Smart City explicitly limiting searches to specific geographical areas or
+	            semantic areas (e.g. a named neighborhood, a specific floor of a building) is needed.
+	            In some cases, a search may also be limited to an area that is not in the physical proximity of 
+	            the user, for example a user checking the weather in another city before travel, or a city dashboard
+              checking pollution conditions neighborhood by neighborhood.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Internet-scale searches can be limited to a set near or within a specific location (which may or may not be the user's location).</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9715,16 +9715,12 @@ Therefore, various data for agricultural machinery management should be represen
                 <li>[[[#UC-irrigation-in-outdoor-environment-1]]]</li>
                 <li>[[[#UC-interactive-public-spaces-1]]]</li>
                 <li>[[[#UC-smartcity-geolocation-1]]]</li>
-                <li>MAYBE [[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
                 <li>[[[#UC-cultural-spaces-museums-1]]]</li>
                 <li>[[[#UC-connected-building-energy-efficiency-1]]]</li>
                 <li>[[[#UC-automated-smart-building-management-1]]]</li>
-                <li>POSSIBLY [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
-                <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
                 <li>[[[#UC-retail-camera-device-1]]]</li>
                 <li>[[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
-                <li>MAYBE [[[#UC-health-notifiers-1]]]</li>
                 <li>[[[#UC-smart-car-configuration-management-1]]]</li>
                 <li>[[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
@@ -9733,6 +9729,12 @@ Therefore, various data for agricultural machinery management should be represen
                 <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
                 <li>[[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- MAYBE
+		  <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
+		  <li>[[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
+                  <li>[[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
+		  <li>[[[#UC-health-notifiers-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -9742,21 +9744,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-subnet-spanning-queries">
       <h3>Discovery Subnet Spanning Queries</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9766,19 +9763,21 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>The discovery mechanism should be flexible enough to span and
+	            combine discovery results from multiple subnets.  Some mechanisms acceptable on a LAN,
+	            e.g. broadcast, are not generally suitable for use on the large-scale internet.  A directory
+              service is one way to support this capability.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>discovery of devices independent of the network segmentation is possible.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
                 <li>[[[#UC-irrigation-in-outdoor-environment-1]]]</li>
-                <li>POSSIBLY [[[#UC-interactive-public-spaces-1]]]</li>
                 <li>[[[#UC-smartcity-geolocation-1]]]</li>
                 <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
@@ -9793,11 +9792,14 @@ Therefore, various data for agricultural machinery management should be represen
                 <li>[[[#UC-smart-car-configuration-management-1]]]</li>
                 <li>[[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
-                <li>POSSIBLY [[[#UC-multimodal-recognition-support-1]]]</li>
                 <li>[[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
                 <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
-                <li>POSSIBLY [[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- POSSIBLY
+		  <li>[[[#UC-interactive-public-spaces-1]]]</li>
+		  <li>[[[#UC-multimodal-recognition-support-1]]]</li>
+		  <li>[[[#UC-ar-virtual-guide-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -9807,21 +9809,17 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-scalablity">
       <h3>Discovery Scalability</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
+	            <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
             </dd>
           </dl>
         </dd>
@@ -9831,18 +9829,21 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Discovery should work for large systems with hundreds, thousands, or even millions of devices and 
+	            services.  Several other capabilities are needed to support large scale applications, including
+	            the ability to span network segments and filter results by search criteria at the source.  In many
+		    cases, such as small requesting devices with limited or metered bandwidth, it is 
+	            not acceptable for large systems to send all metadata for all possible devices in the directory to the requester.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Very large systems of IoT devices and services can be accessed and managed.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
-                <li>POSSIBLY [[[#UC-interactive-public-spaces-1]]]</li>
                 <li>[[[#UC-smartcity-geolocation-1]]]</li>
                 <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
@@ -9857,11 +9858,14 @@ Therefore, various data for agricultural machinery management should be represen
                 <li>[[[#UC-smart-car-configuration-management-1]]]</li>
                 <li>[[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
-                <li>POSSIBLY [[[#UC-multimodal-recognition-support-1]]]</li>
                 <li>[[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
                 <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
-                <li>POSSIBLY [[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- POSSIBLY
+		  <li>[[[#UC-interactive-public-spaces-1]]]</li>
+		  <li>[[[#UC-multimodal-recognition-support-1]]]</li>
+		  <li>[[[#UC-ar-virtual-guide-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -9880,21 +9884,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-dynamic-and-static-metadata">
       <h3>Discovery Dynamic and Static Metadata</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially Satisfied; proposal for dynamic/static geolocation data exists.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9904,19 +9903,25 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Some metadata is fixed and some changes frequenty, for some value of "frequent".  The discovery
+	            mechanism should be flexible enough to support updates and notify subscribers of changes when
+	            requested.  If the changes are very frequent, there should be some way to indicate to the user
+	            that the data should be accessed from the device or service directly rather than through metadata.
+	            Some data, such as location, might be either static or dynamic.  This specific form of metadata will
+	            also be useful for filtering criteria.  The discovery mechansim should work with a wide range of scales
+              for the frequency of updates.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Data that does not change often can be stored efficiently but that data that does changes can be
+	        updated in a timely manner.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
                 <li>[[[#UC-irrigation-in-outdoor-environment-1]]]</li>
-                <li>POSSIBLY [[[#UC-interactive-public-spaces-1]]]</li>
                 <li>[[[#UC-smartcity-geolocation-1]]]</li>
                 <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
@@ -9936,6 +9941,9 @@ Therefore, various data for agricultural machinery management should be represen
                 <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
                 <li>[[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- POSSIBLY
+		  <li>[[[#UC-interactive-public-spaces-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -9945,21 +9953,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-deletion">
       <h3>Discovery Deletion</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-          <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9969,13 +9972,17 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>When metadata (TDs) are stored remotely in a discovery system, it should be possible to remove stale or
+	            incorrect metadata.  It may also be necessary to support deletion to support privacy goals.
+	            Deletion should take place as soon as possible after the request is made, and it should
+	            be possible to follow up a discovery action with a deletion action.  Deletion actions should however be
+              protected so only authorized owners of the metadata can request its deletion.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Stale, incorrect, or private metadata can be removed when no longer needed or appropriate.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9991,44 +9998,46 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-access-control">
       <h3>Discovery Access Control</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
+	      <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Support access control for TDs.</p>
+          <p>Support access control for metadata.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>When metadata for a device or service is stored in a third party directory service, it may need to be 
+	            updated, managed, modified, or deleted.  Such actions should only be performed by authenticated 
+	            an authorized entities, such as those that originally created the entry in the directory service.
+	            If the metadata is stored on a device, then updates to that information should also be subject to suitable
+              access controls, similar to that for firmware updates.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>the integrity of metadata can be maintained</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
                 <li>[[[#UC-discovery-1]]]</li>
                 <li>[[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
-                <li>POSSIBLY [[[#UC-interactive-public-spaces-1]]]</li>
+		<!-- POSSIBLY
+                  <li>[[[#UC-interactive-public-spaces-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -10038,21 +10047,17 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-clean-up">
       <h3>Discovery Clean Up</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
-        <dd>
-          <p>WHO</p>
+        <<dd>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
+	            <a href="#STAKEHOLDER-System-Maintainter">System Maintainer</a>
             </dd>
           </dl>
         </dd>
@@ -10062,18 +10067,19 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Metadata (TDS) that are stored in third-party directory services should have a limited lifetime
+	            and should be automatically deleted if that lifetime is not extended by an authorized entity,
+              such as the entity that originally created the metadata record or a delegate.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Obsolete metadata can be removed, saving space and avoiding attempts to access inactive devices and services.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
-                <li>POSSIBLY [[[#UC-interactive-public-spaces-1]]]</li>
                 <li>[[[#UC-smartcity-geolocation-1]]]</li>
                 <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
@@ -10093,6 +10099,9 @@ Therefore, various data for agricultural machinery management should be represen
                 <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
                 <li>[[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- POSSIBLY
+		  <li>[[[#UC-interactive-public-spaces-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -10111,21 +10120,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-ietf-core">
       <h3>Discovery IETF CoRE Alignment</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10135,37 +10139,40 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>It should be possible to use mechanisms defined by the IETF, such as CoRE Resource Directories,
+	      to discover WoT resources including Thing Descriptions and Thing Description Directories.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>IETF CoRE and WoT Ecosystem can co-exist and WoT resources can be discovered from IETF CoRE-compliant systems.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
-                <li>MAYBE [[[#UC-interactive-public-spaces-1]]]</li>
-                <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
-                <li>MAYBE [[[#UC-meeting-room-event-assistance-1]]]</li>
-                <li>MAYBE [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
-                <li>MAYBE [[[#UC-cultural-spaces-museums-1]]]</li>
-                <li>MAYBE [[[#UC-connected-building-energy-efficiency-1]]]</li>
-                <li>MAYBE [[[#UC-automated-smart-building-management-1]]]</li>
-                <li>MAYBE [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
-                <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
-                <li>MAYBE [[[#UC-retail-camera-device-1]]]</li>
-                <li>MAYBE [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
-                <li>MAYBE [[[#UC-health-notifiers-1]]]</li>
-                <li>MAYBE [[[#UC-smart-car-configuration-management-1]]]</li>
-                <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
-                <li>MAYBE [[[#UC-multimodal-recognition-support-1]]]</li>
-                <li>MAYBE [[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
-                <li>MAYBE [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
-                <li>MAYBE [[[#UC-ar-virtual-guide-1]]]</li>
-                <li>MAYBE [[[#UC-edge-computing-1]]]</li>
+		<!-- MAYBE
+		  <li>[[[#UC-interactive-public-spaces-1]]]</li>
+                  <li>[[[#UC-smartcity-geolocation-1]]]</li>
+                  <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
+                  <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
+                  <li>[[[#UC-cultural-spaces-museums-1]]]</li>
+                  <li>[[[#UC-connected-building-energy-efficiency-1]]]</li>
+                  <li>[[[#UC-automated-smart-building-management-1]]]</li>
+                  <li>[[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
+                  <li>[[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
+                  <li>[[[#UC-retail-camera-device-1]]]</li>
+                  <li>[[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
+                  <li>[[[#UC-health-notifiers-1]]]</li>
+                  <li>[[[#UC-smart-car-configuration-management-1]]]</li>
+                  <li>[[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
+		  <li>[[[#UC-multimodal-recognition-support-1]]]</li>
+                  <li>[[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
+                  <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
+                  <li>[[[#UC-ar-virtual-guide-1]]]</li>
+                  <li>[[[#UC-edge-computing-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -10175,61 +10182,61 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-did">
       <h3>Discovery DID Alignment</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-          <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Align with W3C DIDs.</p>
+          <p>Align with W3C DIDs and DID Documents.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Given a DID for a Thing, it should be possible to discover the TD for that Thing
+	      by resolving the DID Document and following links contained in it.   Conversely, it should
+	      be possible to use DIDs as Thing identifiers.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>DID identifiers for Things can be used to access Thing metadata using DID mechanisms, so
+	  the DID and WoT ecosystems can work together.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
-                  <li>MAYBE [[[#UC-interactive-public-spaces-1]]]</li>
-                  <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
-                  <li>MAYBE [[[#UC-meeting-room-event-assistance-1]]]</li>
-                  <li>MAYBE [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
-                  <li>MAYBE [[[#UC-cultural-spaces-museums-1]]]</li>
-                  <li>MAYBE [[[#UC-connected-building-energy-efficiency-1]]]</li>
-                  <li>MAYBE [[[#UC-automated-smart-building-management-1]]]</li>
-                  <li>MAYBE [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
-                  <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
-                  <li>MAYBE [[[#UC-retail-camera-device-1]]]</li>
-                  <li>MAYBE [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
-                  <li>MAYBE [[[#UC-health-notifiers-1]]]</li>
-                  <li>MAYBE [[[#UC-smart-car-configuration-management-1]]]</li>
-                  <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                   <li>[[[#UC-discovery-1]]]</li>
-                  <li>MAYBE [[[#UC-multimodal-recognition-support-1]]]</li>
-                  <li>MAYBE [[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
-                  <li>MAYBE [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
-                  <li>MAYBE [[[#UC-ar-virtual-guide-1]]]</li>
-                  <li>MAYBE [[[#UC-edge-computing-1]]]</li>
+		  <!-- MAYBE
+		    <li>[[[#UC-interactive-public-spaces-1]]]</li>
+                    <li>[[[#UC-smartcity-geolocation-1]]]</li>
+                    <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
+                    <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
+                    <li>[[[#UC-cultural-spaces-museums-1]]]</li>
+                    <li>[[[#UC-connected-building-energy-efficiency-1]]]</li>
+                    <li>[[[#UC-automated-smart-building-management-1]]]</li>
+                    <li>[[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
+                    <li>[[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
+                    <li>[[[#UC-retail-camera-device-1]]]</li>
+                    <li>[[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
+                    <li>[[[#UC-health-notifiers-1]]]</li>
+                    <li>[[[#UC-smart-car-configuration-management-1]]]</li>
+                    <li>[[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
+		    <li>[[[#UC-multimodal-recognition-support-1]]]</li>
+                    <li>[[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
+                    <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
+                    <li>[[[#UC-ar-virtual-guide-1]]]</li>
+                    <li>[[[#UC-edge-computing-1]]]</li>
+		  -->
                </ul>
             </dd>
           </dl>
@@ -10239,62 +10246,65 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-extensible-introductions">
       <h3>Discovery Extensible Introductions</h3>
-      <p>TO DO: Details to be filled in.</p>
-      <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dl>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Be accessible via a variety of existing discovery mechanisms as first contact mechanisms</p>
+          <p>WoT TDs should be accessible via a variety of existing discovery mechanisms</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              Including but not limited to DNS-SD, DNS-SRV, DHCP, QR codes, and Bluetooth beacons,
-              and allow these to be extended.
+              <p>Many existing discovery mechanisms exist and WoT should work with them, as well
+	      as being extensible to new discovery mechanisms.  This can be accomplished by using
+	      existing non-WoT discovery mechanisms as a "first contact" or "introduction" mechanism
+	      resolving into a URL that can then be used to access WoT-specific discovery mechanisms.
+	      Existing discovery mechansism supported this way should include but not be limited to 
+	      DNS-SD, DNS-SRV, DHCP, QR codes, and Bluetooth beacons.  In general, it should be possible
+	      to use any mechanims that returns a URL as an "introduction" mechanism.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT systems can interoperate with existing and new disoovery mechanisms, including mechanisms
+	  appropriate to different network scales.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
-                <li>MAYBE [[[#UC-interactive-public-spaces-1]]]</li>
-                <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
                 <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
                 <li>[[[#UC-cultural-spaces-museums-1]]]</li>
-                <li>MAYBE [[[#UC-connected-building-energy-efficiency-1]]]</li>
-                <li>MAYBE [[[#UC-automated-smart-building-management-1]]]</li>
-                <li>MAYBE [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
-                <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
-                <li>MAYBE [[[#UC-retail-camera-device-1]]]</li>
-                <li>MAYBE [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
-                <li>MAYBE [[[#UC-health-notifiers-1]]]</li>
-                <li>MAYBE [[[#UC-smart-car-configuration-management-1]]]</li>
-                <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
-                <li>MAYBE [[[#UC-multimodal-recognition-support-1]]]</li>
-                <li>MAYBE [[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
                 <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
                 <li>[[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- MAYBE
+		  <li>[[[#UC-interactive-public-spaces-1]]]</li>
+                  <li>[[[#UC-smartcity-geolocation-1]]]</li>
+		  <li>[[[#UC-connected-building-energy-efficiency-1]]]</li>
+                  <li>[[[#UC-automated-smart-building-management-1]]]</li>
+                  <li>[[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
+                  <li>[[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
+                  <li>[[[#UC-retail-camera-device-1]]]</li>
+                  <li>[[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
+                  <li>[[[#UC-health-notifiers-1]]]</li>
+                  <li>[[[#UC-smart-car-configuration-management-1]]]</li>
+                  <li>[[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
+		  <li>[[[#UC-multimodal-recognition-support-1]]]</li>
+                  <li>[[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -10313,21 +10323,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-confidentiality">
       <h3>Discovery Confidentiality</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10337,13 +10342,17 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be visible to unauthorized network participants.
+	      This can be accomplished by only providing WoT TDs through HTTP-based network APIs with appropriate 
+	      encryption, so transmissions can be protected at least as well as existing web APIs.  Note that this applies only to the second
+	      stage of WoT discovery, "exploration".  The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.
+	      </p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT metadata (TDs) can be protected from unauthorized access.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10378,21 +10387,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-authentication">
       <h3>Discovery Authentication</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10402,13 +10406,17 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be provided to unauthenticated requesters.
+	      This can be accomplished by only providing WoT TDs through HTTP-based network APIs with appropriate 
+	      authentication combined with encryption, so WoT interfaces to access metadata can be protected at least as well as existing web APIs.
+	      Note that this applies only to the second stage of WoT discovery, "exploration".
+	      The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT metadata (TDs) is only provided to authenticated requesters.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10443,21 +10451,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-authorization">
       <h3>Discovery Authorization</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10467,13 +10470,21 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be provided to unauthorized requesters.
+	      This can be accomplished by providing WoT TDs through HTTP-based network APIs with appropriate 
+	      authorization combined with role management, so WoT interfaces to access metadata can be protected at least as well as existing web APIs.
+	      While not required in all cases, to support anonymous access it should also possible to separate authentication and authorization using a separate service.
+	      For example, it should be possible to use web tokens as API keys to control access, and the web tokens could be provided
+	      by a separate service.   This can also be used to support limited-duration per-user access without having to update each device.
+	      Note that this applies only to the second stage of WoT discovery, "exploration".
+	      The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.</p>
+            </dd>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT metadata (TDs) can be protected from unauthorized access.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10517,21 +10528,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-anonymous-authentication">
       <h3>Discovery Anonymous Authentication</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10541,37 +10547,46 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <p>In cases where the identity of the requester is not important, an
+              anonymous mechanism for authentication should be possible, to protect
+              their privacy.  Well-known web technologies, such as bearer tokens, can
+              be used for this.  Note that this does not apply to "introductions", but
+              only to the second "exploration" stage of WoT Discovery. Some introduction mechanisms
+              may not preserve privacy and these should be avoided if privacy is
+              critical.  At least one introduction mechanism that does not reveal the
+              identity of the requestor will be available.</p>
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT services and metadata can be accessed while preserving privacy.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
                 <li>[[[#UC-interactive-public-spaces-1]]]</li>
-                <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
-                <li>MAYBE [[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
                 <li>[[[#UC-cultural-spaces-museums-1]]]</li>
-                <li>MAYBE [[[#UC-connected-building-energy-efficiency-1]]]</li>
-                <li>MAYBE [[[#UC-automated-smart-building-management-1]]]</li>
-                <li>MAYBE [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
-                <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
-                <li>MAYBE [[[#UC-retail-camera-device-1]]]</li>
-                <li>MAYBE [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
-                <li>MAYBE [[[#UC-health-notifiers-1]]]</li>
-                <li>MAYBE [[[#UC-smart-car-configuration-management-1]]]</li>
-                <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
-                <li>MAYBE [[[#UC-multimodal-recognition-support-1]]]</li>
-                <li>MAYBE [[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
-                <li>MAYBE [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
-                <li>MAYBE [[[#UC-ar-virtual-guide-1]]]</li>
-                <li>MAYBE [[[#UC-edge-computing-1]]]</li>
+		<!-- MAYBE
+		  <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
+                  <li>MAYBE [[[#UC-meeting-room-event-assistance-1]]]</li>
+		  <li>MAYBE [[[#UC-connected-building-energy-efficiency-1]]]</li>
+                  <li>MAYBE [[[#UC-automated-smart-building-management-1]]]</li>
+                  <li>MAYBE [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
+                  <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
+                  <li>MAYBE [[[#UC-retail-camera-device-1]]]</li>
+                  <li>MAYBE [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
+                  <li>MAYBE [[[#UC-health-notifiers-1]]]</li>
+                  <li>MAYBE [[[#UC-smart-car-configuration-management-1]]]</li>
+                  <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
+		  <li>MAYBE [[[#UC-multimodal-recognition-support-1]]]</li>
+                  <li>MAYBE [[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
+                  <li>MAYBE [[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
+                  <li>MAYBE [[[#UC-ar-virtual-guide-1]]]</li>
+                  <li>MAYBE [[[#UC-edge-computing-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -10581,37 +10596,34 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-lifecycle">
       <h3>Discovery Lifecycle</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Support device and information lifecycle, trust management, and access controls.</p>
+          <p>Support device and information lifecycle, trust management, and access controls</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              All stages of a device lifecycle should be supported by the discovery process, in 
+	      particular it should be possible to onboard devices into a WoT system conveniently and,
+	      at the end of their life, delete their metadata.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>The process of adding and removing devices from a system is as simple as possible while preserving privacy and confidentiality</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10646,37 +10658,34 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-limit-distribution">
       <h3>Discovery Limit Distribution</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Distribute TDs and other metadata only to authenticated and authorized entities.</p>
+          <p>To distribute TDs and other metadata only to authenticated and authorized entities.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              Detailed metadata should not be made generally available to unauthorized users; or at 
+	      least, there should be the capability to only provide information to authorized users if
+	      such restrictions are appropriate.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>privacy and confidentiality can be maintained</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10711,21 +10720,16 @@ Therefore, various data for agricultural machinery management should be represen
     
     <section id="US-disc-no-leaks">
       <h3>Discovery No Leaks</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10735,13 +10739,15 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              TDs should not be distributed by means other than defined mechanisms that can
+	      be protected with authentication.  In addition, queries and other metadata should be 
+	      protected as much as possible.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>privacy and confidentiality can be maintained</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10782,21 +10788,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-simplicity">
       <h3>Discovery Simplicity</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Satisfied.  However, there is probably room for improvement.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10806,20 +10807,19 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              Discovery should be as simple as possible, consistent with other goals, such as privacy and security
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>automated systems can use discovery for system management and implementation is as straightforward as possible</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
                 <li>[[[#UC-irrigation-in-outdoor-environment-1]]]</li>
                 <li>[[[#UC-interactive-public-spaces-1]]]</li>
-                <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
                 <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
                 <li>[[[#UC-cultural-spaces-museums-1]]]</li>
@@ -10838,6 +10838,9 @@ Therefore, various data for agricultural machinery management should be represen
                 <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
                 <li>[[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- MAYBE
+		  <li>[[[#UC-smartcity-geolocation-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -10847,21 +10850,16 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-human-authentication">
       <h3>Discovery Human Authentication</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially Satisfied.  Some supported authentication mechanisms support human-based pairing, but not all, and secure communication is still an issue.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10871,35 +10869,38 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              A standard mechanism to "pair" devices using e.g. button presses can be useful.
+	      There are some supported authentication mechanisms that support this, e.g. OAuth.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>New devices can be easily and securely onboarded in a home environment</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
                 <li>[[[#UC-irrigation-in-outdoor-environment-1]]]</li>
                 <li>[[[#UC-interactive-public-spaces-1]]]</li>
-                <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
                 <li>[[[#UC-meeting-room-event-assistance-1]]]</li>
-                <li>MAYBE [[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
-                <li>MAYBE [[[#UC-cultural-spaces-museums-1]]]</li>
-                <li>MAYBE [[[#UC-connected-building-energy-efficiency-1]]]</li>
-                <li>MAYBE [[[#UC-automated-smart-building-management-1]]]</li>
                 <li>[[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
                 <li>[[[#UC-health-notifiers-1]]]</li>
                 <li>[[[#UC-smart-car-configuration-management-1]]]</li>
-                <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
                 <li>[[[#UC-multimodal-recognition-support-1]]]</li>
                 <li>[[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
                 <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
                 <li>[[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- MAYBE
+		  <li>[[[#UC-smartcity-geolocation-1]]]</li>
+		  <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
+                  <li>[[[#UC-cultural-spaces-museums-1]]]</li>
+                  <li>[[[#UC-connected-building-energy-efficiency-1]]]</li>
+                  <li>[[[#UC-automated-smart-building-management-1]]]</li>
+		  <li>[[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -10914,21 +10915,16 @@ Therefore, various data for agricultural machinery management should be represen
 -->
     <section id="US-disc-user-limitations">
       <h3>Discovery User Limitations</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially Satisfied.  There are some authentication methods that do NOT require human input-based pairing.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -10938,13 +10934,14 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              It should be possible to onboard devices without having to push a button on the device.
+	      Some authentication mechanisms support this, including OAuth, but it may require an alternative authentication path.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Users with sensory or motor limitations can use WoT systems</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10957,19 +10954,21 @@ Therefore, various data for agricultural machinery management should be represen
                 <li>[[[#UC-cultural-spaces-museums-1]]]</li>
                 <li>[[[#UC-connected-building-energy-efficiency-1]]]</li>
                 <li>[[[#UC-automated-smart-building-management-1]]]</li>
-                <li>MAYBE [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
-                <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
                 <li>[[[#UC-retail-camera-device-1]]]</li>
-                <li>MAYBE [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
                 <li>[[[#UC-health-notifiers-1]]]</li>
-                <li>MAYBE [[[#UC-smart-car-configuration-management-1]]]</li>
-                <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
                 <li>[[[#UC-multimodal-recognition-support-1]]]</li>
                 <li>[[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
                 <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
                 <li>[[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- MAYBE
+		  <li>MAYBE [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
+                  <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
+		  <li>MAYBE [[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
+		  <li>MAYBE [[[#UC-smart-car-configuration-management-1]]]</li>
+                  <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
@@ -10979,62 +10978,59 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-disc-alternatives">
       <h3>Discovery Alternatives</h3>
-      <p>TO DO: Details to be filled in.</p>
       <dl>
-        <dt>Status:</dt>
-        <dd>TBD.</dd>
-        <dt>Submitters</dt>
-        <dd>
-          Michael McCool
-        </dd>
+        <dt>Status:</dt><dd>Partially Satisfied.  There are some authentication methods that do NOT require human input-based pairing.</dd>
+        <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p><!-- In general, this requirement seems a bit vague – alternative to what? -->
-            Alternative forms of discovery should be supported to address different accessibility requirements.</p>
+          <p>Alternative forms of discovery should be supported to address different accessibility and use case needs.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              The system and devices should be able to support multiple authentication mechanisms so suitable alternatives can be selected
+	      appropriate to the situation
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>the system can accomodate the needs of different users</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
                 <li>[[[#UC-interactive-public-spaces-1]]]</li>
-                <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
-                <li>MAYBE [[[#UC-meeting-room-event-assistance-1]]]</li>
                 <li>[[[#UC-cross-domain-discovery-in-a-smart-campus-1]]]</li>
                 <li>[[[#UC-cultural-spaces-museums-1]]]</li>
-                <li>MAYBE [[[#UC-connected-building-energy-efficiency-1]]]</li>
-                <li>MAYBE [[[#UC-automated-smart-building-management-1]]]</li>
-                <li>MAYBE [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
-                <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
-                <li>MAYBE [[[#UC-retail-camera-device-1]]]</li>
                 <li>[[[#UC-interconnected-medical-devices-in-a-hospital-icu-1]]]</li>
                 <li>[[[#UC-health-notifiers-1]]]</li>
                 <li>[[[#UC-smart-car-configuration-management-1]]]</li>
-                <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
                 <li>[[[#UC-discovery-1]]]</li>
                 <li>[[[#UC-multimodal-recognition-support-1]]]</li>
                 <li>[[[#UC-enhancement-of-synergistic-interactions-1]]]</li>
                 <li>[[[#UC-audiovisual-devices-acting-as-smartphone-extensions-1]]]</li>
                 <li>[[[#UC-ar-virtual-guide-1]]]</li>
                 <li>[[[#UC-edge-computing-1]]]</li>
+		<!-- MAYBE
+		  <li>MAYBE [[[#UC-smartcity-geolocation-1]]]</li>
+                  <li>MAYBE [[[#UC-meeting-room-event-assistance-1]]]</li>
+		  <li>MAYBE [[[#UC-connected-building-energy-efficiency-1]]]</li>
+                  <li>MAYBE [[[#UC-automated-smart-building-management-1]]]</li>
+                  <li>MAYBE [[[#UC-retail-all-stop-button-outdoor-emergency-stop-plunger-1]]]</li>
+                  <li>MAYBE [[[#UC-retail-fountain-drink-ice-machine-1]]]</li>
+                  <li>MAYBE [[[#UC-retail-camera-device-1]]]</li>
+		  <li>MAYBE [[[#UC-home-wot-devices-synchronize-to-tv-programs-1]]]</li>
+		-->
               </ul>
             </dd>
           </dl>
