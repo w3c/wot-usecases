@@ -10399,7 +10399,7 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be provided to unauthorized requesters.
+              <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be provided to unauthenticated requesters.
 	      This can be accomplished by only providing WoT TDs through HTTP-based network APIs with appropriate 
 	      authentication combined with encryption, so WoT interfaces to access metadata can be protected at least as well as existing web APIs.
 	      Note that this applies only to the second stage of WoT discovery, "exploration".
@@ -10409,7 +10409,7 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>WoT metadata (TDs) can be protected from unauthorized access.</p>
+          <p>WoT metadata (TDs) is only provided to authenticated requesters.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -10464,10 +10464,11 @@ Therefore, various data for agricultural machinery management should be represen
             <dt>Capability Details</dt>
             <dd>
               <p>Detailed WoT metadata such as WoT TDs (Thing Descriptions) should not be provided to unauthorized requesters.
-	      This can be accomplished by only providing WoT TDs through HTTP-based network APIs with appropriate 
-	      authorization and role management, so WoT interfaces to access metadata can be protected at least as well as existing web APIs.
-	      For example, it should be possible to use web tokens as API keys to control access and also allow per-user
-	      revocation of access rights.
+	      This can be accomplished by providing WoT TDs through HTTP-based network APIs with appropriate 
+	      authorization combined with role management, so WoT interfaces to access metadata can be protected at least as well as existing web APIs.
+	      While not required in all cases, to support anonymous access it should also possible to separate authentication and authorization using a separate service.
+	      For example, it should be possible to use web tokens as API keys to control access, and the web tokens could be provided
+	      by a separate service.   This can also be used to support limited-duration per-user access without having to update each device.
 	      Note that this applies only to the second stage of WoT discovery, "exploration".
 	      The "introduction" stage is not protected but is also prohibited from directly distributing WoT metadata.</p>
             </dd>
