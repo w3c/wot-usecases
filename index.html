@@ -392,21 +392,38 @@
       <section id="stakeholders">
         <h2>Stakeholders and Roles</h2>
         <p>
-          The following stakeholders and actors were identified
-          when the use cases have been collected and requirements were identified.
-          Note that these stakeholders and roles may overlap in some use cases.
+	  Whenever possible, stakeholders should be identified using the terms
+	  defined in the WoT Security and Privacy Guidelines [[wot-security]].
+	  For convenience these terms are listed here, but please refer to that
+	  document for full definitions:
+	</p>
+	<ul>
+          <li id="STAKEHOLDER-Device-Manufacturer">Device Manufacturer</li>
+          <li id="STAKEHOLDER-System-Provider">System Provider</li>
+          <li id="STAKEHOLDER-System-Integrator">System Integrator</li>
+          <li id="STAKEHOLDER-System-Installer">System Installer</li>
+          <li id="STAKEHOLDER-System-User">System User</li>
+          <li id="STAKEHOLDER-System-Owner">System Owner</li>
+          <li id="STAKEHOLDER-System-Maintainer">System Maintainer</li>
+        </ul>
+        <p>
+          The following additional stakeholders and roles were identified
+          when the use cases were collected, or are defined in other WoT documents:
         </p>
+        <ul>
+          <li id="STAKEHOLDER-Device-Owner">Device Owner: A special case of System Owner when some devices in a system may have different owners, or when the focus is on the ownership of a specific device.</li>
+          <li id="STAKEHOLDER-Device-User">Device User: A human interacting with an actual physical user interface of a device, or whose environment may be sensed or modified by a device.  May also be used when referring to a data or network service provided by a particular device.</li>
+          <li id="STAKEHOLDER-Cloud-Provider">Cloud Provider: An organization providing remote computing services available over a network.</li>
+          <li id="STAKEHOLDER-Service-Provider">Service Provider: An organization or entity, which may be local or remote, that provides a specific (network) service.</li>
+          <li id="STAKEHOLDER-Gateway-Manufacturer">Gateway Manufacturer: A special case of Device Manufacturer where a device is not an endpoint IoT device, but a device whose focus is on providing network services such as firewalls, address translation, name services, caching, brokers, registries, or directories.</li>
+          <li id="STAKEHOLDER-Identity-Provider">Identity Provider: A special case of a Service Provider that provides a mechanism to identify or authenticate entities and users.</li>
+          <li id="STAKEHOLDER-Directory-Service-Provider">Directory Service Provider: A special case of a Service Provider that provides a directory service, such as the Thing Description Directory (TD Directory) service described in WoT Discovery [[wot-discovery]].</li>
+	  <li id="STAKEHOLDER-TD-Consumer">TD Consumer: An entity that reads and interprets a WoT Thing Description [[wot-thing-description]].</li>
+	  <li id="STAKEHOLDER-TD-Server">TD Server: An entity that provides a WoT Thing Description [[wot-thing-description]].  A TD Server may or may not be on the same physical device as the Thing described in the TD it provides.  Defined in WoT Discovery [[wot-discovery]].</li>
+          <li id="STAKEHOLDER-TD-Directory">TD Directory: A special case of a Directory Service Provider and a TD Server, and is defined in WoT Discovery [[wot-discovery]], that provides a searchable registry for Thing Descriptions (TDs).</li>
+
+        </ul>
       </section>
-      <ul>
-        <li>device owners</li>
-        <li>device user</li>
-        <li>cloud provider</li>
-        <li>service provider</li>
-        <li>device manufacturer</li>
-        <li>gateway manufacturer</li>
-        <li>identity provider</li>
-        <li>directory service operator</li>
-      </ul>
     </section>
   </section>
 
