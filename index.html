@@ -67,7 +67,15 @@
           }]
         }],
       localBiblio: {
-        "ISO-6709": {
+        "SWEBOKv4": {
+          title: "Guide to the Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0",
+	  authors: "Hironori Washizaki",
+          href: "https://www.swebok.org/",
+          status: "Published",
+          date: "2024",
+          publisher: "IEEE Computer Society"
+        },        
+	"ISO-6709": {
           title: "ISO-6709:2008 : Standard representation of geographic point location by coordinates",
           href: "https://www.iso.org/standard/39242.html",
           status: "Published",
@@ -342,53 +350,35 @@
       Since this document is a WG note, additional use cases will be added in future revisions of this document.
     </p>
 
-    <section id="domains">
+      <section id="terminology">
+        <h2>Terminology</h2>
+        This document uses the terminology from WoT Architecture [[wot-architecture]].
+	In addition, the following terms are used with the defined meanings:
+	<dl>
+	<dt>Use Case:</dt><dd>A use case is a documented scenario that achieves a specific set of goals for specific users that the WoT should support. Ideally, use cases identify specific needed functionality or gaps in current standards.</dd>
+
+	<dt>Use Case Category:</dt><dd>A Use Case Category is a set of Use Cases with a common property. These are used to group Use Cases so they can be referred to easily when defining requirements, i.e., User Stories.</dd>
+	<dt>Requirement:</dt><dd>A Requirement is a condition or capability needed by a user to solve a problem or acheive an objective; it may also be a condition or capability that must be met or possessed by a system or system component to satisfy another formally imposed document, such as an external standard [[SWEBOKv4]].</dd>
+
+	<dt>User Story:</dt><dd>A User Story relates a specific feature or set of features (or proposed features) in the WoT specifications with its motivation, which may reference a Use Case. User stories summarize both functional requirements (the purpose) and technical requirements (the feature), and also indicate the stakeholder that requires the feature.  User stories can be expressed in a sentence of the form: "As a STAKEHOLDER I need a FEATURE so that PURPOSE."  User Stories are not detailed requirements; these should be maintained elsewhere, for example by the responsible Task Force, with the User Story linking to them.</dd>
+
+	</dl>
+      </section>
+
+      <section id="domains">
       <h2>Domains</h2>
       <p>
-        The collection of use cases can be separated into two categories:
+        The collection of use cases in this document can be separated into two categories:
       <ul>
-        <li>Domain specific (vertical) use cases for a single application domain.
-          <ul>
-            <li>Agriculture</li>
-            <li>Smart City</li>
-            <li>Smart Buildings</li>
-            <li>Manufacturing</li>
-            <li>Retail</li>
-            <li>Health</li>
-            <li>Energy</li>
-            <li>Transportation</li>
-            <li>Automotive</li>
-            <li>Smart Home</li>
-            <li>Education</li>
-          </ul>
-        </li>
-        <li>Horizontal use cases that address multiple domains.
-          <ul>
-            <li>Discovery</li>
-            <li>Multi-Vendor System Integration</li>
-            <li>Digital Twin</li>
-            <li>Cross Protocol Interworking</li>
-            <li>Multimodal System Integration</li>
-            <li>Accessibility</li>
-            <li>Security</li>
-            <li>Lifecycle</li>
-            <li>VR/AR</li>
-            <li>Edge Computing</li>
-          </ul>
-        </li>
+        <li>Domain-specific (vertical) use cases for a single application domain.</li>
+
+        <li>Horizontal use cases that address multiple domains.</li>
       </ul>
       Domain specific use cases are described in <a href="#sec-vertical-ucs"></a>,
       horizontal use cases are described in <a href="#sec-horizontal-ucs"></a>
       </p>
-    </section>
-
-    <section id="definitions">
-      <h2>Terminology, Stakeholders and Roles</h2>
-      <section id="terminology">
-        <h2>Terminology</h2>
-        The present document uses the terminology from WoT Architecture [[wot-architecture]].
       </section>
-
+	    
       <section id="stakeholders">
         <h2>Stakeholders and Roles</h2>
         <p>
@@ -398,13 +388,13 @@
 	  document for full definitions:
 	</p>
 	<ul>
-          <li id="STAKEHOLDER-Device-Manufacturer">Device Manufacturer</li>
-          <li id="STAKEHOLDER-System-Provider">System Provider</li>
-          <li id="STAKEHOLDER-System-Integrator">System Integrator</li>
-          <li id="STAKEHOLDER-System-Installer">System Installer</li>
-          <li id="STAKEHOLDER-System-User">System User</li>
-          <li id="STAKEHOLDER-System-Owner">System Owner</li>
-          <li id="STAKEHOLDER-System-Maintainer">System Maintainer</li>
+          <li id="STAKEHOLDER-Device-Manufacturer">Device Manufacturer: Device makers are individuals, companies, or organizations that design and develop networked or IoT devices to be sold to consumers.</li>
+          <li id="STAKEHOLDER-System-Provider">System Provider: A system provider is an individual, company, or organization that provides systems, such as network systems and IoT systems, to other individuals or organizations.</li>
+          <li id="STAKEHOLDER-System-Integrator">System Integrator: A system integrator is an individual, company, or organization that specializes in integrating and linking network systems, IoT systems, etc.</li>
+          <li id="STAKEHOLDER-System-Installer">System Installer: A system installer is an individual, company, or organization that sets up and makes available systems and devices.</li>
+          <li id="STAKEHOLDER-System-User">System User: A system user is a person, company, or organization that uses an application or IoT system.</li>
+          <li id="STAKEHOLDER-System-Owner">System Owner: A system owner is a person, company, or organization that has management responsibility for a network system or IoT system.</li>
+          <li id="STAKEHOLDER-System-Maintainer">System Maintainer: A system maintainer is a person, company, or organization that maintains, supports, and operates a network system or IoT system.</li>
         </ul>
         <p>
           The following additional stakeholders and roles were identified
@@ -424,7 +414,6 @@
 
         </ul>
       </section>
-    </section>
   </section>
 
   <!-- DOMAIN SPECIFIC USE CASES -->
