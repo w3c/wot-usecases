@@ -8905,7 +8905,8 @@ Therefore, various data for agricultural machinery management should be represen
  
     <section id="US-sec-mitigate-pbt">
       <h3>Mitigate WoT Protocol Binding Threat</h3>
-      <p>TO DO: Details to be filled in.</p>
+      <p>Remote attack methods using a WoT protocol binding with the intent to gain
+      unauthorized access to WoT assets should be mitigated.</p>
       <dl>
         <dt>Related Risk:</dt>
         <dd>
@@ -8917,27 +8918,21 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>CAPABILITY</p>
-          <dl>
-            <dt>Capability Details</dt>
-            <dd>
-              DETAILS
-            </dd>
-          </dl>
+          <p>Access controls, authentication, and authorization mechanisms</p>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Prevent unauthorized malicious access to WoT assets</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -8952,7 +8947,8 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-sec-mitigate-etc">
       <h3>Mitigate Exposed Thing Compromise Threat</h3>
-      <p>TO DO: Details to be filled in.</p>
+      <p>Remote attack methods using the exposed WoT interface described by a WoT Thing Description with the intent to gain
+      unauthorized access to WoT assets should be mitigated.</p>
       <dl>
         <dt>Related Risk:</dt>
         <dd>
@@ -8965,27 +8961,21 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>CAPABILITY</p>
-          <dl>
-            <dt>Capability Details</dt>
-            <dd>
-              DETAILS
-            </dd>
-          </dl>
+          <p>Access controls, authentication, and authorization mechanisms</p>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Prevent unauthorized malicious access to WoT assets</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9002,7 +8992,7 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-sec-access-control">
       <h3>Security Access Control</h3>
-      <p>TO DO: Details to be filled in.</p>
+      <p>Control and manage access to WoT assets to prevent misuse by unauthorized attackers.</p>
       <dl>
         <dt>Related Risk:</dt>
         <dd>
@@ -9015,27 +9005,21 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>CAPABILITY</p>
-          <dl>
-            <dt>Capability Details</dt>
-            <dd>
-              DETAILS
-            </dd>
-          </dl>
+          <p>Ability to restrict access to WoT assets to specific authenticated users, and verify their authority to use specific assets</p>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Prevent unauthorized malicious use of WoT assets</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9050,7 +9034,7 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-sec-mitigate-dos">
       <h3>Mitigate WoT DoS Threat</h3>
-      <p>TO DO: Details to be filled in.</p>
+      <p>Prevent Denial-of-Service attacks on WoT services by malicious attackers that prevent legitimate usage by authorized users.</p>
       <dl>
         <dt>Related Risk:</dt>
         <dd>
@@ -9062,27 +9046,30 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>CAPABILITY</p>
+          <p>The ability to ensure access to WoT services by authorized users even when subjected to malicious network attacks</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              An attacker may attempt to block access by other users to a WoT service by, for example,
+	      sending a device numerous requests to keep it too busy to respond to other authorized users.
+	      Devices implemementations should attempt to mitigate these attacks, for example by minimizing the time
+	      spent on unauthorized requests and rate-limiting requests by source if possible.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT services can always be available to authorized users</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9097,7 +9084,7 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-sec-mitigate-ddos">
       <h3>Mitigate WoT DDoS Threat</h3>
-      <p>TO DO: Details to be filled in.</p>
+      <p>Prevent use of WoT services for Distributed Denial-of-Service attacks on other services.</p>
       <dl>
         <dt>Related Risk:</dt>
         <dd>
@@ -9109,27 +9096,21 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>CAPABILITY</p>
-          <dl>
-            <dt>Capability Details</dt>
-            <dd>
-              DETAILS
-            </dd>
-          </dl>
+          <p>Prevent usage of WoT services for DDoS attacks</p>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>WoT devices are not used maliciously to prevent access to other services</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9144,7 +9125,7 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-sec-mitigate-ctda">
       <h3>Mitigate Communication Threat - TD Authenticity</h3>
-      <p>TO DO: Details to be filled in.</p>
+      <p>Descriptions of WoT interfaces, for example in TDs, should be accurate and modification by unauthorized third parties should be prevented to avoid spoofing, redirection, and other attacks.</p>
       <dl>
         <dt>Related Risk:</dt>
         <dd>
@@ -9157,27 +9138,21 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>CAPABILITY</p>
-          <dl>
-            <dt>Capability Details</dt>
-            <dd>
-              DETAILS
-            </dd>
-          </dl>
+          <p>The ability to prevent WoT TDs from unauthorized modification</p>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Modification of WoT TDs cannot be used for spoofing or redirection attacks.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9205,11 +9180,11 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9253,11 +9228,11 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9301,11 +9276,11 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -9349,11 +9324,11 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p>WHO</p>
+          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              OTHERS
+              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
