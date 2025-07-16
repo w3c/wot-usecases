@@ -8900,8 +8900,6 @@ Therefore, various data for agricultural machinery management should be represen
     </dl>
   </section>
 -->
-
-<!-- TO DO: Need to specify/name mitigations for these! -->
  
     <section id="US-sec-mitigate-pbt">
       <h3>Mitigate WoT Protocol Binding Threat</h3>
@@ -8937,7 +8935,7 @@ Therefore, various data for agricultural machinery management should be represen
             <dt>Motivating Use Cases</dt>
             <dd>
               <ul>
-                <li>[[[##CAT-Security-Private-Information]]]</li>
+                <li>[[[#CAT-Security-Private-Information]]]</li>
               </ul>
             </dd>
           </dl>
@@ -9167,7 +9165,7 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-sec-mitigate-ctdcp">
       <h3>Mitigate Communication Threat - TD Confidentiality and Privacy</h3>
-      <p>TO DO: Details to be filled in.</p>
+      <p>Prevent interception of confidential device metadata by unauthorized third parties to avoid releasing information that might be used to plan attacks or to infer private information.</p>
       <dl>
         <dt>Related Risk:</dt>
         <dd>
@@ -9190,7 +9188,7 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>CAPABILITY</p>
+          <p>The ability to restrict access to metadata, such as Thing Descriptions, to authorized users only</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
@@ -9200,7 +9198,7 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Unauthorized users cannot use confidential metadata to plan attacks or to infer private information about users, device owners, or other stakeholders.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9215,7 +9213,7 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-sec-mitigate-csuda">
       <h3>Mitigate Communication Threat - System User Data Authenticity</h3>
-      <p>TO DO: Details to be filled in.</p>
+      <p>Data related to system users, such as identity or access rights, should be confirmed before access is granted.</p>
       <dl>
         <dt>Related Risk:</dt>
         <dd>
@@ -9238,17 +9236,18 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>CAPABILITY</p>
+          <p>The ability to confirm the accuracy (authenticity) of system user data, such as access rights or identity.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              In some cases, anonymous access to system services may be required.  In this case there should be a mechanism
+	      to authenticate access rights only, such as bearer tokens, with user identity confirmed separately.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Unauthorized access to a system is not made available to unauthenticated attackers posing as authorized system users.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9263,7 +9262,7 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-sec-mitigate-csudcp">
       <h3>Mitigate Communication Threat - System User Data Confidentiality and Privacy</h3>
-      <p>TO DO: Details to be filled in.</p>
+      <p>The identity and other private information of systems users, including whenever possible what services they are accessing, should be kept confidential.</p>
       <dl>
         <dt>Related Risk:</dt>
         <dd>
@@ -9286,17 +9285,18 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>CAPABILITY</p>
+          <p>The ability to maintain the confidentiality of system user data</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              The identities of users should not be revealed in general to third parties, and in some cases not even to the device (using, for example, separation of authentication/identity and authorization capabilities).
+	      There also should be mechanisms in place to prevent visibility to third parties of which services are being accessed by system users.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>Private information about system users is not revealed to unauthorized third parties.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9311,7 +9311,7 @@ Therefore, various data for agricultural machinery management should be represen
 
     <section id="US-sec-mitigate-csc">
       <h3>Mitigate Communication Threat - Side Channels</h3>
-      <p>TO DO: Details to be filled in.</p>
+      <p>Mitigations to prevent interception and/or modification by unauthorized third parties should be available for all communications, including the transmission of metadata (e.g., TDs).</p>
       <dl>
         <dt>Related Risk:</dt>
         <dd>
@@ -9334,17 +9334,19 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>CAPABILITY</p>
+          <p>The ability to secure communications so it cannot be intercepted or modified by unauthorized third parties</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              This can be supported by encrypted communication channels, a precondition for which is authentication of the authorized participants in the communication.
+	      The encrypted communication also needs to ensure the integrity of the communication; it not only should not be possible in general for 
+	      an unauthorized party to read communications, they should also not be able to modify communications without detection.
             </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>REASON</p>
+          <p>An attacker cannot gain access to confidential information or gain access to WoT assets by manipulation of authorized communications</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
