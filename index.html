@@ -8926,8 +8926,16 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Access controls, authentication, and authorization mechanisms</p>
-        </dd>
+          <p>Access controls, authentication, and authorization mechanisms.</p>
+	  <dl>
+            <dt>Capability Details</dt>
+            <dd>
+              <p>The network interfaces of WoT devices and services should support appropriate security mechanisms for each protocol.</p>
+	      <ul> 
+		<li><a href="https://w3c.github.io/wot-thing-description/#sec-security-vocabulary-definition">WoT Thing Description: Security Vocabulary Definitions</li>
+	      </ul>            
+          </dl>        
+	</dd>
         <dt>Why (so that...)</dt>
         <dd>
           <p>Prevent unauthorized malicious access to WoT assets</p>
@@ -8969,8 +8977,16 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Access controls, authentication, and authorization mechanisms</p>
-        </dd>
+          <p>Access controls, authentication, and authorization mechanisms.</p>
+	  <dl>
+            <dt>Capability Details</dt>
+            <dd>
+              <p>The network interfaces of WoT devices and services should support appropriate security mechanisms for each protocol.</p>
+	      <ul> 
+		<li><a href="https://w3c.github.io/wot-thing-description/#sec-security-vocabulary-definition">WoT Thing Description: Security Vocabulary Definitions</li>
+	      </ul>            
+          </dl>        
+	</dd>
         <dt>Why (so that...)</dt>
         <dd>
           <p>Prevent unauthorized malicious access to WoT assets</p>
@@ -9013,11 +9029,21 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Ability to restrict access to WoT assets to specific authenticated users, and verify their authority to use specific assets</p>
-        </dd>
+          <p>Ability to restrict access to WoT assets to specific authenticated users, and verify their authority to use specific assets.</p>
+	  <dl>
+            <dt>Capability Details</dt>
+            <dd>
+              <p>The architecture of WoT services, such as directory services and self-description,
+	      should allow for authentication and authorization checks before releasing any information.</p>
+	      <ul>
+		      <li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</li>
+		      <li><a href="https://w3c.github.io/wot-thing-description/#sec-security-vocabulary-definition">WoT Thing Description: Security Vocabulary Definitions</li>
+	      </ul>            
+          </dl>        
+	</dd>
         <dt>Why (so that...)</dt>
         <dd>
-          <p>Prevent unauthorized malicious use of WoT assets</p>
+          <p>Prevent unauthorized malicious use of WoT assets.</p>
           <dl>
             <dt>Motivating Use Cases</dt>
             <dd>
@@ -9054,15 +9080,16 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>The ability to ensure access to WoT services by authorized users even when subjected to malicious network attacks</p>
+          <p>The ability to ensure access to WoT services by authorized users even when subjected to malicious network attacks.</p>
           <dl>
             <dt>Capability Details</dt>
             <dd>
               An attacker may attempt to block access by other users to a WoT service by, for example,
 	      sending a device numerous requests to keep it too busy to respond to other authorized users.
-	      Devices implemementations should attempt to mitigate these attacks, for example by minimizing the time
-	      spent on unauthorized requests and rate-limiting requests by source if possible.
-            </dd>
+	      Devices implementations should implement best practices to mitigate these attacks.
+	      <ul>
+		<li><a href="https://www.w3.org/TR/wot-discovery/#security-consideration-dos">WoT Discovery: Denial of Service</li>
+	      </ul>            
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
@@ -9104,8 +9131,16 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>Prevent usage of WoT services for DDoS attacks</p>
-        </dd>
+          <p>Prevent usage of WoT services for distributed denial of service attacks.</p>
+	  <dl>
+            <dt>Capability Details</dt>
+            <dd>
+              <ul>
+		<li><a href="https://www.w3.org/TR/wot-discovery/#security-consideration-amp-ddos">WoT Discovery: Amplification and Distributed Denial of Service</li>
+	      </ul>
+            </dd>
+          </dl>	
+	</dd>
         <dt>Why (so that...)</dt>
         <dd>
           <p>WoT devices are not used maliciously to prevent access to other services</p>
@@ -9146,8 +9181,16 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>The ability to prevent WoT TDs from unauthorized modification</p>
-        </dd>
+          <p>The ability to prevent WoT TDs from unauthorized modification.</p>
+	  <dl>
+	  <dt>Capability Details</dt>
+            <dd>
+              <ul>
+		<li><a href="https://www.w3.org/TR/wot-discovery/#security-consideration-lan-self-discovery">WoT Discovery: Self-Discovery on LANs</li>
+	      </ul>
+            </dd>
+	  </dl>
+	</dd>
         <dt>Why (so that...)</dt>
         <dd>
           <p>Modification of WoT TDs cannot be used for spoofing or redirection attacks.</p>
@@ -9188,11 +9231,14 @@ Therefore, various data for agricultural machinery management should be represen
         </dd>
         <dt>What (I need...)</dt>
         <dd>
-          <p>The ability to restrict access to metadata, such as Thing Descriptions, to authorized users only</p>
-          <dl>
+          <p>The ability to restrict access to metadata, such as Thing Descriptions, to authorized users only.</p>
+	  <dl>
             <dt>Capability Details</dt>
             <dd>
-              DETAILS
+              <ul>
+		<li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</li>
+		<li><a href="https://www.w3.org/TR/wot-discovery/#security-consideration-lan-self-discovery">WoT Discovery: Self-Discovery on LANs</li>
+	      </ul>
             </dd>
           </dl>
         </dd>
@@ -9240,9 +9286,18 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              In some cases, anonymous access to system services may be required.  In this case there should be a mechanism
-	      to authenticate access rights only, such as bearer tokens, with user identity confirmed separately.
+              <p>In some cases, anonymous access to system services may be required.  In this case there should be a mechanism
+	      to authenticate access rights only, such as bearer tokens, with user identity confirmed separately.</p>
+	    <dl>
+            <dt>Capability Details</dt>
+            <dd>
+              <ul>
+		<li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</li>
+		<li><a href="https://w3c.github.io/wot-thing-description/#sec-security-vocabulary-definition">WoT Thing Description: Security Vocabulary Definitions</li>
+	      </ul>
             </dd>
+          </dl>            
+	    </dd>
           </dl>
         </dd>
         <dt>Why (so that...)</dt>
@@ -9289,8 +9344,18 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              The identities of users should not be revealed in general to third parties, and in some cases not even to the device (using, for example, separation of authentication/identity and authorization capabilities).
-	      There also should be mechanisms in place to prevent visibility to third parties of which services are being accessed by system users.
+              <p>The identities of users should not be revealed in general to third parties, and in some cases not even to the device (using, for example, separation of authentication/identity and authorization capabilities).
+	      There also should be mechanisms in place to prevent visibility to third parties of which services are being accessed by system users.</p>
+		<dl>
+            <dt>Capability Details</dt>
+            <dd>
+              <ul>
+		<li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</li>
+	        <li><a href="https://www.w3.org/TR/wot-discovery/#privacy-considerations">WoT Discovery: Privacy Considerations</li>		
+		<li><a href="https://w3c.github.io/wot-thing-description/#sec-security-vocabulary-definition">WoT Thing Description: Security Vocabulary Definitions</li>
+	      </ul>
+            </dd>
+          </dl>
             </dd>
           </dl>
         </dd>
@@ -9338,9 +9403,20 @@ Therefore, various data for agricultural machinery management should be represen
           <dl>
             <dt>Capability Details</dt>
             <dd>
-              This can be supported by encrypted communication channels, a precondition for which is authentication of the authorized participants in the communication.
+              <p>This can be supported by encrypted communication channels, a precondition for which is authentication of the authorized participants in the communication.
 	      The encrypted communication also needs to ensure the integrity of the communication; it not only should not be possible in general for 
-	      an unauthorized party to read communications, they should also not be able to modify communications without detection.
+	      an unauthorized party to read communications, they should also not be able to modify communications without detection.</p>
+	    <dl>
+            <dt>Capability Details</dt>
+            <dd>
+              <ul>
+		<li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</li>
+	        <li><a href="https://www.w3.org/TR/wot-discovery/#privacy-considerations">WoT Discovery: Privacy Considerations</li>		
+		<li><a href="https://w3c.github.io/wot-thing-description/#sec-security-vocabulary-definition">WoT Thing Description: Security Vocabulary Definitions</li>
+		<li><a href="https://www.w3.org/TR/wot-architecture11/#sec-security-considerations">WoT Architecture: Security Considerations</li>	      
+	      </ul>
+            </dd>
+          </dl>
             </dd>
           </dl>
         </dd>
