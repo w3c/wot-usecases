@@ -8773,7 +8773,6 @@ Therefore, various data for agricultural machinery management should be represen
           <dl><dt>Design:</dt>
             <dd>
               <ul>
-		<li><a href="https://github.com/w3c/wot-usecases/issues/345">Issue 345</a></li>
 		<li><a href="https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms">https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms</a></li>
                 <li><a href="https://github.com/w3c/wot-binding-templates/pull/331">feat(modbus): introduce modbus type and byte/word order wot-binding-templates#331</a></li>
               </ul>
@@ -8782,6 +8781,12 @@ Therefore, various data for agricultural machinery management should be represen
             <dd>
               <p>TD consumers can communicate with my devices</p>
           <dl>  
+	  <dt>Related Issues:</dt>
+	  <dd>
+	  <ul>
+		<li><a href="https://github.com/w3c/wot-usecases/issues/345">Issue 345</a></li>
+	  </ul>
+	  </dd>
           <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
@@ -8812,14 +8817,20 @@ Therefore, various data for agricultural machinery management should be represen
             <dl><dt>Design:</dt>
               <dd>
                 <ul>
-		  <li><a href="https://github.com/w3c/wot-usecases/issues/346">Issue 346</a></li>
 		  <li><a href="https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms">https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms</a></li>
                 </ul>
               </dd></dl></dd>
             <dt>Why (so that...):</dt>
               <dd>
                 <p>TD consumers can use an appropriate polling rate</p>
-            <dl><dt>Motivating Use Cases:</dt>
+            <dl>
+	      <dt>Related Issues:</dt>
+	      <dd>
+	       <ul>
+		<li><a href="https://github.com/w3c/wot-usecases/issues/346">Issue 346</a></li>
+	       </ul>
+	      </dd>
+	      <dt>Motivating Use Cases:</dt>
               <dd>
                 <ul>
                   <li>[[[#UC-production-monitoring-1]]]</li>
@@ -8893,8 +8904,12 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p>Prevent unauthorized malicious access to WoT assets.</p>
 	  <dl>
-	    <dt>Related Risk:</dt><dd>
-	     <a href="https://w3c.github.io/wot-security/#dfn-wot-protocol-binding-threat">WoT Protocol Binding Threat</a></dd>
+	    <dt>Related Risks:</dt>
+	    <dd>
+	      <ul>
+	        <li><a href="https://w3c.github.io/wot-security/#dfn-wot-protocol-binding-threat">WoT Protocol Binding Threat</a></li>
+	      </ul>
+	    </dd>
             <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
@@ -8945,9 +8960,13 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p>Prevent unauthorized malicious access to WoT assets.</p>
 	  <dl>
-	    <dt>Related Risk:</dt><dd> 
-	      <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-exposed-thing-compromise">WoT Interface
-            Threat - Exposed Thing Compromise</a></dd>
+	    <dt>Related Risks:</dt>
+	    <dd> 
+	      <ul>
+	        <li><a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-exposed-thing-compromise">WoT Interface
+                       Threat - Exposed Thing Compromise</a></li>
+	      </ul>
+	    </dd>
             <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
@@ -9001,10 +9020,12 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p>Prevent unauthorized malicious use of WoT assets.</p>
 	  <dl>
-            <dt>Related Risk:</dt>
+            <dt>Related Risks:</dt>
 	    <dd>
-	      <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-unauthorized-wot-interface-access">WoT
-            Interface Threat - Unauthorized WoT Interface Access</a>
+	      <ul>
+	        <li><a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-unauthorized-wot-interface-access">WoT
+                        Interface Threat - Unauthorized WoT Interface Access</a></li>
+	      </ul>
 	    </dd>
             <dt>Motivating Use Cases:</dt>
             <dd>
@@ -9056,10 +9077,12 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p>WoT services can always be available to authorized users.</p>
           <dl>
-	    <dt>Related Risk:</dt>
+	    <dt>Related Risks:</dt>
             <dd>
-              <a href="https://w3c.github.io/wot-security/#dfn-wot-dos-threat">WoT DoS Threat</a>
-            </dd>
+	      <ul>
+                <li><a href="https://w3c.github.io/wot-security/#dfn-wot-dos-threat">WoT DoS Threat</a></li>
+	      </ul>            
+	    </dd>
             <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
@@ -9106,9 +9129,11 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p>WoT devices are not used maliciously to prevent access to other services.</p>
           <dl>
-            <dt>Related Risk:</dt>
+            <dt>Related Risks:</dt>
             <dd>
-              <a href="https://w3c.github.io/wot-security/#dfn-wot-ddos-threat">WoT DDoS Threat</a>
+	      <ul>
+                <li><a href="https://w3c.github.io/wot-security/#dfn-wot-ddos-threat">WoT DDoS Threat</a></li>
+	      </ul>
             </dd>
 	    <dt>Motivating Use Cases:</dt>
             <dd>
@@ -9156,10 +9181,12 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p>Modification of WoT TDs cannot be used for spoofing or redirection attacks.</p>
           <dl>
-	    <dt>Related Risk:</dt>
+	    <dt>Related Risks:</dt>
             <dd>
-              <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-td-authenticity">WoT
-                 Communication Threat - TD Authenticity</a>
+	      <ul>
+                <li><a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-td-authenticity">WoT
+                   Communication Threat - TD Authenticity</a></li>
+	      </ul>
             </dd>
 	    <dt>Motivating Use Cases:</dt>
             <dd>
@@ -9208,10 +9235,12 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p>Unauthorized users cannot use confidential metadata to plan attacks or to infer private information about users, device owners, or other stakeholders.</p>
           <dl>
-	    <dt>Related Risk:</dt>
+	    <dt>Related Risks:</dt>
             <dd>
-              <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-td-confidentiality-and-privacy">WoT
-                Communication Threat - TD Confidentiality and Privacy</a>
+	      <ul>
+                <li><a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-td-confidentiality-and-privacy">WoT
+                Communication Threat - TD Confidentiality and Privacy</a></li>
+	      </ul>
             </dd>
             <dt>Motivating Use Cases:</dt>
             <dd>
@@ -9267,10 +9296,12 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p>Unauthorized access to a system is not made available to unauthenticated attackers posing as authorized system users.</p>
           <dl>
-	    <dt>Related Risk:</dt>
+	    <dt>Related Risks:</dt>
             <dd>
-              <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-system-user-data-authenticity">WoT
-                Communication Threat - System User Data Authenticity</a>
+	      <ul>
+                <li><a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-system-user-data-authenticity">WoT
+                Communication Threat - System User Data Authenticity</a></li>
+	      </ul>
             </dd>            
 	    <dt>Motivating Use Cases:</dt>
             <dd>
@@ -9327,10 +9358,12 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p>Private information about system users is not revealed to unauthorized third parties.</p>
           <dl>
-            <dt>Related Risk:</dt>
+            <dt>Related Risks:</dt>
             <dd>
-              <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-system-user-data-confidentiality-and-privacy">WoT
-               Communication Threat - System User Data Confidentiality and Privacy</a>
+	       <ul>
+                 <li><a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-system-user-data-confidentiality-and-privacy">WoT
+                    Communication Threat - System User Data Confidentiality and Privacy</a></li>
+	       </ul>
             </dd>
 	    <dt>Motivating Use Cases:</dt>
             <dd>
@@ -9389,10 +9422,12 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p>An attacker cannot gain access to confidential information or gain access to WoT assets by manipulation of authorized communications</p>
           <dl>
-	   <dt>Related Risk:</dt>
+	   <dt>Related Risks:</dt>
            <dd>
-              <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-side-channels">WoT
+	      <ul>
+                 <li></li><a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-side-channels">WoT
                  Communication Threat - Side Channels</a></li>
+	      </ul>
             </dd>
 	    <dt>Motivating Use Cases:</dt>
             <dd>
