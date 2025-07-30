@@ -8717,7 +8717,8 @@ Therefore, various data for agricultural machinery management should be represen
       consistent.</p>
       <section id="US-connection-oriented-protocols">
 	      <h3>Connection Oriented Protocols</h3>
-	      <dl><dt>Submitters</dt><dd>Ege Korkan</dd>
+	      <dl><dt>Status:</dt><dd>Work in Progress</dd>
+		  <dt>Submitters:</dt><dd>Ege Korkan</dd>
 		  <dt>Who (As a...):</dt><dd>Deployer of devices with connection oriented protocols.</dd>
 	          <dt>What (I need...):</dt><dd><p>Reusable Connection descriptions in a TD.</p>
 		      <dl>
@@ -8734,7 +8735,8 @@ Therefore, various data for agricultural machinery management should be represen
       </section>
       <section id="US-reusable-defaults-per-TD">
 	      <h3>Reusable Defaults per TD</h3>
-	      <dl><dt>Submitters</dt><dd>Ege Korkan</dd>
+	      <dl><dt>Status:</dt><dd>Work in Progress</dd>
+		  <dt>Submitters:</dt><dd>Ege Korkan</dd>
                   <dt>Who (As a...):</dt><dd>Designer/Developer of TDs</dd>
 	          <dt>What (I need...):</dt><dd>Reusable Connection descriptions in a TD</dd>
 	          <dt>Why (so that...):</dt><dd><p>Simplify TDs in cases without usage of default terms or to avoid redundancy</p>
@@ -8753,11 +8755,8 @@ Therefore, various data for agricultural machinery management should be represen
       <section id="td-byte-ordering">
         <h3>Byte Ordering for Binary Data Formats</h3>
         <dl>
-	  <dt>Issue:</dt>
-	    <dd>
-		<a href="https://github.com/w3c/wot-usecases/issues/345">Issue 345</a>
-	    </dd>
-          <dt>Submitters</dt>
+	  <dt>Status:</dt><dd>Work in Progress</dd>          
+	  <dt>Submitters:</dt>
             <dd>
               Ege Korkan, Michael McCool
             </dd>
@@ -8771,10 +8770,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>What (I need...)</dt>
             <dd>
               <p>Express the byte ordering of data from my devices in binary protocols (such as Modbus, Profinet, etc)</p>
-          <dl><dt>Capability Details</dt>
+          <dl><dt>Design:</dt>
             <dd>
               <ul>
-                <li><a href="https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms">https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms</a></li>
+		<li><a href="https://github.com/w3c/wot-usecases/issues/345">Issue 345</a></li>
+		<li><a href="https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms">https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms</a></li>
                 <li><a href="https://github.com/w3c/wot-binding-templates/pull/331">feat(modbus): introduce modbus type and byte/word order wot-binding-templates#331</a></li>
               </ul>
             </dd></dl></dd>
@@ -8794,34 +8794,32 @@ Therefore, various data for agricultural machinery management should be represen
       <section id="td-polling-rate-limit">
         <h3>Polling Rate Limit</h3>
           <dl>
-	<dt>Issue:</dt>
-	    <dd>
-		<a href="https://github.com/w3c/wot-usecases/issues/346">Issue 346</a>
-	    </dd>
-            <dt>Submitters</dt>
+	<dt>Status:</dt><dd>Work in Progress</dd>
+	<dt>Submitters:</dt>
               <dd>
                 Ege Korkan, Michael McCool
               </dd>
-            <dt>Who (As a...)</dt>
+            <dt>Who (As a...):</dt>
               <dd>
                 <p>Device manufacturer</p> 
             <dl><dt>Other Stakeholders</dt>
               <dd>
                 TD consumer
               </dd></dl></dd>
-            <dt>What (I need...)</dt>
+            <dt>What (I need...):</dt>
               <dd>
                 <p>Express the polling rate limit from devices without event notifications (such as Modbus, Profinet, etc.)</p>
-            <dl><dt>Capability Details</dt>
+            <dl><dt>Design:</dt>
               <dd>
                 <ul>
-                  <li><a href="https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms">https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms</a></li>
+		  <li><a href="https://github.com/w3c/wot-usecases/issues/346">Issue 346</a></li>
+		  <li><a href="https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms">https://w3c.github.io/wot-binding-templates/bindings/protocols/modbus/#form-terms</a></li>
                 </ul>
               </dd></dl></dd>
-            <dt>Why (so that...)</dt>
+            <dt>Why (so that...):</dt>
               <dd>
                 <p>TD consumers can use an appropriate polling rate</p>
-            <dl><dt>Motivating Use Cases</dt>
+            <dl><dt>Motivating Use Cases:</dt>
               <dd>
                 <ul>
                   <li>[[[#UC-production-monitoring-1]]]</li>
@@ -8906,15 +8904,12 @@ Therefore, various data for agricultural machinery management should be represen
       <p>Remote attack methods using a WoT protocol binding with the intent to gain
       unauthorized access to WoT assets should be mitigated.</p>
       <dl>
-        <dt>Related Risk:</dt>
-        <dd>
-          <a href="https://w3c.github.io/wot-security/#dfn-wot-protocol-binding-threat">WoT Protocol Binding Threat</a>
-        </dd>
-        <dt>Submitters</dt>
+	<dt>Status:</dt><dd>Satisfied</dd>
+        <dt>Submitters:</dt>
         <dd>
           Michael McCool
         </dd>
-        <dt>Who (As a...)</dt>
+        <dt>Who (As a...):</dt>
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
@@ -8924,19 +8919,24 @@ Therefore, various data for agricultural machinery management should be represen
             </dd>
           </dl>
         </dd>
-        <dt>What (I need...)</dt>
+        <dt>What (I need...):</dt>
         <dd>
           <p>Access controls, authentication, and authorization mechanisms.</p>
 	  <dl>
-            <dt>Capability Details</dt>
+            <dt>Capability Details:</dt>
             <dd>
               <p>The network interfaces of WoT devices and services should support appropriate security mechanisms for each protocol.</p>
+	      <p>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-protocol-binding-threat">WoT Protocol Binding Threat</a></p>
+            </dd>
+	    <dt>Realization:</dt>
+	<dd>
 	      <ul> 
 		<li><a href="https://w3c.github.io/wot-thing-description/#sec-security-vocabulary-definition">WoT Thing Description: Security Vocabulary Definitions</a></li>
-	      </ul>            
+	      </ul> 
+	</dd>           
           </dl>        
 	</dd>
-        <dt>Why (so that...)</dt>
+        <dt>Why (so that...):</dt>
         <dd>
           <p>Prevent unauthorized malicious access to WoT assets</p>
           <dl>
@@ -8956,16 +8956,12 @@ Therefore, various data for agricultural machinery management should be represen
       <p>Remote attack methods using the exposed WoT interface described by a WoT Thing Description with the intent to gain
       unauthorized access to WoT assets should be mitigated.</p>
       <dl>
-        <dt>Related Risk:</dt>
-        <dd>
-          <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-exposed-thing-compromise">WoT Interface
-            Threat - Exposed Thing Compromise</a>
-        </dd>
-        <dt>Submitters</dt>
+	<dt>Status:</dt><dd>Satisfied</dd>
+        <dt>Submitters:</dt>
         <dd>
           Michael McCool
         </dd>
-        <dt>Who (As a...)</dt>
+        <dt>Who (As a...):</dt>
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
@@ -8975,23 +8971,28 @@ Therefore, various data for agricultural machinery management should be represen
             </dd>
           </dl>
         </dd>
-        <dt>What (I need...)</dt>
+        <dt>What (I need...):</dt>
         <dd>
           <p>Access controls, authentication, and authorization mechanisms.</p>
 	  <dl>
-            <dt>Capability Details</dt>
+            <dt>Capability Details:</dt>
             <dd>
               <p>The network interfaces of WoT devices and services should support appropriate security mechanisms for each protocol.</p>
+	      <p>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-exposed-thing-compromise">WoT Interface
+            Threat - Exposed Thing Compromise</a></p>
+	    </dd>
+	    <dt>Realization:</dt><dd>
 	      <ul> 
 		<li><a href="https://w3c.github.io/wot-thing-description/#sec-security-vocabulary-definition">WoT Thing Description: Security Vocabulary Definitions</a></li>
-	      </ul>            
+	      </ul>  
+	    </dd>
           </dl>        
 	</dd>
-        <dt>Why (so that...)</dt>
+        <dt>Why (so that...):</dt>
         <dd>
           <p>Prevent unauthorized malicious access to WoT assets</p>
           <dl>
-            <dt>Motivating Use Cases</dt>
+            <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#CAT-Security-Private-Information]]]</li>
