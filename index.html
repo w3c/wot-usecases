@@ -8760,10 +8760,10 @@ Therefore, various data for agricultural machinery management should be represen
             <dd>
               Ege Korkan, Michael McCool
             </dd>
-          <dt>Who (As a...)</dt>
+          <dt>Who (As a...):</dt>
             <dd>
               <p>Device manufacturer</p>
-          <dl><dt>Other Stakeholders</dt>
+          <dl><dt>Other Stakeholders:</dt>
             <dd>
               TD consumer
             </dd></dl></dd>
@@ -8778,11 +8778,11 @@ Therefore, various data for agricultural machinery management should be represen
                 <li><a href="https://github.com/w3c/wot-binding-templates/pull/331">feat(modbus): introduce modbus type and byte/word order wot-binding-templates#331</a></li>
               </ul>
             </dd></dl></dd>
-          <dt>Why (so that...)</dt>
+          <dt>Why (so that...):</dt>
             <dd>
               <p>TD consumers can communicate with my devices</p>
           <dl>  
-          <dt>Motivating Use Cases</dt>
+          <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#UC-production-monitoring-1]]]</li>
@@ -8802,7 +8802,7 @@ Therefore, various data for agricultural machinery management should be represen
             <dt>Who (As a...):</dt>
               <dd>
                 <p>Device manufacturer</p> 
-            <dl><dt>Other Stakeholders</dt>
+            <dl><dt>Other Stakeholders:</dt>
               <dd>
                 TD consumer
               </dd></dl></dd>
@@ -8850,54 +8850,8 @@ Therefore, various data for agricultural machinery management should be represen
 	Requirements are named for the associated mitigation.  Some risks may require
 	multiple mitigations.
 	</p>
-
-  TEMPLATE:
-  <section id="sec-id">
-    <h3>Short Name</h3>
-    <dl>
-      <dt>Issue:</dt>
-      <dd>
-        <a href="https://github.com/w3c/xxx">Issue ##</a>
-      </dd>
-      <dt>Submitters</dt>
-      <dd>
-        Ege Korkan, Michael McCool
-      </dd>
-      <dt>Who (As a...)</dt>
-      <dd>
-        <p>WHO</p>
-        <dl>
-          <dt>Other Stakeholders</dt>
-          <dd>
-            OTHERS
-          </dd>
-        </dl>
-      </dd>
-      <dt>What (I need...)</dt>
-      <dd>
-        <p>CAPABILITY</p>
-        <dl>
-          <dt>Capability Details</dt>
-          <dd>
-            DETAILS
-          </dd>
-        </dl>
-      </dd>
-      <dt>Why (so that...)</dt>
-      <dd>
-        <p>REASON</p>
-        <dl>
-          <dt>Motivating Use Cases</dt>
-          <dd>
-            <ul>
-              <li>[[[#UC-id]]]</li>
-            </ul>
-          </dd>
-        </dl>
-      </dd>
-    </dl>
-  </section>
 -->
+
  
     <section id="US-sec-mitigate-pbt">
       <h3>Mitigate WoT Protocol Binding Threat</h3>
@@ -8926,7 +8880,6 @@ Therefore, various data for agricultural machinery management should be represen
             <dt>Capability Details:</dt>
             <dd>
               <p>The network interfaces of WoT devices and services should support appropriate security mechanisms for each protocol.</p>
-	      <p>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-protocol-binding-threat">WoT Protocol Binding Threat</a></p>
             </dd>
 	    <dt>Realization:</dt>
 	<dd>
@@ -8938,9 +8891,11 @@ Therefore, various data for agricultural machinery management should be represen
 	</dd>
         <dt>Why (so that...):</dt>
         <dd>
-          <p>Prevent unauthorized malicious access to WoT assets</p>
-          <dl>
-            <dt>Motivating Use Cases</dt>
+          <p>Prevent unauthorized malicious access to WoT assets.</p>
+	  <dl>
+	    <dt>Related Risk:</dt><dd>
+	     <a href="https://w3c.github.io/wot-security/#dfn-wot-protocol-binding-threat">WoT Protocol Binding Threat</a></dd>
+            <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#CAT-Security-Private-Information]]]</li>
@@ -8965,7 +8920,7 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
-            <dt>Other Stakeholders</dt>
+            <dt>Other Stakeholders:</dt>
             <dd>
               <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
@@ -8978,8 +8933,6 @@ Therefore, various data for agricultural machinery management should be represen
             <dt>Capability Details:</dt>
             <dd>
               <p>The network interfaces of WoT devices and services should support appropriate security mechanisms for each protocol.</p>
-	      <p>Related Risk: <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-exposed-thing-compromise">WoT Interface
-            Threat - Exposed Thing Compromise</a></p>
 	    </dd>
 	    <dt>Realization:</dt><dd>
 	      <ul> 
@@ -8990,8 +8943,11 @@ Therefore, various data for agricultural machinery management should be represen
 	</dd>
         <dt>Why (so that...):</dt>
         <dd>
-          <p>Prevent unauthorized malicious access to WoT assets</p>
-          <dl>
+          <p>Prevent unauthorized malicious access to WoT assets.</p>
+	  <dl>
+	    <dt>Related Risk:</dt><dd> 
+	      <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-exposed-thing-compromise">WoT Interface
+            Threat - Exposed Thing Compromise</a></dd>
             <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
@@ -9009,44 +8965,48 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Security Access Control</h3>
       <p>Control and manage access to WoT assets to prevent misuse by unauthorized attackers.</p>
       <dl>
-        <dt>Related Risk:</dt>
-        <dd>
-          <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-unauthorized-wot-interface-access">WoT
-            Interface Threat - Unauthorized WoT Interface Access</a>
-        </dd>
-        <dt>Submitters</dt>
+        <dt>Status:</dt><dd>Satisfied</dd>
+        <dt>Submitters:</dt>
         <dd>
           Michael McCool
         </dd>
-        <dt>Who (As a...)</dt>
+        <dt>Who (As a...):</dt>
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
-            <dt>Other Stakeholders</dt>
+            <dt>Other Stakeholders:</dt>
             <dd>
               <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
-        <dt>What (I need...)</dt>
+        <dt>What (I need...):</dt>
         <dd>
           <p>Ability to restrict access to WoT assets to specific authenticated users, and verify their authority to use specific assets.</p>
 	  <dl>
-            <dt>Capability Details</dt>
+            <dt>Capability Details:</dt>
             <dd>
               <p>The architecture of WoT services, such as directory services and self-description,
 	      should allow for authentication and authorization checks before releasing any information.</p>
+	    </dd>
+	    <dt>Realization:</dt><dd>
 	      <ul>
-		      <li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</a></li>
-		      <li><a href="https://w3c.github.io/wot-thing-description/#sec-security-vocabulary-definition">WoT Thing Description: Security Vocabulary Definitions</a></li>
-	      </ul>            
+		<li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</a></li>
+		<li><a href="https://w3c.github.io/wot-thing-description/#sec-security-vocabulary-definition">WoT Thing Description: Security Vocabulary Definitions</a></li>
+	      </ul>
+	    </dd>
           </dl>        
 	</dd>
-        <dt>Why (so that...)</dt>
+        <dt>Why (so that...):</dt>
         <dd>
           <p>Prevent unauthorized malicious use of WoT assets.</p>
-          <dl>
-            <dt>Motivating Use Cases</dt>
+	  <dl>
+            <dt>Related Risk:</dt>
+	    <dd>
+	      <a href="https://w3c.github.io/wot-security/#dfn-wot-interface-threat-unauthorized-wot-interface-access">WoT
+            Interface Threat - Unauthorized WoT Interface Access</a>
+	    </dd>
+            <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#CAT-Security-Private-Information]]]</li>
@@ -9061,43 +9021,46 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Mitigate WoT DoS Threat</h3>
       <p>Prevent Denial-of-Service attacks on WoT services by malicious attackers that prevent legitimate usage by authorized users.</p>
       <dl>
-        <dt>Related Risk:</dt>
-        <dd>
-          <a href="https://w3c.github.io/wot-security/#dfn-wot-dos-threat">WoT DoS Threat</a>
-        </dd>
-        <dt>Submitters</dt>
+	<dt>Status:</dt><dd>Satisfied</dd>
+        <dt>Submitters:</dt>
         <dd>
           Michael McCool
         </dd>
-        <dt>Who (As a...)</dt>
+        <dt>Who (As a...):</dt>
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
-            <dt>Other Stakeholders</dt>
+            <dt>Other Stakeholders:</dt>
             <dd>
               <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
-        <dt>What (I need...)</dt>
+        <dt>What (I need...):</dt>
         <dd>
           <p>The ability to ensure access to WoT services by authorized users even when subjected to malicious network attacks.</p>
           <dl>
-            <dt>Capability Details</dt>
+            <dt>Capability Details:</dt>
             <dd>
-              An attacker may attempt to block access by other users to a WoT service by, for example,
+              <p>An attacker may attempt to block access by other users to a WoT service by, for example,
 	      sending a device numerous requests to keep it too busy to respond to other authorized users.
-	      Devices implementations should implement best practices to mitigate these attacks.
-	      <ul>
+	      Devices implementations should implement best practices to mitigate these attacks.</p>
+	    </dd>
+	    <dt>Realization:</dt>
+            <dd><ul>
 		<li><a href="https://www.w3.org/TR/wot-discovery/#security-consideration-dos">WoT Discovery: Denial of Service</a></li>
 	      </ul>            
           </dl>
         </dd>
-        <dt>Why (so that...)</dt>
+        <dt>Why (so that...):</dt>
         <dd>
-          <p>WoT services can always be available to authorized users</p>
+          <p>WoT services can always be available to authorized users.</p>
           <dl>
-            <dt>Motivating Use Cases</dt>
+	    <dt>Related Risk:</dt>
+            <dd>
+              <a href="https://w3c.github.io/wot-security/#dfn-wot-dos-threat">WoT DoS Threat</a>
+            </dd>
+            <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#CAT-Security-Public-Service]]]</li>
@@ -9112,29 +9075,26 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Mitigate WoT DDoS Threat</h3>
       <p>Prevent use of WoT services for Distributed Denial-of-Service attacks on other services.</p>
       <dl>
-        <dt>Related Risk:</dt>
-        <dd>
-          <a href="https://w3c.github.io/wot-security/#dfn-wot-ddos-threat">WoT DDoS Threat</a>
-        </dd>
-        <dt>Submitters</dt>
+        <dt>Status:</dt><dd>Satisfied</dd>
+	<dt>Submitters:</dt>
         <dd>
           Michael McCool
         </dd>
-        <dt>Who (As a...)</dt>
+        <dt>Who (As a...):</dt>
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
-            <dt>Other Stakeholders</dt>
+            <dt>Other Stakeholders:</dt>
             <dd>
               <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
-        <dt>What (I need...)</dt>
+        <dt>What (I need...):</dt>
         <dd>
           <p>Prevent usage of WoT services for distributed denial of service attacks.</p>
 	  <dl>
-            <dt>Capability Details</dt>
+            <dt>Realization:</dt>
             <dd>
               <ul>
 		<li><a href="https://www.w3.org/TR/wot-discovery/#security-consideration-amp-ddos">WoT Discovery: Amplification and Distributed Denial of Service</a></li>
@@ -9142,11 +9102,15 @@ Therefore, various data for agricultural machinery management should be represen
             </dd>
           </dl>	
 	</dd>
-        <dt>Why (so that...)</dt>
+        <dt>Why (so that...):</dt>
         <dd>
-          <p>WoT devices are not used maliciously to prevent access to other services</p>
+          <p>WoT devices are not used maliciously to prevent access to other services.</p>
           <dl>
-            <dt>Motivating Use Cases</dt>
+            <dt>Related Risk:</dt>
+            <dd>
+              <a href="https://w3c.github.io/wot-security/#dfn-wot-ddos-threat">WoT DDoS Threat</a>
+            </dd>
+	    <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#CAT-Security-Public-Service]]]</li>
@@ -9161,30 +9125,26 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Mitigate Communication Threat - TD Authenticity</h3>
       <p>Descriptions of WoT interfaces, for example in TDs, should be accurate and modification by unauthorized third parties should be prevented to avoid spoofing, redirection, and other attacks.</p>
       <dl>
-        <dt>Related Risk:</dt>
-        <dd>
-          <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-td-authenticity">WoT
-            Communication Threat - TD Authenticity</a>
-        </dd>
-        <dt>Submitters</dt>
+	<dt>Status:</dt><dd>Satisfied</dd>
+        <dt>Submitters:</dt>
         <dd>
           Michael McCool
         </dd>
-        <dt>Who (As a...)</dt>
+        <dt>Who (As a...):</dt>
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
-            <dt>Other Stakeholders</dt>
+            <dt>Other Stakeholders:</dt>
             <dd>
               <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
-        <dt>What (I need...)</dt>
+        <dt>What (I need...):</dt>
         <dd>
           <p>The ability to prevent WoT TDs from unauthorized modification.</p>
 	  <dl>
-	  <dt>Capability Details</dt>
+	  <dt>Realization:</dt>
             <dd>
               <ul>
 		<li><a href="https://www.w3.org/TR/wot-discovery/#security-consideration-lan-self-discovery">WoT Discovery: Self-Discovery on LANs</a></li>
@@ -9192,11 +9152,16 @@ Therefore, various data for agricultural machinery management should be represen
             </dd>
 	  </dl>
 	</dd>
-        <dt>Why (so that...)</dt>
+        <dt>Why (so that...):</dt>
         <dd>
           <p>Modification of WoT TDs cannot be used for spoofing or redirection attacks.</p>
           <dl>
-            <dt>Motivating Use Cases</dt>
+	    <dt>Related Risk:</dt>
+            <dd>
+              <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-td-authenticity">WoT
+                 Communication Threat - TD Authenticity</a>
+            </dd>
+	    <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#CAT-Security-Public-Service]]]</li>
@@ -9211,30 +9176,26 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Mitigate Communication Threat - TD Confidentiality and Privacy</h3>
       <p>Prevent interception of confidential device metadata by unauthorized third parties to avoid releasing information that might be used to plan attacks or to infer private information.</p>
       <dl>
-        <dt>Related Risk:</dt>
-        <dd>
-          <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-td-confidentiality-and-privacy">WoT
-            Communication Threat - TD Confidentiality and Privacy</a>
-        </dd>
-        <dt>Submitters</dt>
+        <dt>Status:</dt><dd>Satisfied</dd>
+	<dt>Submitters:</dt>
         <dd>
           Michael McCool
         </dd>
-        <dt>Who (As a...)</dt>
+        <dt>Who (As a...):</dt>
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
-            <dt>Other Stakeholders</dt>
+            <dt>Other Stakeholders:</dt>
             <dd>
               <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
-        <dt>What (I need...)</dt>
+        <dt>What (I need...):</dt>
         <dd>
           <p>The ability to restrict access to metadata, such as Thing Descriptions, to authorized users only.</p>
 	  <dl>
-            <dt>Capability Details</dt>
+            <dt>Realization:</dt>
             <dd>
               <ul>
 		<li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</a></li>
@@ -9243,11 +9204,16 @@ Therefore, various data for agricultural machinery management should be represen
             </dd>
           </dl>
         </dd>
-        <dt>Why (so that...)</dt>
+        <dt>Why (so that...):</dt>
         <dd>
           <p>Unauthorized users cannot use confidential metadata to plan attacks or to infer private information about users, device owners, or other stakeholders.</p>
           <dl>
-            <dt>Motivating Use Cases</dt>
+	    <dt>Related Risk:</dt>
+            <dd>
+              <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-td-confidentiality-and-privacy">WoT
+                Communication Threat - TD Confidentiality and Privacy</a>
+            </dd>
+            <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#CAT-Security-Public-Service]]]</li>
@@ -9262,35 +9228,31 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Mitigate Communication Threat - System User Data Authenticity</h3>
       <p>Data related to system users, such as identity or access rights, should be confirmed before access is granted.</p>
       <dl>
-        <dt>Related Risk:</dt>
-        <dd>
-          <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-system-user-data-authenticity">WoT
-            Communication Threat - System User Data Authenticity</a>
-        </dd>
-        <dt>Submitters</dt>
+	<dt>Status:</dt><dd>Satisfied</dd>
+        <dt>Submitters:</dt>
         <dd>
           Michael McCool
         </dd>
-        <dt>Who (As a...)</dt>
+        <dt>Who (As a...):</dt>
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
-            <dt>Other Stakeholders</dt>
+            <dt>Other Stakeholders:</dt>
             <dd>
               <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
-        <dt>What (I need...)</dt>
+        <dt>What (I need...):</dt>
         <dd>
           <p>The ability to confirm the accuracy (authenticity) of system user data, such as access rights or identity.</p>
           <dl>
-            <dt>Capability Details</dt>
+            <dt>Capability Details:</dt>
             <dd>
               <p>In some cases, anonymous access to system services may be required.  In this case there should be a mechanism
 	      to authenticate access rights only, such as bearer tokens, with user identity confirmed separately.</p>
-	    <dl>
-            <dt>Capability Details</dt>
+	    </dd>
+            <dt>Realization:</dt>
             <dd>
               <ul>
 		<li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</a></li>
@@ -9301,11 +9263,16 @@ Therefore, various data for agricultural machinery management should be represen
 	    </dd>
           </dl>
         </dd>
-        <dt>Why (so that...)</dt>
+        <dt>Why (so that...):</dt>
         <dd>
           <p>Unauthorized access to a system is not made available to unauthenticated attackers posing as authorized system users.</p>
           <dl>
-            <dt>Motivating Use Cases</dt>
+	    <dt>Related Risk:</dt>
+            <dd>
+              <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-system-user-data-authenticity">WoT
+                Communication Threat - System User Data Authenticity</a>
+            </dd>            
+	    <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#CAT-Security-Public-Service]]]</li>
@@ -9320,35 +9287,31 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Mitigate Communication Threat - System User Data Confidentiality and Privacy</h3>
       <p>The identity and other private information of systems users, including whenever possible what services they are accessing, should be kept confidential.</p>
       <dl>
-        <dt>Related Risk:</dt>
-        <dd>
-          <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-system-user-data-confidentiality-and-privacy">WoT
-            Communication Threat - System User Data Confidentiality and Privacy</a>
-        </dd>
-        <dt>Submitters</dt>
+	<dt>Status:</dt><dd>Satisfied</dd>
+        <dt>Submitters:</dt>
         <dd>
           Michael McCool
         </dd>
-        <dt>Who (As a...)</dt>
+        <dt>Who (As a...):</dt>
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
-            <dt>Other Stakeholders</dt>
+            <dt>Other Stakeholders:</dt>
             <dd>
               <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
-        <dt>What (I need...)</dt>
+        <dt>What (I need...):</dt>
         <dd>
-          <p>The ability to maintain the confidentiality of system user data</p>
+          <p>The ability to maintain the confidentiality of system user data.</p>
           <dl>
-            <dt>Capability Details</dt>
+            <dt>Capability Details:</dt>
             <dd>
               <p>The identities of users should not be revealed in general to third parties, and in some cases not even to the device (using, for example, separation of authentication/identity and authorization capabilities).
 	      There also should be mechanisms in place to prevent visibility to third parties of which services are being accessed by system users.</p>
-		<dl>
-            <dt>Capability Details</dt>
+	    </dd>
+            <dt>Realization:</dt>
             <dd>
               <ul>
 		<li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</a></li>
@@ -9360,11 +9323,16 @@ Therefore, various data for agricultural machinery management should be represen
             </dd>
           </dl>
         </dd>
-        <dt>Why (so that...)</dt>
+        <dt>Why (so that...):</dt>
         <dd>
           <p>Private information about system users is not revealed to unauthorized third parties.</p>
           <dl>
-            <dt>Motivating Use Cases</dt>
+            <dt>Related Risk:</dt>
+            <dd>
+              <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-system-user-data-confidentiality-and-privacy">WoT
+               Communication Threat - System User Data Confidentiality and Privacy</a>
+            </dd>
+	    <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#CAT-Security-Public-Service]]]</li>
@@ -9379,36 +9347,32 @@ Therefore, various data for agricultural machinery management should be represen
       <h3>Mitigate Communication Threat - Side Channels</h3>
       <p>Mitigations to prevent interception and/or modification by unauthorized third parties should be available for all communications, including the transmission of metadata (e.g., TDs).</p>
       <dl>
-        <dt>Related Risk:</dt>
-        <dd>
-          <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-side-channels">WoT
-            Communication Threat - Side Channels</a></li>
-        </dd>
-        <dt>Submitters</dt>
+	<dt>Status:</dt><dd>Satisfied</dd>
+        <dt>Submitters:</dt>
         <dd>
           Michael McCool
         </dd>
-        <dt>Who (As a...)</dt>
+        <dt>Who (As a...):</dt>
         <dd>
           <p><a href="#STAKEHOLDER-System-User">System User</a></p>
           <dl>
-            <dt>Other Stakeholders</dt>
+            <dt>Other Stakeholders:</dt>
             <dd>
               <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
             </dd>
           </dl>
         </dd>
-        <dt>What (I need...)</dt>
+        <dt>What (I need...):</dt>
         <dd>
           <p>The ability to secure communications so it cannot be intercepted or modified by unauthorized third parties</p>
           <dl>
-            <dt>Capability Details</dt>
+            <dt>Capability Details:</dt>
             <dd>
               <p>This can be supported by encrypted communication channels, a precondition for which is authentication of the authorized participants in the communication.
 	      The encrypted communication also needs to ensure the integrity of the communication; it not only should not be possible in general for 
 	      an unauthorized party to read communications, they should also not be able to modify communications without detection.</p>
 	    <dl>
-            <dt>Capability Details</dt>
+            <dt>Realization:</dt>
             <dd>
               <ul>
 		<li><a href="https://www.w3.org/TR/wot-discovery/#architecture">WoT Discovery: Architecture</a></li>
@@ -9421,11 +9385,16 @@ Therefore, various data for agricultural machinery management should be represen
             </dd>
           </dl>
         </dd>
-        <dt>Why (so that...)</dt>
+        <dt>Why (so that...):</dt>
         <dd>
           <p>An attacker cannot gain access to confidential information or gain access to WoT assets by manipulation of authorized communications</p>
           <dl>
-            <dt>Motivating Use Cases</dt>
+	   <dt>Related Risk:</dt>
+           <dd>
+              <a href="https://w3c.github.io/wot-security/#dfn-wot-communication-threat-side-channels">WoT
+                 Communication Threat - Side Channels</a></li>
+            </dd>
+	    <dt>Motivating Use Cases:</dt>
             <dd>
               <ul>
                 <li>[[[#CAT-Security-Public-Service]]]</li>
