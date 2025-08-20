@@ -355,12 +355,33 @@
         This document uses the terminology from WoT Architecture [[wot-architecture]].
 	In addition, the following terms are used with the defined meanings:
 	<dl>
-	<dt>Use Case:</dt><dd>A use case is a documented scenario that achieves a specific set of goals for specific users that the WoT should support. The purpose of a Use Case is to put required features and usages of WoT standards in context. Ideally, use cases identify specific needed functionality or gaps in current standards.</dd>
+	<dt><dfn data-lt="WoT Use Case" class="lint-ignore">Use Case</dfn></dt>
+		<dd>A documented scenario that achieves a specific set of goals for specific users that the WoT should support.
+			The purpose of a Use Case is to put required features and usages of WoT standards in context.
+			Ideally,
+			use cases identify specific needed functionality or gaps in current standards.</dd>
 
-	<dt>Use Case Category:</dt><dd>A Use Case Category is a set of Use Cases with a common property. These are used to group Use Cases so they can be referred to easily when defining requirements, i.e., User Stories.</dd>
-	<dt>Requirement:</dt><dd>A Requirement is a condition or capability needed by a user to solve a problem or acheive an objective; it may also be a condition or capability that must be met or possessed by a system or system component to satisfy another formally imposed document, such as an external standard [[SWEBOKv4]].</dd>
+	<dt><dfn data-lt="WoT Use Case Category" class="lint-ignore">Use Case Category</dfn></dt>
+		<dd>A set of <a>Use Cases</a> with a common property.
+			These are used to group <a>Use Cases</a> so they can be referred to easily when defining requirements,
+			i.e., <a>User Stories</a>.</dd>
+	<dt><dfn data-lt="WoT Requirement" class="lint-ignore">Requirement</dfn></dt>
+		<dd>A condition or capability needed by a user to solve a problem or acheive an objective;
+			a Requirement may also be a condition or capability that must be met or possessed by a system or system component to
+			satisfy another formally imposed document,
+			such as an external standard [[SWEBOKv4]].</dd>
 
-	<dt>User Story:</dt><dd>A User Story relates a specific feature or set of features (or proposed features) in the WoT specifications with its motivation, which may reference a Use Case. User stories summarize both functional requirements (the purpose) and technical requirements (the feature), and also indicate the stakeholder that requires the feature.  User stories can be expressed in a sentence of the form: "As a STAKEHOLDER I need a FEATURE so that PURPOSE."  User Stories are not detailed requirements; these should be maintained elsewhere, for example by the responsible Task Force, with the User Story linking to them.</dd>
+	<dt><dfn data-lt="WoT User Story" class="lint-ignore">User Story</dfn></dt>
+		<dd>Relates a specific feature or set of features (or proposed features) in the WoT specifications with its motivation,
+			which may reference a <a>Use Case</a>.
+			User stories summarize both functional requirements (the purpose) and technical requirements (the feature),
+			and also indicate the stakeholder that requires the feature.
+			User stories can be expressed in a sentence of the form:
+			"As a STAKEHOLDER I need a FEATURE so that PURPOSE."
+			User Stories are not detailed requirements;
+			these should be maintained elsewhere,
+			for example by the responsible Task Force,
+			with the User Story linking to them.</dd>
 
 	</dl>
       </section>
@@ -379,41 +400,133 @@
       </p>
       </section>
 	    
-      <section id="stakeholders">
-        <h2>Stakeholders and Roles</h2>
+    <section id="stakeholders">
+      <h2>Stakeholders and Roles</h2>
         <p>
-	  Whenever possible, stakeholders should be identified using the terms
-	  defined in the WoT Security and Privacy Guidelines [[wot-security]].
-	  For convenience these terms are listed here, but please refer to that
-	  document for full definitions:
-	</p>
-	<ul>
-          <li id="STAKEHOLDER-Device-Manufacturer">Device Manufacturer: Device makers are individuals, companies, or organizations that design and develop networked or IoT devices to be sold to consumers.</li>
-          <li id="STAKEHOLDER-System-Provider">System Provider: A system provider is an individual, company, or organization that provides systems, such as network systems and IoT systems, to other individuals or organizations.</li>
-          <li id="STAKEHOLDER-System-Integrator">System Integrator: A system integrator is an individual, company, or organization that specializes in integrating and linking network systems, IoT systems, etc.</li>
-          <li id="STAKEHOLDER-System-Installer">System Installer: A system installer is an individual, company, or organization that sets up and makes available systems and devices.</li>
-          <li id="STAKEHOLDER-System-User">System User: A system user is a person, company, or organization that uses an application or IoT system.</li>
-          <li id="STAKEHOLDER-System-Owner">System Owner: A system owner is a person, company, or organization that has management responsibility for a network system or IoT system.</li>
-          <li id="STAKEHOLDER-System-Maintainer">System Maintainer: A system maintainer is a person, company, or organization that maintains, supports, and operates a network system or IoT system.</li>
-        </ul>
-        <p>
-          The following additional stakeholders and roles were identified
-          when the use cases were collected, or are defined in other WoT documents:
-        </p>
-        <ul>
-          <li id="STAKEHOLDER-Device-Owner">Device Owner: A special case of System Owner when some devices in a system may have different owners, or when the focus is on the ownership of a specific device.</li>
-          <li id="STAKEHOLDER-Device-User">Device User: A human interacting with an actual physical user interface of a device, or whose environment may be sensed or modified by a device.  May also be used when referring to a data or network service provided by a particular device.</li>
-          <li id="STAKEHOLDER-Cloud-Provider">Cloud Provider: An organization providing remote computing services available over a network.</li>
-          <li id="STAKEHOLDER-Service-Provider">Service Provider: An organization or entity, which may be local or remote, that provides a specific (network) service.</li>
-          <li id="STAKEHOLDER-Gateway-Manufacturer">Gateway Manufacturer: A special case of Device Manufacturer where a device is not an endpoint IoT device, but a device whose focus is on providing network services such as firewalls, address translation, name services, caching, brokers, registries, or directories.</li>
-          <li id="STAKEHOLDER-Identity-Provider">Identity Provider: A special case of a Service Provider that provides a mechanism to identify or authenticate entities and users.</li>
-          <li id="STAKEHOLDER-Directory-Service-Provider">Directory Service Provider: A special case of a Service Provider that provides a directory service, such as the Thing Description Directory (TD Directory) service described in WoT Discovery [[wot-discovery]].</li>
-	  <li id="STAKEHOLDER-TD-Consumer">TD Consumer: An entity that reads and interprets a WoT Thing Description [[wot-thing-description]].</li>
-	  <li id="STAKEHOLDER-TD-Server">TD Server: An entity that provides a WoT Thing Description [[wot-thing-description]].  A TD Server may or may not be on the same physical device as the Thing described in the TD it provides.  Defined in WoT Discovery [[wot-discovery]].</li>
-          <li id="STAKEHOLDER-TD-Directory">TD Directory: A special case of a Directory Service Provider and a TD Server, and is defined in WoT Discovery [[wot-discovery]], that provides a searchable registry for Thing Descriptions (TDs).</li>
-
-        </ul>
-      </section>
+	        Whenever possible, stakeholders should be identified using the terms
+	        defined in the WoT Security and Privacy Guidelines [[wot-security]].
+	        For convenience these terms are listed here, but please refer to that
+	        document for full definitions:
+	      </p>
+	    <dl>
+        <dt>
+          <dfn data-lt="Stakeholder Device Manufacturer" class="lint-ignore" >Device Manufacturer</dfn>
+        </dt>
+        <dd>
+          An individual, company, or organization that designs and develops networked or IoT devices to be sold to consumers.
+        </dd>
+        <dt>
+          <dfn date-lt="Stakeholder System Provider" class="lint-ignore">System Provider</dfn>
+        </dt>
+        <dd>
+          An individual, company, or organization that provides systems, such as network systems and IoT systems, to other individuals or organizations.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder System Integrator" class="lint-ignore">System Integrator</dfn>
+        </dt>
+        <dd>
+          An individual, company, or organization that specializes in integrating and linking network systems, IoT systems, etc.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder System Installer" class="lint-ignore">System Installer</dfn>
+        </dt>
+        <dd>
+          An individual, company, or organization that sets up and makes available systems and devices.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder System User" class="lint-ignore">System User</dfn>
+        </dt>
+        <dd>
+          A person, company, or organization that uses an application or IoT system.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder System Owner" class="lint-ignore">System Owner</dfn>
+        </dt>
+        <dd>
+          A person, company, or organization that has management responsibility for a network system or IoT system.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder System Maintainer" class="lint-ignore">System Maintainer</dfn>
+        </dt>
+        <dd>
+          A person, company, or organization that maintains, supports, and operates a network system or IoT system.
+        </dd>
+      </dl>
+      <p>
+        The following additional stakeholders and roles were identified
+        when the use cases were collected, or are defined in other WoT documents:
+      </p>
+      <dl>
+        <dt>
+          <dfn data-lt="Stakeholder Device Owner" class="lint-ignore">Device Owner</dfn>
+        </dt>
+        <dd>
+          A special case of <a>System Owner</a> when some devices in a system may have different owners, or when the focus is on the ownership of a specific device.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder Device User" class="lint-ignore">Device User</dfn>
+        </dt>
+        <dd>
+          A human interacting with an actual physical user interface of a device, or whose environment may be sensed or modified by a device.
+		  May also be used when referring to a data or network service provided by a particular device.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder Cloud Provider" class="lint-ignore">Cloud Provider</dfn>
+        </dt>
+        <dd>
+          An organization providing remote computing services available over a network.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder Service Provider" class="lint-ignore">Service Provider</dfn>
+        </dt>
+        <dd>
+          An organization or entity, which may be local or remote, that provides a specific (network) service.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder Gateway Manufacturer" class="lint-ignore">Gateway Manufacturer</dfn>
+        </dt>
+        <dd>
+          A special case of <a>Device Manufacturer</a> where a device is not an endpoint IoT device,
+		  but a device whose focus is on providing network services such as firewalls,
+		  address translation, name services, caching, brokers, registries, or directories.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder Identity Provider" class="lint-ignore">Identity Provider</dfn>
+        </dt>
+        <dd>
+          A special case of a <a>Service Provider</a> that provides a mechanism to identify or authenticate entities and users.
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder Directory Service Provider" class="lint-ignore">Directory Service Provider</dfn>
+        </dt>
+        <dd>
+          A special case of a <a>Service Provider</a> that provides a directory service,
+		  such as the Thing Description Directory (TD Directory) service described in WoT Discovery [[wot-discovery]].
+	      </dd>
+        <dt>
+          <dfn data-lt="Stakeholder TD Consumer" class="lint-ignore">TD Consumer</dfn>
+        </dt>
+        <dd>
+          An entity that reads and interprets a WoT Thing Description [[wot-thing-description]].
+        </dd>
+        <dt>
+	        <dfn data-lt="Stakeholder TD Server" class="lint-ignore">TD Server</dfn>
+        </dt>
+        <dd>
+          An entity that provides a WoT Thing Description [[wot-thing-description]].
+		  A TD Server may or may not be on the same physical device as the Thing described in the TD it provides.
+		  Defined in WoT Discovery [[wot-discovery]].
+        </dd>
+        <dt>
+          <dfn data-lt="Stakeholder TD Directory" class="lint-ignore">TD Directory</dfn>
+        </dt>
+        <dd>
+          A special case of a <a>Directory Service Provider</a> and a <a>TD Server</a>,
+		  defined in WoT Discovery [[wot-discovery]],
+		  that provides a searchable registry for Thing Descriptions (TDs).
+        </dd>
+      </dl>
+    </section>
   </section>
 
   <!-- REQUIREMENTS -->
@@ -484,10 +597,10 @@
             </dd>
           <dt>Who (As a...):</dt>
             <dd>
-              <p>Device manufacturer</p>
+              <p><a>Device manufacturer</a></p>
           <dl><dt>Other Stakeholders:</dt>
             <dd>
-              TD consumer
+              <a>TD Consumer</a>
             </dd></dl></dd>
           <dt>What (I need...)</dt>
             <dd>
@@ -501,7 +614,7 @@
             </dd></dl></dd>
           <dt>Why (so that...):</dt>
             <dd>
-              <p>TD consumers can communicate with my devices</p>
+              <p><a>TD Consumers</a> can communicate with my devices</p>
           <dl>  
 	  <dt>Related Issues:</dt>
 	  <dd>
@@ -528,10 +641,10 @@
               </dd>
             <dt>Who (As a...):</dt>
               <dd>
-                <p>Device manufacturer</p> 
+                <p><a>Device manufacturer</a></p> 
             <dl><dt>Other Stakeholders:</dt>
               <dd>
-                TD consumer
+                <a>TD Consumer</a>
               </dd></dl></dd>
             <dt>What (I need...):</dt>
               <dd>
@@ -544,7 +657,7 @@
               </dd></dl></dd>
             <dt>Why (so that...):</dt>
               <dd>
-                <p>TD consumers can use an appropriate polling rate</p>
+                <p><a>TD Consumers</a> can use an appropriate polling rate</p>
             <dl>
 	      <dt>Related Issues:</dt>
 	      <dd>
@@ -598,11 +711,11 @@
         </dd>
         <dt>Who (As a...):</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -655,11 +768,11 @@
         </dd>
         <dt>Who (As a...):</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders:</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -713,11 +826,11 @@
         </dd>
         <dt>Who (As a...):</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders:</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -771,11 +884,11 @@
         </dd>
         <dt>Who (As a...):</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders:</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -827,11 +940,11 @@
         </dd>
         <dt>Who (As a...):</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders:</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -879,11 +992,11 @@
         </dd>
         <dt>Who (As a...):</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders:</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -932,11 +1045,11 @@
         </dd>
         <dt>Who (As a...):</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders:</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -955,7 +1068,7 @@
         </dd>
         <dt>Why (so that...):</dt>
         <dd>
-          <p>Unauthorized users cannot use confidential metadata to plan attacks or to infer private information about users, device owners, or other stakeholders.</p>
+          <p>Unauthorized users cannot use confidential metadata to plan attacks or to infer private information about users, <a>Device Owners</a>, or other stakeholders.</p>
           <dl>
 	    <dt>Related Risks:</dt>
             <dd>
@@ -977,7 +1090,7 @@
 
     <section id="US-sec-mitigate-csuda">
       <h3>Mitigate Communication Threat - System User Data Authenticity</h3>
-      <p>Data related to system users, such as identity or access rights, should be confirmed before access is granted.</p>
+      <p>Data related to <a>system users</a>, such as identity or access rights, should be confirmed before access is granted.</p>
       <dl>
 	<dt>Status:</dt><dd>Satisfied</dd>
         <dt>Submitters:</dt>
@@ -986,17 +1099,17 @@
         </dd>
         <dt>Who (As a...):</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders:</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...):</dt>
         <dd>
-          <p>The ability to confirm the accuracy (authenticity) of system user data, such as access rights or identity.</p>
+          <p>The ability to confirm the accuracy (authenticity) of <a>system user</a> data, such as access rights or identity.</p>
           <dl>
             <dt>Capability Details:</dt>
             <dd>
@@ -1016,7 +1129,7 @@
         </dd>
         <dt>Why (so that...):</dt>
         <dd>
-          <p>Unauthorized access to a system is not made available to unauthenticated attackers posing as authorized system users.</p>
+          <p>Unauthorized access to a system is not made available to unauthenticated attackers posing as authorized <a>system users</a>.</p>
           <dl>
 	    <dt>Related Risks:</dt>
             <dd>
@@ -1047,22 +1160,22 @@
         </dd>
         <dt>Who (As a...):</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders:</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
         <dt>What (I need...):</dt>
         <dd>
-          <p>The ability to maintain the confidentiality of system user data.</p>
+          <p>The ability to maintain the confidentiality of <a>system user</a> data.</p>
           <dl>
             <dt>Capability Details:</dt>
             <dd>
               <p>The identities of users should not be revealed in general to third parties, and in some cases not even to the device (using, for example, separation of authentication/identity and authorization capabilities).
-	      There also should be mechanisms in place to prevent visibility to third parties of which services are being accessed by system users.</p>
+	      There also should be mechanisms in place to prevent visibility to third parties of which services are being accessed by <a>system users</a>.</p>
 	    </dd>
             <dt>Realization:</dt>
             <dd>
@@ -1078,7 +1191,7 @@
         </dd>
         <dt>Why (so that...):</dt>
         <dd>
-          <p>Private information about system users is not revealed to unauthorized third parties.</p>
+          <p>Private information about <a>system users</a> is not revealed to unauthorized third parties.</p>
           <dl>
             <dt>Related Risks:</dt>
             <dd>
@@ -1109,11 +1222,11 @@
         </dd>
         <dt>Who (As a...):</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders:</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -1223,11 +1336,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -1290,11 +1403,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -1354,11 +1467,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -1409,11 +1522,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -1474,11 +1587,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -1545,11 +1658,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -1610,12 +1723,12 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
-	            <a href="#STAKEHOLDER-System-Maintainer">System Maintainer</a>
+              <a>System Integrator</a>,
+	            <a>System Maintainer</a>
             </dd>
           </dl>
         </dd>
@@ -1685,11 +1798,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -1754,11 +1867,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -1799,12 +1912,12 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
-	      <a href="#STAKEHOLDER-System-Maintainer">System Maintainer</a>
+              <a>System Integrator</a>,
+	      <a>System Maintainer</a>
             </dd>
           </dl>
         </dd>
@@ -1847,13 +1960,13 @@
         <dt>Status:</dt><dd>Satisfied.</dd>
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
-        <<dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+        <dd>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>,
-	            <a href="#STAKEHOLDER-System-Maintainer">System Maintainer</a>
+              <a>System Integrator</a>,
+	            <a>System Maintainer</a>
             </dd>
           </dl>
         </dd>
@@ -1921,11 +2034,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -1983,11 +2096,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2047,11 +2160,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2124,11 +2237,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2188,11 +2301,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2252,11 +2365,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2329,11 +2442,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2397,11 +2510,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2459,11 +2572,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2521,11 +2634,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2589,11 +2702,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2651,11 +2764,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2716,11 +2829,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2779,11 +2892,11 @@
         <dt>Submitters</dt><dd>Michael McCool</dd>
         <dt>Who (As a...)</dt>
         <dd>
-          <p><a href="#STAKEHOLDER-System-User">System User</a></p>
+          <p><a>System User</a></p>
           <dl>
             <dt>Other Stakeholders</dt>
             <dd>
-              <a href="#STAKEHOLDER-System-Integrator">System Integrator</a>
+              <a>System Integrator</a>
             </dd>
           </dl>
         </dd>
@@ -2854,7 +2967,7 @@
           <dt>Target Users</dt>
           <dd>
 
-            Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), Cloud provider
+            Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), <a>Cloud Provider</a>
 
           </dd>
           <dt>Motivation</dt>
@@ -2940,8 +3053,8 @@
           <dt>Target Users</dt>
           <dd>
 
-            Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), Cloud provider, Middleware
-            provider, Network providers, service provider.
+            Agricultural corporation, Farmer, Manufacturers (Sensor, other facilities), <a>Cloud Provider</a>, Middleware
+            provider, Network providers, <a>Service Provider</a>.
 
           </dd>
           <dt>Motivation</dt>
@@ -3184,8 +3297,8 @@
           <dd>
 
             <ul>
-              <li>device users: farmers</li>
-              <li>service provider</li>
+              <li><a>Device Users</a>: farmers</li>
+              <li><a>Service Provider</a></li>
             </ul>
 
           </dd>
@@ -3297,7 +3410,7 @@
           <dt>Description</dt>
           <dd>
 
-            To avoid Property right and consent management issues between farmers and cloud service providers on these
+            To avoid Property right and consent management issues between farmers and cloud <a>Service Providers</a> on these
             computed data, sensors are connected to the farm infrastructure and the services that evaluate aggregated
             data are executed locally on this infrastructure.
             <br>
@@ -3436,7 +3549,7 @@
 
 	  <dt>Target Users</dt>
 	  <dd>
-	    Service provider, device manufacturer, device owner, cloud provider
+	    <a>Service provider</a>, <a>device manufacturer</a>, <a>device owner</a>, <a>cloud provider</a>
 	  </dd>
 
 	  <dt>Motivation</dt>
@@ -3537,7 +3650,7 @@
 	  <dt>Privacy Considerations</dt>
 	  <dd>
 	    <p>
-	    In addition to farmers, various stakeholders such as farm workers, service providers, manufacturers, consumers of agricultural products,
+	    In addition to farmers, various stakeholders such as farm workers, <a>Service Providers</a>, manufacturers, consumers of agricultural products,
 	    third-party companies and government departments are also involved with the operation of a dairy farm. The data with various types and
 	    characteristics generated during the operation of the AMS can be shared and distributed to one or more stakeholders.
 	    </p>
@@ -3600,7 +3713,7 @@
           <dd>Mun Hwan CHOI, ChangKyu LEE, Sunghyun YOON</dd>
 
           <dt>Target Users</dt>
-          <dd>Service provider, device manufacturer, device owner, device user, cloud provider</dd>
+          <dd><a>Service Provider</a>, <a>Device Manufacturer</a>, <a>Device Owner</a>, <a>Device User</a>, <a>Cloud Provider</a></dd>
 
           <dt>Motivation</dt>
           <dd>
@@ -3647,7 +3760,7 @@
                   to identify the occurrence of pests, occurrence area and the range of occurred pests, and types of occurred pests.
                   Then the cloud generates a prescription including the type, amount, and spray method of appropriate pesticides based on the
                   analysis results. This prescription is delivered to UAVs or a separate ground-operated pest control machine.
-                  To generate accurate and effective prescription, the cloud may utilize public database provided by government or related service providers.</li>
+                  To generate accurate and effective prescription, the cloud may utilize public database provided by government or related <a>Service Providers</a>.</li>
               <li>In pest control operation step, according to the prescription received from the cloud, UAVs perform pest control operation.
                   UAVs can spray the correct amount of pesticide around the area where the pests occur, depending on the type of pests and the severity of symptoms.</li>
               <li>In data utilization step, the cloud stores and manages the data collected throughout the entire process for pest control.
@@ -3710,7 +3823,7 @@
           <dd>ChangKyu LEE, Mun Hwan CHOI, Sunghyun YOON</dd>
 
           <dt>Target Users</dt>
-          <dd>service providers, device manufacturers, device users</dd>
+          <dd><a>Service Providers</a>, <a>Device Manufacturers</a>, <a>Device Users</a></dd>
 
           <dt>Motivation</dt>
           <dd>
@@ -3780,9 +3893,9 @@
             The analysis can include identifying patterns, predicting future health risks, and detecting early signs of illness or disease.
             </p>
             <p>
-            (Decision Making) Based on the data analysis results, the livestock health management service provider or veterinarian with insights can make decisions about the care
+            (Decision Making) Based on the data analysis results, the livestock health management Service Provider or veterinarian with insights can make decisions about the care
             and treatment of the livestock. This can include taking preventative measures to reduce the risk of disease or illness, administering medication, or isolating sick livestock
-            from the rest of the herd. Also, the livestock health management service provider or veterinarian establish a livestock health management plan that reflects the results of analysis.
+            from the rest of the herd. Also, the livestock health management Service Provider or veterinarian establish a livestock health management plan that reflects the results of analysis.
             </p>
           </dd>
 
@@ -3841,7 +3954,7 @@
           <dd>Mun Hwan CHOI, ChangKyu LEE, Sunghyun YOON</dd>
 
           <dt>Target Users</dt>
-          <dd>service providers, machinery manufacturers, machinery owners, device manufacturer</dd>
+          <dd><a>Service Providers</a>, machinery manufacturers, machinery owners, <a>Device Manufacturer</a></dd>
 
           <dt>Motivation</dt>
           <dd>
@@ -3994,7 +4107,7 @@ Therefore, various data for agricultural machinery management should be represen
                 TODO: Stakeholders/Users need to be further clarified.
                 They include the city government,
                 people counting
-                service providers, police, network providers, ...
+                <a>Service Providers</a>, police, network providers, ...
               </p>
               </section-->
           </dd>
@@ -4254,11 +4367,11 @@ Therefore, various data for agricultural machinery management should be represen
             <p>
               Stakeholders include:
             <ul>
-              <li>device owners: need to make data from devices available to dashboard system.</li>
-              <li>device user: users of the dashboard system, such as members of city management,
+              <li><a>Device Owners</a>: need to make data from devices available to dashboard system.</li>
+              <li><a>Device User</a>: users of the dashboard system, such as members of city management,
                 are indirectly "using" the devices by accessing their data, and
                 in one variant, sending commands to actuators.</li>
-              <li>cloud provider: the dashboard system itself or components of it (such as a database or data ingestion
+              <li><a>Cloud Provider</a>: the dashboard system itself or components of it (such as a database or data ingestion
                 system) may
                 be hosted in the cloud.</li>
             </ul>
@@ -4614,8 +4727,8 @@ Therefore, various data for agricultural machinery management should be represen
           <dd>
 
             <ul>
-              <li> device owners</li>
-              <li> service provider</li>
+              <li> <a>Device Owners</a></li>
+              <li> <a>Service Provider</a></li>
               <li> network operator (potentially transparent for WoT use cases)</li>
               <li> directory service operator</li>
             </ul>
@@ -4763,9 +4876,9 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners</li>
-              <li>device user</li>
-              <li>service provider</li>
+              <li><a>Device Owners</a></li>
+              <li><a>Device User</a></li>
+              <li><a>Service Provider</a></li>
             </ul>
 
           </dd>
@@ -5130,8 +5243,8 @@ Therefore, various data for agricultural machinery management should be represen
           <dd>
 
             <ul>
-              <li>device owners</li>
-              <li>device user</li>
+              <li><a>Device Owners</a></li>
+              <li><a>Device User</a></li>
               <li>directory service operator</li>
             </ul>
 
@@ -5257,12 +5370,12 @@ Therefore, various data for agricultural machinery management should be represen
           <dd>
 
             <ul>
-              <li>device owners</li>
-              <li>device user</li>
-              <li>service provider</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
-              <li>identity provider</li>
+              <li><a>Device Owners</a></li>
+              <li><a>Device User</a></li>
+              <li><a>Service Provider</a></li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
 
@@ -5652,12 +5765,12 @@ Therefore, various data for agricultural machinery management should be represen
           <dd>
 
             <ul>
-              <li>device owners</li>
-              <li>device user</li>
-              <li>cloud provider</li>
-              <li>service provider</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a></li>
+              <li><a>Device User</a></li>
+              <li><a>Cloud Provider</a></li>
+              <li><a>Service Provider</a></li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>directory service operator</li>
             </ul>
 
@@ -5910,7 +6023,7 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
 
-            Device owners, cloud provider.
+            <a>Device Owners</a>, <a>Cloud Provider</a>.
 
           </dd>
           <dt>Motivation</dt>
@@ -6019,14 +6132,14 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners</li>
-              <li>device user</li>
-              <li>cloud provider</li>
-              <li>service provider</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a></li>
+              <li><a>Device User</a></li>
+              <li><a>Cloud Provider</a></li>
+              <li><a>Service Provider</a></li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
           </dd>
@@ -6335,11 +6448,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners (retailers)</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a> (retailers)</li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
           </dd>
@@ -6428,11 +6541,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners (retailers)</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a> (retailers)</li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
           </dd>
@@ -6547,11 +6660,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners (retailers)</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a> (retailers)</li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
           </dd>
@@ -6644,11 +6757,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners (retailers)</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a> (retailers)</li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
           </dd>
@@ -6744,11 +6857,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners (retailers)</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a> (retailers)</li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
           </dd>
@@ -6844,11 +6957,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners (retailers)</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a> (retailers)</li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
           </dd>
@@ -6939,11 +7052,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners (retailers)</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a> (retailers)</li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
           </dd>
@@ -7034,11 +7147,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners (retailers)</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a> (retailers)</li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
           </dd>
@@ -7133,11 +7246,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners (retailers)</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a> (retailers)</li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
           </dd>
@@ -7431,13 +7544,13 @@ Therefore, various data for agricultural machinery management should be represen
             <dd>
 
               <ul>
-                <li>device owners</li>
-                <li>device user</li>
-                <li>cloud provider</li>
-                <li>service provider</li>
-                <li>device manufacturer</li>
-                <li>gateway manufacturer</li>
-                <li>identity provider</li>
+                <li><a>Device Owners</a></li>
+                <li><a>Device User</a></li>
+                <li><a>Cloud Provider</a></li>
+                <li><a>Service Provider</a></li>
+                <li><a>Device Manufacturer</a></li>
+                <li><a>Gateway Manufacturer</a></li>
+                <li><a>Identity Provider</a></li>
               </ul>
 
             </dd>
@@ -7715,12 +7828,12 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners</li>
-              <li>device users</li>
-              <li>cloud providers</li>
-              <li>service providers</li>
-              <li>device manufacturers</li>
-              <li>identity providers</li>
+              <li><a>Device Owners</a></li>
+              <li><a>Device Users</a></li>
+              <li><a>Cloud Provider</a>s</li>
+              <li><a>Service Providers</a></li>
+              <li><a>Device Manufacturers</a></li>
+              <li><a>Identity Provider</a>s</li>
             </ul>
           </dd>
           <dt>Motivation</dt>
@@ -7890,9 +8003,9 @@ Therefore, various data for agricultural machinery management should be represen
               <li>Plant operators (centralized as well as de-centralized producers)</li>
               <li>Virtual Power Plant (VPP) operators</li>
               <li>Energy grid markets</li>
-              <li>Cloud providers where grid backend services are hosted and where Operation Technology bridges to
+              <li><a>Cloud Providers</a> where grid backend services are hosted and where Operation Technology bridges to
                 Information Technology</li>
-              <li>Device manufacturers, owners, and users; devices include communication gateways, monitoring and
+              <li><a>Device Manufacturers</a>, owners, and users; devices include communication gateways, monitoring and
                 control units</li>
             </ul>
 
@@ -8514,16 +8627,16 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device user</li>
-              <li>service provider (Home Management Service Provider)</li>
-              <li>device manufacturer</li>
+              <li><a>Device User</a></li>
+              <li><a>Service Provider</a> (Home Management Service Provider)</li>
+              <li><a>Device Manufacturer</a></li>
             </ul>
           </dd>
 
           <dt>Motivation</dt>
           <dd>
-            The purpose of this use case is to improve the usability of home appliances for device users by allowing
-            device users to configure the operation modes of all devices at home without configuring those devices one
+            The purpose of this use case is to improve the usability of home appliances for <a>Device Users</a> by allowing
+            <a>Device Users</a> to configure the operation modes of all devices at home without configuring those devices one
             by one when they leave and come home.
           </dd>
 
@@ -8546,9 +8659,9 @@ Therefore, various data for agricultural machinery management should be represen
           <dd>
             <div class="resize"><img src="./images/wot-use-case-echonet.png" alt="echonet use case" /></div>
             <ul>
-              <li>Configuration by a device user before starting to use a service
+              <li>Configuration by a <a>Device User</a> before starting to use a service
                 <ul>
-                  <li>A device user logs in the server of a "home management service provider" with which the user has a
+                  <li>A <a>Device User</a> logs in the server of a "home management service provider" with which the user has a
                     contract.</li>
                   <li>The user specifies the operation modes of lighting, air conditioner and security sensor for the
                     time when the user is out of home, the time when the user comes home and the time when the specified
@@ -8558,9 +8671,9 @@ Therefore, various data for agricultural machinery management should be represen
             </ul>
 
             <ul>
-              <li>When the device user leaves home
+              <li>When the <a>Device User</a> leaves home
                 <ul>
-                  <li>The device user accesses the server of a "home management service provider" with a smartphone and
+                  <li>The <a>Device User</a> accesses the server of a "home management service provider" with a smartphone and
                     notifies the server that the user is going to leave home.</li>
                   <li>The server updates the operation modes of lighting, air conditioner and security sensor according
                     to the configuration specified by the user for the time when the user is out of home.</li>
@@ -8571,9 +8684,9 @@ Therefore, various data for agricultural machinery management should be represen
             </ul>
 
             <ul>
-              <li>When the device user comes home
+              <li>When the <a>Device User</a> comes home
                 <ul>
-                  <li>The device user accesses the server of a "home management service provider" with a smartphone and
+                  <li>The <a>Device User</a> accesses the server of a "home management service provider" with a smartphone and
                     notifies the server that the user will return home soon.</li>
                   <li>The server updates the operation modes of lighting, air conditioner and security sensor according
                     to the configuration specified by the user for the time when the user comes home.</li>
@@ -8593,18 +8706,18 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Security Considerations</dt>
           <dd>
             <ul>
-              <li>It is necessary to prevent unauthorized users other than the device user from using the service
+              <li>It is necessary to prevent unauthorized users other than the <a>Device User</a> from using the service
                 provided by the home management service provider.</li>
               <li>It is necessary to disallow home management service providers other than the home management service
-                providers permitted by the device user in advance to control devices at the device user's home.</li>
+                providers permitted by the <a>Device User</a> in advance to control devices at the <a>Device User's</a> home.</li>
             </ul>
           </dd>
 
           <dt>Privacy Considerations</dt>
           <dd>
             It is necessary to protect the information on what operations are done on the devices that are controlled or
-            monitored at the device user's home. It is also necessary to protect the information obtained from the
-            devices that are controlled or monitored at the device user's home.
+            monitored at the <a>Device User's</a> home. It is also necessary to protect the information obtained from the
+            devices that are controlled or monitored at the <a>Device User's</a> home.
           </dd>
 
           <dt>Accessibility Considerations</dt>
@@ -8654,9 +8767,9 @@ Therefore, various data for agricultural machinery management should be represen
             For the education category:
 
             <ul>
-              <li>device owners : The university -&gt; Research Group -&gt; Specific Lab</li>
-              <li>device user : Students and potentially anyone who participates in plugfests</li>
-              <li>service provider : The university -&gt; Research Group</li>
+              <li><a>Device Owners</a> : The university -&gt; Research Group -&gt; Specific Lab</li>
+              <li><a>Device User</a> : Students and potentially anyone who participates in plugfests</li>
+              <li><a>Service Provider</a> : The university -&gt; Research Group</li>
               <li>network operator : The university</li>
             </ul>
 
@@ -8781,14 +8894,14 @@ Therefore, various data for agricultural machinery management should be represen
 
             All stakeholders:
             <ul>
-              <li>device owners</li>
-              <li>device user</li>
-              <li>cloud provider</li>
-              <li>service provider</li>
-              <li>device manufacturer</li>
-              <li>gateway manufacturer</li>
+              <li><a>Device Owners</a></li>
+              <li><a>Device User</a></li>
+              <li><a>Cloud Provider</a></li>
+              <li><a>Service Provider</a></li>
+              <li><a>Device Manufacturer</a></li>
+              <li><a>Gateway Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
 
@@ -8928,11 +9041,11 @@ Therefore, various data for agricultural machinery management should be represen
         <dt>Target Users</dt>
         <dd>
           <ul>
-            <li>device owner</li>
-            <li>service provider</li>
-            <li>cloud provider</li>
-            <li>device manufacturer</li>
-            <li>gateway manufacturer</li>
+            <li><a>Device Owner</a></li>
+            <li><a>Service Provider</a></li>
+            <li><a>Cloud Provider</a></li>
+            <li><a>Device Manufacturer</a></li>
+            <li><a>Gateway Manufacturer</a></li>
           </ul>
 
         </dd>
@@ -8940,7 +9053,7 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
 
           <ul>
-            <li>As a device owner, I want to know whether a device will work with my system before I purchase it to
+            <li>As a <a>Device Owner</a>, I want to know whether a device will work with my system before I purchase it to
               avoid wasting money.
               <ul>
                 <li>Installers of IoT devices want to be able to determine if a given device will be compatible with
@@ -8962,7 +9075,7 @@ Therefore, various data for agricultural machinery management should be represen
               without having to test against every possible consumer.</li>
           </ul>
           <ul>
-            <li>As a cloud provider I want to onboard, manage and communicate with as many devices as possible out
+            <li>As a <a>Cloud Provider</a> I want to onboard, manage and communicate with as many devices as possible out
               of the box.
               This should be possible without device specific customization.</li>
           </ul>
@@ -9066,9 +9179,9 @@ Therefore, various data for agricultural machinery management should be represen
         <dt>Target Users</dt>
         <dd>
           <ul>
-            <li>device owners (retailers)</li>
-            <li>device manufacturers</li>
-            <li>gateway manufacturer</li>
+            <li><a>Device Owners</a> (retailers)</li>
+            <li><a>Device Manufacturers</a></li>
+            <li><a>Gateway Manufacturer</a></li>
             <li>network operator (potentially transparent for WoT use cases)</li>
           </ul>
 
@@ -9198,7 +9311,7 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
 
-            Device owners, cloud provider.
+            <a>Device Owners</a>, <a>Cloud Provider</a>.
 
           </dd>
           <dt>Motivation</dt>
@@ -9377,8 +9490,8 @@ Therefore, various data for agricultural machinery management should be represen
             virtually represented, and whose data needs to be understood.
             Stakeholders include:
             <ul>
-              <li>device owners: need to make data from devices available to digital twin system.</li>
-              <li>device user: users of the digital twin system are indirectly using the devices by accessing their data
+              <li><a>Device Owners</a>: need to make data from devices available to digital twin system.</li>
+              <li><a>Device User</a>: users of the digital twin system are indirectly using the devices by accessing their data
                 generated by the devices and sent to the digital twin, and also, by sending commands to the digital twin
                 and corresponding actions can be automatically invoked on the device.</li>
               <li>cloud or edge provider: the digital twin system may be hosted in the cloud or in the edge.</li>
@@ -9436,7 +9549,7 @@ Therefore, various data for agricultural machinery management should be represen
         <dt>Target Users</dt>
         <dd>
 
-          Device owners, cloud providers.
+          <a>Device Owners</a>, <a>Cloud Providers</a>.
 
         </dd>
         <dt>Motivation</dt>
@@ -9997,11 +10110,11 @@ Therefore, various data for agricultural machinery management should be represen
           <dd>
 
             <ul>
-              <li>device owner</li>
-              <li>device user</li>
+              <li><a>Device Owner</a></li>
+              <li><a>Device User</a></li>
               <li>device application</li>
-              <li>service provider</li>
-              <li>identity provider</li>
+              <li><a>Service Provider</a></li>
+              <li><a>Identity Provider</a></li>
               <li>directory service</li>
             </ul>
 
@@ -10161,13 +10274,13 @@ Therefore, various data for agricultural machinery management should be represen
             <p>This implies that the code flow can be only used when the resource owner interacts directly with the WoT
               consumer at least once. Typical scenarios are:</p>
             <ul>
-              <li>In a home automation context, a device owner uses a third party software to interact
+              <li>In a home automation context, a <a>Device Owner</a> uses a third party software to interact
                 with/orchestrate one or more devices</li>
-              <li>Similarly, in a smart farm, the device owner might delegate its authorization to third party
+              <li>Similarly, in a smart farm, the <a>Device Owner</a> might delegate its authorization to third party
                 services.</li>
               <li>In a smart home scenario, Thing Description Directories might be deployed using this authorization
                 mechanism. In particular, the list of the registered TDs might require an explicit read authorization
-                request to the device owner (i.e. an human who has bought the device and installed it). </li>
+                request to the <a>Device Owner</a> (i.e. an human who has bought the device and installed it). </li>
               <li>... </li>
             </ul>
 
@@ -10481,7 +10594,7 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
 
-            device manufacturer, gateway manufacturer, cloud provider
+            <a>Device Manufacturer</a>, <a>Gateway Manufacturer</a>, <a>Cloud Provider</a>
 
           </dd>
           <dt>Motivation</dt>
@@ -10507,9 +10620,9 @@ Therefore, various data for agricultural machinery management should be represen
 
             <p>Actors (represent a physical person or group of persons (company))</p>
             Manufacturer
-            Service Provider
+            <a>Service Provider</a>
             Network Provider (potentially transparent for WoT use cases)
-            Device Owner (User)
+            <a>Device Owner</a> (User)
             Others?
 
             <p>Roles:</p>
@@ -10617,13 +10730,13 @@ Therefore, various data for agricultural machinery management should be represen
           <dt>Target Users</dt>
           <dd>
             <ul>
-              <li>device owners</li>
-              <li>device user</li>
-              <li>cloud provider</li>
-              <li>service provider</li>
-              <li>device manufacturer</li>
+              <li><a>Device Owners</a></li>
+              <li><a>Device User</a></li>
+              <li><a>Cloud Provider</a></li>
+              <li><a>Service Provider</a></li>
+              <li><a>Device Manufacturer</a></li>
               <li>network operator (potentially transparent for WoT use cases)</li>
-              <li>identity provider</li>
+              <li><a>Identity Provider</a></li>
               <li>directory service operator</li>
             </ul>
 
@@ -10834,12 +10947,12 @@ Therefore, various data for agricultural machinery management should be represen
         <dd>
           Note: User should be "Stakeholder"
           <ul>
-            <li>device owners - may benefit from using edge computing for iot orchestration and compute offload</li>
-            <li>device user - may benefit from reduced cost of devices that can use compute offload</li>
-            <li>cloud provider - may provide fallback for local edge compute services</li>
-            <li>service provider - may provide edge computing service</li>
-            <li>device manufacturer - may lower cost of device by depending on compute offload</li>
-            <li>gateway manufacturer - may provide edge computing host hardware</li>
+            <li><a>Device Owners</a> - may benefit from using edge computing for iot orchestration and compute offload</li>
+            <li><a>Device User</a> - may benefit from reduced cost of devices that can use compute offload</li>
+            <li><a>Cloud Provider</a> - may provide fallback for local edge compute services</li>
+            <li><a>Service Provider</a> - may provide edge computing service</li>
+            <li><a>Device Manufacturer</a> - may lower cost of device by depending on compute offload</li>
+            <li><a>Gateway Manufacturer</a> - may provide edge computing host hardware</li>
             <li>network operator - may provide edge computing nodes</li>
             <li>directory service operator - provides means to discover edge computing nodes</li>
           </ul>
@@ -11449,7 +11562,5 @@ Therefore, various data for agricultural machinery management should be represen
 </body>
 
 </html>
-
-
 
 
