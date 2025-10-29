@@ -1,0 +1,16 @@
+// sample config file for HTML tidy
+indent: yes
+indent-spaces: 2
+wrap: 72
+markup: yes
+output-xml: no
+input-xml: no
+show-warnings: yes
+numeric-entities: yes
+quote-marks: yes
+quote-nbsp: yes
+quote-ampersand: yes
+break-before-br: no
+uppercase-tags: no
+uppercase-attributes: no
+char-encoding: latin1
