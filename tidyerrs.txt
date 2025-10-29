@@ -1,0 +1,57 @@
+line 149 column 61 - Warning: replacing invalid character code 128
+line 149 column 62 - Warning: replacing invalid character code 148
+line 3175 column 60 - Warning: replacing invalid character code 128
+line 3175 column 61 - Warning: replacing invalid character code 153
+line 3648 column 36 - Warning: replacing invalid character code 137
+line 3726 column 40 - Warning: replacing invalid character code 128
+line 3726 column 41 - Warning: replacing invalid character code 153
+line 3785 column 57 - Warning: replacing invalid character code 128
+line 3785 column 58 - Warning: replacing invalid character code 153
+line 3855 column 48 - Warning: replacing invalid character code 128
+line 3855 column 49 - Warning: replacing invalid character code 153
+line 4010 column 11 - Warning: replacing invalid character code 128
+line 4010 column 12 - Warning: replacing invalid character code 153
+line 4010 column 45 - Warning: replacing invalid character code 128
+line 4010 column 46 - Warning: replacing invalid character code 153
+line 6815 column 4 - Warning: replacing invalid character code 128
+line 6815 column 5 - Warning: replacing invalid character code 153
+line 6964 column 29 - Warning: replacing invalid character code 128
+line 6964 column 30 - Warning: replacing invalid character code 153
+line 6970 column 60 - Warning: replacing invalid character code 128
+line 6970 column 61 - Warning: replacing invalid character code 153
+line 7256 column 17 - Warning: replacing invalid character code 128
+line 7256 column 18 - Warning: replacing invalid character code 153
+line 7594 column 60 - Warning: replacing invalid character code 128
+line 7594 column 61 - Warning: replacing invalid character code 153
+line 7626 column 13 - Warning: replacing invalid character code 128
+line 7626 column 14 - Warning: replacing invalid character code 153
+line 7673 column 36 - Warning: replacing invalid character code 128
+line 7673 column 37 - Warning: replacing invalid character code 153
+line 9152 column 10 - Warning: replacing invalid character code 128
+line 9152 column 11 - Warning: replacing invalid character code 153
+line 9205 column 47 - Warning: replacing invalid character code 128
+line 9205 column 48 - Warning: replacing invalid character code 153
+line 9216 column 45 - Warning: replacing invalid character code 128
+line 9216 column 46 - Warning: replacing invalid character code 153
+line 6 column 1 - Info: <meta> attribute "charset", incorrect value "utf-8" replaced
+line 403 column 5 - Warning: <dfn> proprietary attribute "date-lt"
+Info: Document content looks like HTML5
+Tidy found 36 warnings and 0 errors!
+
+
+Character codes 128 to 159 (U+0080 to U+009F) are not allowed in HTML;
+even if they were, they would likely be unprintable control characters.
+Tidy assumed you wanted to refer to a character with the same byte value in the 
+specified encoding and replaced that reference with the Unicode 
+equivalent.
+
+About HTML Tidy: https://github.com/htacg/tidy-html5
+Bug reports and comments: https://github.com/htacg/tidy-html5/issues
+Official mailing list: https://lists.w3.org/Archives/Public/public-htacg/
+Latest HTML specification: http://dev.w3.org/html5/spec-author-view/
+Validate your HTML documents: http://validator.w3.org/nu/
+Lobby your company to join the W3C: http://www.w3.org/Consortium
+
+Do you speak a language other than English, or a different variant of 
+English? Consider helping us to localize HTML Tidy. For details please see 
+https://github.com/htacg/tidy-html5/blob/master/README/LOCALIZE.md
