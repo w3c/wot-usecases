@@ -1,0 +1,152 @@
+line 403 column 7 - Warning: inserting implicit <p>
+line 561 column 45 - Info: missing optional end tag </dd>
+line 572 column 15 - Warning: inserting implicit <p>
+line 582 column 62 - Info: missing optional end tag </dd>
+line 630 column 15 - Warning: missing </ul> before </dd>
+line 673 column 17 - Warning: missing </ul> before </dd>
+line 1132 column 9 - Warning: discarding unexpected </dd>
+line 1094 column 5 - Warning: missing </section> before <dt>
+line 1133 column 9 - Warning: inserting implicit <dl>
+line 1194 column 9 - Warning: discarding unexpected </dd>
+line 1155 column 5 - Warning: missing </section> before <dt>
+line 1195 column 9 - Warning: inserting implicit <dl>
+line 1241 column 13 - Info: missing optional end tag </dd>
+line 1257 column 9 - Warning: discarding unexpected </dd>
+line 1217 column 5 - Warning: missing </section> before <dt>
+line 1258 column 9 - Warning: inserting implicit <dl>
+line 2382 column 11 - Warning: missing </dl> before </dd>
+line 2396 column 9 - Warning: discarding unexpected </dd>
+line 2364 column 5 - Warning: missing </section> before <dt>
+line 2397 column 9 - Warning: inserting implicit <dl>
+line 3577 column 11 - Info: missing optional end tag </dd>
+line 3578 column 13 - Warning: inserting implicit <ul>
+line 3578 column 13 - Warning: missing </ul> before </dd>
+line 3587 column 11 - Info: missing optional end tag </dd>
+line 3593 column 13 - Warning: inserting implicit <ul>
+line 3600 column 13 - Warning: discarding unexpected </p>
+line 3593 column 13 - Warning: missing </ul> before </dd>
+line 3709 column 9 - Warning: missing <dd>
+line 3709 column 9 - Warning: missing </dl> before </section>
+line 3547 column 9 - Warning: missing </dl> before </section>
+line 3737 column 11 - Info: missing optional end tag </dd>
+line 3738 column 15 - Warning: inserting implicit <ul>
+line 3738 column 15 - Warning: missing </ul> before </dd>
+line 3745 column 11 - Info: missing optional end tag </dd>
+line 3746 column 15 - Warning: inserting implicit <ul>
+line 3746 column 15 - Info: missing optional end tag </li>
+line 3746 column 15 - Warning: missing </ul> before </dd>
+line 3756 column 11 - Info: missing optional end tag </dd>
+line 3759 column 15 - Warning: inserting implicit <ul>
+line 3759 column 15 - Warning: missing </ul> before </dd>
+line 3854 column 11 - Info: missing optional end tag </dd>
+line 3855 column 15 - Warning: inserting implicit <ul>
+line 3855 column 15 - Warning: missing </ul> before </dd>
+line 3865 column 11 - Info: missing optional end tag </dd>
+line 3866 column 15 - Warning: inserting implicit <ul>
+line 3866 column 15 - Warning: missing </ul> before </dd>
+line 3927 column 11 - Info: missing optional end tag </dd>
+line 3928 column 13 - Warning: inserting implicit <ul>
+line 3928 column 13 - Warning: missing </ul> before </dd>
+line 3985 column 11 - Info: missing optional end tag </dd>
+line 3986 column 15 - Warning: inserting implicit <ul>
+line 3986 column 15 - Warning: missing </ul> before </dd>
+line 3994 column 11 - Info: missing optional end tag </dd>
+line 3995 column 15 - Warning: inserting implicit <ul>
+line 3995 column 15 - Warning: missing </ul> before </dd>
+line 4066 column 11 - Info: missing optional end tag </dd>
+line 4067 column 13 - Warning: inserting implicit <ul>
+line 4067 column 13 - Warning: missing </ul> before </dd>
+line 4146 column 13 - Warning: inserting implicit <p>
+line 4149 column 11 - Info: missing optional end tag </dd>
+line 4236 column 13 - Warning: inserting implicit <p>
+line 4312 column 53 - Warning: discarding unexpected </a>
+line 4381 column 13 - Warning: inserting implicit <p>
+line 4437 column 13 - Warning: inserting implicit <p>
+line 4447 column 13 - Warning: inserting implicit <p>
+line 4474 column 13 - Warning: inserting implicit <p>
+line 4485 column 13 - Warning: inserting implicit <p>
+line 4497 column 13 - Warning: inserting implicit <p>
+line 4507 column 13 - Warning: inserting implicit <p>
+line 4522 column 11 - Info: missing optional end tag </dd>
+line 4916 column 13 - Warning: missing <li>
+line 5030 column 11 - Info: missing optional end tag </dd>
+line 5034 column 13 - Warning: inserting implicit <ul>
+line 5129 column 58 - Warning: discarding unexpected </a>
+line 5177 column 11 - Warning: discarding unexpected </dd>
+line 5315 column 11 - Warning: discarding unexpected </dd>
+line 5466 column 11 - Info: missing optional end tag </dd>
+line 5596 column 11 - Warning: missing <dd>
+line 5596 column 11 - Info: missing optional end tag </dd>
+line 5664 column 11 - Warning: missing <dd>
+line 5835 column 87 - Warning: discarding unexpected </a>
+line 6000 column 76 - Warning: discarding unexpected </a>
+line 6295 column 11 - Warning: missing </ul> before </dd>
+line 6226 column 9 - Warning: missing </dl> before </section>
+line 7344 column 13 - Warning: discarding unexpected </dd>
+line 7467 column 17 - Info: missing optional end tag </li>
+line 7583 column 13 - Warning: discarding unexpected </dd>
+line 7708 column 13 - Warning: discarding unexpected </dd>
+line 7819 column 9 - Warning: missing </section> before <dt>
+line 7821 column 11 - Warning: inserting implicit <dl>
+line 7901 column 13 - Warning: inserting implicit <p>
+line 7909 column 13 - Warning: inserting implicit <p>
+line 8019 column 11 - Warning: discarding unexpected </dd>
+line 8147 column 13 - Warning: missing </ul> before </dd>
+line 8581 column 11 - Warning: discarding unexpected </dd>
+line 8602 column 11 - Warning: discarding unexpected </dd>
+line 8766 column 11 - Warning: discarding unexpected </dd>
+line 8827 column 91 - Warning: unescaped & or unknown entity "&pSpracheNr"
+line 8833 column 11 - Warning: discarding unexpected </dd>
+line 9031 column 13 - Warning: missing </ul> before </dd>
+line 9183 column 9 - Warning: discarding unexpected </dd>
+line 9645 column 11 - Info: missing optional end tag </dd>
+line 9712 column 11 - Warning: discarding unexpected </dd>
+line 9829 column 11 - Warning: discarding unexpected </dd>
+line 10007 column 11 - Warning: discarding unexpected </dd>
+line 9988 column 7 - Warning: missing </section> before <dt>
+line 10008 column 11 - Warning: inserting implicit <dl>
+line 10619 column 11 - Warning: discarding unexpected </dd>
+line 10686 column 13 - Warning: missing </ul> before </dd>
+line 403 column 7 - Warning: trimming empty <p>
+line 572 column 15 - Warning: trimming empty <p>
+line 3592 column 13 - Warning: trimming empty <p>
+line 3709 column 9 - Warning: trimming empty <dl>
+line 4146 column 13 - Warning: trimming empty <p>
+line 4206 column 13 - Warning: trimming empty <p>
+line 4225 column 13 - Warning: trimming empty <p>
+line 4236 column 13 - Warning: trimming empty <p>
+line 4278 column 13 - Warning: trimming empty <p>
+line 4381 column 13 - Warning: trimming empty <p>
+line 4424 column 13 - Warning: trimming empty <p>
+line 4437 column 13 - Warning: trimming empty <p>
+line 4447 column 13 - Warning: trimming empty <p>
+line 4474 column 13 - Warning: trimming empty <p>
+line 4478 column 13 - Warning: trimming empty <p>
+line 4485 column 13 - Warning: trimming empty <p>
+line 4489 column 13 - Warning: trimming empty <p>
+line 4497 column 13 - Warning: trimming empty <p>
+line 4501 column 13 - Warning: trimming empty <p>
+line 4507 column 13 - Warning: trimming empty <p>
+line 5548 column 13 - Warning: trimming empty <p>
+line 7901 column 13 - Warning: trimming empty <p>
+line 7909 column 13 - Warning: trimming empty <p>
+line 422 column 11 - Warning: <dfn> proprietary attribute "date-lt"
+Info: Document content looks like HTML5
+Tidy found 111 warnings and 0 errors!
+
+
+One or more empty elements were present in the source document but
+dropped on output. If these elements are necessary or you don't want
+this behavior, then consider setting the option "drop-empty-elements"
+to no.
+
+About HTML Tidy: https://github.com/htacg/tidy-html5
+Bug reports and comments: https://github.com/htacg/tidy-html5/issues
+Official mailing list: https://lists.w3.org/Archives/Public/public-htacg/
+Latest HTML specification: http://dev.w3.org/html5/spec-author-view/
+Validate your HTML documents: http://validator.w3.org/nu/
+Lobby your company to join the W3C: http://www.w3.org/Consortium
+
+Do you speak a language other than English, or a different variant of 
+English? Consider helping us to localize HTML Tidy. For details please see 
+https://github.com/htacg/tidy-html5/blob/master/README/LOCALIZE.md
