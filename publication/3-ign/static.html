@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en-US"><head>
 <meta charset="iso-8859-1">
-<meta name="generator" content="ReSpec 35.6.0">
+<meta name="generator" content="ReSpec 35.6.1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 span.example-title{text-transform:none}
@@ -111,6 +111,7 @@ dd{margin-left:0}
         from multiple vendors and ecosystems. The WoT Working Group has
         developed, and continues to develop, several specifications to
         address requirements for these domains.">
+<link rel="canonical" href="https://www.w3.org/TR/wot-usecases/">
 <style>
 .hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
 @media (prefers-color-scheme:dark){
@@ -157,7 +158,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "lint": {
     "no-headingless-sections": false
   },
-  "specStatus": "ED",
+  "specStatus": "NOTE",
   "noRecTrack": "true",
   "maxTocLevel": 6,
   "processVersion": 2019,
@@ -315,7 +316,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "id": "bot"
     },
     "iso-19111-2019": {
-      "title": "ISOi 19111:2019 - Geographic information â¬\u001d Referencing by coordinates",
+      "title": "ISOi 19111:2019 - Geographic information ï¿½\u001d Referencing by coordinates",
       "href": "https://www.iso.org/standard/74039.html",
       "status": "Published",
       "date": "Jan 2019",
@@ -475,23 +476,23 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "id": "wot-geolocation-proposal"
     }
   },
-  "publishISODate": "2025-10-29T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 29 October 2025"
+  "publishISODate": "2025-11-26T00:00:00.000Z",
+  "generatedSubtitle": "W3C Group Note 26 November 2025"
 }</script>
-<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-NOTE"></head>
   <body class="h-entry informative"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Web of Things (WoT): Use Cases and Requirements</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2025-10-29">29 October 2025</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#NOTE">W3C Group Note</a> <time class="dt-published" datetime="2025-11-26">26 November 2025</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://w3c.github.io/wot-usecases/">https://w3c.github.io/wot-usecases/</a>
+                <a class="u-url" href="https://www.w3.org/TR/2025/NOTE-wot-usecases-20251126/">https://www.w3.org/TR/2025/NOTE-wot-usecases-20251126/</a>
               </dd>
         <dt>Latest published version:</dt><dd>
-                <a href="https://www.w3.org/wot-usecases/">https://www.w3.org/wot-usecases/</a>
+                <a href="https://www.w3.org/TR/wot-usecases/">https://www.w3.org/TR/wot-usecases/</a>
               </dd>
         <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/wot-usecases/">https://w3c.github.io/wot-usecases/</a></dd>
         <dt>History:</dt><dd>
@@ -572,31 +573,20 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       in the
       <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> standards and drafts index</a>.</em></p><p>
     This document was published by the <a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a> as
-    an Editor's Draft. 
-  </p><p>Publication as an Editor's Draft does not
-  imply endorsement by <abbr title="World Wide Web Consortium">W3C</abbr> and its Members. </p><p>
-    This is a draft document and may be updated, replaced, or obsoleted by other
-    documents at any time. It is inappropriate to cite this document as other
-    than a work in progress.
+    a Group Note using the
+        <a href="https://www.w3.org/policies/process/20250818/#recs-and-notes">Note track</a>. 
+  </p><p>This Group Note is endorsed by
+        the <a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a>, but is not endorsed by
+        <abbr title="World Wide Web Consortium">W3C</abbr> itself nor its
+        Members. </p><p data-deliverer="75874">
     
-  </p><p>
-    
-        This document was produced by a group
-        operating under the
+        The
         <a href="https://www.w3.org/policies/patent-policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent
-          Policy</a>.
+          Policy</a>
+        does not carry any licensing requirements or commitments on this
+        document.
       
     
-                <abbr title="World Wide Web Consortium">W3C</abbr> maintains a
-                <a rel="disclosure" href="https://www.w3.org/groups/ig/wot/ipr">public list of any patent disclosures</a>
-          made in connection with the deliverables of
-          the group; that page also includes
-          instructions for disclosing a patent. An individual who has actual
-          knowledge of a patent that the individual believes contains
-          <a href="https://www.w3.org/policies/patent-policy/#def-essential">Essential Claim(s)</a>
-          must disclose the information in accordance with
-          <a href="https://www.w3.org/policies/patent-policy/#sec-Disclosure">section 6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
-        
   </p><p>
                       This document is governed by the
                       <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20250818/">18 August 2025 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
@@ -5811,7 +5801,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             </dt>
             <dd>
               Water is vital for ensuring food security to the
-              worldâ€™s population, and agriculture is the
+              worldï¿½€™s population, and agriculture is the
               biggest consumer amounting for 70% of freshwater. Field
               irrigation application methods are one of the main causes
               of water wastage. The most common technique, surface
@@ -6501,7 +6491,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 
               [4] <a href="http://www.meteofrance.fr/">http://www.meteofrance.fr/</a><br>
 
-              [5] C. ROUSSEY,S. BERNARD, G. ANDRÃ‰, D. BOFFETY.
+              [5] C. ROUSSEY,S. BERNARD, G. ANDRï¿½‰, D. BOFFETY.
               Weather Data Publication on the LOD using
               SOSA/SSN2022-11-07 Ontology. Semantic Web Journal, 2019
               <a href="http://www.semantic-web-journal.net/content/weather-data-publication-lod-using-sosassn-ontology-0">
@@ -6629,7 +6619,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <p>
                 When a cow enters a milking box, a object identifier
                 installed in the milking room identifies the
-                cowâ€™s ID from the RFID tag, QR code or
+                cowï¿½€™s ID from the RFID tag, QR code or
                 bar code attached to the cow. Through this, the milking
                 can be performed more systematically based on
                 historical data, such as the number of milking or milk
@@ -6720,7 +6710,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Through this, it is possible to protect the experience,
                 know-how and unique agricultural knowledge or
                 techniques of a farmer, and to secure the dairy
-                farmâ€™s competitiveness.
+                farmï¿½€™s competitiveness.
               </p>
             </dd>
             <dt>
@@ -6836,7 +6826,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               agricultural population and the aging of the farmers. In
               addition, UAVs can also be an effective solution to
               protect farmers from serious side effects of pesticides
-              by reducing the frequency of farmerâ€™s
+              by reducing the frequency of farmerï¿½€™s
               contact with chemicals such as pesticides.
             </dd>
             <dt>
@@ -7092,8 +7082,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 the livestock barn
                 </li>
                 <li>Wearable devices such as collars or ear tags
-                attached to the livestockâ€™s body to
-                monitor the livestockâ€™s location,
+                attached to the livestockï¿½€™s body to
+                monitor the livestockï¿½€™s location,
                 behavior, and vital signs
                 </li>
                 <li>Communication devices including object identifiers
@@ -7935,7 +7925,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 <li>ISO:
                   <ul>
                     <li>ISO 19111 [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19111-2007" title="Geographic information -- Spatial referencing by coordinates">iso-19111-2007</a></cite>],
-                    [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19111-2019" title="ISOi 19111:2019 - Geographic information â¬ Referencing by coordinates">iso-19111-2019</a></cite>]
+                    [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19111-2019" title="ISOi 19111:2019 - Geographic information ï¿½ Referencing by coordinates">iso-19111-2019</a></cite>]
                     </li>
                     <ul>
                       <li>Standard for referring to locations by
@@ -11022,7 +11012,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
               Retailers need to ensure that the freezers are online and
               operating within normal parameters. Monitoring freezers
               supports health and safety requirements and avoids wasted
-              product, whether itâ€™s food or other
+              product, whether itï¿½€™s food or other
               consumable items (e.g., ice). Outdoor Food Preparation
               and Food Service Devices
             </dd>
@@ -11292,7 +11282,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
               Restrooms often are a priority for customers, so restroom
               issues can directly drive away business and customer
               traffic inside the store. Restroom service also creates
-              inefficiencies in the storeâ€™s labor.
+              inefficiencies in the storeï¿½€™s labor.
               Expected outcomes:
               <ul>
                 <li>Quickly and proactively identifying issues from
@@ -11301,7 +11291,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 </li>
                 <li>Timely identification allows onsite personnel to
                 respond, reduce problems, and avoid additional impacts
-                to the storeâ€™s operations.
+                to the storeï¿½€™s operations.
                 </li>
                 <li>Proactive efforts at the store level can also
                 improve labor efficiencies by scheduling activities as
@@ -11805,7 +11795,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 <li>The status of the ice machine (i.e., powered on,
                 off, offline);
                 </li>
-                <li>The machineâ€™s ice temperature and ice
+                <li>The machineï¿½€™s ice temperature and ice
                 quality settings;
                 </li>
                 <li>The status of the water supply;
@@ -12371,7 +12361,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 if the machines could speak to one another.
                 Manufacturers have little incentive to make their
                 proprietary code and data easily to accessible and
-                process able by their competitorsâ€™
+                process able by their competitorsï¿½€™
                 machines. So the task of middleman falls to the
                 hospital staffs. In addition to saving lives, a common
                 framework could result in collecting and recording more
@@ -12406,7 +12396,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                   infusion pump rate is automatically adjusted
                   according to the real-time blood glucose levels being
                   measured, to maintain blood glucose values in a
-                  target range. If the patientâ€™s glucose
+                  target range. If the patientï¿½€™s glucose
                   level does not respond appropriately to the changes
                   in insulin administration, the clinical staff is
                   alerted.
@@ -12475,7 +12465,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                   components are being used as intended in the clinical
                   context, that the components are authentic and
                   authorized for use in that environment, that they
-                  have been approved by the hospitalâ€™s
+                  have been approved by the hospitalï¿½€™s
                   biomedical engineering staff and that they meet
                   regulatory safety and effectiveness requirements.
                 </p>
@@ -14622,7 +14612,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                   <p>
                     A data analyst can easily create a model based on
                     external observation of a machine and can develop
-                    multiple models based on the userâ€™s
+                    multiple models based on the userï¿½€™s
                     needs. The model considers the entire business
                     scenario and generates contextual data for analysis
                     and prediction.
@@ -14719,7 +14709,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
               located in the cloud or in the edge, of a real-world
               entity or system that mirrors a unique physical object,
               or a group of connected physical devices. Simply by
-              describing a single deviceâ€™s
+              describing a single deviceï¿½€™s
               functionalities is not enough to support the accurate
               virtual representation in the cloud or edge. To
               accurately simulate the physical entity or system, the
@@ -14740,7 +14730,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
             <dd>
               Device status information, discrete sensor data. Device
               relation information, indicating one
-              deviceâ€™s relation with other devices in a
+              deviceï¿½€™s relation with other devices in a
               group of connected devices, and what-if rules.
             </dd>
             <dt>
@@ -16938,7 +16928,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
     </dd><dt id="bib-iso-19111-2007">[iso-19111-2007]</dt><dd>
       <a href="https://www.iso.org/standard/41126.html"><cite>Geographic information -- Spatial referencing by coordinates</cite></a>. ISO/TC 211.  ISO. 2007. International Standard. URL: <a href="https://www.iso.org/standard/41126.html">https://www.iso.org/standard/41126.html</a>
     </dd><dt id="bib-iso-19111-2019">[iso-19111-2019]</dt><dd>
-      <a href="https://www.iso.org/standard/74039.html"><cite>ISOi 19111:2019 - Geographic information â¬ Referencing by coordinates</cite></a>.  ISO. Jan 2019. Published. URL: <a href="https://www.iso.org/standard/74039.html">https://www.iso.org/standard/74039.html</a>
+      <a href="https://www.iso.org/standard/74039.html"><cite>ISOi 19111:2019 - Geographic information ï¿½ Referencing by coordinates</cite></a>.  ISO. Jan 2019. Published. URL: <a href="https://www.iso.org/standard/74039.html">https://www.iso.org/standard/74039.html</a>
     </dd><dt id="bib-iso-6709">[ISO-6709]</dt><dd>
       <a href="https://www.iso.org/standard/39242.html"><cite>ISO-6709:2008 : Standard representation of geographic point location by coordinates</cite></a>.  ISO. 2008-07. Published. URL: <a href="https://www.iso.org/standard/39242.html">https://www.iso.org/standard/39242.html</a>
     </dd><dt id="bib-json-schema">[json-schema]</dt><dd>
@@ -17004,7 +16994,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
     </dd><dt id="bib-wot-architecture">[wot-architecture]</dt><dd>
       <a href="https://www.w3.org/TR/wot-architecture/"><cite>Web of Things (WoT) Architecture</cite></a>. Matthias Kovatsch; Ryuichi Matsukura; Michael Lagally; Toru Kawaguchi; Kunihiko Toumura; Kazuo Kajimoto.  W3C. 9 April 2020. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wot-architecture/">https://www.w3.org/TR/wot-architecture/</a>
     </dd><dt id="bib-wot-binding-templates">[wot-binding-templates]</dt><dd>
-      <a href="https://www.w3.org/TR/wot-binding-templates/"><cite>Web of Things (WoT) Binding Templates</cite></a>. Michael Koster; Ege Korkan.  W3C. 28 May 2024. W3C Working Group Note. URL: <a href="https://www.w3.org/TR/wot-binding-templates/">https://www.w3.org/TR/wot-binding-templates/</a>
+      <a href="https://www.w3.org/TR/wot-binding-templates/"><cite>Web of Things (WoT) Binding Templates</cite></a>. Michael Koster; Ege Korkan.  W3C. 4 November 2025. W3C Working Group Note. URL: <a href="https://www.w3.org/TR/wot-binding-templates/">https://www.w3.org/TR/wot-binding-templates/</a>
     </dd><dt id="bib-wot-discovery">[wot-discovery]</dt><dd>
       <a href="https://www.w3.org/TR/wot-discovery/"><cite>Web of Things (WoT) Discovery</cite></a>. Kunihiko Toumura; Michael McCool; Andrea Cimmino; Farshid Tavakolizadeh.  W3C. 5 December 2023. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wot-discovery/">https://www.w3.org/TR/wot-discovery/</a>
     </dd><dt id="bib-wot-geolocation-proposal">[wot-geolocation-proposal]</dt><dd>
