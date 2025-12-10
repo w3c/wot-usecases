@@ -17,7 +17,7 @@ span.warning{padding:.1em .5em .15em}
 .issue.closed span.issue-number{text-decoration:line-through}
 .issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
 .warning{border-color:#f11;border-color:var(--warning-border,#f11);border-width:.2em;border-style:solid;background:#fbe9e9;background:var(--warning-bg,#fbe9e9);color:#000;color:var(--text,#000)}
-.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+.warning-title:before{content:"&#x26A0;";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
 li.task-list-item{list-style:none}
 input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
 .issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
@@ -82,7 +82,7 @@ aside.example .marker>a.self-link{color:inherit}
 .header-wrapper{display:flex;align-items:baseline}
 :is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
 :is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
-:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"&sect;";text-decoration:none;color:var(--heading-text)}
 :is(h2,h3)+a.self-link{top:-.2em}
 :is(h4,h5,h6)+a.self-link::before{color:#000}
 @media (max-width:767px){
@@ -111,6 +111,7 @@ dd{margin-left:0}
         from multiple vendors and ecosystems. The WoT Working Group has
         developed, and continues to develop, several specifications to
         address requirements for these domains.">
+<link rel="canonical" href="https://www.w3.org/TR/wot-usecases/">
 <style>
 .hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
 @media (prefers-color-scheme:dark){
@@ -157,7 +158,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "lint": {
     "no-headingless-sections": false
   },
-  "specStatus": "ED",
+  "specStatus": "NOTE",
   "noRecTrack": "true",
   "maxTocLevel": 6,
   "processVersion": 2019,
@@ -192,7 +193,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "name": "Ryuichi Matsukura",
       "w3cid": "64284",
       "company": "Fujitsu Ltd.",
-      "companyURL": "https://www.fujitsu.com/"
+      "companyURL": "https://global.fujitsu/en-global"
     }
   ],
   "otherLinks": [
@@ -252,7 +253,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     },
     "HIPAA": {
       "title": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA), Public Law 104-191",
-      "href": "https://www.hhs.gov/hipaa/index.html",
+      "href": "https://aspe.hhs.gov/reports/health-insurance-portability-accountability-act-1996",
       "date": "1996-08-21",
       "publisher": "U.S. Department of Health and Human Services (HHS)",
       "id": "hipaa"
@@ -276,7 +277,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "title": "NMEA 0183 Interface Standard",
       "publisher": "National Marine Electronics Association",
       "date": "November 2018",
-      "href": "https://www.nmea.org/content/STANDARDS/NMEA_0183_Standard",
+      "href": "https://www.nmea.org/nmea-0183.html",
       "id": "nmea-0183"
     },
     "EDGEX": {
@@ -290,7 +291,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     },
     "OGC-coords": {
       "title": "OGC Abstract Specification Topic 2: Referencing by coordinates",
-      "href": "http://docs.opengeospatial.org/as/18-005r4/18-005r4.html",
+      "href": "https://docs.opengeospatial.org/as/18-005r4/18-005r4.html",
       "date": "8 February 2019",
       "publisher": "Open Geospatial Consortium",
       "id": "ogc-coords"
@@ -305,7 +306,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "authors": [
         "Mads Holten Rasmussen",
         "Pieter Pauwels",
-        "Maxime LefranÃƒÂ§ois",
+        "Maxime Lefran&ccedil;ois",
         "Georg Ferdinand Schneider"
       ],
       "title": "Building Topology Ontology",
@@ -315,7 +316,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "id": "bot"
     },
     "iso-19111-2019": {
-      "title": "ISOi 19111:2019 - Geographic information Ã¢Â¬\u001d Referencing by coordinates",
+      "title": "ISOi 19111:2019 - Geographic information -- Referencing by coordinates",
       "href": "https://www.iso.org/standard/74039.html",
       "status": "Published",
       "date": "Jan 2019",
@@ -357,14 +358,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     },
     "BACnet": {
       "title": "BACnet",
-      "href": "http://www.bacnet.org",
+      "href": "https://bacnet.org/",
       "publisher": "ASHRAE",
       "id": "bacnet"
     },
     "IEC 61850": {
       "title": "IEC 61850:2022 - Communication networks and systems for power utility automation",
       "date": "4 January 2022",
-      "href": "https://webstore.iec.ch/publication/6028",
+      "href": "https://webstore.iec.ch/en/publication/6028",
       "publisher": "IEC TC 57",
       "id": "iec 61850"
     },
@@ -389,7 +390,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     },
     "OGC Sensor Things": {
       "title": "OGC Sensor Things API",
-      "href": "https://www.ogc.org/standards/sensorthings",
+      "href": "https://www.ogc.org/standards/sensorthings/",
       "date": "4 August 2021",
       "publisher": "Open Geospatial Consortium",
       "id": "ogc sensor things"
@@ -423,8 +424,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "SAREF4AGRI": {
       "title": "SAREF4AGRI: an extension of SAREF for the agriculture and food domain",
       "authors": [
-        "Maria Poveda-Villalon",
-        "RaÃƒÂºl Garcia-Castro",
+        "Mar&iacute;a Poveda-Villal&oacute;n",
+        "Ra&uacute;l Garc&iacute;a-Castro",
         "Laura Daniele",
         "Mike de Roode"
       ],
@@ -446,8 +447,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "SAREF4BLDG": {
       "title": "SAREF extension for building",
       "authors": [
-        "MarÃƒÂ­a Poveda-VillalÃƒÂ³n",
-        "RaÃƒÂºl Garcia-Castro"
+        "Mar&iacute;a Poveda-Villal&oacute;n",
+        "Ra&uacute;l Garc&iacute;a-Castro"
       ],
       "date": "13 April 2020",
       "publisher": "ETSI",
@@ -457,7 +458,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "SAREF4SYST": {
       "title": "SAREF4SYST: an extension of SAREF for typology of systems and their inter-connections",
       "authors": [
-        "Maxime LefranÃƒÂ§ois"
+        "Maxime Lefran&ccedil;ois"
       ],
       "date": "6 June 2019",
       "publisher": "ETSI",
@@ -475,23 +476,23 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "id": "wot-geolocation-proposal"
     }
   },
-  "publishISODate": "2025-11-26T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 26 November 2025"
+  "publishISODate": "2025-12-10T00:00:00.000Z",
+  "generatedSubtitle": "W3C Group Note 10 December 2025"
 }</script>
-<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-NOTE"></head>
   <body class="h-entry informative"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Web of Things (WoT): Use Cases and Requirements</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2025-11-26">26 November 2025</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#NOTE">W3C Group Note</a> <time class="dt-published" datetime="2025-12-10">10 December 2025</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://w3c.github.io/wot-usecases/">https://w3c.github.io/wot-usecases/</a>
+                <a class="u-url" href="https://www.w3.org/TR/2025/NOTE-wot-usecases-20251210/">https://www.w3.org/TR/2025/NOTE-wot-usecases-20251210/</a>
               </dd>
         <dt>Latest published version:</dt><dd>
-                <a href="https://www.w3.org/wot-usecases/">https://www.w3.org/wot-usecases/</a>
+                <a href="https://www.w3.org/TR/wot-usecases/">https://www.w3.org/TR/wot-usecases/</a>
               </dd>
         <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/wot-usecases/">https://w3c.github.io/wot-usecases/</a></dd>
         <dt>History:</dt><dd>
@@ -512,7 +513,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               </dt><dd class="editor p-author h-card vcard" data-editor-id="47166">
     <span class="p-name fn">Michael Lagally</span> (<a class="p-org org h-org" href="https://www.oracle.com/">Oracle Corp.</a>)
   </dd><dd class="editor p-author h-card vcard" data-editor-id="64284">
-    <span class="p-name fn">Ryuichi Matsukura</span> (<a class="p-org org h-org" href="https://www.fujitsu.com/">Fujitsu Ltd.</a>)
+    <span class="p-name fn">Ryuichi Matsukura</span> (<a class="p-org org h-org" href="https://global.fujitsu/en-global">Fujitsu Ltd.</a>)
   </dd>
         
         
@@ -532,11 +533,11 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     
     <p class="copyright">
     <a href="https://www.w3.org/policies/#copyright">Copyright</a>
-    ©
+    &copy;
     2020-2025
     
     <a href="https://www.w3.org/">World Wide Web Consortium</a>.
-    <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+    <abbr title="World Wide Web Consortium">W3C</abbr><sup>&reg;</sup>
     <a href="https://www.w3.org/policies/#Legal_Disclaimer">liability</a>,
     <a href="https://www.w3.org/policies/#W3C_Trademarks">trademark</a> and
     <a rel="license" href="https://www.w3.org/copyright/software-license-2023/" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.
@@ -572,31 +573,20 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       in the
       <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> standards and drafts index</a>.</em></p><p>
     This document was published by the <a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a> as
-    an Editor's Draft. 
-  </p><p>Publication as an Editor's Draft does not
-  imply endorsement by <abbr title="World Wide Web Consortium">W3C</abbr> and its Members. </p><p>
-    This is a draft document and may be updated, replaced, or obsoleted by other
-    documents at any time. It is inappropriate to cite this document as other
-    than a work in progress.
+    a Group Note using the
+        <a href="https://www.w3.org/policies/process/20250818/#recs-and-notes">Note track</a>. 
+  </p><p>This Group Note is endorsed by
+        the <a href="https://www.w3.org/groups/ig/wot">Web of Things Interest Group</a>, but is not endorsed by
+        <abbr title="World Wide Web Consortium">W3C</abbr> itself nor its
+        Members. </p><p data-deliverer="75874">
     
-  </p><p>
-    
-        This document was produced by a group
-        operating under the
+        The
         <a href="https://www.w3.org/policies/patent-policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent
-          Policy</a>.
+          Policy</a>
+        does not carry any licensing requirements or commitments on this
+        document.
       
     
-                <abbr title="World Wide Web Consortium">W3C</abbr> maintains a
-                <a rel="disclosure" href="https://www.w3.org/groups/ig/wot/ipr">public list of any patent disclosures</a>
-          made in connection with the deliverables of
-          the group; that page also includes
-          instructions for disclosing a patent. An individual who has actual
-          knowledge of a patent that the individual believes contains
-          <a href="https://www.w3.org/policies/patent-policy/#def-essential">Essential Claim(s)</a>
-          must disclose the information in accordance with
-          <a href="https://www.w3.org/policies/patent-policy/#sec-Disclosure">section 6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
-        
   </p><p>
                       This document is governed by the
                       <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20250818/">18 August 2025 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
@@ -5811,7 +5801,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             </dt>
             <dd>
               Water is vital for ensuring food security to the
-              world's population, and agriculture is the
+              world&rsquo;s population, and agriculture is the
               biggest consumer amounting for 70% of freshwater. Field
               irrigation application methods are one of the main causes
               of water wastage. The most common technique, surface
@@ -6136,7 +6126,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 <li>LPWAN [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8376" title="Low-Power Wide Area Network (LPWAN) Overview">rfc8376</a></cite>]
                 </li>
                 <li>
-                  <a href="http://www.sdi-12.org/current_specification/SDI-12_version-1_4-Jan-10-2019.pdf">
+                  <a href="https://www.sdi-12.org/current_specification/SDI-12_version-1_4-Jan-10-2019.pdf">
                   SDI 12</a>
                 </li>
                 <li>CoAP [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7252" title="The Constrained Application Protocol (CoAP)">rfc7252</a></cite>]
@@ -6443,14 +6433,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                   CASO</a>
                 </li>
                 <li>
-                  <a href="http://www.w3id.org/def/irrig">IRRIG</a>
+                  <a href="https://irstea.github.io/irrig/OnToology/ontology/irrig.owl/documentation/index-en.html">IRRIG</a>
                 </li>
               </ul>The CASO and IRRIG ontologies extend SSN, PROV-O and
               SAREF4AGRI to implement an irrigation expert system.<br>
               <br>
               A thesaurus climate and forecast that describes the
               weather properties and associated phenomenon is available
-              at <a href="http://vocab.nerc.ac.uk/collection/P07/">http://vocab.nerc.ac.uk/collection/P07/</a>.<br>
+              at <a href="http://vocab.nerc.ac.uk/collection/P07/current/">http://vocab.nerc.ac.uk/collection/P07/current/</a>.<br>
 
               <br>
               The weather measurements provided by the agricultural
@@ -6465,22 +6455,22 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               This use case has been implemented in France, following
               local conditions and regulations. There exists an open
               manual irrigation decision method called <a href="http://www.irrinov.arvalisinstitutduvegetal.fr/irrinov.asp">
-              IRRINOVÃ‚Â®</a> developed by Arvalis [2] and INRAE
+              IRRINOV&reg;</a> developed by Arvalis [2] and INRAE
               dedicated to France and some specific crops: maize, wheat
               and cereals, potatoes and beans.<br>
               <br>
-              IRRINOVÃ‚Â® can be automated using wireless sensor networks
+              IRRINOV&reg; can be automated using wireless sensor networks
               and semantic web technologies. The considered network is
               of star type: all sensors can communicate with a common
               gateway, which is connected to the Internet. The
-              IRRINOVÃ‚Â® implementation was developed in [3]. This work
+              IRRINOV&reg; implementation was developed in [3]. This work
               presents an expert system for maize using drools. It
               automates the irrigation decision for maize based on
               sensor measurements.<br>
               <br>
               To measure weather properties, we use the recommendation
               provided by the French National Weather Institute:
-              MÃƒÂ©tÃƒÂ©o France[4]. Its web site defines how to evaluate
+              M&eacute;t&eacute;o France[4]. Its web site defines how to evaluate
               the min and max temperatures per day in <a href="http://www.meteofrance.fr/publications/glossaire/154123-temperature-minimale">
               http://www.meteofrance.fr/publications/glossaire/154123-temperature-minimale</a>
               (in French, we found no equivalent description in
@@ -6491,17 +6481,17 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             </dt>
             <dd>
               [1] <a href="https://www.inrae.fr/">https://www.inrae.fr/</a><br>
-              [2] <a href="https://www.arvalisinstitutduvegetal.fr/">https://www.arvalisinstitutduvegetal.fr/</a><br>
+              [2] <a href="https://www.arvalis.fr/">https://www.arvalis.fr/</a><br>
 
-              [3] Q-D. Nguyen, C. ROUSSEY, M. Poveda-VillalÃƒÂ³n, C. de
+              [3] Q-D. Nguyen, C. ROUSSEY, M. Poveda-Villal&oacute;n, C. de
               Vaulx , J-P. Chanet. Development Experience of a
               Context-Aware System for Smart Irrigation Using CASO and
               IRRIG Ontologies. Applied Science 2020, 10(5), 1803;
-              <a href="https://doi.org/10.3390/app10051803">https://doi.org/10.3390/app10051803</a><br>
+              <a href="https://www.mdpi.com/2076-3417/10/5/1803">https://www.mdpi.com/2076-3417/10/5/1803</a><br>
 
               [4] <a href="http://www.meteofrance.fr/">http://www.meteofrance.fr/</a><br>
 
-              [5] C. ROUSSEY,S. BERNARD, G. ANDRÃƒ‰, D. BOFFETY.
+              [5] C. ROUSSEY,S. BERNARD, G. ANDR&Eacute;, D. BOFFETY.
               Weather Data Publication on the LOD using
               SOSA/SSN2022-11-07 Ontology. Semantic Web Journal, 2019
               <a href="http://www.semantic-web-journal.net/content/weather-data-publication-lod-using-sosassn-ontology-0">
@@ -6629,7 +6619,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               <p>
                 When a cow enters a milking box, a object identifier
                 installed in the milking room identifies the
-                cow's ID from the RFID tag, QR code or
+                cow&rsquo;s ID from the RFID tag, QR code or
                 bar code attached to the cow. Through this, the milking
                 can be performed more systematically based on
                 historical data, such as the number of milking or milk
@@ -6720,7 +6710,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Through this, it is possible to protect the experience,
                 know-how and unique agricultural knowledge or
                 techniques of a farmer, and to secure the dairy
-                farm's competitiveness.
+                farm&rsquo;s competitiveness.
               </p>
             </dd>
             <dt>
@@ -6836,7 +6826,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               agricultural population and the aging of the farmers. In
               addition, UAVs can also be an effective solution to
               protect farmers from serious side effects of pesticides
-              by reducing the frequency of farmer's
+              by reducing the frequency of farmer&rsquo;s
               contact with chemicals such as pesticides.
             </dd>
             <dt>
@@ -7092,8 +7082,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 the livestock barn
                 </li>
                 <li>Wearable devices such as collars or ear tags
-                attached to the livestock's body to
-                monitor the livestock's location,
+                attached to the livestock&rsquo;s body to
+                monitor the livestock&rsquo;s location,
                 behavior, and vital signs
                 </li>
                 <li>Communication devices including object identifiers
@@ -7935,7 +7925,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 <li>ISO:
                   <ul>
                     <li>ISO 19111 [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19111-2007" title="Geographic information -- Spatial referencing by coordinates">iso-19111-2007</a></cite>],
-                    [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19111-2019" title="ISOi 19111:2019 - Geographic information Ã¢Â¬ Referencing by coordinates">iso-19111-2019</a></cite>]
+                    [<cite><a class="bibref" data-link-type="biblio" href="#bib-iso-19111-2019" title="ISOi 19111:2019 - Geographic information -- Referencing by coordinates">iso-19111-2019</a></cite>]
                     </li>
                     <ul>
                       <li>Standard for referring to locations by
@@ -8452,7 +8442,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               Submitter(s)
             </dt>
             <dd>
-              Andrea Cimmino and RaÃƒÂºl GarcÃƒÂ­a Castro
+              Andrea Cimmino and Ra&uacute;l Garc&iacute;a Castro
             </dd>
             <dt>
               Target Users
@@ -8704,7 +8694,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 </li>
                 <li>the optimization of buildings' environmental
                 conditions towards the protection and preservation
-                ofartifacts (indirect contribution).
+                of artifacts (indirect contribution).
                 </li>
               </ol>
               <p>
@@ -8936,14 +8926,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 et al. as an example:
                 https://github.com/KotisK/IoTontos/blob/master/Ontologies/IoT/IoT-trust-onto-v06.owl
                 (or
-                http://i-lab.aegean.gr/kotis/Ontologies/IoT/IoT-trust-onto-v06.owl).
+                https://i-lab.aegean.gr/kotis/Ontologies/IoT/IoT-trust-onto-v06.owl).
               </p>
               <p>
                 Related paper: Kotis, K., I. Athanasakis, and G. A.
                 Vouros, "Semantically Enabling IoT Trust to Ensure
                 and Secure Deployment of IoT Entities", Int. J. of
                 Internet of Things and Cyber-Assurance, vol. 1, issue
-                1: Inderscience, pp. 3-21, 2018. (<a href="http://dx.doi.org/10.1504/IJITCA.2018.10011243">http://dx.doi.org/10.1504/IJITCA.2018.10011243</a>)
+                1: Inderscience, pp. 3-21, 2018. (<a href="http://www.inderscience.com/storage/f596810317421112.pdf">http://www.inderscience.com/storage/f596810317421112.pdf</a>)
               </p>
             </dd>
             <dt>
@@ -9009,7 +8999,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               Submitter(s)
             </dt>
             <dd>
-              Sebastian Kaebisch
+              Sebastian K&auml;bisch
             </dd>
             <dt>
               Target Users
@@ -9229,7 +9219,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
               Submitter(s)
             </dt>
             <dd>
-              Edison Chung, HervÃƒÂ© Pruvost, Georg Ferdinand Schneider
+              Edison Chung, Herv&eacute; Pruvost, Georg Ferdinand Schneider
             </dd>
             <dt>
               Category
@@ -9422,7 +9412,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         "https://www.w3.org/2019/wot/td/v1",
         {
             "osh": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#",
-            "bot": "https://w3id.org/bot#",
+            "bot": "https://w3c-lbd-cg.github.io/bot#",
             "sosa": "http://www.w3.org/ns/sosa/",
             "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
             "ssns": "http://www.w3.org/ns/ssn/systems/",
@@ -9483,7 +9473,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 Where the contextual information on the measurement
                 range of the sensor is specified using the <a href="http://www.w3.org/ns/ssn/systems/">SSNS</a> schema.
                 The location information of the thing <a href="#TemperatureSensor">TemperatureSensor</a> is provided
-                based on the <a href="https://w3id.org/bot">Building
+                based on the <a href="https://w3c-lbd-cg.github.io/bot">Building
                 Topology Ontology (BOT)</a>, a minimal ontology
                 developed by the <a href="https://www.w3.org/community/lbd/"><abbr title="World Wide Web Consortium">W3C</abbr> Linked Building
                 Data Community Group (<abbr title="World Wide Web Consortium">W3C</abbr> LBD CG)</a> to describe the
@@ -9500,7 +9490,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         "https://www.w3.org/2019/wot/td/v1",
         {
             "osh": "https://w3id.org/ibp/osh/OpenSmartHomeDataSet#",
-            "bot": "https://w3id.org/bot#",
+            "bot": "https://w3c-lbd-cg.github.io/bot#",
             "sosa": "http://www.w3.org/ns/sosa/",
             "ssn": "http://www.w3.org/ns/ssn/",
             "brick": "https://brickschema.org/schema/Brick#"
@@ -9575,7 +9565,7 @@ WHERE{
       </div>
               <p>
                 Similarly this data can be obtained via a REST API
-                built upon the <a href="https://tools.ietf.org/html/rfc7231#section-4">HTTP</a>
+                built upon the <a href="https://datatracker.ietf.org/html/rfc7231#section-4">HTTP</a>
                 protocol. Below is an example endpoint applying
                 <a href="https://roy.gbiv.com/pubs/dissertation/top.htm">
                 REST</a> style for getting the same information for a
@@ -9722,7 +9712,7 @@ API response:
                   Industry Foundation Classes (IFC) an ISO standard</a>
                 </li>
                 <li>
-                  <a href="https://w3id.org/bot">Building Topology
+                  <a href="https://w3c-lbd-cg.github.io/bot">Building Topology
                   Ontology (BOT)</a>
                 </li>
                 <li>Brick Schema [<cite><a class="bibref" data-link-type="biblio" href="#bib-brick" title="Brick Schema">Brick</a></cite>]
@@ -10218,7 +10208,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
               Submitter(s)
             </dt>
             <dd>
-              Sebastian Kaebisch
+              Sebastian K&auml;bisch
             </dd>
             <dt>
               Reviewer(s)
@@ -10304,7 +10294,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
             <dd>
               There are some experiences of OPC UA bindings in previous
               WoT PlugFests and there is a sample binding
-              implementation in <a href="https://github.com/eclipse/thingweb.node-wot/">node-wot</a>.
+              implementation in <a href="https://github.com/eclipse-thingweb/node-wot/">node-wot</a>.
               However, there needs to be a formal definition to map the
               interaction affordances of a TD to OPC UA. In that
               context an official OPC UA Binding Note document should
@@ -11022,7 +11012,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
               Retailers need to ensure that the freezers are online and
               operating within normal parameters. Monitoring freezers
               supports health and safety requirements and avoids wasted
-              product, whether it's food or other
+              product, whether it&rsquo;s food or other
               consumable items (e.g., ice). Outdoor Food Preparation
               and Food Service Devices
             </dd>
@@ -11292,7 +11282,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
               Restrooms often are a priority for customers, so restroom
               issues can directly drive away business and customer
               traffic inside the store. Restroom service also creates
-              inefficiencies in the store's labor.
+              inefficiencies in the store&rsquo;s labor.
               Expected outcomes:
               <ul>
                 <li>Quickly and proactively identifying issues from
@@ -11301,7 +11291,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 </li>
                 <li>Timely identification allows onsite personnel to
                 respond, reduce problems, and avoid additional impacts
-                to the store's operations.
+                to the store&rsquo;s operations.
                 </li>
                 <li>Proactive efforts at the store level can also
                 improve labor efficiencies by scheduling activities as
@@ -11805,7 +11795,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 <li>The status of the ice machine (i.e., powered on,
                 off, offline);
                 </li>
-                <li>The machine's ice temperature and ice
+                <li>The machine&rsquo;s ice temperature and ice
                 quality settings;
                 </li>
                 <li>The status of the water supply;
@@ -12371,9 +12361,9 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 if the machines could speak to one another.
                 Manufacturers have little incentive to make their
                 proprietary code and data easily to accessible and
-                process able by their competitors'
+                process able by their competitors&rsquo;
                 machines. So the task of middleman falls to the
-                hospital staffs. In addition to saving lives, a common
+                hospital staff. In addition to saving lives, a common
                 framework could result in collecting and recording more
                 clinical data on patients, making it easier to deliver
                 precision medicine.
@@ -12406,7 +12396,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                   infusion pump rate is automatically adjusted
                   according to the real-time blood glucose levels being
                   measured, to maintain blood glucose values in a
-                  target range. If the patient's glucose
+                  target range. If the patient&rsquo;s glucose
                   level does not respond appropriately to the changes
                   in insulin administration, the clinical staff is
                   alerted.
@@ -12475,7 +12465,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                   components are being used as intended in the clinical
                   context, that the components are authentic and
                   authorized for use in that environment, that they
-                  have been approved by the hospital's
+                  have been approved by the hospital&rsquo;s
                   biomedical engineering staff and that they meet
                   regulatory safety and effectiveness requirements.
                 </p>
@@ -14622,7 +14612,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                   <p>
                     A data analyst can easily create a model based on
                     external observation of a machine and can develop
-                    multiple models based on the user's
+                    multiple models based on the user&rsquo;s
                     needs. The model considers the entire business
                     scenario and generates contextual data for analysis
                     and prediction.
@@ -14719,7 +14709,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
               located in the cloud or in the edge, of a real-world
               entity or system that mirrors a unique physical object,
               or a group of connected physical devices. Simply by
-              describing a single device's
+              describing a single device&rsquo;s
               functionalities is not enough to support the accurate
               virtual representation in the cloud or edge. To
               accurately simulate the physical entity or system, the
@@ -14740,7 +14730,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
             <dd>
               Device status information, discrete sensor data. Device
               relation information, indicating one
-              device's relation with other devices in a
+              device&rsquo;s relation with other devices in a
               group of connected devices, and what-if rules.
             </dd>
             <dt>
@@ -15489,7 +15479,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 In addition, a particular extension which is of
                 interest to IoT is the <code>device</code> flow. Further
                 information about the OAuth 2.0 protocol can be found
-                in <a href="https://tools.ietf.org/html/rfc6749#section-1">IETF
+                in <a href="https://datatracker.ietf.org/html/rfc6749#section-1">IETF
                 RFC6749</a>. In addition to the flows, OAuth 2.0 also
                 supports scopes. Scopes are identifiers which can be
                 attached to tokens. These can be used to limit
@@ -15577,7 +15567,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 A natural application of this protocol is when the
                 end-user wants to interact directly with the consumed
                 thing or to grant their authorization to a remote
-                device. In fact from the <a href="https://tools.ietf.org/html/rfc6749#section-4.1">RFC6749</a>
+                device. In fact from the <a href="https://datatracker.ietf.org/html/rfc6749#section-4.1">RFC6749</a>
               </p>
               <ul>
                 <li>Since this is a redirection-based flow, the client
@@ -15656,7 +15646,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 <strong>device</strong>
               </p>
               <p>
-                The device flow (IETF <a href="https://tools.ietf.org/html/rfc8628">RFC 8628</a>) is
+                The device flow (IETF <a href="https://datatracker.ietf.org/html/rfc8628">RFC 8628</a>) is
                 a variant of the code flow for browserless and
                 input-constrained devices. Similarly, to its
                 <i>parent</i> flow, it requires a close interaction
@@ -15667,11 +15657,11 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 the resource owner. However, differently from <code>code</code>,
                 RFC 8628 states explicitly that one of the actors of
                 the protocol is an <b>end-user</b> interacting with a
-                <b>browser</b> (even if <a href="https://tools.ietf.org/html/rfc8628#section-6.2">section-6.2</a>
+                <b>browser</b> (even if <a href="https://datatracker.ietf.org/html/rfc8628#section-6.2">section-6.2</a>
                 briefly describes an authentication using a companion
                 app and BLE), as shown in the following (slightly
                 adapted) diagram:
-              </p>p&gt;
+              </p>
               <pre aria-busy="false"><code class="hljs yaml"><span class="hljs-string">+----------+</span>
 <span class="hljs-string">|</span>          <span class="hljs-string">|</span>
 <span class="hljs-string">|</span>  <span class="hljs-string">Remote</span>  <span class="hljs-string">|</span>
@@ -15737,7 +15727,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
               <p>
                 The Client Credentials grant type is used by clients to
                 obtain an access token outside of the context of an
-                end-user. From <a href="https://tools.ietf.org/html/rfc6749#section-4.4">RFC6749</a>:
+                end-user. From <a href="https://datatracker.ietf.org/html/rfc6749#section-4.4">RFC6749</a>:
               </p>
               <ul>
                 <li>The client can request an access token using only
@@ -15804,7 +15794,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 <strong>implicit</strong>
               </p>
               <p>
-                <b>Deprecated</b> From <a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">
+                <b>Deprecated</b> From <a href="https://datatracker.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">
                 OAuth 2.0 Security Best Current Practice</a>:
               </p>
               <ul>
@@ -15876,7 +15866,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 <strong>resource owner password</strong>
               </p>
               <p>
-                <b>Deprecated</b> From <a href="https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">
+                <b>Deprecated</b> From <a href="https://datatracker.ietf.org/html/draft-ietf-oauth-security-topics-15#section-2.1.2">
                 OAuth 2.0 Security Best Current Practice</a>:
               </p>
               <ul>
@@ -15922,8 +15912,8 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
               Security Considerations
             </dt>
             <dd>
-              See OAuth 2.0 security considerations in <a href="https://tools.ietf.org/html/rfc6749#section-10">RFC6749</a>.
-              See also <a href="https://tools.ietf.org/html/rfc8628#section-5">RFC 8628
+              See OAuth 2.0 security considerations in <a href="https://datatracker.ietf.org/html/rfc6749#section-10">RFC6749</a>.
+              See also <a href="https://datatracker.ietf.org/html/rfc8628#section-5">RFC 8628
               section 5</a> for <code>device</code> flow.
             </dd>
             <dt>
@@ -15931,7 +15921,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
             </dt>
             <dd>
               Notice that the OAuth 2.0 protocol is not an
-              authentication protocol, however <a href="https://openid.net/connect/">OpenID</a> defines an
+              authentication protocol, however <a href="https://openid.net/developers/how-connect-works/">OpenID</a> defines an
               authentication layer on top of OAuth 2.0.
             </dd>
           </dl>
@@ -16050,8 +16040,8 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
               Documents that were created / discussed in the
               architecture TF.
               <ul>
-                <li>Lifecycle comparisons: <a href="https://github.com/w3c/wot-architecture/blob/main/proposals/Device-lifecycle-comparisons.pdf">
-                  https://github.com/w3c/wot-architecture/blob/main/proposals/Device-lifecycle-comparisons.pdf</a>
+                <li>Lifecycle comparisons: <a href="https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/Device-lifecycle-comparisons.pdf">
+                  https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/Device-lifecycle-comparisons.pdf</a>
                 </li>
                 <li>Lifecycle states: <a href="https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/lifecycle-states.md">
                   https://github.com/w3c/wot-architecture/blob/main/proposals/lifecycle/lifecycle-states.md</a>
@@ -16668,7 +16658,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
                 expires 18 March 2024.
               </li>
               <li>
-                <a href="https://www.iiconsortium.org/fog-and-edge-white-papers.htm">
+                <a href="https://www.iiconsortium.org/fog-and-edge-white-papers/">
                 IIC/OpenFog</a>, Fog and Edge Computing White Papers
               </li>
               <li>
@@ -16824,13 +16814,13 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
         </li>
         <li>Kaz Ashimura (<abbr title="World Wide Web Consortium">W3C</abbr>)
         </li>
-        <li>RaÃƒÂºl GarcÃƒÂ­a Castro (Universidad PolitÃƒÂ©cnica de Madrid)
+        <li>Ra&uacute;l Garc&iacute;a Castro (Universidad Polit&eacute;cnica de Madrid)
         </li>
         <li>Jean-Pierre Chanet (INRAE, France)
         </li>
         <li>Edison Chung (MINES St. Etienne)
         </li>
-        <li>Andrea Cimmino (Universidad PolitÃƒÂ©cnica de Madrid)
+        <li>Andrea Cimmino (Universidad Polit&eacute;cnica de Madrid)
         </li>
         <li>Jack Dickinson, Conexxus (Dover Fueling Solutions)
         </li>
@@ -16848,7 +16838,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
         </li>
         <li>Masaya Ikeo (NHK)
         </li>
-        <li>Sebastian KÃƒÂ¤bisch (Siemens)
+        <li>Sebastian K&auml;bisch (Siemens)
         </li>
         <li>Takuki Kamiya (Fujitsu)
         </li>
@@ -16870,7 +16860,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
         </li>
         <li>Takashi Murakami (ECHONET Consortium)
         </li>
-        <li>HervÃƒÂ© Pruvost (Fraunhofer IIS EAS)
+        <li>Herv&eacute; Pruvost (Fraunhofer IIS EAS)
         </li>
         <li>Catherine Roussey (INRAE, France)
         </li>
@@ -16914,9 +16904,9 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-references"><bdi class="secno">B. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="informative-references"><div class="header-wrapper"><h3 id="b-1-informative-references"><bdi class="secno">B.1 </bdi>Informative references</h3><a class="self-link" href="#informative-references" aria-label="Permalink for Appendix B.1"></a></div>
     
     <dl class="bibliography"><dt id="bib-bacnet">[BACnet]</dt><dd>
-      <a href="http://www.bacnet.org"><cite>BACnet</cite></a>.  ASHRAE. URL: <a href="http://www.bacnet.org">http://www.bacnet.org</a>
+      <a href="https://bacnet.org/"><cite>BACnet</cite></a>.  ASHRAE. URL: <a href="https://bacnet.org/">https://bacnet.org/</a>
     </dd><dt id="bib-bot">[BOT]</dt><dd>
-      <a href="https://w3c-lbd-cg.github.io/bot/index.html"><cite>Building Topology Ontology</cite></a>. Mads Holten Rasmussen; Pieter Pauwels; Maxime LefranÃƒÂ§ois; Georg Ferdinand Schneider.  W3C Linked Building Data Community Group. 28 June 2021. URL: <a href="https://w3c-lbd-cg.github.io/bot/index.html">https://w3c-lbd-cg.github.io/bot/index.html</a>
+      <a href="https://w3c-lbd-cg.github.io/bot/index.html"><cite>Building Topology Ontology</cite></a>. Mads Holten Rasmussen; Pieter Pauwels; Maxime Lefran&ccedil;ois; Georg Ferdinand Schneider.  W3C Linked Building Data Community Group. 28 June 2021. URL: <a href="https://w3c-lbd-cg.github.io/bot/index.html">https://w3c-lbd-cg.github.io/bot/index.html</a>
     </dd><dt id="bib-brick">[Brick]</dt><dd>
       <a href="https://brickschema.org/"><cite>Brick Schema</cite></a>.  The Brick Consortium, Inc. URL: <a href="https://brickschema.org/">https://brickschema.org/</a>
     </dd><dt id="bib-gdpr">[GDPR]</dt><dd>
@@ -16924,7 +16914,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
     </dd><dt id="bib-geolocation-api">[geolocation-API]</dt><dd>
       <a href="https://www.w3.org/TR/geolocation-API/"><cite>Geolocation API Specification 2nd Edition</cite></a>. Andrei Popescu.  W3C. 8 November 2016. W3C Recommendation. URL: <a href="https://www.w3.org/TR/geolocation-API/">https://www.w3.org/TR/geolocation-API/</a>
     </dd><dt id="bib-hipaa">[HIPAA]</dt><dd>
-      <a href="https://www.hhs.gov/hipaa/index.html"><cite>The Health Insurance Portability and Accountability Act of 1996 (HIPAA), Public Law 104-191</cite></a>.  U.S. Department of Health and Human Services (HHS). 1996-08-21. URL: <a href="https://www.hhs.gov/hipaa/index.html">https://www.hhs.gov/hipaa/index.html</a>
+      <a href="https://aspe.hhs.gov/reports/health-insurance-portability-accountability-act-1996"><cite>The Health Insurance Portability and Accountability Act of 1996 (HIPAA), Public Law 104-191</cite></a>.  U.S. Department of Health and Human Services (HHS). 1996-08-21. URL: <a href="https://aspe.hhs.gov/reports/health-insurance-portability-accountability-act-1996">https://aspe.hhs.gov/reports/health-insurance-portability-accountability-act-1996</a>
     </dd><dt id="bib-hr-time-3">[hr-time-3]</dt><dd>
       <a href="https://www.w3.org/TR/hr-time-3/"><cite>High Resolution Time</cite></a>. Yoav Weiss.  W3C. 7 November 2024. W3C Working Draft. URL: <a href="https://www.w3.org/TR/hr-time-3/">https://www.w3.org/TR/hr-time-3/</a>
     </dd><dt id="bib-hybridcast">[Hybridcast]</dt><dd>
@@ -16932,13 +16922,13 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
     </dd><dt id="bib-ice f2761-09(2013)">[ICE F2761-09(2013)]</dt><dd>
       <cite>ICE F2761-09(2013)</cite>.  IEC. 
     </dd><dt id="bib-iec 61850">[IEC 61850]</dt><dd>
-      <a href="https://webstore.iec.ch/publication/6028"><cite>IEC 61850:2022 - Communication networks and systems for power utility automation</cite></a>.  IEC TC 57. 4 January 2022. URL: <a href="https://webstore.iec.ch/publication/6028">https://webstore.iec.ch/publication/6028</a>
+      <a href="https://webstore.iec.ch/en/publication/6028"><cite>IEC 61850:2022 - Communication networks and systems for power utility automation</cite></a>.  IEC TC 57. 4 January 2022. URL: <a href="https://webstore.iec.ch/en/publication/6028">https://webstore.iec.ch/en/publication/6028</a>
     </dd><dt id="bib-ieee 1547">[IEEE 1547]</dt><dd>
       <a href="https://standards.ieee.org/standard/1547-2018.html"><cite>IEEE 1547-2018 - Interconnection and Interoperability of Distributed Energy Resources with Associated Electric Power Systems Interfaces</cite></a>.  IEEE. 15 February 2018. URL: <a href="https://standards.ieee.org/standard/1547-2018.html">https://standards.ieee.org/standard/1547-2018.html</a>
     </dd><dt id="bib-iso-19111-2007">[iso-19111-2007]</dt><dd>
       <a href="https://www.iso.org/standard/41126.html"><cite>Geographic information -- Spatial referencing by coordinates</cite></a>. ISO/TC 211.  ISO. 2007. International Standard. URL: <a href="https://www.iso.org/standard/41126.html">https://www.iso.org/standard/41126.html</a>
     </dd><dt id="bib-iso-19111-2019">[iso-19111-2019]</dt><dd>
-      <a href="https://www.iso.org/standard/74039.html"><cite>ISOi 19111:2019 - Geographic information Ã¢Â¬ Referencing by coordinates</cite></a>.  ISO. Jan 2019. Published. URL: <a href="https://www.iso.org/standard/74039.html">https://www.iso.org/standard/74039.html</a>
+      <a href="https://www.iso.org/standard/74039.html"><cite>ISOi 19111:2019 - Geographic information -- Referencing by coordinates</cite></a>.  ISO. Jan 2019. Published. URL: <a href="https://www.iso.org/standard/74039.html">https://www.iso.org/standard/74039.html</a>
     </dd><dt id="bib-iso-6709">[ISO-6709]</dt><dd>
       <a href="https://www.iso.org/standard/39242.html"><cite>ISO-6709:2008 : Standard representation of geographic point location by coordinates</cite></a>.  ISO. 2008-07. Published. URL: <a href="https://www.iso.org/standard/39242.html">https://www.iso.org/standard/39242.html</a>
     </dd><dt id="bib-json-schema">[json-schema]</dt><dd>
@@ -16956,15 +16946,15 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
     </dd><dt id="bib-mqtt">[MQTT]</dt><dd>
       <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html"><cite>MQTT Version 3.1.1 Plus Errata 01</cite></a>. Andrew Banks; Rahul Gupta.  OASIS Standard. December 2015. Published. URL: <a href="http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html">http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.html</a>
     </dd><dt id="bib-nmea-0183">[NMEA-0183]</dt><dd>
-      <a href="https://www.nmea.org/content/STANDARDS/NMEA_0183_Standard"><cite>NMEA 0183 Interface Standard</cite></a>.  National Marine Electronics Association. November 2018. URL: <a href="https://www.nmea.org/content/STANDARDS/NMEA_0183_Standard">https://www.nmea.org/content/STANDARDS/NMEA_0183_Standard</a>
+      <a href="https://www.nmea.org/nmea-0183.html"><cite>NMEA 0183 Interface Standard</cite></a>.  National Marine Electronics Association. November 2018. URL: <a href="https://www.nmea.org/nmea-0183.html">https://www.nmea.org/nmea-0183.html</a>
     </dd><dt id="bib-ocf">[OCF]</dt><dd>
       <a href="https://openconnectivity.org/developer/specifications"><cite>OCF Core Specification</cite></a>.  Open Connectivity Foundation. April 2019. URL: <a href="https://openconnectivity.org/developer/specifications">https://openconnectivity.org/developer/specifications</a>
     </dd><dt id="bib-ogc">[OGC]</dt><dd>
       <a href="https://www.ogc.org/"><cite>Open Geospatial Consortium</cite></a>. URL: <a href="https://www.ogc.org/">https://www.ogc.org/</a>
     </dd><dt id="bib-ogc sensor things">[OGC Sensor Things]</dt><dd>
-      <a href="https://www.ogc.org/standards/sensorthings"><cite>OGC Sensor Things API</cite></a>.  Open Geospatial Consortium. 4 August 2021. URL: <a href="https://www.ogc.org/standards/sensorthings">https://www.ogc.org/standards/sensorthings</a>
+      <a href="https://www.ogc.org/standards/sensorthings/"><cite>OGC Sensor Things API</cite></a>.  Open Geospatial Consortium. 4 August 2021. URL: <a href="https://www.ogc.org/standards/sensorthings/">https://www.ogc.org/standards/sensorthings/</a>
     </dd><dt id="bib-ogc-coords">[OGC-coords]</dt><dd>
-      <a href="http://docs.opengeospatial.org/as/18-005r4/18-005r4.html"><cite>OGC Abstract Specification Topic 2: Referencing by coordinates</cite></a>.  Open Geospatial Consortium. 8 February 2019. URL: <a href="http://docs.opengeospatial.org/as/18-005r4/18-005r4.html">http://docs.opengeospatial.org/as/18-005r4/18-005r4.html</a>
+      <a href="https://docs.opengeospatial.org/as/18-005r4/18-005r4.html"><cite>OGC Abstract Specification Topic 2: Referencing by coordinates</cite></a>.  Open Geospatial Consortium. 8 February 2019. URL: <a href="https://docs.opengeospatial.org/as/18-005r4/18-005r4.html">https://docs.opengeospatial.org/as/18-005r4/18-005r4.html</a>
     </dd><dt id="bib-onem2m">[OneM2M]</dt><dd>
       <a href="https://www.onem2m.org"><cite>OneM2M</cite></a>.  ETSI. URL: <a href="https://www.onem2m.org">https://www.onem2m.org</a>
     </dd><dt id="bib-opc ua">[OPC UA]</dt><dd>
@@ -16986,17 +16976,17 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
     </dd><dt id="bib-rfc9431">[RFC9431]</dt><dd>
       <a href="https://www.rfc-editor.org/rfc/rfc9431"><cite>Message Queuing Telemetry Transport (MQTT) and Transport Layer Security (TLS) Profile of Authentication and Authorization for Constrained Environments (ACE) Framework</cite></a>. C. Sengul; A. Kirby.  IETF. July 2023. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc9431">https://www.rfc-editor.org/rfc/rfc9431</a>
     </dd><dt id="bib-saref4agri">[SAREF4AGRI]</dt><dd>
-      <a href="https://saref.etsi.org/saref4agri/"><cite>SAREF4AGRI: an extension of SAREF for the agriculture and food domain</cite></a>. Maria Poveda-Villalon; RaÃƒÂºl Garcia-Castro; Laura Daniele; Mike de Roode.  ETSI. 30 April 2019. URL: <a href="https://saref.etsi.org/saref4agri/">https://saref.etsi.org/saref4agri/</a>
+      <a href="https://saref.etsi.org/saref4agri/"><cite>SAREF4AGRI: an extension of SAREF for the agriculture and food domain</cite></a>. Mar&iacute;a Poveda-Villal&oacute;n; Ra&uacute;l Garc&iacute;a-Castro; Laura Daniele; Mike de Roode.  ETSI. 30 April 2019. URL: <a href="https://saref.etsi.org/saref4agri/">https://saref.etsi.org/saref4agri/</a>
     </dd><dt id="bib-saref4bldg">[SAREF4BLDG]</dt><dd>
-      <a href="https://saref.etsi.org/saref4bldg/"><cite>SAREF extension for building</cite></a>. MarÃƒÂ­a Poveda-VillalÃƒÂ³n; RaÃƒÂºl Garcia-Castro.  ETSI. 13 April 2020. URL: <a href="https://saref.etsi.org/saref4bldg/">https://saref.etsi.org/saref4bldg/</a>
+      <a href="https://saref.etsi.org/saref4bldg/"><cite>SAREF extension for building</cite></a>. Mar&iacute;a Poveda-Villal&oacute;n; Ra&uacute;l Garc&iacute;a-Castro.  ETSI. 13 April 2020. URL: <a href="https://saref.etsi.org/saref4bldg/">https://saref.etsi.org/saref4bldg/</a>
     </dd><dt id="bib-saref4ener">[SAREF4ENER]</dt><dd>
       <a href="https://saref.etsi.org/saref4ener/"><cite>SAREF4ENER: an extension of SAREF for the energy domain created in collaboration with Energy@Home and EEBus associations</cite></a>. Laura Daniele.  ETSI. 4 June 2020. URL: <a href="https://saref.etsi.org/saref4ener/">https://saref.etsi.org/saref4ener/</a>
     </dd><dt id="bib-saref4syst">[SAREF4SYST]</dt><dd>
-      <a href="https://saref.etsi.org/saref4syst/"><cite>SAREF4SYST: an extension of SAREF for typology of systems and their inter-connections</cite></a>. Maxime LefranÃƒÂ§ois.  ETSI. 6 June 2019. URL: <a href="https://saref.etsi.org/saref4syst/">https://saref.etsi.org/saref4syst/</a>
+      <a href="https://saref.etsi.org/saref4syst/"><cite>SAREF4SYST: an extension of SAREF for typology of systems and their inter-connections</cite></a>. Maxime Lefran&ccedil;ois.  ETSI. 6 June 2019. URL: <a href="https://saref.etsi.org/saref4syst/">https://saref.etsi.org/saref4syst/</a>
     </dd><dt id="bib-swebokv4">[SWEBOKv4]</dt><dd>
       <a href="https://www.computer.org/education/bodies-of-knowledge/software-engineering"><cite>Guide to the Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0</cite></a>. Hironori Washizaki.  IEEE Computer Society. 2024. Published. URL: <a href="https://www.computer.org/education/bodies-of-knowledge/software-engineering">https://www.computer.org/education/bodies-of-knowledge/software-engineering</a>
     </dd><dt id="bib-vocab-ssn">[vocab-ssn]</dt><dd>
-      <a href="https://www.w3.org/TR/vocab-ssn-2017/"><cite>Semantic Sensor Network Ontology</cite></a>. Armin Haller; Krzysztof Janowicz; Simon Cox; Danh Le Phuoc; Kerry Taylor; Maxime Lefrançois.  W3C. 19 October 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/vocab-ssn-2017/">https://www.w3.org/TR/vocab-ssn-2017/</a>
+      <a href="https://www.w3.org/TR/vocab-ssn-2017/"><cite>Semantic Sensor Network Ontology</cite></a>. Armin Haller; Krzysztof Janowicz; Simon Cox; Danh Le Phuoc; Kerry Taylor; Maxime Lefran&ccedil;ois.  W3C. 19 October 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/vocab-ssn-2017/">https://www.w3.org/TR/vocab-ssn-2017/</a>
     </dd><dt id="bib-w3c-basic-geo">[w3c-basic-geo]</dt><dd>
       <a href="https://www.w3.org/2003/01/geo/"><cite>Basic Geo (WGS84 lat/long) Vocabulary</cite></a>. Dan Brickley.  W3C Semantic Web Interest Group. 1 February 2006. URL: <a href="https://www.w3.org/2003/01/geo/">https://www.w3.org/2003/01/geo/</a>
     </dd><dt id="bib-wgs84">[WGS84]</dt><dd>
@@ -17012,10 +17002,10 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
     </dd><dt id="bib-wot-security">[wot-security]</dt><dd>
       <a href="https://www.w3.org/TR/wot-security/"><cite>Web of Things (WoT) Security and Privacy Guidelines</cite></a>. Elena Reshetova; Michael McCool.  W3C. 6 November 2019. W3C Working Group Note. URL: <a href="https://www.w3.org/TR/wot-security/">https://www.w3.org/TR/wot-security/</a>
     </dd><dt id="bib-wot-thing-description">[wot-thing-description]</dt><dd>
-      <a href="https://www.w3.org/TR/wot-thing-description/"><cite>Web of Things (WoT) Thing Description</cite></a>. Sebastian Käbisch; Takuki Kamiya; Michael McCool; Victor Charpenay; Matthias Kovatsch.  W3C. 9 April 2020. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wot-thing-description/">https://www.w3.org/TR/wot-thing-description/</a>
+      <a href="https://www.w3.org/TR/wot-thing-description/"><cite>Web of Things (WoT) Thing Description</cite></a>. Sebastian K&auml;bisch; Takuki Kamiya; Michael McCool; Victor Charpenay; Matthias Kovatsch.  W3C. 9 April 2020. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wot-thing-description/">https://www.w3.org/TR/wot-thing-description/</a>
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
-    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+    <a href="#title"><abbr title="Back to Top">&uarr;</abbr></a>
   </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wot-use-case" aria-label="Links in this document to definition: Use Case">
       <span class="caret"></span>
       <div>
@@ -17025,7 +17015,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-wot-use-case-1" title="§ 1.1 Terminology">§ 1.1 Terminology</a> <a href="#ref-for-dfn-wot-use-case-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-wot-use-case-3" title="Reference 3">(3)</a> 
+      <a href="#ref-for-dfn-wot-use-case-1" title="&sect; 1.1 Terminology">&sect; 1.1 Terminology</a> <a href="#ref-for-dfn-wot-use-case-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-wot-use-case-3" title="Reference 3">(3)</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wot-use-case-category" aria-label="Links in this document to definition: Use Case Category">
@@ -17057,7 +17047,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-wot-user-story-1" title="§ 1.1 Terminology">§ 1.1 Terminology</a> 
+      <a href="#ref-for-dfn-wot-user-story-1" title="&sect; 1.1 Terminology">&sect; 1.1 Terminology</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-device-manufacturer" aria-label="Links in this document to definition: Device Manufacturer">
@@ -17069,63 +17059,63 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-1" title="§ 1.3 Stakeholders and Roles">§ 1.3 Stakeholders and Roles</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-1" title="&sect; 1.3 Stakeholders and Roles">&sect; 1.3 Stakeholders and Roles</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-2" title="§ 2.1.3 Byte Ordering for Binary Data Formats">§ 2.1.3 Byte Ordering for Binary Data Formats</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-2" title="&sect; 2.1.3 Byte Ordering for Binary Data Formats">&sect; 2.1.3 Byte Ordering for Binary Data Formats</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-3" title="§ 2.1.4 Polling Rate Limit">§ 2.1.4 Polling Rate Limit</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-3" title="&sect; 2.1.4 Polling Rate Limit">&sect; 2.1.4 Polling Rate Limit</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-4" title="§ 3.1.4 Automatic milking system for dairy farm">§ 3.1.4 Automatic milking system for dairy farm</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-4" title="&sect; 3.1.4 Automatic milking system for dairy farm">&sect; 3.1.4 Automatic milking system for dairy farm</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-5" title="§ 3.1.5 Pest control in Open-field">§ 3.1.5 Pest control in Open-field</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-5" title="&sect; 3.1.5 Pest control in Open-field">&sect; 3.1.5 Pest control in Open-field</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-6" title="§ 3.1.6 Livestock Health Management">§ 3.1.6 Livestock Health Management</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-6" title="&sect; 3.1.6 Livestock Health Management">&sect; 3.1.6 Livestock Health Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-7" title="§ 3.1.7 Agricultural Machinery Management">§ 3.1.7 Agricultural Machinery Management</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-7" title="&sect; 3.1.7 Agricultural Machinery Management">&sect; 3.1.7 Agricultural Machinery Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-8" title="§ 3.3.3 Automated Smart Building Management">§ 3.3.3 Automated Smart Building Management</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-8" title="&sect; 3.3.3 Automated Smart Building Management">&sect; 3.3.3 Automated Smart Building Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-9" title="§ 3.3.4 Portable Building Applications">§ 3.3.4 Portable Building Applications</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-9" title="&sect; 3.3.4 Portable Building Applications">&sect; 3.3.4 Portable Building Applications</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-10" title="§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-10" title="&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-11" title="§ 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)">§ 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-11" title="&sect; 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)">&sect; 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-12" title="§ 3.5.3 Retail Indoor Door Sensor">§ 3.5.3 Retail Indoor Door Sensor</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-12" title="&sect; 3.5.3 Retail Indoor Door Sensor">&sect; 3.5.3 Retail Indoor Door Sensor</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-13" title="§ 3.5.4 Retail Indoor and Outdoor Freezers">§ 3.5.4 Retail Indoor and Outdoor Freezers</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-13" title="&sect; 3.5.4 Retail Indoor and Outdoor Freezers">&sect; 3.5.4 Retail Indoor and Outdoor Freezers</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-14" title="§ 3.5.5 Retail Kitchen Refrigerator">§ 3.5.5 Retail Kitchen Refrigerator</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-14" title="&sect; 3.5.5 Retail Kitchen Refrigerator">&sect; 3.5.5 Retail Kitchen Refrigerator</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-15" title="§ 3.5.6 Retail Restroom Devices">§ 3.5.6 Retail Restroom Devices</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-15" title="&sect; 3.5.6 Retail Restroom Devices">&sect; 3.5.6 Retail Restroom Devices</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-16" title="§ 3.5.7 Retail Lighting Control">§ 3.5.7 Retail Lighting Control</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-16" title="&sect; 3.5.7 Retail Lighting Control">&sect; 3.5.7 Retail Lighting Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-17" title="§ 3.5.8 Retail Outdoor Canopy Lighting Control">§ 3.5.8 Retail Outdoor Canopy Lighting Control</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-17" title="&sect; 3.5.8 Retail Outdoor Canopy Lighting Control">&sect; 3.5.8 Retail Outdoor Canopy Lighting Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-18" title="§ 3.5.9 Retail Fountain Drink Ice Machine">§ 3.5.9 Retail Fountain Drink Ice Machine</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-18" title="&sect; 3.5.9 Retail Fountain Drink Ice Machine">&sect; 3.5.9 Retail Fountain Drink Ice Machine</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-19" title="§ 3.5.10 Retail Camera Device">§ 3.5.10 Retail Camera Device</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-19" title="&sect; 3.5.10 Retail Camera Device">&sect; 3.5.10 Retail Camera Device</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-20" title="§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-20" title="&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-21" title="§ 3.6.3.1 Digital Microscopes">§ 3.6.3.1 Digital Microscopes</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-21" title="&sect; 3.6.3.1 Digital Microscopes">&sect; 3.6.3.1 Digital Microscopes</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-22" title="§ 3.7.1 Smart Grids">§ 3.7.1 Smart Grids</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-22" title="&sect; 3.7.1 Smart Grids">&sect; 3.7.1 Smart Grids</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-23" title="§ 3.10.1.2 Leaving and Coming Home">§ 3.10.1.2 Leaving and Coming Home</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-23" title="&sect; 3.10.1.2 Leaving and Coming Home">&sect; 3.10.1.2 Leaving and Coming Home</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-24" title="§ 4.1 Discovery">§ 4.1 Discovery</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-24" title="&sect; 4.1 Discovery">&sect; 4.1 Discovery</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-25" title="§ 4.2 Multi-Vendor System Integration - Out of the box interoperability">§ 4.2 Multi-Vendor System Integration - Out of the box interoperability</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-25" title="&sect; 4.2 Multi-Vendor System Integration - Out of the box interoperability">&sect; 4.2 Multi-Vendor System Integration - Out of the box interoperability</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-26" title="§ 4.3 Virtual Thing">§ 4.3 Virtual Thing</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-26" title="&sect; 4.3 Virtual Thing">&sect; 4.3 Virtual Thing</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-27" title="§ 4.9.1 Device Lifecycle">§ 4.9.1 Device Lifecycle</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-27" title="&sect; 4.9.1 Device Lifecycle">&sect; 4.9.1 Device Lifecycle</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-28" title="§ 4.10.1 AR Virtual Guide">§ 4.10.1 AR Virtual Guide</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-28" title="&sect; 4.10.1 AR Virtual Guide">&sect; 4.10.1 AR Virtual Guide</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-manufacturer-29" title="§ 4.11 Edge Computing">§ 4.11 Edge Computing</a> 
+      <a href="#ref-for-dfn-stakeholder-device-manufacturer-29" title="&sect; 4.11 Edge Computing">&sect; 4.11 Edge Computing</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-system-provider" aria-label="Links in this document to definition: System Provider">
@@ -17147,75 +17137,75 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-1" title="§ 2.1.5 Mitigate WoT Protocol Binding Threat">§ 2.1.5 Mitigate WoT Protocol Binding Threat</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-1" title="&sect; 2.1.5 Mitigate WoT Protocol Binding Threat">&sect; 2.1.5 Mitigate WoT Protocol Binding Threat</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-2" title="§ 2.1.6 Mitigate Exposed Thing Compromise Threat">§ 2.1.6 Mitigate Exposed Thing Compromise Threat</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-2" title="&sect; 2.1.6 Mitigate Exposed Thing Compromise Threat">&sect; 2.1.6 Mitigate Exposed Thing Compromise Threat</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-3" title="§ 2.1.7 Security Access Control">§ 2.1.7 Security Access Control</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-3" title="&sect; 2.1.7 Security Access Control">&sect; 2.1.7 Security Access Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-4" title="§ 2.1.8 Mitigate WoT DoS Threat">§ 2.1.8 Mitigate WoT DoS Threat</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-4" title="&sect; 2.1.8 Mitigate WoT DoS Threat">&sect; 2.1.8 Mitigate WoT DoS Threat</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-5" title="§ 2.1.9 Mitigate WoT DDoS Threat">§ 2.1.9 Mitigate WoT DDoS Threat</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-5" title="&sect; 2.1.9 Mitigate WoT DDoS Threat">&sect; 2.1.9 Mitigate WoT DDoS Threat</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-6" title="§ 2.1.10 Mitigate Communication Threat - TD Authenticity">§ 2.1.10 Mitigate Communication Threat - TD Authenticity</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-6" title="&sect; 2.1.10 Mitigate Communication Threat - TD Authenticity">&sect; 2.1.10 Mitigate Communication Threat - TD Authenticity</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-7" title="§ 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy">§ 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-7" title="&sect; 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy">&sect; 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-8" title="§ 2.1.12 Mitigate Communication Threat - System User Data Authenticity">§ 2.1.12 Mitigate Communication Threat - System User Data Authenticity</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-8" title="&sect; 2.1.12 Mitigate Communication Threat - System User Data Authenticity">&sect; 2.1.12 Mitigate Communication Threat - System User Data Authenticity</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-9" title="§ 2.1.13 Mitigate Communication Threat - System User Data Confidentiality and Privacy">§ 2.1.13 Mitigate Communication Threat - System User Data Confidentiality and Privacy</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-9" title="&sect; 2.1.13 Mitigate Communication Threat - System User Data Confidentiality and Privacy">&sect; 2.1.13 Mitigate Communication Threat - System User Data Confidentiality and Privacy</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-10" title="§ 2.1.14 Mitigate Communication Threat - Side Channels">§ 2.1.14 Mitigate Communication Threat - Side Channels</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-10" title="&sect; 2.1.14 Mitigate Communication Threat - Side Channels">&sect; 2.1.14 Mitigate Communication Threat - Side Channels</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-11" title="§ 2.1.15 Discovery Network Scope">§ 2.1.15 Discovery Network Scope</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-11" title="&sect; 2.1.15 Discovery Network Scope">&sect; 2.1.15 Discovery Network Scope</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-12" title="§ 2.1.16 Discovery via Third Party Services">§ 2.1.16 Discovery via Third Party Services</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-12" title="&sect; 2.1.16 Discovery via Third Party Services">&sect; 2.1.16 Discovery via Third Party Services</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-13" title="§ 2.1.17 Discovery via Scripting API">§ 2.1.17 Discovery via Scripting API</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-13" title="&sect; 2.1.17 Discovery via Scripting API">&sect; 2.1.17 Discovery via Scripting API</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-14" title="§ 2.1.18 Discovery Filtering">§ 2.1.18 Discovery Filtering</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-14" title="&sect; 2.1.18 Discovery Filtering">&sect; 2.1.18 Discovery Filtering</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-15" title="§ 2.1.19 Discovery Spatial Queries">§ 2.1.19 Discovery Spatial Queries</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-15" title="&sect; 2.1.19 Discovery Spatial Queries">&sect; 2.1.19 Discovery Spatial Queries</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-16" title="§ 2.1.20 Discovery Subnet Spanning Queries">§ 2.1.20 Discovery Subnet Spanning Queries</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-16" title="&sect; 2.1.20 Discovery Subnet Spanning Queries">&sect; 2.1.20 Discovery Subnet Spanning Queries</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-17" title="§ 2.1.21 Discovery Scalability">§ 2.1.21 Discovery Scalability</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-17" title="&sect; 2.1.21 Discovery Scalability">&sect; 2.1.21 Discovery Scalability</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-18" title="§ 2.1.22 Discovery Dynamic and Static Metadata">§ 2.1.22 Discovery Dynamic and Static Metadata</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-18" title="&sect; 2.1.22 Discovery Dynamic and Static Metadata">&sect; 2.1.22 Discovery Dynamic and Static Metadata</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-19" title="§ 2.1.23 Discovery Deletion">§ 2.1.23 Discovery Deletion</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-19" title="&sect; 2.1.23 Discovery Deletion">&sect; 2.1.23 Discovery Deletion</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-20" title="§ 2.1.24 Discovery Access Control">§ 2.1.24 Discovery Access Control</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-20" title="&sect; 2.1.24 Discovery Access Control">&sect; 2.1.24 Discovery Access Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-21" title="§ 2.1.25 Discovery Clean Up">§ 2.1.25 Discovery Clean Up</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-21" title="&sect; 2.1.25 Discovery Clean Up">&sect; 2.1.25 Discovery Clean Up</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-22" title="§ 2.1.26 Discovery IETF CoRE Alignment">§ 2.1.26 Discovery IETF CoRE Alignment</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-22" title="&sect; 2.1.26 Discovery IETF CoRE Alignment">&sect; 2.1.26 Discovery IETF CoRE Alignment</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-23" title="§ 2.1.27 Discovery DID Alignment">§ 2.1.27 Discovery DID Alignment</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-23" title="&sect; 2.1.27 Discovery DID Alignment">&sect; 2.1.27 Discovery DID Alignment</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-24" title="§ 2.1.28 Discovery Extensible Introductions">§ 2.1.28 Discovery Extensible Introductions</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-24" title="&sect; 2.1.28 Discovery Extensible Introductions">&sect; 2.1.28 Discovery Extensible Introductions</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-25" title="§ 2.1.29 Discovery Confidentiality">§ 2.1.29 Discovery Confidentiality</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-25" title="&sect; 2.1.29 Discovery Confidentiality">&sect; 2.1.29 Discovery Confidentiality</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-26" title="§ 2.1.30 Discovery Authentication">§ 2.1.30 Discovery Authentication</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-26" title="&sect; 2.1.30 Discovery Authentication">&sect; 2.1.30 Discovery Authentication</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-27" title="§ 2.1.31 Discovery Authorization">§ 2.1.31 Discovery Authorization</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-27" title="&sect; 2.1.31 Discovery Authorization">&sect; 2.1.31 Discovery Authorization</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-28" title="§ 2.1.32 Discovery Anonymous Authentication">§ 2.1.32 Discovery Anonymous Authentication</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-28" title="&sect; 2.1.32 Discovery Anonymous Authentication">&sect; 2.1.32 Discovery Anonymous Authentication</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-29" title="§ 2.1.33 Discovery Lifecycle">§ 2.1.33 Discovery Lifecycle</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-29" title="&sect; 2.1.33 Discovery Lifecycle">&sect; 2.1.33 Discovery Lifecycle</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-30" title="§ 2.1.34 Discovery Limit Distribution">§ 2.1.34 Discovery Limit Distribution</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-30" title="&sect; 2.1.34 Discovery Limit Distribution">&sect; 2.1.34 Discovery Limit Distribution</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-31" title="§ 2.1.35 Discovery No Leaks">§ 2.1.35 Discovery No Leaks</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-31" title="&sect; 2.1.35 Discovery No Leaks">&sect; 2.1.35 Discovery No Leaks</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-32" title="§ 2.1.36 Discovery Simplicity">§ 2.1.36 Discovery Simplicity</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-32" title="&sect; 2.1.36 Discovery Simplicity">&sect; 2.1.36 Discovery Simplicity</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-33" title="§ 2.1.37 Discovery Human Authentication">§ 2.1.37 Discovery Human Authentication</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-33" title="&sect; 2.1.37 Discovery Human Authentication">&sect; 2.1.37 Discovery Human Authentication</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-34" title="§ 2.1.38 Discovery User Limitations">§ 2.1.38 Discovery User Limitations</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-34" title="&sect; 2.1.38 Discovery User Limitations">&sect; 2.1.38 Discovery User Limitations</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-integrator-35" title="§ 2.1.39 Discovery Alternatives">§ 2.1.39 Discovery Alternatives</a> 
+      <a href="#ref-for-dfn-stakeholder-system-integrator-35" title="&sect; 2.1.39 Discovery Alternatives">&sect; 2.1.39 Discovery Alternatives</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-system-installer" aria-label="Links in this document to definition: System Installer">
@@ -17237,75 +17227,75 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-system-user-1" title="§ 2.1.5 Mitigate WoT Protocol Binding Threat">§ 2.1.5 Mitigate WoT Protocol Binding Threat</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-1" title="&sect; 2.1.5 Mitigate WoT Protocol Binding Threat">&sect; 2.1.5 Mitigate WoT Protocol Binding Threat</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-2" title="§ 2.1.6 Mitigate Exposed Thing Compromise Threat">§ 2.1.6 Mitigate Exposed Thing Compromise Threat</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-2" title="&sect; 2.1.6 Mitigate Exposed Thing Compromise Threat">&sect; 2.1.6 Mitigate Exposed Thing Compromise Threat</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-3" title="§ 2.1.7 Security Access Control">§ 2.1.7 Security Access Control</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-3" title="&sect; 2.1.7 Security Access Control">&sect; 2.1.7 Security Access Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-4" title="§ 2.1.8 Mitigate WoT DoS Threat">§ 2.1.8 Mitigate WoT DoS Threat</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-4" title="&sect; 2.1.8 Mitigate WoT DoS Threat">&sect; 2.1.8 Mitigate WoT DoS Threat</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-5" title="§ 2.1.9 Mitigate WoT DDoS Threat">§ 2.1.9 Mitigate WoT DDoS Threat</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-5" title="&sect; 2.1.9 Mitigate WoT DDoS Threat">&sect; 2.1.9 Mitigate WoT DDoS Threat</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-6" title="§ 2.1.10 Mitigate Communication Threat - TD Authenticity">§ 2.1.10 Mitigate Communication Threat - TD Authenticity</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-6" title="&sect; 2.1.10 Mitigate Communication Threat - TD Authenticity">&sect; 2.1.10 Mitigate Communication Threat - TD Authenticity</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-7" title="§ 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy">§ 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-7" title="&sect; 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy">&sect; 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-8" title="§ 2.1.12 Mitigate Communication Threat - System User Data Authenticity">§ 2.1.12 Mitigate Communication Threat - System User Data Authenticity</a> <a href="#ref-for-dfn-stakeholder-system-user-9" title="Reference 2">(2)</a> <a href="#ref-for-dfn-stakeholder-system-user-10" title="Reference 3">(3)</a> <a href="#ref-for-dfn-stakeholder-system-user-11" title="Reference 4">(4)</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-8" title="&sect; 2.1.12 Mitigate Communication Threat - System User Data Authenticity">&sect; 2.1.12 Mitigate Communication Threat - System User Data Authenticity</a> <a href="#ref-for-dfn-stakeholder-system-user-9" title="Reference 2">(2)</a> <a href="#ref-for-dfn-stakeholder-system-user-10" title="Reference 3">(3)</a> <a href="#ref-for-dfn-stakeholder-system-user-11" title="Reference 4">(4)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-12" title="§ 2.1.13 Mitigate Communication Threat - System User Data Confidentiality and Privacy">§ 2.1.13 Mitigate Communication Threat - System User Data Confidentiality and Privacy</a> <a href="#ref-for-dfn-stakeholder-system-user-13" title="Reference 2">(2)</a> <a href="#ref-for-dfn-stakeholder-system-user-14" title="Reference 3">(3)</a> <a href="#ref-for-dfn-stakeholder-system-user-15" title="Reference 4">(4)</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-12" title="&sect; 2.1.13 Mitigate Communication Threat - System User Data Confidentiality and Privacy">&sect; 2.1.13 Mitigate Communication Threat - System User Data Confidentiality and Privacy</a> <a href="#ref-for-dfn-stakeholder-system-user-13" title="Reference 2">(2)</a> <a href="#ref-for-dfn-stakeholder-system-user-14" title="Reference 3">(3)</a> <a href="#ref-for-dfn-stakeholder-system-user-15" title="Reference 4">(4)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-16" title="§ 2.1.14 Mitigate Communication Threat - Side Channels">§ 2.1.14 Mitigate Communication Threat - Side Channels</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-16" title="&sect; 2.1.14 Mitigate Communication Threat - Side Channels">&sect; 2.1.14 Mitigate Communication Threat - Side Channels</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-17" title="§ 2.1.15 Discovery Network Scope">§ 2.1.15 Discovery Network Scope</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-17" title="&sect; 2.1.15 Discovery Network Scope">&sect; 2.1.15 Discovery Network Scope</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-18" title="§ 2.1.16 Discovery via Third Party Services">§ 2.1.16 Discovery via Third Party Services</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-18" title="&sect; 2.1.16 Discovery via Third Party Services">&sect; 2.1.16 Discovery via Third Party Services</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-19" title="§ 2.1.17 Discovery via Scripting API">§ 2.1.17 Discovery via Scripting API</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-19" title="&sect; 2.1.17 Discovery via Scripting API">&sect; 2.1.17 Discovery via Scripting API</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-20" title="§ 2.1.18 Discovery Filtering">§ 2.1.18 Discovery Filtering</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-20" title="&sect; 2.1.18 Discovery Filtering">&sect; 2.1.18 Discovery Filtering</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-21" title="§ 2.1.19 Discovery Spatial Queries">§ 2.1.19 Discovery Spatial Queries</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-21" title="&sect; 2.1.19 Discovery Spatial Queries">&sect; 2.1.19 Discovery Spatial Queries</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-22" title="§ 2.1.20 Discovery Subnet Spanning Queries">§ 2.1.20 Discovery Subnet Spanning Queries</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-22" title="&sect; 2.1.20 Discovery Subnet Spanning Queries">&sect; 2.1.20 Discovery Subnet Spanning Queries</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-23" title="§ 2.1.21 Discovery Scalability">§ 2.1.21 Discovery Scalability</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-23" title="&sect; 2.1.21 Discovery Scalability">&sect; 2.1.21 Discovery Scalability</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-24" title="§ 2.1.22 Discovery Dynamic and Static Metadata">§ 2.1.22 Discovery Dynamic and Static Metadata</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-24" title="&sect; 2.1.22 Discovery Dynamic and Static Metadata">&sect; 2.1.22 Discovery Dynamic and Static Metadata</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-25" title="§ 2.1.23 Discovery Deletion">§ 2.1.23 Discovery Deletion</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-25" title="&sect; 2.1.23 Discovery Deletion">&sect; 2.1.23 Discovery Deletion</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-26" title="§ 2.1.24 Discovery Access Control">§ 2.1.24 Discovery Access Control</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-26" title="&sect; 2.1.24 Discovery Access Control">&sect; 2.1.24 Discovery Access Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-27" title="§ 2.1.25 Discovery Clean Up">§ 2.1.25 Discovery Clean Up</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-27" title="&sect; 2.1.25 Discovery Clean Up">&sect; 2.1.25 Discovery Clean Up</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-28" title="§ 2.1.26 Discovery IETF CoRE Alignment">§ 2.1.26 Discovery IETF CoRE Alignment</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-28" title="&sect; 2.1.26 Discovery IETF CoRE Alignment">&sect; 2.1.26 Discovery IETF CoRE Alignment</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-29" title="§ 2.1.27 Discovery DID Alignment">§ 2.1.27 Discovery DID Alignment</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-29" title="&sect; 2.1.27 Discovery DID Alignment">&sect; 2.1.27 Discovery DID Alignment</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-30" title="§ 2.1.28 Discovery Extensible Introductions">§ 2.1.28 Discovery Extensible Introductions</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-30" title="&sect; 2.1.28 Discovery Extensible Introductions">&sect; 2.1.28 Discovery Extensible Introductions</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-31" title="§ 2.1.29 Discovery Confidentiality">§ 2.1.29 Discovery Confidentiality</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-31" title="&sect; 2.1.29 Discovery Confidentiality">&sect; 2.1.29 Discovery Confidentiality</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-32" title="§ 2.1.30 Discovery Authentication">§ 2.1.30 Discovery Authentication</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-32" title="&sect; 2.1.30 Discovery Authentication">&sect; 2.1.30 Discovery Authentication</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-33" title="§ 2.1.31 Discovery Authorization">§ 2.1.31 Discovery Authorization</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-33" title="&sect; 2.1.31 Discovery Authorization">&sect; 2.1.31 Discovery Authorization</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-34" title="§ 2.1.32 Discovery Anonymous Authentication">§ 2.1.32 Discovery Anonymous Authentication</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-34" title="&sect; 2.1.32 Discovery Anonymous Authentication">&sect; 2.1.32 Discovery Anonymous Authentication</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-35" title="§ 2.1.33 Discovery Lifecycle">§ 2.1.33 Discovery Lifecycle</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-35" title="&sect; 2.1.33 Discovery Lifecycle">&sect; 2.1.33 Discovery Lifecycle</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-36" title="§ 2.1.34 Discovery Limit Distribution">§ 2.1.34 Discovery Limit Distribution</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-36" title="&sect; 2.1.34 Discovery Limit Distribution">&sect; 2.1.34 Discovery Limit Distribution</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-37" title="§ 2.1.35 Discovery No Leaks">§ 2.1.35 Discovery No Leaks</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-37" title="&sect; 2.1.35 Discovery No Leaks">&sect; 2.1.35 Discovery No Leaks</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-38" title="§ 2.1.36 Discovery Simplicity">§ 2.1.36 Discovery Simplicity</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-38" title="&sect; 2.1.36 Discovery Simplicity">&sect; 2.1.36 Discovery Simplicity</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-39" title="§ 2.1.37 Discovery Human Authentication">§ 2.1.37 Discovery Human Authentication</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-39" title="&sect; 2.1.37 Discovery Human Authentication">&sect; 2.1.37 Discovery Human Authentication</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-40" title="§ 2.1.38 Discovery User Limitations">§ 2.1.38 Discovery User Limitations</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-40" title="&sect; 2.1.38 Discovery User Limitations">&sect; 2.1.38 Discovery User Limitations</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-user-41" title="§ 2.1.39 Discovery Alternatives">§ 2.1.39 Discovery Alternatives</a> 
+      <a href="#ref-for-dfn-stakeholder-system-user-41" title="&sect; 2.1.39 Discovery Alternatives">&sect; 2.1.39 Discovery Alternatives</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-system-owner" aria-label="Links in this document to definition: System Owner">
@@ -17317,7 +17307,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-system-owner-1" title="§ 1.3 Stakeholders and Roles">§ 1.3 Stakeholders and Roles</a> 
+      <a href="#ref-for-dfn-stakeholder-system-owner-1" title="&sect; 1.3 Stakeholders and Roles">&sect; 1.3 Stakeholders and Roles</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-system-maintainer" aria-label="Links in this document to definition: System Maintainer">
@@ -17329,11 +17319,11 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-system-maintainer-1" title="§ 2.1.21 Discovery Scalability">§ 2.1.21 Discovery Scalability</a> 
+      <a href="#ref-for-dfn-stakeholder-system-maintainer-1" title="&sect; 2.1.21 Discovery Scalability">&sect; 2.1.21 Discovery Scalability</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-maintainer-2" title="§ 2.1.24 Discovery Access Control">§ 2.1.24 Discovery Access Control</a> 
+      <a href="#ref-for-dfn-stakeholder-system-maintainer-2" title="&sect; 2.1.24 Discovery Access Control">&sect; 2.1.24 Discovery Access Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-system-maintainer-3" title="§ 2.1.25 Discovery Clean Up">§ 2.1.25 Discovery Clean Up</a> 
+      <a href="#ref-for-dfn-stakeholder-system-maintainer-3" title="&sect; 2.1.25 Discovery Clean Up">&sect; 2.1.25 Discovery Clean Up</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-device-owner" aria-label="Links in this document to definition: Device Owner">
@@ -17345,71 +17335,71 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-1" title="§ 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy">§ 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-1" title="&sect; 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy">&sect; 2.1.11 Mitigate Communication Threat - TD Confidentiality and Privacy</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-2" title="§ 3.1.4 Automatic milking system for dairy farm">§ 3.1.4 Automatic milking system for dairy farm</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-2" title="&sect; 3.1.4 Automatic milking system for dairy farm">&sect; 3.1.4 Automatic milking system for dairy farm</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-3" title="§ 3.1.5 Pest control in Open-field">§ 3.1.5 Pest control in Open-field</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-3" title="&sect; 3.1.5 Pest control in Open-field">&sect; 3.1.5 Pest control in Open-field</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-4" title="§ 3.2.2 Smart City Dashboard">§ 3.2.2 Smart City Dashboard</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-4" title="&sect; 3.2.2 Smart City Dashboard">&sect; 3.2.2 Smart City Dashboard</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-5" title="§ 3.2.5 Cross-Domain Discovery in a Smart Campus">§ 3.2.5 Cross-Domain Discovery in a Smart Campus</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-5" title="&sect; 3.2.5 Cross-Domain Discovery in a Smart Campus">&sect; 3.2.5 Cross-Domain Discovery in a Smart Campus</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-6" title="§ 3.2.6 Cultural Spaces (Museums)">§ 3.2.6 Cultural Spaces (Museums)</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-6" title="&sect; 3.2.6 Cultural Spaces (Museums)">&sect; 3.2.6 Cultural Spaces (Museums)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-7" title="§ 3.3.2 Connected Building Energy Efficiency">§ 3.3.2 Connected Building Energy Efficiency</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-7" title="&sect; 3.3.2 Connected Building Energy Efficiency">&sect; 3.3.2 Connected Building Energy Efficiency</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-8" title="§ 3.3.3 Automated Smart Building Management">§ 3.3.3 Automated Smart Building Management</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-8" title="&sect; 3.3.3 Automated Smart Building Management">&sect; 3.3.3 Automated Smart Building Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-9" title="§ 3.3.4 Portable Building Applications">§ 3.3.4 Portable Building Applications</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-9" title="&sect; 3.3.4 Portable Building Applications">&sect; 3.3.4 Portable Building Applications</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-10" title="§ 3.4.1 Production Monitoring">§ 3.4.1 Production Monitoring</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-10" title="&sect; 3.4.1 Production Monitoring">&sect; 3.4.1 Production Monitoring</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-11" title="§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-11" title="&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-12" title="§ 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)">§ 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-12" title="&sect; 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)">&sect; 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-13" title="§ 3.5.3 Retail Indoor Door Sensor">§ 3.5.3 Retail Indoor Door Sensor</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-13" title="&sect; 3.5.3 Retail Indoor Door Sensor">&sect; 3.5.3 Retail Indoor Door Sensor</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-14" title="§ 3.5.4 Retail Indoor and Outdoor Freezers">§ 3.5.4 Retail Indoor and Outdoor Freezers</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-14" title="&sect; 3.5.4 Retail Indoor and Outdoor Freezers">&sect; 3.5.4 Retail Indoor and Outdoor Freezers</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-15" title="§ 3.5.5 Retail Kitchen Refrigerator">§ 3.5.5 Retail Kitchen Refrigerator</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-15" title="&sect; 3.5.5 Retail Kitchen Refrigerator">&sect; 3.5.5 Retail Kitchen Refrigerator</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-16" title="§ 3.5.6 Retail Restroom Devices">§ 3.5.6 Retail Restroom Devices</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-16" title="&sect; 3.5.6 Retail Restroom Devices">&sect; 3.5.6 Retail Restroom Devices</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-17" title="§ 3.5.7 Retail Lighting Control">§ 3.5.7 Retail Lighting Control</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-17" title="&sect; 3.5.7 Retail Lighting Control">&sect; 3.5.7 Retail Lighting Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-18" title="§ 3.5.8 Retail Outdoor Canopy Lighting Control">§ 3.5.8 Retail Outdoor Canopy Lighting Control</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-18" title="&sect; 3.5.8 Retail Outdoor Canopy Lighting Control">&sect; 3.5.8 Retail Outdoor Canopy Lighting Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-19" title="§ 3.5.9 Retail Fountain Drink Ice Machine">§ 3.5.9 Retail Fountain Drink Ice Machine</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-19" title="&sect; 3.5.9 Retail Fountain Drink Ice Machine">&sect; 3.5.9 Retail Fountain Drink Ice Machine</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-20" title="§ 3.5.10 Retail Camera Device">§ 3.5.10 Retail Camera Device</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-20" title="&sect; 3.5.10 Retail Camera Device">&sect; 3.5.10 Retail Camera Device</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-21" title="§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-21" title="&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-22" title="§ 3.6.3.1 Digital Microscopes">§ 3.6.3.1 Digital Microscopes</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-22" title="&sect; 3.6.3.1 Digital Microscopes">&sect; 3.6.3.1 Digital Microscopes</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-23" title="§ 3.10.2.1 Education Shared Devices">§ 3.10.2.1 Education Shared Devices</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-23" title="&sect; 3.10.2.1 Education Shared Devices">&sect; 3.10.2.1 Education Shared Devices</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-24" title="§ 4.1 Discovery">§ 4.1 Discovery</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-24" title="&sect; 4.1 Discovery">&sect; 4.1 Discovery</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-25" title="§ 4.2 Multi-Vendor System Integration - Out of the box interoperability">§ 4.2 Multi-Vendor System Integration - Out of the box interoperability</a> <a href="#ref-for-dfn-stakeholder-device-owner-26" title="Reference 2">(2)</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-25" title="&sect; 4.2 Multi-Vendor System Integration - Out of the box interoperability">&sect; 4.2 Multi-Vendor System Integration - Out of the box interoperability</a> <a href="#ref-for-dfn-stakeholder-device-owner-26" title="Reference 2">(2)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-27" title="§ 4.3 Virtual Thing">§ 4.3 Virtual Thing</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-27" title="&sect; 4.3 Virtual Thing">&sect; 4.3 Virtual Thing</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-28" title="§ 4.4.1 Digital Twin (1)">§ 4.4.1 Digital Twin (1)</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-28" title="&sect; 4.4.1 Digital Twin (1)">&sect; 4.4.1 Digital Twin (1)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-29" title="§ 4.4.2 Digital Twin (2)">§ 4.4.2 Digital Twin (2)</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-29" title="&sect; 4.4.2 Digital Twin (2)">&sect; 4.4.2 Digital Twin (2)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-30" title="§ 4.5 Cross Protocol Interworking">§ 4.5 Cross Protocol Interworking</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-30" title="&sect; 4.5 Cross Protocol Interworking">&sect; 4.5 Cross Protocol Interworking</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-31" title="§ 4.8.1 OAuth2 Flows">§ 4.8.1 OAuth2 Flows</a> <a href="#ref-for-dfn-stakeholder-device-owner-32" title="Reference 2">(2)</a> <a href="#ref-for-dfn-stakeholder-device-owner-33" title="Reference 3">(3)</a> <a href="#ref-for-dfn-stakeholder-device-owner-34" title="Reference 4">(4)</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-31" title="&sect; 4.8.1 OAuth2 Flows">&sect; 4.8.1 OAuth2 Flows</a> <a href="#ref-for-dfn-stakeholder-device-owner-32" title="Reference 2">(2)</a> <a href="#ref-for-dfn-stakeholder-device-owner-33" title="Reference 3">(3)</a> <a href="#ref-for-dfn-stakeholder-device-owner-34" title="Reference 4">(4)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-35" title="§ 4.9.1 Device Lifecycle">§ 4.9.1 Device Lifecycle</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-35" title="&sect; 4.9.1 Device Lifecycle">&sect; 4.9.1 Device Lifecycle</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-36" title="§ 4.10.1 AR Virtual Guide">§ 4.10.1 AR Virtual Guide</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-36" title="&sect; 4.10.1 AR Virtual Guide">&sect; 4.10.1 AR Virtual Guide</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-owner-37" title="§ 4.11 Edge Computing">§ 4.11 Edge Computing</a> 
+      <a href="#ref-for-dfn-stakeholder-device-owner-37" title="&sect; 4.11 Edge Computing">&sect; 4.11 Edge Computing</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-device-user" aria-label="Links in this document to definition: Device User">
@@ -17421,41 +17411,41 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-device-user-1" title="§ 3.1.3 Irrigation in Outdoor Environment">§ 3.1.3 Irrigation in Outdoor Environment</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-1" title="&sect; 3.1.3 Irrigation in Outdoor Environment">&sect; 3.1.3 Irrigation in Outdoor Environment</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-2" title="§ 3.1.5 Pest control in Open-field">§ 3.1.5 Pest control in Open-field</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-2" title="&sect; 3.1.5 Pest control in Open-field">&sect; 3.1.5 Pest control in Open-field</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-3" title="§ 3.1.6 Livestock Health Management">§ 3.1.6 Livestock Health Management</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-3" title="&sect; 3.1.6 Livestock Health Management">&sect; 3.1.6 Livestock Health Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-4" title="§ 3.2.2 Smart City Dashboard">§ 3.2.2 Smart City Dashboard</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-4" title="&sect; 3.2.2 Smart City Dashboard">&sect; 3.2.2 Smart City Dashboard</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-5" title="§ 3.2.6 Cultural Spaces (Museums)">§ 3.2.6 Cultural Spaces (Museums)</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-5" title="&sect; 3.2.6 Cultural Spaces (Museums)">&sect; 3.2.6 Cultural Spaces (Museums)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-6" title="§ 3.3.2 Connected Building Energy Efficiency">§ 3.3.2 Connected Building Energy Efficiency</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-6" title="&sect; 3.3.2 Connected Building Energy Efficiency">&sect; 3.3.2 Connected Building Energy Efficiency</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-7" title="§ 3.3.3 Automated Smart Building Management">§ 3.3.3 Automated Smart Building Management</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-7" title="&sect; 3.3.3 Automated Smart Building Management">&sect; 3.3.3 Automated Smart Building Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-8" title="§ 3.3.4 Portable Building Applications">§ 3.3.4 Portable Building Applications</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-8" title="&sect; 3.3.4 Portable Building Applications">&sect; 3.3.4 Portable Building Applications</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-9" title="§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-9" title="&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-10" title="§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-10" title="&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-11" title="§ 3.6.3.1 Digital Microscopes">§ 3.6.3.1 Digital Microscopes</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-11" title="&sect; 3.6.3.1 Digital Microscopes">&sect; 3.6.3.1 Digital Microscopes</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-12" title="§ 3.10.1.2 Leaving and Coming Home">§ 3.10.1.2 Leaving and Coming Home</a> <a href="#ref-for-dfn-stakeholder-device-user-13" title="Reference 2">(2)</a> <a href="#ref-for-dfn-stakeholder-device-user-14" title="Reference 3">(3)</a> <a href="#ref-for-dfn-stakeholder-device-user-15" title="Reference 4">(4)</a> <a href="#ref-for-dfn-stakeholder-device-user-16" title="Reference 5">(5)</a> <a href="#ref-for-dfn-stakeholder-device-user-17" title="Reference 6">(6)</a> <a href="#ref-for-dfn-stakeholder-device-user-18" title="Reference 7">(7)</a> <a href="#ref-for-dfn-stakeholder-device-user-19" title="Reference 8">(8)</a> <a href="#ref-for-dfn-stakeholder-device-user-20" title="Reference 9">(9)</a> <a href="#ref-for-dfn-stakeholder-device-user-21" title="Reference 10">(10)</a> <a href="#ref-for-dfn-stakeholder-device-user-22" title="Reference 11">(11)</a> <a href="#ref-for-dfn-stakeholder-device-user-23" title="Reference 12">(12)</a> <a href="#ref-for-dfn-stakeholder-device-user-24" title="Reference 13">(13)</a> <a href="#ref-for-dfn-stakeholder-device-user-25" title="Reference 14">(14)</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-12" title="&sect; 3.10.1.2 Leaving and Coming Home">&sect; 3.10.1.2 Leaving and Coming Home</a> <a href="#ref-for-dfn-stakeholder-device-user-13" title="Reference 2">(2)</a> <a href="#ref-for-dfn-stakeholder-device-user-14" title="Reference 3">(3)</a> <a href="#ref-for-dfn-stakeholder-device-user-15" title="Reference 4">(4)</a> <a href="#ref-for-dfn-stakeholder-device-user-16" title="Reference 5">(5)</a> <a href="#ref-for-dfn-stakeholder-device-user-17" title="Reference 6">(6)</a> <a href="#ref-for-dfn-stakeholder-device-user-18" title="Reference 7">(7)</a> <a href="#ref-for-dfn-stakeholder-device-user-19" title="Reference 8">(8)</a> <a href="#ref-for-dfn-stakeholder-device-user-20" title="Reference 9">(9)</a> <a href="#ref-for-dfn-stakeholder-device-user-21" title="Reference 10">(10)</a> <a href="#ref-for-dfn-stakeholder-device-user-22" title="Reference 11">(11)</a> <a href="#ref-for-dfn-stakeholder-device-user-23" title="Reference 12">(12)</a> <a href="#ref-for-dfn-stakeholder-device-user-24" title="Reference 13">(13)</a> <a href="#ref-for-dfn-stakeholder-device-user-25" title="Reference 14">(14)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-26" title="§ 3.10.2.1 Education Shared Devices">§ 3.10.2.1 Education Shared Devices</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-26" title="&sect; 3.10.2.1 Education Shared Devices">&sect; 3.10.2.1 Education Shared Devices</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-27" title="§ 4.1 Discovery">§ 4.1 Discovery</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-27" title="&sect; 4.1 Discovery">&sect; 4.1 Discovery</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-28" title="§ 4.4.2 Digital Twin (2)">§ 4.4.2 Digital Twin (2)</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-28" title="&sect; 4.4.2 Digital Twin (2)">&sect; 4.4.2 Digital Twin (2)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-29" title="§ 4.8.1 OAuth2 Flows">§ 4.8.1 OAuth2 Flows</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-29" title="&sect; 4.8.1 OAuth2 Flows">&sect; 4.8.1 OAuth2 Flows</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-30" title="§ 4.10.1 AR Virtual Guide">§ 4.10.1 AR Virtual Guide</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-30" title="&sect; 4.10.1 AR Virtual Guide">&sect; 4.10.1 AR Virtual Guide</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-device-user-31" title="§ 4.11 Edge Computing">§ 4.11 Edge Computing</a> 
+      <a href="#ref-for-dfn-stakeholder-device-user-31" title="&sect; 4.11 Edge Computing">&sect; 4.11 Edge Computing</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-cloud-provider" aria-label="Links in this document to definition: Cloud Provider">
@@ -17467,41 +17457,41 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-1" title="§ 3.1.1 Greenhouse Horticulture">§ 3.1.1 Greenhouse Horticulture</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-1" title="&sect; 3.1.1 Greenhouse Horticulture">&sect; 3.1.1 Greenhouse Horticulture</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-2" title="§ 3.1.2 Open-field Agriculture">§ 3.1.2 Open-field Agriculture</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-2" title="&sect; 3.1.2 Open-field Agriculture">&sect; 3.1.2 Open-field Agriculture</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-3" title="§ 3.1.4 Automatic milking system for dairy farm">§ 3.1.4 Automatic milking system for dairy farm</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-3" title="&sect; 3.1.4 Automatic milking system for dairy farm">&sect; 3.1.4 Automatic milking system for dairy farm</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-4" title="§ 3.1.5 Pest control in Open-field">§ 3.1.5 Pest control in Open-field</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-4" title="&sect; 3.1.5 Pest control in Open-field">&sect; 3.1.5 Pest control in Open-field</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-5" title="§ 3.2.2 Smart City Dashboard">§ 3.2.2 Smart City Dashboard</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-5" title="&sect; 3.2.2 Smart City Dashboard">&sect; 3.2.2 Smart City Dashboard</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-6" title="§ 3.3.4 Portable Building Applications">§ 3.3.4 Portable Building Applications</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-6" title="&sect; 3.3.4 Portable Building Applications">&sect; 3.3.4 Portable Building Applications</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-7" title="§ 3.4.1 Production Monitoring">§ 3.4.1 Production Monitoring</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-7" title="&sect; 3.4.1 Production Monitoring">&sect; 3.4.1 Production Monitoring</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-8" title="§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-8" title="&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-9" title="§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-9" title="&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-10" title="§ 3.6.3.1 Digital Microscopes">§ 3.6.3.1 Digital Microscopes</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-10" title="&sect; 3.6.3.1 Digital Microscopes">&sect; 3.6.3.1 Digital Microscopes</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-11" title="§ 3.7.1 Smart Grids">§ 3.7.1 Smart Grids</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-11" title="&sect; 3.7.1 Smart Grids">&sect; 3.7.1 Smart Grids</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-12" title="§ 4.1 Discovery">§ 4.1 Discovery</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-12" title="&sect; 4.1 Discovery">&sect; 4.1 Discovery</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-13" title="§ 4.2 Multi-Vendor System Integration - Out of the box interoperability">§ 4.2 Multi-Vendor System Integration - Out of the box interoperability</a> <a href="#ref-for-dfn-stakeholder-cloud-provider-14" title="Reference 2">(2)</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-13" title="&sect; 4.2 Multi-Vendor System Integration - Out of the box interoperability">&sect; 4.2 Multi-Vendor System Integration - Out of the box interoperability</a> <a href="#ref-for-dfn-stakeholder-cloud-provider-14" title="Reference 2">(2)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-15" title="§ 4.4.1 Digital Twin (1)">§ 4.4.1 Digital Twin (1)</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-15" title="&sect; 4.4.1 Digital Twin (1)">&sect; 4.4.1 Digital Twin (1)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-16" title="§ 4.5 Cross Protocol Interworking">§ 4.5 Cross Protocol Interworking</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-16" title="&sect; 4.5 Cross Protocol Interworking">&sect; 4.5 Cross Protocol Interworking</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-17" title="§ 4.9.1 Device Lifecycle">§ 4.9.1 Device Lifecycle</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-17" title="&sect; 4.9.1 Device Lifecycle">&sect; 4.9.1 Device Lifecycle</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-18" title="§ 4.10.1 AR Virtual Guide">§ 4.10.1 AR Virtual Guide</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-18" title="&sect; 4.10.1 AR Virtual Guide">&sect; 4.10.1 AR Virtual Guide</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-cloud-provider-19" title="§ 4.11 Edge Computing">§ 4.11 Edge Computing</a> 
+      <a href="#ref-for-dfn-stakeholder-cloud-provider-19" title="&sect; 4.11 Edge Computing">&sect; 4.11 Edge Computing</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-service-provider" aria-label="Links in this document to definition: Service Provider">
@@ -17513,49 +17503,49 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-1" title="§ 1.3 Stakeholders and Roles">§ 1.3 Stakeholders and Roles</a> <a href="#ref-for-dfn-stakeholder-service-provider-2" title="Reference 2">(2)</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-1" title="&sect; 1.3 Stakeholders and Roles">&sect; 1.3 Stakeholders and Roles</a> <a href="#ref-for-dfn-stakeholder-service-provider-2" title="Reference 2">(2)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-3" title="§ 3.1.2 Open-field Agriculture">§ 3.1.2 Open-field Agriculture</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-3" title="&sect; 3.1.2 Open-field Agriculture">&sect; 3.1.2 Open-field Agriculture</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-4" title="§ 3.1.3 Irrigation in Outdoor Environment">§ 3.1.3 Irrigation in Outdoor Environment</a> <a href="#ref-for-dfn-stakeholder-service-provider-5" title="Reference 2">(2)</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-4" title="&sect; 3.1.3 Irrigation in Outdoor Environment">&sect; 3.1.3 Irrigation in Outdoor Environment</a> <a href="#ref-for-dfn-stakeholder-service-provider-5" title="Reference 2">(2)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-6" title="§ 3.1.4 Automatic milking system for dairy farm">§ 3.1.4 Automatic milking system for dairy farm</a> <a href="#ref-for-dfn-stakeholder-service-provider-7" title="Reference 2">(2)</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-6" title="&sect; 3.1.4 Automatic milking system for dairy farm">&sect; 3.1.4 Automatic milking system for dairy farm</a> <a href="#ref-for-dfn-stakeholder-service-provider-7" title="Reference 2">(2)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-8" title="§ 3.1.5 Pest control in Open-field">§ 3.1.5 Pest control in Open-field</a> <a href="#ref-for-dfn-stakeholder-service-provider-9" title="Reference 2">(2)</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-8" title="&sect; 3.1.5 Pest control in Open-field">&sect; 3.1.5 Pest control in Open-field</a> <a href="#ref-for-dfn-stakeholder-service-provider-9" title="Reference 2">(2)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-10" title="§ 3.1.6 Livestock Health Management">§ 3.1.6 Livestock Health Management</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-10" title="&sect; 3.1.6 Livestock Health Management">&sect; 3.1.6 Livestock Health Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-11" title="§ 3.1.7 Agricultural Machinery Management">§ 3.1.7 Agricultural Machinery Management</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-11" title="&sect; 3.1.7 Agricultural Machinery Management">&sect; 3.1.7 Agricultural Machinery Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-12" title="§ 3.2.5 Cross-Domain Discovery in a Smart Campus">§ 3.2.5 Cross-Domain Discovery in a Smart Campus</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-12" title="&sect; 3.2.5 Cross-Domain Discovery in a Smart Campus">&sect; 3.2.5 Cross-Domain Discovery in a Smart Campus</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-13" title="§ 3.2.6 Cultural Spaces (Museums)">§ 3.2.6 Cultural Spaces (Museums)</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-13" title="&sect; 3.2.6 Cultural Spaces (Museums)">&sect; 3.2.6 Cultural Spaces (Museums)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-14" title="§ 3.3.3 Automated Smart Building Management">§ 3.3.3 Automated Smart Building Management</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-14" title="&sect; 3.3.3 Automated Smart Building Management">&sect; 3.3.3 Automated Smart Building Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-15" title="§ 3.3.4 Portable Building Applications">§ 3.3.4 Portable Building Applications</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-15" title="&sect; 3.3.4 Portable Building Applications">&sect; 3.3.4 Portable Building Applications</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-16" title="§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-16" title="&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-17" title="§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-17" title="&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-18" title="§ 3.6.3.1 Digital Microscopes">§ 3.6.3.1 Digital Microscopes</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-18" title="&sect; 3.6.3.1 Digital Microscopes">&sect; 3.6.3.1 Digital Microscopes</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-19" title="§ 3.10.1.2 Leaving and Coming Home">§ 3.10.1.2 Leaving and Coming Home</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-19" title="&sect; 3.10.1.2 Leaving and Coming Home">&sect; 3.10.1.2 Leaving and Coming Home</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-20" title="§ 3.10.2.1 Education Shared Devices">§ 3.10.2.1 Education Shared Devices</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-20" title="&sect; 3.10.2.1 Education Shared Devices">&sect; 3.10.2.1 Education Shared Devices</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-21" title="§ 4.1 Discovery">§ 4.1 Discovery</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-21" title="&sect; 4.1 Discovery">&sect; 4.1 Discovery</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-22" title="§ 4.2 Multi-Vendor System Integration - Out of the box interoperability">§ 4.2 Multi-Vendor System Integration - Out of the box interoperability</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-22" title="&sect; 4.2 Multi-Vendor System Integration - Out of the box interoperability">&sect; 4.2 Multi-Vendor System Integration - Out of the box interoperability</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-23" title="§ 4.8.1 OAuth2 Flows">§ 4.8.1 OAuth2 Flows</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-23" title="&sect; 4.8.1 OAuth2 Flows">&sect; 4.8.1 OAuth2 Flows</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-24" title="§ 4.9.1 Device Lifecycle">§ 4.9.1 Device Lifecycle</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-24" title="&sect; 4.9.1 Device Lifecycle">&sect; 4.9.1 Device Lifecycle</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-25" title="§ 4.10.1 AR Virtual Guide">§ 4.10.1 AR Virtual Guide</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-25" title="&sect; 4.10.1 AR Virtual Guide">&sect; 4.10.1 AR Virtual Guide</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-service-provider-26" title="§ 4.11 Edge Computing">§ 4.11 Edge Computing</a> 
+      <a href="#ref-for-dfn-stakeholder-service-provider-26" title="&sect; 4.11 Edge Computing">&sect; 4.11 Edge Computing</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-gateway-manufacturer" aria-label="Links in this document to definition: Gateway Manufacturer">
@@ -17567,41 +17557,41 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-1" title="§ 3.3.3 Automated Smart Building Management">§ 3.3.3 Automated Smart Building Management</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-1" title="&sect; 3.3.3 Automated Smart Building Management">&sect; 3.3.3 Automated Smart Building Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-2" title="§ 3.3.4 Portable Building Applications">§ 3.3.4 Portable Building Applications</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-2" title="&sect; 3.3.4 Portable Building Applications">&sect; 3.3.4 Portable Building Applications</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-3" title="§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-3" title="&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-4" title="§ 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)">§ 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-4" title="&sect; 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)">&sect; 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-5" title="§ 3.5.3 Retail Indoor Door Sensor">§ 3.5.3 Retail Indoor Door Sensor</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-5" title="&sect; 3.5.3 Retail Indoor Door Sensor">&sect; 3.5.3 Retail Indoor Door Sensor</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-6" title="§ 3.5.4 Retail Indoor and Outdoor Freezers">§ 3.5.4 Retail Indoor and Outdoor Freezers</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-6" title="&sect; 3.5.4 Retail Indoor and Outdoor Freezers">&sect; 3.5.4 Retail Indoor and Outdoor Freezers</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-7" title="§ 3.5.5 Retail Kitchen Refrigerator">§ 3.5.5 Retail Kitchen Refrigerator</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-7" title="&sect; 3.5.5 Retail Kitchen Refrigerator">&sect; 3.5.5 Retail Kitchen Refrigerator</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-8" title="§ 3.5.6 Retail Restroom Devices">§ 3.5.6 Retail Restroom Devices</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-8" title="&sect; 3.5.6 Retail Restroom Devices">&sect; 3.5.6 Retail Restroom Devices</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-9" title="§ 3.5.7 Retail Lighting Control">§ 3.5.7 Retail Lighting Control</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-9" title="&sect; 3.5.7 Retail Lighting Control">&sect; 3.5.7 Retail Lighting Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-10" title="§ 3.5.8 Retail Outdoor Canopy Lighting Control">§ 3.5.8 Retail Outdoor Canopy Lighting Control</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-10" title="&sect; 3.5.8 Retail Outdoor Canopy Lighting Control">&sect; 3.5.8 Retail Outdoor Canopy Lighting Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-11" title="§ 3.5.9 Retail Fountain Drink Ice Machine">§ 3.5.9 Retail Fountain Drink Ice Machine</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-11" title="&sect; 3.5.9 Retail Fountain Drink Ice Machine">&sect; 3.5.9 Retail Fountain Drink Ice Machine</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-12" title="§ 3.5.10 Retail Camera Device">§ 3.5.10 Retail Camera Device</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-12" title="&sect; 3.5.10 Retail Camera Device">&sect; 3.5.10 Retail Camera Device</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-13" title="§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-13" title="&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-14" title="§ 4.1 Discovery">§ 4.1 Discovery</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-14" title="&sect; 4.1 Discovery">&sect; 4.1 Discovery</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-15" title="§ 4.2 Multi-Vendor System Integration - Out of the box interoperability">§ 4.2 Multi-Vendor System Integration - Out of the box interoperability</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-15" title="&sect; 4.2 Multi-Vendor System Integration - Out of the box interoperability">&sect; 4.2 Multi-Vendor System Integration - Out of the box interoperability</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-16" title="§ 4.3 Virtual Thing">§ 4.3 Virtual Thing</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-16" title="&sect; 4.3 Virtual Thing">&sect; 4.3 Virtual Thing</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-17" title="§ 4.9.1 Device Lifecycle">§ 4.9.1 Device Lifecycle</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-17" title="&sect; 4.9.1 Device Lifecycle">&sect; 4.9.1 Device Lifecycle</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-18" title="§ 4.11 Edge Computing">§ 4.11 Edge Computing</a> 
+      <a href="#ref-for-dfn-stakeholder-gateway-manufacturer-18" title="&sect; 4.11 Edge Computing">&sect; 4.11 Edge Computing</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-identity-provider" aria-label="Links in this document to definition: Identity Provider">
@@ -17613,37 +17603,37 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-1" title="§ 3.3.3 Automated Smart Building Management">§ 3.3.3 Automated Smart Building Management</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-1" title="&sect; 3.3.3 Automated Smart Building Management">&sect; 3.3.3 Automated Smart Building Management</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-2" title="§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">§ 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-2" title="&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios">&sect; 3.4.2 Cross-protocol Interaction in Industry 4.0 Scenarios</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-3" title="§ 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)">§ 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-3" title="&sect; 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)">&sect; 3.5.2 Retail All Stop Button (Outdoor Emergency Stop Plunger)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-4" title="§ 3.5.3 Retail Indoor Door Sensor">§ 3.5.3 Retail Indoor Door Sensor</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-4" title="&sect; 3.5.3 Retail Indoor Door Sensor">&sect; 3.5.3 Retail Indoor Door Sensor</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-5" title="§ 3.5.4 Retail Indoor and Outdoor Freezers">§ 3.5.4 Retail Indoor and Outdoor Freezers</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-5" title="&sect; 3.5.4 Retail Indoor and Outdoor Freezers">&sect; 3.5.4 Retail Indoor and Outdoor Freezers</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-6" title="§ 3.5.5 Retail Kitchen Refrigerator">§ 3.5.5 Retail Kitchen Refrigerator</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-6" title="&sect; 3.5.5 Retail Kitchen Refrigerator">&sect; 3.5.5 Retail Kitchen Refrigerator</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-7" title="§ 3.5.6 Retail Restroom Devices">§ 3.5.6 Retail Restroom Devices</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-7" title="&sect; 3.5.6 Retail Restroom Devices">&sect; 3.5.6 Retail Restroom Devices</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-8" title="§ 3.5.7 Retail Lighting Control">§ 3.5.7 Retail Lighting Control</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-8" title="&sect; 3.5.7 Retail Lighting Control">&sect; 3.5.7 Retail Lighting Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-9" title="§ 3.5.8 Retail Outdoor Canopy Lighting Control">§ 3.5.8 Retail Outdoor Canopy Lighting Control</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-9" title="&sect; 3.5.8 Retail Outdoor Canopy Lighting Control">&sect; 3.5.8 Retail Outdoor Canopy Lighting Control</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-10" title="§ 3.5.9 Retail Fountain Drink Ice Machine">§ 3.5.9 Retail Fountain Drink Ice Machine</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-10" title="&sect; 3.5.9 Retail Fountain Drink Ice Machine">&sect; 3.5.9 Retail Fountain Drink Ice Machine</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-11" title="§ 3.5.10 Retail Camera Device">§ 3.5.10 Retail Camera Device</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-11" title="&sect; 3.5.10 Retail Camera Device">&sect; 3.5.10 Retail Camera Device</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-12" title="§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">§ 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-12" title="&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU">&sect; 3.6.1.2 Interconnected Medical Devices in a Hospital ICU</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-13" title="§ 3.6.3.1 Digital Microscopes">§ 3.6.3.1 Digital Microscopes</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-13" title="&sect; 3.6.3.1 Digital Microscopes">&sect; 3.6.3.1 Digital Microscopes</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-14" title="§ 4.1 Discovery">§ 4.1 Discovery</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-14" title="&sect; 4.1 Discovery">&sect; 4.1 Discovery</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-15" title="§ 4.8.1 OAuth2 Flows">§ 4.8.1 OAuth2 Flows</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-15" title="&sect; 4.8.1 OAuth2 Flows">&sect; 4.8.1 OAuth2 Flows</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-identity-provider-16" title="§ 4.10.1 AR Virtual Guide">§ 4.10.1 AR Virtual Guide</a> 
+      <a href="#ref-for-dfn-stakeholder-identity-provider-16" title="&sect; 4.10.1 AR Virtual Guide">&sect; 4.10.1 AR Virtual Guide</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-directory-service-provider" aria-label="Links in this document to definition: Directory Service Provider">
@@ -17655,7 +17645,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-directory-service-provider-1" title="§ 1.3 Stakeholders and Roles">§ 1.3 Stakeholders and Roles</a> 
+      <a href="#ref-for-dfn-stakeholder-directory-service-provider-1" title="&sect; 1.3 Stakeholders and Roles">&sect; 1.3 Stakeholders and Roles</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-td-consumer" aria-label="Links in this document to definition: TD Consumer">
@@ -17667,9 +17657,9 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-td-consumer-1" title="§ 2.1.3 Byte Ordering for Binary Data Formats">§ 2.1.3 Byte Ordering for Binary Data Formats</a> <a href="#ref-for-dfn-stakeholder-td-consumer-2" title="Reference 2">(2)</a> 
+      <a href="#ref-for-dfn-stakeholder-td-consumer-1" title="&sect; 2.1.3 Byte Ordering for Binary Data Formats">&sect; 2.1.3 Byte Ordering for Binary Data Formats</a> <a href="#ref-for-dfn-stakeholder-td-consumer-2" title="Reference 2">(2)</a> 
     </li><li>
-      <a href="#ref-for-dfn-stakeholder-td-consumer-3" title="§ 2.1.4 Polling Rate Limit">§ 2.1.4 Polling Rate Limit</a> <a href="#ref-for-dfn-stakeholder-td-consumer-4" title="Reference 2">(2)</a> 
+      <a href="#ref-for-dfn-stakeholder-td-consumer-3" title="&sect; 2.1.4 Polling Rate Limit">&sect; 2.1.4 Polling Rate Limit</a> <a href="#ref-for-dfn-stakeholder-td-consumer-4" title="Reference 2">(2)</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-td-server" aria-label="Links in this document to definition: TD Server">
@@ -17681,7 +17671,7 @@ SELECT ?ahu ?mat ?sat ?pos ?room WHERE {
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-stakeholder-td-server-1" title="§ 1.3 Stakeholders and Roles">§ 1.3 Stakeholders and Roles</a> 
+      <a href="#ref-for-dfn-stakeholder-td-server-1" title="&sect; 1.3 Stakeholders and Roles">&sect; 1.3 Stakeholders and Roles</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-stakeholder-td-directory" aria-label="Links in this document to definition: TD Directory">
